@@ -96,13 +96,13 @@ class Footer extends React.Component {
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          href="https://citedrive.com/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
             src={`${this.props.config.baseUrl}/img/citedrive_logo_lightgrey.svg`}
-            alt="Facebook Open Source"
+            alt="Citedrive"
             width="170"
             height="45"
           />

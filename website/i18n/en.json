@@ -24,15 +24,14 @@
     },
     "links": {
       "Docs": "Docs",
-      "API": "API",
-      "Help": "Help",
-      "Translate": "Translate",
       "Blog": "Blog"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Getting started": "Getting started",
+      "BibTeX Guidelines": "BibTeX Guidelines",
+      "Citedrive + BibTeX": "Citedrive + BibTeX",
+      "LaTeX Guidelines": "LaTeX Guidelines",
+      "First Category": "First Category"
     }
   },
   "pages-strings": {

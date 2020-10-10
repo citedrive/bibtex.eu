@@ -40,9 +40,10 @@
 .fixedHeaderContainer {
     flex-shrink: 0;
     background: #fff;
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 11px;
 }
 
 .navigationSlider .slidingNav ul li a:hover, .navigationSlider .slidingNav ul li.siteNavItemActive a, .navigationSlider .slidingNav ul li.siteNavGroupActive a {
-     color: #444; 
+     color: #444;
 }

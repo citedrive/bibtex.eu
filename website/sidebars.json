@@ -1,8 +1,9 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "Getting started": ["doc1"],
+    "BibTeX Guidelines": ["doc2"],
+    "Citedrive + BibTeX": ["doc3"],
+    "LaTeX Guidelines": ["doc3"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

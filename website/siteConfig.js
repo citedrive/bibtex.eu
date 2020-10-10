@@ -58,9 +58,9 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {page: 'help-with-translations', label: 'Translate'},
+  //  {doc: 'doc4', label: 'API'},
+  //  {page: 'help', label: 'Help'},
+  //  {page: 'help-with-translations', label: 'Translate'},
     {blog: true, label: 'Blog'},
   ],
 
@@ -107,7 +107,7 @@ const siteConfig = {
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
-
+  docsSideNavCollapsible: true,
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
