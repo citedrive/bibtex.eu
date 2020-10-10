@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Getting started": ["doc1"],
+    "Getting started": ["intro"],
     "BibTeX Guidelines": ["doc2"],
     "Citedrive + BibTeX": ["doc3"],
     "LaTeX Guidelines": ["doc3"]

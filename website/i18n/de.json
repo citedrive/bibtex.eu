@@ -5,9 +5,9 @@
     "previous": "Previous",
     "tagline": "Dokumente, Guidelines und Workshops zu BibTeX, BibLatex und Literaturverwaltung bei LaTeX. Von Citedrive.com",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish 2",
-        "sidebar_label": "Example Page Deutsch"
+      "intro": {
+        "title": "Einführung in BibTeX",
+        "sidebar_label": "Einführung in BibTeX"
       },
       "doc2": {
         "title": "document number 2"
@@ -29,9 +29,11 @@
       "Blog": "Blog"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "Getting started": "Erste Schritte",
+      "BibTeX Guidelines": "Leitfaden zu BibTeX",
+      "Citedrive + BibTeX": "Citedrive + BibTeX",
+      "LaTeX Guidelines": "Leitfaden zu LaTeX",
+      "First Category": "First Category"
     }
   },
   "pages-strings": {

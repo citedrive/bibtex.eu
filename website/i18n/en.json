@@ -5,9 +5,9 @@
     "previous": "Previous",
     "tagline": "Documents, guidelines and workshops for BibTeX, BibLatex and bibliography management at LaTeX. By Citedrive.com",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+      "intro": {
+        "title": "Introduction to BibTeX",
+        "sidebar_label": "Introduction"
       },
       "doc2": {
         "title": "document number 2"

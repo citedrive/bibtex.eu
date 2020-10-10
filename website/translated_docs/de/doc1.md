@@ -1,15 +1,14 @@
 ---
-id: doc1
-title: Latin-ish
-sidebar_label: Example Page
+id: intro
+title: Einführung in BibTeX
+sidebar_label: Einführung
 ---
 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
 
 ## Lorem
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.dasdadass sed, sollicitudin sapien.
-
+BibTeX is reference management software for formatting lists of references. The BibTeX tool is typically used together with the LaTeX document preparation system. Within the typesetting system, its name is styled as {\displaystyle {\mathrm {B{\scriptstyle {IB}}\!T\!_{\displaystyle E}\!X} }}{\mathrm {B{\scriptstyle {IB}}\!T\!_{\displaystyle E}\!X} }. The name is a portmanteau of the word bibliography and the name of the TeX typesetting software. The purpose of BibTeX is to make it easy to cite sources in a consistent manner, by separating bibliographic information from the presentation of this information, similarly to the separation of content and presentation/style supported by LaTeX itself.
 ## Mauris In Code
 
 ```
