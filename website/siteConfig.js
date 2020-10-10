@@ -58,10 +58,13 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
+    { href: "https://citedrive.com", label: "Citedrive ❤️ BibTeX ", external: true },
+      { href: "https://github.com/citedrive/bibtex.eu", label: "GitHub", external: true },
+
   //  {doc: 'doc4', label: 'API'},
   //  {page: 'help', label: 'Help'},
   //  {page: 'help-with-translations', label: 'Translate'},
-    {blog: true, label: 'Blog'},
+  //   {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
@@ -74,7 +77,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: 'fff',
+    primaryColor: '334',
     secondaryColor: '#333',
   },
 

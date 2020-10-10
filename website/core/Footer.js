@@ -18,6 +18,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="nav-footer" id="footer">
+      {/*
         <section className="sitemap">
           <a href={this.props.config.baseUrl} className="nav-home">
             {this.props.config.footerIcon && (
@@ -94,14 +95,14 @@ class Footer extends React.Component {
             )}
           </div>
         </section>
-
+*/}
         <a
           href="https://citedrive.com/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}/img/citedrive_logo_lightgrey.svg`}
+            src={`https://bibtex.eu/img/citedrive_logo_lightgrey.svg`}
             alt="Citedrive"
             width="170"
             height="45"
