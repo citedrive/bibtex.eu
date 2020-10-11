@@ -9,17 +9,31 @@
         "title": "Introduction to BibTeX",
         "sidebar_label": "Introduction"
       },
-      "doc2": {
-        "title": "document number 2"
+      "latex-guidelines": {
+        "title": "latex-guidelines"
       },
-      "doc3": {
-        "title": "This is document number 3"
+      "bibtex-guidelines": {
+        "title": "BibTeX Guidelines"
       },
-      "doc4": {
-        "title": "Other Document"
+      "field-types": {
+        "title": "BibTeX Field types",
+        "sidebar_label": "BibTeX Field types"
       },
-      "doc5": {
-        "title": "Fifth Document"
+      "address": {
+        "title": "BibTeX Field types: Address",
+        "sidebar_label": "Address"
+      },
+      "annote": {
+        "title": "BibTeX Field types: Annote",
+        "sidebar_label": "Annote"
+      },
+      "author": {
+        "title": "BibTeX Field types: Author",
+        "sidebar_label": "Author"
+      },
+      "citedrive-bibtex": {
+        "title": "CiteDrive + LaTeX + BibTeX",
+        "sidebar_label": "CiteDrive + BibTeX"
       }
     },
     "links": {
@@ -30,6 +44,7 @@
     "categories": {
       "Getting started": "Getting started",
       "BibTeX Guidelines": "BibTeX Guidelines",
+      "BibTeX Field types": "BibTeX Field types",
       "Citedrive + BibTeX": "Citedrive + BibTeX",
       "LaTeX Guidelines": "LaTeX Guidelines",
       "First Category": "First Category"

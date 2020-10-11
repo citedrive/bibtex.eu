@@ -1,9 +1,10 @@
 {
   "docs": {
     "Getting started": ["intro"],
-    "BibTeX Guidelines": ["doc2"],
-    "Citedrive + BibTeX": ["doc3"],
-    "LaTeX Guidelines": ["doc3"]
+    "BibTeX Guidelines": ["bibtex-guidelines"],
+    "BibTeX Field types": ["field-types", "address", "annote", "author"],
+    "Citedrive + BibTeX": ["citedrive-bibtex"],
+    "LaTeX Guidelines": ["latex-guidelines"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

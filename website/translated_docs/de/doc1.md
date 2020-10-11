@@ -1,7 +1,7 @@
 ---
 id: intro
-title: Einführung in BibTeX
-sidebar_label: Einführung
+title: Introduction to BibTeX
+sidebar_label: Introduction
 ---
 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
