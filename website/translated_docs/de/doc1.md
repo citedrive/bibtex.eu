@@ -4,25 +4,112 @@ title: Introduction to BibTeX
 sidebar_label: Introduction
 ---
 
-Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
+BibTeX ist
 
-## Lorem
 
-BibTeX is reference management software for formatting lists of references. The BibTeX tool is typically used together with the LaTeX document preparation system. Within the typesetting system, its name is styled as {\displaystyle {\mathrm {B{\scriptstyle {IB}}\!T\!_{\displaystyle E}\!X} }}{\mathrm {B{\scriptstyle {IB}}\!T\!_{\displaystyle E}\!X} }. The name is a portmanteau of the word bibliography and the name of the TeX typesetting software. The purpose of BibTeX is to make it easy to cite sources in a consistent manner, by separating bibliographic information from the presentation of this information, similarly to the separation of content and presentation/style supported by LaTeX itself.
-## Mauris In Code
+
+## Geschichte
+
+## Format
+
+Jede Literaturquelle (Buch, Paper etc.) kann mit allen Daten, die für das Zitieren und für die Angabe im Literaturverzeichnis gebraucht werden, im folgenden Weise gespeichert:
+
+```tex
+@Entry-type{citeID,
+  title={the title of the work}
+  author={lastname_1, firstnam_1 AND lastname_2, firstname_2 AND ... AND lastname_n, firstname_n}
+  field_type_1={ ... }
+  field_type_2={ ... }
+  ...
+  field_type_n={ ... }
+}
+```
+
+Wobei `Entry-type` für Literaturtypen der zu zitierenden Quelle handelt, wie etwa `book`, `article`, `manual` (*.t. Buch, Zeitungs- oder Zeitschriftenartikel, Technische Dokumentation etc.*) handeln kann. Alle gültigen Entry-Types und dazugehörige Hinweise können im entsprechenden Kapitel Entry-types gelesen werden.
+
+Ein Beispiel für Buch:
+```tex
+@book{article1,
+  ...
+}
+```
+`citeID` steht für eindeutige Kennzeichnung (Identifikation) einer Literaturquelle, auf die man sich beim Zitieren bezieht. Innerhalb eines Projektes und in allen .bib-Dateien muss die ID einmalig sein.
+Die `citeID` kann ein beliebiger String sein, wie etwa *article1* im obigen Beispiel. In vielen Fällen setzt sich diese Identifikation aus dem Nachnamen des ersten Authoren, dem Erscheinungsjahr und einem beliebiegen Wort aus dem Titel. Letzteres um Kollisionen zu vermeiden.
+
+>  Citedrive setzt einmalige und vollautomatische uuid, um Literaturquellen auch im Nachhinein zu bearbeiten.
+
+Hinweis: Manchmal und vorallem in älteren Dokumentation, wie etwa aus ... werden die also fieldtypes in konventioneller Klammer geschlossen.
+
+
+```tex
+@book(article1,
+  ...
+)
+```
+
+
+
+
+
+*emph *with emph* in it*
+**strong **with strong** in it**
+
+## Literaturdatenbank `.bib-Datei`
+
+Die Literaturdatenbank ist eine einfache Textdatei (`.bib-datei`) in der alle Literaturquellen in dem Format, wie oben beschrieben, die der Nutzer für eine bestimmte Arbeit nutzen möchte, nacheinander  gesammelt werden. Eine bestimmte Reihenfolge ist nicht notwendig.
+
+### Beispiel
+
+```tex
+@article{sedelis2000mptp,
+  title={MPTP susceptibility in the mouse: behavioral, neurochemical, and histological analysis of gender and strain differences},
+  author={Sedelis, Marco and Hofele, Katja and Auburger, Georg W and Morgan, Sarah and Huston, Joseph P and Schwarting, Rainer KW},
+  journal={Behavior genetics},
+  volume={30},
+  number={3},
+  pages={171--182},
+  year={2000},
+  publisher={Springer}
+}
+
+@article{steinbeck2003chemistry,
+  title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
+  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  journal={Journal of chemical information and computer sciences},
+  volume={43},
+  number={2},
+  pages={493--500},
+  year={2003},
+  publisher={ACS Publications}
+}
+
+@article{einstein1935can,
+  title={Can quantum-mechanical description of physical reality be considered complete?},
+  author={Einstein, Albert and Podolsky, Boris and Rosen, Nathan},
+  journal={Physical review},
+  volume={47},
+  number={10},
+  pages={777},
+  year={1935},
+  publisher={APS}
+}
+
+@Book{abramowitz+stegun,
+ author    = "Milton {Abramowitz} and Irene A. {Stegun}",
+ title     = "Handbook of Mathematical Functions with
+              Formulas, Graphs, and Mathematical Tables",
+ publisher = "Dover",
+ year      =  1964,
+ address   = "New York City",
+ edition   = "ninth Dover printing, tenth GPO printing"
+}
 
 ```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
 
-## Nulla
+## Zitieren
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
 
-## Orci
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
 
-## Phasellus
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+## Quellen und Litaratur

@@ -10,7 +10,8 @@
         "sidebar_label": "Introduction"
       },
       "latex-guidelines": {
-        "title": "latex-guidelines"
+        "title": "latex-guidelines",
+        "sidebar_label": "latex-guidelines"
       },
       "bibtex-guidelines": {
         "title": "BibTeX Guidelines"

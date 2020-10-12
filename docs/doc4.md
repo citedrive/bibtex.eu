@@ -10,7 +10,6 @@ sidebar_label: BibTeX Field types
 
 ## author
 
-
 ## booktitle
 
 ## email
