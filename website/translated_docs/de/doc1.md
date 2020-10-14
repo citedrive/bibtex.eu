@@ -4,15 +4,11 @@ title: Introduction to BibTeX
 sidebar_label: Introduction
 ---
 
-BibTeX ist
-
-
-
-## Geschichte
+## Einstieg
 
 ## Format
 
-Jede Literaturquelle (Buch, Paper etc.) kann mit allen Daten, die für das Zitieren und für die Angabe im Literaturverzeichnis gebraucht werden, im folgenden Weise gespeichert:
+Jede Literaturquelle (Buch, Paper etc.) kann mit den Informationsattributen, die für das Zitieren und für die Angabe im Literaturverzeichnis gebraucht werden, in folgender Weise gespeichert werden:
 
 ```tex
 @Entry-type{citeID,
@@ -34,11 +30,11 @@ Ein Beispiel für Buch:
 }
 ```
 `citeID` steht für eindeutige Kennzeichnung (Identifikation) einer Literaturquelle, auf die man sich beim Zitieren bezieht. Innerhalb eines Projektes und in allen .bib-Dateien muss die ID einmalig sein.
-Die `citeID` kann ein beliebiger String sein, wie etwa *article1* im obigen Beispiel. In vielen Fällen setzt sich diese Identifikation aus dem Nachnamen des ersten Authoren, dem Erscheinungsjahr und einem beliebiegen Wort aus dem Titel. Letzteres um Kollisionen zu vermeiden.
+Die `citeID` kann ein beliebiger String sein, wie etwa *article1*, wie im obigen Beispiel. In vielen Fällen setzt sich diese Identifikation aus dem Nachnamen des ersten Authoren, dem Erscheinungsjahr und einem beliebiegen Wort aus dem Titel - letzteres um Kollisionen zu vermeiden.
 
 >  Citedrive setzt einmalige und vollautomatische uuid, um Literaturquellen auch im Nachhinein zu bearbeiten.
 
-Hinweis: Manchmal und vorallem in älteren Dokumentation, wie etwa aus ... werden die also fieldtypes in konventioneller Klammer geschlossen.
+Hinweis: Manchmal und vorallem in älteren Dokumentation, wie etwa aus ... (edit here)
 
 
 ```tex
@@ -56,7 +52,7 @@ Hinweis: Manchmal und vorallem in älteren Dokumentation, wie etwa aus ... werde
 
 ## Literaturdatenbank `.bib-Datei`
 
-Die Literaturdatenbank ist eine einfache Textdatei (`.bib-datei`) in der alle Literaturquellen in dem Format, wie oben beschrieben, die der Nutzer für eine bestimmte Arbeit nutzen möchte, nacheinander  gesammelt werden. Eine bestimmte Reihenfolge ist nicht notwendig.
+Die Literaturdatenbank ist eine einfache Textdatei (`.bib-datei`) in der alle Literaturquellen in der oben beschrieben Weise, die der Nutzer zum Zitieren einer beliebigen Arbeit nutzen möchte, nacheinander gesammelt werden. Eine bestimmte Reihenfolge ist nicht notwendig.
 
 ### Beispiel
 
