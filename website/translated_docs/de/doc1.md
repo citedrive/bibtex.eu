@@ -6,6 +6,8 @@ sidebar_label: Introduction
 
 ## Einstieg
 
+In diesem Abschnitt
+
 ## Format
 
 Jede Literaturquelle (Buch, Paper etc.) kann mit den Informationsattributen, die für das Zitieren und für die Angabe im Literaturverzeichnis gebraucht werden, in folgender Weise gespeichert werden:
@@ -21,7 +23,7 @@ Jede Literaturquelle (Buch, Paper etc.) kann mit den Informationsattributen, die
 }
 ```
 
-Wobei `Entry-type` für Literaturtypen der zu zitierenden Quelle handelt, wie etwa `book`, `article`, `manual` (*.t. Buch, Zeitungs- oder Zeitschriftenartikel, Technische Dokumentation etc.*) handeln kann. Alle gültigen Entry-Types und dazugehörige Hinweise können im entsprechenden Kapitel Entry-types gelesen werden.
+Wobei `Entry-type` für Literaturtypen der zu zitierenden Quelle, wie etwa `book`, `article`, `manual` (*.t. Buch, Zeitungs- oder Zeitschriftenartikel, Technische Dokumentation etc.*) handeln kann. Alle gültigen Entry-Types und dazugehörige Hinweise können im entsprechenden Kapitel Entry-types gelesen werden.
 
 Ein Beispiel für Buch:
 ```tex
