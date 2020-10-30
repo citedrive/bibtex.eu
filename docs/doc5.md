@@ -19,6 +19,8 @@ In Europe, the state is not abbreviated but given in full.
 
 ## Examples
 
+### ``article``
+
 ### ``phdthesis``
 
 The author could add the university's address where the beneficiary PhD-Candidate has written his doctoral thesis, which the author wants to cite.
