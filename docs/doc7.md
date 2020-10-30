@@ -25,7 +25,7 @@ A natural indication such as ``{Firstname Lastname}`` is possible, but not vice 
 
 
 ## Notation: ``{Lastname, Firstname}``
-However, we recommend the following way ``{Lastname, Firstname}`` i.e., last name and first name separated by a comma. This way allows for more control to distinguish between the first and last man.
+However, we recommend the following way ``{Lastname, Firstname}`` i.e., last name and first name separated by a comma. This way allows for more control to distinguish between the first and last name.
 
 ### Example, ``{Lastname, Firstname}``
 
