@@ -9,6 +9,10 @@
         "title": "Introduction to BibTeX",
         "sidebar_label": "Introduction"
       },
+      "email": {
+        "title": "BibTeX Field types: email",
+        "sidebar_label": "email"
+      },
       "latex-guidelines": {
         "title": "latex-guidelines",
         "sidebar_label": "latex-guidelines"
@@ -35,6 +39,10 @@
       "citedrive-bibtex": {
         "title": "CiteDrive + LaTeX + BibTeX",
         "sidebar_label": "CiteDrive + BibTeX"
+      },
+      "booktitle": {
+        "title": "BibTeX Field types: booktitle",
+        "sidebar_label": "booktitle"
       }
     },
     "links": {
