@@ -2,7 +2,7 @@
   "docs": {
     "Getting started": ["intro"],
     "BibTeX Guidelines": ["bibtex-guidelines"],
-    "BibTeX Field types": ["field-types", "address", "annote", "author" , "booktitle",  "email"],
+    "BibTeX Field types": ["field-types", "address", "annote", "author" , "booktitle",  "email", "chapter", "doi"],
     "Citedrive + BibTeX": ["citedrive-bibtex"],
     "LaTeX Guidelines": ["latex-guidelines"]
   },

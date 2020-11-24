@@ -13,6 +13,26 @@
         "title": "BibTeX Field types: email",
         "sidebar_label": "email"
       },
+      "chapter": {
+        "title": "BibTeX Field types: chapter",
+        "sidebar_label": "chapter"
+      },
+      "doi": {
+        "title": "BibTeX Field types: doi",
+        "sidebar_label": "doi"
+      },
+      "edition": {
+        "title": "BibTeX Field types: edition",
+        "sidebar_label": "edition"
+      },
+      "howpublished": {
+        "title": "BibTeX Field types: howpublished",
+        "sidebar_label": "howpublished"
+      },
+      "institution": {
+        "title": "BibTeX Field types: institution",
+        "sidebar_label": "institution"
+      },
       "latex-guidelines": {
         "title": "latex-guidelines",
         "sidebar_label": "latex-guidelines"

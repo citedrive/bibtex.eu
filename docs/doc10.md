@@ -25,7 +25,7 @@ To specify email addresses, the following variants are recommended:
 ```tex
 
 @book{ ... ,
- author = {Muller {\tt morgner@uni-muenster.de}, John },
+ author = {Muller {\tt john.muller@example.com}, John },
 
  ...
 
