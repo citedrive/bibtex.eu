@@ -65,9 +65,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="/docs/en/intro">BibTeX Docs</Button>
+            <Button href={docUrl('https://citedrive.com/en')}>CiteDrive</Button>
+            <Button href={docUrl('https://citedrive.com/community/forum/7-bibtex/')}>BibTeX Forums</Button>
           </PromoSection>
         </div>
       </SplashContainer>

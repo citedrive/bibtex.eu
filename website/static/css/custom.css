@@ -49,3 +49,10 @@
 .navigationSlider .slidingNav ul li a:hover, .navigationSlider .slidingNav ul li.siteNavItemActive a, .navigationSlider .slidingNav ul li.siteNavGroupActive a {
      color: #444;
 }
+
+.languages-icon {
+    width: 20px;
+    background: #222;
+    padding: 6px;
+    border-radius: 3px;
+}

@@ -4,10 +4,6 @@ title: Introduction to BibTeX
 sidebar_label: Introduction
 ---
 
-## Entry
-
-In this section
-
 ## Format
 
 Each literature source (book, paper, etc.) can be stored with the information attributes needed for citation and for inclusion in the bibliography in the following way:
@@ -96,11 +92,3 @@ The bibliographic database is a simple text file ('bib-file') in which all bibli
 }
 
 ```
-
-## Quote
-
-
-
-
-
-## Sources and literature
