@@ -94,24 +94,9 @@ export default [
 },
 {
   path: '/docs',
-  component: ComponentCreator('/docs','4ab'),
+  component: ComponentCreator('/docs','4c6'),
   
   routes: [
-{
-  path: '/docs/bib-file',
-  component: ComponentCreator('/docs/bib-file','bfb'),
-  exact: true,
-},
-{
-  path: '/docs/entry-types',
-  component: ComponentCreator('/docs/entry-types','4ba'),
-  exact: true,
-},
-{
-  path: '/docs/intro',
-  component: ComponentCreator('/docs/intro','e84'),
-  exact: true,
-},
 {
   path: '/docs/overleaf/bibliography-styles/aabbrv',
   component: ComponentCreator('/docs/overleaf/bibliography-styles/aabbrv','872'),

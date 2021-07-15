@@ -14,17 +14,9 @@
           "sidebarFilePath": "/Users/garethii/Documents/GitHub/bibtex.eu/sidebars.js",
           "contentPath": "/Users/garethii/Documents/GitHub/bibtex.eu/docs",
           "contentPathLocalized": "/Users/garethii/Documents/GitHub/bibtex.eu/i18n/en/docusaurus-plugin-content-docs/current",
-          "mainDocId": "intro",
+          "mainDocId": "overleaf/bibliography-styles/unsrt",
           "sidebars": {
             "tutorialSidebar": [
-              {
-                "type": "doc",
-                "id": "intro"
-              },
-              {
-                "type": "doc",
-                "id": "bib-file"
-              },
               {
                 "type": "category",
                 "label": "Overleaf",
@@ -1266,17 +1258,10 @@
                   }
                 ],
                 "collapsed": true
-              },
-              {
-                "type": "doc",
-                "id": "entry-types"
               }
             ]
           },
           "permalinkToSidebar": {
-            "/docs/bib-file": "tutorialSidebar",
-            "/docs/entry-types": "tutorialSidebar",
-            "/docs/intro": "tutorialSidebar",
             "/docs/overleaf/bibliography-styles/aabbrv": "tutorialSidebar",
             "/docs/overleaf/bibliography-styles/aalpha": "tutorialSidebar",
             "/docs/overleaf/bibliography-styles/abbrv": "tutorialSidebar",
@@ -1586,73 +1571,6 @@
             "/docs/overleaf/bibliography-styles/xplain": "tutorialSidebar"
           },
           "docs": [
-            {
-              "unversionedId": "bib-file",
-              "id": "bib-file",
-              "isDocsHomePage": false,
-              "title": ".bib-file - bibliographic database /  information storage file",
-              "description": "",
-              "source": "@site/docs/bib-file.md",
-              "sourceDirName": ".",
-              "slug": "/bib-file",
-              "permalink": "/docs/bib-file",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/bib-file.md",
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Introduction to BibTeX",
-                "permalink": "/docs/intro"
-              },
-              "next": {
-                "title": "How to use unsrt (Base styles) at Overleaf?",
-                "permalink": "/docs/overleaf/bibliography-styles/unsrt"
-              }
-            },
-            {
-              "unversionedId": "entry-types",
-              "id": "entry-types",
-              "isDocsHomePage": false,
-              "title": "entry-types",
-              "description": "",
-              "source": "@site/docs/entry-types.md",
-              "sourceDirName": ".",
-              "slug": "/entry-types",
-              "permalink": "/docs/entry-types",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/entry-types.md",
-              "version": "current",
-              "frontMatter": {},
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "How to use vancouver (vancouver) at Overleaf?",
-                "permalink": "/docs/overleaf/bibliography-styles/vancouver"
-              }
-            },
-            {
-              "unversionedId": "intro",
-              "id": "intro",
-              "isDocsHomePage": false,
-              "title": "Introduction to BibTeX",
-              "description": "Format",
-              "source": "@site/docs/intro.md",
-              "sourceDirName": ".",
-              "slug": "/intro",
-              "permalink": "/docs/intro",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/intro.md",
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1
-              },
-              "sidebar": "tutorialSidebar",
-              "next": {
-                "title": ".bib-file - bibliographic database /  information storage file",
-                "permalink": "/docs/bib-file"
-              }
-            },
             {
               "unversionedId": "overleaf/bibliography-styles/aabbrv",
               "id": "overleaf/bibliography-styles/aabbrv",
@@ -9236,10 +9154,6 @@
                 "sidebar_position": 2
               },
               "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": ".bib-file - bibliographic database /  information storage file",
-                "permalink": "/docs/bib-file"
-              },
               "next": {
                 "title": "How to use acm (Base styles) at Overleaf?",
                 "permalink": "/docs/overleaf/bibliography-styles/acm"
@@ -9551,10 +9465,6 @@
               "previous": {
                 "title": "How to use vak (vak) at Overleaf?",
                 "permalink": "/docs/overleaf/bibliography-styles/vak"
-              },
-              "next": {
-                "title": "entry-types",
-                "permalink": "/docs/entry-types"
               }
             },
             {

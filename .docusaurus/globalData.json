@@ -8,23 +8,8 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "overleaf/bibliography-styles/unsrt",
           "docs": [
-            {
-              "id": "bib-file",
-              "path": "/docs/bib-file",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "entry-types",
-              "path": "/docs/entry-types",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "intro",
-              "path": "/docs/intro",
-              "sidebar": "tutorialSidebar"
-            },
             {
               "id": "overleaf/bibliography-styles/aabbrv",
               "path": "/docs/overleaf/bibliography-styles/aabbrv",

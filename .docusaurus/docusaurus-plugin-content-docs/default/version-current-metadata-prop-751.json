@@ -7,16 +7,6 @@
   "docsSidebars": {
     "tutorialSidebar": [
       {
-        "type": "link",
-        "label": "Introduction to BibTeX",
-        "href": "/docs/intro"
-      },
-      {
-        "type": "link",
-        "label": ".bib-file - bibliographic database /  information storage file",
-        "href": "/docs/bib-file"
-      },
-      {
         "type": "category",
         "label": "Overleaf",
         "items": [
@@ -1564,18 +1554,10 @@
           }
         ],
         "collapsed": true
-      },
-      {
-        "type": "link",
-        "label": "entry-types",
-        "href": "/docs/entry-types"
       }
     ]
   },
   "permalinkToSidebar": {
-    "/docs/bib-file": "tutorialSidebar",
-    "/docs/entry-types": "tutorialSidebar",
-    "/docs/intro": "tutorialSidebar",
     "/docs/overleaf/bibliography-styles/aabbrv": "tutorialSidebar",
     "/docs/overleaf/bibliography-styles/aalpha": "tutorialSidebar",
     "/docs/overleaf/bibliography-styles/abbrv": "tutorialSidebar",
