@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/jpc",
+  "id": "overleaf/bibliography-styles/jpc",
+  "isDocsHomePage": false,
+  "title": "How to use jpc (chem-journal) at Overleaf?",
+  "description": "jpc.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/jpc.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/jpc",
+  "permalink": "/docs/overleaf/bibliography-styles/jpc",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jpc.md",
+  "version": "current",
+  "sidebarPosition": 102,
+  "frontMatter": {
+    "sidebar_position": 102
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use jcc (chem-journal) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jcc"
+  },
+  "next": {
+    "title": "How to use revcompchem (chem-journal) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/revcompchem"
+  }
+}

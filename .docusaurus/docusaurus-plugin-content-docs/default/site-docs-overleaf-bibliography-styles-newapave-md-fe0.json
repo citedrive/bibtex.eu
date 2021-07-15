@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/newapave",
+  "id": "overleaf/bibliography-styles/newapave",
+  "isDocsHomePage": false,
+  "title": "How to use newapave (confproc) at Overleaf?",
+  "description": "newapave.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/newapave.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/newapave",
+  "permalink": "/docs/overleaf/bibliography-styles/newapave",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/newapave.md",
+  "version": "current",
+  "sidebarPosition": 112,
+  "frontMatter": {
+    "sidebar_position": 112
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use cc2 (computational-complexity) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/cc2"
+  },
+  "next": {
+    "title": "How to use databib (datatool) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/databib"
+  }
+}

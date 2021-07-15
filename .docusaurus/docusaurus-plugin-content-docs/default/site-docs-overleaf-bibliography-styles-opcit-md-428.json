@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/opcit",
+  "id": "overleaf/bibliography-styles/opcit",
+  "isDocsHomePage": false,
+  "title": "How to use opcit (opcit) at Overleaf?",
+  "description": "opcit.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/opcit.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/opcit",
+  "permalink": "/docs/overleaf/bibliography-styles/opcit",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/opcit.md",
+  "version": "current",
+  "sidebarPosition": 246,
+  "frontMatter": {
+    "sidebar_position": 246
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use nddiss2e (nddiss) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/nddiss2e"
+  },
+  "next": {
+    "title": "How to use jabbrv (pbibtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jabbrv"
+  }
+}

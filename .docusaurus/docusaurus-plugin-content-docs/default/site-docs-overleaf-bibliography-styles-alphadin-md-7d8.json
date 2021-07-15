@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/alphadin",
+  "id": "overleaf/bibliography-styles/alphadin",
+  "isDocsHomePage": false,
+  "title": "How to use alphadin (din1505) at Overleaf?",
+  "description": "alphadin.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/alphadin.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/alphadin",
+  "permalink": "/docs/overleaf/bibliography-styles/alphadin",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/alphadin.md",
+  "version": "current",
+  "sidebarPosition": 114,
+  "frontMatter": {
+    "sidebar_position": 114
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use databib (datatool) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/databib"
+  },
+  "next": {
+    "title": "How to use natdin (din1505) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/natdin"
+  }
+}

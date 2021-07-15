@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/klunamed",
+  "id": "overleaf/bibliography-styles/klunamed",
+  "isDocsHomePage": false,
+  "title": "How to use klunamed (kluwer) at Overleaf?",
+  "description": "klunamed.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/klunamed.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/klunamed",
+  "permalink": "/docs/overleaf/bibliography-styles/klunamed",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/klunamed.md",
+  "version": "current",
+  "sidebarPosition": 227,
+  "frontMatter": {
+    "sidebar_position": 227
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use klunum (kluwer) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/klunum"
+  },
+  "next": {
+    "title": "How to use ksfh_nat (ksfh_nat) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ksfh_nat"
+  }
+}

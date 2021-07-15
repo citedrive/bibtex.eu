@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/gerabbrv",
+  "id": "overleaf/bibliography-styles/gerabbrv",
+  "isDocsHomePage": false,
+  "title": "How to use gerabbrv (germbib) at Overleaf?",
+  "description": "gerabbrv.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/gerabbrv.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/gerabbrv",
+  "permalink": "/docs/overleaf/bibliography-styles/gerabbrv",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/gerabbrv.md",
+  "version": "current",
+  "sidebarPosition": 170,
+  "frontMatter": {
+    "sidebar_position": 170
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use gerapali (germbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/gerapali"
+  },
+  "next": {
+    "title": "How to use geralpha (germbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/geralpha"
+  }
+}

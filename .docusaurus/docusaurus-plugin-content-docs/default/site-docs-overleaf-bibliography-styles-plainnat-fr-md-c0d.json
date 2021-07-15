@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/plainnat-fr",
+  "id": "overleaf/bibliography-styles/plainnat-fr",
+  "isDocsHomePage": false,
+  "title": "How to use plainnat-fr (bib-fr) at Overleaf?",
+  "description": "plainnat-fr.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/plainnat-fr.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/plainnat-fr",
+  "permalink": "/docs/overleaf/bibliography-styles/plainnat-fr",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plainnat-fr.md",
+  "version": "current",
+  "sidebarPosition": 78,
+  "frontMatter": {
+    "sidebar_position": 78
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use ieeetr-fr (bib-fr) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ieeetr-fr"
+  },
+  "next": {
+    "title": "How to use alphahtmldater (bibhtml) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/alphahtmldater"
+  }
+}

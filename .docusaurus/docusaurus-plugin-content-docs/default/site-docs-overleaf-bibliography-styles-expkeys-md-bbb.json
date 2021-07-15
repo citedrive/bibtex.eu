@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/expkeys",
+  "id": "overleaf/bibliography-styles/expkeys",
+  "isDocsHomePage": false,
+  "title": "How to use expkeys (bibexport) at Overleaf?",
+  "description": "expkeys.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/expkeys.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/expkeys",
+  "permalink": "/docs/overleaf/bibliography-styles/expkeys",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/expkeys.md",
+  "version": "current",
+  "sidebarPosition": 67,
+  "frontMatter": {
+    "sidebar_position": 67
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use export (bibexport) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/export"
+  },
+  "next": {
+    "title": "How to use expcites (bibexport) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/expcites"
+  }
+}

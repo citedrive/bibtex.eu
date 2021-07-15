@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/besjournals",
+  "id": "overleaf/bibliography-styles/besjournals",
+  "isDocsHomePage": false,
+  "title": "How to use besjournals (besjournals) at Overleaf?",
+  "description": "besjournals.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/besjournals.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/besjournals",
+  "permalink": "/docs/overleaf/bibliography-styles/besjournals",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/besjournals.md",
+  "version": "current",
+  "sidebarPosition": 65,
+  "frontMatter": {
+    "sidebar_position": 65
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use babplain-lf (babelbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/babplain-lf"
+  },
+  "next": {
+    "title": "How to use export (bibexport) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/export"
+  }
+}

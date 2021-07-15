@@ -1,0 +1,26 @@
+{
+  "unversionedId": "bib-file",
+  "id": "bib-file",
+  "isDocsHomePage": false,
+  "title": ".bib-file - bibliographic database /  information storage file",
+  "description": "",
+  "source": "@site/docs/bib-file.md",
+  "sourceDirName": ".",
+  "slug": "/bib-file",
+  "permalink": "/docs/bib-file",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/bib-file.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to BibTeX",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "How to use unsrt (Base styles) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/unsrt"
+  }
+}

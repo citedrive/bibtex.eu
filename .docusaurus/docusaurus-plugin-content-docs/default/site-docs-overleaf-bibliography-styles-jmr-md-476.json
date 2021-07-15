@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/jmr",
+  "id": "overleaf/bibliography-styles/jmr",
+  "isDocsHomePage": false,
+  "title": "How to use jmr (harvard) at Overleaf?",
+  "description": "jmr.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/jmr.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/jmr",
+  "permalink": "/docs/overleaf/bibliography-styles/jmr",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jmr.md",
+  "version": "current",
+  "sidebarPosition": 201,
+  "frontMatter": {
+    "sidebar_position": 201
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use jphysicsB (harvard) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jphysicsB"
+  },
+  "next": {
+    "title": "How to use agsm (harvard) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/agsm"
+  }
+}

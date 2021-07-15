@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/inlinebib",
+  "id": "overleaf/bibliography-styles/inlinebib",
+  "isDocsHomePage": false,
+  "title": "How to use inlinebib (inlinebib) at Overleaf?",
+  "description": "inlinebib.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/inlinebib.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/inlinebib",
+  "permalink": "/docs/overleaf/bibliography-styles/inlinebib",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/inlinebib.md",
+  "version": "current",
+  "sidebarPosition": 218,
+  "frontMatter": {
+    "sidebar_position": 218
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use xplain (index) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/xplain"
+  },
+  "next": {
+    "title": "How to use iopart-num (iopart-num) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/iopart-num"
+  }
+}

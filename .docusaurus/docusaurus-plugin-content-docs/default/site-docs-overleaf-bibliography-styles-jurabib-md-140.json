@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/jurabib",
+  "id": "overleaf/bibliography-styles/jurabib",
+  "isDocsHomePage": false,
+  "title": "How to use jurabib (jurabib) at Overleaf?",
+  "description": "jurabib.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/jurabib.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/jurabib",
+  "permalink": "/docs/overleaf/bibliography-styles/jurabib",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jurabib.md",
+  "version": "current",
+  "sidebarPosition": 221,
+  "frontMatter": {
+    "sidebar_position": 221
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use jneurosci (jneurosci) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jneurosci"
+  },
+  "next": {
+    "title": "How to use jurunsrt (jurabib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jurunsrt"
+  }
+}

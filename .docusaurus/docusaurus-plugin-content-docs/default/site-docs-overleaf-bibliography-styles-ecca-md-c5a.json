@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/ecca",
+  "id": "overleaf/bibliography-styles/ecca",
+  "isDocsHomePage": false,
+  "title": "How to use ecca (economic) at Overleaf?",
+  "description": "ecca.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/ecca.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/ecca",
+  "permalink": "/docs/overleaf/bibliography-styles/ecca",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ecca.md",
+  "version": "current",
+  "sidebarPosition": 142,
+  "frontMatter": {
+    "sidebar_position": 142
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use aer (economic) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/aer"
+  },
+  "next": {
+    "title": "How to use ier (economic) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ier"
+  }
+}

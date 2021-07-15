@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/acm-fa",
+  "id": "overleaf/bibliography-styles/acm-fa",
+  "isDocsHomePage": false,
+  "title": "How to use acm-fa (persian-bib) at Overleaf?",
+  "description": "acm-fa.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/acm-fa.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/acm-fa",
+  "permalink": "/docs/overleaf/bibliography-styles/acm-fa",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/acm-fa.md",
+  "version": "current",
+  "sidebarPosition": 257,
+  "frontMatter": {
+    "sidebar_position": 257
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use perception (perception) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/perception"
+  },
+  "next": {
+    "title": "How to use ieeetr-fa (persian-bib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ieeetr-fa"
+  }
+}

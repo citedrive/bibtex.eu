@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/uestcthesis",
+  "id": "overleaf/bibliography-styles/uestcthesis",
+  "isDocsHomePage": false,
+  "title": "How to use uestcthesis (uestcthesis) at Overleaf?",
+  "description": "uestcthesis.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/uestcthesis.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/uestcthesis",
+  "permalink": "/docs/overleaf/bibliography-styles/uestcthesis",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/uestcthesis.md",
+  "version": "current",
+  "sidebarPosition": 301,
+  "frontMatter": {
+    "sidebar_position": 301
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use udesoftec (udesoftec) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/udesoftec"
+  },
+  "next": {
+    "title": "How to use UNAMThesis (unamthesis) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/UNAMThesis"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/aertt",
+  "id": "overleaf/bibliography-styles/aertt",
+  "isDocsHomePage": false,
+  "title": "How to use aertt (economic) at Overleaf?",
+  "description": "aertt.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/aertt.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/aertt",
+  "permalink": "/docs/overleaf/bibliography-styles/aertt",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aertt.md",
+  "version": "current",
+  "sidebarPosition": 146,
+  "frontMatter": {
+    "sidebar_position": 146
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use agecon (economic) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/agecon"
+  },
+  "next": {
+    "title": "How to use ecta (economic) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ecta"
+  }
+}

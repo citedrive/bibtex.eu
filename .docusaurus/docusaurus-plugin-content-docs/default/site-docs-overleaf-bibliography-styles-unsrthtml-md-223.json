@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/unsrthtml",
+  "id": "overleaf/bibliography-styles/unsrthtml",
+  "isDocsHomePage": false,
+  "title": "How to use unsrthtml (bibhtml) at Overleaf?",
+  "description": "unsrthtml.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/unsrthtml.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/unsrthtml",
+  "permalink": "/docs/overleaf/bibliography-styles/unsrthtml",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrthtml.md",
+  "version": "current",
+  "sidebarPosition": 85,
+  "frontMatter": {
+    "sidebar_position": 85
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use plainhtmldater (bibhtml) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/plainhtmldater"
+  },
+  "next": {
+    "title": "How to use plainhtmldate (bibhtml) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/plainhtmldate"
+  }
+}

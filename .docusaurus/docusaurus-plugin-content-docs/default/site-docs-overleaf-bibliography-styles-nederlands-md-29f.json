@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/nederlands",
+  "id": "overleaf/bibliography-styles/nederlands",
+  "isDocsHomePage": false,
+  "title": "How to use nederlands (harvard) at Overleaf?",
+  "description": "nederlands.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/nederlands.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/nederlands",
+  "permalink": "/docs/overleaf/bibliography-styles/nederlands",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/nederlands.md",
+  "version": "current",
+  "sidebarPosition": 204,
+  "frontMatter": {
+    "sidebar_position": 204
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use apsr (harvard) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/apsr"
+  },
+  "next": {
+    "title": "How to use hc-de (hc) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/hc-de"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/asa-fa",
+  "id": "overleaf/bibliography-styles/asa-fa",
+  "isDocsHomePage": false,
+  "title": "How to use asa-fa (persian-bib) at Overleaf?",
+  "description": "asa-fa.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/asa-fa.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/asa-fa",
+  "permalink": "/docs/overleaf/bibliography-styles/asa-fa",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/asa-fa.md",
+  "version": "current",
+  "sidebarPosition": 260,
+  "frontMatter": {
+    "sidebar_position": 260
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use chicago-fa (persian-bib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/chicago-fa"
+  },
+  "next": {
+    "title": "How to use unsrt-fa (persian-bib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/unsrt-fa"
+  }
+}

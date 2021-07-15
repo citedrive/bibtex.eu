@@ -11,8 +11,10 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import {FooterLinkItem, useThemeConfig} from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import isInternalUrl from '@docusaurus/isInternalUrl';
 import styles from './styles.module.css';
 import ThemedImage, {Props as ThemedImageProps} from '@theme/ThemedImage';
+import IconExternalLink from '@theme/IconExternalLink';
 
 function FooterLink({
   to,
@@ -35,7 +37,14 @@ function FooterLink({
             to: toUrl,
           })}
       {...props}>
-      {label}
+      {href && !isInternalUrl(href) ? (
+        <span>
+          {label}
+          <IconExternalLink />
+        </span>
+      ) : (
+        label
+      )}
     </Link>
   );
 }
@@ -71,7 +80,7 @@ function Footer(): JSX.Element | null {
             {links.map((linkItem, i) => (
               <div key={i} className="col footer__col">
                 {linkItem.title != null ? (
-                  <h4 className="footer__title">{linkItem.title}</h4>
+                  <div className="footer__title">{linkItem.title}</div>
                 ) : null}
                 {linkItem.items != null &&
                 Array.isArray(linkItem.items) &&

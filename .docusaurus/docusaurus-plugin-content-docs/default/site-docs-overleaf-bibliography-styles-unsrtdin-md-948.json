@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/unsrtdin",
+  "id": "overleaf/bibliography-styles/unsrtdin",
+  "isDocsHomePage": false,
+  "title": "How to use unsrtdin (din1505) at Overleaf?",
+  "description": "unsrtdin.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/unsrtdin.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/unsrtdin",
+  "permalink": "/docs/overleaf/bibliography-styles/unsrtdin",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrtdin.md",
+  "version": "current",
+  "sidebarPosition": 118,
+  "frontMatter": {
+    "sidebar_position": 118
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use plaindin (din1505) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/plaindin"
+  },
+  "next": {
+    "title": "How to use dinat (dinat) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/dinat"
+  }
+}

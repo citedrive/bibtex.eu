@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/apsrev",
+  "id": "overleaf/bibliography-styles/apsrev",
+  "isDocsHomePage": false,
+  "title": "How to use apsrev (revtex4) at Overleaf?",
+  "description": "apsrev.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/apsrev.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/apsrev",
+  "permalink": "/docs/overleaf/bibliography-styles/apsrev",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/apsrev.md",
+  "version": "current",
+  "sidebarPosition": 272,
+  "frontMatter": {
+    "sidebar_position": 272
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use aipnum4-1 (revtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/aipnum4-1"
+  },
+  "next": {
+    "title": "How to use apsrmp (revtex4) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/apsrmp"
+  }
+}

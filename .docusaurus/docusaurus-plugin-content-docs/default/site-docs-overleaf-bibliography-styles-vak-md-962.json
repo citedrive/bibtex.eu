@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/vak",
+  "id": "overleaf/bibliography-styles/vak",
+  "isDocsHomePage": false,
+  "title": "How to use vak (vak) at Overleaf?",
+  "description": "vak.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/vak.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/vak",
+  "permalink": "/docs/overleaf/bibliography-styles/vak",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/vak.md",
+  "version": "current",
+  "sidebarPosition": 307,
+  "frontMatter": {
+    "sidebar_position": 307
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use plainurl (urlbst) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/plainurl"
+  },
+  "next": {
+    "title": "How to use vancouver (vancouver) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/vancouver"
+  }
+}

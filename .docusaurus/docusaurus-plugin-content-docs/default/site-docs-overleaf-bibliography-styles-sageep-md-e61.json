@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/sageep",
+  "id": "overleaf/bibliography-styles/sageep",
+  "isDocsHomePage": false,
+  "title": "How to use sageep (sageep) at Overleaf?",
+  "description": "sageep.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/sageep.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/sageep",
+  "permalink": "/docs/overleaf/bibliography-styles/sageep",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/sageep.md",
+  "version": "current",
+  "sidebarPosition": 276,
+  "frontMatter": {
+    "sidebar_position": 276
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use rsc (rsc) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/rsc"
+  },
+  "next": {
+    "title": "How to use sapthesis (sapthesis) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/sapthesis"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/unsrt-fa",
+  "id": "overleaf/bibliography-styles/unsrt-fa",
+  "isDocsHomePage": false,
+  "title": "How to use unsrt-fa (persian-bib) at Overleaf?",
+  "description": "unsrt-fa.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/unsrt-fa.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/unsrt-fa",
+  "permalink": "/docs/overleaf/bibliography-styles/unsrt-fa",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrt-fa.md",
+  "version": "current",
+  "sidebarPosition": 261,
+  "frontMatter": {
+    "sidebar_position": 261
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use asa-fa (persian-bib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/asa-fa"
+  },
+  "next": {
+    "title": "How to use plainnat-fa (persian-bib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/plainnat-fa"
+  }
+}

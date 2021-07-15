@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/frplainnat-letters",
+  "id": "overleaf/bibliography-styles/frplainnat-letters",
+  "isDocsHomePage": false,
+  "title": "How to use frplainnat-letters (sort-by-letters) at Overleaf?",
+  "description": "frplainnat-letters.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/frplainnat-letters.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/frplainnat-letters",
+  "permalink": "/docs/overleaf/bibliography-styles/frplainnat-letters",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/frplainnat-letters.md",
+  "version": "current",
+  "sidebarPosition": 283,
+  "frontMatter": {
+    "sidebar_position": 283
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use siam-letters (sort-by-letters) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/siam-letters"
+  },
+  "next": {
+    "title": "How to use abbrv-letters (sort-by-letters) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/abbrv-letters"
+  }
+}

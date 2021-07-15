@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/bababbrv-lf",
+  "id": "overleaf/bibliography-styles/bababbrv-lf",
+  "isDocsHomePage": false,
+  "title": "How to use bababbrv-lf (babelbib) at Overleaf?",
+  "description": "bababbrv-lf.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/bababbrv-lf.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/bababbrv-lf",
+  "permalink": "/docs/overleaf/bibliography-styles/bababbrv-lf",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/bababbrv-lf.md",
+  "version": "current",
+  "sidebarPosition": 46,
+  "frontMatter": {
+    "sidebar_position": 46
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use ascelike (ascelike) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ascelike"
+  },
+  "next": {
+    "title": "How to use babunsrt-fl (babelbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/babunsrt-fl"
+  }
+}

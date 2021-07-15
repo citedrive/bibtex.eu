@@ -1,0 +1,22 @@
+{
+  "unversionedId": "fields",
+  "id": "fields",
+  "isDocsHomePage": false,
+  "title": "Field types",
+  "description": "address",
+  "source": "@site/docs/fields.md",
+  "sourceDirName": ".",
+  "slug": "/fields",
+  "permalink": "/docs/fields",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/fields.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction to BibTeX",
+    "permalink": "/docs/intro"
+  }
+}

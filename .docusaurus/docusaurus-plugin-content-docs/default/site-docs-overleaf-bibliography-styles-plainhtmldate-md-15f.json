@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/plainhtmldate",
+  "id": "overleaf/bibliography-styles/plainhtmldate",
+  "isDocsHomePage": false,
+  "title": "How to use plainhtmldate (bibhtml) at Overleaf?",
+  "description": "plainhtmldate.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/plainhtmldate.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/plainhtmldate",
+  "permalink": "/docs/overleaf/bibliography-styles/plainhtmldate",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plainhtmldate.md",
+  "version": "current",
+  "sidebarPosition": 86,
+  "frontMatter": {
+    "sidebar_position": 86
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use unsrthtml (bibhtml) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/unsrthtml"
+  },
+  "next": {
+    "title": "How to use bgteuabbr2 (bgteubner) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/bgteuabbr2"
+  }
+}

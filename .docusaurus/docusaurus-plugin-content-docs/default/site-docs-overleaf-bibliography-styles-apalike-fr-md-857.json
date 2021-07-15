@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/apalike-fr",
+  "id": "overleaf/bibliography-styles/apalike-fr",
+  "isDocsHomePage": false,
+  "title": "How to use apalike-fr (bib-fr) at Overleaf?",
+  "description": "apalike-fr.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/apalike-fr.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/apalike-fr",
+  "permalink": "/docs/overleaf/bibliography-styles/apalike-fr",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/apalike-fr.md",
+  "version": "current",
+  "sidebarPosition": 75,
+  "frontMatter": {
+    "sidebar_position": 75
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use abbrvnat-fr (bib-fr) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/abbrvnat-fr"
+  },
+  "next": {
+    "title": "How to use plain-fr (bib-fr) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/plain-fr"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/JAmChemSoc_all",
+  "id": "overleaf/bibliography-styles/JAmChemSoc_all",
+  "isDocsHomePage": false,
+  "title": "How to use JAmChemSoc_all (chembst) at Overleaf?",
+  "description": "JAmChemSocall.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/JAmChemSoc_all.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/JAmChemSoc_all",
+  "permalink": "/docs/overleaf/bibliography-styles/JAmChemSoc_all",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/JAmChemSoc_all.md",
+  "version": "current",
+  "sidebarPosition": 99,
+  "frontMatter": {
+    "sidebar_position": 99
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use cv (chembst) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/cv"
+  },
+  "next": {
+    "title": "How to use pccp (chem-journal) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/pccp"
+  }
+}

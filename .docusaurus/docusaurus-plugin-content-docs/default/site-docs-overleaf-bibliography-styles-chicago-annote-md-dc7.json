@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/chicago-annote",
+  "id": "overleaf/bibliography-styles/chicago-annote",
+  "isDocsHomePage": false,
+  "title": "How to use chicago-annote (chicago-annote) at Overleaf?",
+  "description": "chicago-annote.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/chicago-annote.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/chicago-annote",
+  "permalink": "/docs/overleaf/bibliography-styles/chicago-annote",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/chicago-annote.md",
+  "version": "current",
+  "sidebarPosition": 107,
+  "frontMatter": {
+    "sidebar_position": 107
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use chicago (chicago) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/chicago"
+  },
+  "next": {
+    "title": "How to use cmpj (cmpj) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/cmpj"
+  }
+}

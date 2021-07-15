@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/pccp",
+  "id": "overleaf/bibliography-styles/pccp",
+  "isDocsHomePage": false,
+  "title": "How to use pccp (chem-journal) at Overleaf?",
+  "description": "pccp.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/pccp.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/pccp",
+  "permalink": "/docs/overleaf/bibliography-styles/pccp",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/pccp.md",
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {
+    "sidebar_position": 100
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use JAmChemSoc_all (chembst) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/JAmChemSoc_all"
+  },
+  "next": {
+    "title": "How to use jcc (chem-journal) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jcc"
+  }
+}

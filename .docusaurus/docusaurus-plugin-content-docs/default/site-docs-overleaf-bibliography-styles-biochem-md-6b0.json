@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/biochem",
+  "id": "overleaf/bibliography-styles/biochem",
+  "isDocsHomePage": false,
+  "title": "How to use biochem (achemso) at Overleaf?",
+  "description": "biochem.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/biochem.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/biochem",
+  "permalink": "/docs/overleaf/bibliography-styles/biochem",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/biochem.md",
+  "version": "current",
+  "sidebarPosition": 19,
+  "frontMatter": {
+    "sidebar_position": 19
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use achemso (achemso) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/achemso"
+  },
+  "next": {
+    "title": "How to use adfathesis (adfathesis) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/adfathesis"
+  }
+}

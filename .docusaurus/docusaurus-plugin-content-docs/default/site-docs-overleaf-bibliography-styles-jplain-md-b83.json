@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/jplain",
+  "id": "overleaf/bibliography-styles/jplain",
+  "isDocsHomePage": false,
+  "title": "How to use jplain (pbibtex) at Overleaf?",
+  "description": "jplain.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/jplain.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/jplain",
+  "permalink": "/docs/overleaf/bibliography-styles/jplain",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jplain.md",
+  "version": "current",
+  "sidebarPosition": 249,
+  "frontMatter": {
+    "sidebar_position": 249
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use jname (pbibtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jname"
+  },
+  "next": {
+    "title": "How to use tipsj (pbibtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/tipsj"
+  }
+}

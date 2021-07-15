@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/bgteupln",
+  "id": "overleaf/bibliography-styles/bgteupln",
+  "isDocsHomePage": false,
+  "title": "How to use bgteupln (bgteubner) at Overleaf?",
+  "description": "bgteupln.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/bgteupln.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/bgteupln",
+  "permalink": "/docs/overleaf/bibliography-styles/bgteupln",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/bgteupln.md",
+  "version": "current",
+  "sidebarPosition": 90,
+  "frontMatter": {
+    "sidebar_position": 90
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use bgteupln3 (bgteubner) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/bgteupln3"
+  },
+  "next": {
+    "title": "How to use bgteupln2 (bgteubner) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/bgteupln2"
+  }
+}

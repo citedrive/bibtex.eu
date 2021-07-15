@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/abbrv",
+  "id": "overleaf/bibliography-styles/abbrv",
+  "isDocsHomePage": false,
+  "title": "How to use abbrv (Base styles) at Overleaf?",
+  "description": "abbrv.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/abbrv.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/abbrv",
+  "permalink": "/docs/overleaf/bibliography-styles/abbrv",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/abbrv.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use acm (Base styles) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/acm"
+  },
+  "next": {
+    "title": "How to use siam (Base styles) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/siam"
+  }
+}

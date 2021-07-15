@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/resphilosophica",
+  "id": "overleaf/bibliography-styles/resphilosophica",
+  "isDocsHomePage": false,
+  "title": "How to use resphilosophica (resphilosophica) at Overleaf?",
+  "description": "resphilosophica.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/resphilosophica.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/resphilosophica",
+  "permalink": "/docs/overleaf/bibliography-styles/resphilosophica",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/resphilosophica.md",
+  "version": "current",
+  "sidebarPosition": 267,
+  "frontMatter": {
+    "sidebar_position": 267
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use psuthesis (psu-thesis) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/psuthesis"
+  },
+  "next": {
+    "title": "How to use apsrmp4-1 (revtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/apsrmp4-1"
+  }
+}

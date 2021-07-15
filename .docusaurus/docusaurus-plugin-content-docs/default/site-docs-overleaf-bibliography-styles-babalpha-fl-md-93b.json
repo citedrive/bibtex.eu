@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/babalpha-fl",
+  "id": "overleaf/bibliography-styles/babalpha-fl",
+  "isDocsHomePage": false,
+  "title": "How to use babalpha-fl (babelbib) at Overleaf?",
+  "description": "babalpha-fl.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/babalpha-fl.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/babalpha-fl",
+  "permalink": "/docs/overleaf/bibliography-styles/babalpha-fl",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/babalpha-fl.md",
+  "version": "current",
+  "sidebarPosition": 49,
+  "frontMatter": {
+    "sidebar_position": 49
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use bababbr3-lf (babelbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/bababbr3-lf"
+  },
+  "next": {
+    "title": "How to use bababbr3 (babelbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/bababbr3"
+  }
+}

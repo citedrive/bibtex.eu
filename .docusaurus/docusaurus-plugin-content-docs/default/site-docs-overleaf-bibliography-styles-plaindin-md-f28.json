@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/plaindin",
+  "id": "overleaf/bibliography-styles/plaindin",
+  "isDocsHomePage": false,
+  "title": "How to use plaindin (din1505) at Overleaf?",
+  "description": "plaindin.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/plaindin.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/plaindin",
+  "permalink": "/docs/overleaf/bibliography-styles/plaindin",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plaindin.md",
+  "version": "current",
+  "sidebarPosition": 117,
+  "frontMatter": {
+    "sidebar_position": 117
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use abbrvdin (din1505) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/abbrvdin"
+  },
+  "next": {
+    "title": "How to use unsrtdin (din1505) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/unsrtdin"
+  }
+}

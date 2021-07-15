@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/unsrt-fr",
+  "id": "overleaf/bibliography-styles/unsrt-fr",
+  "isDocsHomePage": false,
+  "title": "How to use unsrt-fr (bib-fr) at Overleaf?",
+  "description": "unsrt-fr.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/unsrt-fr.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/unsrt-fr",
+  "permalink": "/docs/overleaf/bibliography-styles/unsrt-fr",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrt-fr.md",
+  "version": "current",
+  "sidebarPosition": 69,
+  "frontMatter": {
+    "sidebar_position": 69
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use expcites (bibexport) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/expcites"
+  },
+  "next": {
+    "title": "How to use siam-fr (bib-fr) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/siam-fr"
+  }
+}

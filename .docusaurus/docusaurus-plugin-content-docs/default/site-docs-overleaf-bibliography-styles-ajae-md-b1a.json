@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/ajae",
+  "id": "overleaf/bibliography-styles/ajae",
+  "isDocsHomePage": false,
+  "title": "How to use ajae (economic) at Overleaf?",
+  "description": "ajae.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/ajae.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/ajae",
+  "permalink": "/docs/overleaf/bibliography-styles/ajae",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ajae.md",
+  "version": "current",
+  "sidebarPosition": 154,
+  "frontMatter": {
+    "sidebar_position": 154
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use itaxpf (economic) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/itaxpf"
+  },
+  "next": {
+    "title": "How to use jae (economic) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jae"
+  }
+}

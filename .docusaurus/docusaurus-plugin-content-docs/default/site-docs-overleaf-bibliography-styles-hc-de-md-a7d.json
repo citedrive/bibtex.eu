@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/hc-de",
+  "id": "overleaf/bibliography-styles/hc-de",
+  "isDocsHomePage": false,
+  "title": "How to use hc-de (hc) at Overleaf?",
+  "description": "hc-de.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/hc-de.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/hc-de",
+  "permalink": "/docs/overleaf/bibliography-styles/hc-de",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/hc-de.md",
+  "version": "current",
+  "sidebarPosition": 205,
+  "frontMatter": {
+    "sidebar_position": 205
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use nederlands (harvard) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/nederlands"
+  },
+  "next": {
+    "title": "How to use hc-en (hc) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/hc-en"
+  }
+}

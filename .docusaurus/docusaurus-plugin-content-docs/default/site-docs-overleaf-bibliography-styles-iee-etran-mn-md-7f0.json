@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/IEEEtranMN",
+  "id": "overleaf/bibliography-styles/IEEEtranMN",
+  "isDocsHomePage": false,
+  "title": "How to use IEEEtranMN (mciteplus) at Overleaf?",
+  "description": "IEEEtranMN.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/IEEEtranMN.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/IEEEtranMN",
+  "permalink": "/docs/overleaf/bibliography-styles/IEEEtranMN",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/IEEEtranMN.md",
+  "version": "current",
+  "sidebarPosition": 230,
+  "frontMatter": {
+    "sidebar_position": 230
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use listbib (listbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/listbib"
+  },
+  "next": {
+    "title": "How to use apsrmpM (mciteplus) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/apsrmpM"
+  }
+}

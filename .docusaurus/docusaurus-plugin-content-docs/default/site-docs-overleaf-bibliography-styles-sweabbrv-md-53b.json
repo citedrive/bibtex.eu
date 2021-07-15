@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/sweabbrv",
+  "id": "overleaf/bibliography-styles/sweabbrv",
+  "isDocsHomePage": false,
+  "title": "How to use sweabbrv (swebib) at Overleaf?",
+  "description": "sweabbrv.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/sweabbrv.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/sweabbrv",
+  "permalink": "/docs/overleaf/bibliography-styles/sweabbrv",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/sweabbrv.md",
+  "version": "current",
+  "sidebarPosition": 294,
+  "frontMatter": {
+    "sidebar_position": 294
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use sweplnat (swebib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/sweplnat"
+  },
+  "next": {
+    "title": "How to use sweplain (swebib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/sweplain"
+  }
+}

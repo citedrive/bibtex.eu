@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/junsrt",
+  "id": "overleaf/bibliography-styles/junsrt",
+  "isDocsHomePage": false,
+  "title": "How to use junsrt (pbibtex) at Overleaf?",
+  "description": "junsrt.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/junsrt.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/junsrt",
+  "permalink": "/docs/overleaf/bibliography-styles/junsrt",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/junsrt.md",
+  "version": "current",
+  "sidebarPosition": 251,
+  "frontMatter": {
+    "sidebar_position": 251
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use tipsj (pbibtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/tipsj"
+  },
+  "next": {
+    "title": "How to use jorsj (pbibtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jorsj"
+  }
+}

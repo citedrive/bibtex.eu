@@ -1,0 +1,19 @@
+{
+  "unversionedId": "entry-types",
+  "id": "entry-types",
+  "isDocsHomePage": false,
+  "title": "entry-types",
+  "description": "",
+  "source": "@site/docs/entry-types.md",
+  "sourceDirName": ".",
+  "slug": "/entry-types",
+  "permalink": "/docs/entry-types",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/entry-types.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use vancouver (vancouver) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/vancouver"
+  }
+}

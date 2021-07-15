@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/plain",
+  "id": "overleaf/bibliography-styles/plain",
+  "isDocsHomePage": false,
+  "title": "How to use plain (Base styles) at Overleaf?",
+  "description": "plain.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/plain.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/plain",
+  "permalink": "/docs/overleaf/bibliography-styles/plain",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plain.md",
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use ieeetr (Base styles) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ieeetr"
+  },
+  "next": {
+    "title": "How to use abntex2-num (abntex2) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/abntex2-num"
+  }
+}

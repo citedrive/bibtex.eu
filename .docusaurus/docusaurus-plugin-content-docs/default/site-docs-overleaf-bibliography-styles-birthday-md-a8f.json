@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/birthday",
+  "id": "overleaf/bibliography-styles/birthday",
+  "isDocsHomePage": false,
+  "title": "How to use birthday (directory) at Overleaf?",
+  "description": "birthday.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/birthday.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/birthday",
+  "permalink": "/docs/overleaf/bibliography-styles/birthday",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/birthday.md",
+  "version": "current",
+  "sidebarPosition": 125,
+  "frontMatter": {
+    "sidebar_position": 125
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use email (directory) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/email"
+  },
+  "next": {
+    "title": "How to use address (directory) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/address"
+  }
+}

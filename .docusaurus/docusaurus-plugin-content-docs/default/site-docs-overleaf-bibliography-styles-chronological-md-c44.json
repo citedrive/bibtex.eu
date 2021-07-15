@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/chronological",
+  "id": "overleaf/bibliography-styles/chronological",
+  "isDocsHomePage": false,
+  "title": "How to use chronological (multibibliography) at Overleaf?",
+  "description": "chronological.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/chronological.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/chronological",
+  "permalink": "/docs/overleaf/bibliography-styles/chronological",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/chronological.md",
+  "version": "current",
+  "sidebarPosition": 239,
+  "frontMatter": {
+    "sidebar_position": 239
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use mbunsrtdin (multibib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/mbunsrtdin"
+  },
+  "next": {
+    "title": "How to use munich (munich) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/munich"
+  }
+}

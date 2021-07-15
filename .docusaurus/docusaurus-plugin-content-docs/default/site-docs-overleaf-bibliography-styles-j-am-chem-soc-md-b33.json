@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/JAmChemSoc",
+  "id": "overleaf/bibliography-styles/JAmChemSoc",
+  "isDocsHomePage": false,
+  "title": "How to use JAmChemSoc (chembst) at Overleaf?",
+  "description": "JAmChemSoc.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/JAmChemSoc.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/JAmChemSoc",
+  "permalink": "/docs/overleaf/bibliography-styles/JAmChemSoc",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/JAmChemSoc.md",
+  "version": "current",
+  "sidebarPosition": 97,
+  "frontMatter": {
+    "sidebar_position": 97
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use InorgChem (chembst) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/InorgChem"
+  },
+  "next": {
+    "title": "How to use cv (chembst) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/cv"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/psuthesis",
+  "id": "overleaf/bibliography-styles/psuthesis",
+  "isDocsHomePage": false,
+  "title": "How to use psuthesis (psu-thesis) at Overleaf?",
+  "description": "psuthesis.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/psuthesis.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/psuthesis",
+  "permalink": "/docs/overleaf/bibliography-styles/psuthesis",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/psuthesis.md",
+  "version": "current",
+  "sidebarPosition": 266,
+  "frontMatter": {
+    "sidebar_position": 266
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use papalike (przechlewski-book) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/papalike"
+  },
+  "next": {
+    "title": "How to use resphilosophica (resphilosophica) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/resphilosophica"
+  }
+}

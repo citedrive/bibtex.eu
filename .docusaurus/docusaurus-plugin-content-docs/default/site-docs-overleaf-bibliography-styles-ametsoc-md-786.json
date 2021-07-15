@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/ametsoc",
+  "id": "overleaf/bibliography-styles/ametsoc",
+  "isDocsHomePage": false,
+  "title": "How to use ametsoc (ametsoc) at Overleaf?",
+  "description": "ametsoc.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/ametsoc.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/ametsoc",
+  "permalink": "/docs/overleaf/bibliography-styles/ametsoc",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ametsoc.md",
+  "version": "current",
+  "sidebarPosition": 32,
+  "frontMatter": {
+    "sidebar_position": 32
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use ajl (ajl) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ajl"
+  },
+  "next": {
+    "title": "How to use amsry (amsrefs) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/amsry"
+  }
+}

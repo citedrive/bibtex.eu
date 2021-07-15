@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/gost780",
+  "id": "overleaf/bibliography-styles/gost780",
+  "isDocsHomePage": false,
+  "title": "How to use gost780 (gost) at Overleaf?",
+  "description": "gost780.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/gost780.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/gost780",
+  "permalink": "/docs/overleaf/bibliography-styles/gost780",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/gost780.md",
+  "version": "current",
+  "sidebarPosition": 188,
+  "frontMatter": {
+    "sidebar_position": 188
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use ugost2008s (gost) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ugost2008s"
+  },
+  "next": {
+    "title": "How to use gost2008ls (gost) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/gost2008ls"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/aipauth4-1",
+  "id": "overleaf/bibliography-styles/aipauth4-1",
+  "isDocsHomePage": false,
+  "title": "How to use aipauth4-1 (revtex) at Overleaf?",
+  "description": "aipauth4-1.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/aipauth4-1.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/aipauth4-1",
+  "permalink": "/docs/overleaf/bibliography-styles/aipauth4-1",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aipauth4-1.md",
+  "version": "current",
+  "sidebarPosition": 269,
+  "frontMatter": {
+    "sidebar_position": 269
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use apsrmp4-1 (revtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/apsrmp4-1"
+  },
+  "next": {
+    "title": "How to use apsrev4-1 (revtex) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/apsrev4-1"
+  }
+}

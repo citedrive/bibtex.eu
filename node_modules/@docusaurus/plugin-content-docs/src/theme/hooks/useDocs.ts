@@ -6,8 +6,8 @@
  */
 
 import {useLocation} from '@docusaurus/router';
-import {
-  useAllPluginInstancesData,
+import useGlobalData, {
+  // useAllPluginInstancesData,
   usePluginData,
 } from '@docusaurus/useGlobalData';
 
@@ -24,8 +24,15 @@ import {
   GetActivePluginOptions,
 } from '../../client/docsClientUtils';
 
+// Important to use a constant object to avoid React useEffect executions etc...,
+// see https://github.com/facebook/docusaurus/issues/5089
+const StableEmptyObject = {};
+
+// Not using useAllPluginInstancesData() because in blog-only mode, docs hooks are still used by the theme
+// We need a fail-safe fallback when the docs plugin is not in use
 export const useAllDocsData = (): Record<string, GlobalPluginData> =>
-  useAllPluginInstancesData('docusaurus-plugin-content-docs');
+  // useAllPluginInstancesData('docusaurus-plugin-content-docs');
+  useGlobalData()['docusaurus-plugin-content-docs'] ?? StableEmptyObject;
 
 export const useDocsData = (pluginId: string | undefined): GlobalPluginData =>
   usePluginData('docusaurus-plugin-content-docs', pluginId) as GlobalPluginData;

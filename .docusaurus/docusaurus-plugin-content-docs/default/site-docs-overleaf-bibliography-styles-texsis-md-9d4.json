@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/texsis",
+  "id": "overleaf/bibliography-styles/texsis",
+  "isDocsHomePage": false,
+  "title": "How to use texsis (texsis) at Overleaf?",
+  "description": "texsis.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/texsis.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/texsis",
+  "permalink": "/docs/overleaf/bibliography-styles/texsis",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/texsis.md",
+  "version": "current",
+  "sidebarPosition": 297,
+  "frontMatter": {
+    "sidebar_position": 297
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use swealpha (swebib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/swealpha"
+  },
+  "next": {
+    "title": "How to use thubib (thuthesis) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/thubib"
+  }
+}

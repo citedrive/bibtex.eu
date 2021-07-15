@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/phone",
+  "id": "overleaf/bibliography-styles/phone",
+  "isDocsHomePage": false,
+  "title": "How to use phone (directory) at Overleaf?",
+  "description": "phone.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/phone.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/phone",
+  "permalink": "/docs/overleaf/bibliography-styles/phone",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/phone.md",
+  "version": "current",
+  "sidebarPosition": 128,
+  "frontMatter": {
+    "sidebar_position": 128
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use letter (directory) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/letter"
+  },
+  "next": {
+    "title": "How to use gost705s (disser) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/gost705s"
+  }
+}

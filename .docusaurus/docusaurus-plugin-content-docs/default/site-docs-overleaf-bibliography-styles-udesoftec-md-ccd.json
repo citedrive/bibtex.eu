@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/udesoftec",
+  "id": "overleaf/bibliography-styles/udesoftec",
+  "isDocsHomePage": false,
+  "title": "How to use udesoftec (udesoftec) at Overleaf?",
+  "description": "udesoftec.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/udesoftec.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/udesoftec",
+  "permalink": "/docs/overleaf/bibliography-styles/udesoftec",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/udesoftec.md",
+  "version": "current",
+  "sidebarPosition": 300,
+  "frontMatter": {
+    "sidebar_position": 300
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use ltugbib (tugboat) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/ltugbib"
+  },
+  "next": {
+    "title": "How to use uestcthesis (uestcthesis) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/uestcthesis"
+  }
+}

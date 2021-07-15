@@ -1,0 +1,1361 @@
+{
+  "/-deb": {
+    "component": "component---site-src-pages-index-jsc-4-f-f99",
+    "config": "config---5-e-9-4f3"
+  },
+  "/__docusaurus/debug-3d6": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/config-914": {
+    "component": "component---theme-debug-config-23-a-2ff"
+  },
+  "/__docusaurus/debug/content-c28": {
+    "component": "component---theme-debug-contentba-8-ce7",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-3cf": {
+    "component": "component---theme-debug-global-dataede-0fa"
+  },
+  "/__docusaurus/debug/metadata-31b": {
+    "component": "component---theme-debug-site-metadata-68-e-3d4"
+  },
+  "/__docusaurus/debug/registry-0da": {
+    "component": "component---theme-debug-registry-679-501"
+  },
+  "/__docusaurus/debug/routes-244": {
+    "component": "component---theme-debug-routes-946-699"
+  },
+  "/blog-569": {
+    "component": "component---theme-blog-list-pagea-6-a-7ba",
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaf-1-856"
+      },
+      {
+        "content": "content---blog-357-22b"
+      },
+      {
+        "content": "content---blog-8-e-9-35c"
+      }
+    ],
+    "metadata": "metadata---blogb-2-b-df1"
+  },
+  "/blog/hello-world-07a": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-hello-worldd-61-086"
+  },
+  "/blog/hola-6e6": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-holabdd-150"
+  },
+  "/blog/tags-e13": {
+    "component": "component---theme-blog-tags-list-page-01-a-d0b",
+    "sidebar": "sidebar---blog-814-8ac",
+    "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/docusaurus-738": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaf-1-856"
+      },
+      {
+        "content": "content---blog-357-22b"
+      },
+      {
+        "content": "content---blog-8-e-9-35c"
+      }
+    ],
+    "metadata": "metadata---blog-tags-docusaurusa-80-728"
+  },
+  "/blog/tags/facebook-2fe": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaf-1-856"
+      }
+    ],
+    "metadata": "metadata---blog-tags-facebook-031-c52"
+  },
+  "/blog/tags/hello-263": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blogaf-1-856"
+      },
+      {
+        "content": "content---blog-357-22b"
+      }
+    ],
+    "metadata": "metadata---blog-tags-hello-30-a-bed"
+  },
+  "/blog/tags/hola-8b3": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-8-e-9-35c"
+      }
+    ],
+    "metadata": "metadata---blog-tags-holae-16-18a"
+  },
+  "/blog/welcome-015": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcome-286-e55"
+  },
+  "/markdown-page-be1": {
+    "component": "component---theme-mdx-page-1-f-3-b90",
+    "content": "content---markdown-page-393-028"
+  },
+  "/docs-4ab": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/bib-file-bfb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-bib-filea-80-4d6"
+  },
+  "/docs/entry-types-4ba": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-entry-types-3-a-6-672"
+  },
+  "/docs/intro-e84": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/overleaf/bibliography-styles/aabbrv-872": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aabbrv-44-d-b10"
+  },
+  "/docs/overleaf/bibliography-styles/aalpha-9bb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aalphaefb-98b"
+  },
+  "/docs/overleaf/bibliography-styles/abbrv-9d3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrv-00-f-907"
+  },
+  "/docs/overleaf/bibliography-styles/abbrv-fr-038": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrv-frd-76-3c7"
+  },
+  "/docs/overleaf/bibliography-styles/abbrv-letters-322": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrv-letterse-3-a-143"
+  },
+  "/docs/overleaf/bibliography-styles/abbrvcnb-956": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrvcnbb-8-c-ea3"
+  },
+  "/docs/overleaf/bibliography-styles/abbrvdin-5e5": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrvdin-3-e-3-c7a"
+  },
+  "/docs/overleaf/bibliography-styles/abbrvhtml-032": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrvhtml-04-b-9af"
+  },
+  "/docs/overleaf/bibliography-styles/abbrvnat-d27": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrvnatf-97-306"
+  },
+  "/docs/overleaf/bibliography-styles/abbrvnat-fr-09c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrvnat-fr-9-b-3-3c4"
+  },
+  "/docs/overleaf/bibliography-styles/abbrvurl-24f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abbrvurlb-2-f-a1e"
+  },
+  "/docs/overleaf/bibliography-styles/abntex2-alf-0a7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abntex-2-alf-10-e-38d"
+  },
+  "/docs/overleaf/bibliography-styles/abntex2-num-119": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-abntex-2-numb-9-b-78c"
+  },
+  "/docs/overleaf/bibliography-styles/achemso-5e1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-achemso-142-497"
+  },
+  "/docs/overleaf/bibliography-styles/achicago-2c7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-achicago-4-ed-ca3"
+  },
+  "/docs/overleaf/bibliography-styles/acm-8d3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-acm-408-e8c"
+  },
+  "/docs/overleaf/bibliography-styles/acm-fa-d66": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-acm-fae-9-d-cc3"
+  },
+  "/docs/overleaf/bibliography-styles/address-2db": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-addressd-82-0a9"
+  },
+  "/docs/overleaf/bibliography-styles/address-html-e96": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-address-htmlc-25-e8f"
+  },
+  "/docs/overleaf/bibliography-styles/address-ldif-d3e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-address-ldif-703-336"
+  },
+  "/docs/overleaf/bibliography-styles/address-vcard-115": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-address-vcard-9-f-9-491"
+  },
+  "/docs/overleaf/bibliography-styles/adfathesis-b7a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-adfathesisa-58-d05"
+  },
+  "/docs/overleaf/bibliography-styles/adrbirthday-787": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-adrbirthday-298-131"
+  },
+  "/docs/overleaf/bibliography-styles/adrconv-e33": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-adrconv-47-c-3ef"
+  },
+  "/docs/overleaf/bibliography-styles/adrfax-08c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-adrfax-7-ce-3c4"
+  },
+  "/docs/overleaf/bibliography-styles/aer-ce4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aer-657-1c6"
+  },
+  "/docs/overleaf/bibliography-styles/aertt-87c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aertt-4-c-3-83f"
+  },
+  "/docs/overleaf/bibliography-styles/agecon-98a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-agecon-649-2d9"
+  },
+  "/docs/overleaf/bibliography-styles/agsm-f13": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-agsmba-8-ee8"
+  },
+  "/docs/overleaf/bibliography-styles/agu-368": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-agufbf-77b"
+  },
+  "/docs/overleaf/bibliography-styles/agu04-278": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-agu-04-d-02-490"
+  },
+  "/docs/overleaf/bibliography-styles/agufull-c36": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-agufull-27-f-2ef"
+  },
+  "/docs/overleaf/bibliography-styles/agufull04-fda": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-agufull-043-d-8-c11"
+  },
+  "/docs/overleaf/bibliography-styles/aiaa-fb4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aiaa-228-43e"
+  },
+  "/docs/overleaf/bibliography-styles/aichej-613": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aichej-78-a-114"
+  },
+  "/docs/overleaf/bibliography-styles/aipauth4-1-2a0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aipauth-4-169-c-bf2"
+  },
+  "/docs/overleaf/bibliography-styles/aipnum4-1-c10": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aipnum-4-1692-e7a"
+  },
+  "/docs/overleaf/bibliography-styles/ajae-2db": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ajaeb-1-a-3bf"
+  },
+  "/docs/overleaf/bibliography-styles/ajl-030": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ajl-9-a-8-819"
+  },
+  "/docs/overleaf/bibliography-styles/alpha-f11": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alphac-6-d-680"
+  },
+  "/docs/overleaf/bibliography-styles/alpha-fr-d68": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alpha-fr-0-d-8-3bf"
+  },
+  "/docs/overleaf/bibliography-styles/alpha-letters-a8a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alpha-letters-346-2d7"
+  },
+  "/docs/overleaf/bibliography-styles/alphadin-ce1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alphadin-7-d-8-31e"
+  },
+  "/docs/overleaf/bibliography-styles/alphahtml-f79": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alphahtml-071-a85"
+  },
+  "/docs/overleaf/bibliography-styles/alphahtmldate-e2d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alphahtmldate-7-dc-90d"
+  },
+  "/docs/overleaf/bibliography-styles/alphahtmldater-5f1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alphahtmldaterac-8-c8e"
+  },
+  "/docs/overleaf/bibliography-styles/alphaurl-384": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-alphaurl-87-e-ba1"
+  },
+  "/docs/overleaf/bibliography-styles/ametsoc-1c0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ametsoc-786-26e"
+  },
+  "/docs/overleaf/bibliography-styles/amsra-e56": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-amsrad-64-d7d"
+  },
+  "/docs/overleaf/bibliography-styles/amsrn-0ad": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-amsrnef-4-6a3"
+  },
+  "/docs/overleaf/bibliography-styles/amsrs-03e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-amsrsa-09-104"
+  },
+  "/docs/overleaf/bibliography-styles/amsru-2ba": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-amsru-8-bb-5b7"
+  },
+  "/docs/overleaf/bibliography-styles/amsry-fe4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-amsryd-05-05d"
+  },
+  "/docs/overleaf/bibliography-styles/angew-363": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-angew-7-d-9-6bc"
+  },
+  "/docs/overleaf/bibliography-styles/anotit-3e1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-anotit-268-ddc"
+  },
+  "/docs/overleaf/bibliography-styles/aomalpha-4a0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aomalpha-157-804"
+  },
+  "/docs/overleaf/bibliography-styles/aomplain-a2b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aomplaind-19-6f3"
+  },
+  "/docs/overleaf/bibliography-styles/apacann-edb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apacannd-85-660"
+  },
+  "/docs/overleaf/bibliography-styles/apacannx-ff4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apacannxd-1-c-401"
+  },
+  "/docs/overleaf/bibliography-styles/apacite-4e4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apacitece-5-b6a"
+  },
+  "/docs/overleaf/bibliography-styles/apacitex-fa0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apacitex-263-fd4"
+  },
+  "/docs/overleaf/bibliography-styles/apalike-e91": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apalikea-91-120"
+  },
+  "/docs/overleaf/bibliography-styles/apalike-fr-c3c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apalike-fr-857-9e8"
+  },
+  "/docs/overleaf/bibliography-styles/apalike-letters-8ef": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apalike-lettersf-8-d-df4"
+  },
+  "/docs/overleaf/bibliography-styles/apalike2-524": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apalike-2-c-48-e8d"
+  },
+  "/docs/overleaf/bibliography-styles/apecon-b7a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apecon-941-47b"
+  },
+  "/docs/overleaf/bibliography-styles/aplain-b4e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aplaind-82-971"
+  },
+  "/docs/overleaf/bibliography-styles/apsr-1bd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apsr-2-f-5-297"
+  },
+  "/docs/overleaf/bibliography-styles/apsrev-de5": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apsreva-80-470"
+  },
+  "/docs/overleaf/bibliography-styles/apsrev4-1-a8b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apsrev-4-1446-6b8"
+  },
+  "/docs/overleaf/bibliography-styles/apsrevM-eee": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apsrev-me-32-164"
+  },
+  "/docs/overleaf/bibliography-styles/apsrmp-5de": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apsrmp-4-be-9af"
+  },
+  "/docs/overleaf/bibliography-styles/apsrmp4-1-05d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apsrmp-4-1423-13c"
+  },
+  "/docs/overleaf/bibliography-styles/apsrmpM-139": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-apsrmp-m-246-1a7"
+  },
+  "/docs/overleaf/bibliography-styles/asa-fa-e1f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-asa-fa-117-efd"
+  },
+  "/docs/overleaf/bibliography-styles/ascelike-31d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ascelike-703-cc2"
+  },
+  "/docs/overleaf/bibliography-styles/aunsnot-541": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aunsnot-448-350"
+  },
+  "/docs/overleaf/bibliography-styles/aunsrt-0cf": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-aunsrt-28-d-147"
+  },
+  "/docs/overleaf/bibliography-styles/bababbr3-a0a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bababbr-3045-9c7"
+  },
+  "/docs/overleaf/bibliography-styles/bababbr3-fl-ce1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bababbr-3-flfca-c03"
+  },
+  "/docs/overleaf/bibliography-styles/bababbr3-lf-ea3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bababbr-3-lfd-5-e-bfe"
+  },
+  "/docs/overleaf/bibliography-styles/bababbrv-551": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bababbrv-147-9e1"
+  },
+  "/docs/overleaf/bibliography-styles/bababbrv-fl-ae2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bababbrv-flcdc-a96"
+  },
+  "/docs/overleaf/bibliography-styles/bababbrv-lf-112": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bababbrv-lfd-01-ce6"
+  },
+  "/docs/overleaf/bibliography-styles/babalpha-0e0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babalpha-94-b-4b5"
+  },
+  "/docs/overleaf/bibliography-styles/babalpha-fl-b8e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babalpha-fl-93-b-fab"
+  },
+  "/docs/overleaf/bibliography-styles/babalpha-lf-79c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babalpha-lf-94-c-dfe"
+  },
+  "/docs/overleaf/bibliography-styles/babamspl-3e3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babamspl-377-0aa"
+  },
+  "/docs/overleaf/bibliography-styles/babplai3-b58": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babplai-3-a-9-e-919"
+  },
+  "/docs/overleaf/bibliography-styles/babplai3-fl-cc7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babplai-3-fl-2-bb-a27"
+  },
+  "/docs/overleaf/bibliography-styles/babplai3-lf-126": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babplai-3-lf-863-b83"
+  },
+  "/docs/overleaf/bibliography-styles/babplain-a12": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babplaine-3-a-c27"
+  },
+  "/docs/overleaf/bibliography-styles/babplain-fl-dd8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babplain-fl-686-97a"
+  },
+  "/docs/overleaf/bibliography-styles/babplain-lf-a90": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babplain-lf-82-f-68e"
+  },
+  "/docs/overleaf/bibliography-styles/babunsrt-b8b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babunsrt-5-b-4-d53"
+  },
+  "/docs/overleaf/bibliography-styles/babunsrt-fl-2d5": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babunsrt-fl-053-3c9"
+  },
+  "/docs/overleaf/bibliography-styles/babunsrt-lf-379": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-babunsrt-lf-8-f-5-a26"
+  },
+  "/docs/overleaf/bibliography-styles/besjournals-a33": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-besjournals-9-a-1-d72"
+  },
+  "/docs/overleaf/bibliography-styles/bgteuabbr-7c2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bgteuabbrbdc-476"
+  },
+  "/docs/overleaf/bibliography-styles/bgteuabbr2-951": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bgteuabbr-2-e-91-531"
+  },
+  "/docs/overleaf/bibliography-styles/bgteupln-199": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bgteuplne-7-b-3f5"
+  },
+  "/docs/overleaf/bibliography-styles/bgteupln2-410": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bgteupln-2-da-1-bbc"
+  },
+  "/docs/overleaf/bibliography-styles/bgteupln3-c09": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-bgteupln-310-c-867"
+  },
+  "/docs/overleaf/bibliography-styles/biochem-8ec": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-biochem-6-b-0-cfd"
+  },
+  "/docs/overleaf/bibliography-styles/birthday-a6b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-birthdaya-8-f-e9e"
+  },
+  "/docs/overleaf/bibliography-styles/cascadilla-96f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-cascadillaf-2-b-0db"
+  },
+  "/docs/overleaf/bibliography-styles/cc-6d8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-cc-64-c-d67"
+  },
+  "/docs/overleaf/bibliography-styles/cc2-162": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-cc-2-c-00-378"
+  },
+  "/docs/overleaf/bibliography-styles/cell-568": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-celle-70-5f7"
+  },
+  "/docs/overleaf/bibliography-styles/ChemCommun-b64": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chem-commun-31-e-b8d"
+  },
+  "/docs/overleaf/bibliography-styles/ChemEurJ-de6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chem-eur-jec-8-f41"
+  },
+  "/docs/overleaf/bibliography-styles/chetref-e02": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chetref-708-4cb"
+  },
+  "/docs/overleaf/bibliography-styles/chicago-6c0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chicago-1-ae-588"
+  },
+  "/docs/overleaf/bibliography-styles/chicago-annote-d28": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chicago-annotedc-7-866"
+  },
+  "/docs/overleaf/bibliography-styles/chicago-fa-dcd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chicago-fa-2-b-1-a46"
+  },
+  "/docs/overleaf/bibliography-styles/chronological-1a6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chronologicalc-44-8fd"
+  },
+  "/docs/overleaf/bibliography-styles/chscite-6c2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-chsciteec-1-8d2"
+  },
+  "/docs/overleaf/bibliography-styles/cje-609": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-cje-7-e-0-c00"
+  },
+  "/docs/overleaf/bibliography-styles/cmpj-c95": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-cmpj-5-bd-092"
+  },
+  "/docs/overleaf/bibliography-styles/cv-0ed": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-cv-5-cb-f9c"
+  },
+  "/docs/overleaf/bibliography-styles/databib-8bb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-databib-890-22b"
+  },
+  "/docs/overleaf/bibliography-styles/dcbib-d76": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dcbib-372-45a"
+  },
+  "/docs/overleaf/bibliography-styles/dcu-114": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dcufd-0-46a"
+  },
+  "/docs/overleaf/bibliography-styles/dinat-3f4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dinat-7-a-6-1ae"
+  },
+  "/docs/overleaf/bibliography-styles/dk-abbrv-f09": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dk-abbrv-423-c63"
+  },
+  "/docs/overleaf/bibliography-styles/dk-alpha-406": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dk-alpha-7-b-0-5b7"
+  },
+  "/docs/overleaf/bibliography-styles/dk-apali-070": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dk-apali-595-03c"
+  },
+  "/docs/overleaf/bibliography-styles/dk-plain-fa8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dk-plainc-32-1e5"
+  },
+  "/docs/overleaf/bibliography-styles/dk-unsrt-887": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dk-unsrte-26-4b6"
+  },
+  "/docs/overleaf/bibliography-styles/dlfltxbbibtex-4be": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dlfltxbbibtex-284-75a"
+  },
+  "/docs/overleaf/bibliography-styles/dtk-0bf": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-dtk-156-405"
+  },
+  "/docs/overleaf/bibliography-styles/ecca-f49": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-eccac-5-a-bde"
+  },
+  "/docs/overleaf/bibliography-styles/ecta-1f8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ecta-317-912"
+  },
+  "/docs/overleaf/bibliography-styles/elsarticle-harv-67d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-elsarticle-harv-8-c-4-1de"
+  },
+  "/docs/overleaf/bibliography-styles/elsarticle-num-e00": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-elsarticle-numa-22-852"
+  },
+  "/docs/overleaf/bibliography-styles/elsarticle-num-names-a59": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-elsarticle-num-namesdeb-1aa"
+  },
+  "/docs/overleaf/bibliography-styles/email-9ec": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-emaila-63-2a0"
+  },
+  "/docs/overleaf/bibliography-styles/email-html.-6d7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-email-html-bae-5e5"
+  },
+  "/docs/overleaf/bibliography-styles/en-mtc-978": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-en-mtcf-14-78e"
+  },
+  "/docs/overleaf/bibliography-styles/erae-8b3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-erae-2-a-2-de5"
+  },
+  "/docs/overleaf/bibliography-styles/expcites-09e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-expcites-4-ee-8bb"
+  },
+  "/docs/overleaf/bibliography-styles/expkeys-ca6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-expkeysbbb-9f6"
+  },
+  "/docs/overleaf/bibliography-styles/export-6f5": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-export-644-3e8"
+  },
+  "/docs/overleaf/bibliography-styles/fbs-fb3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-fbs-66-d-651"
+  },
+  "/docs/overleaf/bibliography-styles/figbib-8ba": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-figbib-9-ae-039"
+  },
+  "/docs/overleaf/bibliography-styles/figbib1-407": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-figbib-19-bd-e72"
+  },
+  "/docs/overleaf/bibliography-styles/finplain-292": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-finplain-49-a-909"
+  },
+  "/docs/overleaf/bibliography-styles/fr-mtc-ae6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-fr-mtc-052-e91"
+  },
+  "/docs/overleaf/bibliography-styles/francais-016": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-francais-97-c-252"
+  },
+  "/docs/overleaf/bibliography-styles/francaissc-7c5": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-francaisscf-53-5d7"
+  },
+  "/docs/overleaf/bibliography-styles/frplainnat-letters-11f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-frplainnat-letters-9-a-5-99e"
+  },
+  "/docs/overleaf/bibliography-styles/gatech-thesis-98d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gatech-thesis-9-f-5-850"
+  },
+  "/docs/overleaf/bibliography-styles/gatech-thesis-losa-f98": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gatech-thesis-losa-481-e24"
+  },
+  "/docs/overleaf/bibliography-styles/gerabbrv-d42": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gerabbrva-7-e-cf2"
+  },
+  "/docs/overleaf/bibliography-styles/geralpha-40b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-geralpha-73-a-6b0"
+  },
+  "/docs/overleaf/bibliography-styles/gerapali-4bc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gerapali-00-a-fde"
+  },
+  "/docs/overleaf/bibliography-styles/gerplain-649": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gerplainaea-3b7"
+  },
+  "/docs/overleaf/bibliography-styles/gerunsrt-a09": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gerunsrt-3-a-5-466"
+  },
+  "/docs/overleaf/bibliography-styles/glsplain-041": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-glsplainff-0-79e"
+  },
+  "/docs/overleaf/bibliography-styles/glsshort-379": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-glsshort-897-a64"
+  },
+  "/docs/overleaf/bibliography-styles/gost2003-834": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2003-eb-3-d80"
+  },
+  "/docs/overleaf/bibliography-styles/gost2003s-a94": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2003-se-61-675"
+  },
+  "/docs/overleaf/bibliography-styles/gost2008-221": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2008531-369"
+  },
+  "/docs/overleaf/bibliography-styles/gost2008l-ffa": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2008-l-553-93e"
+  },
+  "/docs/overleaf/bibliography-styles/gost2008ls-0a3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2008-ls-629-ee5"
+  },
+  "/docs/overleaf/bibliography-styles/gost2008n-fdd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2008-ne-76-3eb"
+  },
+  "/docs/overleaf/bibliography-styles/gost2008ns-708": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2008-ns-8-ae-377"
+  },
+  "/docs/overleaf/bibliography-styles/gost2008s-8f0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-2008-s-856-4e5"
+  },
+  "/docs/overleaf/bibliography-styles/gost705-15f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-70581-b-18b"
+  },
+  "/docs/overleaf/bibliography-styles/gost705s-def": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-705-s-22-c-f0d"
+  },
+  "/docs/overleaf/bibliography-styles/gost780-0a0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-780406-045"
+  },
+  "/docs/overleaf/bibliography-styles/gost780s-3cb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-gost-780-sd-89-6ca"
+  },
+  "/docs/overleaf/bibliography-styles/hc-de-2e9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-hc-dea-7-d-9ea"
+  },
+  "/docs/overleaf/bibliography-styles/hc-en-662": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-hc-en-61-a-174"
+  },
+  "/docs/overleaf/bibliography-styles/ieeepes-b2e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ieeepes-110-009"
+  },
+  "/docs/overleaf/bibliography-styles/ieeetr-01f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ieeetrf-4-a-703"
+  },
+  "/docs/overleaf/bibliography-styles/ieeetr-fa-ec2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ieeetr-fa-5-c-9-256"
+  },
+  "/docs/overleaf/bibliography-styles/ieeetr-fr-a2a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ieeetr-frf-61-1d4"
+  },
+  "/docs/overleaf/bibliography-styles/IEEEtran-5b7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iee-etrane-12-e57"
+  },
+  "/docs/overleaf/bibliography-styles/IEEEtranM-b86": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iee-etran-m-9-b-8-fcc"
+  },
+  "/docs/overleaf/bibliography-styles/IEEEtranMN-d40": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iee-etran-mn-7-f-0-21f"
+  },
+  "/docs/overleaf/bibliography-styles/IEEEtranN-6e4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iee-etran-nbec-89d"
+  },
+  "/docs/overleaf/bibliography-styles/IEEEtranS-b14": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iee-etran-s-86-d-3d7"
+  },
+  "/docs/overleaf/bibliography-styles/IEEEtranSA-b9b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iee-etran-s-af-3-e-fe1"
+  },
+  "/docs/overleaf/bibliography-styles/IEEEtranSN-0d3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iee-etran-s-nb-48-b38"
+  },
+  "/docs/overleaf/bibliography-styles/ier-884": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ierf-39-d02"
+  },
+  "/docs/overleaf/bibliography-styles/ijmart-b6c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ijmart-7-fb-354"
+  },
+  "/docs/overleaf/bibliography-styles/ijqc-b46": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ijqc-53-b-255"
+  },
+  "/docs/overleaf/bibliography-styles/imac-500": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-imac-789-61a"
+  },
+  "/docs/overleaf/bibliography-styles/inlinebib-d2e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-inlinebib-525-e20"
+  },
+  "/docs/overleaf/bibliography-styles/InorgChem-1b7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-inorg-chem-04-d-cbe"
+  },
+  "/docs/overleaf/bibliography-styles/iopart-num-350": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-iopart-num-1-cd-3b3"
+  },
+  "/docs/overleaf/bibliography-styles/itaxpf-ae0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-itaxpf-4-f-1-a18"
+  },
+  "/docs/overleaf/bibliography-styles/jabbrv-3aa": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jabbrv-535-337"
+  },
+  "/docs/overleaf/bibliography-styles/jae-7a8": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jae-551-a3a"
+  },
+  "/docs/overleaf/bibliography-styles/jalpha-9e3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jalpha-258-29a"
+  },
+  "/docs/overleaf/bibliography-styles/JAmChemSoc-415": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-j-am-chem-socb-33-bc5"
+  },
+  "/docs/overleaf/bibliography-styles/JAmChemSoc_all-e67": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-j-am-chem-soc-all-0-d-7-9a1"
+  },
+  "/docs/overleaf/bibliography-styles/jcc-925": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jcc-7-b-6-182"
+  },
+  "/docs/overleaf/bibliography-styles/jipsj-c75": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jipsjf-0-e-87a"
+  },
+  "/docs/overleaf/bibliography-styles/jmr-fd4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jmr-476-0ee"
+  },
+  "/docs/overleaf/bibliography-styles/jname-cfc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jname-02-c-499"
+  },
+  "/docs/overleaf/bibliography-styles/jneurosci-95b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jneurosci-692-77b"
+  },
+  "/docs/overleaf/bibliography-styles/jorsj-ff6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jorsj-9-ed-1e0"
+  },
+  "/docs/overleaf/bibliography-styles/jox-0bb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jox-6-f-3-109"
+  },
+  "/docs/overleaf/bibliography-styles/jpc-126": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jpc-29-f-c9b"
+  },
+  "/docs/overleaf/bibliography-styles/jpe-327": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jpea-95-e57"
+  },
+  "/docs/overleaf/bibliography-styles/jphysicsB-9f2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jphysics-be-52-6e6"
+  },
+  "/docs/overleaf/bibliography-styles/jplain-c01": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jplainb-83-4ad"
+  },
+  "/docs/overleaf/bibliography-styles/jss2-c68": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jss-2515-091"
+  },
+  "/docs/overleaf/bibliography-styles/junsrt-c83": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-junsrt-48-e-750"
+  },
+  "/docs/overleaf/bibliography-styles/jurabib-e78": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jurabib-140-e4d"
+  },
+  "/docs/overleaf/bibliography-styles/jurarsp-082": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jurarsp-273-44c"
+  },
+  "/docs/overleaf/bibliography-styles/jureco-691": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jurecoe-2-e-4d2"
+  },
+  "/docs/overleaf/bibliography-styles/jurunsrt-ef2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-jurunsrt-446-f91"
+  },
+  "/docs/overleaf/bibliography-styles/klunamed-18d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-klunamed-091-6a5"
+  },
+  "/docs/overleaf/bibliography-styles/klunum-8e6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-klunum-3-a-3-83d"
+  },
+  "/docs/overleaf/bibliography-styles/kluwer-ed7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-kluwerb-5-c-814"
+  },
+  "/docs/overleaf/bibliography-styles/ksfh_nat-9b9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ksfh-nat-190-3eb"
+  },
+  "/docs/overleaf/bibliography-styles/letter-f1d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-letterbb-3-b33"
+  },
+  "/docs/overleaf/bibliography-styles/listbib-8a3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-listbibcbe-a3f"
+  },
+  "/docs/overleaf/bibliography-styles/ltugbib-128": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ltugbibbf-2-f70"
+  },
+  "/docs/overleaf/bibliography-styles/mbplain-2ef": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-mbplain-52-e-a93"
+  },
+  "/docs/overleaf/bibliography-styles/mbunsrtdin-8cc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-mbunsrtdine-01-366"
+  },
+  "/docs/overleaf/bibliography-styles/mslapa-4dd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-mslapa-8-e-8-c53"
+  },
+  "/docs/overleaf/bibliography-styles/munich-84f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-munich-6-de-571"
+  },
+  "/docs/overleaf/bibliography-styles/natdin-d4f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-natdin-634-71c"
+  },
+  "/docs/overleaf/bibliography-styles/naturemag-e52": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-naturemaga-1-b-804"
+  },
+  "/docs/overleaf/bibliography-styles/nddiss2e-3a3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-nddiss-2-e-7-bf-bdd"
+  },
+  "/docs/overleaf/bibliography-styles/nederlands-3eb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-nederlands-29-f-543"
+  },
+  "/docs/overleaf/bibliography-styles/newapave-bca": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-newapavefe-0-cc6"
+  },
+  "/docs/overleaf/bibliography-styles/oega-74e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-oegab-27-f1d"
+  },
+  "/docs/overleaf/bibliography-styles/opcit-665": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-opcit-428-b62"
+  },
+  "/docs/overleaf/bibliography-styles/papalike-cac": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-papalike-399-0ce"
+  },
+  "/docs/overleaf/bibliography-styles/pccp-9b6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-pccp-9-f-5-3b4"
+  },
+  "/docs/overleaf/bibliography-styles/perception-2e9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-perception-2-fa-a67"
+  },
+  "/docs/overleaf/bibliography-styles/phone-127": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-phoneb-69-b74"
+  },
+  "/docs/overleaf/bibliography-styles/plabbrv-550": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plabbrvb-18-db4"
+  },
+  "/docs/overleaf/bibliography-styles/plain-5cb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainb-0-c-cff"
+  },
+  "/docs/overleaf/bibliography-styles/plain-fa-12f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plain-fad-47-e15"
+  },
+  "/docs/overleaf/bibliography-styles/plain-fr-d5c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plain-frfd-5-a09"
+  },
+  "/docs/overleaf/bibliography-styles/plain-letters-c2d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plain-letters-43-a-951"
+  },
+  "/docs/overleaf/bibliography-styles/plaindin-710": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plaindinf-28-243"
+  },
+  "/docs/overleaf/bibliography-styles/plainhtml-dae": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainhtml-105-99f"
+  },
+  "/docs/overleaf/bibliography-styles/plainhtmldate-c2d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainhtmldate-15-f-15c"
+  },
+  "/docs/overleaf/bibliography-styles/plainhtmldater-49e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainhtmldater-268-891"
+  },
+  "/docs/overleaf/bibliography-styles/plainnat-0f6": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainnat-6-a-2-51f"
+  },
+  "/docs/overleaf/bibliography-styles/plainnat-fa-91d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainnat-fa-058-d7c"
+  },
+  "/docs/overleaf/bibliography-styles/plainnat-fr-4fe": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainnat-frc-0-d-886"
+  },
+  "/docs/overleaf/bibliography-styles/plainnat-letters-30c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainnat-letters-0-e-2-219"
+  },
+  "/docs/overleaf/bibliography-styles/plainurl-13f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plainurl-98-a-89e"
+  },
+  "/docs/overleaf/bibliography-styles/plalpha-526": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plalpha-222-c97"
+  },
+  "/docs/overleaf/bibliography-styles/plplain-8b1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plplaina-9-b-654"
+  },
+  "/docs/overleaf/bibliography-styles/plunsrt-776": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-plunsrtccf-874"
+  },
+  "/docs/overleaf/bibliography-styles/pnas2009-0fa": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-pnas-20098-bd-c3b"
+  },
+  "/docs/overleaf/bibliography-styles/psuthesis-b73": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-psuthesisc-68-ab4"
+  },
+  "/docs/overleaf/bibliography-styles/regstud-843": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-regstudc-8-a-67e"
+  },
+  "/docs/overleaf/bibliography-styles/resphilosophica-83e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-resphilosophicae-68-ec7"
+  },
+  "/docs/overleaf/bibliography-styles/revcompchem-92c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-revcompchem-1-f-8-941"
+  },
+  "/docs/overleaf/bibliography-styles/rsc-f0a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-rsc-3-d-4-0ad"
+  },
+  "/docs/overleaf/bibliography-styles/rusnat-630": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-rusnat-412-964"
+  },
+  "/docs/overleaf/bibliography-styles/sageep-481": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-sageepe-61-ce7"
+  },
+  "/docs/overleaf/bibliography-styles/sapthesis-8c3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-sapthesis-53-f-e2f"
+  },
+  "/docs/overleaf/bibliography-styles/savetrees-248": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-savetreesce-5-688"
+  },
+  "/docs/overleaf/bibliography-styles/seuthesis-7e5": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-seuthesis-84-a-64a"
+  },
+  "/docs/overleaf/bibliography-styles/siam-918": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-siam-831-1da"
+  },
+  "/docs/overleaf/bibliography-styles/siam-fr-e23": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-siam-fr-4-c-1-dd5"
+  },
+  "/docs/overleaf/bibliography-styles/siam-letters-65a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-siam-lettersb-58-855"
+  },
+  "/docs/overleaf/bibliography-styles/spiebib-3da": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-spiebib-9-e-4-abe"
+  },
+  "/docs/overleaf/bibliography-styles/sweabbrv-0b3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-sweabbrv-53-b-d54"
+  },
+  "/docs/overleaf/bibliography-styles/swealpha-a57": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-swealpha-58-b-ecc"
+  },
+  "/docs/overleaf/bibliography-styles/sweplain-120": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-sweplain-18-b-0ec"
+  },
+  "/docs/overleaf/bibliography-styles/sweplnat-750": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-sweplnatef-6-9e7"
+  },
+  "/docs/overleaf/bibliography-styles/sweunsrt-89b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-sweunsrt-0-f-3-db3"
+  },
+  "/docs/overleaf/bibliography-styles/tandfx-6f9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-tandfx-53-f-395"
+  },
+  "/docs/overleaf/bibliography-styles/texsis-395": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-texsis-9-d-4-3a3"
+  },
+  "/docs/overleaf/bibliography-styles/thesnumb-6d3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-thesnumb-195-64c"
+  },
+  "/docs/overleaf/bibliography-styles/thubib-a0c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-thubib-072-6c5"
+  },
+  "/docs/overleaf/bibliography-styles/tieice-f3f": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-tieice-8-db-641"
+  },
+  "/docs/overleaf/bibliography-styles/tipsj-922": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-tipsj-98-d-c9b"
+  },
+  "/docs/overleaf/bibliography-styles/udesoftec-af2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-udesoftecccd-95f"
+  },
+  "/docs/overleaf/bibliography-styles/uestcthesis-83c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-uestcthesiscb-9-926"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2003-515": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-20037-c-0-e28"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2003s-fa7": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-2003-scbd-5f4"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2008-6ae": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-2008-e-8-d-26a"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2008l-73d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-2008-l-553-c63"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2008ls-635": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-2008-lsa-13-af3"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2008n-00a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-2008-nf-43-bfe"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2008ns-a85": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-2008-nsa-2-f-02b"
+  },
+  "/docs/overleaf/bibliography-styles/ugost2008s-3d4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ugost-2008-sac-6-1ef"
+  },
+  "/docs/overleaf/bibliography-styles/UNAMThesis-23b": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unam-thesis-2-c-1-301"
+  },
+  "/docs/overleaf/bibliography-styles/unsrt-2a4": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrtf-88-a7c"
+  },
+  "/docs/overleaf/bibliography-styles/unsrt-fa-bbb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrt-fa-9-f-8-ac7"
+  },
+  "/docs/overleaf/bibliography-styles/unsrt-fr-e7c": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrt-fr-7-da-7bb"
+  },
+  "/docs/overleaf/bibliography-styles/unsrtdin-012": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrtdin-948-537"
+  },
+  "/docs/overleaf/bibliography-styles/unsrthtml-9cd": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrthtml-223-627"
+  },
+  "/docs/overleaf/bibliography-styles/unsrtnat-52d": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrtnat-06-a-739"
+  },
+  "/docs/overleaf/bibliography-styles/unsrtnat-fr-77a": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrtnat-frf-34-3eb"
+  },
+  "/docs/overleaf/bibliography-styles/unsrturl-c13": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-unsrturle-42-ab0"
+  },
+  "/docs/overleaf/bibliography-styles/usmeg-a-5a9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-usmeg-acc-9-d78"
+  },
+  "/docs/overleaf/bibliography-styles/usmeg-n-984": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-usmeg-n-6-c-7-c1d"
+  },
+  "/docs/overleaf/bibliography-styles/ussagus-841": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-ussagus-2-ce-e99"
+  },
+  "/docs/overleaf/bibliography-styles/vak-ccc": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-vak-962-eec"
+  },
+  "/docs/overleaf/bibliography-styles/vancouver-f2e": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-vancouver-6-bc-eb9"
+  },
+  "/docs/overleaf/bibliography-styles/worlddev-bf0": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-worlddev-04-e-10c"
+  },
+  "/docs/overleaf/bibliography-styles/xagsm-cbf": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-xagsm-9-e-7-940"
+  },
+  "/docs/overleaf/bibliography-styles/xplain-8a9": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-overleaf-bibliography-styles-xplain-525-cbb"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/amsra",
+  "id": "overleaf/bibliography-styles/amsra",
+  "isDocsHomePage": false,
+  "title": "How to use amsra (amsrefs) at Overleaf?",
+  "description": "amsra.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/amsra.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/amsra",
+  "permalink": "/docs/overleaf/bibliography-styles/amsra",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/amsra.md",
+  "version": "current",
+  "sidebarPosition": 34,
+  "frontMatter": {
+    "sidebar_position": 34
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use amsry (amsrefs) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/amsry"
+  },
+  "next": {
+    "title": "How to use amsrn (amsrefs) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/amsrn"
+  }
+}

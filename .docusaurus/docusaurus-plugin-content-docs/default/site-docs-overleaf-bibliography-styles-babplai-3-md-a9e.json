@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/babplai3",
+  "id": "overleaf/bibliography-styles/babplai3",
+  "isDocsHomePage": false,
+  "title": "How to use babplai3 (babelbib) at Overleaf?",
+  "description": "babplai3.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/babplai3.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/babplai3",
+  "permalink": "/docs/overleaf/bibliography-styles/babplai3",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/babplai3.md",
+  "version": "current",
+  "sidebarPosition": 52,
+  "frontMatter": {
+    "sidebar_position": 52
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use babplai3-fl (babelbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/babplai3-fl"
+  },
+  "next": {
+    "title": "How to use babalpha-lf (babelbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/babalpha-lf"
+  }
+}

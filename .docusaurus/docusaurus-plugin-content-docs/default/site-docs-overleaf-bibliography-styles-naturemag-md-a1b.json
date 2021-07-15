@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/naturemag",
+  "id": "overleaf/bibliography-styles/naturemag",
+  "isDocsHomePage": false,
+  "title": "How to use naturemag (nature) at Overleaf?",
+  "description": "naturemag.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/naturemag.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/naturemag",
+  "permalink": "/docs/overleaf/bibliography-styles/naturemag",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/naturemag.md",
+  "version": "current",
+  "sidebarPosition": 244,
+  "frontMatter": {
+    "sidebar_position": 244
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use plainnat (natbib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/plainnat"
+  },
+  "next": {
+    "title": "How to use nddiss2e (nddiss) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/nddiss2e"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/jneurosci",
+  "id": "overleaf/bibliography-styles/jneurosci",
+  "isDocsHomePage": false,
+  "title": "How to use jneurosci (jneurosci) at Overleaf?",
+  "description": "jneurosci.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/jneurosci.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/jneurosci",
+  "permalink": "/docs/overleaf/bibliography-styles/jneurosci",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jneurosci.md",
+  "version": "current",
+  "sidebarPosition": 220,
+  "frontMatter": {
+    "sidebar_position": 220
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use iopart-num (iopart-num) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/iopart-num"
+  },
+  "next": {
+    "title": "How to use jurabib (jurabib) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/jurabib"
+  }
+}

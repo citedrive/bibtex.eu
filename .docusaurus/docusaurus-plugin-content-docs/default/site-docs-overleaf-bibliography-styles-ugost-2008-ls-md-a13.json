@@ -1,0 +1,26 @@
+{
+  "unversionedId": "overleaf/bibliography-styles/ugost2008ls",
+  "id": "overleaf/bibliography-styles/ugost2008ls",
+  "isDocsHomePage": false,
+  "title": "How to use ugost2008ls (gost) at Overleaf?",
+  "description": "ugost2008ls.bst has already been installed on the Overleaf servers and is ready for use. Thus, in order to use the file in question, simply define the style directly in your document: \\bibliographystyle The file extension .bst can be omitted.",
+  "source": "@site/docs/overleaf/bibliography-styles/ugost2008ls.md",
+  "sourceDirName": "overleaf/bibliography-styles",
+  "slug": "/overleaf/bibliography-styles/ugost2008ls",
+  "permalink": "/docs/overleaf/bibliography-styles/ugost2008ls",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ugost2008ls.md",
+  "version": "current",
+  "sidebarPosition": 180,
+  "frontMatter": {
+    "sidebar_position": 180
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to use gost2008 (gost) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/gost2008"
+  },
+  "next": {
+    "title": "How to use gost2003 (gost) at Overleaf?",
+    "permalink": "/docs/overleaf/bibliography-styles/gost2003"
+  }
+}
