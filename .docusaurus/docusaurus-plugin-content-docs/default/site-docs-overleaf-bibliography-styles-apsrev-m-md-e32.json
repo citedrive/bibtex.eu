@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/apsrevM.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/apsrevM",
-  "permalink": "/docs/overleaf/bibliography-styles/apsrevM",
+  "permalink": "/overleaf/bibliography-styles/apsrevM",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/apsrevM.md",
   "version": "current",
   "sidebarPosition": 232,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use apsrmpM (mciteplus) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apsrmpM"
+    "permalink": "/overleaf/bibliography-styles/apsrmpM"
   },
   "next": {
     "title": "How to use IEEEtranM (mciteplus) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/IEEEtranM"
+    "permalink": "/overleaf/bibliography-styles/IEEEtranM"
   }
 }

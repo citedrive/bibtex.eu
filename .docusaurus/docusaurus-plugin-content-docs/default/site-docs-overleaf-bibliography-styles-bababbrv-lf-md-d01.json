@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/bababbrv-lf.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/bababbrv-lf",
-  "permalink": "/docs/overleaf/bibliography-styles/bababbrv-lf",
+  "permalink": "/overleaf/bibliography-styles/bababbrv-lf",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/bababbrv-lf.md",
   "version": "current",
   "sidebarPosition": 46,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ascelike (ascelike) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ascelike"
+    "permalink": "/overleaf/bibliography-styles/ascelike"
   },
   "next": {
     "title": "How to use babunsrt-fl (babelbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/babunsrt-fl"
+    "permalink": "/overleaf/bibliography-styles/babunsrt-fl"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/natdin.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/natdin",
-  "permalink": "/docs/overleaf/bibliography-styles/natdin",
+  "permalink": "/overleaf/bibliography-styles/natdin",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/natdin.md",
   "version": "current",
   "sidebarPosition": 115,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use alphadin (din1505) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alphadin"
+    "permalink": "/overleaf/bibliography-styles/alphadin"
   },
   "next": {
     "title": "How to use abbrvdin (din1505) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abbrvdin"
+    "permalink": "/overleaf/bibliography-styles/abbrvdin"
   }
 }

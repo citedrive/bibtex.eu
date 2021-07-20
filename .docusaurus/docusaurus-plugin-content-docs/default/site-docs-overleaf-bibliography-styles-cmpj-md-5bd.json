@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/cmpj.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/cmpj",
-  "permalink": "/docs/overleaf/bibliography-styles/cmpj",
+  "permalink": "/overleaf/bibliography-styles/cmpj",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/cmpj.md",
   "version": "current",
   "sidebarPosition": 108,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use chicago-annote (chicago-annote) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/chicago-annote"
+    "permalink": "/overleaf/bibliography-styles/chicago-annote"
   },
   "next": {
     "title": "How to use abbrvcnb (cnbwp) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abbrvcnb"
+    "permalink": "/overleaf/bibliography-styles/abbrvcnb"
   }
 }

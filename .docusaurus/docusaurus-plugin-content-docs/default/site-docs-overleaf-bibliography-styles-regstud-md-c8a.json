@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/regstud.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/regstud",
-  "permalink": "/docs/overleaf/bibliography-styles/regstud",
+  "permalink": "/overleaf/bibliography-styles/regstud",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/regstud.md",
   "version": "current",
   "sidebarPosition": 139,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use dcbib (dvdcoll) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dcbib"
+    "permalink": "/overleaf/bibliography-styles/dcbib"
   },
   "next": {
     "title": "How to use worlddev (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/worlddev"
+    "permalink": "/overleaf/bibliography-styles/worlddev"
   }
 }

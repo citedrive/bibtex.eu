@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/address-ldif.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/address-ldif",
-  "permalink": "/docs/overleaf/bibliography-styles/address-ldif",
+  "permalink": "/overleaf/bibliography-styles/address-ldif",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/address-ldif.md",
   "version": "current",
   "sidebarPosition": 120,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use dinat (dinat) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dinat"
+    "permalink": "/overleaf/bibliography-styles/dinat"
   },
   "next": {
     "title": "How to use address-vcard (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/address-vcard"
+    "permalink": "/overleaf/bibliography-styles/address-vcard"
   }
 }

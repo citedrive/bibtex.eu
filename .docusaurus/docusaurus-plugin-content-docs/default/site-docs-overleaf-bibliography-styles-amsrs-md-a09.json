@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/amsrs.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/amsrs",
-  "permalink": "/docs/overleaf/bibliography-styles/amsrs",
+  "permalink": "/overleaf/bibliography-styles/amsrs",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/amsrs.md",
   "version": "current",
   "sidebarPosition": 37,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use amsru (amsrefs) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/amsru"
+    "permalink": "/overleaf/bibliography-styles/amsru"
   },
   "next": {
     "title": "How to use aomplain (amscls) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aomplain"
+    "permalink": "/overleaf/bibliography-styles/aomplain"
   }
 }

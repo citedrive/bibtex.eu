@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ussagus.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ussagus",
-  "permalink": "/docs/overleaf/bibliography-styles/ussagus",
+  "permalink": "/overleaf/bibliography-styles/ussagus",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ussagus.md",
   "version": "current",
   "sidebarPosition": 290,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use usmeg-a (stellenbosch) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/usmeg-a"
+    "permalink": "/overleaf/bibliography-styles/usmeg-a"
   },
   "next": {
     "title": "How to use usmeg-n (stellenbosch) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/usmeg-n"
+    "permalink": "/overleaf/bibliography-styles/usmeg-n"
   }
 }

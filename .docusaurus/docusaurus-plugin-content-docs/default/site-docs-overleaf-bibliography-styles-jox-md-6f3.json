@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jox.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jox",
-  "permalink": "/docs/overleaf/bibliography-styles/jox",
+  "permalink": "/overleaf/bibliography-styles/jox",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jox.md",
   "version": "current",
   "sidebarPosition": 224,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jureco (jurabib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jureco"
+    "permalink": "/overleaf/bibliography-styles/jureco"
   },
   "next": {
     "title": "How to use jurarsp (jurarsp) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jurarsp"
+    "permalink": "/overleaf/bibliography-styles/jurarsp"
   }
 }

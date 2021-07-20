@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aertt.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aertt",
-  "permalink": "/docs/overleaf/bibliography-styles/aertt",
+  "permalink": "/overleaf/bibliography-styles/aertt",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aertt.md",
   "version": "current",
   "sidebarPosition": 146,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use agecon (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/agecon"
+    "permalink": "/overleaf/bibliography-styles/agecon"
   },
   "next": {
     "title": "How to use ecta (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ecta"
+    "permalink": "/overleaf/bibliography-styles/ecta"
   }
 }

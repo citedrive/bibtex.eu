@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/seuthesis.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/seuthesis",
-  "permalink": "/docs/overleaf/bibliography-styles/seuthesis",
+  "permalink": "/overleaf/bibliography-styles/seuthesis",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/seuthesis.md",
   "version": "current",
   "sidebarPosition": 279,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use savetrees (savetrees) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/savetrees"
+    "permalink": "/overleaf/bibliography-styles/savetrees"
   },
   "next": {
     "title": "How to use rusnat (shipunov) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/rusnat"
+    "permalink": "/overleaf/bibliography-styles/rusnat"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/babplain-fl.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/babplain-fl",
-  "permalink": "/docs/overleaf/bibliography-styles/babplain-fl",
+  "permalink": "/overleaf/bibliography-styles/babplain-fl",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/babplain-fl.md",
   "version": "current",
   "sidebarPosition": 61,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use bababbrv-fl (babelbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/bababbrv-fl"
+    "permalink": "/overleaf/bibliography-styles/bababbrv-fl"
   },
   "next": {
     "title": "How to use babamspl (babelbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/babamspl"
+    "permalink": "/overleaf/bibliography-styles/babamspl"
   }
 }

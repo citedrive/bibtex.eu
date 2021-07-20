@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/unsrthtml.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/unsrthtml",
-  "permalink": "/docs/overleaf/bibliography-styles/unsrthtml",
+  "permalink": "/overleaf/bibliography-styles/unsrthtml",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrthtml.md",
   "version": "current",
   "sidebarPosition": 85,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use plainhtmldater (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plainhtmldater"
+    "permalink": "/overleaf/bibliography-styles/plainhtmldater"
   },
   "next": {
     "title": "How to use plainhtmldate (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plainhtmldate"
+    "permalink": "/overleaf/bibliography-styles/plainhtmldate"
   }
 }

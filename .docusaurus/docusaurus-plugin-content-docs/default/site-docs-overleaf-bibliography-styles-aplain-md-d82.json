@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aplain.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aplain",
-  "permalink": "/docs/overleaf/bibliography-styles/aplain",
+  "permalink": "/overleaf/bibliography-styles/aplain",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aplain.md",
   "version": "current",
   "sidebarPosition": 12,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use abntex2-alf (abntex2) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abntex2-alf"
+    "permalink": "/overleaf/bibliography-styles/abntex2-alf"
   },
   "next": {
     "title": "How to use aabbrv (abstyles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aabbrv"
+    "permalink": "/overleaf/bibliography-styles/aabbrv"
   }
 }

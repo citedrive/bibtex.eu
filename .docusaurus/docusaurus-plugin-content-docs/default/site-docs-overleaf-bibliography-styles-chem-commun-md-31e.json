@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ChemCommun.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ChemCommun",
-  "permalink": "/docs/overleaf/bibliography-styles/ChemCommun",
+  "permalink": "/overleaf/bibliography-styles/ChemCommun",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ChemCommun.md",
   "version": "current",
   "sidebarPosition": 94,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use cell (cell) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/cell"
+    "permalink": "/overleaf/bibliography-styles/cell"
   },
   "next": {
     "title": "How to use ChemEurJ (chembst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ChemEurJ"
+    "permalink": "/overleaf/bibliography-styles/ChemEurJ"
   }
 }

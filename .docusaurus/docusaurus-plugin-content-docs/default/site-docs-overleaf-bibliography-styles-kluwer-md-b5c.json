@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/kluwer.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/kluwer",
-  "permalink": "/docs/overleaf/bibliography-styles/kluwer",
+  "permalink": "/overleaf/bibliography-styles/kluwer",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/kluwer.md",
   "version": "current",
   "sidebarPosition": 199,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use dcu (harvard) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dcu"
+    "permalink": "/overleaf/bibliography-styles/dcu"
   },
   "next": {
     "title": "How to use jphysicsB (harvard) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jphysicsB"
+    "permalink": "/overleaf/bibliography-styles/jphysicsB"
   }
 }

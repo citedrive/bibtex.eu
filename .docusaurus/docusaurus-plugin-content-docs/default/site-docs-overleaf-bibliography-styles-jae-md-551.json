@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jae.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jae",
-  "permalink": "/docs/overleaf/bibliography-styles/jae",
+  "permalink": "/overleaf/bibliography-styles/jae",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jae.md",
   "version": "current",
   "sidebarPosition": 155,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ajae (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ajae"
+    "permalink": "/overleaf/bibliography-styles/ajae"
   },
   "next": {
     "title": "How to use tandfx (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/tandfx"
+    "permalink": "/overleaf/bibliography-styles/tandfx"
   }
 }

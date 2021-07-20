@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/perception.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/perception",
-  "permalink": "/docs/overleaf/bibliography-styles/perception",
+  "permalink": "/overleaf/bibliography-styles/perception",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/perception.md",
   "version": "current",
   "sidebarPosition": 256,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jalpha (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jalpha"
+    "permalink": "/overleaf/bibliography-styles/jalpha"
   },
   "next": {
     "title": "How to use acm-fa (persian-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/acm-fa"
+    "permalink": "/overleaf/bibliography-styles/acm-fa"
   }
 }

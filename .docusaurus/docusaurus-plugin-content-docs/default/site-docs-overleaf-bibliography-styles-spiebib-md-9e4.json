@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/spiebib.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/spiebib",
-  "permalink": "/docs/overleaf/bibliography-styles/spiebib",
+  "permalink": "/overleaf/bibliography-styles/spiebib",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/spiebib.md",
   "version": "current",
   "sidebarPosition": 288,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use plainnat-letters (sort-by-letters) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plainnat-letters"
+    "permalink": "/overleaf/bibliography-styles/plainnat-letters"
   },
   "next": {
     "title": "How to use usmeg-a (stellenbosch) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/usmeg-a"
+    "permalink": "/overleaf/bibliography-styles/usmeg-a"
   }
 }

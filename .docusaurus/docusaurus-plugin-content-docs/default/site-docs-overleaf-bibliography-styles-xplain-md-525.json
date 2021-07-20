@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/xplain.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/xplain",
-  "permalink": "/docs/overleaf/bibliography-styles/xplain",
+  "permalink": "/overleaf/bibliography-styles/xplain",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/xplain.md",
   "version": "current",
   "sidebarPosition": 217,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use xagsm (index) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/xagsm"
+    "permalink": "/overleaf/bibliography-styles/xagsm"
   },
   "next": {
     "title": "How to use inlinebib (inlinebib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/inlinebib"
+    "permalink": "/overleaf/bibliography-styles/inlinebib"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/cascadilla.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/cascadilla",
-  "permalink": "/docs/overleaf/bibliography-styles/cascadilla",
+  "permalink": "/overleaf/bibliography-styles/cascadilla",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/cascadilla.md",
   "version": "current",
   "sidebarPosition": 92,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use bgteupln2 (bgteubner) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/bgteupln2"
+    "permalink": "/overleaf/bibliography-styles/bgteupln2"
   },
   "next": {
     "title": "How to use cell (cell) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/cell"
+    "permalink": "/overleaf/bibliography-styles/cell"
   }
 }

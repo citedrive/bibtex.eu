@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/siam-letters.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/siam-letters",
-  "permalink": "/docs/overleaf/bibliography-styles/siam-letters",
+  "permalink": "/overleaf/bibliography-styles/siam-letters",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/siam-letters.md",
   "version": "current",
   "sidebarPosition": 282,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use alpha-letters (sort-by-letters) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alpha-letters"
+    "permalink": "/overleaf/bibliography-styles/alpha-letters"
   },
   "next": {
     "title": "How to use frplainnat-letters (sort-by-letters) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/frplainnat-letters"
+    "permalink": "/overleaf/bibliography-styles/frplainnat-letters"
   }
 }

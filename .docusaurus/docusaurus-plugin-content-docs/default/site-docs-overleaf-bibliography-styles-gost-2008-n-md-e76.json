@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/gost2008n.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/gost2008n",
-  "permalink": "/docs/overleaf/bibliography-styles/gost2008n",
+  "permalink": "/overleaf/bibliography-styles/gost2008n",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/gost2008n.md",
   "version": "current",
   "sidebarPosition": 193,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use gost2003s (gost) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gost2003s"
+    "permalink": "/overleaf/bibliography-styles/gost2003s"
   },
   "next": {
     "title": "How to use plunsrt (gustlib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plunsrt"
+    "permalink": "/overleaf/bibliography-styles/plunsrt"
   }
 }

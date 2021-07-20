@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/letter.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/letter",
-  "permalink": "/docs/overleaf/bibliography-styles/letter",
+  "permalink": "/overleaf/bibliography-styles/letter",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/letter.md",
   "version": "current",
   "sidebarPosition": 127,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use address (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/address"
+    "permalink": "/overleaf/bibliography-styles/address"
   },
   "next": {
     "title": "How to use phone (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/phone"
+    "permalink": "/overleaf/bibliography-styles/phone"
   }
 }

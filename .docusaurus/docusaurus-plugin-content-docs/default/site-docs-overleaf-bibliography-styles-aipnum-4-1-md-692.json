@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aipnum4-1.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aipnum4-1",
-  "permalink": "/docs/overleaf/bibliography-styles/aipnum4-1",
+  "permalink": "/overleaf/bibliography-styles/aipnum4-1",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aipnum4-1.md",
   "version": "current",
   "sidebarPosition": 271,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use apsrev4-1 (revtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apsrev4-1"
+    "permalink": "/overleaf/bibliography-styles/apsrev4-1"
   },
   "next": {
     "title": "How to use apsrev (revtex4) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apsrev"
+    "permalink": "/overleaf/bibliography-styles/apsrev"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/savetrees.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/savetrees",
-  "permalink": "/docs/overleaf/bibliography-styles/savetrees",
+  "permalink": "/overleaf/bibliography-styles/savetrees",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/savetrees.md",
   "version": "current",
   "sidebarPosition": 278,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use sapthesis (sapthesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/sapthesis"
+    "permalink": "/overleaf/bibliography-styles/sapthesis"
   },
   "next": {
     "title": "How to use seuthesis (seuthesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/seuthesis"
+    "permalink": "/overleaf/bibliography-styles/seuthesis"
   }
 }

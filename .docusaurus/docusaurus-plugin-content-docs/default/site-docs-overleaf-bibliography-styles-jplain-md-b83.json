@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jplain.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jplain",
-  "permalink": "/docs/overleaf/bibliography-styles/jplain",
+  "permalink": "/overleaf/bibliography-styles/jplain",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jplain.md",
   "version": "current",
   "sidebarPosition": 249,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jname (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jname"
+    "permalink": "/overleaf/bibliography-styles/jname"
   },
   "next": {
     "title": "How to use tipsj (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/tipsj"
+    "permalink": "/overleaf/bibliography-styles/tipsj"
   }
 }

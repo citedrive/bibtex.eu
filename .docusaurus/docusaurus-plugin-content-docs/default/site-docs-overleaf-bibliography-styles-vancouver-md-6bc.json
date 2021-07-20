@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/vancouver.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/vancouver",
-  "permalink": "/docs/overleaf/bibliography-styles/vancouver",
+  "permalink": "/overleaf/bibliography-styles/vancouver",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/vancouver.md",
   "version": "current",
   "sidebarPosition": 308,
@@ -17,6 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use vak (vak) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/vak"
+    "permalink": "/overleaf/bibliography-styles/vak"
+  },
+  "next": {
+    "title": "entry-types",
+    "permalink": "/entry-types"
   }
 }

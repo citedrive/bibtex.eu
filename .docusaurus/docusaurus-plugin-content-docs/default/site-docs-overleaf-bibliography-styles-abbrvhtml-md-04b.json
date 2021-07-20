@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/abbrvhtml.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/abbrvhtml",
-  "permalink": "/docs/overleaf/bibliography-styles/abbrvhtml",
+  "permalink": "/overleaf/bibliography-styles/abbrvhtml",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/abbrvhtml.md",
   "version": "current",
   "sidebarPosition": 82,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use alphahtmldate (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alphahtmldate"
+    "permalink": "/overleaf/bibliography-styles/alphahtmldate"
   },
   "next": {
     "title": "How to use plainhtml (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plainhtml"
+    "permalink": "/overleaf/bibliography-styles/plainhtml"
   }
 }

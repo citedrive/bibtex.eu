@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/rusnat.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/rusnat",
-  "permalink": "/docs/overleaf/bibliography-styles/rusnat",
+  "permalink": "/overleaf/bibliography-styles/rusnat",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/rusnat.md",
   "version": "current",
   "sidebarPosition": 280,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use seuthesis (seuthesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/seuthesis"
+    "permalink": "/overleaf/bibliography-styles/seuthesis"
   },
   "next": {
     "title": "How to use alpha-letters (sort-by-letters) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alpha-letters"
+    "permalink": "/overleaf/bibliography-styles/alpha-letters"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/bgteupln.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/bgteupln",
-  "permalink": "/docs/overleaf/bibliography-styles/bgteupln",
+  "permalink": "/overleaf/bibliography-styles/bgteupln",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/bgteupln.md",
   "version": "current",
   "sidebarPosition": 90,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use bgteupln3 (bgteubner) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/bgteupln3"
+    "permalink": "/overleaf/bibliography-styles/bgteupln3"
   },
   "next": {
     "title": "How to use bgteupln2 (bgteubner) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/bgteupln2"
+    "permalink": "/overleaf/bibliography-styles/bgteupln2"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/usmeg-n.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/usmeg-n",
-  "permalink": "/docs/overleaf/bibliography-styles/usmeg-n",
+  "permalink": "/overleaf/bibliography-styles/usmeg-n",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/usmeg-n.md",
   "version": "current",
   "sidebarPosition": 291,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ussagus (stellenbosch) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ussagus"
+    "permalink": "/overleaf/bibliography-styles/ussagus"
   },
   "next": {
     "title": "How to use sweunsrt (swebib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/sweunsrt"
+    "permalink": "/overleaf/bibliography-styles/sweunsrt"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jss2.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jss2",
-  "permalink": "/docs/overleaf/bibliography-styles/jss2",
+  "permalink": "/overleaf/bibliography-styles/jss2",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jss2.md",
   "version": "current",
   "sidebarPosition": 149,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use cje (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/cje"
+    "permalink": "/overleaf/bibliography-styles/cje"
   },
   "next": {
     "title": "How to use erae (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/erae"
+    "permalink": "/overleaf/bibliography-styles/erae"
   }
 }

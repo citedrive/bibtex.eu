@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ieeetr.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ieeetr",
-  "permalink": "/docs/overleaf/bibliography-styles/ieeetr",
+  "permalink": "/overleaf/bibliography-styles/ieeetr",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ieeetr.md",
   "version": "current",
   "sidebarPosition": 8,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use apalike (Base styles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apalike"
+    "permalink": "/overleaf/bibliography-styles/apalike"
   },
   "next": {
     "title": "How to use plain (Base styles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plain"
+    "permalink": "/overleaf/bibliography-styles/plain"
   }
 }

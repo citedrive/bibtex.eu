@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/nddiss2e.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/nddiss2e",
-  "permalink": "/docs/overleaf/bibliography-styles/nddiss2e",
+  "permalink": "/overleaf/bibliography-styles/nddiss2e",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/nddiss2e.md",
   "version": "current",
   "sidebarPosition": 245,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use naturemag (nature) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/naturemag"
+    "permalink": "/overleaf/bibliography-styles/naturemag"
   },
   "next": {
     "title": "How to use opcit (opcit) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/opcit"
+    "permalink": "/overleaf/bibliography-styles/opcit"
   }
 }

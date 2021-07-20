@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aunsnot.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aunsnot",
-  "permalink": "/docs/overleaf/bibliography-styles/aunsnot",
+  "permalink": "/overleaf/bibliography-styles/aunsnot",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aunsnot.md",
   "version": "current",
   "sidebarPosition": 16,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use anotit (abstyles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/anotit"
+    "permalink": "/overleaf/bibliography-styles/anotit"
   },
   "next": {
     "title": "How to use aunsrt (abstyles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aunsrt"
+    "permalink": "/overleaf/bibliography-styles/aunsrt"
   }
 }

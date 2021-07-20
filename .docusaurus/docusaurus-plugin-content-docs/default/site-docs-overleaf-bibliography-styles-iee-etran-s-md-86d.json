@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/IEEEtranS.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/IEEEtranS",
-  "permalink": "/docs/overleaf/bibliography-styles/IEEEtranS",
+  "permalink": "/overleaf/bibliography-styles/IEEEtranS",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/IEEEtranS.md",
   "version": "current",
   "sidebarPosition": 209,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use IEEEtranN (IEEEtran) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/IEEEtranN"
+    "permalink": "/overleaf/bibliography-styles/IEEEtranN"
   },
   "next": {
     "title": "How to use IEEEtran (IEEEtran) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/IEEEtran"
+    "permalink": "/overleaf/bibliography-styles/IEEEtran"
   }
 }

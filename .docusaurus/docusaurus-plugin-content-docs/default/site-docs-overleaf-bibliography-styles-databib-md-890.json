@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/databib.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/databib",
-  "permalink": "/docs/overleaf/bibliography-styles/databib",
+  "permalink": "/overleaf/bibliography-styles/databib",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/databib.md",
   "version": "current",
   "sidebarPosition": 113,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use newapave (confproc) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/newapave"
+    "permalink": "/overleaf/bibliography-styles/newapave"
   },
   "next": {
     "title": "How to use alphadin (din1505) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alphadin"
+    "permalink": "/overleaf/bibliography-styles/alphadin"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/abntex2-alf.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/abntex2-alf",
-  "permalink": "/docs/overleaf/bibliography-styles/abntex2-alf",
+  "permalink": "/overleaf/bibliography-styles/abntex2-alf",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/abntex2-alf.md",
   "version": "current",
   "sidebarPosition": 11,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use abntex2-num (abntex2) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abntex2-num"
+    "permalink": "/overleaf/bibliography-styles/abntex2-num"
   },
   "next": {
     "title": "How to use aplain (abstyles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aplain"
+    "permalink": "/overleaf/bibliography-styles/aplain"
   }
 }

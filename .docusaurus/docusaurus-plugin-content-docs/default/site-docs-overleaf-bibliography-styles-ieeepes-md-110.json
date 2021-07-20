@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ieeepes.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ieeepes",
-  "permalink": "/docs/overleaf/bibliography-styles/ieeepes",
+  "permalink": "/overleaf/bibliography-styles/ieeepes",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ieeepes.md",
   "version": "current",
   "sidebarPosition": 207,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use hc-en (hc) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/hc-en"
+    "permalink": "/overleaf/bibliography-styles/hc-en"
   },
   "next": {
     "title": "How to use IEEEtranN (IEEEtran) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/IEEEtranN"
+    "permalink": "/overleaf/bibliography-styles/IEEEtranN"
   }
 }

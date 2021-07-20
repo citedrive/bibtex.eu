@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/gost2003s.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/gost2003s",
-  "permalink": "/docs/overleaf/bibliography-styles/gost2003s",
+  "permalink": "/overleaf/bibliography-styles/gost2003s",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/gost2003s.md",
   "version": "current",
   "sidebarPosition": 192,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use gost780s (gost) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gost780s"
+    "permalink": "/overleaf/bibliography-styles/gost780s"
   },
   "next": {
     "title": "How to use gost2008n (gost) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gost2008n"
+    "permalink": "/overleaf/bibliography-styles/gost2008n"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/bababbr3-lf.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/bababbr3-lf",
-  "permalink": "/docs/overleaf/bibliography-styles/bababbr3-lf",
+  "permalink": "/overleaf/bibliography-styles/bababbr3-lf",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/bababbr3-lf.md",
   "version": "current",
   "sidebarPosition": 48,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use babunsrt-fl (babelbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/babunsrt-fl"
+    "permalink": "/overleaf/bibliography-styles/babunsrt-fl"
   },
   "next": {
     "title": "How to use babalpha-fl (babelbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/babalpha-fl"
+    "permalink": "/overleaf/bibliography-styles/babalpha-fl"
   }
 }

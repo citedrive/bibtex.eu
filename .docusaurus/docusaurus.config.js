@@ -290,6 +290,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "/Users/garethii/Documents/GitHub/bibtex.eu/sidebars.js",
+          "routeBasePath": "/",
           "editUrl": "https://github.com/citedrive/bibtex.eu"
         },
         "blog": {

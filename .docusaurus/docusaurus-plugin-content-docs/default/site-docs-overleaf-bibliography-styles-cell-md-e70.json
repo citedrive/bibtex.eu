@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/cell.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/cell",
-  "permalink": "/docs/overleaf/bibliography-styles/cell",
+  "permalink": "/overleaf/bibliography-styles/cell",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/cell.md",
   "version": "current",
   "sidebarPosition": 93,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use cascadilla (cascadilla) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/cascadilla"
+    "permalink": "/overleaf/bibliography-styles/cascadilla"
   },
   "next": {
     "title": "How to use ChemCommun (chembst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ChemCommun"
+    "permalink": "/overleaf/bibliography-styles/ChemCommun"
   }
 }

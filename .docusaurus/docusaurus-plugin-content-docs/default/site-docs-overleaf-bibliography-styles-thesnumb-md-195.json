@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/thesnumb.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/thesnumb",
-  "permalink": "/docs/overleaf/bibliography-styles/thesnumb",
+  "permalink": "/overleaf/bibliography-styles/thesnumb",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/thesnumb.md",
   "version": "current",
   "sidebarPosition": 24,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use adrconv (adrconv) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/adrconv"
+    "permalink": "/overleaf/bibliography-styles/adrconv"
   },
   "next": {
     "title": "How to use agufull (aguplus) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/agufull"
+    "permalink": "/overleaf/bibliography-styles/agufull"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/adrbirthday.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/adrbirthday",
-  "permalink": "/docs/overleaf/bibliography-styles/adrbirthday",
+  "permalink": "/overleaf/bibliography-styles/adrbirthday",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/adrbirthday.md",
   "version": "current",
   "sidebarPosition": 21,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use adfathesis (adfathesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/adfathesis"
+    "permalink": "/overleaf/bibliography-styles/adfathesis"
   },
   "next": {
     "title": "How to use adrfax (adrconv) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/adrfax"
+    "permalink": "/overleaf/bibliography-styles/adrfax"
   }
 }

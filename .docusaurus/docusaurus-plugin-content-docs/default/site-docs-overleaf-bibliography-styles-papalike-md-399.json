@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/papalike.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/papalike",
-  "permalink": "/docs/overleaf/bibliography-styles/papalike",
+  "permalink": "/overleaf/bibliography-styles/papalike",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/papalike.md",
   "version": "current",
   "sidebarPosition": 265,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use pnas2009 (pnas2009) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/pnas2009"
+    "permalink": "/overleaf/bibliography-styles/pnas2009"
   },
   "next": {
     "title": "How to use psuthesis (psu-thesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/psuthesis"
+    "permalink": "/overleaf/bibliography-styles/psuthesis"
   }
 }

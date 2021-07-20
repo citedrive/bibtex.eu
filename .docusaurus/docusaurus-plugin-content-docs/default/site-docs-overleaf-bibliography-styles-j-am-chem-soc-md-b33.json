@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/JAmChemSoc.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/JAmChemSoc",
-  "permalink": "/docs/overleaf/bibliography-styles/JAmChemSoc",
+  "permalink": "/overleaf/bibliography-styles/JAmChemSoc",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/JAmChemSoc.md",
   "version": "current",
   "sidebarPosition": 97,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use InorgChem (chembst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/InorgChem"
+    "permalink": "/overleaf/bibliography-styles/InorgChem"
   },
   "next": {
     "title": "How to use cv (chembst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/cv"
+    "permalink": "/overleaf/bibliography-styles/cv"
   }
 }

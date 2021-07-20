@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/tandfx.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/tandfx",
-  "permalink": "/docs/overleaf/bibliography-styles/tandfx",
+  "permalink": "/overleaf/bibliography-styles/tandfx",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/tandfx.md",
   "version": "current",
   "sidebarPosition": 156,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jae (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jae"
+    "permalink": "/overleaf/bibliography-styles/jae"
   },
   "next": {
     "title": "How to use elsarticle-harv (elsarticle) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/elsarticle-harv"
+    "permalink": "/overleaf/bibliography-styles/elsarticle-harv"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aomalpha.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aomalpha",
-  "permalink": "/docs/overleaf/bibliography-styles/aomalpha",
+  "permalink": "/overleaf/bibliography-styles/aomalpha",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aomalpha.md",
   "version": "current",
   "sidebarPosition": 39,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use aomplain (amscls) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aomplain"
+    "permalink": "/overleaf/bibliography-styles/aomplain"
   },
   "next": {
     "title": "How to use apacann (apacite) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apacann"
+    "permalink": "/overleaf/bibliography-styles/apacann"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/abbrvnat.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/abbrvnat",
-  "permalink": "/docs/overleaf/bibliography-styles/abbrvnat",
+  "permalink": "/overleaf/bibliography-styles/abbrvnat",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/abbrvnat.md",
   "version": "current",
   "sidebarPosition": 241,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use munich (munich) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/munich"
+    "permalink": "/overleaf/bibliography-styles/munich"
   },
   "next": {
     "title": "How to use unsrtnat (natbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrtnat"
+    "permalink": "/overleaf/bibliography-styles/unsrtnat"
   }
 }

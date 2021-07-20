@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/apalike-fr.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/apalike-fr",
-  "permalink": "/docs/overleaf/bibliography-styles/apalike-fr",
+  "permalink": "/overleaf/bibliography-styles/apalike-fr",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/apalike-fr.md",
   "version": "current",
   "sidebarPosition": 75,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use abbrvnat-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abbrvnat-fr"
+    "permalink": "/overleaf/bibliography-styles/abbrvnat-fr"
   },
   "next": {
     "title": "How to use plain-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plain-fr"
+    "permalink": "/overleaf/bibliography-styles/plain-fr"
   }
 }

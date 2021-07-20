@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/oega.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/oega",
-  "permalink": "/docs/overleaf/bibliography-styles/oega",
+  "permalink": "/overleaf/bibliography-styles/oega",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/oega.md",
   "version": "current",
   "sidebarPosition": 151,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use erae (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/erae"
+    "permalink": "/overleaf/bibliography-styles/erae"
   },
   "next": {
     "title": "How to use jpe (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jpe"
+    "permalink": "/overleaf/bibliography-styles/jpe"
   }
 }

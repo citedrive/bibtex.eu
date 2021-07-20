@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/resphilosophica.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/resphilosophica",
-  "permalink": "/docs/overleaf/bibliography-styles/resphilosophica",
+  "permalink": "/overleaf/bibliography-styles/resphilosophica",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/resphilosophica.md",
   "version": "current",
   "sidebarPosition": 267,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use psuthesis (psu-thesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/psuthesis"
+    "permalink": "/overleaf/bibliography-styles/psuthesis"
   },
   "next": {
     "title": "How to use apsrmp4-1 (revtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apsrmp4-1"
+    "permalink": "/overleaf/bibliography-styles/apsrmp4-1"
   }
 }

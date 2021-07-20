@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/address-html.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/address-html",
-  "permalink": "/docs/overleaf/bibliography-styles/address-html",
+  "permalink": "/overleaf/bibliography-styles/address-html",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/address-html.md",
   "version": "current",
   "sidebarPosition": 123,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use email-html. (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/email-html."
+    "permalink": "/overleaf/bibliography-styles/email-html."
   },
   "next": {
     "title": "How to use email (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/email"
+    "permalink": "/overleaf/bibliography-styles/email"
   }
 }

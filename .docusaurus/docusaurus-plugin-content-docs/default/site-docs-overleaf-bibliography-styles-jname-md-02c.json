@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jname.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jname",
-  "permalink": "/docs/overleaf/bibliography-styles/jname",
+  "permalink": "/overleaf/bibliography-styles/jname",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jname.md",
   "version": "current",
   "sidebarPosition": 248,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jabbrv (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jabbrv"
+    "permalink": "/overleaf/bibliography-styles/jabbrv"
   },
   "next": {
     "title": "How to use jplain (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jplain"
+    "permalink": "/overleaf/bibliography-styles/jplain"
   }
 }

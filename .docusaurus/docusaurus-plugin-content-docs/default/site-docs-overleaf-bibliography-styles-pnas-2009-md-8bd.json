@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/pnas2009.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/pnas2009",
-  "permalink": "/docs/overleaf/bibliography-styles/pnas2009",
+  "permalink": "/overleaf/bibliography-styles/pnas2009",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/pnas2009.md",
   "version": "current",
   "sidebarPosition": 264,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use plain-fa (persian-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plain-fa"
+    "permalink": "/overleaf/bibliography-styles/plain-fa"
   },
   "next": {
     "title": "How to use papalike (przechlewski-book) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/papalike"
+    "permalink": "/overleaf/bibliography-styles/papalike"
   }
 }

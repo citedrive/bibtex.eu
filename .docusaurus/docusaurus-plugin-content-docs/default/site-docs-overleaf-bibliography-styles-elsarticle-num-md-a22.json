@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/elsarticle-num.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/elsarticle-num",
-  "permalink": "/docs/overleaf/bibliography-styles/elsarticle-num",
+  "permalink": "/overleaf/bibliography-styles/elsarticle-num",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/elsarticle-num.md",
   "version": "current",
   "sidebarPosition": 159,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use elsarticle-num-names (elsarticle) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/elsarticle-num-names"
+    "permalink": "/overleaf/bibliography-styles/elsarticle-num-names"
   },
   "next": {
     "title": "How to use fbs (fbs) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/fbs"
+    "permalink": "/overleaf/bibliography-styles/fbs"
   }
 }

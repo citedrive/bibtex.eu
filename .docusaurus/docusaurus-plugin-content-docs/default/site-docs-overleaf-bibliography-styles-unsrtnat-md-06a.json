@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/unsrtnat.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/unsrtnat",
-  "permalink": "/docs/overleaf/bibliography-styles/unsrtnat",
+  "permalink": "/overleaf/bibliography-styles/unsrtnat",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrtnat.md",
   "version": "current",
   "sidebarPosition": 242,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use abbrvnat (natbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abbrvnat"
+    "permalink": "/overleaf/bibliography-styles/abbrvnat"
   },
   "next": {
     "title": "How to use plainnat (natbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plainnat"
+    "permalink": "/overleaf/bibliography-styles/plainnat"
   }
 }

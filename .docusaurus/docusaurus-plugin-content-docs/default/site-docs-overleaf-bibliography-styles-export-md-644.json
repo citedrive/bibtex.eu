@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/export.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/export",
-  "permalink": "/docs/overleaf/bibliography-styles/export",
+  "permalink": "/overleaf/bibliography-styles/export",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/export.md",
   "version": "current",
   "sidebarPosition": 66,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use besjournals (besjournals) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/besjournals"
+    "permalink": "/overleaf/bibliography-styles/besjournals"
   },
   "next": {
     "title": "How to use expkeys (bibexport) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/expkeys"
+    "permalink": "/overleaf/bibliography-styles/expkeys"
   }
 }

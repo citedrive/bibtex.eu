@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/agecon.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/agecon",
-  "permalink": "/docs/overleaf/bibliography-styles/agecon",
+  "permalink": "/overleaf/bibliography-styles/agecon",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/agecon.md",
   "version": "current",
   "sidebarPosition": 145,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use apecon (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apecon"
+    "permalink": "/overleaf/bibliography-styles/apecon"
   },
   "next": {
     "title": "How to use aertt (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aertt"
+    "permalink": "/overleaf/bibliography-styles/aertt"
   }
 }

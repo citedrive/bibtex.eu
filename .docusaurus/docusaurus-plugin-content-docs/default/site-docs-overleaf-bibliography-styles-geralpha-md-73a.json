@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/geralpha.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/geralpha",
-  "permalink": "/docs/overleaf/bibliography-styles/geralpha",
+  "permalink": "/overleaf/bibliography-styles/geralpha",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/geralpha.md",
   "version": "current",
   "sidebarPosition": 171,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use gerabbrv (germbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gerabbrv"
+    "permalink": "/overleaf/bibliography-styles/gerabbrv"
   },
   "next": {
     "title": "How to use gerplain (germbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gerplain"
+    "permalink": "/overleaf/bibliography-styles/gerplain"
   }
 }

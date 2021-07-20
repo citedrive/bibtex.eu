@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/plainnat.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/plainnat",
-  "permalink": "/docs/overleaf/bibliography-styles/plainnat",
+  "permalink": "/overleaf/bibliography-styles/plainnat",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plainnat.md",
   "version": "current",
   "sidebarPosition": 243,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use unsrtnat (natbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrtnat"
+    "permalink": "/overleaf/bibliography-styles/unsrtnat"
   },
   "next": {
     "title": "How to use naturemag (nature) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/naturemag"
+    "permalink": "/overleaf/bibliography-styles/naturemag"
   }
 }

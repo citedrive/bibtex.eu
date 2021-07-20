@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/siam-fr.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/siam-fr",
-  "permalink": "/docs/overleaf/bibliography-styles/siam-fr",
+  "permalink": "/overleaf/bibliography-styles/siam-fr",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/siam-fr.md",
   "version": "current",
   "sidebarPosition": 70,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use unsrt-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrt-fr"
+    "permalink": "/overleaf/bibliography-styles/unsrt-fr"
   },
   "next": {
     "title": "How to use alpha-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alpha-fr"
+    "permalink": "/overleaf/bibliography-styles/alpha-fr"
   }
 }

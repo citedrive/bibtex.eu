@@ -6,17 +6,18 @@
   "description": "Format",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
-  "slug": "/intro",
-  "permalink": "/docs/intro",
+  "slug": "/",
+  "permalink": "/",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/intro.md",
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
-    "sidebar_position": 1
+    "sidebar_position": 1,
+    "slug": "/"
   },
   "sidebar": "tutorialSidebar",
   "next": {
     "title": ".bib-file - bibliographic database /  information storage file",
-    "permalink": "/docs/bib-file"
+    "permalink": "/bib-file"
   }
 }

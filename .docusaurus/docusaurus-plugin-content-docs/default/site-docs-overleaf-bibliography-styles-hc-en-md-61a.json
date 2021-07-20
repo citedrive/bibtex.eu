@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/hc-en.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/hc-en",
-  "permalink": "/docs/overleaf/bibliography-styles/hc-en",
+  "permalink": "/overleaf/bibliography-styles/hc-en",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/hc-en.md",
   "version": "current",
   "sidebarPosition": 206,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use hc-de (hc) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/hc-de"
+    "permalink": "/overleaf/bibliography-styles/hc-de"
   },
   "next": {
     "title": "How to use ieeepes (ieeepes) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ieeepes"
+    "permalink": "/overleaf/bibliography-styles/ieeepes"
   }
 }

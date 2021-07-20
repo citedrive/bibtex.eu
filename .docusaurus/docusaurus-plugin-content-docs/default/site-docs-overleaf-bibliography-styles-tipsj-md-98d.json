@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/tipsj.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/tipsj",
-  "permalink": "/docs/overleaf/bibliography-styles/tipsj",
+  "permalink": "/overleaf/bibliography-styles/tipsj",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/tipsj.md",
   "version": "current",
   "sidebarPosition": 250,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jplain (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jplain"
+    "permalink": "/overleaf/bibliography-styles/jplain"
   },
   "next": {
     "title": "How to use junsrt (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/junsrt"
+    "permalink": "/overleaf/bibliography-styles/junsrt"
   }
 }

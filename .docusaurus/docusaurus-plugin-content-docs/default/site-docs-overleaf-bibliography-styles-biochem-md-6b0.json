@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/biochem.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/biochem",
-  "permalink": "/docs/overleaf/bibliography-styles/biochem",
+  "permalink": "/overleaf/bibliography-styles/biochem",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/biochem.md",
   "version": "current",
   "sidebarPosition": 19,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use achemso (achemso) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/achemso"
+    "permalink": "/overleaf/bibliography-styles/achemso"
   },
   "next": {
     "title": "How to use adfathesis (adfathesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/adfathesis"
+    "permalink": "/overleaf/bibliography-styles/adfathesis"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/phone.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/phone",
-  "permalink": "/docs/overleaf/bibliography-styles/phone",
+  "permalink": "/overleaf/bibliography-styles/phone",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/phone.md",
   "version": "current",
   "sidebarPosition": 128,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use letter (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/letter"
+    "permalink": "/overleaf/bibliography-styles/letter"
   },
   "next": {
     "title": "How to use gost705s (disser) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gost705s"
+    "permalink": "/overleaf/bibliography-styles/gost705s"
   }
 }

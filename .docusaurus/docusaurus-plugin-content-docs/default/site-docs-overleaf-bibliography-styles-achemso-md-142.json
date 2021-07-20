@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/achemso.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/achemso",
-  "permalink": "/docs/overleaf/bibliography-styles/achemso",
+  "permalink": "/overleaf/bibliography-styles/achemso",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/achemso.md",
   "version": "current",
   "sidebarPosition": 18,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use aunsrt (abstyles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aunsrt"
+    "permalink": "/overleaf/bibliography-styles/aunsrt"
   },
   "next": {
     "title": "How to use biochem (achemso) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/biochem"
+    "permalink": "/overleaf/bibliography-styles/biochem"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/chicago.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/chicago",
-  "permalink": "/docs/overleaf/bibliography-styles/chicago",
+  "permalink": "/overleaf/bibliography-styles/chicago",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/chicago.md",
   "version": "current",
   "sidebarPosition": 106,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use chscite (chscite) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/chscite"
+    "permalink": "/overleaf/bibliography-styles/chscite"
   },
   "next": {
     "title": "How to use chicago-annote (chicago-annote) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/chicago-annote"
+    "permalink": "/overleaf/bibliography-styles/chicago-annote"
   }
 }

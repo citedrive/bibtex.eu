@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/besjournals.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/besjournals",
-  "permalink": "/docs/overleaf/bibliography-styles/besjournals",
+  "permalink": "/overleaf/bibliography-styles/besjournals",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/besjournals.md",
   "version": "current",
   "sidebarPosition": 65,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use babplain-lf (babelbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/babplain-lf"
+    "permalink": "/overleaf/bibliography-styles/babplain-lf"
   },
   "next": {
     "title": "How to use export (bibexport) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/export"
+    "permalink": "/overleaf/bibliography-styles/export"
   }
 }

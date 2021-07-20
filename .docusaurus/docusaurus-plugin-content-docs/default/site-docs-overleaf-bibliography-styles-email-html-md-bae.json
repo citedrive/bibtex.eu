@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/email-html..md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/email-html.",
-  "permalink": "/docs/overleaf/bibliography-styles/email-html.",
+  "permalink": "/overleaf/bibliography-styles/email-html.",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/email-html..md",
   "version": "current",
   "sidebarPosition": 122,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use address-vcard (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/address-vcard"
+    "permalink": "/overleaf/bibliography-styles/address-vcard"
   },
   "next": {
     "title": "How to use address-html (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/address-html"
+    "permalink": "/overleaf/bibliography-styles/address-html"
   }
 }

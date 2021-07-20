@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/babplain-lf.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/babplain-lf",
-  "permalink": "/docs/overleaf/bibliography-styles/babplain-lf",
+  "permalink": "/overleaf/bibliography-styles/babplain-lf",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/babplain-lf.md",
   "version": "current",
   "sidebarPosition": 64,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use bababbrv (babelbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/bababbrv"
+    "permalink": "/overleaf/bibliography-styles/bababbrv"
   },
   "next": {
     "title": "How to use besjournals (besjournals) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/besjournals"
+    "permalink": "/overleaf/bibliography-styles/besjournals"
   }
 }

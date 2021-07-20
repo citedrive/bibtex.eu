@@ -7,7 +7,7 @@
   "source": "@site/docs/bib-file.md",
   "sourceDirName": ".",
   "slug": "/bib-file",
-  "permalink": "/docs/bib-file",
+  "permalink": "/bib-file",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/bib-file.md",
   "version": "current",
   "sidebarPosition": 2,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Introduction to BibTeX",
-    "permalink": "/docs/intro"
+    "permalink": "/"
   },
   "next": {
     "title": "How to use unsrt (Base styles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrt"
+    "permalink": "/overleaf/bibliography-styles/unsrt"
   }
 }

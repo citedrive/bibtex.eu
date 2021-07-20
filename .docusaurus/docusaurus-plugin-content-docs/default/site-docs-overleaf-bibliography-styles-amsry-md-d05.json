@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/amsry.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/amsry",
-  "permalink": "/docs/overleaf/bibliography-styles/amsry",
+  "permalink": "/overleaf/bibliography-styles/amsry",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/amsry.md",
   "version": "current",
   "sidebarPosition": 33,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ametsoc (ametsoc) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ametsoc"
+    "permalink": "/overleaf/bibliography-styles/ametsoc"
   },
   "next": {
     "title": "How to use amsra (amsrefs) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/amsra"
+    "permalink": "/overleaf/bibliography-styles/amsra"
   }
 }

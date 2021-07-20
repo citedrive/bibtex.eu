@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/siam.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/siam",
-  "permalink": "/docs/overleaf/bibliography-styles/siam",
+  "permalink": "/overleaf/bibliography-styles/siam",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/siam.md",
   "version": "current",
   "sidebarPosition": 5,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use abbrv (Base styles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abbrv"
+    "permalink": "/overleaf/bibliography-styles/abbrv"
   },
   "next": {
     "title": "How to use alpha (Base styles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alpha"
+    "permalink": "/overleaf/bibliography-styles/alpha"
   }
 }

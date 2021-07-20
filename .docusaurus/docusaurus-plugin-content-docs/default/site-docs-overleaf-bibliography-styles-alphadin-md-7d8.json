@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/alphadin.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/alphadin",
-  "permalink": "/docs/overleaf/bibliography-styles/alphadin",
+  "permalink": "/overleaf/bibliography-styles/alphadin",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/alphadin.md",
   "version": "current",
   "sidebarPosition": 114,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use databib (datatool) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/databib"
+    "permalink": "/overleaf/bibliography-styles/databib"
   },
   "next": {
     "title": "How to use natdin (din1505) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/natdin"
+    "permalink": "/overleaf/bibliography-styles/natdin"
   }
 }

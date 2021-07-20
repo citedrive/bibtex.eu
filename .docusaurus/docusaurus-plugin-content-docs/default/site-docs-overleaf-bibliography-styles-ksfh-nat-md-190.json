@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ksfh_nat.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ksfh_nat",
-  "permalink": "/docs/overleaf/bibliography-styles/ksfh_nat",
+  "permalink": "/overleaf/bibliography-styles/ksfh_nat",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ksfh_nat.md",
   "version": "current",
   "sidebarPosition": 228,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use klunamed (kluwer) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/klunamed"
+    "permalink": "/overleaf/bibliography-styles/klunamed"
   },
   "next": {
     "title": "How to use listbib (listbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/listbib"
+    "permalink": "/overleaf/bibliography-styles/listbib"
   }
 }

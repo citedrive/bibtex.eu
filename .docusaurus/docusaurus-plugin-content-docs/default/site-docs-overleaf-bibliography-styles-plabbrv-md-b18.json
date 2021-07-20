@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/plabbrv.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/plabbrv",
-  "permalink": "/docs/overleaf/bibliography-styles/plabbrv",
+  "permalink": "/overleaf/bibliography-styles/plabbrv",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plabbrv.md",
   "version": "current",
   "sidebarPosition": 197,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use plplain (gustlib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plplain"
+    "permalink": "/overleaf/bibliography-styles/plplain"
   },
   "next": {
     "title": "How to use dcu (harvard) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dcu"
+    "permalink": "/overleaf/bibliography-styles/dcu"
   }
 }

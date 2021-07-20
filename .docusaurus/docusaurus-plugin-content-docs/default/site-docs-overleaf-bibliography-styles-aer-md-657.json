@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aer.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aer",
-  "permalink": "/docs/overleaf/bibliography-styles/aer",
+  "permalink": "/overleaf/bibliography-styles/aer",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aer.md",
   "version": "current",
   "sidebarPosition": 141,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use worlddev (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/worlddev"
+    "permalink": "/overleaf/bibliography-styles/worlddev"
   },
   "next": {
     "title": "How to use ecca (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ecca"
+    "permalink": "/overleaf/bibliography-styles/ecca"
   }
 }

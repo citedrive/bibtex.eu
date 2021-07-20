@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/plainnat-fa.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/plainnat-fa",
-  "permalink": "/docs/overleaf/bibliography-styles/plainnat-fa",
+  "permalink": "/overleaf/bibliography-styles/plainnat-fa",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plainnat-fa.md",
   "version": "current",
   "sidebarPosition": 262,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use unsrt-fa (persian-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrt-fa"
+    "permalink": "/overleaf/bibliography-styles/unsrt-fa"
   },
   "next": {
     "title": "How to use plain-fa (persian-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plain-fa"
+    "permalink": "/overleaf/bibliography-styles/plain-fa"
   }
 }

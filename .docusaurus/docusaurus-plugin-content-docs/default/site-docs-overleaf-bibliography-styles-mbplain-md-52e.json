@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/mbplain.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/mbplain",
-  "permalink": "/docs/overleaf/bibliography-styles/mbplain",
+  "permalink": "/overleaf/bibliography-styles/mbplain",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/mbplain.md",
   "version": "current",
   "sidebarPosition": 237,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use mslapa (mslapa) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/mslapa"
+    "permalink": "/overleaf/bibliography-styles/mslapa"
   },
   "next": {
     "title": "How to use mbunsrtdin (multibib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/mbunsrtdin"
+    "permalink": "/overleaf/bibliography-styles/mbunsrtdin"
   }
 }

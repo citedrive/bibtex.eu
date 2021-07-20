@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/worlddev.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/worlddev",
-  "permalink": "/docs/overleaf/bibliography-styles/worlddev",
+  "permalink": "/overleaf/bibliography-styles/worlddev",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/worlddev.md",
   "version": "current",
   "sidebarPosition": 140,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use regstud (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/regstud"
+    "permalink": "/overleaf/bibliography-styles/regstud"
   },
   "next": {
     "title": "How to use aer (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aer"
+    "permalink": "/overleaf/bibliography-styles/aer"
   }
 }

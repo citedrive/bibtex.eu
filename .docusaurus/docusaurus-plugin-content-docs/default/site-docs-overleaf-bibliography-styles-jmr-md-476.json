@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jmr.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jmr",
-  "permalink": "/docs/overleaf/bibliography-styles/jmr",
+  "permalink": "/overleaf/bibliography-styles/jmr",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jmr.md",
   "version": "current",
   "sidebarPosition": 201,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jphysicsB (harvard) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jphysicsB"
+    "permalink": "/overleaf/bibliography-styles/jphysicsB"
   },
   "next": {
     "title": "How to use agsm (harvard) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/agsm"
+    "permalink": "/overleaf/bibliography-styles/agsm"
   }
 }

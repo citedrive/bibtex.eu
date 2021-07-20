@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jabbrv.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jabbrv",
-  "permalink": "/docs/overleaf/bibliography-styles/jabbrv",
+  "permalink": "/overleaf/bibliography-styles/jabbrv",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jabbrv.md",
   "version": "current",
   "sidebarPosition": 247,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use opcit (opcit) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/opcit"
+    "permalink": "/overleaf/bibliography-styles/opcit"
   },
   "next": {
     "title": "How to use jname (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jname"
+    "permalink": "/overleaf/bibliography-styles/jname"
   }
 }

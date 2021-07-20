@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/tieice.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/tieice",
-  "permalink": "/docs/overleaf/bibliography-styles/tieice",
+  "permalink": "/overleaf/bibliography-styles/tieice",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/tieice.md",
   "version": "current",
   "sidebarPosition": 253,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jorsj (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jorsj"
+    "permalink": "/overleaf/bibliography-styles/jorsj"
   },
   "next": {
     "title": "How to use jipsj (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jipsj"
+    "permalink": "/overleaf/bibliography-styles/jipsj"
   }
 }

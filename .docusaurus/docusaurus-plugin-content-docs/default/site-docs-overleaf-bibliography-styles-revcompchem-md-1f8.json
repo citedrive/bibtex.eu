@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/revcompchem.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/revcompchem",
-  "permalink": "/docs/overleaf/bibliography-styles/revcompchem",
+  "permalink": "/overleaf/bibliography-styles/revcompchem",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/revcompchem.md",
   "version": "current",
   "sidebarPosition": 103,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jpc (chem-journal) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jpc"
+    "permalink": "/overleaf/bibliography-styles/jpc"
   },
   "next": {
     "title": "How to use chetref (chet) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/chetref"
+    "permalink": "/overleaf/bibliography-styles/chetref"
   }
 }

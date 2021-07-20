@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/alphahtml.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/alphahtml",
-  "permalink": "/docs/overleaf/bibliography-styles/alphahtml",
+  "permalink": "/overleaf/bibliography-styles/alphahtml",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/alphahtml.md",
   "version": "current",
   "sidebarPosition": 80,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use alphahtmldater (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alphahtmldater"
+    "permalink": "/overleaf/bibliography-styles/alphahtmldater"
   },
   "next": {
     "title": "How to use alphahtmldate (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alphahtmldate"
+    "permalink": "/overleaf/bibliography-styles/alphahtmldate"
   }
 }

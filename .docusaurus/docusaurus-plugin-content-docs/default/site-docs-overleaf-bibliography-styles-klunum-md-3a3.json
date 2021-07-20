@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/klunum.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/klunum",
-  "permalink": "/docs/overleaf/bibliography-styles/klunum",
+  "permalink": "/overleaf/bibliography-styles/klunum",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/klunum.md",
   "version": "current",
   "sidebarPosition": 226,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jurarsp (jurarsp) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jurarsp"
+    "permalink": "/overleaf/bibliography-styles/jurarsp"
   },
   "next": {
     "title": "How to use klunamed (kluwer) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/klunamed"
+    "permalink": "/overleaf/bibliography-styles/klunamed"
   }
 }

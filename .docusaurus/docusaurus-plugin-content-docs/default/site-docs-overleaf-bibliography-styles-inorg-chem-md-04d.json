@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/InorgChem.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/InorgChem",
-  "permalink": "/docs/overleaf/bibliography-styles/InorgChem",
+  "permalink": "/overleaf/bibliography-styles/InorgChem",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/InorgChem.md",
   "version": "current",
   "sidebarPosition": 96,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ChemEurJ (chembst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ChemEurJ"
+    "permalink": "/overleaf/bibliography-styles/ChemEurJ"
   },
   "next": {
     "title": "How to use JAmChemSoc (chembst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/JAmChemSoc"
+    "permalink": "/overleaf/bibliography-styles/JAmChemSoc"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/listbib.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/listbib",
-  "permalink": "/docs/overleaf/bibliography-styles/listbib",
+  "permalink": "/overleaf/bibliography-styles/listbib",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/listbib.md",
   "version": "current",
   "sidebarPosition": 229,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ksfh_nat (ksfh_nat) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ksfh_nat"
+    "permalink": "/overleaf/bibliography-styles/ksfh_nat"
   },
   "next": {
     "title": "How to use IEEEtranMN (mciteplus) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/IEEEtranMN"
+    "permalink": "/overleaf/bibliography-styles/IEEEtranMN"
   }
 }

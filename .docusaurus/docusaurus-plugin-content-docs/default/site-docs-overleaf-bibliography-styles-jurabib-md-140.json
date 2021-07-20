@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jurabib.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jurabib",
-  "permalink": "/docs/overleaf/bibliography-styles/jurabib",
+  "permalink": "/overleaf/bibliography-styles/jurabib",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jurabib.md",
   "version": "current",
   "sidebarPosition": 221,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jneurosci (jneurosci) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jneurosci"
+    "permalink": "/overleaf/bibliography-styles/jneurosci"
   },
   "next": {
     "title": "How to use jurunsrt (jurabib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jurunsrt"
+    "permalink": "/overleaf/bibliography-styles/jurunsrt"
   }
 }

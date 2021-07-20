@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jorsj.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jorsj",
-  "permalink": "/docs/overleaf/bibliography-styles/jorsj",
+  "permalink": "/overleaf/bibliography-styles/jorsj",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jorsj.md",
   "version": "current",
   "sidebarPosition": 252,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use junsrt (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/junsrt"
+    "permalink": "/overleaf/bibliography-styles/junsrt"
   },
   "next": {
     "title": "How to use tieice (pbibtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/tieice"
+    "permalink": "/overleaf/bibliography-styles/tieice"
   }
 }

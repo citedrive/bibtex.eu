@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ecca.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ecca",
-  "permalink": "/docs/overleaf/bibliography-styles/ecca",
+  "permalink": "/overleaf/bibliography-styles/ecca",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ecca.md",
   "version": "current",
   "sidebarPosition": 142,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use aer (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aer"
+    "permalink": "/overleaf/bibliography-styles/aer"
   },
   "next": {
     "title": "How to use ier (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ier"
+    "permalink": "/overleaf/bibliography-styles/ier"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/abbrvnat-fr.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/abbrvnat-fr",
-  "permalink": "/docs/overleaf/bibliography-styles/abbrvnat-fr",
+  "permalink": "/overleaf/bibliography-styles/abbrvnat-fr",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/abbrvnat-fr.md",
   "version": "current",
   "sidebarPosition": 74,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use unsrtnat-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrtnat-fr"
+    "permalink": "/overleaf/bibliography-styles/unsrtnat-fr"
   },
   "next": {
     "title": "How to use apalike-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apalike-fr"
+    "permalink": "/overleaf/bibliography-styles/apalike-fr"
   }
 }

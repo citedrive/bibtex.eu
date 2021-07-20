@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/elsarticle-num-names.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/elsarticle-num-names",
-  "permalink": "/docs/overleaf/bibliography-styles/elsarticle-num-names",
+  "permalink": "/overleaf/bibliography-styles/elsarticle-num-names",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/elsarticle-num-names.md",
   "version": "current",
   "sidebarPosition": 158,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use elsarticle-harv (elsarticle) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/elsarticle-harv"
+    "permalink": "/overleaf/bibliography-styles/elsarticle-harv"
   },
   "next": {
     "title": "How to use elsarticle-num (elsarticle) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/elsarticle-num"
+    "permalink": "/overleaf/bibliography-styles/elsarticle-num"
   }
 }

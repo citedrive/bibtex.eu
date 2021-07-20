@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/JAmChemSoc_all.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/JAmChemSoc_all",
-  "permalink": "/docs/overleaf/bibliography-styles/JAmChemSoc_all",
+  "permalink": "/overleaf/bibliography-styles/JAmChemSoc_all",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/JAmChemSoc_all.md",
   "version": "current",
   "sidebarPosition": 99,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use cv (chembst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/cv"
+    "permalink": "/overleaf/bibliography-styles/cv"
   },
   "next": {
     "title": "How to use pccp (chem-journal) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/pccp"
+    "permalink": "/overleaf/bibliography-styles/pccp"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/udesoftec.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/udesoftec",
-  "permalink": "/docs/overleaf/bibliography-styles/udesoftec",
+  "permalink": "/overleaf/bibliography-styles/udesoftec",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/udesoftec.md",
   "version": "current",
   "sidebarPosition": 300,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ltugbib (tugboat) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ltugbib"
+    "permalink": "/overleaf/bibliography-styles/ltugbib"
   },
   "next": {
     "title": "How to use uestcthesis (uestcthesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/uestcthesis"
+    "permalink": "/overleaf/bibliography-styles/uestcthesis"
   }
 }

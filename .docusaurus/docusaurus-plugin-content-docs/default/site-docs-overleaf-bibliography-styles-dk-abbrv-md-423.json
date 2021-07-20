@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/dk-abbrv.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/dk-abbrv",
-  "permalink": "/docs/overleaf/bibliography-styles/dk-abbrv",
+  "permalink": "/overleaf/bibliography-styles/dk-abbrv",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/dk-abbrv.md",
   "version": "current",
   "sidebarPosition": 135,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use dk-plain (dk-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dk-plain"
+    "permalink": "/overleaf/bibliography-styles/dk-plain"
   },
   "next": {
     "title": "How to use dlfltxbbibtex (dlfltxb) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dlfltxbbibtex"
+    "permalink": "/overleaf/bibliography-styles/dlfltxbbibtex"
   }
 }

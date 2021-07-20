@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ieeetr-fa.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ieeetr-fa",
-  "permalink": "/docs/overleaf/bibliography-styles/ieeetr-fa",
+  "permalink": "/overleaf/bibliography-styles/ieeetr-fa",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ieeetr-fa.md",
   "version": "current",
   "sidebarPosition": 258,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use acm-fa (persian-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/acm-fa"
+    "permalink": "/overleaf/bibliography-styles/acm-fa"
   },
   "next": {
     "title": "How to use chicago-fa (persian-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/chicago-fa"
+    "permalink": "/overleaf/bibliography-styles/chicago-fa"
   }
 }

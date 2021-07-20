@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/unsrt.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/unsrt",
-  "permalink": "/docs/overleaf/bibliography-styles/unsrt",
+  "permalink": "/overleaf/bibliography-styles/unsrt",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrt.md",
   "version": "current",
   "sidebarPosition": 2,
@@ -15,8 +15,12 @@
     "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": ".bib-file - bibliographic database /  information storage file",
+    "permalink": "/bib-file"
+  },
   "next": {
     "title": "How to use acm (Base styles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/acm"
+    "permalink": "/overleaf/bibliography-styles/acm"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/plainnat-letters.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/plainnat-letters",
-  "permalink": "/docs/overleaf/bibliography-styles/plainnat-letters",
+  "permalink": "/overleaf/bibliography-styles/plainnat-letters",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plainnat-letters.md",
   "version": "current",
   "sidebarPosition": 287,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use plain-letters (sort-by-letters) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plain-letters"
+    "permalink": "/overleaf/bibliography-styles/plain-letters"
   },
   "next": {
     "title": "How to use spiebib (spie) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/spiebib"
+    "permalink": "/overleaf/bibliography-styles/spiebib"
   }
 }

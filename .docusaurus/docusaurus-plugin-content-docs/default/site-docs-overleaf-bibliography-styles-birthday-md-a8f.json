@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/birthday.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/birthday",
-  "permalink": "/docs/overleaf/bibliography-styles/birthday",
+  "permalink": "/overleaf/bibliography-styles/birthday",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/birthday.md",
   "version": "current",
   "sidebarPosition": 125,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use email (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/email"
+    "permalink": "/overleaf/bibliography-styles/email"
   },
   "next": {
     "title": "How to use address (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/address"
+    "permalink": "/overleaf/bibliography-styles/address"
   }
 }

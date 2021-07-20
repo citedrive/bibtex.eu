@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/gost2008s.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/gost2008s",
-  "permalink": "/docs/overleaf/bibliography-styles/gost2008s",
+  "permalink": "/overleaf/bibliography-styles/gost2008s",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/gost2008s.md",
   "version": "current",
   "sidebarPosition": 176,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use glsshort (gloss) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/glsshort"
+    "permalink": "/overleaf/bibliography-styles/glsshort"
   },
   "next": {
     "title": "How to use ugost2008 (gost) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ugost2008"
+    "permalink": "/overleaf/bibliography-styles/ugost2008"
   }
 }

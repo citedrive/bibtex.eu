@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aunsrt.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aunsrt",
-  "permalink": "/docs/overleaf/bibliography-styles/aunsrt",
+  "permalink": "/overleaf/bibliography-styles/aunsrt",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aunsrt.md",
   "version": "current",
   "sidebarPosition": 17,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use aunsnot (abstyles) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aunsnot"
+    "permalink": "/overleaf/bibliography-styles/aunsnot"
   },
   "next": {
     "title": "How to use achemso (achemso) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/achemso"
+    "permalink": "/overleaf/bibliography-styles/achemso"
   }
 }

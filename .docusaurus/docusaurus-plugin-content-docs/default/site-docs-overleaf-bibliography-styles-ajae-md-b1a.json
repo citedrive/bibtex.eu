@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/ajae.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/ajae",
-  "permalink": "/docs/overleaf/bibliography-styles/ajae",
+  "permalink": "/overleaf/bibliography-styles/ajae",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/ajae.md",
   "version": "current",
   "sidebarPosition": 154,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use itaxpf (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/itaxpf"
+    "permalink": "/overleaf/bibliography-styles/itaxpf"
   },
   "next": {
     "title": "How to use jae (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jae"
+    "permalink": "/overleaf/bibliography-styles/jae"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/abbrv-fr.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/abbrv-fr",
-  "permalink": "/docs/overleaf/bibliography-styles/abbrv-fr",
+  "permalink": "/overleaf/bibliography-styles/abbrv-fr",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/abbrv-fr.md",
   "version": "current",
   "sidebarPosition": 72,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use alpha-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/alpha-fr"
+    "permalink": "/overleaf/bibliography-styles/alpha-fr"
   },
   "next": {
     "title": "How to use unsrtnat-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrtnat-fr"
+    "permalink": "/overleaf/bibliography-styles/unsrtnat-fr"
   }
 }

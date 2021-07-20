@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/swealpha.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/swealpha",
-  "permalink": "/docs/overleaf/bibliography-styles/swealpha",
+  "permalink": "/overleaf/bibliography-styles/swealpha",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/swealpha.md",
   "version": "current",
   "sidebarPosition": 296,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use sweplain (swebib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/sweplain"
+    "permalink": "/overleaf/bibliography-styles/sweplain"
   },
   "next": {
     "title": "How to use texsis (texsis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/texsis"
+    "permalink": "/overleaf/bibliography-styles/texsis"
   }
 }

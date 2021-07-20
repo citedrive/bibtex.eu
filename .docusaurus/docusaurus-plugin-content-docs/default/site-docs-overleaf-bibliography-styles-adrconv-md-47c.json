@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/adrconv.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/adrconv",
-  "permalink": "/docs/overleaf/bibliography-styles/adrconv",
+  "permalink": "/overleaf/bibliography-styles/adrconv",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/adrconv.md",
   "version": "current",
   "sidebarPosition": 23,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use adrfax (adrconv) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/adrfax"
+    "permalink": "/overleaf/bibliography-styles/adrfax"
   },
   "next": {
     "title": "How to use thesnumb (afthesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/thesnumb"
+    "permalink": "/overleaf/bibliography-styles/thesnumb"
   }
 }

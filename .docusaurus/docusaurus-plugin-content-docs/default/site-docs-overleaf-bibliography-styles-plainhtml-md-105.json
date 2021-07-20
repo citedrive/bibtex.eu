@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/plainhtml.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/plainhtml",
-  "permalink": "/docs/overleaf/bibliography-styles/plainhtml",
+  "permalink": "/overleaf/bibliography-styles/plainhtml",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plainhtml.md",
   "version": "current",
   "sidebarPosition": 83,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use abbrvhtml (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abbrvhtml"
+    "permalink": "/overleaf/bibliography-styles/abbrvhtml"
   },
   "next": {
     "title": "How to use plainhtmldater (bibhtml) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plainhtmldater"
+    "permalink": "/overleaf/bibliography-styles/plainhtmldater"
   }
 }

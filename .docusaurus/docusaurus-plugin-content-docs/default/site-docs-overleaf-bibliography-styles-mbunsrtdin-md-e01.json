@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/mbunsrtdin.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/mbunsrtdin",
-  "permalink": "/docs/overleaf/bibliography-styles/mbunsrtdin",
+  "permalink": "/overleaf/bibliography-styles/mbunsrtdin",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/mbunsrtdin.md",
   "version": "current",
   "sidebarPosition": 238,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use mbplain (multibib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/mbplain"
+    "permalink": "/overleaf/bibliography-styles/mbplain"
   },
   "next": {
     "title": "How to use chronological (multibibliography) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/chronological"
+    "permalink": "/overleaf/bibliography-styles/chronological"
   }
 }

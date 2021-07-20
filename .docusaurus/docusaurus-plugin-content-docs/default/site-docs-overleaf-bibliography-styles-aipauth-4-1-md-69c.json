@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aipauth4-1.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aipauth4-1",
-  "permalink": "/docs/overleaf/bibliography-styles/aipauth4-1",
+  "permalink": "/overleaf/bibliography-styles/aipauth4-1",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aipauth4-1.md",
   "version": "current",
   "sidebarPosition": 269,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use apsrmp4-1 (revtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apsrmp4-1"
+    "permalink": "/overleaf/bibliography-styles/apsrmp4-1"
   },
   "next": {
     "title": "How to use apsrev4-1 (revtex) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/apsrev4-1"
+    "permalink": "/overleaf/bibliography-styles/apsrev4-1"
   }
 }

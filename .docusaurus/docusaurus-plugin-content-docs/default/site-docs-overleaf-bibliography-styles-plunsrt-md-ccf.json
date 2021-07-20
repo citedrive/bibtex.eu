@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/plunsrt.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/plunsrt",
-  "permalink": "/docs/overleaf/bibliography-styles/plunsrt",
+  "permalink": "/overleaf/bibliography-styles/plunsrt",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/plunsrt.md",
   "version": "current",
   "sidebarPosition": 194,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use gost2008n (gost) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gost2008n"
+    "permalink": "/overleaf/bibliography-styles/gost2008n"
   },
   "next": {
     "title": "How to use plalpha (gustlib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plalpha"
+    "permalink": "/overleaf/bibliography-styles/plalpha"
   }
 }

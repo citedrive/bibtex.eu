@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/IEEEtranSN.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/IEEEtranSN",
-  "permalink": "/docs/overleaf/bibliography-styles/IEEEtranSN",
+  "permalink": "/overleaf/bibliography-styles/IEEEtranSN",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/IEEEtranSN.md",
   "version": "current",
   "sidebarPosition": 212,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use IEEEtranSA (IEEEtran) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/IEEEtranSA"
+    "permalink": "/overleaf/bibliography-styles/IEEEtranSA"
   },
   "next": {
     "title": "How to use ijmart (ijmart) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ijmart"
+    "permalink": "/overleaf/bibliography-styles/ijmart"
   }
 }

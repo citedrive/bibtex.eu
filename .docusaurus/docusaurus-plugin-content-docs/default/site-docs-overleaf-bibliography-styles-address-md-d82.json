@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/address.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/address",
-  "permalink": "/docs/overleaf/bibliography-styles/address",
+  "permalink": "/overleaf/bibliography-styles/address",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/address.md",
   "version": "current",
   "sidebarPosition": 126,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use birthday (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/birthday"
+    "permalink": "/overleaf/bibliography-styles/birthday"
   },
   "next": {
     "title": "How to use letter (directory) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/letter"
+    "permalink": "/overleaf/bibliography-styles/letter"
   }
 }

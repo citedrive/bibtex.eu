@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/dcbib.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/dcbib",
-  "permalink": "/docs/overleaf/bibliography-styles/dcbib",
+  "permalink": "/overleaf/bibliography-styles/dcbib",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/dcbib.md",
   "version": "current",
   "sidebarPosition": 138,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use dtk (dtk) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dtk"
+    "permalink": "/overleaf/bibliography-styles/dtk"
   },
   "next": {
     "title": "How to use regstud (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/regstud"
+    "permalink": "/overleaf/bibliography-styles/regstud"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/unsrt-fr.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/unsrt-fr",
-  "permalink": "/docs/overleaf/bibliography-styles/unsrt-fr",
+  "permalink": "/overleaf/bibliography-styles/unsrt-fr",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/unsrt-fr.md",
   "version": "current",
   "sidebarPosition": 69,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use expcites (bibexport) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/expcites"
+    "permalink": "/overleaf/bibliography-styles/expcites"
   },
   "next": {
     "title": "How to use siam-fr (bib-fr) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/siam-fr"
+    "permalink": "/overleaf/bibliography-styles/siam-fr"
   }
 }

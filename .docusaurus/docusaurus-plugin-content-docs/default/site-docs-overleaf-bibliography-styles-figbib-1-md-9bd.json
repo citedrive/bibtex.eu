@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/figbib1.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/figbib1",
-  "permalink": "/docs/overleaf/bibliography-styles/figbib1",
+  "permalink": "/overleaf/bibliography-styles/figbib1",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/figbib1.md",
   "version": "current",
   "sidebarPosition": 161,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use fbs (fbs) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/fbs"
+    "permalink": "/overleaf/bibliography-styles/fbs"
   },
   "next": {
     "title": "How to use figbib (figbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/figbib"
+    "permalink": "/overleaf/bibliography-styles/figbib"
   }
 }

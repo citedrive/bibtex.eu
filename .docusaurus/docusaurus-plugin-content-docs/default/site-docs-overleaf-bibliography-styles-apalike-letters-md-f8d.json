@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/apalike-letters.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/apalike-letters",
-  "permalink": "/docs/overleaf/bibliography-styles/apalike-letters",
+  "permalink": "/overleaf/bibliography-styles/apalike-letters",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/apalike-letters.md",
   "version": "current",
   "sidebarPosition": 285,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use abbrv-letters (sort-by-letters) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/abbrv-letters"
+    "permalink": "/overleaf/bibliography-styles/abbrv-letters"
   },
   "next": {
     "title": "How to use plain-letters (sort-by-letters) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plain-letters"
+    "permalink": "/overleaf/bibliography-styles/plain-letters"
   }
 }

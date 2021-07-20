@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/glsplain.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/glsplain",
-  "permalink": "/docs/overleaf/bibliography-styles/glsplain",
+  "permalink": "/overleaf/bibliography-styles/glsplain",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/glsplain.md",
   "version": "current",
   "sidebarPosition": 174,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use gerunsrt (germbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gerunsrt"
+    "permalink": "/overleaf/bibliography-styles/gerunsrt"
   },
   "next": {
     "title": "How to use glsshort (gloss) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/glsshort"
+    "permalink": "/overleaf/bibliography-styles/glsshort"
   }
 }

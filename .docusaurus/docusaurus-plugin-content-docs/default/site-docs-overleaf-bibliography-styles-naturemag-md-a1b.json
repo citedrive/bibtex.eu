@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/naturemag.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/naturemag",
-  "permalink": "/docs/overleaf/bibliography-styles/naturemag",
+  "permalink": "/overleaf/bibliography-styles/naturemag",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/naturemag.md",
   "version": "current",
   "sidebarPosition": 244,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use plainnat (natbib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/plainnat"
+    "permalink": "/overleaf/bibliography-styles/plainnat"
   },
   "next": {
     "title": "How to use nddiss2e (nddiss) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/nddiss2e"
+    "permalink": "/overleaf/bibliography-styles/nddiss2e"
   }
 }

@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/apecon.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/apecon",
-  "permalink": "/docs/overleaf/bibliography-styles/apecon",
+  "permalink": "/overleaf/bibliography-styles/apecon",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/apecon.md",
   "version": "current",
   "sidebarPosition": 144,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use ier (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ier"
+    "permalink": "/overleaf/bibliography-styles/ier"
   },
   "next": {
     "title": "How to use agecon (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/agecon"
+    "permalink": "/overleaf/bibliography-styles/agecon"
   }
 }

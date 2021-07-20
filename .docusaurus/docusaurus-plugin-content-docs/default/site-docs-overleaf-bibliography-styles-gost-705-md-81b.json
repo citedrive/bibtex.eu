@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/gost705.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/gost705",
-  "permalink": "/docs/overleaf/bibliography-styles/gost705",
+  "permalink": "/overleaf/bibliography-styles/gost705",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/gost705.md",
   "version": "current",
   "sidebarPosition": 130,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use gost705s (disser) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gost705s"
+    "permalink": "/overleaf/bibliography-styles/gost705s"
   },
   "next": {
     "title": "How to use dk-alpha (dk-bib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/dk-alpha"
+    "permalink": "/overleaf/bibliography-styles/dk-alpha"
   }
 }

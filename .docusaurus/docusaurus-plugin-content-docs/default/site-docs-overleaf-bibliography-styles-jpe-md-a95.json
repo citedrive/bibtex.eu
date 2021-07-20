@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jpe.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jpe",
-  "permalink": "/docs/overleaf/bibliography-styles/jpe",
+  "permalink": "/overleaf/bibliography-styles/jpe",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jpe.md",
   "version": "current",
   "sidebarPosition": 152,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use oega (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/oega"
+    "permalink": "/overleaf/bibliography-styles/oega"
   },
   "next": {
     "title": "How to use itaxpf (economic) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/itaxpf"
+    "permalink": "/overleaf/bibliography-styles/itaxpf"
   }
 }

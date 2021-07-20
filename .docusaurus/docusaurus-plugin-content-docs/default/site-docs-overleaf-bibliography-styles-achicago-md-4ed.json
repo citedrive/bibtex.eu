@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/achicago.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/achicago",
-  "permalink": "/docs/overleaf/bibliography-styles/achicago",
+  "permalink": "/overleaf/bibliography-styles/achicago",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/achicago.md",
   "version": "current",
   "sidebarPosition": 166,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use francaissc (francais-bst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/francaissc"
+    "permalink": "/overleaf/bibliography-styles/francaissc"
   },
   "next": {
     "title": "How to use gatech-thesis-losa (gatech-thesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/gatech-thesis-losa"
+    "permalink": "/overleaf/bibliography-styles/gatech-thesis-losa"
   }
 }

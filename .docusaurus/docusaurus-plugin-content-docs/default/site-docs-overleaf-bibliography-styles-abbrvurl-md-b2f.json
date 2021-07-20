@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/abbrvurl.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/abbrvurl",
-  "permalink": "/docs/overleaf/bibliography-styles/abbrvurl",
+  "permalink": "/overleaf/bibliography-styles/abbrvurl",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/abbrvurl.md",
   "version": "current",
   "sidebarPosition": 303,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use UNAMThesis (unamthesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/UNAMThesis"
+    "permalink": "/overleaf/bibliography-styles/UNAMThesis"
   },
   "next": {
     "title": "How to use unsrturl (urlbst) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/unsrturl"
+    "permalink": "/overleaf/bibliography-styles/unsrturl"
   }
 }

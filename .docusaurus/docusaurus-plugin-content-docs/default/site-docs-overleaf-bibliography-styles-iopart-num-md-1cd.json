@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/iopart-num.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/iopart-num",
-  "permalink": "/docs/overleaf/bibliography-styles/iopart-num",
+  "permalink": "/overleaf/bibliography-styles/iopart-num",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/iopart-num.md",
   "version": "current",
   "sidebarPosition": 219,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use inlinebib (inlinebib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/inlinebib"
+    "permalink": "/overleaf/bibliography-styles/inlinebib"
   },
   "next": {
     "title": "How to use jneurosci (jneurosci) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jneurosci"
+    "permalink": "/overleaf/bibliography-styles/jneurosci"
   }
 }

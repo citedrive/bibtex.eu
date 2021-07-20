@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/usmeg-a.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/usmeg-a",
-  "permalink": "/docs/overleaf/bibliography-styles/usmeg-a",
+  "permalink": "/overleaf/bibliography-styles/usmeg-a",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/usmeg-a.md",
   "version": "current",
   "sidebarPosition": 289,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use spiebib (spie) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/spiebib"
+    "permalink": "/overleaf/bibliography-styles/spiebib"
   },
   "next": {
     "title": "How to use ussagus (stellenbosch) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ussagus"
+    "permalink": "/overleaf/bibliography-styles/ussagus"
   }
 }

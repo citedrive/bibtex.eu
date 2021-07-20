@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/jureco.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/jureco",
-  "permalink": "/docs/overleaf/bibliography-styles/jureco",
+  "permalink": "/overleaf/bibliography-styles/jureco",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/jureco.md",
   "version": "current",
   "sidebarPosition": 223,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use jurunsrt (jurabib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jurunsrt"
+    "permalink": "/overleaf/bibliography-styles/jurunsrt"
   },
   "next": {
     "title": "How to use jox (jurabib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/jox"
+    "permalink": "/overleaf/bibliography-styles/jox"
   }
 }

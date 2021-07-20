@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/sageep.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/sageep",
-  "permalink": "/docs/overleaf/bibliography-styles/sageep",
+  "permalink": "/overleaf/bibliography-styles/sageep",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/sageep.md",
   "version": "current",
   "sidebarPosition": 276,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use rsc (rsc) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/rsc"
+    "permalink": "/overleaf/bibliography-styles/rsc"
   },
   "next": {
     "title": "How to use sapthesis (sapthesis) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/sapthesis"
+    "permalink": "/overleaf/bibliography-styles/sapthesis"
   }
 }

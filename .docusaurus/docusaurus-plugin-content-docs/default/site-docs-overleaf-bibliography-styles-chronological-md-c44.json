@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/chronological.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/chronological",
-  "permalink": "/docs/overleaf/bibliography-styles/chronological",
+  "permalink": "/overleaf/bibliography-styles/chronological",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/chronological.md",
   "version": "current",
   "sidebarPosition": 239,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use mbunsrtdin (multibib) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/mbunsrtdin"
+    "permalink": "/overleaf/bibliography-styles/mbunsrtdin"
   },
   "next": {
     "title": "How to use munich (munich) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/munich"
+    "permalink": "/overleaf/bibliography-styles/munich"
   }
 }

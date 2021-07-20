@@ -7,7 +7,7 @@
   "source": "@site/docs/overleaf/bibliography-styles/aichej.md",
   "sourceDirName": "overleaf/bibliography-styles",
   "slug": "/overleaf/bibliography-styles/aichej",
-  "permalink": "/docs/overleaf/bibliography-styles/aichej",
+  "permalink": "/overleaf/bibliography-styles/aichej",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/overleaf/bibliography-styles/aichej.md",
   "version": "current",
   "sidebarPosition": 30,
@@ -17,10 +17,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "How to use aiaa (aiaa) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/aiaa"
+    "permalink": "/overleaf/bibliography-styles/aiaa"
   },
   "next": {
     "title": "How to use ajl (ajl) at Overleaf?",
-    "permalink": "/docs/overleaf/bibliography-styles/ajl"
+    "permalink": "/overleaf/bibliography-styles/ajl"
   }
 }
