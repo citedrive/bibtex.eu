@@ -30,6 +30,15 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 
 .hero--primary {
-    --ifm-hero-background-color: #2b2b2b;
-    --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+    --ifm-hero-background-color: #ffffff;
+    --ifm-hero-text-color: #5B636C;
+}
+
+.button.button--secondary {
+    color: #ffffff;
+    background: #7DBFA2;
+}
+
+.hero__subtitle {
+    font-size: 54px;
 }
