@@ -23,3 +23,17 @@
   align-items: center;
   justify-content: center;
 }
+
+.subtitle {
+    font-size: 1.3rem;
+}
+
+
+.subsubtitle {
+    font-size: 3rem;
+    color: "#000"
+}
+
+.subsubsubtitle {
+    font-size: 1.5rem;
+}
