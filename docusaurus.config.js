@@ -24,9 +24,15 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Getting stated',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+
+        {
+          href: '/overleaf-citedrive',
+          label: 'Overleaf + CiteDrive',
+          position: 'left',
+        },
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/citedrive/bibtex.eu',
           label: 'GitHub',

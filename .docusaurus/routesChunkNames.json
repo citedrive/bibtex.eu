@@ -21,6 +21,10 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
+  "/bibtex-citedrive-63b": {
+    "component": "component---site-src-pages-bibtex-citedrive-js-4-a-1-841",
+    "config": "config---bibtex-citedrive-5-e-9-048"
+  },
   "/blog-569": {
     "component": "component---theme-blog-list-pagea-6-a-7ba",
     "sidebar": "sidebar---blog-814-8ac",
@@ -110,9 +114,9 @@
     "component": "component---theme-mdx-page-1-f-3-b90",
     "content": "content---markdown-page-393-028"
   },
-  "/overleaf-278": {
-    "component": "component---site-src-pages-overleaf-js-6-f-1-2f8",
-    "config": "config---overleaf-5-e-9-1da"
+  "/overleaf-citedrive-37e": {
+    "component": "component---site-src-pages-overleaf-citedrive-jsef-8-8c8",
+    "config": "config---bibtex-citedrive-5-e-9-048"
   },
   "/-ff0": {
     "component": "component---theme-doc-page-1-be-9be",

@@ -38,6 +38,11 @@ export default [
   exact: true,
 },
 {
+  path: '/bibtex-citedrive',
+  component: ComponentCreator('/bibtex-citedrive','63b'),
+  exact: true,
+},
+{
   path: '/blog',
   component: ComponentCreator('/blog','569'),
   exact: true,
@@ -88,8 +93,8 @@ export default [
   exact: true,
 },
 {
-  path: '/overleaf',
-  component: ComponentCreator('/overleaf','278'),
+  path: '/overleaf-citedrive',
+  component: ComponentCreator('/overleaf-citedrive','37e'),
   exact: true,
 },
 {

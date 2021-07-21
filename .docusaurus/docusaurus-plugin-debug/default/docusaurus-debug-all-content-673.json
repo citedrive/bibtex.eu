@@ -9796,14 +9796,19 @@
   "docusaurus-plugin-content-pages": {
     "default": [
       {
+        "type": "jsx",
+        "permalink": "/bibtex-citedrive",
+        "source": "@site/src/pages/bibtex-citedrive.js"
+      },
+      {
         "type": "mdx",
         "permalink": "/markdown-page",
         "source": "@site/src/pages/markdown-page.md"
       },
       {
         "type": "jsx",
-        "permalink": "/overleaf",
-        "source": "@site/src/pages/overleaf.js"
+        "permalink": "/overleaf-citedrive",
+        "source": "@site/src/pages/overleaf-citedrive.js"
       }
     ]
   },

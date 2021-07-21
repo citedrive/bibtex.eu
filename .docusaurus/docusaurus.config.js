@@ -20,12 +20,12 @@ export default {
           "type": "doc",
           "docId": "intro",
           "position": "left",
-          "label": "Tutorial",
+          "label": "Getting stated",
           "activeSidebarClassName": "navbar__link--active"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
+          "href": "/overleaf-citedrive",
+          "label": "Overleaf + CiteDrive",
           "position": "left"
         },
         {
