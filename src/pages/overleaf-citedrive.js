@@ -7,7 +7,7 @@ import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import OverleafCiteDrive from "./overleaf_citedrive.svg";
 import Pin from "./pin.svg";
-import EveryOne from './everyone.svg';
+import EveryOne from "./everyone.svg";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -69,7 +69,6 @@ function HomepageExplainer() {
   );
 }
 
-
 function Project() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -94,11 +93,10 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageExplainer />
-          <HomepageFeatures />
+        <HomepageFeatures />
         <Project />
 
-
-      {/**/}
+        {/**/}
       </main>
     </Layout>
   );
