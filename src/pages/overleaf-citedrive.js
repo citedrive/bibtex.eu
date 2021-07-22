@@ -16,7 +16,7 @@ function HomepageHeader() {
         <OverleafCiteDrive />
 
         <p style={{ color: "#000" }} className={styles.subsubtitle}>
-          Complete your research infrastructure
+          The mighty pair for LaTeX users
         </p>
         <p className={styles.subsubsubtitle}>
           Complete your research pipeline with the powerful one-two pair app.
