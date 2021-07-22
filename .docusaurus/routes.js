@@ -38,11 +38,6 @@ export default [
   exact: true,
 },
 {
-  path: '/bibtex-citedrive',
-  component: ComponentCreator('/bibtex-citedrive','63b'),
-  exact: true,
-},
-{
   path: '/blog',
   component: ComponentCreator('/blog','569'),
   exact: true,

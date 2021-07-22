@@ -1,6 +1,5 @@
 export default {
   'allContent---docusaurus-debug-content-246-9aa': [() => import(/* webpackChunkName: 'allContent---docusaurus-debug-content-246-9aa' */ "~debug/default/docusaurus-debug-all-content-673.json"), "~debug/default/docusaurus-debug-all-content-673.json", require.resolveWeak("~debug/default/docusaurus-debug-all-content-673.json")],
-  'component---site-src-pages-bibtex-citedrive-js-4-a-1-841': [() => import(/* webpackChunkName: 'component---site-src-pages-bibtex-citedrive-js-4-a-1-841' */ "@site/src/pages/bibtex-citedrive.js"), "@site/src/pages/bibtex-citedrive.js", require.resolveWeak("@site/src/pages/bibtex-citedrive.js")],
   'component---site-src-pages-overleaf-citedrive-jsef-8-8c8': [() => import(/* webpackChunkName: 'component---site-src-pages-overleaf-citedrive-jsef-8-8c8' */ "@site/src/pages/overleaf-citedrive.js"), "@site/src/pages/overleaf-citedrive.js", require.resolveWeak("@site/src/pages/overleaf-citedrive.js")],
   'component---theme-blog-list-pagea-6-a-7ba': [() => import(/* webpackChunkName: 'component---theme-blog-list-pagea-6-a-7ba' */ "@theme/BlogListPage"), "@theme/BlogListPage", require.resolveWeak("@theme/BlogListPage")],
   'component---theme-blog-post-pageccc-cab': [() => import(/* webpackChunkName: 'component---theme-blog-post-pageccc-cab' */ "@theme/BlogPostPage"), "@theme/BlogPostPage", require.resolveWeak("@theme/BlogPostPage")],
@@ -15,7 +14,7 @@ export default {
   'component---theme-doc-item-178-a40': [() => import(/* webpackChunkName: 'component---theme-doc-item-178-a40' */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
   'component---theme-doc-page-1-be-9be': [() => import(/* webpackChunkName: 'component---theme-doc-page-1-be-9be' */ "@theme/DocPage"), "@theme/DocPage", require.resolveWeak("@theme/DocPage")],
   'component---theme-mdx-page-1-f-3-b90': [() => import(/* webpackChunkName: 'component---theme-mdx-page-1-f-3-b90' */ "@theme/MDXPage"), "@theme/MDXPage", require.resolveWeak("@theme/MDXPage")],
-  'config---bibtex-citedrive-5-e-9-048': [() => import(/* webpackChunkName: 'config---bibtex-citedrive-5-e-9-048' */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],
+  'config---overleaf-citedrive-5-e-9-ab1': [() => import(/* webpackChunkName: 'config---overleaf-citedrive-5-e-9-ab1' */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],
   'content---0-e-3-279': [() => import(/* webpackChunkName: 'content---0-e-3-279' */ "@site/docs/intro.md"), "@site/docs/intro.md", require.resolveWeak("@site/docs/intro.md")],
   'content---bib-filea-80-6b6': [() => import(/* webpackChunkName: 'content---bib-filea-80-6b6' */ "@site/docs/bib-file.md"), "@site/docs/bib-file.md", require.resolveWeak("@site/docs/bib-file.md")],
   'content---blog-357-22b': [() => import(/* webpackChunkName: 'content---blog-357-22b' */ "@site/blog/2019-05-29-hello-world.md?truncated=true"), "@site/blog/2019-05-29-hello-world.md?truncated=true", require.resolveWeak("@site/blog/2019-05-29-hello-world.md?truncated=true")],

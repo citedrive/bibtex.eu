@@ -21,10 +21,6 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/bibtex-citedrive-63b": {
-    "component": "component---site-src-pages-bibtex-citedrive-js-4-a-1-841",
-    "config": "config---bibtex-citedrive-5-e-9-048"
-  },
   "/blog-569": {
     "component": "component---theme-blog-list-pagea-6-a-7ba",
     "sidebar": "sidebar---blog-814-8ac",
@@ -116,7 +112,7 @@
   },
   "/overleaf-citedrive-37e": {
     "component": "component---site-src-pages-overleaf-citedrive-jsef-8-8c8",
-    "config": "config---bibtex-citedrive-5-e-9-048"
+    "config": "config---overleaf-citedrive-5-e-9-ab1"
   },
   "/-ff0": {
     "component": "component---theme-doc-page-1-be-9be",

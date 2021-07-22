@@ -44,10 +44,10 @@ function HomepageExplainer() {
   return (
     <div
       className={clsx("hero hero--primary", styles.heroBanner)}
-      style={{ background: "#393838", color: "#fff", fontSize: "1.2rem" }}
+      style={{ background: "#f5f5f5", color: "#38383", fontSize: "1.2rem" }}
     >
       <div className="container">
-        <Pin style={{ width: "20px" }} />
+        <Pin style={{ width: "15px", height: "100px" }} />
         <p>
           Overleaf enables teams of students and researchers to write papers
           simultaneously, from anywhere, in an easy-to-use, collaborative online
@@ -77,7 +77,7 @@ function Project() {
       style={{ background: "#F7B4B4", color: "#fff", fontSize: "1.2rem" }}
     >
       <div className="container">
-        <EveryOne />
+        <EveryOne style={{maxWidth: "600"}}/>
       </div>
     </div>
   );

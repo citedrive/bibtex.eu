@@ -1616,7 +1616,7 @@
               "unversionedId": "entry-types",
               "id": "entry-types",
               "isDocsHomePage": false,
-              "title": "entry-types",
+              "title": "Entry types",
               "description": "",
               "source": "@site/docs/entry-types.md",
               "sourceDirName": ".",
@@ -9554,7 +9554,7 @@
                 "permalink": "/overleaf/bibliography-styles/vak"
               },
               "next": {
-                "title": "entry-types",
+                "title": "Entry types",
                 "permalink": "/entry-types"
               }
             },
@@ -9795,11 +9795,6 @@
   },
   "docusaurus-plugin-content-pages": {
     "default": [
-      {
-        "type": "jsx",
-        "permalink": "/bibtex-citedrive",
-        "source": "@site/src/pages/bibtex-citedrive.js"
-      },
       {
         "type": "mdx",
         "permalink": "/markdown-page",
