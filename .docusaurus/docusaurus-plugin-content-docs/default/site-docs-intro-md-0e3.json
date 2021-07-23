@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": ".bib-file - bibliographic database /  information storage file",
-    "permalink": "/bib-file"
+    "title": "Database",
+    "permalink": "/database"
   }
 }

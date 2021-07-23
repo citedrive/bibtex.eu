@@ -1,0 +1,26 @@
+{
+  "unversionedId": "citations0",
+  "id": "citations0",
+  "isDocsHomePage": false,
+  "title": ".bib-file - bibliographic database /  information storage file",
+  "description": "",
+  "source": "@site/docs/citations0.md",
+  "sourceDirName": ".",
+  "slug": "/citations0",
+  "permalink": "/citations0",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/citations0.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Entry types",
+    "permalink": "/entry-types"
+  },
+  "next": {
+    "title": ".bib-file - bibliographic database /  information storage file",
+    "permalink": "/fields"
+  }
+}

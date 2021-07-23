@@ -10,10 +10,17 @@
   "permalink": "/entry-types",
   "editUrl": "https://github.com/citedrive/bibtex.eu/docs/entry-types.md",
   "version": "current",
-  "frontMatter": {},
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "How to use vancouver (vancouver) at Overleaf?",
-    "permalink": "/overleaf/bibliography-styles/vancouver"
+    "title": "Database",
+    "permalink": "/database"
+  },
+  "next": {
+    "title": "Citations",
+    "permalink": "/citations"
   }
 }

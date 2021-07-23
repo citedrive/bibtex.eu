@@ -16,8 +16,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": ".bib-file - bibliographic database /  information storage file",
-    "permalink": "/bib-file"
+    "title": "Fields",
+    "permalink": "/fields"
   },
   "next": {
     "title": "How to use acm (Base styles) at Overleaf?",

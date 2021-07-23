@@ -1,0 +1,26 @@
+{
+  "unversionedId": "citations",
+  "id": "citations",
+  "isDocsHomePage": false,
+  "title": "Citations",
+  "description": "",
+  "source": "@site/docs/citations.md",
+  "sourceDirName": ".",
+  "slug": "/citations",
+  "permalink": "/citations",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/docs/citations.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Entry types",
+    "permalink": "/entry-types"
+  },
+  "next": {
+    "title": "Fields",
+    "permalink": "/fields"
+  }
+}
