@@ -3,7 +3,7 @@
   "id": "database",
   "isDocsHomePage": false,
   "title": "Database",
-  "description": "",
+  "description": "Format",
   "source": "@site/docs/database.md",
   "sourceDirName": ".",
   "slug": "/database",

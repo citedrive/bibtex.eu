@@ -3,7 +3,7 @@
   "id": "intro",
   "isDocsHomePage": false,
   "title": "Introduction to BibTeX",
-  "description": "Format",
+  "description": "",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
   "slug": "/",
