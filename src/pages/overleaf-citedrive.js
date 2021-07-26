@@ -26,14 +26,21 @@ function HomepageHeader() {
           formatting of bibliographies and citations to us.{" "}
         </p>
 
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="https://app.citedrive.com/"
-          >
-            Getting started
-          </Link>
-        </div>
+        <button className={styles.watch}>
+            TRY FOR FREE
+        </button>
+
+        <button
+          className={styles.started}
+          style={{ color: "#000"}}
+          to="https://app.citedrive.com/"
+          onclick="location.href = 'www.yoursite.com';"
+        >
+
+          ▶  WATCH VIDEO
+        </button>
+
+
       </div>
     </header>
   );

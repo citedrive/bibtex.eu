@@ -13,7 +13,8 @@ export default {
       "title": "",
       "logo": {
         "alt": "BibTeX Logo",
-        "src": "img/logo.svg"
+        "src": "img/logo.svg",
+        "srcDark": "img/logo_dark.svg"
       },
       "items": [
         {
