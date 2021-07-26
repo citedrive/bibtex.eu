@@ -21,12 +21,7 @@ module.exports = {
         srcDark: 'img/logo_dark.svg',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Getting stated',
-        },
+
 
         {
           href: '/overleaf-citedrive',
@@ -43,7 +38,9 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+
       links: [
+        /*
         {
           title: 'Docs',
           items: [
@@ -74,7 +71,7 @@ module.exports = {
               href: 'https://github.com/citedrive/bibtex.eu',
             },
           ],
-        },
+        },*/
       ],
       copyright: `Copyright © ${new Date().getFullYear()} BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC.`,
     },

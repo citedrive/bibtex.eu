@@ -18,13 +18,6 @@ export default {
       },
       "items": [
         {
-          "type": "doc",
-          "docId": "intro",
-          "position": "left",
-          "label": "Getting stated",
-          "activeSidebarClassName": "navbar__link--active"
-        },
-        {
           "href": "/overleaf-citedrive",
           "label": "Overleaf + CiteDrive",
           "position": "left"
@@ -39,39 +32,7 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Facebook",
-              "href": "#"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/citedrive/bibtex.eu"
-            }
-          ]
-        }
-      ],
+      "links": [],
       "copyright": "Copyright © 2021 BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC."
     },
     "prism": {
