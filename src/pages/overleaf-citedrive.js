@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -8,13 +8,28 @@ import HomepageFeatures from "../components/HomepageFeatures";
 import OverleafCiteDrive from "./overleaf_citedrive.svg";
 import Pin from "./pin.svg";
 import EveryOne from "./everyone.svg";
+import Modal from "../components/modal";
+import YouTube from 'react-youtube';
+
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+    const [open, setOpen] = useState(false);
+
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+      },
+    };
+
+
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <OverleafCiteDrive />
-
         <p style={{ color: "#000" }} className={styles.subsubtitle}>
           The mighty pair for LaTeX users
         </p>
@@ -25,22 +40,19 @@ function HomepageHeader() {
           mouse clicks. Focus on your work at Overleaf and leave the tedious
           formatting of bibliographies and citations to us.{" "}
         </p>
+        <button className={styles.watch} style={{ cursor: "pointer" }}>TRY FOR FREE</button>
 
-        <button className={styles.watch}>
-            TRY FOR FREE
+        <button onClick= {()=> setOpen(true)} className={styles.started} style={{ color: "#000", cursor: "pointer" }}>
+          ▶ WATCH VIDEO
         </button>
-
-        <button
-          className={styles.started}
-          style={{ color: "#000"}}
-          to="https://app.citedrive.com/"
-          onclick="location.href = 'www.yoursite.com';"
+        <Modal
+          open={open}
+          close={() => setOpen(false)}
+          width={"670px"}
+          height={"480px"}
         >
-
-          ▶  WATCH VIDEO
-        </button>
-
-
+        <YouTube videoId="2g811Eo7K8U" opts={opts}  />
+        </Modal>
       </div>
     </header>
   );
@@ -87,7 +99,7 @@ function Project() {
       style={{ background: "#F7B4B4", color: "#fff", fontSize: "1.2rem" }}
     >
       <div className="container">
-        <EveryOne style={{maxWidth: "600"}}/>
+        <EveryOne style={{ maxWidth: "600" }} />
       </div>
     </div>
   );
