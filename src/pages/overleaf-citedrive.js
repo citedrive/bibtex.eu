@@ -55,6 +55,9 @@ function HomepageExplainer() {
     >
       <div className="container">
         <Pin style={{ width: "15px", height: "100px" }} />
+        <p style={{ color: "#000" }} className={styles.subsubtitle}>
+          Perfect for Overleaf!
+        </p>
         <p>
           Overleaf enables teams of students and researchers to write papers
           simultaneously, from anywhere, in an easy-to-use, collaborative online
