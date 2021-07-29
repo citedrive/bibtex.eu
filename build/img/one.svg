@@ -1,33 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="631" height="647.638" viewBox="0 0 631 647.638">
-  <defs>
-    <filter id="Dropdown_Container" x="0" y="0" width="631" height="647.638" filterUnits="userSpaceOnUse">
-      <feOffset dx="1" dy="1" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feFlood flood-color="#c9c9c9" flood-opacity="0.749"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="Dropdown" transform="translate(1614.5 -128.862)">
-    <g transform="matrix(1, 0, 0, 1, -1614.5, 128.86)" filter="url(#Dropdown_Container)">
-      <path id="Dropdown_Container-2" data-name="Dropdown Container" d="M-1175.834,157.579l-12.388-22.89a4.23,4.23,0,0,0-7.556,0l-12.388,22.89H-1611V771h622V157.579Z" transform="translate(1614.5 -128.86)" fill="#fff"/>
-    </g>
-    <text id="Collaborators" transform="translate(-1579.686 202.116)" fill="#666" font-size="38" font-family="AcuminPro-Semibold, Acumin Pro" font-weight="600"><tspan x="0" y="28">Collaborators</tspan></text>
-    <text id="johndoe_example.com" data-name="johndoe@example.com" transform="translate(-1503.466 286.331)" fill="#666" font-size="38" font-family="AcuminPro-MediumItalic, Acumin Pro" font-weight="500" font-style="italic"><tspan x="0" y="28">johndoe@example.com</tspan></text>
-    <text id="janedoe_example.com" data-name="janedoe@example.com" transform="translate(-1503.466 379.331)" fill="#666" font-size="38" font-family="AcuminPro-MediumItalic, Acumin Pro" font-weight="500" font-style="italic"><tspan x="0" y="28">janedoe@example.com</tspan></text>
-    <rect id="Input_Field" data-name="Input Field" width="564" height="81" rx="9.564" transform="translate(-1583 564)" fill="#eaeff7"/>
-    <text id="add_e-mail_adress" data-name="add e-mail adress" transform="translate(-1563.197 592.646)" fill="gray" font-size="30" font-family="AcuminPro-MediumItalic, Acumin Pro" font-weight="500" font-style="italic"><tspan x="0" y="22">add e-mail adress</tspan></text>
-    <g id="Submit_Button" data-name="Submit Button">
-      <rect id="Button-Wrapper" width="564" height="81" rx="6" transform="translate(-1583 668)" fill="#0058ff"/>
-      <text id="Submit" transform="translate(-1353.596 697.946)" fill="#fff" font-size="30" font-family="AcuminPro-Semibold, Acumin Pro" font-weight="600"><tspan x="0" y="22">Submit</tspan></text>
-    </g>
-    <g id="Person_Icon" data-name="Person Icon">
-      <circle id="Ellipse_53" data-name="Ellipse 53" cx="29" cy="29" r="29" transform="translate(-1579.5 277.659)" fill="#e6e6e6"/>
-      <path id="Person" d="M-1544.727,311.542a27.887,27.887,0,0,1-.408-5.049,15.213,15.213,0,0,0,3.8-10.055c0-6.326-4.224-10.107-9.434-10.107s-9.434,3.781-9.434,10.107a15.016,15.016,0,0,0,4.255,10.509,28.039,28.039,0,0,1-.41,4.6c-6.523,1.016-13.728,3.492-13.728,6.684,0,4.218,8.749,8.535,19.542,8.535s19.541-4.317,19.541-8.535C-1531,315.034-1538.2,312.558-1544.727,311.542Z" fill="#4d4d4d"/>
-    </g>
-    <g id="Person_Icon-2" data-name="Person Icon">
-      <circle id="Ellipse_54" data-name="Ellipse 54" cx="29" cy="29" r="29" transform="translate(-1579 371)" fill="#e6e6e6"/>
-      <path id="Person-2" data-name="Person" d="M-1544.227,404.882a27.868,27.868,0,0,1-.408-5.048,15.213,15.213,0,0,0,3.8-10.055c0-6.326-4.224-10.107-9.434-10.107s-9.434,3.781-9.434,10.107a15.016,15.016,0,0,0,4.255,10.509,28.017,28.017,0,0,1-.41,4.594c-6.523,1.016-13.728,3.492-13.728,6.685,0,4.217,8.749,8.535,19.542,8.535s19.541-4.318,19.541-8.535C-1530.5,408.374-1537.7,405.9-1544.227,404.882Z" fill="#4d4d4d"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="20.743" height="20.743" viewBox="0 0 20.743 20.743">
+  <g id="Gruppe_169" data-name="Gruppe 169" transform="translate(-1487.379 -77.379)">
+    <line id="Linie_15" data-name="Linie 15" x2="16.5" y2="16.5" transform="translate(1489.5 79.5)" fill="none" stroke="#2f2f2f" stroke-linecap="round" stroke-width="3"/>
+    <line id="Linie_16" data-name="Linie 16" x1="16.5" y2="16.5" transform="translate(1489.5 79.5)" fill="none" stroke="#2f2f2f" stroke-linecap="round" stroke-width="3"/>
   </g>
 </svg>
