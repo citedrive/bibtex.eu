@@ -18,5 +18,9 @@
   "previous": {
     "title": "Citations",
     "permalink": "/citations"
+  },
+  "next": {
+    "title": "Bibtex bibliography styles",
+    "permalink": "/styles"
   }
 }

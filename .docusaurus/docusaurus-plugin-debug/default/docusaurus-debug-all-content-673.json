@@ -36,6 +36,10 @@
               {
                 "type": "doc",
                 "id": "fields"
+              },
+              {
+                "type": "doc",
+                "id": "styles"
               }
             ]
           },
@@ -44,7 +48,8 @@
             "/database": "tutorialSidebar",
             "/entry-types": "tutorialSidebar",
             "/fields": "tutorialSidebar",
-            "/": "tutorialSidebar"
+            "/": "tutorialSidebar",
+            "/styles": "tutorialSidebar"
           },
           "docs": [
             {
@@ -104,7 +109,7 @@
               "id": "entry-types",
               "isDocsHomePage": false,
               "title": "Entry types",
-              "description": "",
+              "description": "article",
               "source": "@site/docs/entry-types.md",
               "sourceDirName": ".",
               "slug": "/entry-types",
@@ -145,6 +150,10 @@
               "previous": {
                 "title": "Citations",
                 "permalink": "/citations"
+              },
+              "next": {
+                "title": "Bibtex bibliography styles",
+                "permalink": "/styles"
               }
             },
             {
@@ -168,6 +177,28 @@
               "next": {
                 "title": "Database",
                 "permalink": "/database"
+              }
+            },
+            {
+              "unversionedId": "styles",
+              "id": "styles",
+              "isDocsHomePage": false,
+              "title": "Bibtex bibliography styles",
+              "description": "",
+              "source": "@site/docs/styles.md",
+              "sourceDirName": ".",
+              "slug": "/styles",
+              "permalink": "/styles",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/styles.md",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Fields",
+                "permalink": "/fields"
               }
             }
           ]

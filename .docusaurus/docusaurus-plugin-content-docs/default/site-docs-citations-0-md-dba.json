@@ -2,7 +2,7 @@
   "unversionedId": "citations0",
   "id": "citations0",
   "isDocsHomePage": false,
-  "title": ".bib-file - bibliographic database /  information storage file",
+  "title": "Citations",
   "description": "",
   "source": "@site/docs/citations0.md",
   "sourceDirName": ".",
@@ -16,11 +16,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Entry types",
-    "permalink": "/entry-types"
+    "title": "Citations",
+    "permalink": "/citations"
   },
   "next": {
-    "title": ".bib-file - bibliographic database /  information storage file",
+    "title": "Fields",
     "permalink": "/fields"
   }
 }

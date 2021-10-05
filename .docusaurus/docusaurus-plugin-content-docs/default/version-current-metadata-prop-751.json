@@ -30,6 +30,11 @@
         "type": "link",
         "label": "Fields",
         "href": "/fields"
+      },
+      {
+        "type": "link",
+        "label": "Bibtex bibliography styles",
+        "href": "/styles"
       }
     ]
   },
@@ -38,6 +43,7 @@
     "/database": "tutorialSidebar",
     "/entry-types": "tutorialSidebar",
     "/fields": "tutorialSidebar",
-    "/": "tutorialSidebar"
+    "/": "tutorialSidebar",
+    "/styles": "tutorialSidebar"
   }
 }
