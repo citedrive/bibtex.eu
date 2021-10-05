@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -9,40 +9,49 @@ import OverleafCiteDrive from "./overleaf_citedrive.svg";
 import Pin from "./pin.svg";
 import EveryOne from "./everyone.svg";
 import Modal from "../components/modal";
-import YouTube from 'react-youtube';
-
+import YouTube from "react-youtube";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    const opts = {
-      height: '390',
-      width: '640',
-      playerVars: {
-        // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
-      },
-    };
-
+  const opts = {
+    height: "390",
+    width: "640",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
 
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <OverleafCiteDrive />
         <p style={{ color: "#000" }} className={styles.subsubtitle}>
-          The mighty pair for LaTeX users
+          A mighty pairing for LaTeX users
         </p>
         <p className={styles.subsubsubtitle}>
-          Complete your research pipeline with the powerful one-two pair app.
-          Connect your both APPs, and you will get all updates in your BibTeX
-          file without having to do anything manually in Overleaf - with a few
-          mouse clicks. Focus on your work at Overleaf and leave the tedious
-          formatting of bibliographies and citations to us.{" "}
+          Complete your research pipeline with the powerful one-two combination
+          of Overleaf and CiteDrive. Connect your project across both apps and
+          your Overleaf paper will automatically receive updates from your
+          BibTeX file with just a few clicks.
         </p>
-        <button className={styles.watch} style={{ cursor: "pointer" }}>TRY FOR FREE</button>
+        <button
+          className={styles.watch}
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            window.open("https://app.citedrive.com/sign-up", "_blank");
+          }}
+        >
+          TRY FOR FREE
+        </button>
 
-        <button onClick= {()=> setOpen(true)} className={styles.started} style={{ color: "#000", cursor: "pointer" }}>
+        <button
+          onClick={() => setOpen(true)}
+          className={styles.started}
+          style={{ color: "#000", cursor: "pointer" }}
+        >
           ▶ WATCH VIDEO
         </button>
         <Modal
@@ -51,7 +60,7 @@ function HomepageHeader() {
           width={"670px"}
           height={"480px"}
         >
-        <YouTube videoId="X_piDbr4bMw" opts={opts}  />
+          <YouTube videoId="X_piDbr4bMw" opts={opts} />
         </Modal>
       </div>
     </header>
@@ -76,15 +85,7 @@ function HomepageExplainer() {
           LaTeX editor. Overleaf supports a variety of packages, including
           BibTeX, where you can manage your references. When you connect
           Overleaf to CiteDrive, you can automatically synchronize your project
-          and BibTeX-database with Overleaf. With CiteDrive, easily collaborate
-          on a project across global reach. Use our browser extension when you
-          discover a paper you want to use, add it to your project with one
-          click. You or anyone on your team can organize and cluster, annotate
-          and evaluate your material in a concise dashboard. Write faster at
-          Overleaf: Insert in-text citations generated with CiteDrive. Since
-          CiteDrive natively supports BibTeX, all changes are then automatically
-          synced at Overleaf. You no longer need to upload and change references
-          manually.{" "}
+          and BibTeX-database with Overleaf.
         </p>
       </div>
     </div>
@@ -109,8 +110,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Overleaf + CiteDrive`}
-      description="Description will go into a meta tag in <head />"
+      title={`Overleaf + CiteDrive - A mighty pairing for LaTeX users`}
+      description="CiteDrive is a cloud-first reference and citation management platform for Overleaf. "
     >
       <HomepageHeader />
       <main>
