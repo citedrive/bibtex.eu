@@ -10,6 +10,7 @@ import Pin from "./pin.svg";
 import EveryOne from "./everyone.svg";
 import Modal from "../components/modal";
 import YouTube from "react-youtube";
+import Thumbnail from "./overleaf-thumbnail.png"
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -238,6 +239,8 @@ export default function Home() {
     <Layout
       title={`Overleaf + CiteDrive - A mighty pairing for LaTeX users`}
       description="CiteDrive is a cloud-first reference and citation management platform for Overleaf. "
+      keywords="overleaf"
+      image={Thumbnail}
     >
       <HomepageHeader />
       <main>
