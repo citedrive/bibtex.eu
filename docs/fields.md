@@ -216,9 +216,13 @@ This BibTeX-field is used for ``inbook`` and ``incollection``. The former is man
 
 ## journal
 
+The name of the journal in which the paper was published
+
 ## key
 
 ## month
+
+The month of publication, or creation if unpublished.
 
 ## note
 
@@ -236,8 +240,24 @@ This BibTeX-field is used for ``inbook`` and ``incollection``. The former is man
 
 ## title
 
+The title of the publication / work
+
 ## type
 
 ## volume
 
 ## year
+
+The year of publication, or creation if unpublished.
+
+**Example**
+
+```tex
+
+@book{ ... ,
+ year = {2007},
+
+ ...
+
+}
+```
