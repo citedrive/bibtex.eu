@@ -10,7 +10,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'CiteDrive LLC', // Usually your GitHub org/user name.
+  organizationName: 'citedrive', // Usually your GitHub org/user name.
   projectName: 'bibtex', // Usually your repo name.
   themeConfig: {
     navbar: {
