@@ -186,15 +186,22 @@ function GettingStarted() {
           </li>
 
           <li>
-            Back in CiteDrive, select the reference you’d like to cite and click
-            on the “Cite” button along the right-hand side.
+            Ensure you have a bilbiography added to your Overleaf document. 
+            <a href="https://www.overleaf.com/learn/how-to/Using_bibliographies_on_Overleaf">Instructions may be found here.</a>
           </li>
 
-          <li>Enter any prefix/suffix and click Copy Citation.</li>
+          <li>
+            With the CiteDrive Companion add-on installed, click the Insert Citation 
+            button at the top of the Overleaf screen.
+          </li>
 
           <li>
-            Back in Overleaf, place your cursor in your text where you’d like to
-            insert the in-text citation and paste the auto-generated snippet.
+            Select one or more references of interest by clicking on them.
+          </li>
+
+          <li>
+            Click the "In-text citation" button to generate and insert a citation
+            at your current cursor position within the editor.
           </li>
 
           <li>Regenerate your paper output to see the results.*</li>
