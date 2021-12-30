@@ -251,7 +251,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/derekedwards/citedrive/bibtex.eu/sidebars.js",
+          "sidebarPath": "/Users/garethii/Documents/GitHub/bibtex.eu/sidebars.js",
           "routeBasePath": "/",
           "editUrl": "https://github.com/citedrive/bibtex.eu"
         },
@@ -260,7 +260,7 @@ export default {
           "editUrl": "https://github.com/citedrive/bibtex.eu/blog"
         },
         "theme": {
-          "customCss": "/Users/derekedwards/citedrive/bibtex.eu/src/css/custom.css"
+          "customCss": "/Users/garethii/Documents/GitHub/bibtex.eu/src/css/custom.css"
         }
       }
     ]
