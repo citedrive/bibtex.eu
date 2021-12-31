@@ -3,6 +3,41 @@ import React from 'react';
 import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
 {
+  path: '/__docusaurus/debug',
+  component: ComponentCreator('/__docusaurus/debug','3d6'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/config',
+  component: ComponentCreator('/__docusaurus/debug/config','914'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/content',
+  component: ComponentCreator('/__docusaurus/debug/content','c28'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/globalData',
+  component: ComponentCreator('/__docusaurus/debug/globalData','3cf'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/metadata',
+  component: ComponentCreator('/__docusaurus/debug/metadata','31b'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/registry',
+  component: ComponentCreator('/__docusaurus/debug/registry','0da'),
+  exact: true,
+},
+{
+  path: '/__docusaurus/debug/routes',
+  component: ComponentCreator('/__docusaurus/debug/routes','244'),
+  exact: true,
+},
+{
   path: '/blog',
   component: ComponentCreator('/blog','569'),
   exact: true,
@@ -48,6 +83,36 @@ export default [
   exact: true,
 },
 {
+  path: '/fields',
+  component: ComponentCreator('/fields','fa6'),
+  exact: true,
+},
+{
+  path: '/fields/address',
+  component: ComponentCreator('/fields/address','476'),
+  exact: true,
+},
+{
+  path: '/fields/tags',
+  component: ComponentCreator('/fields/tags','6c2'),
+  exact: true,
+},
+{
+  path: '/fields/tags/address',
+  component: ComponentCreator('/fields/tags/address','45e'),
+  exact: true,
+},
+{
+  path: '/fields/tags/biblatex',
+  component: ComponentCreator('/fields/tags/biblatex','53a'),
+  exact: true,
+},
+{
+  path: '/fields/tags/bibtex',
+  component: ComponentCreator('/fields/tags/bibtex','9f8'),
+  exact: true,
+},
+{
   path: '/markdown-page',
   component: ComponentCreator('/markdown-page','be1'),
   exact: true,
@@ -58,8 +123,53 @@ export default [
   exact: true,
 },
 {
+  path: '/styles',
+  component: ComponentCreator('/styles','177'),
+  exact: true,
+},
+{
+  path: '/styles/hello-world',
+  component: ComponentCreator('/styles/hello-world','b74'),
+  exact: true,
+},
+{
+  path: '/styles/hola',
+  component: ComponentCreator('/styles/hola','500'),
+  exact: true,
+},
+{
+  path: '/styles/tags',
+  component: ComponentCreator('/styles/tags','6e4'),
+  exact: true,
+},
+{
+  path: '/styles/tags/docusaurus',
+  component: ComponentCreator('/styles/tags/docusaurus','595'),
+  exact: true,
+},
+{
+  path: '/styles/tags/facebook',
+  component: ComponentCreator('/styles/tags/facebook','af1'),
+  exact: true,
+},
+{
+  path: '/styles/tags/hello',
+  component: ComponentCreator('/styles/tags/hello','a3d'),
+  exact: true,
+},
+{
+  path: '/styles/tags/hola',
+  component: ComponentCreator('/styles/tags/hola','d2f'),
+  exact: true,
+},
+{
+  path: '/styles/welcome',
+  component: ComponentCreator('/styles/welcome','ab1'),
+  exact: true,
+},
+{
   path: '/',
-  component: ComponentCreator('/','0f0'),
+  component: ComponentCreator('/','c67'),
   
   routes: [
 {
@@ -83,13 +193,8 @@ export default [
   exact: true,
 },
 {
-  path: '/fields',
-  component: ComponentCreator('/fields','f8b'),
-  exact: true,
-},
-{
-  path: '/styles',
-  component: ComponentCreator('/styles','061'),
+  path: '/fieldss',
+  component: ComponentCreator('/fieldss','c90'),
   exact: true,
 },
 ]

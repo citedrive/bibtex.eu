@@ -7,7 +7,27 @@ export default {
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
   "organizationName": "citedrive",
-  "projectName": "bibtex",
+  "projectName": "bibtex.eu",
+  "plugins": [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        "blogTitle": "Bibtex bibliography and citation styles",
+        "id": "styles",
+        "routeBasePath": "styles",
+        "path": "./styles"
+      }
+    ],
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        "blogTitle": "BibTeX / BibLaTeX fields",
+        "id": "fields",
+        "routeBasePath": "fields",
+        "path": "./fields"
+      }
+    ]
+  ],
   "themeConfig": {
     "navbar": {
       "title": "",
@@ -253,7 +273,7 @@ export default {
         "docs": {
           "sidebarPath": "/Users/garethii/Documents/GitHub/bibtex.eu/sidebars.js",
           "routeBasePath": "/",
-          "editUrl": "https://github.com/citedrive/bibtex.eu"
+          "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/"
         },
         "blog": {
           "showReadingTime": true,
@@ -275,7 +295,6 @@ export default {
   },
   "onDuplicateRoutes": "warn",
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "titleDelimiter": "|",
   "noIndex": false

@@ -26,18 +26,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "fields",
-              "path": "/fields",
+              "id": "fieldss",
+              "path": "/fieldss",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
               "path": "/",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "styles",
-              "path": "/styles",
               "sidebar": "tutorialSidebar"
             }
           ]

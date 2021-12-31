@@ -1,0 +1,23 @@
+{
+  "bibtex": {
+    "allTagsPath": "/fields/tags",
+    "slug": "bibtex",
+    "name": "bibtex",
+    "count": 1,
+    "permalink": "/fields/tags/bibtex"
+  },
+  "biblatex": {
+    "allTagsPath": "/fields/tags",
+    "slug": "biblatex",
+    "name": "biblatex",
+    "count": 1,
+    "permalink": "/fields/tags/biblatex"
+  },
+  "address": {
+    "allTagsPath": "/fields/tags",
+    "slug": "address",
+    "name": "address",
+    "count": 1,
+    "permalink": "/fields/tags/address"
+  }
+}

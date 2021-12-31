@@ -6,8 +6,8 @@
           "versionName": "current",
           "versionLabel": "Next",
           "versionPath": "/",
-          "versionEditUrl": "https://github.com/citedrive/bibtex.eu/docs",
-          "versionEditUrlLocalized": "https://github.com/citedrive/bibtex.eu/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionEditUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs",
+          "versionEditUrlLocalized": "https://github.com/citedrive/bibtex.eu/tree/main/i18n/en/docusaurus-plugin-content-docs/current",
           "versionBanner": "none",
           "isLast": true,
           "routePriority": -1,
@@ -35,11 +35,7 @@
               },
               {
                 "type": "doc",
-                "id": "fields"
-              },
-              {
-                "type": "doc",
-                "id": "styles"
+                "id": "fieldss"
               }
             ]
           },
@@ -47,9 +43,8 @@
             "/citations": "tutorialSidebar",
             "/database": "tutorialSidebar",
             "/entry-types": "tutorialSidebar",
-            "/fields": "tutorialSidebar",
-            "/": "tutorialSidebar",
-            "/styles": "tutorialSidebar"
+            "/fieldss": "tutorialSidebar",
+            "/": "tutorialSidebar"
           },
           "docs": [
             {
@@ -62,7 +57,7 @@
               "sourceDirName": ".",
               "slug": "/citations",
               "permalink": "/citations",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/citations.md",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/citations.md",
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
@@ -75,7 +70,7 @@
               },
               "next": {
                 "title": "Fields",
-                "permalink": "/fields"
+                "permalink": "/fieldss"
               }
             },
             {
@@ -88,7 +83,7 @@
               "sourceDirName": ".",
               "slug": "/database",
               "permalink": "/database",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/database.md",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/database.md",
               "version": "current",
               "sidebarPosition": 2,
               "frontMatter": {
@@ -114,7 +109,7 @@
               "sourceDirName": ".",
               "slug": "/entry-types",
               "permalink": "/entry-types",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/entry-types.md",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/entry-types.md",
               "version": "current",
               "sidebarPosition": 3,
               "frontMatter": {
@@ -131,16 +126,16 @@
               }
             },
             {
-              "unversionedId": "fields",
-              "id": "fields",
+              "unversionedId": "fieldss",
+              "id": "fieldss",
               "isDocsHomePage": false,
               "title": "Fields",
               "description": "address",
-              "source": "@site/docs/fields.md",
+              "source": "@site/docs/fieldss.md",
               "sourceDirName": ".",
-              "slug": "/fields",
-              "permalink": "/fields",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/fields.md",
+              "slug": "/fieldss",
+              "permalink": "/fieldss",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/fieldss.md",
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
@@ -150,10 +145,6 @@
               "previous": {
                 "title": "Citations",
                 "permalink": "/citations"
-              },
-              "next": {
-                "title": "Bibtex bibliography styles",
-                "permalink": "/styles"
               }
             },
             {
@@ -166,7 +157,7 @@
               "sourceDirName": ".",
               "slug": "/",
               "permalink": "/",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/intro.md",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/intro.md",
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
@@ -177,28 +168,6 @@
               "next": {
                 "title": "Database",
                 "permalink": "/database"
-              }
-            },
-            {
-              "unversionedId": "styles",
-              "id": "styles",
-              "isDocsHomePage": false,
-              "title": "Bibtex bibliography styles",
-              "description": "",
-              "source": "@site/docs/styles.md",
-              "sourceDirName": ".",
-              "slug": "/styles",
-              "permalink": "/styles",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/docs/styles.md",
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "sidebar_position": 5
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Fields",
-                "permalink": "/fields"
               }
             }
           ]
@@ -356,6 +325,226 @@
         }
       },
       "blogTagsListPath": "/blog/tags"
+    },
+    "styles": {
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/styles/welcome",
+            "source": "@site/styles/2019-05-30-welcome.md",
+            "title": "Welcome",
+            "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
+            "date": "2019-05-30T00:00:00.000Z",
+            "formattedDate": "May 30, 2019",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/styles/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/styles/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/styles/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "truncated": false,
+            "nextItem": {
+              "title": "Hello",
+              "permalink": "/styles/hello-world"
+            }
+          }
+        },
+        {
+          "id": "hello-world",
+          "metadata": {
+            "permalink": "/styles/hello-world",
+            "source": "@site/styles/2019-05-29-hello-world.md",
+            "title": "Hello",
+            "description": "Welcome to this blog. This blog is created with Docusaurus 2.",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/styles/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/styles/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.115,
+            "truncated": true,
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/styles/welcome"
+            },
+            "nextItem": {
+              "title": "Hola",
+              "permalink": "/styles/hola"
+            }
+          }
+        },
+        {
+          "id": "hola",
+          "metadata": {
+            "permalink": "/styles/hola",
+            "source": "@site/styles/2019-05-28-hola.md",
+            "title": "Hola",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/styles/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/styles/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": false,
+            "prevItem": {
+              "title": "Hello",
+              "permalink": "/styles/hello-world"
+            }
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/styles",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 3,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Bibtex bibliography and citation styles"
+          },
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ]
+        }
+      ],
+      "blogTags": {
+        "facebook": {
+          "name": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/styles/tags/facebook"
+        },
+        "hello": {
+          "name": "hello",
+          "items": [
+            "welcome",
+            "hello-world"
+          ],
+          "permalink": "/styles/tags/hello"
+        },
+        "docusaurus": {
+          "name": "docusaurus",
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ],
+          "permalink": "/styles/tags/docusaurus"
+        },
+        "hola": {
+          "name": "hola",
+          "items": [
+            "hola"
+          ],
+          "permalink": "/styles/tags/hola"
+        }
+      },
+      "blogTagsListPath": "/styles/tags"
+    },
+    "fields": {
+      "blogPosts": [
+        {
+          "id": "address",
+          "metadata": {
+            "permalink": "/fields/address",
+            "source": "@site/fields/address.md",
+            "title": "address",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2021-12-30T10:59:48.467Z",
+            "formattedDate": "December 30, 2021",
+            "tags": [
+              {
+                "label": "bibtex",
+                "permalink": "/fields/tags/bibtex"
+              },
+              {
+                "label": "biblatex",
+                "permalink": "/fields/tags/biblatex"
+              },
+              {
+                "label": "address",
+                "permalink": "/fields/tags/address"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": false
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/fields",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 1,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "BibTeX / BibLaTeX fields"
+          },
+          "items": [
+            "address"
+          ]
+        }
+      ],
+      "blogTags": {
+        "bibtex": {
+          "name": "bibtex",
+          "items": [
+            "address"
+          ],
+          "permalink": "/fields/tags/bibtex"
+        },
+        "biblatex": {
+          "name": "biblatex",
+          "items": [
+            "address"
+          ],
+          "permalink": "/fields/tags/biblatex"
+        },
+        "address": {
+          "name": "address",
+          "items": [
+            "address"
+          ],
+          "permalink": "/fields/tags/address"
+        }
+      },
+      "blogTagsListPath": "/fields/tags"
     }
   },
   "docusaurus-plugin-content-pages": {

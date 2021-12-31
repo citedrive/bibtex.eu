@@ -1,0 +1,28 @@
+{
+  "permalink": "/styles/welcome",
+  "source": "@site/styles/2019-05-30-welcome.md",
+  "title": "Welcome",
+  "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
+  "date": "2019-05-30T00:00:00.000Z",
+  "formattedDate": "May 30, 2019",
+  "tags": [
+    {
+      "label": "facebook",
+      "permalink": "/styles/tags/facebook"
+    },
+    {
+      "label": "hello",
+      "permalink": "/styles/tags/hello"
+    },
+    {
+      "label": "docusaurus",
+      "permalink": "/styles/tags/docusaurus"
+    }
+  ],
+  "readingTime": 0.175,
+  "truncated": false,
+  "nextItem": {
+    "title": "Hello",
+    "permalink": "/styles/hello-world"
+  }
+}
