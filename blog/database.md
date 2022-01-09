@@ -1,6 +1,13 @@
 ---
-sidebar_position: 2
+slug: welcome
+title: BibTeX - Database
+author: CiteDrive Support (UK)
+author_title: Seamless BibTeX reference management for Overleaf and other modern LaTeX editors.
+author_url: https://citedrive.com/en/
+author_image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
+tags: [bibtex, biblatex, address]
 ---
+
 # Database
 
 ## Format
@@ -91,4 +98,3 @@ The bibliographic database is a simple text file ('bib-file') in which all bibli
 }
 
 ```
-  

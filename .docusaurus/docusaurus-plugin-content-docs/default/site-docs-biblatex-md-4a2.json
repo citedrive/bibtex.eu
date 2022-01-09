@@ -1,0 +1,26 @@
+{
+  "unversionedId": "biblatex",
+  "id": "biblatex",
+  "isDocsHomePage": false,
+  "title": "Biblatex",
+  "description": "",
+  "source": "@site/docs/biblatex.md",
+  "sourceDirName": ".",
+  "slug": "/biblatex",
+  "permalink": "/biblatex",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/biblatex.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Biblatex citation styles",
+    "permalink": "/biblatex-citation-styles"
+  },
+  "next": {
+    "title": "Biblatex bibliography styles",
+    "permalink": "/bibtex-bibliography-styles"
+  }
+}

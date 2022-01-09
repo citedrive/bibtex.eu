@@ -67,8 +67,8 @@ module.exports = {
 
         {
           href: '/overleaf-citedrive',
-          label: 'Overleaf + CiteDrive',
-          position: 'left',
+          label: 'Overleaf',
+          position: 'right',
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -82,16 +82,61 @@ module.exports = {
       style: 'dark',
 
       links: [
-        /*
         {
-          title: 'Docs',
+          title: 'CiteDrive',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'CiteDrive - Home',
+              to: 'https://citedrive.com/en/',
+            },
+            {
+              label: 'CiteDrive - App',
+              to: 'https://app.citedrive.com/',
+            },
+            {
+              label: 'CiteDrive - Forum',
+              to: 'http://forum.citedrive.com/',
             },
           ],
         },
+
+        {
+          title: 'BibTeX',
+          items: [
+            {
+              label: 'BibTeX - Fields',
+              to: '/fields',
+            },
+            {
+              label: 'BibTeX - Types',
+              to: '/types',
+            },
+          ],
+        },
+
+
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Twitter',
+              to: 'https://twitter.com/citedrive',
+            },
+            {
+              label: 'Facebook',
+              to: 'https://www.facebook.com/citedrive',
+            },
+            {
+              label: 'LinkedIn',
+              to: 'https://www.linkedin.com/company/citedrive',
+            },
+            {
+              label: 'YouTube',
+              to: 'https://www.youtube.com/channel/UC3ouAJ9bMVs4wti5cRUd9ag',
+            },
+          ],
+        },
+            /*
         {
           title: 'Community',
           items: [

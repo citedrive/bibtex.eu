@@ -1,17 +1,4 @@
 {
   "title": "Recent posts",
-  "items": [
-    {
-      "title": "Welcome",
-      "permalink": "/styles/welcome"
-    },
-    {
-      "title": "Hello",
-      "permalink": "/styles/hello-world"
-    },
-    {
-      "title": "Hola",
-      "permalink": "/styles/hola"
-    }
-  ]
+  "items": []
 }

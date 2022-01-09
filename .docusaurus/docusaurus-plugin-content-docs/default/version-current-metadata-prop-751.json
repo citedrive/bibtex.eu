@@ -8,36 +8,54 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Introduction to BibTeX",
+        "label": "Bibliography and reference management with bibtex",
+        "href": "/biblatex-bibliography-styles"
+      },
+      {
+        "type": "link",
+        "label": "Biblatex citation styles",
+        "href": "/biblatex-citation-styles"
+      },
+      {
+        "type": "link",
+        "label": "Biblatex",
+        "href": "/biblatex"
+      },
+      {
+        "type": "link",
+        "label": "Biblatex bibliography styles",
+        "href": "/bibtex-bibliography-styles"
+      },
+      {
+        "type": "link",
+        "label": "Bibliography and reference management with bibtex",
+        "href": "/bibtex"
+      },
+      {
+        "type": "link",
+        "label": "Natbib bibliography styles",
         "href": "/"
       },
       {
         "type": "link",
-        "label": "Database",
-        "href": "/database"
+        "label": "Natbib",
+        "href": "/natbib"
       },
       {
         "type": "link",
-        "label": "Entry types",
-        "href": "/entry-types"
-      },
-      {
-        "type": "link",
-        "label": "Citations",
-        "href": "/citations"
-      },
-      {
-        "type": "link",
-        "label": "Fields",
-        "href": "/fieldss"
+        "label": "Natbib citation styles",
+        "href": "/natbib_citation_styles"
       }
     ]
   },
   "permalinkToSidebar": {
-    "/citations": "tutorialSidebar",
-    "/database": "tutorialSidebar",
-    "/entry-types": "tutorialSidebar",
-    "/fieldss": "tutorialSidebar",
+    "/biblatex": "tutorialSidebar",
+    "/biblatex-bibliography-styles": "tutorialSidebar",
+    "/biblatex-citation-styles": "tutorialSidebar",
+    "/bibtex": "tutorialSidebar",
+    "/bibtex-bibliography-styles": "tutorialSidebar",
+    "/natbib": "tutorialSidebar",
+    "/natbib_citation_styles": "tutorialSidebar",
     "/": "tutorialSidebar"
   }
 }

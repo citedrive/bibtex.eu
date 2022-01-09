@@ -15,9 +15,5 @@
     "sidebar_position": 1,
     "slug": "/"
   },
-  "sidebar": "tutorialSidebar",
-  "next": {
-    "title": "Database",
-    "permalink": "/database"
-  }
+  "sidebar": "tutorialSidebar"
 }

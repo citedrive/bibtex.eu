@@ -1,0 +1,26 @@
+{
+  "unversionedId": "bibtex",
+  "id": "bibtex",
+  "isDocsHomePage": false,
+  "title": "Bibliography and reference management with bibtex",
+  "description": "",
+  "source": "@site/docs/bibtex.md",
+  "sourceDirName": ".",
+  "slug": "/bibtex",
+  "permalink": "/bibtex",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/bibtex.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Biblatex bibliography styles",
+    "permalink": "/bibtex-bibliography-styles"
+  },
+  "next": {
+    "title": "Natbib bibliography styles",
+    "permalink": "/"
+  }
+}

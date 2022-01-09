@@ -14,150 +14,240 @@
           "sidebarFilePath": "/Users/garethii/Documents/GitHub/bibtex.eu/sidebars.js",
           "contentPath": "/Users/garethii/Documents/GitHub/bibtex.eu/docs",
           "contentPathLocalized": "/Users/garethii/Documents/GitHub/bibtex.eu/i18n/en/docusaurus-plugin-content-docs/current",
-          "mainDocId": "intro",
+          "mainDocId": "natbib-bibliography-styles",
           "sidebars": {
             "tutorialSidebar": [
               {
                 "type": "doc",
-                "id": "intro"
+                "id": "biblatex-bibliography-styles"
               },
               {
                 "type": "doc",
-                "id": "database"
+                "id": "biblatex-citation-styles"
               },
               {
                 "type": "doc",
-                "id": "entry-types"
+                "id": "biblatex"
               },
               {
                 "type": "doc",
-                "id": "citations"
+                "id": "bibtex-bibliography-styles"
               },
               {
                 "type": "doc",
-                "id": "fieldss"
+                "id": "bibtex"
+              },
+              {
+                "type": "doc",
+                "id": "natbib-bibliography-styles"
+              },
+              {
+                "type": "doc",
+                "id": "natbib"
+              },
+              {
+                "type": "doc",
+                "id": "natbib_citation_styles"
               }
             ]
           },
           "permalinkToSidebar": {
-            "/citations": "tutorialSidebar",
-            "/database": "tutorialSidebar",
-            "/entry-types": "tutorialSidebar",
-            "/fieldss": "tutorialSidebar",
+            "/biblatex": "tutorialSidebar",
+            "/biblatex-bibliography-styles": "tutorialSidebar",
+            "/biblatex-citation-styles": "tutorialSidebar",
+            "/bibtex": "tutorialSidebar",
+            "/bibtex-bibliography-styles": "tutorialSidebar",
+            "/natbib": "tutorialSidebar",
+            "/natbib_citation_styles": "tutorialSidebar",
             "/": "tutorialSidebar"
           },
           "docs": [
             {
-              "unversionedId": "citations",
-              "id": "citations",
+              "unversionedId": "biblatex",
+              "id": "biblatex",
               "isDocsHomePage": false,
-              "title": "Citations",
+              "title": "Biblatex",
               "description": "",
-              "source": "@site/docs/citations.md",
+              "source": "@site/docs/biblatex.md",
               "sourceDirName": ".",
-              "slug": "/citations",
-              "permalink": "/citations",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/citations.md",
+              "slug": "/biblatex",
+              "permalink": "/biblatex",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/biblatex.md",
               "version": "current",
-              "sidebarPosition": 4,
+              "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 4
+                "sidebar_position": 1
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Entry types",
-                "permalink": "/entry-types"
+                "title": "Biblatex citation styles",
+                "permalink": "/biblatex-citation-styles"
               },
               "next": {
-                "title": "Fields",
-                "permalink": "/fieldss"
+                "title": "Biblatex bibliography styles",
+                "permalink": "/bibtex-bibliography-styles"
               }
             },
             {
-              "unversionedId": "database",
-              "id": "database",
+              "unversionedId": "biblatex-bibliography-styles",
+              "id": "biblatex-bibliography-styles",
               "isDocsHomePage": false,
-              "title": "Database",
-              "description": "Format",
-              "source": "@site/docs/database.md",
+              "title": "Bibliography and reference management with bibtex",
+              "description": "",
+              "source": "@site/docs/biblatex-bibliography-styles.md",
               "sourceDirName": ".",
-              "slug": "/database",
-              "permalink": "/database",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/database.md",
+              "slug": "/biblatex-bibliography-styles",
+              "permalink": "/biblatex-bibliography-styles",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/biblatex-bibliography-styles.md",
               "version": "current",
-              "sidebarPosition": 2,
+              "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 2
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Biblatex citation styles",
+                "permalink": "/biblatex-citation-styles"
+              }
+            },
+            {
+              "unversionedId": "biblatex-citation-styles",
+              "id": "biblatex-citation-styles",
+              "isDocsHomePage": false,
+              "title": "Biblatex citation styles",
+              "description": "",
+              "source": "@site/docs/biblatex-citation-styles.md",
+              "sourceDirName": ".",
+              "slug": "/biblatex-citation-styles",
+              "permalink": "/biblatex-citation-styles",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/biblatex-citation-styles.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Introduction to BibTeX",
+                "title": "Bibliography and reference management with bibtex",
+                "permalink": "/biblatex-bibliography-styles"
+              },
+              "next": {
+                "title": "Biblatex",
+                "permalink": "/biblatex"
+              }
+            },
+            {
+              "unversionedId": "bibtex",
+              "id": "bibtex",
+              "isDocsHomePage": false,
+              "title": "Bibliography and reference management with bibtex",
+              "description": "",
+              "source": "@site/docs/bibtex.md",
+              "sourceDirName": ".",
+              "slug": "/bibtex",
+              "permalink": "/bibtex",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/bibtex.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Biblatex bibliography styles",
+                "permalink": "/bibtex-bibliography-styles"
+              },
+              "next": {
+                "title": "Natbib bibliography styles",
+                "permalink": "/"
+              }
+            },
+            {
+              "unversionedId": "bibtex-bibliography-styles",
+              "id": "bibtex-bibliography-styles",
+              "isDocsHomePage": false,
+              "title": "Biblatex bibliography styles",
+              "description": "",
+              "source": "@site/docs/bibtex-bibliography-styles.md",
+              "sourceDirName": ".",
+              "slug": "/bibtex-bibliography-styles",
+              "permalink": "/bibtex-bibliography-styles",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/bibtex-bibliography-styles.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Biblatex",
+                "permalink": "/biblatex"
+              },
+              "next": {
+                "title": "Bibliography and reference management with bibtex",
+                "permalink": "/bibtex"
+              }
+            },
+            {
+              "unversionedId": "natbib",
+              "id": "natbib",
+              "isDocsHomePage": false,
+              "title": "Natbib",
+              "description": "",
+              "source": "@site/docs/natbib.md",
+              "sourceDirName": ".",
+              "slug": "/natbib",
+              "permalink": "/natbib",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/natbib.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "sidebar": "das"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Natbib bibliography styles",
                 "permalink": "/"
               },
               "next": {
-                "title": "Entry types",
-                "permalink": "/entry-types"
+                "title": "Natbib citation styles",
+                "permalink": "/natbib_citation_styles"
               }
             },
             {
-              "unversionedId": "entry-types",
-              "id": "entry-types",
+              "unversionedId": "natbib_citation_styles",
+              "id": "natbib_citation_styles",
               "isDocsHomePage": false,
-              "title": "Entry types",
-              "description": "article",
-              "source": "@site/docs/entry-types.md",
+              "title": "Natbib citation styles",
+              "description": "",
+              "source": "@site/docs/natbib_citation_styles.md",
               "sourceDirName": ".",
-              "slug": "/entry-types",
-              "permalink": "/entry-types",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/entry-types.md",
+              "slug": "/natbib_citation_styles",
+              "permalink": "/natbib_citation_styles",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/natbib_citation_styles.md",
               "version": "current",
-              "sidebarPosition": 3,
+              "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 3
+                "sidebar_position": 1
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Database",
-                "permalink": "/database"
-              },
-              "next": {
-                "title": "Citations",
-                "permalink": "/citations"
+                "title": "Natbib",
+                "permalink": "/natbib"
               }
             },
             {
-              "unversionedId": "fieldss",
-              "id": "fieldss",
+              "unversionedId": "natbib-bibliography-styles",
+              "id": "natbib-bibliography-styles",
               "isDocsHomePage": false,
-              "title": "Fields",
+              "title": "Natbib bibliography styles",
               "description": "",
-              "source": "@site/docs/fieldss.md",
-              "sourceDirName": ".",
-              "slug": "/fieldss",
-              "permalink": "/fieldss",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/fieldss.md",
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "sidebar_position": 4
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Citations",
-                "permalink": "/citations"
-              }
-            },
-            {
-              "unversionedId": "intro",
-              "id": "intro",
-              "isDocsHomePage": false,
-              "title": "Introduction to BibTeX",
-              "description": "",
-              "source": "@site/docs/intro.md",
+              "source": "@site/docs/natbib-bibliography-styles.md",
               "sourceDirName": ".",
               "slug": "/",
               "permalink": "/",
-              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/intro.md",
+              "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/natbib-bibliography-styles.md",
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
@@ -165,9 +255,13 @@
                 "slug": "/"
               },
               "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Bibliography and reference management with bibtex",
+                "permalink": "/bibtex"
+              },
               "next": {
-                "title": "Database",
-                "permalink": "/database"
+                "title": "Natbib",
+                "permalink": "/natbib"
               }
             }
           ]
@@ -182,92 +276,28 @@
           "id": "welcome",
           "metadata": {
             "permalink": "/blog/welcome",
-            "editUrl": "https://github.com/citedrive/bibtex.eu/blog/blog/2019-05-30-welcome.md",
-            "source": "@site/blog/2019-05-30-welcome.md",
-            "title": "Welcome",
-            "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
-            "date": "2019-05-30T00:00:00.000Z",
-            "formattedDate": "May 30, 2019",
+            "editUrl": "https://github.com/citedrive/bibtex.eu/blog/blog/database.md",
+            "source": "@site/blog/database.md",
+            "title": "BibTeX - Database",
+            "description": "Format",
+            "date": "2021-07-15T19:46:15.420Z",
+            "formattedDate": "July 15, 2021",
             "tags": [
               {
-                "label": "facebook",
-                "permalink": "/blog/tags/facebook"
+                "label": "bibtex",
+                "permalink": "/blog/tags/bibtex"
               },
               {
-                "label": "hello",
-                "permalink": "/blog/tags/hello"
+                "label": "biblatex",
+                "permalink": "/blog/tags/biblatex"
               },
               {
-                "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
+                "label": "address",
+                "permalink": "/blog/tags/address"
               }
             ],
-            "readingTime": 0.175,
-            "truncated": false,
-            "nextItem": {
-              "title": "Hello",
-              "permalink": "/blog/hello-world"
-            }
-          }
-        },
-        {
-          "id": "hello-world",
-          "metadata": {
-            "permalink": "/blog/hello-world",
-            "editUrl": "https://github.com/citedrive/bibtex.eu/blog/blog/2019-05-29-hello-world.md",
-            "source": "@site/blog/2019-05-29-hello-world.md",
-            "title": "Hello",
-            "description": "Welcome to this blog. This blog is created with Docusaurus 2.",
-            "date": "2019-05-29T00:00:00.000Z",
-            "formattedDate": "May 29, 2019",
-            "tags": [
-              {
-                "label": "hello",
-                "permalink": "/blog/tags/hello"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
-              }
-            ],
-            "readingTime": 0.115,
-            "truncated": true,
-            "prevItem": {
-              "title": "Welcome",
-              "permalink": "/blog/welcome"
-            },
-            "nextItem": {
-              "title": "Hola",
-              "permalink": "/blog/hola"
-            }
-          }
-        },
-        {
-          "id": "hola",
-          "metadata": {
-            "permalink": "/blog/hola",
-            "editUrl": "https://github.com/citedrive/bibtex.eu/blog/blog/2019-05-28-hola.md",
-            "source": "@site/blog/2019-05-28-hola.md",
-            "title": "Hola",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
-            "date": "2019-05-28T00:00:00.000Z",
-            "formattedDate": "May 28, 2019",
-            "tags": [
-              {
-                "label": "hola",
-                "permalink": "/blog/tags/hola"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/blog/tags/docusaurus"
-              }
-            ],
-            "readingTime": 0.12,
-            "truncated": false,
-            "prevItem": {
-              "title": "Hello",
-              "permalink": "/blog/hello-world"
-            }
+            "readingTime": 2.04,
+            "truncated": false
           }
         }
       ],
@@ -278,200 +308,47 @@
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 1,
-            "totalCount": 3,
+            "totalCount": 1,
             "previousPage": null,
             "nextPage": null,
             "blogDescription": "Blog",
             "blogTitle": "Blog"
           },
           "items": [
-            "welcome",
-            "hello-world",
-            "hola"
+            "welcome"
           ]
         }
       ],
       "blogTags": {
-        "facebook": {
-          "name": "facebook",
+        "bibtex": {
+          "name": "bibtex",
           "items": [
             "welcome"
           ],
-          "permalink": "/blog/tags/facebook"
+          "permalink": "/blog/tags/bibtex"
         },
-        "hello": {
-          "name": "hello",
+        "biblatex": {
+          "name": "biblatex",
           "items": [
-            "welcome",
-            "hello-world"
+            "welcome"
           ],
-          "permalink": "/blog/tags/hello"
+          "permalink": "/blog/tags/biblatex"
         },
-        "docusaurus": {
-          "name": "docusaurus",
+        "address": {
+          "name": "address",
           "items": [
-            "welcome",
-            "hello-world",
-            "hola"
+            "welcome"
           ],
-          "permalink": "/blog/tags/docusaurus"
-        },
-        "hola": {
-          "name": "hola",
-          "items": [
-            "hola"
-          ],
-          "permalink": "/blog/tags/hola"
+          "permalink": "/blog/tags/address"
         }
       },
       "blogTagsListPath": "/blog/tags"
     },
     "styles": {
-      "blogPosts": [
-        {
-          "id": "welcome",
-          "metadata": {
-            "permalink": "/styles/welcome",
-            "source": "@site/styles/2019-05-30-welcome.md",
-            "title": "Welcome",
-            "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
-            "date": "2019-05-30T00:00:00.000Z",
-            "formattedDate": "May 30, 2019",
-            "tags": [
-              {
-                "label": "facebook",
-                "permalink": "/styles/tags/facebook"
-              },
-              {
-                "label": "hello",
-                "permalink": "/styles/tags/hello"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/styles/tags/docusaurus"
-              }
-            ],
-            "readingTime": 0.175,
-            "truncated": false,
-            "nextItem": {
-              "title": "Hello",
-              "permalink": "/styles/hello-world"
-            }
-          }
-        },
-        {
-          "id": "hello-world",
-          "metadata": {
-            "permalink": "/styles/hello-world",
-            "source": "@site/styles/2019-05-29-hello-world.md",
-            "title": "Hello",
-            "description": "Welcome to this blog. This blog is created with Docusaurus 2.",
-            "date": "2019-05-29T00:00:00.000Z",
-            "formattedDate": "May 29, 2019",
-            "tags": [
-              {
-                "label": "hello",
-                "permalink": "/styles/tags/hello"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/styles/tags/docusaurus"
-              }
-            ],
-            "readingTime": 0.115,
-            "truncated": true,
-            "prevItem": {
-              "title": "Welcome",
-              "permalink": "/styles/welcome"
-            },
-            "nextItem": {
-              "title": "Hola",
-              "permalink": "/styles/hola"
-            }
-          }
-        },
-        {
-          "id": "hola",
-          "metadata": {
-            "permalink": "/styles/hola",
-            "source": "@site/styles/2019-05-28-hola.md",
-            "title": "Hola",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
-            "date": "2019-05-28T00:00:00.000Z",
-            "formattedDate": "May 28, 2019",
-            "tags": [
-              {
-                "label": "hola",
-                "permalink": "/styles/tags/hola"
-              },
-              {
-                "label": "docusaurus",
-                "permalink": "/styles/tags/docusaurus"
-              }
-            ],
-            "readingTime": 0.12,
-            "truncated": false,
-            "prevItem": {
-              "title": "Hello",
-              "permalink": "/styles/hello-world"
-            }
-          }
-        }
-      ],
-      "blogListPaginated": [
-        {
-          "metadata": {
-            "permalink": "/styles",
-            "page": 1,
-            "postsPerPage": 10,
-            "totalPages": 1,
-            "totalCount": 3,
-            "previousPage": null,
-            "nextPage": null,
-            "blogDescription": "Blog",
-            "blogTitle": "BibTeX bibliography and citation styles"
-          },
-          "items": [
-            "welcome",
-            "hello-world",
-            "hola"
-          ]
-        }
-      ],
-      "blogTags": {
-        "facebook": {
-          "name": "facebook",
-          "items": [
-            "welcome"
-          ],
-          "permalink": "/styles/tags/facebook"
-        },
-        "hello": {
-          "name": "hello",
-          "items": [
-            "welcome",
-            "hello-world"
-          ],
-          "permalink": "/styles/tags/hello"
-        },
-        "docusaurus": {
-          "name": "docusaurus",
-          "items": [
-            "welcome",
-            "hello-world",
-            "hola"
-          ],
-          "permalink": "/styles/tags/docusaurus"
-        },
-        "hola": {
-          "name": "hola",
-          "items": [
-            "hola"
-          ],
-          "permalink": "/styles/tags/hola"
-        }
-      },
-      "blogTagsListPath": "/styles/tags"
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": null
     },
     "fields": {
       "blogPosts": [

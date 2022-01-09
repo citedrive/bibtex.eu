@@ -21,90 +21,55 @@
   "/__docusaurus/debug/routes-244": {
     "component": "component---theme-debug-routes-946-699"
   },
-  "/blog-569": {
+  "/blog-66b": {
     "component": "component---theme-blog-list-pagea-6-a-7ba",
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blogaf-1-856"
-      },
-      {
-        "content": "content---blog-357-22b"
-      },
-      {
-        "content": "content---blog-8-e-9-35c"
+        "content": "content---bloge-0-d-891"
       }
     ],
     "metadata": "metadata---blogb-2-b-df1"
-  },
-  "/blog/hello-world-07a": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-hello-worldd-61-086"
-  },
-  "/blog/hola-6e6": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-holabdd-150"
   },
   "/blog/tags-e13": {
     "component": "component---theme-blog-tags-list-page-01-a-d0b",
     "sidebar": "sidebar---blog-814-8ac",
     "tags": "tags---blog-tagsa-70-da2"
   },
-  "/blog/tags/docusaurus-738": {
+  "/blog/tags/address-73a": {
     "component": "component---theme-blog-tags-posts-page-687-b6c",
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blogaf-1-856"
-      },
-      {
-        "content": "content---blog-357-22b"
-      },
-      {
-        "content": "content---blog-8-e-9-35c"
+        "content": "content---bloge-0-d-891"
       }
     ],
-    "metadata": "metadata---blog-tags-docusaurusa-80-728"
+    "metadata": "metadata---blog-tags-address-336-477"
   },
-  "/blog/tags/facebook-2fe": {
+  "/blog/tags/biblatex-e6a": {
     "component": "component---theme-blog-tags-posts-page-687-b6c",
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blogaf-1-856"
+        "content": "content---bloge-0-d-891"
       }
     ],
-    "metadata": "metadata---blog-tags-facebook-031-c52"
+    "metadata": "metadata---blog-tags-biblatex-97-f-e33"
   },
-  "/blog/tags/hello-263": {
+  "/blog/tags/bibtex-fc0": {
     "component": "component---theme-blog-tags-posts-page-687-b6c",
     "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "content---blogaf-1-856"
-      },
-      {
-        "content": "content---blog-357-22b"
+        "content": "content---bloge-0-d-891"
       }
     ],
-    "metadata": "metadata---blog-tags-hello-30-a-bed"
+    "metadata": "metadata---blog-tags-bibtex-86-f-35c"
   },
-  "/blog/tags/hola-8b3": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-8-e-9-35c"
-      }
-    ],
-    "metadata": "metadata---blog-tags-holae-16-18a"
-  },
-  "/blog/welcome-015": {
+  "/blog/welcome-bc1": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-welcome-286-e55"
+    "content": "content---blog-welcome-6-a-2-01c"
   },
   "/fields-d11": {
     "component": "component---theme-blog-list-pagea-6-a-7ba",
@@ -114,19 +79,19 @@
         "content": "content---fieldsd-61-f3c"
       },
       {
-        "content": "content---fields-page-3-df-3-38a"
+        "content": "content---fieldsdf-3-6cd"
       },
       {
-        "content": "content---fields-page-325-e-386"
+        "content": "content---fields-25-e-515"
       },
       {
         "content": "content---fieldsee-2-446"
       },
       {
-        "content": "content---fields-page-30-ed-484"
+        "content": "content---fields-0-ed-576"
       },
       {
-        "content": "content---fields-page-2140-686"
+        "content": "content---fields-140-272"
       },
       {
         "content": "content---fieldse-38-5a8"
@@ -151,121 +116,121 @@
   "/fields/annote-4e5": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-1-a-1-f53"
+    "content": "content---fields-annote-1-a-1-97b"
   },
   "/fields/author-57b": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressf-71-6ce"
+    "content": "content---fields-authorf-71-697"
   },
   "/fields/booktitle-fe2": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressee-2-e5a"
+    "content": "content---fields-booktitleee-2-566"
   },
   "/fields/chapter-a72": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addresseba-819"
+    "content": "content---fields-chaptereba-77e"
   },
   "/fields/crossref-e6f": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-7-b-2-acc"
+    "content": "content---fields-crossref-7-b-2-ac2"
   },
   "/fields/doi-4b2": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-201-d6e"
+    "content": "content---fields-doi-201-52e"
   },
   "/fields/edition-0ee": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressab-5-d4c"
+    "content": "content---fields-editionab-5-0b9"
   },
   "/fields/editor-47c": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-686-ca9"
+    "content": "content---fields-editor-686-b8e"
   },
   "/fields/email-2d7": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-391-bca"
+    "content": "content---fields-email-391-bd4"
   },
   "/fields/howpublished-ca0": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-160-d83"
+    "content": "content---fields-howpublished-160-9d8"
   },
   "/fields/institution-f64": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-44-d-739"
+    "content": "content---fields-institution-44-d-fa1"
   },
   "/fields/journal-5de": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-840-9ed"
+    "content": "content---fields-journal-840-c60"
   },
   "/fields/key-91b": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-32-d-993"
+    "content": "content---fields-key-32-d-57f"
   },
   "/fields/month-b7b": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressbf-1-ac1"
+    "content": "content---fields-monthbf-1-51d"
   },
   "/fields/note-e79": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addresse-2-a-d6b"
+    "content": "content---fields-notee-2-a-f9a"
   },
   "/fields/number-f76": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressf-7-d-dcf"
+    "content": "content---fields-numberf-7-d-b3c"
   },
   "/fields/organization-2a1": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-8-a-4-e9b"
+    "content": "content---fields-organization-8-a-4-801"
   },
   "/fields/page/2-424": {
     "component": "component---theme-blog-list-pagea-6-a-7ba",
     "sidebar": "sidebar---fieldsb-91-90e",
     "items": [
       {
-        "content": "content---fieldsb-00-5ab"
+        "content": "content---fields-page-2-b-00-34f"
       },
       {
-        "content": "content---fieldsd-89-732"
+        "content": "content---fields-page-2-d-89-6f8"
       },
       {
-        "content": "content---fieldsfa-8-b18"
+        "content": "content---fields-page-2-fa-8-fff"
       },
       {
-        "content": "content---fields-049-59c"
+        "content": "content---fields-page-2049-abb"
       },
       {
-        "content": "content---fieldsfbe-9c2"
+        "content": "content---fields-page-2-fbe-ee3"
       },
       {
-        "content": "content---fields-157-50b"
+        "content": "content---fields-page-2157-516"
       },
       {
-        "content": "content---fields-26-b-d3d"
+        "content": "content---fields-page-226-b-8d0"
       },
       {
-        "content": "content---fieldscb-1-700"
+        "content": "content---fields-page-2-cb-1-cf5"
       },
       {
-        "content": "content---fields-728-e8e"
+        "content": "content---fields-page-2728-ce1"
       },
       {
-        "content": "content---fields-495-89a"
+        "content": "content---fields-page-2495-213"
       }
     ],
     "metadata": "metadata---fields-page-2-f-6-c-cdd"
@@ -275,22 +240,22 @@
     "sidebar": "sidebar---fieldsb-91-90e",
     "items": [
       {
-        "content": "content---fields-9-ff-ddd"
+        "content": "content---fields-page-39-ff-09f"
       },
       {
-        "content": "content---fields-94-c-624"
+        "content": "content---fields-page-394-c-dc8"
       },
       {
-        "content": "content---fields-252-f4d"
+        "content": "content---fields-page-3252-182"
       },
       {
-        "content": "content---fields-69-d-fef"
+        "content": "content---fields-page-369-d-670"
       },
       {
-        "content": "content---fields-55-b-6ed"
+        "content": "content---fields-page-355-b-67f"
       },
       {
-        "content": "content---fields-3-b-7-b51"
+        "content": "content---fields-page-33-b-7-b41"
       }
     ],
     "metadata": "metadata---fields-page-3-b-13-713"
@@ -298,22 +263,22 @@
   "/fields/pages-99d": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressdba-ee2"
+    "content": "content---fields-pagesdba-6fd"
   },
   "/fields/publisher-064": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-8-a-2-c79"
+    "content": "content---fields-publisher-8-a-2-143"
   },
   "/fields/school-4ef": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-7-ab-b56"
+    "content": "content---fields-school-7-ab-228"
   },
   "/fields/series-7d7": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressecf-65a"
+    "content": "content---fields-seriesecf-b19"
   },
   "/fields/tags-6c2": {
     "component": "component---theme-blog-tags-list-page-01-a-d0b",
@@ -331,10 +296,10 @@
         "content": "content---fieldsee-2-446"
       },
       {
-        "content": "content---fields-page-30-ed-484"
+        "content": "content---fields-0-ed-576"
       },
       {
-        "content": "content---fields-page-2140-686"
+        "content": "content---fields-140-272"
       },
       {
         "content": "content---fieldse-38-5a8"
@@ -349,52 +314,52 @@
         "content": "content---fields-89-f-cc6"
       },
       {
-        "content": "content---fieldsb-00-5ab"
+        "content": "content---fields-page-2-b-00-34f"
       },
       {
-        "content": "content---fieldsd-89-732"
+        "content": "content---fields-page-2-d-89-6f8"
       },
       {
-        "content": "content---fieldsfa-8-b18"
+        "content": "content---fields-page-2-fa-8-fff"
       },
       {
-        "content": "content---fields-049-59c"
+        "content": "content---fields-page-2049-abb"
       },
       {
-        "content": "content---fieldsfbe-9c2"
+        "content": "content---fields-page-2-fbe-ee3"
       },
       {
-        "content": "content---fields-157-50b"
+        "content": "content---fields-page-2157-516"
       },
       {
-        "content": "content---fields-26-b-d3d"
+        "content": "content---fields-page-226-b-8d0"
       },
       {
-        "content": "content---fieldscb-1-700"
+        "content": "content---fields-page-2-cb-1-cf5"
       },
       {
-        "content": "content---fields-728-e8e"
+        "content": "content---fields-page-2728-ce1"
       },
       {
-        "content": "content---fields-495-89a"
+        "content": "content---fields-page-2495-213"
       },
       {
-        "content": "content---fields-9-ff-ddd"
+        "content": "content---fields-page-39-ff-09f"
       },
       {
-        "content": "content---fields-94-c-624"
+        "content": "content---fields-page-394-c-dc8"
       },
       {
-        "content": "content---fields-252-f4d"
+        "content": "content---fields-page-3252-182"
       },
       {
-        "content": "content---fields-69-d-fef"
+        "content": "content---fields-page-369-d-670"
       },
       {
-        "content": "content---fields-55-b-6ed"
+        "content": "content---fields-page-355-b-67f"
       },
       {
-        "content": "content---fields-3-b-7-b51"
+        "content": "content---fields-page-33-b-7-b41"
       }
     ],
     "metadata": "metadata---fields-tags-address-628-74a"
@@ -404,7 +369,7 @@
     "sidebar": "sidebar---fieldsb-91-90e",
     "items": [
       {
-        "content": "content---fields-page-3-df-3-38a"
+        "content": "content---fieldsdf-3-6cd"
       }
     ],
     "metadata": "metadata---fields-tags-annoteff-0-b6f"
@@ -414,7 +379,7 @@
     "sidebar": "sidebar---fieldsb-91-90e",
     "items": [
       {
-        "content": "content---fields-page-325-e-386"
+        "content": "content---fields-25-e-515"
       }
     ],
     "metadata": "metadata---fields-tags-authorc-7-b-0da"
@@ -427,19 +392,19 @@
         "content": "content---fieldsd-61-f3c"
       },
       {
-        "content": "content---fields-page-3-df-3-38a"
+        "content": "content---fieldsdf-3-6cd"
       },
       {
-        "content": "content---fields-page-325-e-386"
+        "content": "content---fields-25-e-515"
       },
       {
         "content": "content---fieldsee-2-446"
       },
       {
-        "content": "content---fields-page-30-ed-484"
+        "content": "content---fields-0-ed-576"
       },
       {
-        "content": "content---fields-page-2140-686"
+        "content": "content---fields-140-272"
       },
       {
         "content": "content---fieldse-38-5a8"
@@ -454,52 +419,52 @@
         "content": "content---fields-89-f-cc6"
       },
       {
-        "content": "content---fieldsb-00-5ab"
+        "content": "content---fields-page-2-b-00-34f"
       },
       {
-        "content": "content---fieldsd-89-732"
+        "content": "content---fields-page-2-d-89-6f8"
       },
       {
-        "content": "content---fieldsfa-8-b18"
+        "content": "content---fields-page-2-fa-8-fff"
       },
       {
-        "content": "content---fields-049-59c"
+        "content": "content---fields-page-2049-abb"
       },
       {
-        "content": "content---fieldsfbe-9c2"
+        "content": "content---fields-page-2-fbe-ee3"
       },
       {
-        "content": "content---fields-157-50b"
+        "content": "content---fields-page-2157-516"
       },
       {
-        "content": "content---fields-26-b-d3d"
+        "content": "content---fields-page-226-b-8d0"
       },
       {
-        "content": "content---fieldscb-1-700"
+        "content": "content---fields-page-2-cb-1-cf5"
       },
       {
-        "content": "content---fields-728-e8e"
+        "content": "content---fields-page-2728-ce1"
       },
       {
-        "content": "content---fields-495-89a"
+        "content": "content---fields-page-2495-213"
       },
       {
-        "content": "content---fields-9-ff-ddd"
+        "content": "content---fields-page-39-ff-09f"
       },
       {
-        "content": "content---fields-94-c-624"
+        "content": "content---fields-page-394-c-dc8"
       },
       {
-        "content": "content---fields-252-f4d"
+        "content": "content---fields-page-3252-182"
       },
       {
-        "content": "content---fields-69-d-fef"
+        "content": "content---fields-page-369-d-670"
       },
       {
-        "content": "content---fields-55-b-6ed"
+        "content": "content---fields-page-355-b-67f"
       },
       {
-        "content": "content---fields-3-b-7-b51"
+        "content": "content---fields-page-33-b-7-b41"
       }
     ],
     "metadata": "metadata---fields-tags-biblatexba-8-32e"
@@ -512,19 +477,19 @@
         "content": "content---fieldsd-61-f3c"
       },
       {
-        "content": "content---fields-page-3-df-3-38a"
+        "content": "content---fieldsdf-3-6cd"
       },
       {
-        "content": "content---fields-page-325-e-386"
+        "content": "content---fields-25-e-515"
       },
       {
         "content": "content---fieldsee-2-446"
       },
       {
-        "content": "content---fields-page-30-ed-484"
+        "content": "content---fields-0-ed-576"
       },
       {
-        "content": "content---fields-page-2140-686"
+        "content": "content---fields-140-272"
       },
       {
         "content": "content---fieldse-38-5a8"
@@ -539,52 +504,52 @@
         "content": "content---fields-89-f-cc6"
       },
       {
-        "content": "content---fieldsb-00-5ab"
+        "content": "content---fields-page-2-b-00-34f"
       },
       {
-        "content": "content---fieldsd-89-732"
+        "content": "content---fields-page-2-d-89-6f8"
       },
       {
-        "content": "content---fieldsfa-8-b18"
+        "content": "content---fields-page-2-fa-8-fff"
       },
       {
-        "content": "content---fields-049-59c"
+        "content": "content---fields-page-2049-abb"
       },
       {
-        "content": "content---fieldsfbe-9c2"
+        "content": "content---fields-page-2-fbe-ee3"
       },
       {
-        "content": "content---fields-157-50b"
+        "content": "content---fields-page-2157-516"
       },
       {
-        "content": "content---fields-26-b-d3d"
+        "content": "content---fields-page-226-b-8d0"
       },
       {
-        "content": "content---fieldscb-1-700"
+        "content": "content---fields-page-2-cb-1-cf5"
       },
       {
-        "content": "content---fields-728-e8e"
+        "content": "content---fields-page-2728-ce1"
       },
       {
-        "content": "content---fields-495-89a"
+        "content": "content---fields-page-2495-213"
       },
       {
-        "content": "content---fields-9-ff-ddd"
+        "content": "content---fields-page-39-ff-09f"
       },
       {
-        "content": "content---fields-94-c-624"
+        "content": "content---fields-page-394-c-dc8"
       },
       {
-        "content": "content---fields-252-f4d"
+        "content": "content---fields-page-3252-182"
       },
       {
-        "content": "content---fields-69-d-fef"
+        "content": "content---fields-page-369-d-670"
       },
       {
-        "content": "content---fields-55-b-6ed"
+        "content": "content---fields-page-355-b-67f"
       },
       {
-        "content": "content---fields-3-b-7-b51"
+        "content": "content---fields-page-33-b-7-b41"
       }
     ],
     "metadata": "metadata---fields-tags-bibtex-807-84e"
@@ -592,22 +557,22 @@
   "/fields/title-0e1": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-addressda-0-be3"
+    "content": "content---fields-titleda-0-067"
   },
   "/fields/type-b10": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-24-d-ebd"
+    "content": "content---fields-type-24-d-4a4"
   },
   "/fields/volume-550": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-06-f-b0a"
+    "content": "content---fields-volume-06-f-56d"
   },
   "/fields/year-fb2": {
     "component": "component---theme-blog-post-pageccc-cab",
     "sidebar": "sidebar---fieldsb-91-90e",
-    "content": "content---fields-address-12-d-75d"
+    "content": "content---fields-year-12-d-c51"
   },
   "/markdown-page-be1": {
     "component": "component---theme-mdx-page-1-f-3-b90",
@@ -617,113 +582,40 @@
     "component": "component---site-src-pages-overleaf-citedrive-jsef-8-8c8",
     "config": "config---overleaf-citedrive-5-e-9-ab1"
   },
-  "/styles-177": {
-    "component": "component---theme-blog-list-pagea-6-a-7ba",
-    "sidebar": "sidebar---styles-853-966",
-    "items": [
-      {
-        "content": "content---styles-980-4da"
-      },
-      {
-        "content": "content---styles-6-ca-170"
-      },
-      {
-        "content": "content---styles-153-391"
-      }
-    ],
-    "metadata": "metadata---stylesd-27-ff1"
-  },
-  "/styles/hello-world-b74": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---styles-853-966",
-    "content": "content---styles-hello-worldb-9-f-162"
-  },
-  "/styles/hola-500": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---styles-853-966",
-    "content": "content---styles-hola-404-58a"
-  },
-  "/styles/tags-6e4": {
-    "component": "component---theme-blog-tags-list-page-01-a-d0b",
-    "sidebar": "sidebar---styles-853-966",
-    "tags": "tags---styles-tags-09-a-a87"
-  },
-  "/styles/tags/docusaurus-595": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---styles-853-966",
-    "items": [
-      {
-        "content": "content---styles-980-4da"
-      },
-      {
-        "content": "content---styles-6-ca-170"
-      },
-      {
-        "content": "content---styles-153-391"
-      }
-    ],
-    "metadata": "metadata---styles-tags-docusauruse-99-ce3"
-  },
-  "/styles/tags/facebook-af1": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---styles-853-966",
-    "items": [
-      {
-        "content": "content---styles-980-4da"
-      }
-    ],
-    "metadata": "metadata---styles-tags-facebooke-04-402"
-  },
-  "/styles/tags/hello-a3d": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---styles-853-966",
-    "items": [
-      {
-        "content": "content---styles-980-4da"
-      },
-      {
-        "content": "content---styles-6-ca-170"
-      }
-    ],
-    "metadata": "metadata---styles-tags-hello-5-f-9-939"
-  },
-  "/styles/tags/hola-d2f": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "sidebar": "sidebar---styles-853-966",
-    "items": [
-      {
-        "content": "content---styles-153-391"
-      }
-    ],
-    "metadata": "metadata---styles-tags-hola-352-e3e"
-  },
-  "/styles/welcome-ab1": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "sidebar": "sidebar---styles-853-966",
-    "content": "content---styles-welcome-79-f-501"
-  },
-  "/-c67": {
+  "/-aad": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---935-fcf"
   },
-  "/-546": {
+  "/-e8e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---0-e-3-279"
+    "content": "content---9-ec-6ca"
   },
-  "/citations-0aa": {
+  "/biblatex-4f5": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---citationsaa-5-716"
+    "content": "content---4-a-2-a52"
   },
-  "/database-fc4": {
+  "/biblatex-bibliography-styles-bcb": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---databaseb-48-dc7"
+    "content": "content---fd-8-5f3"
   },
-  "/entry-types-4d2": {
+  "/biblatex-citation-styles-6ad": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---entry-types-3-a-6-563"
+    "content": "content---c-45-070"
   },
-  "/fieldss-c90": {
+  "/bibtex-3d3": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---fieldss-7-e-5-1d7"
+    "content": "content---fc-5-bea"
+  },
+  "/bibtex-bibliography-styles-1fb": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---da-7-06a"
+  },
+  "/natbib-eae": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---a-67-1ff"
+  },
+  "/natbib_citation_styles-d57": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---8-ca-2a9"
   }
 }

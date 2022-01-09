@@ -16,11 +16,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Entry types",
-    "permalink": "/entry-types"
-  },
-  "next": {
-    "title": "Fields",
-    "permalink": "/fieldss"
+    "title": "Introduction to BibTeX",
+    "permalink": "/"
   }
 }

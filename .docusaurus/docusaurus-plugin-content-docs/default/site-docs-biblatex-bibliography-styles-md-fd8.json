@@ -1,0 +1,22 @@
+{
+  "unversionedId": "biblatex-bibliography-styles",
+  "id": "biblatex-bibliography-styles",
+  "isDocsHomePage": false,
+  "title": "Bibliography and reference management with bibtex",
+  "description": "",
+  "source": "@site/docs/biblatex-bibliography-styles.md",
+  "sourceDirName": ".",
+  "slug": "/biblatex-bibliography-styles",
+  "permalink": "/biblatex-bibliography-styles",
+  "editUrl": "https://github.com/citedrive/bibtex.eu/tree/main/docs/biblatex-bibliography-styles.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Biblatex citation styles",
+    "permalink": "/biblatex-citation-styles"
+  }
+}

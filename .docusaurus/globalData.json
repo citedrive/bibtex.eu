@@ -8,30 +8,45 @@
           "label": "Next",
           "isLast": true,
           "path": "/",
-          "mainDocId": "intro",
+          "mainDocId": "natbib-bibliography-styles",
           "docs": [
             {
-              "id": "citations",
-              "path": "/citations",
+              "id": "biblatex",
+              "path": "/biblatex",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "database",
-              "path": "/database",
+              "id": "biblatex-bibliography-styles",
+              "path": "/biblatex-bibliography-styles",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "entry-types",
-              "path": "/entry-types",
+              "id": "biblatex-citation-styles",
+              "path": "/biblatex-citation-styles",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "fieldss",
-              "path": "/fieldss",
+              "id": "bibtex",
+              "path": "/bibtex",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "intro",
+              "id": "bibtex-bibliography-styles",
+              "path": "/bibtex-bibliography-styles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "natbib",
+              "path": "/natbib",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "natbib_citation_styles",
+              "path": "/natbib_citation_styles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "natbib-bibliography-styles",
               "path": "/",
               "sidebar": "tutorialSidebar"
             }

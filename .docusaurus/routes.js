@@ -39,17 +39,7 @@ export default [
 },
 {
   path: '/blog',
-  component: ComponentCreator('/blog','569'),
-  exact: true,
-},
-{
-  path: '/blog/hello-world',
-  component: ComponentCreator('/blog/hello-world','07a'),
-  exact: true,
-},
-{
-  path: '/blog/hola',
-  component: ComponentCreator('/blog/hola','6e6'),
+  component: ComponentCreator('/blog','66b'),
   exact: true,
 },
 {
@@ -58,28 +48,23 @@ export default [
   exact: true,
 },
 {
-  path: '/blog/tags/docusaurus',
-  component: ComponentCreator('/blog/tags/docusaurus','738'),
+  path: '/blog/tags/address',
+  component: ComponentCreator('/blog/tags/address','73a'),
   exact: true,
 },
 {
-  path: '/blog/tags/facebook',
-  component: ComponentCreator('/blog/tags/facebook','2fe'),
+  path: '/blog/tags/biblatex',
+  component: ComponentCreator('/blog/tags/biblatex','e6a'),
   exact: true,
 },
 {
-  path: '/blog/tags/hello',
-  component: ComponentCreator('/blog/tags/hello','263'),
-  exact: true,
-},
-{
-  path: '/blog/tags/hola',
-  component: ComponentCreator('/blog/tags/hola','8b3'),
+  path: '/blog/tags/bibtex',
+  component: ComponentCreator('/blog/tags/bibtex','fc0'),
   exact: true,
 },
 {
   path: '/blog/welcome',
-  component: ComponentCreator('/blog/welcome','015'),
+  component: ComponentCreator('/blog/welcome','bc1'),
   exact: true,
 },
 {
@@ -268,78 +253,48 @@ export default [
   exact: true,
 },
 {
-  path: '/styles',
-  component: ComponentCreator('/styles','177'),
-  exact: true,
-},
-{
-  path: '/styles/hello-world',
-  component: ComponentCreator('/styles/hello-world','b74'),
-  exact: true,
-},
-{
-  path: '/styles/hola',
-  component: ComponentCreator('/styles/hola','500'),
-  exact: true,
-},
-{
-  path: '/styles/tags',
-  component: ComponentCreator('/styles/tags','6e4'),
-  exact: true,
-},
-{
-  path: '/styles/tags/docusaurus',
-  component: ComponentCreator('/styles/tags/docusaurus','595'),
-  exact: true,
-},
-{
-  path: '/styles/tags/facebook',
-  component: ComponentCreator('/styles/tags/facebook','af1'),
-  exact: true,
-},
-{
-  path: '/styles/tags/hello',
-  component: ComponentCreator('/styles/tags/hello','a3d'),
-  exact: true,
-},
-{
-  path: '/styles/tags/hola',
-  component: ComponentCreator('/styles/tags/hola','d2f'),
-  exact: true,
-},
-{
-  path: '/styles/welcome',
-  component: ComponentCreator('/styles/welcome','ab1'),
-  exact: true,
-},
-{
   path: '/',
-  component: ComponentCreator('/','c67'),
+  component: ComponentCreator('/','aad'),
   
   routes: [
 {
   path: '/',
-  component: ComponentCreator('/','546'),
+  component: ComponentCreator('/','e8e'),
   exact: true,
 },
 {
-  path: '/citations',
-  component: ComponentCreator('/citations','0aa'),
+  path: '/biblatex',
+  component: ComponentCreator('/biblatex','4f5'),
   exact: true,
 },
 {
-  path: '/database',
-  component: ComponentCreator('/database','fc4'),
+  path: '/biblatex-bibliography-styles',
+  component: ComponentCreator('/biblatex-bibliography-styles','bcb'),
   exact: true,
 },
 {
-  path: '/entry-types',
-  component: ComponentCreator('/entry-types','4d2'),
+  path: '/biblatex-citation-styles',
+  component: ComponentCreator('/biblatex-citation-styles','6ad'),
   exact: true,
 },
 {
-  path: '/fieldss',
-  component: ComponentCreator('/fieldss','c90'),
+  path: '/bibtex',
+  component: ComponentCreator('/bibtex','3d3'),
+  exact: true,
+},
+{
+  path: '/bibtex-bibliography-styles',
+  component: ComponentCreator('/bibtex-bibliography-styles','1fb'),
+  exact: true,
+},
+{
+  path: '/natbib',
+  component: ComponentCreator('/natbib','eae'),
+  exact: true,
+},
+{
+  path: '/natbib_citation_styles',
+  component: ComponentCreator('/natbib_citation_styles','d57'),
   exact: true,
 },
 ]
