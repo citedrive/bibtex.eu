@@ -1,11 +1,11 @@
 {
-  "permalink": "/fields",
-  "page": 1,
+  "permalink": "/fields/page/3",
+  "page": 3,
   "postsPerPage": 10,
   "totalPages": 3,
   "totalCount": 26,
-  "previousPage": null,
-  "nextPage": "/fields/page/2",
+  "previousPage": "/fields/page/2",
+  "nextPage": null,
   "blogDescription": "Blog",
   "blogTitle": "BibTeX / BibLaTeX fields"
 }

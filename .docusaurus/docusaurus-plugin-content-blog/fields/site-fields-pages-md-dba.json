@@ -1,0 +1,32 @@
+{
+  "permalink": "/fields/pages",
+  "source": "@site/fields/pages.md",
+  "title": "pages",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+  "date": "2022-01-08T00:00:00.000Z",
+  "formattedDate": "January 8, 2022",
+  "tags": [
+    {
+      "label": "bibtex",
+      "permalink": "/fields/tags/bibtex"
+    },
+    {
+      "label": "biblatex",
+      "permalink": "/fields/tags/biblatex"
+    },
+    {
+      "label": "address",
+      "permalink": "/fields/tags/address"
+    }
+  ],
+  "readingTime": 0.12,
+  "truncated": false,
+  "prevItem": {
+    "title": "organization",
+    "permalink": "/fields/organization"
+  },
+  "nextItem": {
+    "title": "publisher",
+    "permalink": "/fields/publisher"
+  }
+}

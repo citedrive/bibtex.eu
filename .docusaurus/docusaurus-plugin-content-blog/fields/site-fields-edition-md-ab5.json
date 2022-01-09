@@ -1,0 +1,32 @@
+{
+  "permalink": "/fields/edition",
+  "source": "@site/fields/edition.md",
+  "title": "edition",
+  "description": "The edition of a book, e.g. \"edition = \" Entering an ordinal number is recommended by default, and the first letter is usually capitalised.",
+  "date": "2022-01-19T00:00:00.000Z",
+  "formattedDate": "January 19, 2022",
+  "tags": [
+    {
+      "label": "bibtex",
+      "permalink": "/fields/tags/bibtex"
+    },
+    {
+      "label": "biblatex",
+      "permalink": "/fields/tags/biblatex"
+    },
+    {
+      "label": "address",
+      "permalink": "/fields/tags/address"
+    }
+  ],
+  "readingTime": 0.175,
+  "truncated": false,
+  "prevItem": {
+    "title": "doi",
+    "permalink": "/fields/doi"
+  },
+  "nextItem": {
+    "title": "editor",
+    "permalink": "/fields/editor"
+  }
+}

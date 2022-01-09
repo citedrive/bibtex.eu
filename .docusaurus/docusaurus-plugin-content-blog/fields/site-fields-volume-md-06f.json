@@ -1,0 +1,32 @@
+{
+  "permalink": "/fields/volume",
+  "source": "@site/fields/volume.md",
+  "title": "volume",
+  "description": "The 'volume' field is used to enter the volume of a journal or multi-volume book.",
+  "date": "2022-01-02T00:00:00.000Z",
+  "formattedDate": "January 2, 2022",
+  "tags": [
+    {
+      "label": "bibtex",
+      "permalink": "/fields/tags/bibtex"
+    },
+    {
+      "label": "biblatex",
+      "permalink": "/fields/tags/biblatex"
+    },
+    {
+      "label": "address",
+      "permalink": "/fields/tags/address"
+    }
+  ],
+  "readingTime": 0.13,
+  "truncated": false,
+  "prevItem": {
+    "title": "type",
+    "permalink": "/fields/type"
+  },
+  "nextItem": {
+    "title": "year",
+    "permalink": "/fields/year"
+  }
+}

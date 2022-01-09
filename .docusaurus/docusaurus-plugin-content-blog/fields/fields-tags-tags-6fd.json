@@ -3,21 +3,35 @@
     "allTagsPath": "/fields/tags",
     "slug": "bibtex",
     "name": "bibtex",
-    "count": 1,
+    "count": 26,
     "permalink": "/fields/tags/bibtex"
   },
   "biblatex": {
     "allTagsPath": "/fields/tags",
     "slug": "biblatex",
     "name": "biblatex",
-    "count": 1,
+    "count": 26,
     "permalink": "/fields/tags/biblatex"
   },
   "address": {
     "allTagsPath": "/fields/tags",
     "slug": "address",
     "name": "address",
-    "count": 1,
+    "count": 24,
     "permalink": "/fields/tags/address"
+  },
+  "annote": {
+    "allTagsPath": "/fields/tags",
+    "slug": "annote",
+    "name": "annote",
+    "count": 1,
+    "permalink": "/fields/tags/annote"
+  },
+  "author": {
+    "allTagsPath": "/fields/tags",
+    "slug": "author",
+    "name": "author",
+    "count": 1,
+    "permalink": "/fields/tags/author"
   }
 }

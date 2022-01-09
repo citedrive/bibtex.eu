@@ -1,0 +1,32 @@
+{
+  "permalink": "/fields/booktitle",
+  "source": "@site/fields/booktitle.md",
+  "title": "booktitle",
+  "description": "To cite an `incollection, i.e., a part of a book/collection with its own title, or to give a title to an article, part of an inproceedings, the booktitle-field is used to distinguish. At the same time, title contains the title of the book, or incproceedings`.",
+  "date": "2022-01-23T00:00:00.000Z",
+  "formattedDate": "January 23, 2022",
+  "tags": [
+    {
+      "label": "bibtex",
+      "permalink": "/fields/tags/bibtex"
+    },
+    {
+      "label": "biblatex",
+      "permalink": "/fields/tags/biblatex"
+    },
+    {
+      "label": "address",
+      "permalink": "/fields/tags/address"
+    }
+  ],
+  "readingTime": 0.225,
+  "truncated": false,
+  "prevItem": {
+    "title": "author",
+    "permalink": "/fields/author"
+  },
+  "nextItem": {
+    "title": "chapter",
+    "permalink": "/fields/chapter"
+  }
+}

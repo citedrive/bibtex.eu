@@ -1,0 +1,32 @@
+{
+  "permalink": "/fields/email",
+  "source": "@site/fields/email.md",
+  "title": "email",
+  "description": "Email includes the email address of the stated authors if you want to indicate them. It's not a common field and might not be supported.",
+  "date": "2022-01-17T00:00:00.000Z",
+  "formattedDate": "January 17, 2022",
+  "tags": [
+    {
+      "label": "bibtex",
+      "permalink": "/fields/tags/bibtex"
+    },
+    {
+      "label": "biblatex",
+      "permalink": "/fields/tags/biblatex"
+    },
+    {
+      "label": "address",
+      "permalink": "/fields/tags/address"
+    }
+  ],
+  "readingTime": 0.4,
+  "truncated": false,
+  "prevItem": {
+    "title": "editor",
+    "permalink": "/fields/editor"
+  },
+  "nextItem": {
+    "title": "howpublished",
+    "permalink": "/fields/howpublished"
+  }
+}

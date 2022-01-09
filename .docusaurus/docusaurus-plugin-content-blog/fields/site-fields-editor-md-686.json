@@ -1,0 +1,32 @@
+{
+  "permalink": "/fields/editor",
+  "source": "@site/fields/editor.md",
+  "title": "editor",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+  "date": "2022-01-18T00:00:00.000Z",
+  "formattedDate": "January 18, 2022",
+  "tags": [
+    {
+      "label": "bibtex",
+      "permalink": "/fields/tags/bibtex"
+    },
+    {
+      "label": "biblatex",
+      "permalink": "/fields/tags/biblatex"
+    },
+    {
+      "label": "address",
+      "permalink": "/fields/tags/address"
+    }
+  ],
+  "readingTime": 0.12,
+  "truncated": false,
+  "prevItem": {
+    "title": "edition",
+    "permalink": "/fields/edition"
+  },
+  "nextItem": {
+    "title": "email",
+    "permalink": "/fields/email"
+  }
+}

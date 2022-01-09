@@ -12,7 +12,7 @@ export default {
     [
       "@docusaurus/plugin-content-blog",
       {
-        "blogTitle": "Bibtex bibliography and citation styles",
+        "blogTitle": "BibTeX bibliography and citation styles",
         "id": "styles",
         "routeBasePath": "styles",
         "path": "./styles"
@@ -24,7 +24,9 @@ export default {
         "blogTitle": "BibTeX / BibLaTeX fields",
         "id": "fields",
         "routeBasePath": "fields",
-        "path": "./fields"
+        "path": "./fields",
+        "blogSidebarTitle": "BibTeX Fields",
+        "blogSidebarCount": "ALL"
       }
     ]
   ],
@@ -53,7 +55,7 @@ export default {
     "footer": {
       "style": "dark",
       "links": [],
-      "copyright": "Copyright © 2021 BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC."
+      "copyright": "Copyright © 2022 BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC."
     },
     "prism": {
       "theme": {

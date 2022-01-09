@@ -16,7 +16,7 @@ module.exports = {
     [
       "@docusaurus/plugin-content-blog",
       {
-        blogTitle: "Bibtex bibliography and citation styles",
+        blogTitle: "BibTeX bibliography and citation styles",
         /**
          * Required for any multi-instance plugin
          */
@@ -49,6 +49,8 @@ module.exports = {
          * Path to data on filesystem relative to site dir.
          */
         path: "./fields",
+        blogSidebarTitle: 'BibTeX Fields',
+         blogSidebarCount: 'ALL',
       },
     ],
     ],

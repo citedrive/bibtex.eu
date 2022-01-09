@@ -1,6 +1,6 @@
 {
   "permalink": "/fields/address",
-  "source": "@site/fields/address.md",
+  "source": "@site/fields/address0.md",
   "title": "address",
   "description": "The address-field contains the publisher's (or any other institution) address.",
   "date": "2022-01-26T00:00:00.000Z",
@@ -21,6 +21,10 @@
   ],
   "readingTime": 0.975,
   "truncated": false,
+  "prevItem": {
+    "title": "address",
+    "permalink": "/fields/address"
+  },
   "nextItem": {
     "title": "annote",
     "permalink": "/fields/annote"
