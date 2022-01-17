@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://bibtex.eu/blog</id>
+    <title>BibTeX Blog</title>
+    <updated>2022-01-17T01:41:02.508Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://bibtex.eu/blog"/>
+    <subtitle>BibTeX Blog</subtitle>
+    <icon>https://bibtex.eu/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[BibTeX - Database]]></title>
+        <id>welcome</id>
+        <link href="https://bibtex.eu/blog/welcome"/>
+        <updated>2022-01-17T01:41:02.508Z</updated>
+        <summary type="html"><![CDATA[Format]]></summary>
+    </entry>
+</feed>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>BibTeX Blog</title>
+        <link>https://bibtex.eu/fields</link>
+        <description>BibTeX Blog</description>
+        <lastBuildDate>Wed, 26 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[address]]></title>
+            <link>https://bibtex.eu/fields/address</link>
+            <guid>address</guid>
+            <pubDate>Wed, 26 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The address-field contains the publisher's (or any other institution) address.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[annote]]></title>
+            <link>https://bibtex.eu/fields/annote</link>
+            <guid>annote</guid>
+            <pubDate>Tue, 25 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[BibTeX Field type]]></description>
+        </item>
+        <item>
+            <title><![CDATA[author]]></title>
+            <link>https://bibtex.eu/fields/author</link>
+            <guid>author</guid>
+            <pubDate>Mon, 24 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[In the `author`-field, you can specify all contributors to the work you want to cite. BibTeX has several ways of specifying author names but expects in all cases a consistent and exact arrangement so that inaccurate information could lead to the unwanted output of the author's name.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[booktitle]]></title>
+            <link>https://bibtex.eu/fields/booktitle</link>
+            <guid>booktitle</guid>
+            <pubDate>Sun, 23 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[To cite an `incollection, i.e., a part of a book/collection with its own title, or to give a title to an article, part of an inproceedings, the booktitle-field is used to distinguish. At the same time, title contains the title of the book, or incproceedings`.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[chapter]]></title>
+            <link>https://bibtex.eu/fields/chapter</link>
+            <guid>chapter</guid>
+            <pubDate>Sat, 22 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[chapter]]></description>
+        </item>
+        <item>
+            <title><![CDATA[crossref]]></title>
+            <link>https://bibtex.eu/fields/crossref</link>
+            <guid>crossref</guid>
+            <pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[doi]]></title>
+            <link>https://bibtex.eu/fields/doi</link>
+            <guid>doi</guid>
+            <pubDate>Thu, 20 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[`doi is used to store any DOI (Digital Object Identifier of the International DOI Foundation). DOI is a digital identifier that is intended to be permanent and unique. It is used, among other things, and mostly for articles from scientific journals. It can be used in article, but more rarely also in chapter, book, or inproceedings / conference`. This field is optional in all cases.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[edition]]></title>
+            <link>https://bibtex.eu/fields/edition</link>
+            <guid>edition</guid>
+            <pubDate>Wed, 19 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The edition of a book, e.g. "edition = " Entering an ordinal number is recommended by default, and the first letter is usually capitalised.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[editor]]></title>
+            <link>https://bibtex.eu/fields/editor</link>
+            <guid>editor</guid>
+            <pubDate>Tue, 18 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[email]]></title>
+            <link>https://bibtex.eu/fields/email</link>
+            <guid>email</guid>
+            <pubDate>Mon, 17 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Email includes the email address of the stated authors if you want to indicate them. It's not a common field and might not be supported.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[howpublished]]></title>
+            <link>https://bibtex.eu/fields/howpublished</link>
+            <guid>howpublished</guid>
+            <pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[institution]]></title>
+            <link>https://bibtex.eu/fields/institution</link>
+            <guid>institution</guid>
+            <pubDate>Sat, 15 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[journal]]></title>
+            <link>https://bibtex.eu/fields/journal</link>
+            <guid>journal</guid>
+            <pubDate>Fri, 14 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The name of the journal in which the paper was published]]></description>
+        </item>
+        <item>
+            <title><![CDATA[key]]></title>
+            <link>https://bibtex.eu/fields/key</link>
+            <guid>key</guid>
+            <pubDate>Thu, 13 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[month]]></title>
+            <link>https://bibtex.eu/fields/month</link>
+            <guid>month</guid>
+            <pubDate>Wed, 12 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The month of publication, or creation if unpublished.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[note]]></title>
+            <link>https://bibtex.eu/fields/note</link>
+            <guid>note</guid>
+            <pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[number]]></title>
+            <link>https://bibtex.eu/fields/number</link>
+            <guid>number</guid>
+            <pubDate>Mon, 10 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[organization]]></title>
+            <link>https://bibtex.eu/fields/organization</link>
+            <guid>organization</guid>
+            <pubDate>Sun, 09 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[pages]]></title>
+            <link>https://bibtex.eu/fields/pages</link>
+            <guid>pages</guid>
+            <pubDate>Sat, 08 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[publisher]]></title>
+            <link>https://bibtex.eu/fields/publisher</link>
+            <guid>publisher</guid>
+            <pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[school]]></title>
+            <link>https://bibtex.eu/fields/school</link>
+            <guid>school</guid>
+            <pubDate>Thu, 06 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[series]]></title>
+            <link>https://bibtex.eu/fields/series</link>
+            <guid>series</guid>
+            <pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
+        </item>
+        <item>
+            <title><![CDATA[title]]></title>
+            <link>https://bibtex.eu/fields/title</link>
+            <guid>title</guid>
+            <pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The title field is saved for the title of a work to be cited. LaTeX-specific writing, such as capitalisation, should be taken into account.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[type]]></title>
+            <link>https://bibtex.eu/fields/type</link>
+            <guid>type</guid>
+            <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[volume]]></title>
+            <link>https://bibtex.eu/fields/volume</link>
+            <guid>volume</guid>
+            <pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The 'volume' field is used to enter the volume of a journal or multi-volume book.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[year]]></title>
+            <link>https://bibtex.eu/fields/year</link>
+            <guid>year</guid>
+            <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[The year of publication, or creation if unpublished.]]></description>
+        </item>
+    </channel>
+</rss>
