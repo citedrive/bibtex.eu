@@ -107,10 +107,10 @@ module.exports = {
               label: 'BibTeX - Fields',
               to: '/fields',
             },
-            {
-              label: 'BibTeX - Types',
-              to: '/types',
-            },
+            // {
+            //   label: 'BibTeX - Types',
+            //   to: '/types',
+            // },
           ],
         },
 
