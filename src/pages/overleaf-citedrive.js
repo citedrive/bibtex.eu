@@ -233,7 +233,7 @@ function Project() {
         </p>
               <p>
                 We’d love to hear what you think! Email us at{" "}
-                <a href="mailto:support@citedrive.com" style={{color: "#6c3433"}}>support@citedrive.com</a>
+                <a href="mailto:hello@citedrive.com" style={{color: "#6c3433"}}>hello@citedrive.com</a>
               </p>
       </div>
     </div>
