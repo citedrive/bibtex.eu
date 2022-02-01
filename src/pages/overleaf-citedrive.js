@@ -122,7 +122,7 @@ function GettingStarted() {
             Getting started
           </p>
           <p>
-            <YouTube videoId="X_piDbr4bMw" opts={opts} />
+            <YouTube videoId="KfwYySjHRPE" opts={opts} />
           </p>
         <ol>
           <li>
