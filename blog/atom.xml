@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bibtex.eu/blog</id>
     <title>BibTeX Blog</title>
-    <updated>2022-01-29T16:28:39.217Z</updated>
+    <updated>2022-02-01T12:34:36.852Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bibtex.eu/blog"/>
     <subtitle>BibTeX Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[BibTeX - Database]]></title>
         <id>welcome</id>
         <link href="https://bibtex.eu/blog/welcome"/>
-        <updated>2022-01-29T16:28:39.217Z</updated>
+        <updated>2022-02-01T12:34:36.852Z</updated>
         <summary type="html"><![CDATA[Format]]></summary>
     </entry>
 </feed>

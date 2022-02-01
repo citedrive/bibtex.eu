@@ -4,14 +4,14 @@
         <title>BibTeX Blog</title>
         <link>https://bibtex.eu/blog</link>
         <description>BibTeX Blog</description>
-        <lastBuildDate>Sat, 29 Jan 2022 16:28:39 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 01 Feb 2022 12:34:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[BibTeX - Database]]></title>
             <link>https://bibtex.eu/blog/welcome</link>
             <guid>welcome</guid>
-            <pubDate>Sat, 29 Jan 2022 16:28:39 GMT</pubDate>
+            <pubDate>Tue, 01 Feb 2022 12:34:36 GMT</pubDate>
             <description><![CDATA[Format]]></description>
         </item>
     </channel>
