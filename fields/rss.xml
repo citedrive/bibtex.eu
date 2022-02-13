@@ -169,11 +169,11 @@
             <description><![CDATA[The title field is saved for the title of a work to be cited. LaTeX-specific writing, such as capitalisation, should be taken into account.]]></description>
         </item>
         <item>
-            <title><![CDATA[title]]></title>
-            <link>https://bibtex.eu/fields/title</link>
-            <guid>title</guid>
+            <title><![CDATA[type]]></title>
+            <link>https://bibtex.eu/fields/type</link>
+            <guid>type</guid>
             <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Coming soon ...]]></description>
+            <description><![CDATA[Within the BibTeX entry, the type field is used to declare an explicit type, i.e. for technical report "Research Note", or "Government Report".]]></description>
         </item>
         <item>
             <title><![CDATA[volume]]></title>
