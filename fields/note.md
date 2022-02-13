@@ -9,4 +9,19 @@ tags: [bibtex, biblatex, note]
 date: 2022-01-11
 ---
 
-Coming soon ...
+The notes field can be used to store additional information about a particular BibTeX entry that may be relevant to the reader or that is needed for a particular entry type and citation style but does not fit in any other field.
+
+
+## Format
+
+```tex
+@book{Mueller2014The,
+
+  ...
+
+  note={ ... }
+
+  ...
+
+}
+```
