@@ -1,6 +1,6 @@
 ---
-slug: title
-title: title
+slug: type
+title: type
 author: CiteDrive
 author_title: Seamless BibTeX reference management for Overleaf and other modern LaTeX editors.
 author_url: https://citedrive.com/en/
