@@ -89,6 +89,3 @@ You specify the individual authors in the manner described above. The separator,
 
 }
 ```
-
-
-**How to add a cooperation in BibTeX?**
