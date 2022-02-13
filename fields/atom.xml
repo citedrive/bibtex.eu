@@ -117,7 +117,7 @@
         <id>note</id>
         <link href="https://bibtex.eu/fields/note"/>
         <updated>2022-01-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Coming soon ...]]></summary>
+        <summary type="html"><![CDATA[The notes field can be used to store additional information about a particular BibTeX entry that may be relevant to the reader or that is needed for a particular entry type and citation style but does not fit in any other field.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[number]]></title>

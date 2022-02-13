@@ -117,7 +117,7 @@
             <link>https://bibtex.eu/fields/note</link>
             <guid>note</guid>
             <pubDate>Tue, 11 Jan 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Coming soon ...]]></description>
+            <description><![CDATA[The notes field can be used to store additional information about a particular BibTeX entry that may be relevant to the reader or that is needed for a particular entry type and citation style but does not fit in any other field.]]></description>
         </item>
         <item>
             <title><![CDATA[number]]></title>
