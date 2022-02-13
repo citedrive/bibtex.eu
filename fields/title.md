@@ -24,9 +24,6 @@ The title field is saved for the title of a work to be cited. LaTeX-specific wri
 ```
 ## full example
 ```tex
-
-
-
 @article{luscombe2001bioinformatics,
   title={What is bioinformatics? An introduction and overview},
   author={Luscombe, Nicholas M and Greenbaum, Dov and Gerstein, Mark},

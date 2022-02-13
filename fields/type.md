@@ -9,4 +9,14 @@ tags: [bibtex, biblatex, title]
 date: 2022-01-03
 ---
 
-Coming soon ...
+Within the BibTeX entry, the type field is used to declare an explicit type, i.e. for technical report "Research Note", or "Government Report".
+
+
+## example
+
+```tex
+
+@techreport{...,
+    type={Research Note},
+}
+```
