@@ -1,0 +1,1 @@
+(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[5191],{1205:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/fields/tags","slug":"crossref","name":"crossref","count":1,"permalink":"/fields/tags/crossref"}')}}]);

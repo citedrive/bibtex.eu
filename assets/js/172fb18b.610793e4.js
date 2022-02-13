@@ -1,0 +1,1 @@
+(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3080],{2223:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/fields/tags","slug":"chapter","name":"chapter","count":1,"permalink":"/fields/tags/chapter"}')}}]);

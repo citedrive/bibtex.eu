@@ -47,7 +47,7 @@
         <id>crossref</id>
         <link href="https://bibtex.eu/fields/crossref"/>
         <updated>2022-01-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[doi]]></title>
@@ -68,7 +68,7 @@
         <id>editor</id>
         <link href="https://bibtex.eu/fields/editor"/>
         <updated>2022-01-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[In the `editor`-field, you can specify all editors to the work you want to cite. BibTeX has several ways of specifying editor names but expects in all cases a consistent and exact arrangement so that inaccurate information could lead to the unwanted output of the editor's name.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[email]]></title>
@@ -82,14 +82,14 @@
         <id>howpublished</id>
         <link href="https://bibtex.eu/fields/howpublished"/>
         <updated>2022-01-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[institution]]></title>
         <id>institution</id>
         <link href="https://bibtex.eu/fields/institution"/>
         <updated>2022-01-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[journal]]></title>
@@ -103,7 +103,7 @@
         <id>key</id>
         <link href="https://bibtex.eu/fields/key"/>
         <updated>2022-01-13T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[month]]></title>
@@ -117,49 +117,49 @@
         <id>note</id>
         <link href="https://bibtex.eu/fields/note"/>
         <updated>2022-01-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[number]]></title>
         <id>number</id>
         <link href="https://bibtex.eu/fields/number"/>
         <updated>2022-01-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[organization]]></title>
         <id>organization</id>
         <link href="https://bibtex.eu/fields/organization"/>
         <updated>2022-01-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[pages]]></title>
         <id>pages</id>
         <link href="https://bibtex.eu/fields/pages"/>
         <updated>2022-01-08T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[publisher]]></title>
         <id>publisher</id>
         <link href="https://bibtex.eu/fields/publisher"/>
         <updated>2022-01-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[school]]></title>
         <id>school</id>
         <link href="https://bibtex.eu/fields/school"/>
         <updated>2022-01-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[series]]></title>
         <id>series</id>
         <link href="https://bibtex.eu/fields/series"/>
         <updated>2022-01-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[title]]></title>
@@ -169,11 +169,11 @@
         <summary type="html"><![CDATA[The title field is saved for the title of a work to be cited. LaTeX-specific writing, such as capitalisation, should be taken into account.]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[type]]></title>
-        <id>type</id>
-        <link href="https://bibtex.eu/fields/type"/>
+        <title type="html"><![CDATA[title]]></title>
+        <id>title</id>
+        <link href="https://bibtex.eu/fields/title"/>
         <updated>2022-01-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[...]]></summary>
+        <summary type="html"><![CDATA[Coming soon ...]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[volume]]></title>
