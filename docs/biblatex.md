@@ -1,10 +1,10 @@
 ---
-title: BibLaTeX - Reference Management with CiteDrive for Overleaf
+title: BibTeX short guide
 description: Bibliography and reference management guide with BibLaTeX, CiteDrive and Overleaf.
 sidebar_position: 1
 slug: "/"
 ---
 
-# Guide to BibLaTeX with CiteDrive and Overleaf
+# BibTeX short guide
 
 ...

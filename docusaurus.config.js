@@ -13,46 +13,7 @@ module.exports = {
   organizationName: 'citedrive', // Usually your GitHub org/user name.
   projectName: 'bibtex.eu', // Usually your repo name.
   plugins: [
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        blogTitle: "BibTeX bibliography and citation styles",
-        /**
-         * Required for any multi-instance plugin
-         */
-        id: "styles",
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
-        routeBasePath: "styles",
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
-        path: "./styles",
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-blog",
-      {
-        blogTitle: "BibTeX / BibLaTeX fields",
-        /**
-         * Required for any multi-instance plugin
-         */
-        id: "fields",
-        /**
-         * URL route for the blog section of your site.
-         * *DO NOT* include a trailing slash.
-         */
-        routeBasePath: "fields",
-        /**
-         * Path to data on filesystem relative to site dir.
-         */
-        path: "./fields",
-        blogSidebarTitle: 'BibTeX Fields',
-         blogSidebarCount: 'ALL',
-      },
-    ],
+
     ],
   themeConfig: {
     navbar: {
@@ -105,7 +66,7 @@ module.exports = {
           items: [
             {
               label: 'BibTeX - Fields',
-              to: '/fields',
+              to: '/category/fields',
             },
             // {
             //   label: 'BibTeX - Types',
@@ -176,7 +137,7 @@ module.exports = {
            routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/citedrive/bibtex.eu/tree/main/',
+            'https://github.com/citedrive/bibtex.eu/blob/main/',
         },
         blog: {
           showReadingTime: true,
