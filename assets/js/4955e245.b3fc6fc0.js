@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[1152],{4672:function(e){e.exports=JSON.parse('{"label":"year","permalink":"/tags/year","allTagsPath":"/tags","count":1,"items":[{"id":"fields/year","title":"year","description":"The year of publication, or creation if unpublished.","permalink":"/fields/year"}]}')}}]);
