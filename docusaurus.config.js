@@ -8,6 +8,7 @@ module.exports = {
   url: 'https://bibtex.eu',
   baseUrl: '/',
   onBrokenLinks: 'throw',
+  trailingSlash: false,
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'citedrive', // Usually your GitHub org/user name.
