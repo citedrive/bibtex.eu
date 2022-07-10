@@ -66,7 +66,7 @@ module.exports = {
           items: [
             {
               label: 'BibTeX - Fields',
-              to: '/category/fields',
+              to: '/fields',
             },
             // {
             //   label: 'BibTeX - Types',
