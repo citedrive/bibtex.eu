@@ -13,10 +13,10 @@ slug: "/"
 And that is exactly what this little guide aims to accomplish: give you a basic set-up using an example, and show you how to use BibTeX from the ground up. In the future, we'll refer to document systems other than LaTeX, and details on this website, but for now, we'll stay focused on the basics.
 
 
-## Step 1: Create a .bib-file create some entries.
+## Step 1: Create a .bib-file and create some entries.
 
 We begin by generating a .bib-file, such as **bibliography.bib**, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
-Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then BibTeX entry would look like this:
+Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then the entry would look like this:
 
 ```latex
 @book{Hemingway1952,
@@ -27,6 +27,11 @@ Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway
 }
 ```
 
+If you break down the "anatomy" of this entry, you only have to look at the following three components to understand how each BibTeX entry is defined:
+
+* **Entry-type**: With `@book` we define the type of reference, i.e. (and this example refers to itself) as a book. There are also `@article` for academic articles and others possible. BibTeX likes to specify which fields are optional and which are required to indicate them correctly in the literature.
+* **Entry fields**: in this example, these are `title`, `author`, `year`, and `publisher`. (Cf. [fields](./fields))
+* **citation-key**: This example is `Hemingway1952` and is used to indicate in-text citation in LaTeX, i.e., to refer to the source. Using the same example, we do this with `\cite{Hemingway1952}`. The citation key can be any string of characters - often as a combination of author, year, and a word from the title.
 
 
 
