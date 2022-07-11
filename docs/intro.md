@@ -1,10 +1,47 @@
 ---
-title: BibTeX short guide
-description: Bibliography and reference management guide with BibLaTeX, CiteDrive and Overleaf.
+title: Reference management with BibTeX -- A short guide
+description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
+sidebar_label: Quick start (LaTeX)
 sidebar_position: 1
 slug: "/"
 ---
 
-# BibTeX short guide
+# Reference management with BibTeX: A short guide
 
-This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format. 
+**BibTeX** can be daunting to many newcomers because of all the specifics about **LaTeX** packages, citation styles, and formatting. Yet, many aspects are mostly unimportant, and the structure is usually always the same.
+
+And that is exactly what this little guide aims to accomplish: give you a basic set-up using an example, and show you how to use BibTeX from the ground up. In the future, we'll refer to document systems other than LaTeX, and details on this website, but for now, we'll stay focused on the basics.
+
+
+## Step 1: Create a .bib-file create some entries.
+
+We begin by generating a .bib-file, such as **bibliography.bib**, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
+Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then BibTeX entry would look like this:
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea}
+  author={Hemingway, Ernest}
+  year={1952}
+  publisher={Charles Scribner's Sons}
+}
+```
+
+
+
+
+## Step 2: Create a LaTeX document and connect
+
+...
+
+## Reference managers
+
+...
+
+
+
+## Further notes
+
+We said in the introduction that you don't need to understand most of this to get started. That's true, but in the future, you may stumble upon the fact that BibTeX can mean two different things depending on the context.
+
+BibTeX is the name of a program that converts TeX markups into bibliographic information. The file that contains all your TeX markups and references is known as a *.bib file, often referred to as a BibTeX file. Confusion can arise when using new implementations such as BibLaTeX, a superset of fields and types in the data structure.
