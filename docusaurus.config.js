@@ -49,7 +49,7 @@ module.exports = {
           items: [
             {
               label: 'CiteDrive - Home',
-              to: 'https://citedrive.com/en/',
+              to: 'https://citedrive.com/',
             },
             {
               label: 'CiteDrive - App',
