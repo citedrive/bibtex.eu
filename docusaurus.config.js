@@ -61,7 +61,6 @@ module.exports = {
             },
           ],
         },
-
         {
           title: 'BibTeX',
           items: [
@@ -75,8 +74,6 @@ module.exports = {
             // },
           ],
         },
-
-
         {
           title: 'Community',
           items: [
