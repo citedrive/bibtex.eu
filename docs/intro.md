@@ -8,7 +8,7 @@ slug: "/"
 
 # Reference management with BibTeX: A short guide
 
-**BibTeX** can be daunting to many newcomers because of all the specifics about **LaTeX** packages, citation styles, and formatting. Yet, many aspects are mostly unimportant, and the structure is usually always the same.
+**BibTeX** can be daunting to many newcomers because of all the specifics about LaTeX packages, citation styles, and formatting. Yet, many aspects are mostly unimportant, and the structure is usually always the same.
 
 And that is exactly what this little guide aims to accomplish: give you a basic set-up using an example, and show you how to use BibTeX from the ground up. In the future, we'll refer to document systems other than LaTeX, and details on this website, but for now, we'll stay focused on the basics.
 
@@ -20,9 +20,9 @@ Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway
 
 ```latex
 @book{Hemingway1952,
-  title={The Old Man and the Sea}
-  author={Hemingway, Ernest}
-  year={1952}
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
   publisher={Charles Scribner's Sons}
 }
 ```
@@ -37,7 +37,32 @@ If you break down the "anatomy" of this entry, you only have to look at the foll
 
 ## Step 2: Create a LaTeX document and connect
 
-...
+Let's start by inserting our reference into a LaTeX document. You can copy and use the following example, a minimal basic framework sufficient to format the citation.
+
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{BibTeX references in \LaTeX}
+\author{John Smith}
+
+\begin{document}
+
+\maketitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{document}
+```
+After compiling the LaTeX document, we will notice that the command `\cite{Hemingway1952}` is replaced by the reference given in the BibTeX file with this ID in the example `[1]`.
+
+![](LaTeX_Overleaf_BibTeX-Example.png)
+
+
 
 ## Reference managers
 
