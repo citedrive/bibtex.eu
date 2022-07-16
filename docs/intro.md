@@ -15,7 +15,7 @@ And that is exactly what this little guide aims to accomplish: give you a basic 
 
 ## Step 1: Create a .bib-file and create some entries.
 
-We begin by generating a .bib-file, such as **bibliography.bib**, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
+We begin by generating a .bib-file, such as `bibliography.bib`, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
 Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then the entry would look like this:
 
 ```latex
@@ -60,15 +60,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dap
 ```
 After compiling the LaTeX document, we will notice that the command `\cite{Hemingway1952}` is replaced by the reference given in the BibTeX file with this ID in the example `[1]`.
 
-![](LaTeX_Overleaf_BibTeX-Example.png)
 
 
+!["BibTeX - LaTeX - Overleaf"](LaTeX_Overleaf_BibTeX-Example.png)
+
+The .bib file, which we have called `bibliography.bib`, is defined in `\bibliography{bibliography}` and the citation/bibliography style `\bibliographystyle{unsrt}`, where unsrt refers to the `.bst file,` in this case to `unsrt.bst`, which contains all the macros to format your references in style. You can use other styles like `apalike.bst` instead.  
 
 ## Reference managers
 
-...
+Formatting BibTeX files by hand can be tedious, which is why it is generally recommended to use a reference manager. Here are a few that are well suited for this:
 
-
+* [CiteDrive](https://www.citedrive.com/) -
+* [JabRef](https://www.jabref.org/) -
+* [Zotero](https://www.zotero.org/) -
 
 ## Further notes
 
