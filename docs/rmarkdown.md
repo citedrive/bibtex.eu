@@ -37,10 +37,25 @@ Again, we break down the "anatomy" of this entry, looking at three components to
 
 ## Step 2: Create a R Markdown document and connect
 
-Integrating BibTeX with R Markdown is very simple. All you need to do is add one line of code to your r markdown file, as follows:
+Integrating BibTeX with R Markdown is very simple. All you have to do is specify the bib-file with `bibliography: bibliography.bib` in YAML and the citation with `[@Hemingway1952]` at the place where you want to place the in-text citation.
 
 ```md
-----
+---
+title: "BibTeX references in R Markdown"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## BibTeX references in R Markdown
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+
+
 ```
 
 
