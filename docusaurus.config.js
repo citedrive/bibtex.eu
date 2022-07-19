@@ -16,16 +16,25 @@ module.exports = {
   plugins: [
 
     ],
+    i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
   themeConfig: {
     navbar: {
       title: '',
+
       logo: {
         alt: 'BibTeX Logo',
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg',
       },
-      items: [
 
+      items: [
+        {
+            type: 'localeDropdown',
+            position: 'right',
+          },
 
         {
           href: '/overleaf-citedrive',

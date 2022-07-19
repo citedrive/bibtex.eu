@@ -1,7 +1,7 @@
 ---
 title: Reference management with BibTeX -- A short guide
 description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
-sidebar_label: Quick start (LaTeX)
+sidebar_label: Using LaTeX (Quick start)
 sidebar_position: 1
 slug: "/"
 ---
