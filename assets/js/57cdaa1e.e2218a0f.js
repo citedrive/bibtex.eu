@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7793],{4668:function(e){e.exports=JSON.parse('{"label":"bibtex","permalink":"/tags/bibtex","allTagsPath":"/tags","count":1,"items":[{"id":"fields/address","title":"address","description":"The address-field contains the publisher\'s (or any other institution) address.","permalink":"/fields/address"}]}')}}]);

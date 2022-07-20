@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2610],{1372:function(e){e.exports=JSON.parse('{"label":"howpublished","permalink":"/tags/howpublished","allTagsPath":"/tags","count":1,"items":[{"id":"fields/howpublished","title":"howpublished","description":"Coming soon ...","permalink":"/fields/howpublished"}]}')}}]);
