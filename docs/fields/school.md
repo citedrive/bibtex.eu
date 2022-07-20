@@ -1,12 +1,17 @@
 ---
 slug: school
 title: school
-author: CiteDrive
-author_title: Seamless BibTeX reference management for Overleaf and other modern LaTeX editors.
-author_url: https://citedrive.com/en/
-author_image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
-tags: [bibtex, biblatex, school]
-date: 2022-01-06
 ---
 
-Coming soon ...
+`school` is specified when a `phdthesis` or `mastersthesis` is cited and is the educational institution where the student wrote the dissertation. This field is required in both entry types.
+
+```tex
+@phdthesis{key,
+  school={University of ...},
+}
+
+
+@mastersthesis{key,
+  series={University of ...},
+}
+```

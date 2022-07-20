@@ -1,12 +1,13 @@
 ---
 slug: number
 title: number
-author: CiteDrive
-author_title: Seamless BibTeX reference management for Overleaf and other modern LaTeX editors.
-author_url: https://citedrive.com/en/
-author_image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
-tags: [bibtex, biblatex, number]
-date: 2022-01-10
 ---
 
-Coming soon ...
+Usually the issue number (or similar identifier) of a journal, magazine or the number of technical report.
+
+
+```tex
+@article{key,
+  number={ 3 },
+}
+```

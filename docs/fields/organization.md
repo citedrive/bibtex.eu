@@ -1,12 +1,16 @@
 ---
 slug: organization
 title: organization
-author: CiteDrive
-author_title: Seamless BibTeX reference management for Overleaf and other modern LaTeX editors.
-author_url: https://citedrive.com/en/
-author_image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
-tags: [bibtex, biblatex, organization]
-date: 2022-01-09
 ---
 
-Coming soon ...
+Usually, an institution, the name of the conference sponsor/organizer is used here.
+
+```tex
+@proceedings{key,
+  organization={ ... },
+}
+
+@manual{key,
+  organization={ ... },
+}
+```
