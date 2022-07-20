@@ -1,6 +1,6 @@
-# BibTeX Fields
+# BibTeX Entry types
 
-A single BibTeX entry can hold the following fields. Note which are optional, required or ignored.
+BibTeX can support the following types of entries:
 
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';

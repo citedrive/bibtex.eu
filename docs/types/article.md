@@ -1,0 +1,4 @@
+---
+slug: article
+title: article
+---
