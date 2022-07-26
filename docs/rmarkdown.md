@@ -63,6 +63,6 @@ Cras a molestie nulla. [@Hemingway1952]
 
 Formatting BibTeX files by hand can be tedious, which is why it is generally recommended to use a reference manager. Here are a few that are well suited for this:
 
-* [CiteDrive](https://www.citedrive.com/) -
-* [JabRef](https://www.jabref.org/) -
-* [Zotero](https://www.zotero.org/) -
+* [CiteDrive](https://www.citedrive.com/) is a bibtex-powered, collaborative and cloud-based tool to manage your references and teams in projects. It offers a single-click export to Overleaf ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) along with R Markdown ([*Cf. Medium post: Bibliography Management in R Markdown with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), while keeping citations in sync.
+* [Zotero](https://www.zotero.org/) is a free, open-source literature management tool that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero is achieved with **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** by retorque.
+* The free, open-source software [JabRef](https://www.jabref.org/) is a BibTeX-supported reference manager that runs on Windows, Mac, and Linux. It is based on Java and is maintained by JabRef e.V.
