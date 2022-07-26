@@ -70,6 +70,6 @@ The .bib file, which we have called `bibliography.bib`, is defined in `\bibliogr
 
 Formatting BibTeX files by hand can be tedious, which is why it is generally recommended to use a reference manager. Here are a few that are well suited for this:
 
-* [CiteDrive](https://www.citedrive.com/) -
-* [JabRef](https://www.jabref.org/) -
-* [Zotero](https://www.zotero.org/) -
+* [CiteDrive](https://www.citedrive.com/) is a bibtex-driven, collaborative and web-based tool that lets you manage your references and teams in projects. It has a one-click export to [Overleaf]([https://www.citedrive.com/](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) as well as R Markdown, preserving the citations in sync.
+* [Zotero](https://www.zotero.org/) is a free, open-source reference management software that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero comes with "BETTER BIBTEX FOR ZOTERO" by retorque.
+* The free, open-source software [JabRef](https://www.jabref.org/) is a BibTeX-first reference manager that runs on Windows, Mac, and Linux. It's based on Java and maintained by the JabRef e.V.
