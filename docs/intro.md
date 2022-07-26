@@ -73,9 +73,3 @@ Formatting BibTeX files by hand can be tedious, which is why it is generally rec
 * [CiteDrive](https://www.citedrive.com/) -
 * [JabRef](https://www.jabref.org/) -
 * [Zotero](https://www.zotero.org/) -
-
-## Further notes
-
-We said in the introduction that you don't need to understand most of this to get started. That's true, but in the future, you may stumble upon the fact that BibTeX can mean two different things depending on the context.
-
-BibTeX is the name of a program that converts TeX markups into bibliographic information. The file that contains all your TeX markups and references is known as a *.bib file, often referred to as a BibTeX file. Confusion can arise when using new implementations such as BibLaTeX, a superset of fields and types in the data structure.
