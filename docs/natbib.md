@@ -13,8 +13,7 @@ It is worth noting that the package is compatible with both author-year and nume
 
 
 ## Getting started: Using Parenthetical and Textual/Narrative In-Text Citations with natbib
-
-The basic citation commands in Natbib are `\citet{*}` for textual/narrative citations and `\citep{*}` for parenthetical citations.
+We specify a minimal structure, similar to the one discussed in the previous section. To do this, we load the library with `\usepackage{natbib}`. The library provides options that can be passed via `\usepackagee[options]{{natbib}`, which we cover later. The basic citation commands in Natbib are `\citet{*}` for textual/narrative citations and `\citep{*}` for parenthetical citations.
 
 
 ```latex
@@ -40,14 +39,9 @@ recorded [...], which results in distortion.
 \end{document}
 
 ```
+![A Short Guide to Reference Management using natbib with BibTeX](output_example_bibtex_natbib.png)
 
-![](output_example_bibtex_natbib.png)
-
-## Other Basic `citet` commands
-
-... coming soon
-
-## More Customizations
+## Basic `cite{*}` commands provided by natbib
 
 ... coming soon
 
