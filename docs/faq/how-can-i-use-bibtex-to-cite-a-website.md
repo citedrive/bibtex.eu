@@ -46,7 +46,8 @@ If you use BibLaTeX, which we recommend, the `@online` entry type is inherently 
 
 ## Using CiteDrive
 
-... coming soon
+CiteDrive is a collaborative online reference management tool based on BibTeX that automatically synchronizes with publication systems such as Overleaf and RStudio. They offer a browser extension that allows you to save academic articles directly from the browser and in the correct BibTeX format so that you can, for example, cite them directly in the Overleaf project without having to switch between browser windows/tabs. The extension can also save web pages in BibLaTeX format, automatically capturing the title, URL, and access date.
+
 
 ## Using `natbib`
 
