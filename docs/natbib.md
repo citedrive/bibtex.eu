@@ -7,7 +7,7 @@ sidebar_position: 3
 
 # A Short Guide to Reference Management using natbib with BibTeX
 
-The natbib package adds new features to the standard `\cite{*}` command in LaTeX that includes in-text citations with various options and customizations, especially for author-date schemes and displaying the textual and parenthetical when using BibTeX.
+The natbib package adds new features to the standard `\cite{*}` command in LaTeX that includes in-text citations with various options and customizations, especially for author-year schemes and displaying the textual and parenthetical when using BibTeX.
 
 It is worth noting that the package is compatible with both author-year and numerical citations and with the standard bibliography (`*.bst`) files. This article explains how to use natbib to format and cite bibliographic sources.
 
@@ -43,16 +43,16 @@ recorded [...], which results in distortion.
 
 ## Basic `cite{*}` commands provided by natbib
 
-| Command (single citation) | Output (Author-Date) | Output (Numeric) | Command (Multiple citations) | Output (Author-Date) | Output (Numeric) |
+| Command (single citation) | Output (author-year) | Output (Numeric) | Command (Multiple citations) | Output (author-year) | Output (Numeric) |
 |---------------------------|----------------------|------------------|------------------------------|---|---|
-|`\citet{key1}`|Doe (1966) |Doe [1]|`\citet{key1,key2}`|  |  |
-|`\citet[chap.~4]{key1}`|...|...|`\citet[chap.~4]{key1,key2}`|   |   |
-|`\citep{key1}`|...|...|`\citep{key1,key2}`|   |   |
-|`\citep[chap.~4]{key1}`|...|...|`\citep[chap.~4]{key1,key2}`|   |   |
-|`\citep[see][]{key1}`|...|...|`\citep[see][]{key1,key2}`|   |   |
-|`\citep[see][chap.~4]{key1}`|...|...|`\citep[see][chap.~4]{key1,key2}`|   |   |
-|`\citet*{key1}`|...|...|`\citet*{key1,key2}`|   |   |
-|`\citep*{key1}`|...|...|`\citep*{key1,key2}`|   |   |
+|`\citet{Doe:1966}`|Doe (1966) |Doe [1]|`\citet{Doe:1966,smith201X}`|Doe (1966); Smith (201X)|Doe [1], Smith [2]|
+|`\citet[chap.~4]{Doe:1966}`|Doe (1966, chap. 4)|Doe [1, chap. 4]|`\citet[chap.~4]{Doe:1966,smith201X}`|Doe (1966); Smith (201X, chap. 4)|Doe [1], Smith [2, chap. 4]|
+|`\citep{Doe:1966}`|(Doe, 1966)|[1]|`\citep{Doe:1966,smith201X}`|(Doe, 1966; Smith, 201X)|[1, 2|
+|`\citep[chap.~4]{Doe:1966}`|(Doe, 1966, chap. 4)|[1, chap. 4|`\citep[chap.~4]{Doe:1966,smith201X}`|(Doe, 1966; Smith, 201X, chap. 4)|1, 2, chap. 4]|
+|`\citep[see][]{Doe:1966}`|(see Doe, 1966)|[see 1]|`\citep[see][]{Doe:1966,smith201X}`|(see Doe, 1966; Smith, 201X)|[see 1, 2]|
+|`\citep[see][chap.~4]{Doe:1966}`|(see Doe, 1966, chap. 4)|[see 1, chap. 4]|`\citep[see][chap.~4]{Doe:1966,smith201X}`|(see Doe, 1966; Smith, 201X, chap. 4)|[see 1, 2, chap. 4]|
+|`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith201X}`|Doe (1966); Smith (201X)|Doe [1], Smith [2]|
+|`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith201X}`|(Doe, 1966; Smith, 201X)|[1, 2]|
 
 ## Options for `natbib`
 
