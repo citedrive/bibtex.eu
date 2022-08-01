@@ -9,8 +9,11 @@ sidebar_position: 3
 
 The natbib package adds new features to the standard `\cite{*}` command in LaTeX that includes in-text citations with various options and customizations, especially for author-year schemes and displaying the textual and parenthetical when using BibTeX.
 
-It is worth noting that the package is compatible with both author-year and numerical citations and with the standard bibliography (`*.bst`) files. This article explains how to use natbib to format and cite bibliographic sources.
+:::tip
+It is worth noting that the package is compatible with both author-year and numerical citations and with the standard bibliography (`*.bst`) files.
+:::
 
+This article explains how to use natbib to format and cite bibliographic sources.
 
 ## Getting started: Using Parenthetical and Textual/Narrative In-Text Citations with natbib
 We specify a minimal structure, similar to the one discussed in the previous section. To do this, we load the library with `\usepackage{natbib}`. The library provides options that can be passed via `\usepackagee[options]{{natbib}`, which we cover later. The basic citation commands in Natbib are `\citet{*}` for textual/narrative citations and `\citep{*}` for parenthetical citations.
@@ -41,7 +44,13 @@ recorded [...], which results in distortion.
 ```
 ![A Short Guide to Reference Management using natbib with BibTeX](output_example_bibtex_natbib.png)
 
-## Basic `cite{*}` commands provided by natbib
+## `cite{*}` commands provided by natbib
+
+The following table summarizes the differences between the commands, based on `cite{*}`, and what you might expect to see. Both numeric and author-year styles are included, as well as multiple citations.
+
+:::caution
+As we subsequently discover, we should note that some examples are not chosen sensibly: Hardly ever will two different sources share one chapter. `\citet*{...}` lists all authors without et. al.   Nevertheless, the table should offer a solid understanding of how the commands behave. 
+:::
 
 | Command (single citation) | Output (author-year) | Output (Numeric) | Command (Multiple citations) | Output (author-year) | Output (Numeric) |
 |---------------------------|----------------------|------------------|------------------------------|---|---|
