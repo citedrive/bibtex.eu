@@ -43,15 +43,17 @@ recorded [...], which results in distortion.
 
 ## Basic `cite{*}` commands provided by natbib
 
-... coming soon
-
+| Command (single citation) | Output (Author-Date) | Output (Numeric) | Command (Multiple citations) | Output (Author-Date) | Output (Numeric) |
+|---------------------------|----------------------|------------------|------------------------------|---|---|
+|`\citet{key1}`|Doe (1966) |Doe [1]|`\citet{key1,key2}`|  |  |
+|`\citet[chap.~4]{key1}`|...|...|`\citet[chap.~4]{key1,key2}`|   |   |
+|`\citep{key1}`|...|...|`\citep{key1,key2}`|   |   |
+|`\citep[chap.~4]{key1}`|...|...|`\citep[chap.~4]{key1,key2}`|   |   |
+|`\citep[see][]{key1}`|...|...|`\citep[see][]{key1,key2}`|   |   |
+|`\citep[see][chap.~4]{key1}`|...|...|`\citep[see][chap.~4]{key1,key2}`|   |   |
+|`\citet*{key1}`|...|...|`\citet*{key1,key2}`|   |   |
+|`\citep*{key1}`|...|...|`\citep*{key1,key2}`|   |   |
 
 ## Options for `natbib`
 
-## Using `natbib` in Overleaf
-
-... coming soon
-
-## Using CiteDrive
-
-... coming soon
+## References and more
