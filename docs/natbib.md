@@ -99,20 +99,26 @@ The following are the options that can be declared via `\usepackagee[options]{{n
 
 | Option | Description |
 |----------------------|----------|
-|round                     |...|
-|square                     |...|
-|curly                     |...|
-|angle                     |...|
-|semicolon                     |...|
-|colon                     |...|
-|comma                     |...|
-|authoryear                     |...|
-|numbers                     |...|
-|super                     |...|
-|sort                     |...|
-|compress                     |...|
-|sort&                     |...|
-|compress                     |...|
-|longnamesfirst                    |...|
-|sectionbib                     |...|
-|nonamebreak                     |...|
+|round|displays round parentheses|
+|square|displays square brackets|
+|curly|displays curly braces|
+|angle|displays angle braces|
+|semicolon|multiple citations are separated by semicolons|
+|colon|same as semicolon|
+|comma|multiple citations are separated by coma|
+|authoryear|display author-year citations|
+|numbers|display numerical citations|
+|super|displays superscript numbers for numerical citations|
+|sort|sorts multiple citations in order of references displayed in bibliography. |
+|compress|sorting and multiple numerical citations are compressed where appropriate|
+|sort&compress|multiple numerical citations are compressed where appropriate|
+|longnamesfirst|the full name of the author appears in the first citation|
+|sectionbib|redefines `\thebibliography` to output `\section` instead of `\chapter`|
+|nonamebreak|Displays all author names of a citation in one line|
+
+
+### Sources
+
+* *Bibliography management with natbib* via [Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_natbib)
+* *Natbib bibliography styles* via [Overleaf](https://www.overleaf.com/learn/latex/Natbib_bibliography_styles)
+* *Reference sheet for natbib usage* [PDF]: https://gking.harvard.edu/files/natnotes2.pdf
