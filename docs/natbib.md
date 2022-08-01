@@ -42,26 +42,25 @@ recorded [...], which results in distortion.
 \end{document}
 
 ```
-With \bibliography{sample} we refer to our .bib-file, which contains two sample entries:
+With `\bibliography{sample}` we refer to our .bib-file, which contains two sample entries:
 
 ```latex
 @article{Doe:1966,
-  author =       "John Doe",
-  title =        "Study on the risks of incorrectly recorded [...] and their impact on [...].",
-  journal =      "BibTeX Publishing",
-  volume =       "44",
-  number =       "44",
-  pages =        "123--456",
-  year =         "1966",
+	title        = {Study on the risks of incorrectly recorded [...] and their impact on [...].},
+	author       = {John Doe},
+	year         = 1966,
+	journal      = {BibTeX Publishing},
+	volume       = 44,
+	number       = 44,
+	pages        = {123--456}
 }
-
-
 @article{smith201X,
 	title        = {An interesting article},
 	author       = {John Smith},
 	year         = {201X},
 	journal      = {Journal of Interesting Articles}
 }
+
 ```
 ![A Short Guide to Reference Management using natbib with BibTeX](output_example_bibtex_natbib.png)
 
@@ -92,7 +91,28 @@ As we subsequently discover, we should note that some examples are not chosen se
 |`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith201X}`|Doe (1966); Smith (201X)|Doe [1], Smith [2]|
 |`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith201X}`|(Doe, 1966; Smith, 201X)|[1, 2]|
 
+Other options are, for example, suppressed brackets with `\citealp` and `\citealt` corresponding to the commands `\citep` and `\citet`. With `\citeauthor` one can suppress the year, and with `\citeyear` the authors. Further commands and options around `\cite` in natbib can be found in the *Reference sheet for natbib usage* [PDF]: https://gking.harvard.edu/files/natnotes2.pdf  
 
-Further commands and options around "cite" can be found in the *Reference sheet for natbib usage* [PDF]: https://gking.harvard.edu/files/natnotes2.pdf  
+## Appendix
+### Options for natbib
+The following are the options that can be declared via `\usepackagee[options]{{natbib}`:
 
-## Options for `natbib`
+| Option | Description |
+|----------------------|----------|
+|round                     |...|
+|square                     |...|
+|curly                     |...|
+|angle                     |...|
+|semicolon                     |...|
+|colon                     |...|
+|comma                     |...|
+|authoryear                     |...|
+|numbers                     |...|
+|super                     |...|
+|sort                     |...|
+|compress                     |...|
+|sort&                     |...|
+|compress                     |...|
+|longnamesfirst                    |...|
+|sectionbib                     |...|
+|nonamebreak                     |...|
