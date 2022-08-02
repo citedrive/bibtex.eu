@@ -9,14 +9,14 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://bibtex.eu/blog/first-blog-post</link>
-            <guid>first-blog-post</guid>
+            <title><![CDATA[CiteDrive 3.0]]></title>
+            <link>https://bibtex.eu/blog/citedrive-3-0</link>
+            <guid>citedrive-3-0</guid>
             <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
             <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>hola</category>
-            <category>docusaurus</category>
+            <category>citedrive</category>
+            <category>overleaf</category>
         </item>
     </channel>
 </rss>

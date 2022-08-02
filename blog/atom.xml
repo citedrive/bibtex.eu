@@ -8,17 +8,17 @@
     <subtitle>BibTeX Blog</subtitle>
     <icon>https://bibtex.eu/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>first-blog-post</id>
-        <link href="https://bibtex.eu/blog/first-blog-post"/>
+        <title type="html"><![CDATA[CiteDrive 3.0]]></title>
+        <id>citedrive-3-0</id>
+        <link href="https://bibtex.eu/blog/citedrive-3-0"/>
         <updated>2019-05-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
         <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
         <author>
-            <name>Gao Wei</name>
+            <name>CiteDrive</name>
             <uri>https://github.com/wgao19</uri>
         </author>
-        <category label="hola" term="hola"/>
-        <category label="docusaurus" term="docusaurus"/>
+        <category label="citedrive" term="citedrive"/>
+        <category label="overleaf" term="overleaf"/>
     </entry>
 </feed>
