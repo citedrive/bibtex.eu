@@ -19,7 +19,7 @@ Wir erzeugen zunächst eine .bib-Datei, z. B. `bibliography.bib`, die dann mit B
 Angenommen, wir wollen das Buch "The Old Man and the Sea" von Ernest Hemingway zitieren, dann würde der Eintrag wie folgt aussehen:
 
 ```latex
-@book{Hemingway1952,
+@book{Hemingway1952,ur
   title={The Old Man and the Sea},
   author={Hemingway, Ernest},
   year={1952},
