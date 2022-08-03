@@ -1,0 +1,50 @@
+{
+  "link.title.CiteDrive": {
+    "message": "CiteDrive",
+    "description": "The title of the footer links column with title=CiteDrive in the footer"
+  },
+  "link.title.BibTeX": {
+    "message": "BibTeX",
+    "description": "The title of the footer links column with title=BibTeX in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.CiteDrive - Home": {
+    "message": "CiteDrive - Home",
+    "description": "The label of footer link with label=CiteDrive - Home linking to https://citedrive.com/"
+  },
+  "link.item.label.CiteDrive - App": {
+    "message": "CiteDrive - App",
+    "description": "The label of footer link with label=CiteDrive - App linking to https://app.citedrive.com/"
+  },
+  "link.item.label.CiteDrive - Forum": {
+    "message": "CiteDrive - Forum",
+    "description": "The label of footer link with label=CiteDrive - Forum linking to http://forum.citedrive.com/"
+  },
+  "link.item.label.BibTeX - Fields": {
+    "message": "BibTeX - Fields",
+    "description": "The label of footer link with label=BibTeX - Fields linking to /fields"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/citedrive"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/citedrive"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/citedrive"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "The label of footer link with label=YouTube linking to https://www.youtube.com/channel/UC3ouAJ9bMVs4wti5cRUd9ag"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC.",
+    "description": "The footer copyright"
+  }
+}
