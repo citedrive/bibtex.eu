@@ -29,7 +29,7 @@ Wir verwenden das Beispiel aus dem vorherigen Abschnitt und zitieren das Buch "T
 Auch hier wird die "Anatomie" dieses Eintrags aufgeschlüsselt, wobei drei Komponenten betrachtet werden, um zu verstehen, wie jeder BibTeX-Eintrag definiert ist:
 
 * **Eintragstyp**: Mit `@book` definieren wir den Typ entsprechend dem Schema `@type` der Referenz. Möglich sind `@article` für wissenschaftliche Artikel und andere. BibTeX legt gerne fest, welche Felder optional und welche obligatorisch sind, um sie in der Literatur korrekt anzugeben.
-**Eingabefelder**: in diesem Fall unseres `@book`-Beispiels sind dies `title`, `author`, `year` und `publisher`. (Vgl. [Felder](./Felder))
+**Eingabefelder**: in diesem Fall unseres `@book`-Beispiels sind dies `title`, `author`, `year` und `publisher`. (Vgl. [Felder](./fields))
 * **citation-key**: in unserem Beispiel ist es `Hemingway1952` und wird verwendet, um ein In-Text-Zitat in LaTeX anzugeben, d.h., um auf die Quelle zu verweisen. in R Markdown tun wir dies mit `[@Hemingway1952]`. Der Zitierschlüssel kann eine beliebige Zeichenfolge sein - oft eine Kombination aus Autor, Jahr und einem Wort aus dem Titel.
 
 
