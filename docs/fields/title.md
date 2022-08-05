@@ -1,9 +1,10 @@
 ---
 slug: title
-title: title
+title: "BibTeX field type: title"
+sidebar_label: title
 ---
 
-# title
+# BibTeX field type: title
 
 The title field is saved for the title of a work to be cited. LaTeX-specific writing, such as capitalisation, should be taken into account.
 

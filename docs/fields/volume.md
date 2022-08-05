@@ -1,7 +1,10 @@
 ---
 slug: volume
-title: volume
+title: "BibTeX field type: volume"
+sidebar_label: volume
 ---
+
+# BibTeX field type: volume
 
 The 'volume' field is used to enter the volume of a journal or multi-volume book.
 

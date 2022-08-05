@@ -1,7 +1,10 @@
 ---
 slug: note
-title: note
+title: "BibTeX field type: note"
+sidebar_label: note
 ---
+
+# BibTeX field type: note
 
 The notes field can be used to store additional information about a particular BibTeX entry that may be relevant to the reader or that is needed for a particular entry type and citation style but does not fit in any other field.
 

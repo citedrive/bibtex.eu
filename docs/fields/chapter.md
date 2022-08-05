@@ -1,9 +1,10 @@
 ---
 slug: chapter
-title: chapter
+title: "BibTeX field type: chapter"
+sidebar_label: chapter
 ---
 
-## chapter
+## BibTeX field type: chapter
 
 A chapter, section, or a range of pages of a book is stored numerically in ``chapter``.
 This BibTeX-field is used for ``inbook`` and ``incollection``. The former is mandatory.

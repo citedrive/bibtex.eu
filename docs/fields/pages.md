@@ -1,7 +1,10 @@
 ---
 slug: pages
-title: pages
+title: "BibTeX field type: pages"
+sidebar_label: pages
 ---
+
+# BibTeX field type: pages
 
 Page range of, for example, a book. You can separate these either with commas or double dashes.
 

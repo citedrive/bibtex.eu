@@ -1,9 +1,10 @@
 ---
 slug: month
-title: month
+title: "BibTeX field type: month"
+sidebar_label: month
 ---
 
-# month
+# BibTeX field type: month
 
 The month of publication, or creation if unpublished.
 

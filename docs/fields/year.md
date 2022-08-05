@@ -1,9 +1,10 @@
 ---
 slug: year
-title: year
+title: "BibTeX field type: year"
+sidebar_label: year
 ---
 
-# year
+# BibTeX field type: year
 
 The year of publication, or creation if unpublished.
 

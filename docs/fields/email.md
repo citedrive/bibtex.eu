@@ -1,9 +1,10 @@
 ---
 slug: email
-title: email
+title: "BibTeX field type: email"
+sidebar_label: email
 ---
 
-# email
+# BibTeX field type: email
 
 Email includes the email address of the stated authors if you want to indicate them. It's not a common field and might not be supported.
 

@@ -1,15 +1,10 @@
 ---
 slug: address
-title: address
-author: CiteDrive
-author_title: Seamless BibTeX reference management for Overleaf and other modern LaTeX editors.
-author_url: https://citedrive.com/en/
-author_image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
-tags: [bibtex, biblatex, address]
-date: 2022-01-26
+title: "BibTeX field type: address"
+sidebar_label: address
 ---
 
-# address
+# BibTeX field type: address
 
 The address-field contains the publisher's (or any other institution) address.
 In many cases, the full address is not entered or is omitted for any significant and known publishers (cf. Van Lauen).

@@ -1,9 +1,10 @@
 ---
 slug: journal
-title: journal
+title: "BibTeX field type: journal"
+sidebar_label: journal
 ---
 
-# journal
+# BibTeX field type: journal
 
 The name of the journal in which the journal was published.
 

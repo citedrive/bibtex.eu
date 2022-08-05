@@ -1,9 +1,10 @@
 ---
 slug: annote
-title: annote
+title: "BibTeX field type: annote"
+sidebar_label: annote
 ---
 
-# annote
+# BibTeX field type: annote
 
 BibTeX Field type: ``annote`` for 'Annotated bibliography':
 

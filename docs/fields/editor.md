@@ -1,9 +1,10 @@
 ---
 slug: editor
-title: editor
+title: "BibTeX field type: editor"
+sidebar_label: editor
 ---
 
-# editor
+# BibTeX field type: editor
 
 In the ``editor``-field, you can specify all editors to the work you want to cite. BibTeX has several ways of specifying editor names but expects in all cases a consistent and exact arrangement so that inaccurate information could lead to the unwanted output of the editor's name.
 

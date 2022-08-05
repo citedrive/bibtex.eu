@@ -1,6 +1,7 @@
 ---
 slug: author
-title: author
+title: "BibTeX field type: author"
+sidebar_label: author
 ---
 
 # author
