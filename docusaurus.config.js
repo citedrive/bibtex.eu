@@ -53,39 +53,36 @@ module.exports = {
       style: 'dark',
 
       links: [
+
         {
           title: 'CiteDrive',
           items: [
             {
-              label: 'CiteDrive - Home',
+              label: 'CiteDrive',
               to: 'https://citedrive.com/',
             },
             {
-              label: 'CiteDrive - App',
+              label: 'Login (App)',
               to: 'https://app.citedrive.com/',
             },
             {
-              label: 'CiteDrive - Forum',
-              to: 'http://forum.citedrive.com/',
+              label: 'Blog',
+              to: 'https://www.citedrive.com/blog',
             },
-          ],
-        },
-        {
-          title: 'BibTeX',
-          items: [
             {
-              label: 'BibTeX - Fields',
-              to: '/fields',
+              label: 'Docs',
+              to: 'https://www.citedrive.com/docs/quick-startg',
             },
-            // {
-            //   label: 'BibTeX - Types',
-            //   to: '/types',
-            // },
+            {
+              label: 'Overleaf integration',
+              to: 'https://www.citedrive.com/overleaf',
+            },
           ],
         },
         {
-          title: 'Community',
+          title: 'CiteDrive Community',
           items: [
+
             {
               label: 'Twitter',
               to: 'https://twitter.com/citedrive',
@@ -104,13 +101,30 @@ module.exports = {
             },
           ],
         },
-            /*
         {
-          title: 'Community',
+          title: 'bibtex.eu',
           items: [
             {
-              label: 'Facebook',
-              href: '#',
+              label: 'BibTeX',
+              href: 'http://bibtex.eu/',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/bibtex_eu',
+            },
+          ],
+        },
+
+        {
+          title: 'rmarkdown.net',
+          items: [
+            {
+              label: 'R Markdown',
+              href: 'http://rmarkdown.net/',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/rmarkdown',
             },
           ],
         },
@@ -126,7 +140,7 @@ module.exports = {
               href: 'https://github.com/citedrive/bibtex.eu',
             },
           ],
-        },*/
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC.`,
     },
@@ -142,13 +156,11 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
            routeBasePath: '/',
-          // Please change this to your repo.
           editUrl:
             'https://github.com/citedrive/bibtex.eu/blob/main/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/citedrive/bibtex.eu/blog',
         },
