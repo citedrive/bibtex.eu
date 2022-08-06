@@ -18,7 +18,7 @@ And that is exactly what this little guide aims to accomplish: give you a basic 
 We begin by generating a .bib-file, such as `bibliography.bib`, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
 Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then the entry would look like this:
 
-```latex
+```latex title="bibliography.bib"
 @book{Hemingway1952,
   title={The Old Man and the Sea},
   author={Hemingway, Ernest},
@@ -39,7 +39,7 @@ If you break down the "anatomy" of this entry, you only have to look at the foll
 
 Let's start by inserting our reference into a LaTeX document. You can copy and use the following example, a minimal basic framework sufficient to format the citation.
 
-```latex
+```latex title="document.tex"
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
