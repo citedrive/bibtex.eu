@@ -249,5 +249,32 @@
   "theme.docs.sidebar.expandButtonAriaLabel": {
     "message": "Seitenleiste ausklappen",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "A mighty pairing for LaTeX users": {
+    "message": "Ein mächtiges Paar für LaTeX-Benutzer"
+  },
+  "Complete your research pipeline with the powerful one-two combination of Overleaf and CiteDrive. Connect your project across both apps and your Overleaf paper will automatically receive updates from your BibTeX file with just a few clicks.": {
+    "message": "Vervollständigen Sie Ihre Forschungspipeline mit der leistungsstarken Doppelkombination von Overleaf und CiteDrive. Verbinden Sie Ihr Projekt mit beiden Apps und Ihr Overleaf-Papier erhält mit wenigen Klicks automatisch Aktualisierungen aus Ihrer BibTeX-Datei."
+  },
+  "▶ WATCH VIDEO": {
+    "message": "▶ VIDEO ANSEHEN"
+  },
+  "Perfect for Overleaf!": {
+    "message": "Perfekt für Overleaf!"
+  },
+  "Overleaf enables teams of students and researchers to write papers simultaneously, from anywhere, in an easy-to-use, collaborative online LaTeX editor. Overleaf supports a variety of packages, including BibTeX, where you can manage your references. When you connect Overleaf to CiteDrive, you can automatically synchronize your project and BibTeX-database with Overleaf.": {
+    "message": "Overleaf ermöglicht es Teams von Studenten und Forschern, gleichzeitig und von überall aus in einem benutzerfreundlichen, gemeinschaftlichen Online-LaTeX-Editor zu schreiben. Overleaf unterstützt eine Vielzahl von Paketen, einschließlich BibTeX, in dem Sie Ihre Referenzen verwalten können. Wenn Sie Overleaf mit CiteDrive verbinden, können Sie Ihr Projekt und Ihre BibTeX-Datenbank automatisch mit Overleaf synchronisieren."
+  },
+  "Getting started": {
+    "message": "Erste Schritte"
+  },
+  "Create a paper in Overleaf and ensure you’ve prepared the paper to use BibTeX citations:": {
+    "message": "Create a paper in Overleaf and ensure you’ve prepared the paper to use BibTeX citations:"
+  },
+  "Overleaf + CiteDrive - A mighty pairing for LaTeX users": {
+    "message": "Overleaf + CiteDrive - Ein mächtiges Paar für LaTeX-Benutzer"
+  },
+  "CiteDrive is a cloud-first reference and citation management platform for Overleaf. ": {
+    "message": "CiteDrive is a cloud-first reference and citation management platform for Overleaf. "
   }
 }

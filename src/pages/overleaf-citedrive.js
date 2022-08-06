@@ -11,6 +11,7 @@ import EveryOne from "./everyone.svg";
 import Modal from "../components/modal";
 import YouTube from "react-youtube";
 import Thumbnail from "./overleaf-thumbnail.png"
+import Translate, {translate} from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -30,15 +31,17 @@ function HomepageHeader() {
       <div className="container">
         <OverleafCiteDrive />
         <p style={{ color: "#000" }} className={styles.subsubtitle}>
-          <Translate description="...">
+          <Translate>
           A mighty pairing for LaTeX users
            </Translate>
         </p>
         <p className={styles.subsubsubtitle}>
+          <Translate>
           Complete your research pipeline with the powerful one-two combination
           of Overleaf and CiteDrive. Connect your project across both apps and
           your Overleaf paper will automatically receive updates from your
           BibTeX file with just a few clicks.
+          </Translate>
         </p>
         <button
           className={styles.watch}
@@ -55,7 +58,7 @@ function HomepageHeader() {
           className={styles.started}
           style={{ color: "#000", cursor: "pointer" }}
         >
-          ▶ WATCH VIDEO
+          <Translate>▶ WATCH VIDEO</Translate>
         </button>
         <Modal
           open={open}
@@ -80,15 +83,15 @@ function HomepageExplainer() {
       <div className="container">
         <Pin style={{ width: "15px", height: "100px" }} />
         <p style={{ color: "#000" }} className={styles.subsubtitle}>
-          Perfect for Overleaf!
+          <Translate>Perfect for Overleaf!</Translate>
         </p>
         <p>
-          Overleaf enables teams of students and researchers to write papers
+          <Translate>Overleaf enables teams of students and researchers to write papers
           simultaneously, from anywhere, in an easy-to-use, collaborative online
           LaTeX editor. Overleaf supports a variety of packages, including
           BibTeX, where you can manage your references. When you connect
           Overleaf to CiteDrive, you can automatically synchronize your project
-          and BibTeX-database with Overleaf.
+          and BibTeX-database with Overleaf.</Translate>
         </p>
       </div>
     </div>
@@ -121,15 +124,15 @@ function GettingStarted() {
 
         <div style={{background: "#fff", boxShadow: "lightgrey 2px 2px 4px", color: "#333", padding: "2rem", borderRadius: "5px", margin: "3rem"}}>
           <p style={{ color: "#000"}} className={styles.subsubtitle}>
-            Getting started
+            <Translate>Getting started</Translate>
           </p>
           <p>
             <YouTube videoId="KfwYySjHRPE" opts={opts} />
           </p>
         <ol>
           <li>
-            Create a paper in Overleaf and ensure you’ve prepared the paper to
-            use BibTeX citations:
+            <Translate>Create a paper in Overleaf and ensure you’ve prepared the paper to
+            use BibTeX citations:</Translate>
           </li>
           <ol>
             <li>
@@ -246,9 +249,9 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Overleaf + CiteDrive - A mighty pairing for LaTeX users`}
-      description="CiteDrive is a cloud-first reference and citation management platform for Overleaf. "
-      keywords="overleaf"
+      title={translate({message: 'Overleaf + CiteDrive - A mighty pairing for LaTeX users'})}
+      description={translate({message: "CiteDrive is a cloud-first reference and citation management platform for Overleaf. "})}
+      keywords={"overleaf"}
       image={Thumbnail}
     >
       <HomepageHeader />
@@ -257,8 +260,6 @@ export default function Home() {
         <HomepageFeatures />
         <GettingStarted />
         <Project />
-
-        {/**/}
       </main>
     </Layout>
   );
