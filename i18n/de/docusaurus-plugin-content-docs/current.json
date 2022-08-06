@@ -8,11 +8,11 @@
     "description": "The label for category BibTeX FAQ in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.BibTeX Fields": {
-    "message": "BibTeX Fields",
+    "message": "BibTeX-Felder",
     "description": "The label for category BibTeX Fields in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.BibTeX Entry types": {
-    "message": "BibTeX Entry types",
+    "message": "Literaturtypen (Entry Types)",
     "description": "The label for category BibTeX Entry types in sidebar tutorialSidebar"
   }
 }

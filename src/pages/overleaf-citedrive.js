@@ -30,7 +30,9 @@ function HomepageHeader() {
       <div className="container">
         <OverleafCiteDrive />
         <p style={{ color: "#000" }} className={styles.subsubtitle}>
+          <Translate description="...">
           A mighty pairing for LaTeX users
+           </Translate>
         </p>
         <p className={styles.subsubsubtitle}>
           Complete your research pipeline with the powerful one-two combination
@@ -186,12 +188,12 @@ function GettingStarted() {
           </li>
 
           <li>
-            Ensure you have a bilbiography added to your Overleaf document. 
+            Ensure you have a bilbiography added to your Overleaf document.
             <a href="https://www.overleaf.com/learn/how-to/Using_bibliographies_on_Overleaf">Instructions may be found here.</a>
           </li>
 
           <li>
-            With the CiteDrive Companion add-on installed, click the Insert Citation 
+            With the CiteDrive Companion add-on installed, click the Insert Citation
             button at the top of the Overleaf screen.
           </li>
 
