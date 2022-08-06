@@ -1,22 +1,22 @@
 ---
-title: A Short Guide to Reference Management using natbib with BibTeX
-description: "Natbib is a LaTeX package that allows you to customise citations in the text around the \\CITE command. This short tutorial shows you how to manage your references with BibTeX and natbib. "
+title: Ein kurzer Leitfaden zur Verwaltung von Referenzen mit natbib und BibTeX
+description: "Natbib ist ein LaTeX-Paket, mit dem Sie Zitate im Text um den Befehl \\CITE herum anpassen können. Dieser kurze Lehrgang zeigt Ihnen, wie Sie Ihre Referenzen mit BibTeX und natbib verwalten können. "
 sidebar_label: Bei der verwendung von natbib (Schnellstart)
 sidebar_position: 3
 ---
 
-# A Short Guide to Reference Management using natbib with BibTeX
+# Ein kurzer Leitfaden zur Verwaltung von Referenzen mit natbib und BibTeX
 
-The natbib package adds new features to the standard `\cite{*}` command in LaTeX that includes in-text citations with various options and customizations, especially for author-year schemes and displaying the textual and parenthetical when using BibTeX.
+Das natbib-Paket fügt dem Standardbefehl `\cite{*}` in LaTeX neue Funktionen hinzu, die In-Text-Zitate mit verschiedenen Optionen und Anpassungen umfassen, insbesondere für Autor-Jahres-Schemata und die Anzeige des Textes und des Klammerzusatzes bei Verwendung von BibTeX.
 
 :::tip
-It is worth noting that the package is compatible with both author-year and numerical citations and with the standard bibliography `*.bst` files.
+Es ist erwähnenswert, dass das Paket sowohl mit Autor-Jahres-Zitaten als auch mit numerischen Zitaten und mit den Standard-Bibliographie-`*.bst`-Dateien kompatibel ist.
 :::
 
-This article explains how to use natbib to format and cite bibliographic sources.
+Dieser Artikel erklärt, wie man natbib zum Formatieren und Zitieren von bibliografischen Quellen verwendet.
 
-## Getting started: Using Parenthetical and Textual/Narrative In-Text Citations with natbib
-We specify a minimal structure, similar to the one discussed in the previous section. To do this, we load the library with `\usepackage{natbib}`. The library provides options that can be passed via `\usepackagee[options]{{natbib}`, which we cover later. The basic citation commands in Natbib are `\citet{*}` for textual/narrative citations and `\citep{*}` for parenthetical citations.
+## Erste Schritte: Parenthetische und textliche/erzählerische In-Text-Zitate mit natbib verwenden
+Wir spezifizieren eine minimale Struktur, ähnlich der, die im vorherigen Abschnitt beschrieben wurde. Um dies zu tun, laden wir die Bibliothek mit `usepackage{natbib}`. Die Bibliothek bietet Optionen, die mit `\usepackagee[options]{{natbib}` übergeben werden können, die wir später behandeln. Die grundlegenden Zitierbefehle in Natbib sind `\citet{*}` für textliche/erzählerische Zitate und `\citep{*}` für parenthesenartige Zitate.
 
 
 ```latex
@@ -42,7 +42,7 @@ recorded [...], which results in distortion.
 \end{document}
 
 ```
-With `\bibliography{sample}` we refer to our .bib-file, which contains two sample entries:
+Mit `\bibliography{sample}` verweisen wir auf unsere .bib-Datei, die zwei Beispieleinträge enthält:
 
 ```latex
 @article{Doe:1966,
@@ -64,7 +64,7 @@ With `\bibliography{sample}` we refer to our .bib-file, which contains two sampl
 ```
 (fig)
 
-An example that natbib works wonderfully with numeric citation styles; let's change the corresponding commands of the code above:
+Ein Beispiel dafür, dass natbib wunderbar mit numerischen Zitierweisen funktioniert; ändern wir die entsprechenden Befehle des obigen Codes:
 ```latex
 \usepackage[square,numbers]{natbib}
 \bibliographystyle{abbrvnat}
@@ -72,15 +72,15 @@ An example that natbib works wonderfully with numeric citation styles; let's cha
 (fig)
 
 
-## `cite{*}` commands provided by natbib
+## `cite{*}`-Befehle, die von natbib bereitgestellt werden
 
-The following table summarizes the differences between the commands, based on `cite{*}`, and what you might expect to see. Both numeric and author-year styles are included, as well as multiple citations.
+Die folgende Tabelle fasst die Unterschiede zwischen den Befehlen, die auf `cite{*}` basieren, und dem, was Sie erwarten könnten, zusammen. Sowohl numerische als auch Autor-Jahres-Stile sind enthalten, ebenso wie Mehrfachzitate.
 
 :::caution
-As we subsequently discover, we should note that some examples are not chosen sensibly: Hardly ever will two different sources share one chapter. `\citet*{...}` lists all authors without et. al.   Nevertheless, the table should offer a solid understanding of how the commands behave.
+Wie wir später feststellen werden, ist die Auswahl einiger Beispiele nicht sehr sinnvoll: Kaum je werden sich zwei verschiedene Quellen ein Kapitel teilen. Bei `citet*{...}` werden alle Autoren ohne et. al. aufgeführt.   Nichtsdestotrotz sollte die Tabelle ein solides Verständnis dafür vermitteln, wie sich die Befehle verhalten.
 :::
 
-| Command (single citation) | Output (author-year) | Output (Numeric) | Command (Multiple citations) | Output (author-year) | Output (Numeric) |
+| Befehl (Einzelzitat) | Ausgabe (Autor-Jahr) | Ausgabe (Numerisch) | Befehl (Mehrfachzitate) | Ausgabe (Autor-Jahr) | Ausgabe (Numerisch) |
 |---------------------------|----------------------|------------------|------------------------------|---|---|
 |`\citet{Doe:1966}`|Doe (1966) |Doe [1]|`\citet{Doe:1966,smith201X}`|Doe (1966); Smith (201X)|Doe [1], Smith [2]|
 |`\citet[chap.~4]{Doe:1966}`|Doe (1966, chap. 4)|Doe [1, chap. 4]|`\citet[chap.~4]{Doe:1966,smith201X}`|Doe (1966); Smith (201X, chap. 4)|Doe [1], Smith [2, chap. 4]|
@@ -91,33 +91,33 @@ As we subsequently discover, we should note that some examples are not chosen se
 |`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith201X}`|Doe (1966); Smith (201X)|Doe [1], Smith [2]|
 |`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith201X}`|(Doe, 1966; Smith, 201X)|[1, 2]|
 
-Other options are, for example, suppressed brackets with `\citealp` and `\citealt` corresponding to the commands `\citep` and `\citet`. With `\citeauthor` one can suppress the year, and with `\citeyear` the authors. Further commands and options around `\cite` in natbib can be found in the *Reference sheet for natbib usage* [PDF]: https://gking.harvard.edu/files/natnotes2.pdf  
+Andere Optionen sind zum Beispiel unterdrückte Klammern mit `\citealp` und `\citealt` entsprechend den Befehlen `\citep` und `\citet`. Mit `\citeauthor` kann man das Jahr unterdrücken, und mit `\citeyear` die Autoren. Weitere Befehle und Optionen rund um `\cite` in natbib finden Sie im *Reference sheet for natbib usage* [PDF]: https://gking.harvard.edu/files/natnotes2.pdf  
 
-## Appendix
-### Options for natbib
-The following are the options that can be declared via `\usepackagee[options]{{natbib}`:
+## Anhang
+### Optionen für natbib
+Nachfolgend sind die Optionen aufgeführt, die über `\usepackagee[options]{{natbib}` angegeben werden können:
 
-| Option | Description |
+| Option | Beschreibung |
 |----------------------|----------|
-|round|displays round parentheses|
-|square|displays square brackets|
-|curly|displays curly braces|
-|angle|displays angle braces|
-|semicolon|multiple citations are separated by semicolons|
-|colon|same as semicolon|
-|comma|multiple citations are separated by coma|
-|authoryear|display author-year citations|
-|numbers|display numerical citations|
-|super|displays superscript numbers for numerical citations|
-|sort|sorts multiple citations in order of references displayed in bibliography. |
-|compress|sorting and multiple numerical citations are compressed where appropriate|
-|sort&compress|multiple numerical citations are compressed where appropriate|
-|longnamesfirst|the full name of the author appears in the first citation|
-|sectionbib|redefines `\thebibliography` to output `\section` instead of `\chapter`|
-|nonamebreak|Displays all author names of a citation in one line|
+|round|zeigt runde Klammern an|
+|square|zeigt eckige Klammern an|
+|curly|zeigt geschweifte Klammern an|
+|angle|zeigt Winkelstreben an|
+|semicolon|mehrere Zitate werden durch Semikolon getrennt|
+|colon|wie *semicolon*|
+|comma|mehrere Zitate werden durch ein Koma getrennt|
+|authoryear|Autor-Jahres-Zitate anzeigen|
+|numbers|Numerische Zitate anzeigen|
+|super|zeigt hochgestellte Zahlen für numerische Zitate an|
+|sort|sortiert mehrere Zitate in der Reihenfolge der im Literaturverzeichnis angezeigten Referenzen. |
+|compress|Sortierung und mehrfache numerische Zitate werden gegebenenfalls komprimiert|
+|sort&compress|Mehrfache numerische Zitate werden gegebenenfalls komprimiert.|
+|longnamesfirst|der vollständige Name des Autors erscheint in der ersten Quellenangabe|
+|sectionbib|definiert `\thebibliography` so um, dass statt `\section` nun `\chapter` ausgegeben wird|
+|nonamebreak|Zeigt alle Autorennamen eines Zitats in einer Zeile an|
 
 
-### Sources
+### Ressourcen
 
 * *Bibliography management with natbib* via [Overleaf](https://www.overleaf.com/learn/latex/Bibliography_management_with_natbib)
 * *Natbib bibliography styles* via [Overleaf](https://www.overleaf.com/learn/latex/Natbib_bibliography_styles)
