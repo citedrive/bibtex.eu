@@ -44,7 +44,7 @@
     "description": "The label of footer link with label=YouTube linking to https://www.youtube.com/channel/UC3ouAJ9bMVs4wti5cRUd9ag"
   },
   "copyright": {
-    "message": "Copyright © 2022 BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC.",
+    "message": "Copyright © 2022 BibTeX.eu - Open source docs - Betreut von CiteDrive LLC.",
     "description": "The footer copyright"
   }
 }
