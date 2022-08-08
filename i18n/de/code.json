@@ -269,7 +269,7 @@
     "message": "Erste Schritte"
   },
   "Create a paper in Overleaf and ensure you’ve prepared the paper to use BibTeX citations:": {
-    "message": "Create a paper in Overleaf and ensure you’ve prepared the paper to use BibTeX citations:"
+    "message": "Erstellen Sie ein Projekt in Overleaf und stellen Sie sicher, dass Sie das Papier für die Verwendung von BibTeX-Zitaten vorbereitet haben:"
   },
   "Overleaf + CiteDrive - A mighty pairing for LaTeX users": {
     "message": "CiteDrive - BibTeX-gestützte Literaturverwaltung für Overleaf"
@@ -285,5 +285,77 @@
   },
   "We know how essential teamwork is for scientists. Comprehensive tools for teams have become commonplace, and most importantly, papers are rarely written alone. We have therefore built our platform for collaboration. Add colleagues to your project at any time. You and your team collect, structure, and annotate references and material for your work, clearly organized in one project.": {
     "message": "Wir wissen, wie wichtig die Zusammenarbeit für Wissenschaftler ist. Vor allem durch die Einführung umfassender Team-Technologien werden Arbeiten heutzutage nur noch selten allein erstellt. Aus diesem Grund haben wir unsere Plattform für die Zusammenarbeit entwickelt. Sie können jederzeit Mitglieder zu Ihrem Projekt hinzufügen. Sie und Ihr Team organisieren Referenzen und Material für Ihre Forschung in einem Projekt, klar voneinander getrennt."
+  },
+  "close video": {
+    "message": "Fenster schließen"
+  },
+  "Fully collaborative": {
+    "message": "Gemeinsame Nutzung und Zusammenarbeit"
+  },
+  "Native BibTeX support": {
+    "message": "Native BibTeX-Unterstützung"
+  },
+  "Collect and organize": {
+    "message": "Sammeln und organisieren"
+  },
+  "Ensure you include apacite or a similar package": {
+    "message": "Stellen Sie sicher, dass Sie apacite oder ein ähnliches Paket verwenden"
+  },
+  "Set the \\bibliographystyle": {
+    "message": "Einstellen des \\bibliographystyle"
+  },
+  "Include a \\bibliography tag before the documentend": {
+    "message": "Fügen Sie ein \\bibliography-Tag vor dem Dokumentende ein"
+  },
+  "Create an Overleaf project within CiteDrive": {
+    "message": "Erstellen Sie ein Overleaf-Projekt in CiteDrive"
+  },
+  "You may also add references by using the built-in article or ISBN search within the CiteDrive app": {
+    "message": "Sie können auch Referenzen hinzufügen, indem Sie die eingebaute Artikel- oder ISBN-Suche innerhalb der CiteDrive App verwenden"
+  },
+  "Click Export on the top of the page and copy the unique URL of the newly opened tab": {
+    "message": "Klicken Sie oben auf der Seite auf Exportieren und kopieren Sie die eindeutige URL der neu geöffneten Registerkarte"
+  },
+  "Within your Overleaf project, click the Upload icon on the left-hand pane": {
+    "message": "Klicken Sie in Ihrem Overleaf-Projekt auf das Upload-Symbol im linken Fensterbereich"
+  },
+  "Select External URL and paste the unique link into the top field. Name the file references.bib or similar. Click Ok.": {
+    "message": "Wählen Sie Externe URL und fügen Sie den eindeutigen Link in das obere Feld ein. Benennen Sie die Datei references.bib oder ähnlich. Klicken Sie auf Ok."
+  },
+  "With the CiteDrive Companion add-on installed, click the Insert Citation button at the top of the Overleaf screen.": {
+    "message": "Wenn das CiteDrive Companion Add-on installiert ist, klicken Sie auf die Schaltfläche Zitat einfügen am oberen Rand des Overleaf-Bildschirms."
+  },
+  "Select one or more references of interest by clicking on them.": {
+    "message": "Wählen Sie eine oder mehrere Referenzen aus, die Sie interessieren, indem Sie sie anklicken."
+  },
+  "Click the \"In-text citation\" button to generate and insert a citation at your current cursor position within the editor.": {
+    "message": "Klicken Sie auf die Schaltfläche \"In-Text-Zitat\", um ein Zitat an der aktuellen Cursorposition im Editor zu erstellen und einzufügen."
+  },
+  "Regenerate your paper output to see the results.*": {
+    "message": "Generieren Sie Ihre Papierausgabe neu, um die Ergebnisse zu sehen.*"
+  },
+  "* If you add new references after first linking your projects using the unique link, you will need to select references.bib from the left-hand pane and click Refresh in order for the latest version to be retrieved and new entries to show up in your rendered paper.": {
+    "message": "* Wenn Sie neue Referenzen hinzufügen, nachdem Sie Ihre Projekte zum ersten Mal über den eindeutigen Link verknüpft haben, müssen Sie die Datei references.bib im linken Fenster auswählen und auf Aktualisieren klicken, damit die neueste Version abgerufen wird und die neuen Einträge in Ihrem gerenderten Dokument angezeigt werden."
+  },
+  "Questions, issues or feedback?": {
+    "message": "Haben Sie Fragen, Probleme oder Feedback?"
+  },
+  "We would love to hear what you think! Send us an email at the following address:": {
+    "message": "Wir würden gerne hören, was Sie denken! Schicken Sie uns eine E-Mail an die folgende Adresse:"
+  },
+  "Create your free CiteDrive account:": {
+    "message": "Erstellen Sie Ihr kostenloses CiteDrive Konto:"
+  },
+  "Sign up": {
+    "message": "Registrieren"
+  },
+  "Begin collecting references by using the CiteDrive Companion browser add-on:": {
+    "message": "Beginnen Sie mit dem Sammeln von Referenzen, indem Sie das Browser-Add-on CiteDrive Companion verwenden:"
+  },
+  "Ensure you have a bilbiography added to your Overleaf document Instructions may be found here:": {
+    "message": "Vergewissern Sie sich, dass Sie Ihrem Overleaf-Dokument eine Bilbiografie definiert haben. Die Anleitung finden Sie hier:"
+  },
+  "Using bibliographies on Overleaf": {
+    "message": "Verwendung von Bibliographien auf Overleaf"
   }
 }

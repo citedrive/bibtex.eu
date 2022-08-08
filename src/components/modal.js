@@ -2,6 +2,7 @@ import * as React from 'react';
 import ReactDom from 'react-dom';
 import styled from 'styled-components';
 import { ReactComponent as CloseIcon } from "../../static/img/one.svg";
+import Translate from "@docusaurus/Translate";
 
 const IconWrapper = styled.div`
   float: right;
@@ -52,7 +53,7 @@ const Modal = (props) => {
             height={props.height}
             >
             {props.children}
-            <div style={{cursor:"pointer"}} onClick={props.close}>close video</div>
+            <div style={{cursor:"pointer"}} onClick={props.close}><Translate>close video</Translate></div>
             </ModalInner>
         </ModalOuter>
     </>

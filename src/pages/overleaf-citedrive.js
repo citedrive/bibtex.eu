@@ -144,76 +144,76 @@ function GettingStarted() {
               </Translate>
             </li>
             <ol>
-              <li>Ensure you include apacite or a similar package</li>
-              <li>Set the \bibliographystyle</li>
-              <li>Include a \bibliography tag before the documentend</li>
+              <li><Translate>Ensure you include apacite or a similar package</Translate></li>
+              <li><Translate>Set the \bibliographystyle</Translate></li>
+              <li><Translate>Include a \bibliography tag before the documentend</Translate></li>
             </ol>
 
             <li>
-              Create your{" "}
+              <Translate>Create your free CiteDrive account:</Translate>{" "}
               <a href="https://app.citedrive.com/sign-up/">
-                free CiteDrive account
+                <Translate>Sign up</Translate>
               </a>
             </li>
 
-            <li>Create an Overleaf project within CiteDrive</li>
+            <li><Translate>Create an Overleaf project within CiteDrive</Translate></li>
 
             <li>
-              Begin collecting references by using the{" "}
+              <Translate>Begin collecting references by using the CiteDrive Companion browser add-on:</Translate>{" "}
               <a href="https://chrome.google.com/webstore/detail/citedrive-companion/gmmonfphegngpcbcapfbgembkjeookik">
-                CiteDrive Companion browser add-on
+                Chrome web store
               </a>
             </li>
             <ol>
               <li>
-                You may also add references by using the built-in article or
-                ISBN search within the CiteDrive app
+                <Translate>You may also add references by using the built-in article or
+                ISBN search within the CiteDrive app</Translate>
               </li>
             </ol>
 
             <li>
-              Click Export on the top of the page and copy the unique URL of the
-              newly opened tab
+              <Translate>Click Export on the top of the page and copy the unique URL of the
+              newly opened tab</Translate>
             </li>
 
             <li>
-              Within your Overleaf project, click the Upload icon on the
-              left-hand pane
+              <Translate>Within your Overleaf project, click the Upload icon on the
+              left-hand pane</Translate>
             </li>
 
             <li>
-              Select External URL and paste the unique link into the top field.
-              Name the file references.bib or similar. Click Ok.
+              <Translate>Select External URL and paste the unique link into the top field.
+              Name the file references.bib or similar. Click Ok.</Translate>
             </li>
 
             <li>
-              Ensure you have a bilbiography added to your Overleaf document.
+              <Translate>Ensure you have a bilbiography added to your Overleaf document Instructions may be found here:</Translate>{" "}
               <a href="https://www.overleaf.com/learn/how-to/Using_bibliographies_on_Overleaf">
-                Instructions may be found here.
+                  <Translate>Using bibliographies on Overleaf</Translate>
               </a>
             </li>
 
             <li>
-              With the CiteDrive Companion add-on installed, click the Insert
-              Citation button at the top of the Overleaf screen.
+              <Translate>With the CiteDrive Companion add-on installed, click the Insert
+              Citation button at the top of the Overleaf screen.</Translate>
             </li>
 
             <li>
-              Select one or more references of interest by clicking on them.
+              <Translate>Select one or more references of interest by clicking on them.</Translate>
             </li>
 
             <li>
-              Click the "In-text citation" button to generate and insert a
-              citation at your current cursor position within the editor.
+              <Translate>Click the "In-text citation" button to generate and insert a
+              citation at your current cursor position within the editor.</Translate>
             </li>
 
-            <li>Regenerate your paper output to see the results.*</li>
+            <li><Translate>Regenerate your paper output to see the results.*</Translate></li>
           </ol>
           <p>
-            * If you add new references after first linking your projects using
+            <Translate>* If you add new references after first linking your projects using
             the unique link, you will need to select references.bib from the
             left-hand pane and click Refresh in order for the latest version to
-            be retrieved and new entries to show up in your rendered paper.
+            be retrieved and new entries to show up in your rendered paper.</Translate>
           </p>
         </div>
       </div>
@@ -230,10 +230,10 @@ function Project() {
     >
       <div className="container">
         <p style={{ color: "#fff" }} className={styles.subsubtitle}>
-          Questions, issues or feedback?
+          <Translate>Questions, issues or feedback?</Translate>
         </p>
         <p>
-          We’d love to hear what you think! Email us at{" "}
+          <Translate>We would love to hear what you think! Send us an email at the following address:  </Translate>
           <a href="mailto:hello@citedrive.com" style={{ color: "#6c3433" }}>
             hello@citedrive.com
           </a>

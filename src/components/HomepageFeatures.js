@@ -5,7 +5,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 
 const FeatureList = [
   {
-    title: 'Native BibTeX support',
+    title: translate({message:'Native BibTeX support'}),
     Svg: require('../../static/img/one.svg').default,
     description: (
       <>
@@ -14,7 +14,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Collect and organize',
+    title: translate({message:'Collect and organize'}),
     Svg: require('../../static/img/two.svg').default,
     description: (
       <>
@@ -23,7 +23,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Fully collaborative',
+    title: translate({message:'Fully collaborative'}),
     Svg: require('../../static/img/two.svg').default,
     description: (
       <>
