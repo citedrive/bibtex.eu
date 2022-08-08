@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import Translate, { translate } from "@docusaurus/Translate";
 
 const FeatureList = [
   {
@@ -8,7 +9,7 @@ const FeatureList = [
     Svg: require('../../static/img/one.svg').default,
     description: (
       <>
-        We designed our infrastructure to ensure compliant BibTeX delivery. We support all official entry and field types, which can be easily entered or imported with one click using our browser plugin: no tedious usage of converters or manual handling. Your project is always kept up to date for Overleaf and in a fashion that LaTeX will support.
+        <Translate>We designed our infrastructure to ensure compliant BibTeX delivery. We support all official entry and field types, which can be easily entered or imported with one click using our browser plugin: no tedious usage of converters or manual handling. Your project is always kept up to date for Overleaf and in a fashion that LaTeX will support.</Translate>
       </>
     ),
   },
@@ -17,7 +18,7 @@ const FeatureList = [
     Svg: require('../../static/img/two.svg').default,
     description: (
       <>
-      Bigger teams working on a single project can quickly run into confusion and frustration when manually updating references in BibTeX databases (.bib-file) and mistakes can quickly occur. With CiteDrive, you can easily add references with one click thanks to the browser extension and group the references orderly simply by dragging and dropping.
+      <Translate>Bigger teams working on a single project can quickly run into confusion and frustration when manually updating references in BibTeX databases (.bib-file) and mistakes can quickly occur. With CiteDrive, you can easily add references with one click thanks to the browser extension and group the references orderly simply by dragging and dropping.</Translate>
       </>
     ),
   },
@@ -26,7 +27,7 @@ const FeatureList = [
     Svg: require('../../static/img/two.svg').default,
     description: (
       <>
-    We know how essential teamwork is for scientists. Comprehensive tools for teams have become commonplace, and most importantly, papers are rarely written alone. We have therefore built our platform for collaboration. Add colleagues to your project at any time. You and your team collect, structure, and annotate references and material for your work, clearly organized in one project.
+    <Translate>We know how essential teamwork is for scientists. Comprehensive tools for teams have become commonplace, and most importantly, papers are rarely written alone. We have therefore built our platform for collaboration. Add colleagues to your project at any time. You and your team collect, structure, and annotate references and material for your work, clearly organized in one project.</Translate>
       </>
     ),
   }

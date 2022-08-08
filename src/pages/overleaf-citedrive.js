@@ -144,19 +144,9 @@ function GettingStarted() {
               </Translate>
             </li>
             <ol>
-              <li>
-                Ensure you include{" "}
-                  <code>apacite</code>{" "}
-                or a similar package
-              </li>
-
-              <li>
-                Set the <code>\bibliographystyle</code>
-              </li>
-
-              <li>
-                Include a <code>\bibliography</code> tag before the documentend
-              </li>
+              <li>Ensure you include apacite or a similar package</li>
+              <li>Set the \bibliographystyle</li>
+              <li>Include a \bibliography tag before the documentend</li>
             </ol>
 
             <li>

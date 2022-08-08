@@ -254,7 +254,7 @@
     "message": "Ein mächtiges Paar für LaTeX-Benutzer"
   },
   "Complete your research pipeline with the powerful one-two combination of Overleaf and CiteDrive. Connect your project across both apps and your Overleaf paper will automatically receive updates from your BibTeX file with just a few clicks.": {
-    "message": "Vervollständigen Sie Ihre Forschungspipeline mit der leistungsstarken Doppelkombination von Overleaf und CiteDrive. Verbinden Sie Ihr Projekt mit beiden Apps und Ihr Overleaf-Papier erhält mit wenigen Klicks automatisch Aktualisierungen aus Ihrer BibTeX-Datei."
+    "message": "Vervollständigen Sie Ihre Forschungspipeline mit der leistungsstarken Doppelkombination von Overleaf und CiteDrive. Verbinden Sie ganz einfach beide Anwendungen, und Ihr Overleaf-project erhält mit wenigen Klicks automatisch Aktualisierungen aus CiteDrive direkt in Ihrer BibTeX-Datei. Die BibTeX-Datei wird immer dann aktualisiert, wenn Sie oder ein Teammitglied eine Referenz in CiteDrive hinzufügen, ändern oder entfernen."
   },
   "▶ WATCH VIDEO": {
     "message": "▶ VIDEO ANSEHEN"
@@ -272,9 +272,18 @@
     "message": "Create a paper in Overleaf and ensure you’ve prepared the paper to use BibTeX citations:"
   },
   "Overleaf + CiteDrive - A mighty pairing for LaTeX users": {
-    "message": "Overleaf + CiteDrive - Ein mächtiges Paar für LaTeX-Benutzer"
+    "message": "CiteDrive - BibTeX-gestützte Literaturverwaltung für Overleaf"
   },
   "CiteDrive is a cloud-first reference and citation management platform for Overleaf. ": {
     "message": "CiteDrive is a cloud-first reference and citation management platform for Overleaf. "
+  },
+  "We designed our infrastructure to ensure compliant BibTeX delivery. We support all official entry and field types, which can be easily entered or imported with one click using our browser plugin: no tedious usage of converters or manual handling. Your project is always kept up to date for Overleaf and in a fashion that LaTeX will support.": {
+    "message": "Wir haben BibTeX als Grundlage für unsere Architektur und unser Datenmodell verwendet, d.h. wir können alle offiziellen und benutzerdefinierten Eingabe- und Feldtypen in jedem BibTeX-basierten Format wie BibLaTeX oder JuraBiB verarbeiten. Egal, ob du Daten manuell eingibst, eine komplette Liste importierst oder unser Browser-Plugin nutzt, um einen Artikel zu importieren, den du z. B. bei Google Scholar entdeckt hast, alles ist mit wenigen Klicks möglich. Dabei musst du dir keine Gedanken darüber machen, wie du deine Referenzen eingibst, organisierst oder änderst, denn sie sind für Overleaf immer auf dem neuesten Stand und unterstützen LaTeX."
+  },
+  "Bigger teams working on a single project can quickly run into confusion and frustration when manually updating references in BibTeX databases (.bib-file) and mistakes can quickly occur. With CiteDrive, you can easily add references with one click thanks to the browser extension and group the references orderly simply by dragging and dropping.": {
+    "message": "Bei der manuellen Änderung von Referenzen in BibTeX-Datenbanken (.bib-Datei) durch größere Teams an einem Projekt können bei der Arbeit mit vielen Einzelpersonen an einem Projekt schnell Fehler auftreten. CiteDrive bietet ein Browser-Add-on, das das Hinzufügen von Referenzen mit einem Klick erleichtert und die Referenzen übersichtlich organisiert. Sie können Links einfach per Drag & Drop einfügen, ohne Ihren Teamkollegen in die Quere zu kommen, so dass alle mit CiteDrive auf derselben Seite stehen. Wenn Konflikte auftauchen, gibt CiteDrive eine Warnung aus."
+  },
+  "We know how essential teamwork is for scientists. Comprehensive tools for teams have become commonplace, and most importantly, papers are rarely written alone. We have therefore built our platform for collaboration. Add colleagues to your project at any time. You and your team collect, structure, and annotate references and material for your work, clearly organized in one project.": {
+    "message": "Wir wissen, wie wichtig die Zusammenarbeit für Wissenschaftler ist. Vor allem durch die Einführung umfassender Team-Technologien werden Arbeiten heutzutage nur noch selten allein erstellt. Aus diesem Grund haben wir unsere Plattform für die Zusammenarbeit entwickelt. Sie können jederzeit Mitglieder zu Ihrem Projekt hinzufügen. Sie und Ihr Team organisieren Referenzen und Material für Ihre Forschung in einem Projekt, klar voneinander getrennt."
   }
 }
