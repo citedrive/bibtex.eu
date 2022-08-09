@@ -48,7 +48,7 @@ function HomepageHeader() {
             window.open("https://app.citedrive.com/sign-up", "_blank");
           }}
         >
-          TRY FOR FREE
+          <Translate>TRY FOR FREE</Translate>
         </button>
 
         <button
