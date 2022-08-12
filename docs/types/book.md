@@ -1,5 +1,5 @@
 ---
-title: How to Cite a Book in LaTeX: BibTeX Reference Type
+title: "How to Cite a Book in LaTeX: BibTeX Reference Type"
 sidebar_label: book
 ---
 
