@@ -15,21 +15,22 @@ When writing a research paper, it's important to use references to support your 
 
 ## Step 1: Connecting CiteDrive with Overleaf
 
-If you're not already signed in to Overleaf, you'll need to do so now. Then, go to CiteDrive, create an Overleaf project, and add references to your new project. Your project could look like this:
+If you're not already signed in to [Overleaf](https://www.overleaf.com/), you'll need to do so now. Then, go to [CiteDrive](https://www.citedrive.com/), create an Overleaf project, and [add references](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) to your new project. Your project could look like this:
 
-(fig)
+![CiteDrive - Example](@site/static/img/tutorial/citedrive_project_example.png)
 
 After that, click on "bib" on the top left of your project. This will open a new tab to the dynamic BibTeX file that you can use for your Overleaf, which will auto-update whenever you or your teammates add, update, or deletes references from your project.
 
-(fig)
 
-Finally, go to Overleaf, create a new file, select "From External URL", and paste the URL from the dynamic BibTeX to "URL to fetch the file from" name it here "references.bib".
+
+Finally, go to Overleaf, create a new file, select "From External URL", and paste the URL from the dynamic BibTeX to "URL to fetch the file from" name it here *references.bib*.
 Your CiteDrive project is now connected to Overleaf! Remember that you need to click on refresh when you make changes in our CiteDrive project so that Overleaf gets the latest state.
+
+![Add files to Overleaf](@site/static/img/tutorial/export_bib_to_overleaf.png)
 
 ## Step 2: Create a TeX document in Overleaf
 
-
-Now let's create a new tex-file for Overleaf, which we could call "paper.tex" we can define the bibliography, the BibTeX file from CiteDrive with COMMAND. But what bibliography tools should we use? For Bibliography management in LaTeX/Overleaf, there are many options: most likely, natbib, bibtex, and biblatex. For the management of bibliographies in LaTeX, BibTeX is the mainstay that forms the basis for the format. With natbib, BibTeX is provided with an extension that offers more design freedom for in-text citations, and biblatex is a complete revision of BibTeX that offers more reference types, sorting, and filtering options for bibliographies and localization options. While BibteX is the best-known program, BibLaTex is not only just as robust but also the most recommended program for newcomers. The citation and bibliographical data for references and listings are kept in the so-called .bib-file, just as you see in the BibTeX file from CiteDrive. It's always in the same format:
+Now let's create a new tex-file for Overleaf, which we could call "document.tex" we can define the bibliography, the BibTeX file from CiteDrive with `\bibliography{references}`. But what bibliography tools should we use? For Bibliography management in LaTeX/Overleaf, there are many options: most likely, natbib, bibtex, and biblatex. For the management of bibliographies in LaTeX, BibTeX is the mainstay that forms the basis for the format. With natbib, BibTeX is provided with an extension that offers more design freedom for in-text citations, and biblatex is a complete revision of BibTeX that offers more reference types, sorting, and filtering options for bibliographies and localization options. While BibteX is the best-known program, BibLaTex is not only just as robust but also the most recommended program for newcomers. The citation and bibliographical data for references and listings are kept in the so-called .bib-file, just as you see in the BibTeX file from CiteDrive. It's always in the same format:
 
  ```latex
  @article{smith201X,
@@ -49,15 +50,51 @@ Now let's create a new tex-file for Overleaf, which we could call "paper.tex" we
 
  If you want to start with BibTeX, use the following template or open directly to Overleaf. For more information on BibTeX, see the documentation.
 
- ```latex
-...
+ ```latex title="document.tex"
+ \documentclass{article}
+ \usepackage[utf8]{inputenc}
+
+ \title{BibTeX references in \LaTeX}
+ \author{John Smith}
+
+ \begin{document}
+
+ \maketitle
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \bibliographystyle{unsrt}
+ \bibliography{references}
+
+ \end{document}
  ```
 
 
  ### Getting started with natbib:
 
  ```latex
-...
+ \documentclass{article}
+ \usepackage{natbib}
+ \bibliographystyle{apalike}
+ \title{A Short Guide to Reference Management using natbib with BibTeX}
+ \author{CiteDrive}
+ \date {January 1988}
+
+ \begin{document}
+
+ \maketitle
+ \textbf{Narrative citation:} \citet{Doe:1966} investigated the risks of incorrectly \\
+ recorded [...], which results in distortion.
+ \textbf{Parenthetical citation:} The risks of incorrect recording of [...] could lead to distortion
+ \citep{Doe:1966}.
+
+ \medskip
+
+ \bibliography{references}
+
+ \end{document}
+
  ```
 
 
@@ -69,7 +106,17 @@ Now let's create a new tex-file for Overleaf, which we could call "paper.tex" we
  ### Getting started with BibLaTeX:​
 
  ```latex
-...
+ \documentclass{article}
+ \usepackage{biblatex}
+ \addbibresource{references.bib}
+
+ \begin{document}
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \printbibliography
+
+ \end{document}
  ```
 
 
@@ -86,7 +133,7 @@ Now let's create a new tex-file for Overleaf, which we could call "paper.tex" we
 
 
 
- You can also cite references manually using the cite command. For example, if you wanted to cite Smith (201X), you would use `\cite{smith201X}`, which would give you [Smith, 201X]. Or use the reference search in overleaf.
+ You can also cite references manually using the cite command. For example, if you wanted to cite Smith (201X), you would use `\cite{smith201X}`. Or use the reference search in overleaf.
 
 
 
