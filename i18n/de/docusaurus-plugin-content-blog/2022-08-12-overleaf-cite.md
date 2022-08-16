@@ -1,44 +1,127 @@
 ---
-slug: how-to-convert-a-doi-to-a-bibtex-citation-using-citedrive
-title: "Wie man einen DOI in einem BibTeX-Eintrag mithilfe von CiteDrive umwandelt"
+slug: citing-and-using-references-on-overleaf-a-guide-for-researchers
+title: "Zitate und Verweise auf Overleaf: Ein Leitfaden für WissenschaftlerInnen"
 authors:
   name: CiteDrive
-  title: https://www.CiteDrive.com/
-  mail: hello@citedrive.com
-  url: https://www.CiteDrive.com/
+  title: https://www.citedrive.com/
+  url: https://www.citedrive.com/
   image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
-tags: [citedrive, bibtex, doi]
+tags: [citedrive, overleaf, latex, bibtex, biblatex,natbib]
 ---
 
-Wenn Sie ein Forscher sind, dann wissen Sie, wie wichtig Bibliographien und Zitate sind. Und wenn Sie [CiteDrive](https://www.citedrive.com/) verwenden, dann wissen Sie, dass es der einfachste Weg ist, Bibliografien und Zitate für Ihre Forschungsarbeiten zu erstellen. Aber was tun Sie, wenn Sie auf einen [DOI](/fields/doi/) anstelle einer ISBN oder URL stoßen? Keine Sorge - wir haben eine Lösung für Sie! In diesem Blogbeitrag zeigen wir Ihnen, wie Sie mit CiteDrive einen DOI in eine BibTeX-Zitierung umwandeln können. Fangen wir an!
+Wenn Sie eine wissenschaftliche Arbeit schreiben, ist es wichtig, dass Sie Ihre Behauptungen durch Quellenangaben belegen. Die korrekte Zitierung Ihrer Quellen ist der Schlüssel zu einer soliden Argumentation und zur Vermeidung von Plagiaten. In diesem Leitfaden erfahren Sie, wie Sie mit CiteDrive Referenzen auf Overleaf zitieren können. Außerdem geben wir Ihnen Tipps, wie Sie zuverlässige Quellen im Internet finden. Los geht's!
 
 
 
-## Verwendung der Browsererweiterung
-Die Umwandlung eines DOI in eine BibTeX-Zitierweise ist einfach, wenn Sie die Browsererweiterung "CiteDrive Companion" verwenden. Markieren Sie einfach den DOI mit der Maus, öffnen Sie das Kontextmenü mit der rechten Maustaste und wählen Sie "Search doi".
+## Schritt 1: CiteDrive mit Overleaf verbinden
 
-![CiteDrive - Browsererweiterung suche nach DOI](@site/static/img/tutorial/browserextension-search-doi.png)
+Wenn Sie noch nicht bei [Overleaf](https://www.overleaf.com/) angemeldet sind, müssen Sie dies jetzt tun. Gehen Sie dann zu [CiteDrive](https://www.citedrive.com/), erstellen Sie ein Overleaf-Projekt und fügen Sie [Referenzen hinzufügen](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) zu Ihrem neuen Projekt hinzu. Ihr Projekt könnte wie folgt aussehen:
 
-Danach wird eine Vorschau des BibTeX-Eintrags angezeigt, in der Sie ihn ändern können, bevor Sie ihn in einem Projekt Ihrer Wahl speichern.
+![CiteDrive - Beispiel](@site/static/img/tutorial/citedrive_project_example.png)
 
-![CiteDrive - Browsererweiterung BibTeX-Vorschau](@site/static/img/tutorial/browserextension-bibtex-preview.png)
+Danach klicken Sie auf "bib" oben links in Ihrem Projekt. Dadurch wird eine neue Registerkarte zur dynamischen BibTeX-Datei geöffnet, die Sie für Ihr Deckblatt verwenden können und die automatisch aktualisiert wird, wenn Sie oder Ihre Teamkollegen Referenzen in Ihrem Projekt hinzufügen, aktualisieren oder löschen.
+
+Gehen Sie schließlich zu Overleaf, erstellen Sie eine neue Datei, wählen Sie "From External URL" und fügen Sie die URL aus dem dynamischen BibTeX in "URL to fetch the file from" ein, nennen Sie sie hier *references.bib*.
+Ihr CiteDrive-Projekt ist nun mit Overleaf verbunden! Denken Sie daran, dass Sie auf Aktualisieren klicken müssen, wenn Sie Änderungen in unserem CiteDrive-Projekt vornehmen, damit Overleaf den neuesten Stand erhält.
+
+![Dateien zu Overleaf hinzufügen](@site/static/img/tutorial/export_bib_to_overleaf.png)
+
+## Schritt 2: Erstellen eines TeX-Dokuments in Overleaf
+
+Erstellen wir nun eine neue TeX-Datei für Overleaf, die wir "document.tex" nennen könnten, können wir die Bibliographie, die BibTeX-Datei von CiteDrive mit `\bibliography{references}` definieren. Aber welche Bibliographie-Tools sollten wir verwenden? Für die Verwaltung von Bibliographien in LaTeX/Overleaf gibt es viele Möglichkeiten: am ehesten natbib, bibtex und biblatex. Für die Verwaltung von Bibliographien in LaTeX ist BibTeX die Grundlage für das Format. Mit natbib wird BibTeX mit einer Erweiterung versehen, die mehr Gestaltungsfreiheit für In-Text-Zitate bietet, und biblatex ist eine komplette Überarbeitung von BibTeX, die mehr Referenztypen, Sortier- und Filteroptionen für Bibliographien und Lokalisierungsoptionen bietet. Während BibteX das bekannteste Programm ist, ist BibLaTex nicht nur genauso robust, sondern auch das am meisten empfohlene Programm für Neueinsteiger. Die Zitier- und bibliographischen Daten für Referenzen und Listings werden in der sogenannten .bib-Datei gespeichert, genau wie in der BibTeX-Datei von CiteDrive. Sie hat immer das gleiche Format:
+
+ ```latex
+ @article{smith201X,
+ 	title        = {An interesting article},
+ 	author       = {John Smith},
+ 	year         = {201X},
+ 	journal      = {Journal of Interesting Articles}
+ }
+ ```
+
+ Hier ist `@article` der Quellentyp, `title`, `author`, `year` und `journal` die Attribute, die für die Anzeige in Ihren Literaturlisten und Zitaten verwendet werden, und schließlich `smith201X`, ein eindeutiger Bezeichner, den Sie für Referenzen in Ihrem Dokument verwenden können, hauptsächlich mit cite(key). CiteDrive ist nicht wählerisch in Bezug auf das Format; jedes Feld und jeder Eintragstyp, der für das bibliographische Paket Ihrer Wahl geeignet ist, wird akzeptiert. Da das grundsätzliche Ziel von CiteDrive die Trennung der bibliographischen Daten vom Dokument und den Zitierweisen ist, werden alle Alternativen von CiteDrive unterstützt.
+
+
+ Daher stellen wir Ihnen im Folgenden drei Vorlagen zur Verfügung, um Ihnen den Einstieg zu erleichtern.
+
+ ### First steps with BibTeX:
+
+ If you want to get started with BibTeX, use the following template or open Overleaf directly. For more information on BibTeX, see the documentation.
+
+ ```latex title="document.tex"
+ \documentclass{article}
+ \usepackage[utf8]{inputenc}
+
+ \title{BibTeX references in \LaTeX}
+ \author{John Smith}
+
+ \begin{document}
+
+ \maketitle
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \bibliographystyle{unsrt}
+ \bibliography{references}
+
+ \end{document}
+ ```
+
+
+ ### Erste Schritte mit natbib:
+
+ ```latex
+ \documentclass{article}
+ \usepackage{natbib}
+ \bibliographystyle{apalike}
+ \title{A Short Guide to Reference Management using natbib with BibTeX}
+ \author{CiteDrive}
+ \date {January 1988}
+
+ \begin{document}
+
+ \maketitle
+ \textbf{Narrative citation:} \citet{Doe:1966} investigated the risks of incorrectly \\
+ recorded [...], which results in distortion.
+ \textbf{Parenthetical citation:} The risks of incorrect recording of [...] could lead to distortion
+ \citep{Doe:1966}.
+
+ \medskip
+
+ \bibliography{references}
+
+ \end{document}
+
+ ```
+
+ Für weitere Informationen über natbib klicken Sie bitte hier.
+
+ ### Erste Schritte mit BibLaTeX.
+
+ ```latex
+ \documentclass{article}
+ \usepackage{biblatex}
+ \addbibresource{references.bib}
+
+ \begin{document}
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \printbibliography
+
+ \end{document}
+ ```
+
+ Für weitere Informationen zu BibLaTeX klicken Sie bitte hier.
+
+ ## Schritt 3: In-Text-Zitate
+
+ Wenn Sie die Browsererweiterung installiert haben, können Sie Zitate erstellen, indem Sie den Text markieren und auf das CiteDrive-Symbol in Ihrer Symbolleiste klicken.
+ Sie können Referenzen auch manuell mit dem Befehl cite zitieren. Wenn Sie z. B. Smith (201X) zitieren möchten, verwenden Sie "cite{smith201X}". Oder verwenden Sie die Referenzsuche in Overleaf.
+ Bibliographiestile sind in Overleaf vorinstalliert und je nachdem, welches Paket Sie verwendet haben, finden Sie auf den folgenden Seiten Verweise:
+ Das war's! Sie sollten nun alles haben, was Sie brauchen, um Referenzen in Overleaf zu verwenden. Bitte lassen Sie uns per E-Mail an hello@citedrive.com wissen, wenn Sie Fragen oder Anregungen haben.
 
 
 
-Das war's! Sie finden den *Companion* in den folgenden Browsern:
-
-* [CiteDrive Companion Plugin für Google Chrome](https://chrome.google.com/webstore/detail/citedrive-bibtex-companio/gmmonfphegngpcbcapfbgembkjeookik)
-* [CiteDrive Companion Plugin für Mozilla Firefox](https://addons.mozilla.org/af/firefox/addon/citedrive-companion/)
-* [CiteDrive Companion Plugin für Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/citedrive-bibtex-compan/kpmepfpbjehnlgfbcnbmgihklkkmfnpo)
-
-
-## Verwendung des Online-Tools:
-Wenn Sie die Browsererweiterung nicht verwenden, können Sie trotzdem CiteDrive nutzen, um Ihren DOI in eine BibTeX-Zitation umzuwandeln. Gehen Sie einfach auf die CiteDrive-Website und fügen Sie Ihren DOI in das Feld "Enter DOI" ein, das Sie unter Search via Doi finden, wenn Sie das Plus-Symbol in der oberen Navigationsleiste aufrufen. Dann klicken Sie auf die Schaltfläche "Konvertieren", und voila! - Ihr BibTeX-Zitat wird automatisch generiert.
-
-![CiteDrive - Suchmaschine in CiteDrive](@site/static/img/tutorial/citedrive-search-doi.png)
-
-Wir hoffen, dass dieser Blogbeitrag für Sie hilfreich war. Wenn Sie Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren. Wir helfen Ihnen immer gerne weiter!
-
-CiteDrive ist der einfachste Weg, um Bibliographien und Zitate für Ihre wissenschaftlichen Arbeiten zu erstellen. Konvertieren Sie noch heute eine DOI in eine BibTeX-Zitation mit CiteDrive! Testen Sie es kostenlos unter CiteDrive.com.
-
-Viel Spaß beim Zitieren! :)
+ Viel Spaß beim TeXen!
