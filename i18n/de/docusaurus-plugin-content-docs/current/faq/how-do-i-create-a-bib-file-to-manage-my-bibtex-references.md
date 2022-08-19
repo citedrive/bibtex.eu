@@ -1,14 +1,14 @@
-# How do I create a .BIB file to manage my BibTeX references?
+# Wie erstelle ich eine .BIB-Datei zur Verwaltung meiner BibTeX-Referenzen?
 
-If you're looking for a way to manage your `BibTeX` references, you may be wondering how to create a `.BIB file`. In this article, we'll show you how to do it! We'll also provide some tips on how to use ".BIB" files effectively.
+Wenn Sie nach einer Möglichkeit suchen, Ihre "BibTeX"-Referenzen zu verwalten, fragen Sie sich vielleicht, wie Sie eine "BIB-Datei" erstellen können. In diesem Artikel zeigen wir Ihnen, wie das geht! Wir geben Ihnen auch einige Tipps, wie Sie ".BIB"-Dateien effektiv nutzen können.
 
 :::tip
-[CiteDrive](https://citedrive.com/) is a web-based collaborative reference management tool built on BibTeX that auto-syncs with publishing systems such as [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) and [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) and does the formatting around your bib file for you.
+[CiteDrive](https://citedrive.com/) ist ein webbasiertes kollaboratives Referenzmanagement-Tool, das auf BibTeX aufbaut und sich automatisch mit Publikationssystemen wie [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) und [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) synchronisiert und die Formatierung Ihrer Bib-Datei für Sie übernimmt.
 :::
 
-## Creating a bib file by hand
+## Erstellen einer Bib-Datei von Hand
 
-Creating a `.BIB file` is actually quite simple. All you need to do is create a text file with the `.bib` extension. You can then add your BibTeX references to this file, one per line. For example:
+Das Erstellen einer `.BIB-Datei` ist eigentlich ganz einfach. Alles, was Sie tun müssen, ist, eine Textdatei mit der Erweiterung `.bib` zu erstellen. Sie können dann Ihre BibTeX-Referenzen in diese Datei einfügen, eine pro Zeile. Zum Beispiel:
 
 
 ```latex
@@ -20,9 +20,7 @@ Creating a `.BIB file` is actually quite simple. All you need to do is create a 
 }
 ```
 
-
-
-Once you have your `.BIB file` created, you can then use it in your LaTeX documents by specifying the `\bibliography{filename}` command. For example:
+Sobald Sie Ihre `.BIB-Datei` erstellt haben, können Sie sie in Ihren LaTeX-Dokumenten verwenden, indem Sie den Befehl `\bibliography{filename}` angeben. Zum Beispiel:
 
 
 ```latex
@@ -38,4 +36,4 @@ Once you have your `.BIB file` created, you can then use it in your LaTeX docume
 \end{document}
 ```
 
-That's all there is to it! Creating a `.BIB file` is a simple way to manage your BibTeX references. Be sure to check out our other articles on BibTeX for more tips and tricks!
+Das ist alles, was es zu tun gibt! Das Erstellen einer "BIB-Datei" ist eine einfache Möglichkeit, Ihre BibTeX-Referenzen zu verwalten. In unseren anderen Artikeln über BibTeX finden Sie weitere Tipps und Tricks!

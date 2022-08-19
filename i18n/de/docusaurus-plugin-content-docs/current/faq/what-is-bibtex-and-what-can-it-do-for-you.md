@@ -1,7 +1,7 @@
-# What is BibTeX, and What Can It Do for You?
+# Was ist BibTeX, und was kann es für Sie tun?
 
-BibTeX is a LaTeX bibliography management tool that makes creating and managing bibliographies much easier. It can create citations and references for articles, books, websites, etc. BibTeX files have the file extension .bib.
+BibTeX ist ein LaTeX-Tool zur Verwaltung von Bibliografien, das die Erstellung und Verwaltung von Bibliografien erheblich erleichtert. Es kann Zitate und Verweise für Artikel, Bücher, Websites usw. erstellen. BibTeX-Dateien haben die Dateierweiterung .bib.
 
-The tool is mainly used to create bibliographies and citations for LaTeX documents, a typesetting system often used by mathematicians, physicists, and computer scientists - or students of these disciplines. However, LaTeX has also found its way into other fields such as psychology, biology, sociology, and even law (see jurabib). It is also used for Pandoc-based systems such as R Markdown.
+Das Tool wird hauptsächlich für die Erstellung von Bibliographien und Zitaten für LaTeX-Dokumente verwendet, ein Satzsystem, das häufig von Mathematikern, Physikern und Informatikern - oder Studenten dieser Disziplinen - verwendet wird. LaTeX hat jedoch auch in anderen Bereichen wie Psychologie, Biologie, Soziologie und sogar Jura (siehe jurabib) Einzug gehalten. Es wird auch für Pandoc-basierte Systeme wie R Markdown verwendet.
 
-While some maintain bibliographic data by hand, LaTeX is mainly used in conjunction with literature management software such as CiteDrive or JabRef, both of which were developed to meet BibTeX reference management needs and facilitate online searching, importing, and collaboration to better manage bibliographic data.
+Während einige bibliografische Daten von Hand pflegen, wird LaTeX hauptsächlich in Verbindung mit Literaturverwaltungssoftware wie CiteDrive oder JabRef verwendet, die beide entwickelt wurden, um die Anforderungen an die BibTeX-Referenzverwaltung zu erfüllen und die Online-Suche, den Import und die Zusammenarbeit zur besseren Verwaltung bibliografischer Daten zu erleichtern.
