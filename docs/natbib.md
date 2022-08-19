@@ -62,14 +62,15 @@ With `\bibliography{sample}` we refer to our .bib-file, which contains two sampl
 }
 
 ```
-![A Short Guide to Reference Management using natbib with BibTeX](output_example_bibtex_natbib.png)
+
+![A Short Guide to Reference Management using natbib with BibTeX](@site/static/img/tutorial/output_example_bibtex_natbib.png)
 
 An example that natbib works wonderfully with numeric citation styles; let's change the corresponding commands of the code above:
 ```latex
 \usepackage[square,numbers]{natbib}
 \bibliographystyle{abbrvnat}
 ```
-![A Short Guide to Reference Management using natbib with BibTeX](output_example_bibtex_natbib_numeric.png)
+![A Short Guide to Reference Management using natbib with BibTeX](@site/static/img/tutorial/output_example_bibtex_natbib_numeric.png)
 
 
 ## `cite{*}` commands provided by natbib

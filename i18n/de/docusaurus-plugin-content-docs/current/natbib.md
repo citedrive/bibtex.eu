@@ -62,14 +62,14 @@ Mit `\bibliography{sample}` verweisen wir auf unsere .bib-Datei, die zwei Beispi
 }
 
 ```
-(fig)
+![Ein kurzer Leitfaden zur Verwaltung von Referenzen mit natbib und BibTeX](@site/static/img/tutorial/output_example_bibtex_natbib.png)
 
 Ein Beispiel dafür, dass natbib wunderbar mit numerischen Zitierweisen funktioniert; ändern wir die entsprechenden Befehle des obigen Codes:
 ```latex
 \usepackage[square,numbers]{natbib}
 \bibliographystyle{abbrvnat}
 ```
-(fig)
+![Ein kurzer Leitfaden zur Verwaltung von Referenzen mit natbib und BibTeX](@site/static/img/tutorial/output_example_bibtex_natbib_numeric.png)
 
 
 ## `cite{*}`-Befehle, die von natbib bereitgestellt werden

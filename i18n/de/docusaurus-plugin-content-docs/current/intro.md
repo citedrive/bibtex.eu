@@ -61,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dap
 Nach dem Kompilieren des LaTeX-Dokuments werden wir feststellen, dass der Befehl `\cite{Hemingway1952}` durch die in der BibTeX-Datei angegebene Referenz mit dieser ID im Beispiel `[1]` ersetzt wird.
 
 
-(bild)
+![BibTeX - LaTeX - Overleaf](@site/static/img/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
 
 Die .bib-Datei, die wir `bibliography.bib` genannt haben, ist in `\bibliography{bibliography}` definiert und der Zitier-/Bibliographiestil `\bibliographystyle{unsrt}`, wobei sich unsrt auf die `.bst-Datei` bezieht, in diesem Fall auf `unsrt.bst`, die alle Makros zur Formatierung Ihrer Referenzen im Stil enthält. Sie können stattdessen auch andere Stile wie `apalike.bst` verwenden.
 
