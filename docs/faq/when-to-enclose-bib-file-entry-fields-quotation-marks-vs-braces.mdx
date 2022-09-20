@@ -1,0 +1,30 @@
+# Wann man .bib-Dateieingabefelder einschließt: Anführungszeichen vs. geschweifte Klammern
+
+Haben Sie sich jemals gefragt, wann Sie Ihre .bib-Dateieingabefelder mit Anführungszeichen und wann mit geschweiften Klammern einschließen sollten? Ist das überhaupt wichtig? Die Antwort lautet: Es spielt keine Rolle.
+Manche Leute bevorzugen die Verwendung von `""` einfach aus ästhetischen Gründen, und andere bevorzugen die Verwendung von `{}`, mit dem Argument, dass dies vorzuziehen ist, wenn Sie ein `"`-Zeichen innerhalb eines Feldes verwenden müssen.
+Beachten Sie, dass dies die einzigen akzeptablen Möglichkeiten sind, Felder einzuschließen.
+
+## Beispiele
+
+### Einschließen von Feldern mit `{}`
+
+``latex
+@misc{CiteDrive2022,
+	title = {CiteDrive bringt Referenzmanagement zu Overleaf},
+	author = {CiteDrive, Inc},
+	year = 2022,
+	note = {\url{https://www.citedrive.com/overleaf} [Accessed: (Datum des Zugriffs verwenden)]}
+}
+```
+
+### Einschließen von Feldern mit `""`
+
+```latex
+@misc{CiteDrive2022,
+	title = "CiteDrive bringt Referenzmanagement zu Overleaf",
+	author = "CiteDrive, Inc",
+  ...
+}
+```
+
+Es gibt keine richtige oder falsche Antwort, solange die Informationen innerhalb des Feldes richtig eingeschlossen sind. Probieren Sie aus, welche Methode für Sie am besten funktioniert.
