@@ -1,0 +1,10 @@
+{
+  "item.label.Overleaf": {
+    "message": "Overleaf",
+    "description": "Navbar item with label Overleaf"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

@@ -18,7 +18,7 @@ module.exports = {
     ],
     i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'de', 'cs'],
+    locales: ['en', 'de', 'cs', 'es', 'pt', 'fr', 'sv', 'tr'],
   },
   themeConfig: {
     navbar: {
