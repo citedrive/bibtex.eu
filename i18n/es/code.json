@@ -1,90 +1,90 @@
 {
   "Native BibTeX support": {
-    "message": "Native BibTeX support"
+    "message": "Soporte nativo de BibTeX"
   },
   "We designed our infrastructure to ensure compliant BibTeX delivery. We support all official entry and field types, which can be easily entered or imported with one click using our browser plugin: no tedious usage of converters or manual handling. Your project is always kept up to date for Overleaf and in a fashion that LaTeX will support.": {
-    "message": "We designed our infrastructure to ensure compliant BibTeX delivery. We support all official entry and field types, which can be easily entered or imported with one click using our browser plugin: no tedious usage of converters or manual handling. Your project is always kept up to date for Overleaf and in a fashion that LaTeX will support."
+    "message": "Hemos diseñado nuestra infraestructura para garantizar la entrega de BibTeX. Soportamos todos los tipos de entradas y campos oficiales, que pueden ser introducidos o importados fácilmente con un solo clic utilizando nuestro plugin para el navegador: sin el tedioso uso de convertidores o la manipulación manual. Su proyecto se mantiene siempre actualizado para Overleaf y de una forma que LaTeX admite."
   },
   "Collect and organize": {
-    "message": "Collect and organize"
+    "message": "Recoger y organizar"
   },
   "Bigger teams working on a single project can quickly run into confusion and frustration when manually updating references in BibTeX databases (.bib-file) and mistakes can quickly occur. With CiteDrive, you can easily add references with one click thanks to the browser extension and group the references orderly simply by dragging and dropping.": {
-    "message": "Bigger teams working on a single project can quickly run into confusion and frustration when manually updating references in BibTeX databases (.bib-file) and mistakes can quickly occur. With CiteDrive, you can easily add references with one click thanks to the browser extension and group the references orderly simply by dragging and dropping."
+    "message": "Los equipos más grandes que trabajan en un solo proyecto pueden encontrarse rápidamente con la confusión y la frustración al actualizar manualmente las referencias en las bases de datos BibTeX (.bib-file) y pueden producirse rápidamente errores. Con CiteDrive, puedes añadir fácilmente referencias con un solo clic gracias a la extensión del navegador y agrupar las referencias de forma ordenada simplemente arrastrando y soltando."
   },
   "Fully collaborative": {
-    "message": "Fully collaborative"
+    "message": "Colaboración total"
   },
   "We know how essential teamwork is for scientists. Comprehensive tools for teams have become commonplace, and most importantly, papers are rarely written alone. We have therefore built our platform for collaboration. Add colleagues to your project at any time. You and your team collect, structure, and annotate references and material for your work, clearly organized in one project.": {
-    "message": "We know how essential teamwork is for scientists. Comprehensive tools for teams have become commonplace, and most importantly, papers are rarely written alone. We have therefore built our platform for collaboration. Add colleagues to your project at any time. You and your team collect, structure, and annotate references and material for your work, clearly organized in one project."
+    "message": "Sabemos lo esencial que es el trabajo en equipo para los científicos. Las herramientas integrales para equipos se han convertido en algo habitual y, lo que es más importante, los artículos rara vez se escriben solos. Por eso hemos construido nuestra plataforma para la colaboración. Añada colegas a su proyecto en cualquier momento. Usted y su equipo recopilan, estructuran y anotan las referencias y el material para su trabajo, claramente organizado en un solo proyecto."
   },
   "close video": {
-    "message": "close video"
+    "message": "cerrar video"
   },
   "A mighty pairing for LaTeX users": {
-    "message": "A mighty pairing for LaTeX users"
+    "message": "Una poderosa pareja para los usuarios de LaTeX"
   },
   "Complete your research pipeline with the powerful one-two combination of Overleaf and CiteDrive. Connect your project across both apps and your Overleaf paper will automatically receive updates from your BibTeX file with just a few clicks.": {
-    "message": "Complete your research pipeline with the powerful one-two combination of Overleaf and CiteDrive. Connect your project across both apps and your Overleaf paper will automatically receive updates from your BibTeX file with just a few clicks."
+    "message": "Completa tu proceso de investigación con la potente combinación de Overleaf y CiteDrive. Conecta tu proyecto a través de ambas aplicaciones y tu documento de Overleaf recibirá automáticamente las actualizaciones de tu archivo BibTeX con solo unos clics."
   },
   "TRY FOR FREE": {
-    "message": "TRY FOR FREE"
+    "message": "PRUEBA GRATUITA"
   },
   "▶ WATCH VIDEO": {
-    "message": "▶ WATCH VIDEO"
+    "message": "▶ VER EL VÍDEO"
   },
   "Perfect for Overleaf!": {
-    "message": "Perfect for Overleaf!"
+    "message": "¡Perfecto para Overleaf!"
   },
   "Overleaf enables teams of students and researchers to write papers simultaneously, from anywhere, in an easy-to-use, collaborative online LaTeX editor. Overleaf supports a variety of packages, including BibTeX, where you can manage your references. When you connect Overleaf to CiteDrive, you can automatically synchronize your project and BibTeX-database with Overleaf.": {
-    "message": "Overleaf enables teams of students and researchers to write papers simultaneously, from anywhere, in an easy-to-use, collaborative online LaTeX editor. Overleaf supports a variety of packages, including BibTeX, where you can manage your references. When you connect Overleaf to CiteDrive, you can automatically synchronize your project and BibTeX-database with Overleaf."
+    "message": "Overleaf permite que equipos de estudiantes e investigadores escriban documentos simultáneamente, desde cualquier lugar, en un editor LaTeX en línea fácil de usar y colaborativo. Overleaf es compatible con una variedad de paquetes, incluido BibTeX, donde puedes gestionar tus referencias. Cuando conectas Overleaf a CiteDrive, puedes sincronizar automáticamente tu proyecto y tu base de datos BibTeX con Overleaf."
   },
   "Getting started": {
-    "message": "Getting started"
+    "message": "Cómo empezar"
   },
   "Create a paper in Overleaf and ensure you’ve prepared the paper to use BibTeX citations:": {
-    "message": "Create a paper in Overleaf and ensure you’ve prepared the paper to use BibTeX citations:"
+    "message": "Cree un documento en Overleaf y asegúrese de que ha preparado el documento para utilizar citas BibTeX:"
   },
   "Ensure you include apacite or a similar package": {
-    "message": "Ensure you include apacite or a similar package"
+    "message": "Asegúrese de incluir apacite o un paquete similar"
   },
   "Set the \\bibliographystyle": {
-    "message": "Set the \\bibliographystyle"
+    "message": "Establecer el estilo de la bibliografía: \\bibliographystyle"
   },
   "Include a \\bibliography tag before the documentend": {
-    "message": "Include a \\bibliography tag before the documentend"
+    "message": "Incluir una etiqueta \\bibliography antes del final del documento"
   },
   "Create your free CiteDrive account:": {
-    "message": "Create your free CiteDrive account:"
+    "message": "Crea tu cuenta gratuita en CiteDrive:"
   },
   "Sign up": {
-    "message": "Sign up"
+    "message": "Inscríbete"
   },
   "Create an Overleaf project within CiteDrive": {
-    "message": "Create an Overleaf project within CiteDrive"
+    "message": "Crear un proyecto Overleaf en CiteDrive"
   },
   "Begin collecting references by using the CiteDrive Companion browser add-on:": {
-    "message": "Begin collecting references by using the CiteDrive Companion browser add-on:"
+    "message": "Comience a recopilar referencias utilizando el complemento del navegador CiteDrive Companion:"
   },
   "You may also add references by using the built-in article or ISBN search within the CiteDrive app": {
-    "message": "You may also add references by using the built-in article or ISBN search within the CiteDrive app"
+    "message": "También puede añadir referencias utilizando la búsqueda integrada de artículos o ISBN dentro de la aplicación CiteDrive"
   },
   "Click Export on the top of the page and copy the unique URL of the newly opened tab": {
-    "message": "Click Export on the top of the page and copy the unique URL of the newly opened tab"
+    "message": "Haz clic en Exportar en la parte superior de la página y copia la URL única de la pestaña recién abierta"
   },
   "Within your Overleaf project, click the Upload icon on the left-hand pane": {
-    "message": "Within your Overleaf project, click the Upload icon on the left-hand pane"
+    "message": "Dentro de su proyecto de Overleaf, haga clic en el icono de carga en el panel de la izquierda"
   },
   "Select External URL and paste the unique link into the top field. Name the file references.bib or similar. Click Ok.": {
-    "message": "Select External URL and paste the unique link into the top field. Name the file references.bib or similar. Click Ok."
+    "message": "Seleccione URL externa y pegue el enlace único en el campo superior. Nombre el archivo references.bib o similar. Haga clic en Aceptar-"
   },
   "Ensure you have a bilbiography added to your Overleaf document Instructions may be found here:": {
-    "message": "Ensure you have a bilbiography added to your Overleaf document Instructions may be found here:"
+    "message": "Asegúrese de que tiene una bilbiografía añadida a su documento Overleaf Las instrucciones se pueden encontrar aquí:"
   },
   "Using bibliographies on Overleaf": {
-    "message": "Using bibliographies on Overleaf"
+    "message": "Utilización de bibliografías en Overleaf"
   },
   "With the CiteDrive Companion add-on installed, click the Insert Citation button at the top of the Overleaf screen.": {
-    "message": "With the CiteDrive Companion add-on installed, click the Insert Citation button at the top of the Overleaf screen."
+    "message": "Con el complemento CiteDrive Companion instalado, haga clic en el botón Insertar cita en la parte superior de la pantalla de Overleaf."
   },
   "Select one or more references of interest by clicking on them.": {
     "message": "Select one or more references of interest by clicking on them."
