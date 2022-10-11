@@ -87,28 +87,28 @@
     "message": "Con el complemento CiteDrive Companion instalado, haga clic en el botón Insertar cita en la parte superior de la pantalla de Overleaf."
   },
   "Select one or more references of interest by clicking on them.": {
-    "message": "Select one or more references of interest by clicking on them."
+    "message": "Seleccione una o varias referencias de interés haciendo clic sobre ellas."
   },
   "Click the \"In-text citation\" button to generate and insert a citation at your current cursor position within the editor.": {
-    "message": "Click the \"In-text citation\" button to generate and insert a citation at your current cursor position within the editor."
+    "message": "Haga clic en el botón \"Cita en el texto\" para generar e insertar una cita en la posición actual del cursor dentro del editor."
   },
   "Regenerate your paper output to see the results.*": {
-    "message": "Regenerate your paper output to see the results.*"
+    "message": "Vuelva a generar su salida de papel para ver los resultados.*"
   },
   "* If you add new references after first linking your projects using the unique link, you will need to select references.bib from the left-hand pane and click Refresh in order for the latest version to be retrieved and new entries to show up in your rendered paper.": {
-    "message": "* If you add new references after first linking your projects using the unique link, you will need to select references.bib from the left-hand pane and click Refresh in order for the latest version to be retrieved and new entries to show up in your rendered paper."
+    "message": "* Si añade nuevas referencias después de enlazar sus proyectos por primera vez utilizando el enlace único, tendrá que seleccionar references.bib en el panel de la izquierda y hacer clic en Actualizar para que se recupere la última versión y aparezcan las nuevas entradas en su documento renderizado."
   },
   "Questions, issues or feedback?": {
-    "message": "Questions, issues or feedback?"
+    "message": "¿Preguntas, problemas o comentarios?"
   },
   "We would love to hear what you think! Send us an email at the following address:": {
-    "message": "We would love to hear what you think! Send us an email at the following address:"
+    "message": "Nos encantaría conocer su opinión. Envíenos un correo electrónico a la siguiente dirección:"
   },
   "Overleaf + CiteDrive - A mighty pairing for LaTeX users": {
-    "message": "Overleaf + CiteDrive - A mighty pairing for LaTeX users"
+    "message": "Overleaf + CiteDrive - Un poderoso binomio para los usuarios de LaTeX"
   },
   "CiteDrive is a cloud-first reference and citation management platform for Overleaf. ": {
-    "message": "CiteDrive is a cloud-first reference and citation management platform for Overleaf. "
+    "message": "CiteDrive es una plataforma de gestión de referencias y citas en la nube para Overleaf. "
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
