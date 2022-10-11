@@ -16,7 +16,7 @@
     "description": "The title of the footer links column with title=rmarkdown.net in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "Más",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.CiteDrive": {
@@ -68,7 +68,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/citedrive/bibtex.eu"
   },
   "copyright": {
-    "message": "Copyright © 2022 BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC.",
+    "message": "Copyright © 2022 BibTeX.eu - Documentos de código abierto - Patrocinado por CiteDrive LLC.",
     "description": "The footer copyright"
   }
 }
