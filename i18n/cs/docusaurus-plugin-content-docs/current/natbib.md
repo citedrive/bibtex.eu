@@ -7,6 +7,11 @@ sidebar_position: 3
 
 # A Short Guide to Reference Management using natbib with BibTeX
 
+:::note
+Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
+:::
+
+
 The natbib package adds new features to the standard `\cite{*}` command in LaTeX that includes in-text citations with various options and customizations, especially for author-year schemes and displaying the textual and parenthetical when using BibTeX.
 
 :::tip

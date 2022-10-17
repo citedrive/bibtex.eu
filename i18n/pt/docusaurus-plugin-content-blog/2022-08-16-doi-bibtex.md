@@ -10,11 +10,6 @@ authors:
 tags: [citedrive, overleaf, latex, bibtex, biblatex,natbib]
 ---
 
-:::note
-Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
-:::
-
-
 When writing a research paper, it's important to use references to support your claims. Citing your sources correctly is key to creating a solid argument and avoiding plagiarism. This guide will show you how to cite references on Overleaf using CiteDrive. We'll also give you tips for finding reliable sources online. Let's get started!
 
 

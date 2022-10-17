@@ -6,6 +6,11 @@ sidebar_label: email
 
 # BibTeX field type: email
 
+:::note
+Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
+:::
+
+
 Email includes the email address of the stated authors if you want to indicate them. It's not a common field and might not be supported.
 
 To specify email addresses, the following variants are recommended:

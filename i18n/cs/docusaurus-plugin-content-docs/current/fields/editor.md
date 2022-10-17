@@ -6,6 +6,11 @@ sidebar_label: editor
 
 # BibTeX field type: editor
 
+:::note
+Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
+:::
+
+
 In the ``editor``-field, you can specify all editors to the work you want to cite. BibTeX has several ways of specifying editor names but expects in all cases a consistent and exact arrangement so that inaccurate information could lead to the unwanted output of the editor's name.
 
 **Notation: ``{Firstname Lastname}``**

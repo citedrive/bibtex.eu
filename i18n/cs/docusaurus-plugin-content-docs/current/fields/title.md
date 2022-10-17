@@ -6,6 +6,11 @@ sidebar_label: title
 
 # BibTeX field type: title
 
+:::note
+Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
+:::
+
+
 The title field is saved for the title of a work to be cited. LaTeX-specific writing, such as capitalisation, should be taken into account.
 
 

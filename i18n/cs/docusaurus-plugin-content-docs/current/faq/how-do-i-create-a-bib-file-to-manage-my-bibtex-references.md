@@ -1,5 +1,10 @@
 # How do I create a .BIB file to manage my BibTeX references?
 
+:::note
+Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
+:::
+
+
 If you're looking for a way to manage your `BibTeX` references, you may be wondering how to create a `.BIB file`. In this article, we'll show you how to do it! We'll also provide some tips on how to use ".BIB" files effectively.
 
 :::tip

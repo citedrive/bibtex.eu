@@ -6,6 +6,11 @@ sidebar_label: address
 
 # BibTeX field type: address
 
+:::note
+Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
+:::
+
+
 The address-field contains the publisher's (or any other institution) address.
 In many cases, the full address is not entered or is omitted for any significant and known publishers (cf. Van Lauen).
 

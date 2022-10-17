@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Další",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.BibTeX FAQ": {
@@ -8,11 +8,11 @@
     "description": "The label for category BibTeX FAQ in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.BibTeX Fields": {
-    "message": "BibTeX Fields",
+    "message": "Pole BibTeX",
     "description": "The label for category BibTeX Fields in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.BibTeX Entry types": {
-    "message": "BibTeX Entry types",
+    "message": "Typy záznamů BibTeX",
     "description": "The label for category BibTeX Entry types in sidebar tutorialSidebar"
   }
 }

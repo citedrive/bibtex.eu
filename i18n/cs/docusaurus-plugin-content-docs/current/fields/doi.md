@@ -6,6 +6,11 @@ sidebar_label: doi
 
 # BibTeX field type: doi
 
+:::note
+Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
+:::
+
+
 ``doi`` is used to store any DOI (Digital Object Identifier of the International DOI Foundation). DOI is a digital identifier that is intended to be permanent and unique. It is used, among other things, and mostly for articles from scientific journals. It can be used in ``article``, but more rarely also in ``chapter``, ``book``, or ``inproceedings`` / ``conference``. This field is optional in all cases.
 
 ## Format
