@@ -1,0 +1,10 @@
+# BibTeX Entry types
+
+BibTeX can support the following types of entries:
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+```
