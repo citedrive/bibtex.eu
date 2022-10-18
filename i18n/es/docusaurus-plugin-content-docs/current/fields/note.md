@@ -6,6 +6,10 @@ sidebar_label: note
 
 # BibTeX field type: note
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 The notes field can be used to store additional information about a particular BibTeX entry that may be relevant to the reader or that is needed for a particular entry type and citation style but does not fit in any other field.
 
 

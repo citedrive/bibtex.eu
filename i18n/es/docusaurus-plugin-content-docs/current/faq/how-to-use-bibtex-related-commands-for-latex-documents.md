@@ -1,6 +1,8 @@
 # How to Use BibTeX-Related Commands for LaTeX Documents
 
-
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
 
 In order to use BibTeX in LaTeX, you need to know the following commands: `\bibliographystyle{<style name>}`, `\bibliography{bib-file}`, and `\cite{KEY}`. In this short guide post, we will discuss what each of these commands do and how to use them in your LaTeX documents.
 

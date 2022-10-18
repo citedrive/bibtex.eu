@@ -6,6 +6,10 @@ sidebar_label: pages
 
 # BibTeX field type: pages
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 Page range of, for example, a book. You can separate these either with commas or double dashes.
 
 ```tex

@@ -10,6 +10,10 @@ authors:
 tags: [citedrive, bibtex, doi]
 ---
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 If you're a researcher, then you know the importance of bibliographies and citations. And if you're using [CiteDrive](https://www.citedrive.com/), then you know that it's the easiest way to create bibliographies and citations for your research papers. But what do you do if you come across a [DOI](/fields/doi/) instead of an ISBN or URL? Don't worry - we've got you covered! In this blog post, we'll show you how to convert a DOI to a BibTeX citation using CiteDrive. Let's get started!
 
 

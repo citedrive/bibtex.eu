@@ -6,6 +6,10 @@ sidebar_label: howpublished
 
 # BibTeX field type: howpublished
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 The `howpublished` field is used with the `@misc` entry, typically as a workaround for a source type BibTeX does not support. The most common example is when citing web pages and specifying a URL.
 
 

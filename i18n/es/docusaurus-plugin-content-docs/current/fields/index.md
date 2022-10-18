@@ -1,5 +1,9 @@
 # BibTeX Fields
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 A single BibTeX entry can hold the following fields. Note which are optional, required or ignored.
 
 ```mdx-code-block

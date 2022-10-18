@@ -6,6 +6,10 @@ sidebar_label: booktitle
 
 # BibTeX field type: booktitle
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 To cite an ``incollection``, i.e., a part of a book/collection with its own title, or to give a title to an article, part of an ``inproceedings``, the ``booktitle``-field is used to distinguish. At the same time, ``title`` contains the title of the ``book``, or ``incproceedings``.
 
 

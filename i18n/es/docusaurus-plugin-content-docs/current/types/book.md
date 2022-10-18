@@ -3,6 +3,10 @@ title: "How to Cite a Book in LaTeX: BibTeX Reference Type"
 sidebar_label: book
 ---
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 If you want to cite a book in LaTeX, the `@book` BibTeX reference type is the one you need. This guide will show you how to format your BibTeX entry for a book citation. We will also provide some examples to see how it should be done. Let's get started!
 
 

@@ -6,6 +6,10 @@ sidebar_label: annote
 
 # BibTeX field type: annote
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 BibTeX Field type: ``annote`` for 'Annotated bibliography':
 
 In the ``annote`` field type, the user can store an annotation - a short, descriptive, and also an evaluative summary of the content of the reference the user wants to cite, typically displayed in the bibliography.

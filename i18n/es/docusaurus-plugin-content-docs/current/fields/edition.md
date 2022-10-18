@@ -6,6 +6,10 @@ sidebar_label: edition
 
 # BibTeX field type: edition
 
+:::note
+Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
+:::
+
 The edition of a book, e.g. "edition = {First}" Entering an ordinal number is recommended by default, and the first letter is usually capitalised.
 
 
