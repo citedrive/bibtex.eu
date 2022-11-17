@@ -44,9 +44,9 @@ Erstellen wir nun eine neue TeX-Datei für Overleaf, die wir "document.tex" nenn
 
  Daher stellen wir Ihnen im Folgenden drei Vorlagen zur Verfügung, um Ihnen den Einstieg zu erleichtern.
 
- ### First steps with BibTeX:
+ ### Erste Schritte mit BibTeX:
 
- If you want to get started with BibTeX, use the following template or open Overleaf directly. For more information on BibTeX, see the documentation.
+Wenn Sie mit BibTeX beginnen möchten, verwenden Sie die folgende Vorlage oder öffnen Sie Overleaf direkt. Weitere Informationen zu BibTeX finden Sie in der Dokumentation.
 
  ```latex title="document.tex"
  \documentclass{article}
