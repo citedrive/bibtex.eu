@@ -1,6 +1,6 @@
 ---
 slug: citing-and-using-references-on-overleaf-a-guide-for-researchers
-title: "Citing and Using References on Overleaf: A Guide for Researchers"
+title: "Citat och användning av referenser på omslaget: En guide för forskare"
 authors:
   name: CiteDrive
   title: https://www.citedrive.com/
