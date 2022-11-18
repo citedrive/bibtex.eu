@@ -1,6 +1,6 @@
 ---
 slug: citing-and-using-references-on-overleaf-a-guide-for-researchers
-title: "Citing and Using References on Overleaf: A Guide for Researchers"
+title: "Citar y utilizar las referencias en Overleaf: Guía para investigadores"
 authors:
   name: CiteDrive
   title: https://www.citedrive.com/
@@ -10,32 +10,28 @@ authors:
 tags: [citedrive, overleaf, latex, bibtex, biblatex,natbib]
 ---
 
-:::note
-Esta página sólo está disponible en inglés, pero necesitamos tu ayuda para traducirla a tu idioma. Si estás interesado, consulta nuestro repositorio de GitHub para obtener más información sobre cómo contribuir.
-:::
-
-When writing a research paper, it's important to use references to support your claims. Citing your sources correctly is key to creating a solid argument and avoiding plagiarism. This guide will show you how to cite references on Overleaf using CiteDrive. We'll also give you tips for finding reliable sources online. Let's get started!
+Al escribir un trabajo de investigación, es importante utilizar referencias para apoyar tus afirmaciones. Citar tus fuentes correctamente es clave para crear un argumento sólido y evitar el plagio. Esta guía te mostrará cómo citar referencias en Overleaf utilizando CiteDrive. También te daremos consejos para encontrar fuentes fiables en línea. ¡Empecemos!
 
 
 
-## Step 1: Connecting CiteDrive with Overleaf
+## Paso 1: Conectar CiteDrive con Overleaf
 
-If you're not already signed in to [Overleaf](https://www.overleaf.com/), you'll need to do so now. Then, go to [CiteDrive](https://www.citedrive.com/), create an Overleaf project, and [add references](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) to your new project. Your project could look like this:
+Si aún no has iniciado sesión en [Overleaf](https://www.overleaf.com/), tendrás que hacerlo ahora. Luego, ve a [CiteDrive](https://www.citedrive.com/), crea un proyecto de Overleaf, y [añade referencias](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) a tu nuevo proyecto. Tu proyecto podría tener este aspecto:
 
-![CiteDrive - Example](@site/static/img/tutorial/citedrive_project_example.png)
+[CiteDrive - Ejemplo](@site/static/img/tutorial/citedrive_project_example.png)
 
-After that, click on "bib" on the top left of your project. This will open a new tab to the dynamic BibTeX file that you can use for your Overleaf, which will auto-update whenever you or your teammates add, update, or deletes references from your project.
+Después, haz clic en "bib" en la parte superior izquierda de tu proyecto. Esto abrirá una nueva pestaña al archivo BibTeX dinámico que puedes usar para tu Overleaf, que se auto-actualizará cada vez que tú o tus compañeros de equipo añadan, actualicen o eliminen referencias de tu proyecto.
 
 
 
-Finally, go to Overleaf, create a new file, select "From External URL", and paste the URL from the dynamic BibTeX to "URL to fetch the file from" name it here *references.bib*.
-Your CiteDrive project is now connected to Overleaf! Remember that you need to click on refresh when you make changes in our CiteDrive project so that Overleaf gets the latest state.
+Finalmente, ve a Overleaf, crea un nuevo archivo, selecciona "Desde la URL externa", y pega la URL del BibTeX dinámico en "URL para obtener el archivo de" nómbralo aquí *references.bib*.
+¡Tu proyecto CiteDrive está ahora conectado a Overleaf! Recuerda que debes hacer clic en actualizar cuando hagas cambios en nuestro proyecto CiteDrive para que Overleaf obtenga el estado más reciente.
 
-![Add files to Overleaf](@site/static/img/tutorial/export_bib_to_overleaf.png)
+![Añadir archivos a Overleaf](@site/static/img/tutorial/export_bib_to_overleaf.png)
 
-## Step 2: Create a TeX document in Overleaf
+## Paso 2: Crear un documento TeX en Overleaf
 
-Now let's create a new tex-file for Overleaf, which we could call "document.tex" we can define the bibliography, the BibTeX file from CiteDrive with `\bibliography{references}`. But what bibliography tools should we use? For Bibliography management in LaTeX/Overleaf, there are many options: most likely, natbib, bibtex, and biblatex. For the management of bibliographies in LaTeX, BibTeX is the mainstay that forms the basis for the format. With natbib, BibTeX is provided with an extension that offers more design freedom for in-text citations, and biblatex is a complete revision of BibTeX that offers more reference types, sorting, and filtering options for bibliographies and localization options. While BibteX is the best-known program, BibLaTex is not only just as robust but also the most recommended program for newcomers. The citation and bibliographical data for references and listings are kept in the so-called .bib-file, just as you see in the BibTeX file from CiteDrive. It's always in the same format:
+Ahora vamos a crear un nuevo archivo tex para Overleaf, que podríamos llamar "documento.tex" podemos definir la bibliografía, el archivo BibTeX de CiteDrive con `\bibliography{references}`. Pero, ¿qué herramientas de bibliografía debemos utilizar? Para la gestión de la bibliografía en LaTeX/Overleaf, hay muchas opciones: muy probablemente, natbib, bibtex y biblatex. Para la gestión de bibliografías en LaTeX, BibTeX es el pilar que constituye la base del formato. Con natbib, BibTeX cuenta con una extensión que ofrece más libertad de diseño para las citas dentro del texto, y biblatex es una revisión completa de BibTeX que ofrece más tipos de referencias, opciones de clasificación y filtrado para las bibliografías y opciones de localización. Aunque BibteX es el programa más conocido, BibLaTex no sólo es igual de robusto, sino que es el más recomendado para los recién llegados. Los datos de citación y bibliográficos de las referencias y listados se guardan en el llamado archivo .bib, tal como se ve en el archivo BibTeX de CiteDrive. Siempre está en el mismo formato:
 
  ```latex
  @article{smith201X,
@@ -46,14 +42,14 @@ Now let's create a new tex-file for Overleaf, which we could call "document.tex"
  }
  ```
 
- Here `@article` is the source type, `title`, `author`, `year` and `journal`, the attributes used to display in your references lists and citations and lastly, `smith201X`, a unique identifier you can use to reference in your document, mainly with cite(key). CiteDrive is not picky about the format; any field and entry type making it work for the bibliographic package of your choice is acceptable. Because CiteDrive's fundamental goal is to separate bibliographic data from the document and citation styles, all alternatives are supported by CiteDrive.
+Aquí `@article` es el tipo de fuente, `title`, `author`, `year` y `journal`, los atributos utilizados para mostrar en sus listas de referencias y citas y, por último, `smith201X`, un identificador único que puede utilizar para referenciar en su documento, principalmente con cite(key). CiteDrive no es exigente en cuanto al formato; se acepta cualquier campo y tipo de entrada que haga funcionar el paquete bibliográfico de su elección. Dado que el objetivo fundamental de CiteDrive es separar los datos bibliográficos del documento y los estilos de citación, todas las alternativas son compatibles con CiteDrive.
 
 
- As a result, we provide three templates below to get you started.
+ Por ello, a continuación le ofrecemos tres plantillas para que pueda empezar.
 
  ### Getting started with BibTeX:
 
- If you want to start with BibTeX, use the following template or open directly to Overleaf. For more information on BibTeX, see the documentation.
+ Si quiere empezar con BibTeX, utilice la siguiente plantilla o abra directamente en Overleaf. Para más información sobre BibTeX, consulte la documentación.
 
  ```latex title="document.tex"
  \documentclass{article}
@@ -76,7 +72,7 @@ Now let's create a new tex-file for Overleaf, which we could call "document.tex"
  ```
 
 
- ### Getting started with natbib:
+ ###  Cómo empezar con natbib:
 
  ```latex
  \documentclass{article}
@@ -101,14 +97,9 @@ Now let's create a new tex-file for Overleaf, which we could call "document.tex"
  \end{document}
 
  ```
+Para obtener más información sobre natbib, haga clic aquí.
 
-
-
-
-
- For more on natbib, please click here.
-
- ### Getting started with BibLaTeX:​
+ ### Introducción a BibLaTeX:
 
  ```latex
  \documentclass{article}
@@ -126,28 +117,28 @@ Now let's create a new tex-file for Overleaf, which we could call "document.tex"
 
 
 
- For more on BibLaTeX, please click here.
+ Para obtener más información sobre BibLaTeX, haga clic aquí.
 
 
 
- ## Step 3: In-Text citations
+ ## Paso 3: Citas en el texto
 
 
 
- If you have the browser extension installed, you can create citations by selecting the text and clicking on the CiteDrive icon in your toolbar.
+ Si tiene instalada la extensión del navegador, puede crear citas seleccionando el texto y haciendo clic en el icono de CiteDrive en su barra de herramientas.
 
 
 
- You can also cite references manually using the cite command. For example, if you wanted to cite Smith (201X), you would use `\cite{smith201X}`. Or use the reference search in overleaf.
+ También puede citar referencias manualmente utilizando el comando cite. Por ejemplo, si quisiera citar a Smith (201X), utilizaría `cite{smith201X}`. O bien, utilice la búsqueda de referencias en Overleaf.
 
 
 
- Bibliography styles are preinstalled on Overleaf and depending which package you used references on the following pages:
+ Los estilos de bibliografía están preinstalados en Overleaf y dependiendo del paquete que hayas utilizado las referencias en las páginas siguientes:
 
 
 
- That's it! You should now have everything you need to start using references in Overleaf. Please let us know by e-mail at hello@citedrive.com  if you have any questions or feedback.
+ ¡Eso es todo! Ahora deberías tener todo lo que necesitas para empezar a utilizar las referencias en Overleaf. Por favor, háganos saber por correo electrónico en hello@citedrive.com si tiene alguna pregunta o comentario.
 
 
 
- Happy TeXing!
+ ¡Feliz TeXing!
