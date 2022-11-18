@@ -1,6 +1,6 @@
 ---
 slug: how-to-convert-a-doi-to-a-bibtex-citation-using-citedrive
-title: "How to Convert a DOI to a BibTeX Citation Using CiteDrive"
+title: "Jak převést DOI na citaci v BibTeXu pomocí CiteDrive"
 authors:
   name: CiteDrive
   title: https://www.CiteDrive.com/
@@ -10,45 +10,36 @@ authors:
 tags: [citedrive, bibtex, doi]
 ---
 
-:::note
-Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
-:::
-
-
-If you're a researcher, then you know the importance of bibliographies and citations. And if you're using [CiteDrive](https://www.citedrive.com/), then you know that it's the easiest way to create bibliographies and citations for your research papers. But what do you do if you come across a [DOI](/fields/doi/) instead of an ISBN or URL? Don't worry - we've got you covered! In this blog post, we'll show you how to convert a DOI to a BibTeX citation using CiteDrive. Let's get started!
+Pokud se zabýváte výzkumem, pak víte, jak důležité jsou bibliografie a citace. A pokud používáte [CiteDrive](https://www.citedrive.com/), pak víte, že je to nejjednodušší způsob, jak vytvářet bibliografie a citace pro vaše výzkumné práce. Co ale dělat, když místo ISBN nebo URL narazíte na [DOI](/fields/doi/)? Nebojte se - máme pro vás řešení! V tomto příspěvku na blogu vám ukážeme, jak převést DOI na citaci v BibTeXu pomocí aplikace CiteDrive. Začněme!
 
 
 
-## Using the browser extension
-Converting a DOI to a BibTeX citation is easy if you're using the 'CiteDrive Companion' browser extension. Just highlight the DOI with the mouse, open the context menu with the right mouse button, and select 'Search doi'.
+## Použití rozšíření prohlížeče
+Převod DOI na citaci v BibTeXu je snadný, pokud používáte rozšíření prohlížeče 'CiteDrive Companion'. Stačí označit DOI myší, pravým tlačítkem myši otevřít kontextovou nabídku a vybrat 'Search doi'.
 
-![CiteDrive - Example](@site/static/img/tutorial/browserextension-search-doi.png)
+![CiteDrive - Příklad](@site/static/img/tutorial/browserextension-search-doi.png)
 
-After that, you'll see a BibTeX entry preview where you may change it before saving it to a project of your choosing.
+Poté se zobrazí náhled záznamu BibTeX, kde jej můžete před uložením do vybraného projektu změnit.
 
-![CiteDrive - Example](@site/static/img/tutorial/browserextension-bibtex-preview.png)
-
-
-
- That's it! You will find the companion available from the following browsers:
-
-* [CiteDrive Companion Plugin for Google Chrome](https://chrome.google.com/webstore/detail/citedrive-bibtex-companio/gmmonfphegngpcbcapfbgembkjeookik)
-* [CiteDrive Companion Plugin for Mozilla Firefox](https://addons.mozilla.org/af/firefox/addon/citedrive-companion/)
-* [CiteDrive Companion Plugin for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/citedrive-bibtex-compan/kpmepfpbjehnlgfbcnbmgihklkkmfnpo)
-
-
-## Using the online tool:
-If you're not using the browser extension, don't worry - you can still use CiteDrive to convert your DOI to a BibTeX citation. Just go to the CiteDrive website and paste your DOI into the 'Enter DOI' field, which you can find under Search via Doi when you call up the plus symbol in the upper navigation bar. . Then click on the 'Convert' button, and voila! - your BibTeX citation will be generated automatically.
-
-![CiteDrive - Example](@site/static/img/tutorial/citedrive-search-doi.png)
+![CiteDrive - Příklad](@site/static/img/tutorial/browserextension-bibtex-preview.png)
 
 
 
+ A je to! Společníka najdete v následujících prohlížečích:
+
+* [CiteDrive Companion Plugin pro Google Chrome](https://chrome.google.com/webstore/detail/citedrive-bibtex-companio/gmmonfphegngpcbcapfbgembkjeookik)
+* [CiteDrive Companion Plugin pro Mozilla Firefox](https://addons.mozilla.org/af/firefox/addon/citedrive-companion/)
+* [CiteDrive Companion Plugin pro Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/citedrive-bibtex-compan/kpmepfpbjehnlgfbcnbmgihklkkmfnpo)
 
 
+## Pomocí online nástroje:
+Pokud rozšíření prohlížeče nepoužíváte, nezoufejte - i tak můžete použít CiteDrive a převést DOI na citaci v BibTeXu. Stačí přejít na webové stránky CiteDrive a vložit svůj DOI do pole "Enter DOI", které najdete v části Search via Doi po vyvolání symbolu plus v horní navigační liště. . Pak klikněte na tlačítko 'Convert' a voilá! - vaše citace v BibTeXu se vygeneruje automaticky.
 
-We hope this blog post has been helpful. If you have any questions, please don't hesitate to contact us. We're always happy to help!
+![CiteDrive - Příklad](@site/static/img/tutorial/citedrive-search-doi.png)
 
-CiteDrive is the easiest way to create bibliographies and citations for your research papers. Convert a DOI to BibTeX citation using CiteDrive today! Try it for free at CiteDrive.com.
 
-Happy citing! :)
+Doufáme, že vám tento příspěvek pomohl. Pokud máte jakékoli dotazy, neváhejte nás kontaktovat. Vždy vám rádi pomůžeme!
+
+CiteDrive je nejjednodušší způsob vytváření bibliografií a citací pro vaše vědecké práce. Převeďte DOI na citaci v BibTeXu pomocí CiteDrive ještě dnes! Vyzkoušejte si ji zdarma na stránkách CiteDrive.com.
+
+Šťastné citování! :)
