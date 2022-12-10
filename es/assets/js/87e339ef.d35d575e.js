@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[9986],{6629:function(s){s.exports=JSON.parse('{"label":"rstudio","permalink":"/es/blog/tags/rstudio","allTagsPath":"/es/blog/tags","count":1}')}}]);
