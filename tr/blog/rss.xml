@@ -21,6 +21,17 @@
             <category>game</category>
         </item>
         <item>
+            <title><![CDATA[How to cite music in bibtex?]]></title>
+            <link>https://bibtex.eu/tr/blog/how-to-cite-music-in-bibtex</link>
+            <guid>how-to-cite-music-in-bibtex</guid>
+            <pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[To cite music in BibTeX, you can use the @misc entry type and include the following fields:]]></description>
+            <content:encoded><![CDATA[<p>To cite music in BibTeX, you can use the <code>@misc</code> entry type and include the following fields:</p><ul><li><code>author</code>: The composer or artist who created the music.</li><li><code>title</code>: The title of the piece of music.</li><li><code>howpublished</code>: The format in which the music was accessed (e.g. CD, vinyl, online streaming service).</li><li><code>year</code>: The year the music was published or recorded.</li></ul><p>Here is an example of how you might cite a piece of music in BibTeX:</p><p>Copy code</p><p><code>@misc{beethoven_symphony_2018,   author = {Beethoven, Ludwig van},   title = {Symphony No. 5 in C Minor},   howpublished = {CD},   year = {2018} }</code></p><p>If you are citing a specific recording of a piece of music, you may want to use the <code>@music</code> entry type instead of <code>@misc</code>. This entry type includes additional fields such as <code>performer</code> and <code>publisher</code> that you can use to provide more specific information about the recording.</p><p>I hope this helps! Let me know if you have any questions.</p>]]></content:encoded>
+            <category>biblatex</category>
+            <category>bibtex</category>
+            <category>music</category>
+        </item>
+        <item>
             <title><![CDATA[Overleaf and RStudio users, we have great news!]]></title>
             <link>https://bibtex.eu/tr/blog/overleaf-and-rstudio-users-we-have-great-news</link>
             <guid>overleaf-and-rstudio-users-we-have-great-news</guid>
