@@ -1,6 +1,6 @@
 ---
 slug: "how-to-use-grammarly-in-overleaf"
-title: "How to use Grammarly in Overleaf"
+title: "Como utilizar a Gramática em Overleaf"
 authors:
   name: BibTeX FAQ
   title: https://www.CiteDrive.com/
@@ -10,29 +10,29 @@ authors:
 tags: [overleaf, grammarly, writefull, latex, citedrive, bibtex]
 ---
 
-# How to use Grammarly in Overleaf
+# Como utilizar a Gramática em Overleaf
 
-Overleaf is a robust LaTeX container with preloaded packages, live collaboration, a cloud-based editor, and a user base of over 10 million. It also integrates with powerful applications such as Writefull, Zotero, Mendeley, and [CiteDrive, a BibTeX-based online reference management tool for users who want to collaborate on the same bibliography for an Overleaf document while keeping all references in sync.](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+Overleaf é um recipiente LaTeX robusto com pacotes pré-carregados, colaboração ao vivo, um editor baseado na nuvem, e uma base de utilizadores de mais de 10 milhões. Também se integra com aplicações poderosas como Writefull, Zotero, Mendeley, e [CiteDrive, uma ferramenta de gestão de referências online baseada em BibTeX para utilizadores que querem colaborar na mesma bibliografia para um documento Overleaf mantendo todas as referências em sincronia](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
 
 
-Grammarly is a powerful tool for ensuring that your writing is clear, concise, and error-free. And now, it's even easier to use Grammarly within Overleaf, the popular online LaTeX editor, after the latest release of the new source code editor to Codemirror 6. 
+A gramática é uma ferramenta poderosa para assegurar que a sua escrita seja clara, concisa e livre de erros. E agora, é ainda mais fácil usar Gramática dentro do Overleaf, o popular editor online LaTeX, após o último lançamento do novo editor de código fonte para o Codemirror 6. 
 
-#### Step 1: Install the Grammarly browser extension
+#### Passo 1: Instalar a extensão do navegador Grammarmarly
 
-The first step in using Grammarly within Overleaf is to install the Grammarly browser extension. This extension is available for both Chrome and Firefox, and can be downloaded from the [Grammarly website](https://www.grammarly.com/).
+O primeiro passo na utilização da Gramática no Overleaf é instalar a extensão do navegador Gramática. Esta extensão está disponível tanto para Chrome como para Firefox, e pode ser descarregada a partir do [site Grammarly](https://www.grammarly.com/).
 
-#### Step 2: Open Overleaf
+#### Passo 2: Abrir o Overleaf
 
-Once the Grammarly extension is installed, open Overleaf and start a new project or open an existing one.
+Uma vez instalada a extensão Gramatical, abrir Overleaf e iniciar um novo projecto ou abrir um projecto já existente.
 
-#### Step 3: Use Grammarly within the Overleaf editor
+#### Passo 3: Utilizar a Gramática dentro do editor Overleaf
 
-With the Grammarly extension installed and Overleaf open, you can now use Grammarly within the Overleaf editor. Simply start typing your text, and Grammarly will automatically check for grammar and spelling errors.
+Com a extensão Gramática instalada e o Overleaf aberto, pode agora utilizar a Gramática dentro do editor Overleaf. Basta começar a digitar o seu texto, e a Gramática verificará automaticamente a existência de erros gramaticais e ortográficos.
 
-#### Step 4: Use Grammarly's proofreading tool
+#### Passo 4: Usar a ferramenta de revisão gramatical
 
-When you are finished writing your document, you can use Grammarly's proofreading tool to check for any remaining errors. Simply click on the Grammarly icon in the browser extension, and then select "Proofread my document." Grammarly will then provide you with a detailed report of any errors that it finds, along with suggestions for how to fix them.
+Quando terminar de escrever o seu documento, pode utilizar a ferramenta de revisão da Grammarly para verificar os erros restantes. Basta clicar no ícone Grammarly na extensão do navegador, e depois seleccionar "Revisar o meu documento". A Grammarly irá então fornecer-lhe um relatório detalhado de quaisquer erros que encontre, juntamente com sugestões sobre como corrigi-los.
 
-#### Conclusion
+#### Conclusão
 
-Using Grammarly in Overleaf is a great way to ensure that your writing is error-free and polished. With the Grammarly browser extension, you can easily check your writing as you write it, and then use the proofreading tool to check your final document before publishing it. Give it a try and see the difference it makes in your writing.
+Utilizar Gramática em Overleaf é uma óptima forma de garantir que a sua escrita está livre de erros e polida. Com a extensão do navegador Grammarly, pode facilmente verificar a sua escrita à medida que a escreve, e depois utilizar a ferramenta de revisão para verificar o seu documento final antes de o publicar. Experimente e veja a diferença que faz na sua escrita.
