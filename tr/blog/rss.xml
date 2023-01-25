@@ -4,10 +4,16 @@
         <title>BibTeX Blog</title>
         <link>https://bibtex.eu/tr/blog</link>
         <description>BibTeX Blog</description>
-        <lastBuildDate>Sun, 18 Dec 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 25 Jan 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>tr</language>
+        <item>
+            <title><![CDATA[overleaf-grammarly]]></title>
+            <link>https://bibtex.eu/tr/blog/2023/01/25/overleaf-grammarly</link>
+            <guid>/2023/01/25/overleaf-grammarly</guid>
+            <pubDate>Wed, 25 Jan 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[How do you cite a video game in BibTeX?]]></title>
             <link>https://bibtex.eu/tr/blog/how-do-you-cite-a-video-game-in-bibtex</link>
