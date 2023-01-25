@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7477],{9897:function(e){e.exports=JSON.parse('{"label":"citedrive","permalink":"/cs/blog/tags/citedrive","allTagsPath":"/cs/blog/tags","count":5}')}}]);
