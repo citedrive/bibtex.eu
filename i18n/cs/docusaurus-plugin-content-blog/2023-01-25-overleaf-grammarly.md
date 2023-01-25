@@ -12,7 +12,7 @@ tags: [overleaf, grammarly, writefull, latex, citedrive, bibtex]
 
 # Jak používat Grammarly v aplikaci Overleaf
 
-Overleaf je robustní kontejner LaTeXu s předpřipravenými balíčky, živou spoluprací, cloudovým editorem a uživatelskou základnou více než 10 milionů uživatelů. Integruje se také s výkonnými aplikacemi, jako jsou Writefull, Zotero, Mendeley a [CiteDrive, online nástroj pro správu referencí založený na BibTeXu pro uživatele, kteří chtějí spolupracovat na stejné bibliografii pro dokument Overleaf a zároveň udržovat všechny reference synchronizované] (https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
+Overleaf je robustní kontejner LaTeXu s předpřipravenými balíčky, živou spoluprací, cloudovým editorem a uživatelskou základnou více než 10 milionů uživatelů. Integruje se také s výkonnými aplikacemi, jako jsou Writefull, Zotero, Mendeley a [CiteDrive, online nástroj pro správu referencí založený na BibTeXu pro uživatele, kteří chtějí spolupracovat na stejné bibliografii pro dokument Overleaf a zároveň udržovat všechny reference synchronizované](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
 
 
 Grammarly je výkonný nástroj, který zajistí, že váš písemný projev bude jasný, výstižný a bez chyb. A nyní, po nejnovějším vydání nového editoru zdrojového kódu Codemirror 6, je používání Grammarly v rámci oblíbeného online editoru LaTeX Overleaf ještě snazší. 
