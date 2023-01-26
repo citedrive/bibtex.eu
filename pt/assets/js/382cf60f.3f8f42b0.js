@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[9354],{6822:function(t){t.exports=JSON.parse('{"label":"natbib","permalink":"/pt/blog/tags/natbib","allTagsPath":"/pt/blog/tags","count":2}')}}]);
