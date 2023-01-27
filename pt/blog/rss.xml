@@ -9,10 +9,26 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>pt</language>
         <item>
-            <title><![CDATA[introduction-to-overleaf-citations-natbib]]></title>
-            <link>https://bibtex.eu/pt/blog/2023/01/27/introduction-to-overleaf-citations-natbib</link>
-            <guid>/2023/01/27/introduction-to-overleaf-citations-natbib</guid>
+            <title><![CDATA[Using Overleaf for Writing Papers with Citations and natbib]]></title>
+            <link>https://bibtex.eu/pt/blog/using-overleaf-for-writing-papers-with-citations-and-natbib</link>
+            <guid>using-overleaf-for-writing-papers-with-citations-and-natbib</guid>
             <pubDate>Fri, 27 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Overleaf is a popular online LaTeX editor that allows users to collaborate on documents in real-time. One of the great features of Overleaf is the ability to easily add citations and bibliographies to your documents using the natbib package. In this post, we will go over the basics of using natbib with Overleaf to add citations and bibliographies to your papers.]]></description>
+            <content:encoded><![CDATA[<p>Overleaf is a popular online LaTeX editor that allows users to collaborate on documents in real-time. One of the great features of Overleaf is the ability to easily add citations and bibliographies to your documents using the natbib package. In this post, we will go over the basics of using natbib with Overleaf to add citations and bibliographies to your papers.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-citations">Adding Citations<a class="hash-link" href="#adding-citations" title="Link direto para o título">​</a></h2><p>To add citations in Overleaf, you first need to add the natbib package to your document. This can be done by adding the following line to the preamble of your document:</p><p><code>\usepackage[numbers]{natbib}</code></p><p>This will allow you to use the <code>\citep</code> and <code>\cite</code> commands to add citations to your document. The <code>\citep</code> command is used for in-text citations and will display the citation as a number in parentheses, while the <code>\cite</code> command is used for in-text citations and will display the citation as a number.</p><p>For example, to cite a paper by Smith et al. (2020) in-text, you would use the following command:</p><p><code>According to \citep{Smith2020}, this is an important finding.</code></p><p>This will display the citation as:</p><blockquote><p>According to (Smith et al., 2020), this is an important finding.</p></blockquote><h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-a-bibliography">Adding a Bibliography<a class="hash-link" href="#adding-a-bibliography" title="Link direto para o título">​</a></h2><p>To add a bibliography to your document in Overleaf, you first need to create a <code>.bib</code> file that contains the information for all of the references that you will be citing. The <code>.bib</code> file should be saved in the same directory as your main <code>.tex</code> file. One of the easiest ways to create this <code>.bib</code> file is by using <a href="https://citedrive.com/" target="_blank" rel="noopener noreferrer">CiteDrive</a>, a tool that connects to Overleaf and generates the bib file for you. More information can be found in the <a href="https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex" target="_blank" rel="noopener noreferrer">blog post on Overleaf.com</a>.</p><p>Once you have created your <code>.bib</code> file, you can add a bibliography to your document by adding the following command to your document:</p><p><code>\bibliography{mybibfile}</code></p><p>where <code>mybibfile</code> is the name of your <code>.bib</code> file.</p><p>You can also specify the style of your bibliography by adding the following command to your document:</p><p><code>\bibliographystyle{plainnat}</code></p><p>This will format your bibliography in a plain style. There are many different bibliography styles available, and you can find a list of them <a href="https://www.overleaf.com/learn/latex/Bibliography_styles" target="_blank" rel="noopener noreferrer">here</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a class="hash-link" href="#conclusion" title="Link direto para o título">​</a></h2><p>In this post, we have gone over the basics of using natbib with Overleaf to add citations and bibliographies to your papers. With Overleaf's easy-to-use interface and natbib's powerful citation and bibliography management capabilities, you can easily keep track of your references and format your bibliography in the style that is required by your publication. Additionally, using CiteDrive to generate the bib file for you can save a lot of time and effort.</p>]]></content:encoded>
+            <category>AcademicWriting</category>
+            <category>natbib</category>
+            <category>LaTeX</category>
+            <category>CitationManagement</category>
+            <category>Overleaf</category>
+            <category>BibTeX</category>
+            <category>BibLaTeX</category>
+            <category>Zotero</category>
+            <category>Mendeley</category>
+            <category>Research</category>
+            <category>WritingTips</category>
+            <category>Academia</category>
+            <category>ScholarlyWriting</category>
+            <category>References</category>
         </item>
         <item>
             <title><![CDATA[Introduction to Overleaf Citations ]]></title>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2232],{6885:function(l){l.exports=JSON.parse('{"label":"ScholarlyWriting","permalink":"/blog/tags/scholarly-writing","allTagsPath":"/blog/tags","count":2}')}}]);
