@@ -1,5 +1,5 @@
 ---
-slug: "introduction-to-overleaf-citations"
+slug: "using-overleaf-for-writing-papers-with-citations-and-natbib"
 title: "Introduction to Overleaf Citations
 "
 authors:
