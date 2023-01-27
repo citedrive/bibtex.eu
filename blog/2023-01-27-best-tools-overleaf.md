@@ -7,7 +7,7 @@ authors:
   mail: hello@citedrive.com
   url: https://www.CiteDrive.com/
   image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
-tags: [ Overleaf,  LaTeX, Collaborative Writing, Research Management, Grammar Check, Templates, ShareLaTeX, Git, GitHub, Writefull,  CiteDrive, Reference Management,  Language Tool, Writing Assistance, Document Formatting, Academic Writing, Research Papers, Scientific Writing]
+tags: [Overleaf, LaTeX, Collaborative Writing, Research Management, Grammar Check, Templates, ShareLaTeX, Git, GitHub, Writefull, CiteDrive, Reference Management, Language Tool, Writing Assistance, Document Formatting, Academic Writing, Research Papers, Scientific Writing]
 ---
 
 # Maximizing Your Writing Potential: The Best Tools for Collaboration and Research on Overleaf
