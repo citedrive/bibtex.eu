@@ -9,8 +9,8 @@
     <icon>https://bibtex.eu/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Introduction to Overleaf Citations ]]></title>
-        <id>using-overleaf-for-writing-papers-with-citations-and-natbib</id>
-        <link href="https://bibtex.eu/blog/using-overleaf-for-writing-papers-with-citations-and-natbib"/>
+        <id>introduction-to-overleaf-citations</id>
+        <link href="https://bibtex.eu/blog/introduction-to-overleaf-citations"/>
         <updated>2023-01-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Proper citation is essential in academic writing for giving credit to the sources you use in your research. Overleaf is a popular online LaTeX editor that allows users to easily create and collaborate on academic documents. It also includes a number of powerful citation management tools, including BibTeX, NatBib, and BibLaTeX.]]></summary>
         <content type="html"><![CDATA[<p>Proper citation is essential in academic writing for giving credit to the sources you use in your research. Overleaf is a popular online LaTeX editor that allows users to easily create and collaborate on academic documents. It also includes a number of powerful citation management tools, including BibTeX, NatBib, and BibLaTeX.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="adding-citations">Adding Citations<a class="hash-link" href="#adding-citations" title="Direct link to heading">​</a></h2><p>To add a citation in Overleaf, first create a '.bib' file with the information about your sources. Each source's author, title, publication date, and other pertinent information should be included in this file. You can either create your '.bib' file manually or use a tool like <a href="https://www.citedrive.com/" target="_blank" rel="noopener noreferrer">CiteDrifve</a>, a collaborative BibTeX/BibLaTeX-management tool built for the web, to do it for you. <strong>CiteDrive</strong> integrates with Overleaf, keeping all of your references in sync with your LaTeX document.  More information can be found at <strong>Overleaf.com</strong>:
