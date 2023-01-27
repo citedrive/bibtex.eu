@@ -2,11 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bibtex.eu/de/blog</id>
     <title>BibTeX Blog</title>
-    <updated>2023-01-26T00:00:00.000Z</updated>
+    <updated>2023-01-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bibtex.eu/de/blog"/>
     <subtitle>BibTeX Blog</subtitle>
     <icon>https://bibtex.eu/de/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[introduction-to-overleaf-citations-natbib]]></title>
+        <id>/2023/01/27/introduction-to-overleaf-citations-natbib</id>
+        <link href="https://bibtex.eu/de/blog/2023/01/27/introduction-to-overleaf-citations-natbib"/>
+        <updated>2023-01-27T00:00:00.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Introduction to Overleaf Citations ]]></title>
         <id>introduction-to-overleaf-citations</id>

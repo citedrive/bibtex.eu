@@ -4,10 +4,16 @@
         <title>BibTeX Blog</title>
         <link>https://bibtex.eu/cs/blog</link>
         <description>BibTeX Blog</description>
-        <lastBuildDate>Thu, 26 Jan 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Jan 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>cs</language>
+        <item>
+            <title><![CDATA[introduction-to-overleaf-citations-natbib]]></title>
+            <link>https://bibtex.eu/cs/blog/2023/01/27/introduction-to-overleaf-citations-natbib</link>
+            <guid>/2023/01/27/introduction-to-overleaf-citations-natbib</guid>
+            <pubDate>Fri, 27 Jan 2023 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Introduction to Overleaf Citations ]]></title>
             <link>https://bibtex.eu/cs/blog/introduction-to-overleaf-citations</link>
