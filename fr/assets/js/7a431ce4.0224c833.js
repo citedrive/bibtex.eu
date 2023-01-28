@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7394],{5531:function(t){t.exports=JSON.parse('{"label":"typesetting","permalink":"/fr/blog/tags/typesetting","allTagsPath":"/fr/blog/tags","count":1}')}}]);
