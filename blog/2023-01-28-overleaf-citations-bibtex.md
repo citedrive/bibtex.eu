@@ -16,7 +16,7 @@ Citations are an important aspect of academic writing, as they allow authors to 
 
 ## Adding a bibliography to your Overleaf project
 
-The first step in using citations in Overleaf is to add a bibliography to your project. This can be done by creating a new file in your project and naming it `references.bib`. This file will contain all of the references that you wish to cite in your document. An alternative option is to use CiteDrive which connects to Overleaf and allows you to collaborate on your bibliography and citations. CiteDrive supports BibTeX natively and also Biblatex.
+The first step in using citations in Overleaf is to add a bibliography to your project. This can be done by creating a new file in your project and naming it `references.bib`. This file will contain all of the references that you wish to cite in your document. An alternative option is to use [CiteDrive](https://www.citedrive.com/) which connects to Overleaf and allows you to collaborate on your bibliography and citations. CiteDrive supports BibTeX natively and also Biblatex.
 
 To add a reference to this file, you can use the following format:
 
