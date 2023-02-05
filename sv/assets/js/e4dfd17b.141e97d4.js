@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[4853],{9788:function(e){e.exports=JSON.parse('{"permalink":"/sv/blog","page":1,"postsPerPage":10,"totalPages":2,"totalCount":12,"nextPage":"/sv/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
