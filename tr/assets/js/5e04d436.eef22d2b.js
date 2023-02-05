@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[4261],{9263:function(t){t.exports=JSON.parse('{"label":"Interoperability","permalink":"/tr/blog/tags/interoperability","allTagsPath":"/tr/blog/tags","count":1}')}}]);
