@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3186],{65:function(e){e.exports=JSON.parse('{"label":"research papers","permalink":"/ru/blog/tags/research-papers","allTagsPath":"/ru/blog/tags","count":3}')}}]);

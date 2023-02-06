@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7109],{6974:function(i){i.exports=JSON.parse('{"label":"Scientific Writing","permalink":"/cn/blog/tags/scientific-writing","allTagsPath":"/cn/blog/tags","count":1}')}}]);

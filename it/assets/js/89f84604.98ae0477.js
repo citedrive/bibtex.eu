@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[5738],{745:function(t){t.exports=JSON.parse('{"label":"scientific documents","permalink":"/it/blog/tags/scientific-documents","allTagsPath":"/it/blog/tags","count":2}')}}]);
