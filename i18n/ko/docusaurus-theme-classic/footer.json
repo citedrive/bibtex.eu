@@ -1,0 +1,74 @@
+{
+  "link.title.CiteDrive": {
+    "message": "CiteDrive",
+    "description": "The title of the footer links column with title=CiteDrive in the footer"
+  },
+  "link.title.CiteDrive Community": {
+    "message": "CiteDrive Community",
+    "description": "The title of the footer links column with title=CiteDrive Community in the footer"
+  },
+  "link.title.bibtex.eu": {
+    "message": "bibtex.eu",
+    "description": "The title of the footer links column with title=bibtex.eu in the footer"
+  },
+  "link.title.rmarkdown.net": {
+    "message": "rmarkdown.net",
+    "description": "The title of the footer links column with title=rmarkdown.net in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.CiteDrive": {
+    "message": "CiteDrive",
+    "description": "The label of footer link with label=CiteDrive linking to https://citedrive.com/"
+  },
+  "link.item.label.Login (App)": {
+    "message": "Login (App)",
+    "description": "The label of footer link with label=Login (App) linking to https://app.citedrive.com/"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Docs": {
+    "message": "Docs",
+    "description": "The label of footer link with label=Docs linking to https://www.citedrive.com/docs/quick-startg"
+  },
+  "link.item.label.Overleaf integration": {
+    "message": "Overleaf integration",
+    "description": "The label of footer link with label=Overleaf integration linking to https://www.citedrive.com/overleaf"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/rmarkdown"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/citedrive"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/citedrive"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "The label of footer link with label=YouTube linking to https://www.youtube.com/channel/UC3ouAJ9bMVs4wti5cRUd9ag"
+  },
+  "link.item.label.BibTeX": {
+    "message": "BibTeX",
+    "description": "The label of footer link with label=BibTeX linking to http://bibtex.eu/"
+  },
+  "link.item.label.R Markdown": {
+    "message": "R Markdown",
+    "description": "The label of footer link with label=R Markdown linking to http://rmarkdown.net/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/citedrive/bibtex.eu"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 BibTeX.eu - Open source docs - Sponsored by CiteDrive LLC.",
+    "description": "The footer copyright"
+  }
+}

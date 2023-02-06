@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.BibTeX FAQ": {
+    "message": "BibTeX FAQ",
+    "description": "The label for category BibTeX FAQ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.BibTeX Fields": {
+    "message": "BibTeX Fields",
+    "description": "The label for category BibTeX Fields in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.BibTeX Entry types": {
+    "message": "BibTeX Entry types",
+    "description": "The label for category BibTeX Entry types in sidebar tutorialSidebar"
+  }
+}
