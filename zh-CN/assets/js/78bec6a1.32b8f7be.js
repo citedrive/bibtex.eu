@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[9367],{1636:function(a){a.exports=JSON.parse('{"label":"markup language","permalink":"/zh-CN/blog/tags/markup-language","allTagsPath":"/zh-CN/blog/tags","count":2}')}}]);

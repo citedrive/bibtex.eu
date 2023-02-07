@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2778],{2920:function(e){e.exports=JSON.parse('{"label":"LaTeX","permalink":"/zh-CN/blog/tags/la-te-x","allTagsPath":"/zh-CN/blog/tags","count":6}')}}]);
