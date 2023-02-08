@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bibtex.eu/tr/blog</id>
     <title>BibTeX Blog</title>
-    <updated>2023-02-06T00:00:00.000Z</updated>
+    <updated>2023-02-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bibtex.eu/tr/blog"/>
     <subtitle>BibTeX Blog</subtitle>
     <icon>https://bibtex.eu/tr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[CiteDrive is working on Obsidian support: Extending BibTeX support for markdown]]></title>
+        <id>citedrive-is-working-on-obsidian-support-extending-bibtex-support-for-markdown</id>
+        <link href="https://bibtex.eu/tr/blog/citedrive-is-working-on-obsidian-support-extending-bibtex-support-for-markdown"/>
+        <updated>2023-02-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CiteDrive, a tool for managing and collecting BibTeX entries and citations, is currently developing an extension for Obsidian,  a note-taking app with a unique approach to note-taking. It allows users to quickly link and connect their ideas, increasing productivity when writing papers, and we recognize the importance of researchers during the authoring phase. CiteDrive will also expand Markdown support, as it already does for Jupyter Notebook, Quarto, and R Markdown, to help researchers organize and access their references in apps like Obsidian.]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://citedrive.com/" target="_blank" rel="noopener noreferrer">CiteDrive</a>, a tool for managing and collecting BibTeX entries and citations, is currently developing an extension for Obsidian, &nbsp;a note-taking app with a unique approach to note-taking. It allows users to quickly link and connect their ideas, increasing productivity when writing papers, and we recognize the importance of researchers during the authoring phase. CiteDrive will also expand Markdown support, as it already does for Jupyter Notebook, Quarto, and R Markdown, to help researchers organize and access their references in apps like Obsidian.</p><h1>What exactly is Obsidian?</h1><p>Obsidian is a cross-platform application that allows you to quickly and efficiently organize and connect your thoughts and ideas -- all in markdown. It comes with a complete set of tools for creating notes, diagrams, graphs, documents, and other types of content. The app connects related markdown files novelly, making it simple to connect ideas, explore new paths, and quickly expand on topics. </p><p>It's an excellent tool for creating knowledge maps from scratch or from previously taken notes. </p><p>Obsidian was designed to be a personal knowledge base, but it works well in collaborative projects. With CiteDrive's support for Obsidian, you'll get the best of both worlds: a powerful research tool and an efficient knowledge base. Stay tuned for more information!</p><h1>What is CiteDrive, and what is it used for?</h1><p>CiteDrive is a cutting-edge cloud-based research tool that revolutionizes the storage and organization of bibliographic data. This app lets you securely store and access your BibTeX entries from anywhere, at any time, while staying in sync with tools like Overleaf and RStudio. Organize your global master.bib file references and teams into projects to make collaboration with other researchers, students, and teachers easier and to keep everyone on the same page. We cordially invite you to take advantage of CiteDrive's first-rate services immediately!</p>]]></content>
+        <author>
+            <name>BibTeX FAQ</name>
+            <uri>https://www.CiteDrive.com/</uri>
+        </author>
+        <category label="BibTeX" term="BibTeX"/>
+        <category label="Bibliographic references" term="Bibliographic references"/>
+        <category label="Markdown" term="Markdown"/>
+        <category label="CiteDrive" term="CiteDrive"/>
+        <category label="Obsidian" term="Obsidian"/>
+        <category label="Rstudio" term="Rstudio"/>
+        <category label="Quarto" term="Quarto"/>
+        <category label="R Markdown" term="R Markdown"/>
+        <category label="Notes" term="Notes"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Why Use BibTeX for Your Bibliographic References?]]></title>
         <id>why-use-bibtex-for-your-bibliographic-references</id>

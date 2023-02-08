@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[4025],{7147:function(e){e.exports=JSON.parse('{"label":"Bibliographic references","permalink":"/cs/blog/tags/bibliographic-references","allTagsPath":"/cs/blog/tags","count":2}')}}]);

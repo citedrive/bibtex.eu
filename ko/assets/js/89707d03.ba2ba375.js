@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[9025],{336:function(a){a.exports=JSON.parse('{"label":"R Markdown","permalink":"/ko/blog/tags/r-markdown","allTagsPath":"/ko/blog/tags","count":1}')}}]);
