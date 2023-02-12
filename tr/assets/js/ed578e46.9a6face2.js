@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2991],{7190:function(t){t.exports=JSON.parse('{"label":"Jupyter Notebook","permalink":"/tr/blog/tags/jupyter-notebook","allTagsPath":"/tr/blog/tags","count":1}')}}]);

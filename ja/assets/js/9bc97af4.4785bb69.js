@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3090],{4818:function(a){a.exports=JSON.parse('{"label":"communication","permalink":"/ja/blog/tags/communication","allTagsPath":"/ja/blog/tags","count":1}')}}]);
