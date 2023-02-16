@@ -1,0 +1,54 @@
+---
+slug: "how-to-cite-apa-in-latex-bibtex"
+title: "Hvordan citerer man APA i LaTeX / BibTeX?"
+authors:
+  name: BibTeX FAQ
+  title: https://www.CiteDrive.com/
+  mail: hello@citedrive.com
+  url: https://www.CiteDrive.com/
+  image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
+tags: [LaTeX, BibTeX, APA citation, reference management, academic writing]
+---
+
+# Hvordan citerer man APA i LaTeX / BibTeX?
+
+For at give kredit til de oprindelige forfattere og anerkende deres bidrag til forskningen kræver akademisk skrivning korrekt kildeangivelse. American Psychological Association (APA) citationsstilen er meget udbredt inden for samfundsvidenskab, psykologi og uddannelse. I dette blogindlæg vil vi se på, hvordan man bruger BibTeX til at citere APA i LaTeX.
+
+BibTeX er et referencehåndteringsværktøj, der bruges sammen med LaTeX til at generere en bibliografi. Det er et kraftfuldt reference- og citatstyringsværktøj, der kan spare dig for en masse tid og kræfter, når du skriver opgaver. Her kan du se, hvordan du bruger BibTeX til at oprette citater i APA-stil:
+
+## Trin 1: Opret en .bib-fil
+
+Først skal du oprette en [BibTeX-fil (.bib-fil)](/), der indeholder alle de referencer, du vil citere i dit dokument. Denne fil indeholder alle oplysninger om kilderne, herunder forfatterens navn, udgivelsesdato, artiklens titel og navnet på tidsskriftet eller bogen.
+
+## Trin 2: Medtag .bib-filen i dit LaTeX-dokument
+
+Herefter skal du inkludere .bib-filen i dit LaTeX-dokument ved at tilføje følgende kommando i præamblen:
+
+````latex
+ \bibliography{yourfile.bib}
+```
+Sørg for at erstatte "yourfile" med navnet på din .bib-fil.
+
+ ## Trin 3: Citat af referencer
+ 
+ Hvis du vil citere en reference i dit dokument, skal du bruge kommandoen `\cite{}` med den nøgle, der svarer til referencen i din .bib-fil. For eksempel:
+````latex
+Ifølge \cite{smith2010} er denne metode effektiv.
+```
+
+Denne kommando vil oprette en henvisning i teksten, der indeholder forfatterens navn og udgivelsesåret, f.eks. (Smith, 2010).
+
+## Trin 4: Tilføjelse af en referenceliste
+
+Hvis du vil tilføje en referenceliste til dit dokument, skal du bruge kommandoen `\bibliographystyle{}` til at angive stilen for bibliografien, efterfulgt af kommandoen `\bibliography{}` til at angive .bib-filen:
+````latex
+\bibliographystyle{apalike} 
+\bibliography{dinfil.bib}
+```
+Ovenstående kode vil oprette en referenceliste i slutningen af dit dokument i APA-stil.    
+
+## Trin 5: Kompilér dit dokument
+
+Til sidst skal du kompilere dit LaTeX-dokument for at oprette citat- og referencelisten.
+
+For at citere APA i LaTeX ved hjælp af BibTeX skal du kort sagt oprette en .bib-fil med alle referencerne, inkludere .bib-filen i dit LaTeX-dokument, bruge kommandoen `\cite{}` til at citere referencer og bruge kommandoerne `\bibliographystyle{}` og `\bibliography{}` til at oprette en referenceliste. Med disse trin kan du nemt administrere og citere dine referencer i APA-stil, mens du skriver dine akademiske artikler.

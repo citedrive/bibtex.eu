@@ -1,0 +1,54 @@
+---
+slug: "how-to-cite-apa-in-latex-bibtex"
+title: "Jak citovat APA v LaTeXu / BibTeXu?"
+authors:
+  name: BibTeX FAQ
+  title: https://www.CiteDrive.com/
+  mail: hello@citedrive.com
+  url: https://www.CiteDrive.com/
+  image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
+tags: [LaTeX, BibTeX, APA citation, reference management, academic writing]
+---
+
+# Jak citovat APA v LaTeXu / BibTeXu?
+
+Aby bylo možné ocenit původní autory a uznat jejich přínos k výzkumu, vyžaduje akademické psaní správné citování zdrojů. Ve společenských vědách, psychologii a vzdělávání se hojně používá citační styl Americké psychologické asociace (APA). V tomto příspěvku na blogu se podíváme na to, jak používat BibTeX k citování APA v LaTeXu.
+
+BibTeX je nástroj pro správu referencí, který se používá ve spojení s LaTeXem k vytváření bibliografie. Jedná se o výkonný nástroj pro správu odkazů a citací, který vám může ušetřit spoustu času a úsilí při psaní prací. Zde se dozvíte, jak používat BibTeX k vytváření citací ve stylu APA:
+
+## Krok 1: Vytvořte soubor .bib
+
+Nejprve vytvořte soubor [BibTeX (.bib file)](/), který obsahuje všechny odkazy, které chcete ve svém dokumentu citovat. Tento soubor obsahuje všechny informace o zdrojích, včetně jména autora, data vydání, názvu článku a názvu časopisu nebo knihy.
+
+## Krok 2: Zahrňte soubor .bib do dokumentu LaTeXu
+
+Dále zahrňte soubor .bib do svého dokumentu LaTeX přidáním následujícího příkazu do preambule:
+
+```latex
+ \bibliografie{vašeho souboru.bib}
+```
+Nezapomeňte nahradit "vášsoubor" názvem vašeho souboru .bib.
+
+ ## Krok 3: Citování odkazů
+ 
+ Chcete-li ve svém dokumentu citovat odkaz, použijte příkaz `\cite{}` s klíčem, který odpovídá odkazu ve vašem souboru .bib. Například:
+```latex
+Podle \cite{smith2010} je tato metoda účinná.
+```
+
+Tento příkaz vytvoří v textu citaci, která obsahuje jméno autora a rok vydání, například (Smith, 2010).
+
+## Krok 4: Přidání seznamu literatury
+
+Chcete-li do dokumentu přidat seznam odkazů, použijte příkaz `\bibliographystyle{}` pro zadání stylu bibliografie, po kterém následuje příkaz `\bibliography{}` pro zadání souboru .bib:
+```latex
+\bibliographystyle{apalike} 
+\bibliografie{vašeho souboru.bib}
+```
+Výše uvedený kód vytvoří na konci dokumentu seznam odkazů ve stylu APA.    
+
+## Krok 5: Zkompilujte svůj dokument
+
+Nakonec zkompilujte svůj dokument LaTeX a vytvořte seznam citací a odkazů.
+
+Shrneme-li citování APA v LaTeXu pomocí BibTeXu, je třeba vytvořit soubor .bib se všemi odkazy, zahrnout soubor .bib do dokumentu LaTeX, použít příkaz `\cite{}` k citování odkazů a pomocí příkazů `\bibliographystyle{}` a `\bibliography{}` vytvořit seznam odkazů. Pomocí těchto kroků můžete při psaní akademických prací snadno spravovat a citovat odkazy ve stylu APA.

@@ -1,0 +1,54 @@
+---
+slug: "how-to-cite-apa-in-latex-bibtex"
+title: "How to Cite APA in LaTeX / BibTeX?"
+authors:
+  name: BibTeX FAQ
+  title: https://www.CiteDrive.com/
+  mail: hello@citedrive.com
+  url: https://www.CiteDrive.com/
+  image_url: https://avatars.githubusercontent.com/u/65911387?s=200&v=4
+tags: [LaTeX, BibTeX, APA citation, reference management, academic writing]
+---
+
+# ¿Cómo citar APA en LaTeX / BibTeX?
+
+Para dar crédito a los autores originales y reconocer sus contribuciones a la investigación, la escritura académica requiere citar correctamente las fuentes. El estilo de citación de la American Psychological Association (APA) se utiliza ampliamente en las ciencias sociales, la psicología y la educación. En esta entrada de blog, veremos cómo utilizar BibTeX para citar APA en LaTeX.
+
+BibTeX es una herramienta de gestión de referencias que se utiliza junto con LaTeX para generar una bibliografía. Es una potente herramienta de gestión de referencias y citas que puede ahorrarte mucho tiempo y esfuerzo a la hora de escribir trabajos. A continuación se explica cómo utilizar BibTeX para crear citas en estilo APA:
+
+## Paso 1: Crear un archivo .bib
+
+En primer lugar, cree un [archivo BibTeX (.bib file)](/) que contenga todas las referencias que desee citar en su documento. Este archivo contiene toda la información sobre las fuentes, incluido el nombre del autor, la fecha de publicación, el título del artículo y el nombre de la revista o el libro.
+
+## Paso 2: Incluya el archivo .bib en su documento LaTeX
+
+A continuación, incluya el archivo .bib en su documento LaTeX añadiendo el siguiente comando al preámbulo:
+
+```latex
+ \bibliografía{suarchivo.bib}
+```
+Asegúrese de sustituir "suarchivo" por el nombre de su archivo .bib.
+
+ ## Paso 3: Citar referencias
+ 
+ Para citar una referencia en su documento, utilice el comando `\cite{}` con la clave que corresponda a la referencia en su archivo .bib. Por ejemplo
+``latex
+Según \cite{smith2010}, este método es eficaz.
+```
+
+Este comando creará una cita en el texto que incluye el nombre del autor y el año de publicación, como (Smith, 2010).
+
+## Paso 4: Añadir una lista de referencias
+
+Para añadir una lista de referencias a su documento, utilice el comando `\bibliographystyle{}` para especificar el estilo de la bibliografía, seguido del comando `\bibliography{}` para especificar el archivo .bib:
+``latex
+\bibliographystyle{apalike} 
+\bibliografía{tuarchivo.bib}
+```
+El código anterior creará una lista de referencias al final de su documento en estilo APA.    
+
+## Paso 5: Compile su documento
+
+Por último, compile su documento LaTeX para crear la cita y la lista de referencias.
+
+En resumen, para citar APA en LaTeX usando BibTeX, necesita crear un archivo .bib con todas las referencias, incluir el archivo .bib en su documento LaTeX, usar el comando `\cite{}` para citar referencias, y usar los comandos `\bibliographystyle{}` y `\bibliography{}` para crear una lista de referencias. Con estos pasos, podrás gestionar y citar fácilmente tus referencias en estilo APA mientras escribes tus trabajos académicos.
