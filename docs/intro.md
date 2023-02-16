@@ -19,7 +19,7 @@ BibTeX is a software program created in the mid-1980s by Oren Patashnik and Lesl
 
 Because you only need to enter the details once in the '.bib-file' and then refer to them using the unique keys in the main LaTeX document, it is a convenient way for LaTeX and Markdown users to format and manage references. When the LaTeX document is compiled, BibTeX generates the formatted bibliography using the information in the.bib file and the style specified in the LaTeX file.
 
-### Why should you use bibteX?
+### Why should you use BibTeX?
 
 As previously stated, BibTeX can help ensure citation style consistency and reduce the risk of human error in formatting citations if the information is correct and the entries are error-free (see problems in section bellow). If you automate the formatting process in terms of styles, you can reuse old references or change the style without having to rewrite everything, while maintaining the intended separation of concerns between formatting and bibliographic data. It works with a variety of tools and platforms, including Pandoc for Markdown. Most importantly, you have complete control over the fields and types, allowing you to include any information, notes, etc. without jeopardizing your bibliography. Because the database is text-file based, it is simple to backup and share, as opposed to other types of libraries, which can be SQL-based and cause the entire file to corrupt quickly.
 
@@ -27,11 +27,11 @@ As previously stated, BibTeX can help ensure citation style consistency and redu
 
 It is compatible with a number of excellent systems, including the previously mentioned LaTeX and Markdown, but it is underutilized with Microsoft Word, Libre Office, and Google Docs. There are some workarounds, converters, and tools available, such as [Bibtex4Word](http://www.ee.ic.ac.uk/hp/staff/dmb/perl/index.html), which is only available for Windows; however, if you frequently use these writing tools, you may want to consider [Zotero](https://www.zotero.org/) instead.
 While the BibTeX software is extremely robust, it is not (really) maintained, so a few types and fields for your needs may be missing, forcing you to workaround or manually create references, such as citing websites. Natbib can assist with in-text citation cusomazation, but BibTeX customization is limited.
-While the human-readable format is simple, missing paranthesis, information, or bad characters can cause incorrect bibliography output or even break your LaTeX / Pandoc; thus, we strongly recommend using a BibTex-tool, such as [CiteDrive](https://citedrive.com/) or [jabRef](https://www.jabref.org/). CiteDrive prevents duplication, which brings us to our final issue: you can add anything to your text file at any time, which means there is no real error control until the information is compiled with your document. If the database contains duplicate keys, for example, they can easily conflict.
+While the human-readable format is simple, missing paranthesis, information, or bad characters can cause incorrect bibliography output or even break your LaTeX / Pandoc; thus, we strongly recommend using a BibTeX-tool, such as [CiteDrive](https://citedrive.com/) or [jabRef](https://www.jabref.org/). CiteDrive prevents duplication, which brings us to our final issue: you can add anything to your text file at any time, which means there is no real error control until the information is compiled with your document. If the database contains duplicate keys, for example, they can easily conflict.
 
 ### Biber, BibLaTeX 
 
-Please keep some of the alternatives in mind, especially Biber in conjunction with BibLaTeX. It is a complete reimplementation of BibTeX's bibliographic features; in addition to a large number of supported types and fields, it supports a wide range of customizations, including sorting bibliographies by types, keywords, authors, and other fields, as well as full Unicode and multi-language support and customizations with in-text citations without the need for additional packages, such as natbib. Although BibTeX is still highly regarded for its durability, it should be noted that bibLatex is far more powerful and well-maintained, as many significant BibTeX updates occurred decades ago. Although the tutorial is primarily geared toward bibtex, much of it also applies to biblatex, making it an excellent place to start. The format remains the same; entries are saved in bib files with additional fields and types. Additional biblatex tutorials can be found on this page.
+Please keep some of the alternatives in mind, especially Biber in conjunction with BibLaTeX. It is a complete reimplementation of BibTeX's bibliographic features; in addition to a large number of supported types and fields, it supports a wide range of customizations, including sorting bibliographies by types, keywords, authors, and other fields, as well as full Unicode and multi-language support and customizations with in-text citations without the need for additional packages, such as natbib. Although BibTeX is still highly regarded for its durability, it should be noted that bibLatex is far more powerful and well-maintained, as many significant BibTeX updates occurred decades ago. Although the tutorial is primarily geared toward BibTeX, much of it also applies to biblatex, making it an excellent place to start. The format remains the same; entries are saved in bib files with additional fields and types. Additional biblatex tutorials can be found on this page.
 
 ### Pandoc
 
@@ -42,7 +42,7 @@ In a markdown file, you can specify your bibliography '.bib-file'in the YAML sec
 
 As mentioned above: We are aware that BibTeX is becoming increasingly popular with Markdown-based systems such as Pandoc, Juypter, Obsidian, Quarto, and R Markdown, and we will devote guides to those in the near future. 
 
-The following assumes LaTeX. Also, see the section above for more information on BibLaTeX, a complete reimplementation with many features that BiBTeX lacks. It is frequently regarded as a better starting point for newcomers in the community. 
+The following assumes LaTeX. Also, see the section above for more information on BibLaTeX, a complete reimplementation with many features that BibTeX lacks. It is frequently regarded as a better starting point for newcomers in the community. 
 
 ### Preperations
 
@@ -192,7 +192,7 @@ As we previously discussed, the.bib file, which we have named `bibliography.bib,
 Manually formatting BibTeX files can be time-consuming, which is why it is generally recommended to use a reference manager. Here are a few that are ideal for this:
 
 * [CiteDrive](https://www.citedrive.com/) is a bibtex-driven, collaborative and web-based tool to manage your references and teams in projects. It offers a one-click export to Overleaf ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) as well as R Markdown ([*Cf. Medium post: Bibliography Management in R Markdown with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), keeping citations in sync.
-* [Zotero](https://www.zotero.org/) is a free, open-source bibliographic management software that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero is achieved with [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/) by retorque.
+* [Zotero](https://www.zotero.org/) is a free, open-source bibliographic management software that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero is achieved with [Better BibTeX For Zotero](https://retorque.re/zotero-better-BibTeX/) by retorque.
 * The free, open source software [JabRef](https://www.jabref.org/) is a BibTeX-supported reference manager that runs on Windows, Mac and Linux. It is based on Java and is maintained by JabRef e.V.
 
 ## Databases
