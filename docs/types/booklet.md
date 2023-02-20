@@ -1,5 +1,64 @@
 ---
-title: "How to Cite a booklet in LaTeX: BibTeX Reference Type"
+title: "Introduction to BibTeX and the Booklet Type Entry"
 sidebar_label: booklet
 ---
 
+# Introduction to BibTeX and the Booklet Type Entry
+
+BibTeX is a reference management system for formatting lists of references in a document. It is widely used in the academic community, especially in the fields of science, technology, and mathematics.
+
+One of the many types of entries that can be included in a BibTeX file is the `booklet` entry type. In this guide, we will introduce you to the `booklet` entry type, and show you how to use it to manage your references in your LaTeX documents.
+
+## The Booklet Entry Type
+
+The `booklet` entry type is used to refer to a printed work that is not formally published, but is bound together like a book. Examples of `booklet` entries could include conference proceedings, program guides, or instruction manuals.
+
+The required fields for a `booklet` entry are:
+
+-   `title`: The title of the booklet.
+-   `author`: The author or authors of the booklet.
+-   `howpublished`: How the booklet was published.
+-   `address`: The address of the publisher or sponsoring institution.
+-   `year`: The year the booklet was published.
+
+Optional fields for a `booklet` entry include:
+
+-   `editor`: The editor or editors of the booklet.
+-   `volume`: The volume number of a multi-volume book.
+-   `number`: The number of a journal or series.
+-   `series`: The name of a series or set of books.
+-   `organization`: The organization that published or sponsored the booklet.
+-   `month`: The month of publication.
+-   `note`: Miscellaneous information.
+
+Here is an example of a `booklet` entry:
+
+```bibtex
+@booklet{example_booklet,
+	title        = {Conference Proceedings},
+	author       = {Jane Doe and John Smith},
+	year         = 2022,
+	month        = {July},
+	address      = {San Francisco, CA},
+	note         = {This is a sample entry for a conference proceedings booklet.},
+	howpublished = {Presented at the Annual Conference on Technology},
+	editor       = {Bob Johnson}
+}
+
+```
+
+## Using the Booklet Entry Type in LaTeX
+
+Once you have created a `booklet` entry in your BibTeX file, you can reference it in your LaTeX document using the `\cite` command. For example:
+
+
+```latex
+`\documentclass{article}  
+\begin{document}  
+According to \cite{example_booklet}, the Annual Conference on Technology was a success.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+In this example, the `example_booklet` entry in the `references.bib` file is cited using the `\cite` command. The bibliography is then generated using the `plain` style.

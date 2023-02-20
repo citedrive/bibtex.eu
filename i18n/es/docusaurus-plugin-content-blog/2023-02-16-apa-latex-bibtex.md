@@ -1,6 +1,6 @@
 ---
 slug: "how-to-cite-apa-in-latex-bibtex"
-title: "How to Cite APA in LaTeX / BibTeX?"
+title: "¿Cómo citar APA en LaTeX / BibTeX?"
 authors:
   name: BibTeX FAQ
   title: https://www.CiteDrive.com/

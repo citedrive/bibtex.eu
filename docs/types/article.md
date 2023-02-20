@@ -1,27 +1,56 @@
 ---
-title: BibTeX article type
+title: Introduction to BibTeX and the Article Type Entry
 sidebar_label: article
 ---
 
-# How to Cite an Article in LaTeX: BibTeX Reference Type
+# Introduction to BibTeX and the Article Type Entry
 
-Scientific articles are stored with the article type in the .bib file. The required fields for this storage are author, title, journal, year, and volume. Number, pages, month DOI annotation, and key are all optional fields. In the bibliography, these fields will appear as follows:
+BibTeX is a reference management system used to format lists of references in a document. It is commonly used in academic writing, particularly in scientific and technical fields. In this guide, we will introduce you to the `article` entry type in BibTeX and show you how to use it in your LaTeX documents.
+
+## The Article Entry Type
+
+The `article` entry type is used to refer to articles published in scholarly journals, magazines, or newspapers. The required fields for an `article` entry are:
+
+-   `author`: The name(s) of the author(s) of the article.
+-   `title`: The title of the article.
+-   `journal`: The name of the journal, magazine, or newspaper in which the article was published.
+-   `year`: The year of publication.
+
+Optional fields for an `article` entry include:
+
+-   `volume`: The volume number of the journal.
+-   `number`: The issue number of the journal.
+-   `pages`: The page numbers on which the article appears.
+-   `month`: The month of publication.
+-   `note`: Miscellaneous information.
+
+Here is an example of an `article` entry:
 
 
-```latex
-@article{citationKey,
-	title={The Title of the Article},
-	author= {LastName, FirstName},
-	journal={The Name of the Journal},
-	year={The Year the Article was Published},
-	volume={The Volume Number of the Journal},
-	number={The Issue Number of the Journal},
-	pages={The Page Numbers of the Article},
-	month={The Month the Article was Published},
-	doi={The Digital Object Identifier for the Article}
-
+```bibtex
+@article{example_article,
+	title        = {The Effects of Climate Change},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {January},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {This is a sample entry for an article in a magazine.}
 }
 ```
 
+## Using the Article Entry Type in LaTeX
 
-CiteDrive allows you to discover or save articles directly from your browser to your CiteDrive project, making it simple to keep track of all the research material you'll need. Check it out now!
+Once you have created an `article` entry in your BibTeX file, you can reference it in your LaTeX document using the `\cite` command. For example:
+
+```latex
+\documentclass{article}  
+\begin{document}  According to \cite{example_article}, climate change has significant effects on the planet.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+In this example, the `example_article` entry in the `references.bib` file is cited using the `\cite` command. The bibliography is then generated using the `plain` style.
