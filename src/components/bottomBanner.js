@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: sticky;
-  height: 90px;
+
   width: 100%;
   bottom: 0;
   z-index: 999;
@@ -22,6 +22,8 @@ const Wrapper = styled.div`
 const Button = styled.button`
   background: #fff;
   height: 50px;
+  color: #000;
+  min-width: 120px;
   padding: 1rem;
   border-radius: 25px;
   border: none;
@@ -47,7 +49,7 @@ const BottomBanner = () => {
           Are you looking for a simple online BibTeX manager?
           </p>
           <p style={{fontWeight: 400}}>
-          CiteDrive is a bibtex-based collaborative reference manager that integrates seamlessly with Overlearf and RStudio. Check it out, it's completely free!
+          CiteDrive is a bibtex-based collaborative reference manager that integrates seamlessly with Overlearf and RStudio. 
           </p>
         </Letters>
         <Button>Sign up free</Button>

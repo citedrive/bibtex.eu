@@ -49,7 +49,6 @@ Here is an example of an `inbook` entry:
 
 Once you have created an `inbook` entry in your BibTeX file, you can reference it in your LaTeX document using the `\cite` command. For example:
 
-cssCopy code
 
 ```latex
 \documentclass{article}  \begin{document}  According to \cite{example_inbook}, climate change has significant effects on the planet.  \bibliography{references} \bibliographystyle{plain}  \end{document}

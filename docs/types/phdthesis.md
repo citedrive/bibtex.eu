@@ -1,0 +1,47 @@
+---
+title: "Guide to BibTeX Type PhdThesis"
+sidebar_label: phdthesis
+---
+
+# Guide to BibTeX Type PhdThesis
+
+BibTeX is a reference management tool that is commonly used in LaTeX documents. The "phdthesis" BibTeX type is used for PhD dissertations or theses. In this guide, we will explain the required and optional fields for the "phdthesis" BibTeX type.
+
+## Required Fields
+
+The "phdthesis" BibTeX type requires the following fields:
+
+-   `author`: The author of the thesis.
+-   `title`: The title of the thesis.
+-   `school`: The name of the institution that awarded the degree.
+-   `year`: The year the degree was awarded.
+
+## Optional Fields
+
+In addition to the required fields, the "phdthesis" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+
+-   `type`: The type of the thesis, such as "PhD thesis" or "Master's thesis".
+-   `address`: The location of the institution.
+-   `month`: The month the thesis was submitted.
+-   `note`: Any additional information about the thesis.
+
+## Example
+
+Here is an example of how to use the "phdthesis" BibTeX type:
+
+```bibtex
+@phdthesis{mythesis,
+	title        = {An Analysis of Example},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {PhD thesis}
+}
+```
+
+
+
+In this example, the BibTeX entry defines a PhD thesis authored by John Smith titled "An Analysis of Example". The degree was awarded in 2022 by the University of Example, and the thesis was submitted in June in Example City, CA. The type of the thesis is specified as "PhD thesis", and a note is included that provides a URL for the thesis.
