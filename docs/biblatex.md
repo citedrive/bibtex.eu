@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with BibLaTeX: A Quick Guide"
 sidebar_label: Using BibLaTeX (Quick start)
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 # Getting Started with BibLaTeX: A Quick Guide

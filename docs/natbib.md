@@ -2,7 +2,7 @@
 title: A Short Guide to Reference Management using natbib with BibTeX
 description: "Natbib is a LaTeX package that allows you to customise citations in the text around the \\CITE command. This short tutorial shows you how to manage your references with BibTeX and natbib. "
 sidebar_label: Using Natbib (Quick start)
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # A Short Guide to Reference Management using natbib with BibTeX

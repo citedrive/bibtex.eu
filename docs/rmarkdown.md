@@ -2,7 +2,7 @@
 title: Reference management with BibTeX, when using R Markdown -- A short guide
 description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
 sidebar_label: Using R Markdown (Quick start)
-sidebar_position: 2
+sidebar_position: 6
 ---
 
 # Reference management in R Markdown with BibTeX: A short guide

@@ -2,7 +2,7 @@
 title: Reference management with BibTeX, when using Quarto -- A short guide
 description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
 sidebar_label: Using Quarto (RStudio/Posit) (Quick start)
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # Reference management in Quart (RStudio/Posit) with BibTeX: A short guide
