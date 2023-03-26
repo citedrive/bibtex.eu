@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bibtex.eu/cs/blog</id>
     <title>BibTeX Blog</title>
-    <updated>2023-02-16T00:00:00.000Z</updated>
+    <updated>2023-03-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bibtex.eu/cs/blog"/>
     <subtitle>BibTeX Blog</subtitle>
     <icon>https://bibtex.eu/cs/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Nejlepší vizualizační balíčky pro R v roce 2023]]></title>
+        <id>top-visualization-packages-for-r-in-2023</id>
+        <link href="https://bibtex.eu/cs/blog/top-visualization-packages-for-r-in-2023"/>
+        <updated>2023-03-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Jazyk R je oblíbeným jazykem pro analýzu a vizualizaci dat. S pomocí výkonných vizualizačních balíčků se jazyk R stal nástrojem pro tvorbu výstižných a atraktivních vizualizací dat. V tomto příspěvku na blogu se podíváme na některé z nejlepších vizualizačních balíčků pro R v roce 2023.]]></summary>
+        <content type="html"><![CDATA[<p>Jazyk R je oblíbeným jazykem pro analýzu a vizualizaci dat. S pomocí výkonných vizualizačních balíčků se jazyk R stal nástrojem pro tvorbu výstižných a atraktivních vizualizací dat. V tomto příspěvku na blogu se podíváme na některé z nejlepších vizualizačních balíčků pro R v roce 2023.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="ggplot2">ggplot2<a class="hash-link" href="#ggplot2" title="Přímý odkaz na nadpis">​</a></h2><p>Balík ggplot2 je široce používaný balík pro vytváření elegantních a přizpůsobitelných vizualizací dat. Umožňuje uživatelům vytvářet širokou škálu grafů, od základních sloupcových grafů až po složité vícevrstvé vizualizace. ggplot2 je známý svým přístupem "gramatiky grafiky", což znamená, že uživatelé mohou vytvářet graf vrstvu po vrstvě, přidávat různé datové body, estetické mapování a geomy.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="plotly">plotly<a class="hash-link" href="#plotly" title="Přímý odkaz na nadpis">​</a></h2><p>plotly je výkonný balíček pro vytváření interaktivních a dynamických vizualizací dat v jazyce R. Umožňuje uživatelům vytvářet širokou škálu grafů, včetně grafů rozptylu, čárových grafů, sloupcových grafů a dalších. Pomocí plotly mohou uživatelé do svých grafů přidávat interaktivitu, například efekty najetí a přiblížení, což usnadňuje zkoumání a analýzu složitých datových souborů.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="lattice">lattice<a class="hash-link" href="#lattice" title="Přímý odkaz na nadpis">​</a></h2><p>lattice je balík, který uživatelům umožňuje vytvářet širokou škálu statistických grafů, včetně grafů rozptylu, krabicových grafů, histogramů a dalších. Je známý svou flexibilitou a snadným používáním a umožňuje uživatelům grafy různými způsoby přizpůsobovat, včetně přidávání různých barevných schémat a změny rozložení grafu.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="ggvis">ggvis<a class="hash-link" href="#ggvis" title="Přímý odkaz na nadpis">​</a></h2><p>ggvis je balíček, který uživatelům umožňuje vytvářet interaktivní a přizpůsobitelné vizualizace v jazyce R. Je založen na balíčku ggplot2, ale umožňuje větší interaktivitu a přizpůsobení. Pomocí ggvis mohou uživatelé vytvářet interaktivní grafy, které jim umožní zkoumat a analyzovat data novými způsoby.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="highcharter">Highcharter<a class="hash-link" href="#highcharter" title="Přímý odkaz na nadpis">​</a></h2><p>Highcharter je balíček, který uživatelům umožňuje vytvářet interaktivní a dynamické grafy pomocí knihovny Highcharts. Highcharter poskytuje snadno použitelné rozhraní pro vytváření široké škály grafů, včetně grafů rozptylu, čárových a sloupcových grafů. Pomocí Highcharteru mohou uživatelé do svých grafů přidávat interaktivitu, například zvětšování a posouvání, což usnadňuje zkoumání a analýzu složitých souborů dat.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="leták">leták<a class="hash-link" href="#leták" title="Přímý odkaz na nadpis">​</a></h2><p>leaflet je balíček pro vytváření interaktivních a přizpůsobitelných map v jazyce R. Je založen na knihovně leaflet.js a umožňuje uživatelům vytvářet širokou škálu map, včetně heat map, choroplet map a dalších. Pomocí nástroje leaflet mohou uživatelé do svých map přidávat interaktivitu, například zvětšování a posouvání, což usnadňuje zkoumání a analýzu složitých souborů prostorových dat.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="závěr">Závěr<a class="hash-link" href="#závěr" title="Přímý odkaz na nadpis">​</a></h2><p>Jazyk R je výkonný jazyk pro analýzu a vizualizaci dat a s pomocí těchto špičkových vizualizačních balíků mohou uživatelé vytvářet pronikavé a atraktivní vizualizace dat, které jim umožní zkoumat a analyzovat složité datové soubory. Ať už potřebujete vytvořit základní grafy nebo složité interaktivní vizualizace, tyto balíčky vám pomohou.</p>]]></content>
+        <author>
+            <name>@rmarkdown</name>
+            <uri>https://www.CiteDrive.com/</uri>
+        </author>
+        <category label="visualization" term="visualization"/>
+        <category label="R" term="R"/>
+        <category label="ggplot2" term="ggplot2"/>
+        <category label="plotly" term="plotly"/>
+        <category label="lattice" term="lattice"/>
+        <category label="ggvis" term="ggvis"/>
+        <category label="Highcharter" term="Highcharter"/>
+        <category label="leaflet" term="leaflet"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Jak citovat APA v LaTeXu / BibTeXu?]]></title>
         <id>how-to-cite-apa-in-latex-bibtex</id>

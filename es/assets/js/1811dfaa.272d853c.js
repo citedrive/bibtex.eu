@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[5253],{7330:function(e){e.exports=JSON.parse('{"label":"ggplot2","permalink":"/es/blog/tags/ggplot-2","allTagsPath":"/es/blog/tags","count":1}')}}]);

@@ -2,11 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bibtex.eu/ko/blog</id>
     <title>BibTeX Blog</title>
-    <updated>2023-02-16T00:00:00.000Z</updated>
+    <updated>2023-03-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bibtex.eu/ko/blog"/>
     <subtitle>BibTeX Blog</subtitle>
     <icon>https://bibtex.eu/ko/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[2023년 R을 위한 상위 비주얼리제이션 패키지 순위]]></title>
+        <id>top-visualization-packages-for-r-in-2023</id>
+        <link href="https://bibtex.eu/ko/blog/top-visualization-packages-for-r-in-2023"/>
+        <updated>2023-03-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[R은 데이터 분석 및 시각화를 위해 널리 사용되는 언어입니다. 강력한 시각화 패키지의 도움으로 R은 통찰력 있고 매력적인 데이터 시각화를 만들기 위한 도구로 자리 잡았습니다. 이 블로그 게시물에서는 2023년에 가장 인기 있는 R용 시각화 패키지 몇 가지를 살펴보겠습니다.]]></summary>
+        <content type="html"><![CDATA[<p>R은 데이터 분석 및 시각화를 위해 널리 사용되는 언어입니다. 강력한 시각화 패키지의 도움으로 R은 통찰력 있고 매력적인 데이터 시각화를 만들기 위한 도구로 자리 잡았습니다. 이 블로그 게시물에서는 2023년에 가장 인기 있는 R용 시각화 패키지 몇 가지를 살펴보겠습니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="ggplot2">ggplot2<a class="hash-link" href="#ggplot2" title="제목으로 바로 가기">​</a></h2><p>ggplot2는 우아하고 사용자 지정 가능한 데이터 시각화를 만드는 데 널리 사용되는 패키지입니다. 사용자는 기본 막대 차트부터 복잡한 다계층 시각화에 이르기까지 다양한 차트를 만들 수 있습니다. ggplot2는 '그래픽 문법' 접근 방식으로 유명하며, 이는 사용자가 다양한 데이터 포인트, 미적 매핑 및 도형을 추가하여 차트를 레이어별로 구축할 수 있음을 의미합니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="plotly">plotly<a class="hash-link" href="#plotly" title="제목으로 바로 가기">​</a></h2><p>는 R에서 대화형 동적 데이터 시각화를 만들기 위한 강력한 패키지로, 사용자는 분산형 차트, 꺾은선형 차트, 막대 차트 등 다양한 차트를 만들 수 있습니다. 사용자는 플롯리를 사용하여 차트에 호버 효과 및 확대/축소 등의 상호 작용을 추가하여 복잡한 데이터 집합을 쉽게 탐색하고 분석할 수 있습니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="격자">격자<a class="hash-link" href="#격자" title="제목으로 바로 가기">​</a></h2><p>격자는 사용자가 분산형 차트, 박스형 차트, 히스토그램 등 다양한 통계 그래픽을 만들 수 있는 패키지입니다. 유연성과 사용 편의성으로 잘 알려져 있으며, 다양한 색 구성표를 추가하고 차트의 레이아웃을 변경하는 등 다양한 방법으로 차트를 사용자 정의할 수 있습니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="ggvis">ggvis<a class="hash-link" href="#ggvis" title="제목으로 바로 가기">​</a></h2><p>ggvis는 사용자가 R에서 대화형 및 사용자 지정 가능한 비주얼리제이션을 만들 수 있는 패키지로, ggplot2 패키지를 기반으로 하지만 더 많은 대화형 및 사용자 지정이 가능합니다. ggvis를 사용하면 사용자가 새로운 방식으로 데이터를 탐색하고 분석할 수 있는 대화형 차트를 만들 수 있습니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="하이차터">하이차터<a class="hash-link" href="#하이차터" title="제목으로 바로 가기">​</a></h2><p>Highcharter는 사용자가 Highcharts 라이브러리를 사용하여 대화형 동적 차트를 만들 수 있는 패키지입니다. Highcharter는 분산형 차트, 꺾은선형 차트, 막대형 차트 등 다양한 차트를 만들 수 있는 사용하기 쉬운 인터페이스를 제공합니다. Highcharter를 사용하면 확대/축소 및 이동과 같은 상호 작용 기능을 차트에 추가하여 복잡한 데이터 세트를 쉽게 탐색하고 분석할 수 있습니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="리플렛">리플렛<a class="hash-link" href="#리플렛" title="제목으로 바로 가기">​</a></h2><p>leaflet은 R에서 대화형 및 사용자 지정 가능한 맵을 만들기 위한 패키지로, leaflet.js 라이브러리를 기반으로 하며 사용자가 히트 맵, 코로페스 맵 등을 포함한 다양한 맵을 만들 수 있습니다. 리플렛을 사용하면 확대/축소 및 이동과 같은 상호 작용을 맵에 추가할 수 있어 복잡한 공간 데이터 집합을 쉽게 탐색하고 분석할 수 있습니다.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="결론">결론<a class="hash-link" href="#결론" title="제목으로 바로 가기">​</a></h2><p>R은 데이터 분석 및 시각화를 위한 강력한 언어이며, 이러한 최고의 시각화 패키지의 도움으로 사용자는 복잡한 데이터 집합을 탐색하고 분석할 수 있는 통찰력 있고 매력적인 데이터 시각화를 만들 수 있습니다. 기본적인 차트부터 복잡한 대화형 비주얼리제이션까지, 이러한 패키지를 통해 모든 것을 만들 수 있습니다.</p>]]></content>
+        <author>
+            <name>@rmarkdown</name>
+            <uri>https://www.CiteDrive.com/</uri>
+        </author>
+        <category label="visualization" term="visualization"/>
+        <category label="R" term="R"/>
+        <category label="ggplot2" term="ggplot2"/>
+        <category label="plotly" term="plotly"/>
+        <category label="lattice" term="lattice"/>
+        <category label="ggvis" term="ggvis"/>
+        <category label="Highcharter" term="Highcharter"/>
+        <category label="leaflet" term="leaflet"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How to Cite APA in LaTeX / BibTeX?]]></title>
         <id>how-to-cite-apa-in-latex-bibtex</id>
