@@ -75,6 +75,10 @@ module.exports = {
               label: "Overleaf integration",
               to: "https://www.citedrive.com/overleaf",
             },
+             {
+              label: "GitHub Discussions",
+              to: "https://github.com/orgs/citedrive/discussions",
+            },
           ],
         },
         {
