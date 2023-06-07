@@ -1,8 +1,6 @@
 ---
 slug: "literature-management-at-overleaf-natbib-bibtex-or-biblatex-which-is-the-best-for-you"
 title: "Litteraturhåndtering på Overleaf: Natbib, Bibtex eller Biblatex - Hvad er det bedste for dig?"
-authors:
-name: "@BibTeX_eu"
 description: "Sammenligning af Natbib, Bibtex og Biblatex til litteraturhåndtering på Overleaf, så du kan bestemme den bedste løsning til dine skrivebehov."
 tags: [Overleaf, litteraturhåndtering, Natbib, Bibtex, Biblatex, akademisk skrivning, citationshåndtering]
 ---
