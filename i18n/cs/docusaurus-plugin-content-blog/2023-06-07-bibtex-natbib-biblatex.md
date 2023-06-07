@@ -1,6 +1,5 @@
 ---
 slug: "literature-management-at-overleaf-natbib-bibtex-or-biblatex-which-is-the-best-for-you"
-biblatex-který-je-pro-vás-nejlepší"
 title: "Správa literatury v Overleaf: Natbib, Bibtex nebo Biblatex - Který je pro vás nejlepší?"
 authors:
 name: "@BibTeX_eu"
