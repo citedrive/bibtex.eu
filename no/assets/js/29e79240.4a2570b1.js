@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[6543],{3742:function(e){e.exports=JSON.parse('{"label":"Overleaf","permalink":"/no/blog/tags/overleaf","allTagsPath":"/no/blog/tags","count":9}')}}]);
