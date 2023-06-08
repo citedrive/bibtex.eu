@@ -1,8 +1,6 @@
 ---
 slug: "literature-management-at-overleaf-natbib-bibtex-or-biblatex-which-is-the-best-for-you"
 title: "Literature Management at Overleaf: Natbib, Bibtex, or Biblatex - Which is the Best for You?"
-authors:
-  name: "@BibTeX_eu"
 description: "Comparing Natbib, Bibtex, and Biblatex for literature management at Overleaf, so you can determine the best option for your writing needs."
 tags: [Overleaf, literature management, Natbib, Bibtex, Biblatex, academic writing, citation management]
 ---
