@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[1418],{9691:function(e){e.exports=JSON.parse('{"label":"literature management","permalink":"/zh-CN/blog/tags/literature-management","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);
