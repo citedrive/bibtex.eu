@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2547],{7170:function(e){e.exports=JSON.parse('{"label":"gestione delle citazioni","permalink":"/it/blog/tags/gestione-delle-citazioni","allTagsPath":"/it/blog/tags","count":1}')}}]);

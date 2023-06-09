@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[5928],{6394:function(e){e.exports=JSON.parse('{"label":"gestione della letteratura","permalink":"/it/blog/tags/gestione-della-letteratura","allTagsPath":"/it/blog/tags","count":1}')}}]);

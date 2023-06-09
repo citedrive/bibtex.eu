@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2320],{7186:function(a){a.exports=JSON.parse('{"label":"\u6587\u732e\u7ba1\u7406","permalink":"/ja/blog/tags/\u6587\u732e\u7ba1\u7406","allTagsPath":"/ja/blog/tags","count":1}')}}]);
