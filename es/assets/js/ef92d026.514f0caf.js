@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[6137],{3872:function(a){a.exports=JSON.parse('{"label":"Romanian language","permalink":"/es/blog/tags/romanian-language","allTagsPath":"/es/blog/tags","count":1}')}}]);
