@@ -42,7 +42,8 @@ const MainMessage = styled.p`
 
 const HighlightedText = styled.span`
   text-decoration: underline;
-  text-decoration-color: #ff6347;  /* You can change this color */
+  text-decoration-color: #00ff6b; 
+  text-decoration-thickness: 5px; 
 `;
 
 const SecondaryMessage = styled.p`
@@ -58,7 +59,7 @@ const BottomBanner = () => (
   >
     <Letters>
       <MainMessage>
-        Are you looking for a simple online <HighlightedText>BibTeX manager?</HighlightedText>
+      Are you in search of a simple and <HighlightedText>cost-free</HighlightedText> online <HighlightedText>BibTeX</HighlightedText> manager?
       </MainMessage>
       <SecondaryMessage>
         CiteDrive is a bibtex-based collaborative reference manager that integrates seamlessly with Overleaf and RStudio.
