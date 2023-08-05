@@ -12,7 +12,7 @@ tags: [BibTeX, Bibliographic references, Markdown, CiteDrive, Obsidian, Rstudio,
 
 # CiteDrive is working on Obsidian support: Extending BibTeX support for markdown
 
-[CiteDrive](https://citedrive.com/), a tool for managing and collecting BibTeX entries and citations, is currently developing an extension for Obsidian,  a note-taking app with a unique approach to note-taking. It allows users to quickly link and connect their ideas, increasing productivity when writing papers, and we recognize the importance of researchers during the authoring phase. CiteDrive will also expand Markdown support, as it already does for Jupyter Notebook, Quarto, and R Markdown, to help researchers organize and access their references in apps like Obsidian.
+[CiteDrive](https://www.citedrive.com/), a tool for managing and collecting BibTeX entries and citations, is currently developing an extension for Obsidian,  a note-taking app with a unique approach to note-taking. It allows users to quickly link and connect their ideas, increasing productivity when writing papers, and we recognize the importance of researchers during the authoring phase. CiteDrive will also expand Markdown support, as it already does for Jupyter Notebook, Quarto, and R Markdown, to help researchers organize and access their references in apps like Obsidian.
 
 
 # What exactly is Obsidian?

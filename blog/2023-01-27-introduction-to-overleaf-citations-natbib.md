@@ -33,7 +33,7 @@ This will display the citation as:
 
 ## Adding a Bibliography
 
-To add a bibliography to your document in Overleaf, you first need to create a `.bib` file that contains the information for all of the references that you will be citing. The `.bib` file should be saved in the same directory as your main `.tex` file. One of the easiest ways to create this `.bib` file is by using [CiteDrive](https://citedrive.com/), a tool that connects to Overleaf and generates the bib file for you. More information can be found in the [blog post on Overleaf.com](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
+To add a bibliography to your document in Overleaf, you first need to create a `.bib` file that contains the information for all of the references that you will be citing. The `.bib` file should be saved in the same directory as your main `.tex` file. One of the easiest ways to create this `.bib` file is by using [CiteDrive](https://www.citedrive.com/), a tool that connects to Overleaf and generates the bib file for you. More information can be found in the [blog post on Overleaf.com](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
 
 Once you have created your `.bib` file, you can add a bibliography to your document by adding the following command to your document:
 

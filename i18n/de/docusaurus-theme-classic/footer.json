@@ -13,7 +13,7 @@
   },
   "link.item.label.CiteDrive - Home": {
     "message": "CiteDrive - Home",
-    "description": "The label of footer link with label=CiteDrive - Home linking to https://citedrive.com/"
+    "description": "The label of footer link with label=CiteDrive - Home linking to https://www.citedrive.com/"
   },
   "link.item.label.CiteDrive - App": {
     "message": "CiteDrive - App",
@@ -65,7 +65,7 @@
   },
   "link.item.label.CiteDrive": {
     "message": "CiteDrive",
-    "description": "The label of footer link with label=CiteDrive linking to https://citedrive.com/"
+    "description": "The label of footer link with label=CiteDrive linking to https://www.citedrive.com/"
   },
   "link.item.label.Login (App)": {
     "message": "Login (App)",

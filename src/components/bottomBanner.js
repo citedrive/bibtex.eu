@@ -1,22 +1,21 @@
-import * as React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: sticky;
-
   width: 100%;
   bottom: 0;
   z-index: 999;
-  background: rgb(0, 204, 221);
   background: linear-gradient(
     344deg,
     rgba(0, 204, 221, 1) 0%,
     rgba(123, 101, 255, 1) 100%
   );
-  justify-content: space-between;
-  cursor: pointer;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.4rem 2rem;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
@@ -33,29 +32,40 @@ const Button = styled.button`
 
 const Letters = styled.div`
   color: #fff;
-  font-weight: 800;
 `;
 
-const BottomBanner = () => {
-  return (
-    <>
-      <Wrapper
-        onClick={() => {
-          window.open("https://citedrive.com/?via_bibtex.eu", "_blank");
-        }}
-      >
-        <Letters>
-          <p style={{ marginBottom: 0}}>
-          Are you looking for a simple online BibTeX manager?
-          </p>
-          <p style={{fontWeight: 400}}>
-          CiteDrive is a bibtex-based collaborative reference manager that integrates seamlessly with Overlearf and RStudio. 
-          </p>
-        </Letters>
-        <Button>Sign up free</Button>
-      </Wrapper>
-    </>
-  );
-};
+const MainMessage = styled.p`
+  margin-bottom: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+`;
+
+const HighlightedText = styled.span`
+  text-decoration: underline;
+  text-decoration-color: #ff6347;  /* You can change this color */
+`;
+
+const SecondaryMessage = styled.p`
+  font-weight: 400;
+`;
+
+const BottomBanner = () => (
+  <Wrapper
+    onClick={() => {
+      window.open("https://citedrive.com/?via_bibtex.eu", "_blank", "noopener,noreferrer");
+    }}
+    aria-label="Banner - Advertisement for CiteDrive"
+  >
+    <Letters>
+      <MainMessage>
+        Are you looking for a simple online <HighlightedText>BibTeX manager?</HighlightedText>
+      </MainMessage>
+      <SecondaryMessage>
+        CiteDrive is a bibtex-based collaborative reference manager that integrates seamlessly with Overleaf and RStudio.
+      </SecondaryMessage>
+    </Letters>
+    <Button>Sign up free</Button>
+  </Wrapper>
+);
 
 export default BottomBanner;

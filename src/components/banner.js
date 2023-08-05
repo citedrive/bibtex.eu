@@ -7,7 +7,7 @@ const Banner = () => {
     return (
     <>
        <div style={{cursor: "pointer", padding: 15}}  onClick={() => {
-            window.open("https://citedrive.com/?via_bibtex.eu", "_blank");
+            window.open("https://www.citedrive.com/?via_bibtex.eu", "_blank");
           }}><CiteDriveBanner ></CiteDriveBanner></div>
     </>
      );

@@ -3,7 +3,7 @@
 If you're looking for a way to manage your `BibTeX` references, you may be wondering how to create a `.BIB file`. In this article, we'll show you how to do it! We'll also provide some tips on how to use ".BIB" files effectively.
 
 :::tip
-[CiteDrive](https://citedrive.com/) is a web-based collaborative reference management tool built on BibTeX that auto-syncs with publishing systems such as [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) and [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) and does the formatting around your bib file for you.
+[CiteDrive](https://www.citedrive.com/) is a web-based collaborative reference management tool built on BibTeX that auto-syncs with publishing systems such as [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) and [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) and does the formatting around your bib file for you.
 :::
 
 ## Creating a bib file by hand

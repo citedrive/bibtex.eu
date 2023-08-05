@@ -13,7 +13,7 @@ function Footer() {
   const {copyright, links, logo, style} = footer;
   return (
     <>
-    <BottomBanner></BottomBanner>
+    <BottomBanner />
     <FooterLayout
       style={style}
       links={links && links.length > 0 && <FooterLinks links={links} />}

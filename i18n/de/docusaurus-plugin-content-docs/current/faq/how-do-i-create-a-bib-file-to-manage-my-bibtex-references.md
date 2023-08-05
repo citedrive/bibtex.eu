@@ -3,7 +3,7 @@
 Wenn Sie nach einer Möglichkeit suchen, Ihre "BibTeX"-Referenzen zu verwalten, fragen Sie sich vielleicht, wie Sie eine "BIB-Datei" erstellen können. In diesem Artikel zeigen wir Ihnen, wie das geht! Wir geben Ihnen auch einige Tipps, wie Sie ".BIB"-Dateien effektiv nutzen können.
 
 :::tip
-[CiteDrive](https://citedrive.com/) ist ein webbasiertes kollaboratives Referenzmanagement-Tool, das auf BibTeX aufbaut und sich automatisch mit Publikationssystemen wie [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) und [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) synchronisiert und die Formatierung Ihrer Bib-Datei für Sie übernimmt.
+[CiteDrive](https://www.citedrive.com/) ist ein webbasiertes kollaboratives Referenzmanagement-Tool, das auf BibTeX aufbaut und sich automatisch mit Publikationssystemen wie [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) und [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) synchronisiert und die Formatierung Ihrer Bib-Datei für Sie übernimmt.
 :::
 
 ## Erstellen einer Bib-Datei von Hand

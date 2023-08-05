@@ -31,7 +31,7 @@ Finally, the `\addbibresource` command tells Biblatex where to find your bibliog
 
 ## Step 2: Create Your Bibliography
 
-Before you start using Biblatex in Overleaf, you'll need to have a bibliographic reference database, commonly known as a bib-file, that contains all the details of your sources. Creating a bib-file can be a time-consuming and tedious task, but with the help of [CiteDrive, a collaborative web-based research management tool](https://citedrive.com/), you can easily create, manage, and share your bibliographic references.
+Before you start using Biblatex in Overleaf, you'll need to have a bibliographic reference database, commonly known as a bib-file, that contains all the details of your sources. Creating a bib-file can be a time-consuming and tedious task, but with the help of [CiteDrive, a collaborative web-based research management tool](https://www.citedrive.com/), you can easily create, manage, and share your bibliographic references.
 
 CiteDrive is built on BibTeX and fully supports Biblatex, making it a great choice for researchers and academics who want to take advantage of the power and flexibility of these tools. Additionally, CiteDrive connects seamlessly with Overleaf, so you can easily access and edit your bibliographic references right from within your Overleaf documents.
 
