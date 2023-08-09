@@ -1,50 +1,46 @@
 ---
-title: Reference management with BibTeX -- A short guide
-description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
-sidebar_label: Using LaTeX (Quick start)
+title: Gestion bibliographique BibTeX - Un guide détaillé pour LaTeX
+description: "Apprenez comment utiliser efficacement BibTeX pour la gestion bibliographique avec LaTeX, de la création d'un fichier .bib à son intégration dans votre document LaTeX."
+sidebar_label: Gestion bibliographique avec LaTeX et BibTeX (Démarrage rapide)
 sidebar_position: 1
 slug: "/"
 ---
 
-# Reference management with BibTeX: A short guide
+# Gestion bibliographique BibTeX dans LaTeX
 
-**BibTeX** can be daunting to many newcomers because of all the specifics about LaTeX packages, citation styles, and formatting. Yet, many aspects are mostly unimportant, and the structure is usually always the same.
+Pour les débutants, **BibTeX** peut sembler complexe en raison de ses nombreuses spécificités et formats. Toutefois, ce guide offre une vue d'ensemble simplifiée et montre comment utiliser BibTeX efficacement avec LaTeX.
 
-And that is exactly what this little guide aims to accomplish: give you a basic set-up using an example, and show you how to use BibTeX from the ground up. In the future, we'll refer to document systems other than LaTeX, and details on this website, but for now, we'll stay focused on the basics.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bHD94qM0vyg" title="Lecteur vidéo YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Étape 1 : Création et remplissage d'un fichier .bib
 
-## Step 1: Create a .bib-file and create some entries.
+Pour commencer, créez un fichier `.bib`, par exemple `bibliography.bib`, et ajoutez des entrées BibTeX. Un exemple typique serait l'ajout d'une référence pour "Le Vieil Homme et la Mer" d'Ernest Hemingway :
 
-We begin by generating a .bib-file, such as `bibliography.bib`, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
-Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then the entry would look like this:
-
-```latex title="bibliography.bib"
+```latex
 @book{Hemingway1952,
-  title={The Old Man and the Sea},
+  title={Le Vieil Homme et la Mer},
   author={Hemingway, Ernest},
   year={1952},
   publisher={Charles Scribner's Sons}
 }
 ```
 
-If you break down the "anatomy" of this entry, you only have to look at the following three components to understand how each BibTeX entry is defined:
+Si vous décomposez "l'anatomie" de cette entrée, vous n'avez qu'à examiner les trois composants suivants pour comprendre comment chaque entrée BibTeX est définie :
 
-* **Entry-type**: With `@book` we define the type of reference, i.e. (and this example refers to itself) as a book. There are also `@article` for academic articles and others possible. BibTeX likes to specify which fields are optional and which are required to indicate them correctly in the literature.
-* **Entry fields**: in this example, these are `title`, `author`, `year`, and `publisher`. (Cf. [fields](./fields))
-* **citation-key**: This example is `Hemingway1952` and is used to indicate in-text citation in LaTeX, i.e., to refer to the source. Using the same example, we do this with `\cite{Hemingway1952}`. The citation key can be any string of characters - often as a combination of author, year, and a word from the title.
+- **Type d'entrée** : Avec `@book`, nous définissons le type de référence, c'est-à-dire (et cet exemple se réfère à lui-même) comme un livre. Il existe aussi `@article` pour les articles scientifiques, et bien d'autres. BibTeX a des règles spécifiques sur les champs qui sont optionnels et ceux qui sont nécessaires pour citer correctement la littérature.
+- **Champs de saisie** : Dans cet exemple, il s'agit de `title`, `author`, `year` et `publisher`. (Voir [Champs](/fields))
+- **Clé de citation** : Cet exemple utilise `Hemingway1952`, qui est utilisé dans LaTeX pour les citations dans le texte, c'est-à-dire pour référencer la source. En utilisant le même exemple, nous le faisons avec `\cite{Hemingway1952}`. La clé de citation peut être n'importe quelle chaîne, souvent une combinaison de l'auteur, de l'année et d'un mot du titre.
 
+## Étape 2 : Intégration dans un document LaTeX
 
+Pour utiliser vos références dans LaTeX, suivez l'exemple ci-dessous :
 
-## Step 2: Create a LaTeX document and connect
-
-Let's start by inserting our reference into a LaTeX document. You can copy and use the following example, a minimal basic framework sufficient to format the citation.
-
-```latex title="document.tex"
+```latex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
-\title{BibTeX references in \LaTeX}
-\author{John Smith}
+\title{Références BibTeX dans \LaTeX}
+\author{Jean Dupont}
 
 \begin{document}
 
@@ -58,17 +54,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dap
 
 \end{document}
 ```
-After compiling the LaTeX document, we will notice that the command `\cite{Hemingway1952}` is replaced by the reference given in the BibTeX file with this ID in the example `[1]`.
 
+Après avoir compilé le document LaTeX, vous constaterez que la commande `\cite{Hemingway1952}` est remplacée par la référence spécifiée dans le fichier BibTeX avec cet ID, par exemple `[1]`.
 
 ![BibTeX - LaTeX - Overleaf](@site/static/img/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
 
-The .bib file, which we have called `bibliography.bib`, is defined in `\bibliography{bibliography}` and the citation/bibliography style `\bibliographystyle{unsrt}`, where unsrt refers to the `.bst file,` in this case to `unsrt.bst`, which contains all the macros to format your references in style. You can use other styles like `apalike.bst` instead.  
+Le fichier .bib que nous avons nommé `bibliography.bib` est défini dans `\bibliography{bibliography}` et le style de citation/bibliographie est `\bibliographystyle{unsrt}`, où `unsrt` fait référence au fichier `.bst`, dans ce cas `unsrt.bst`, qui contient tous les macros pour formater vos références dans ce style. Vous pouvez également utiliser d'autres styles comme `apalike.bst`.
 
-## Reference managers
+## Recommandations pour les gestionnaires de références
 
-Formatting BibTeX files by hand can be tedious, which is why it is generally recommended to use a reference manager. Here are a few that are well suited for this:
+L'édition manuelle des fichiers BibTeX peut être fastidieuse. Voici quelques gestionnaires de références recommandés qui peuvent faciliter votre travail :
 
-* [CiteDrive](https://www.citedrive.com/) is a bibtex-driven, collaborative and web-based tool to manage your references and teams in projects. It offers a one-click export to Overleaf ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) as well as R Markdown ([*Cf. Medium post: Bibliography Management in R Markdown with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), keeping citations in sync.
-* [Zotero](https://www.zotero.org/) is a free, open-source bibliographic management software that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero is achieved with [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/) by retorque.
-* The free, open source software [JabRef](https://www.jabref.org/) is a BibTeX-supported reference manager that runs on Windows, Mac and Linux. It is based on Java and is maintained by JabRef e.V.
+- [CiteDrive](https://www.citedrive.com/) est un outil collaboratif basé sur le web et piloté par BibTeX.
+- [Zotero](https://www.zotero.org/) offre des fonctionnalités étendues et une bonne intégration avec BibTeX grâce à l'extension [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
+- [JabRef](https://www.jabref.org/) est un gestionnaire de références basé sur BibTeX qui fonctionne sur plusieurs plateformes.
