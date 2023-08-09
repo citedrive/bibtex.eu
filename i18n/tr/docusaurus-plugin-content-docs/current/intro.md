@@ -1,50 +1,46 @@
 ---
-title: Reference management with BibTeX -- A short guide
-description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
-sidebar_label: Using LaTeX (Quick start)
+title: BibTeX Kaynakça Yönetimi - LaTeX için Detaylı Kılavuz
+description: "LaTeX ile BibTeX'i kaynakça yönetiminde nasıl etkili bir şekilde kullanabileceğinizi öğrenin, .bib dosyası oluşturmaktan LaTeX belgenize entegrasyona kadar."
+sidebar_label: LaTeX ile BibTeX Kaynakça Yönetimi (Başlangıç Rehberi)
 sidebar_position: 1
 slug: "/"
 ---
 
-# Reference management with BibTeX: A short guide
+# LaTeX'te BibTeX Kaynakça Yönetimi
 
-**BibTeX** can be daunting to many newcomers because of all the specifics about LaTeX packages, citation styles, and formatting. Yet, many aspects are mostly unimportant, and the structure is usually always the same.
+Başlangıç için **BibTeX**, pek çok özelliği ve formatıyla zorlayıcı görünebilir. Ancak bu rehber, basit bir bakış açısı sunar ve BibTeX'i LaTeX ile nasıl etkili bir şekilde kullanabileceğinizi gösterir.
 
-And that is exactly what this little guide aims to accomplish: give you a basic set-up using an example, and show you how to use BibTeX from the ground up. In the future, we'll refer to document systems other than LaTeX, and details on this website, but for now, we'll stay focused on the basics.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bHD94qM0vyg" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Adım 1: .bib Dosyası Oluşturma ve Doldurma
 
-## Step 1: Create a .bib-file and create some entries.
+Başlamak için bir `.bib` dosyası oluşturun, örneğin `bibliography.bib`, ve BibTeX girdileri ekleyin. Tipik bir örnek, Ernest Hemingway'in "Yaşlı Adam ve Deniz" için bir referans eklemektir:
 
-We begin by generating a .bib-file, such as `bibliography.bib`, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
-Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then the entry would look like this:
-
-```latex title="bibliography.bib"
+```latex
 @book{Hemingway1952,
-  title={The Old Man and the Sea},
+  title={Yaşlı Adam ve Deniz},
   author={Hemingway, Ernest},
   year={1952},
   publisher={Charles Scribner's Sons}
 }
 ```
 
-If you break down the "anatomy" of this entry, you only have to look at the following three components to understand how each BibTeX entry is defined:
+Bu girişin "anatomisini" çözümlediğinizde, her BibTeX girişinin nasıl tanımlandığını anlamak için aşağıdaki üç bileşene bakmanız yeterlidir:
 
-* **Entry-type**: With `@book` we define the type of reference, i.e. (and this example refers to itself) as a book. There are also `@article` for academic articles and others possible. BibTeX likes to specify which fields are optional and which are required to indicate them correctly in the literature.
-* **Entry fields**: in this example, these are `title`, `author`, `year`, and `publisher`. (Cf. [fields](./fields))
-* **citation-key**: This example is `Hemingway1952` and is used to indicate in-text citation in LaTeX, i.e., to refer to the source. Using the same example, we do this with `\cite{Hemingway1952}`. The citation key can be any string of characters - often as a combination of author, year, and a word from the title.
+- **Giriş türü**: `@book` ile referansın türünü tanımlarız, bu durumda bir kitap.
+- **Giriş alanları**: bu örnekte `title`, `author`, `year` ve `publisher`.
+- **Alıntı anahtarı**: Bu örnek için `Hemingway1952` ve LaTeX'te metin içi alıntı yapmak, yani kaynağa atıfta bulunmak için kullanılır. Aynı örnek ile bunu `\cite{Hemingway1952}` ile yaparız.
 
+## Adım 2: Bir LaTeX Belgesine Entegrasyon
 
+Referanslarınızı LaTeX'te kullanmak için aşağıdaki örneği takip edin:
 
-## Step 2: Create a LaTeX document and connect
-
-Let's start by inserting our reference into a LaTeX document. You can copy and use the following example, a minimal basic framework sufficient to format the citation.
-
-```latex title="document.tex"
+```latex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
-\title{BibTeX references in \LaTeX}
-\author{John Smith}
+\title{BibTeX referansları \LaTeX'te}
+\author{John Yılmaz}
 
 \begin{document}
 
@@ -58,17 +54,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dap
 
 \end{document}
 ```
-After compiling the LaTeX document, we will notice that the command `\cite{Hemingway1952}` is replaced by the reference given in the BibTeX file with this ID in the example `[1]`.
 
+LaTeX belgesini derledikten sonra, `\cite{Hemingway1952}` komutunun BibTeX dosyasındaki bu kimlikle belirtilen referansla, bu örnekte `[1]` olarak değiştirildiğini göreceksiniz.
 
 ![BibTeX - LaTeX - Overleaf](@site/static/img/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
 
-The .bib file, which we have called `bibliography.bib`, is defined in `\bibliography{bibliography}` and the citation/bibliography style `\bibliographystyle{unsrt}`, where unsrt refers to the `.bst file,` in this case to `unsrt.bst`, which contains all the macros to format your references in style. You can use other styles like `apalike.bst` instead.  
+Adını `bibliography.bib` olarak koyduğumuz .bib dosyası `\bibliography{bibliography}`'da tanımlanmıştır ve alıntı/bibliyografi stili `\bibliographystyle{unsrt}`'dir.
 
-## Reference managers
+## Kaynakça Yöneticisi Önerileri
 
-Formatting BibTeX files by hand can be tedious, which is why it is generally recommended to use a reference manager. Here are a few that are well suited for this:
+BibTeX dosyalarını manuel olarak düzenlemek zaman alabilir. İşinizi kolaylaştırabilecek bazı önerilen referans yöneticileri şunlardır:
 
-* [CiteDrive](https://www.citedrive.com/) is a bibtex-driven, collaborative and web-based tool to manage your references and teams in projects. It offers a one-click export to Overleaf ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) as well as R Markdown ([*Cf. Medium post: Bibliography Management in R Markdown with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), keeping citations in sync.
-* [Zotero](https://www.zotero.org/) is a free, open-source bibliographic management software that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero is achieved with [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/) by retorque.
-* The free, open source software [JabRef](https://www.jabref.org/) is a BibTeX-supported reference manager that runs on Windows, Mac and Linux. It is based on Java and is maintained by JabRef e.V.
+- [CiteDrive](https://www.citedrive.com/) BibTeX tabanlı, işbirlikçi ve web tabanlı bir araçtır.
+- [Zotero](https://www.zotero.org/) geniş özellikler sunar ve [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/) eklentisi ile BibTeX'e iyi bir entegrasyon sağlar.
+- [JabRef](https://www.jabref.org/) platformlar arası çalışabilen BibTeX tabanlı bir referans yöneticisidir.
