@@ -1,54 +1,46 @@
 ---
-title: Reference management with BibTeX -- A short guide
-description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
-sidebar_label: Using LaTeX (Quick start)
+title: BibTeX Literární správa - Podrobný průvodce pro LaTeX
+description: "Naučte se, jak efektivně využívat BibTeX pro literární správu v LaTeXu, od vytváření souboru .bib až po jeho integraci do vašeho dokumentu v LaTeXu."
+sidebar_label: LaTeX Literární správa s BibTeX (Rychlý start)
 sidebar_position: 1
 slug: "/"
 ---
 
-# Reference management with BibTeX: A short guide
+# BibTeX Literární správa v LaTeXu
 
-:::note
-Tato stránka je v současné době k dispozici pouze v angličtině, ale velmi bychom potřebovali vaši pomoc s jejím překladem do vašeho jazyka! Pokud máte zájem, podívejte se na naše úložiště GitHub, kde najdete další informace o tom, jak přispět.
-:::
+Pro začátečníky může **BibTeX** kvůli svým mnoha specifikům a formátům vypadat náročně. Tento průvodce vám však nabízí zjednodušený přehled a ukazuje, jak efektivně využívat BibTeX v LaTeXu.
 
-**BibTeX** can be daunting to many newcomers because of all the specifics about LaTeX packages, citation styles, and formatting. Yet, many aspects are mostly unimportant, and the structure is usually always the same.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bHD94qM0vyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-And that is exactly what this little guide aims to accomplish: give you a basic set-up using an example, and show you how to use BibTeX from the ground up. In the future, we'll refer to document systems other than LaTeX, and details on this website, but for now, we'll stay focused on the basics.
+## Krok 1: Vytvoření a naplnění .bib souboru
 
+Pro začátek vytvořte soubor `.bib`, např. `bibliography.bib`, a přidejte do něj BibTeX záznamy. Typický příklad je přidání reference pro "Stařec a moře" od Ernesta Hemingwaye:
 
-## Step 1: Create a .bib-file and create some entries.
-
-We begin by generating a .bib-file, such as `bibliography.bib`, which is then filled with BibTeX entries. A BibTeX entry is written in the following format and represents each literature source (book, essay, etc.) with the information required for citation and inclusion in the bibliography.
-Let's say we want to cite the book "The Old Man and the Sea" by Ernest Hemingway, then the entry would look like this:
-
-```latex title="bibliography.bib"
+```latex
 @book{Hemingway1952,
-  title={The Old Man and the Sea},
+  title={Stařec a moře},
   author={Hemingway, Ernest},
   year={1952},
   publisher={Charles Scribner's Sons}
 }
 ```
 
-If you break down the "anatomy" of this entry, you only have to look at the following three components to understand how each BibTeX entry is defined:
+Pokud rozložíte "anatomii" tohoto záznamu, stačí se podívat na následující tři komponenty, abyste pochopili, jak je definován každý BibTeX záznam:
 
-* **Entry-type**: With `@book` we define the type of reference, i.e. (and this example refers to itself) as a book. There are also `@article` for academic articles and others possible. BibTeX likes to specify which fields are optional and which are required to indicate them correctly in the literature.
-* **Entry fields**: in this example, these are `title`, `author`, `year`, and `publisher`. (Cf. [fields](./fields))
-* **citation-key**: This example is `Hemingway1952` and is used to indicate in-text citation in LaTeX, i.e., to refer to the source. Using the same example, we do this with `\cite{Hemingway1952}`. The citation key can be any string of characters - often as a combination of author, year, and a word from the title.
+- **Typ záznamu**: S `@book` definujeme druh reference, tj. v tomto případě knihu. Existují také `@article` pro vědecké články a další. BibTeX přesně stanovuje, která pole jsou volitelná a která jsou povinná pro správné citování literatury.
+- **Vstupní pole**: V tomto případě jsou to `title`, `author`, `year` a `publisher`. (Viz [Fields](/fields))
+- **Klíč citace**: V tomto příkladu je to `Hemingway1952` a je používán v LaTeXu pro citace v textu, tj. pro odkazování na zdroj. S tímto příkladem to děláme pomocí `\cite{Hemingway1952}`. Klíč citace může být jakýkoli řetězec - často kombinace autora, roku a slova z názvu.
 
+## Krok 2: Integrace do dokumentu v LaTeXu
 
+Chcete-li v LaTeXu využívat své reference, postupujte podle následujícího příkladu:
 
-## Step 2: Create a LaTeX document and connect
-
-Let's start by inserting our reference into a LaTeX document. You can copy and use the following example, a minimal basic framework sufficient to format the citation.
-
-```latex title="document.tex"
+```latex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
-\title{BibTeX references in \LaTeX}
-\author{John Smith}
+\title{BibTeX reference v \LaTeX}
+\author{Jan Novák}
 
 \begin{document}
 
@@ -62,17 +54,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dap
 
 \end{document}
 ```
-After compiling the LaTeX document, we will notice that the command `\cite{Hemingway1952}` is replaced by the reference given in the BibTeX file with this ID in the example `[1]`.
 
+Po kompilaci dokumentu v LaTeXu zjistíme, že příkaz `\cite{Hemingway1952}` byl nahrazen referencí uvedenou v souboru BibTeX s touto ID, v tomto příkladu `[1]`.
 
 ![BibTeX - LaTeX - Overleaf](@site/static/img/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
 
-The .bib file, which we have called `bibliography.bib`, is defined in `\bibliography{bibliography}` and the citation/bibliography style `\bibliographystyle{unsrt}`, where unsrt refers to the `.bst file,` in this case to `unsrt.bst`, which contains all the macros to format your references in style. You can use other styles like `apalike.bst` instead.  
+Soubor .bib, který jsme pojmenovali `bibliography.bib`, je definován v `\bibliography{bibliography}` a styl citace/bibliografie je `\bibliographystyle{unsrt}`, kde `unsrt` se odkazuje na `.bst` soubor, v tomto případě `unsrt.bst`, který obsahuje všechny makra pro formátování vašich referencí v daném stylu. Můžete také použít jiné styly, např. `apalike.bst`.
 
-## Reference managers
+## Doporučení pro správce referencí
 
-Formatting BibTeX files by hand can be tedious, which is why it is generally recommended to use a reference manager. Here are a few that are well suited for this:
+Ruční úprava BibTeX souborů může být časově náročná. Zde je několik doporučených správců referencí, které vám mohou usnadnit práci:
 
-* [CiteDrive](https://www.citedrive.com/) is a bibtex-driven, collaborative and web-based tool to manage your references and teams in projects. It offers a one-click export to Overleaf ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) as well as R Markdown ([*Cf. Medium post: Bibliography Management in R Markdown with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), keeping citations in sync.
-* [Zotero](https://www.zotero.org/) is a free, open-source bibliographic management software that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero is achieved with [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/) by retorque.
-* The free, open source software [JabRef](https://www.jabref.org/) is a BibTeX-supported reference manager that runs on Windows, Mac and Linux. It is based on Java and is maintained by JabRef e.V.
+- [CiteDrive](https://www.citedrive.com/) je nástroj řízený BibTeXem, který je kolaborativní a webový.
+- [Zotero](https://www.zotero.org/) nabízí rozsáhlé funkce a dobrou integraci s BibTeXem prostřednictvím doplňku [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
+- [JabRef](https://www.jabref.org/) je správce referencí založený na BibTeXu, který funguje napříč platformami.
