@@ -1,25 +1,23 @@
 ---
-title: Literaturverwaltung mit BibTeX -- Ein kurzer Leitfaden
-description: "BibTeX ist eine Software zur Verwaltung von Referenzen, mit der Sie Ihre Referenzen in einem einfachen, benutzerfreundlichen Format speichern und organisieren können."
-sidebar_label: Bei der verwendung von LaTeX (Schnellstart)
+title: BibTeX Literaturverwaltung - Ein detaillierter Leitfaden für LaTeX
+description: "Lernen Sie, wie Sie BibTeX effektiv zur Literaturverwaltung mit LaTeX nutzen können, von der Erstellung einer .bib-Datei bis zur Integration in Ihr LaTeX-Dokument."
+sidebar_label: LaTeX Literaturverwaltung mit BibTeX (Schnellstart)
 sidebar_position: 1
 slug: "/"
 ---
 
-# Literaturverwaltung mit BibTeX
+# BibTeX Literaturverwaltung in LaTeX
 
-**BibTeX** kann für viele Neulinge entmutigend sein, weil es so viele Besonderheiten bei LaTeX-Paketen, Zitierweisen und Formatierungen gibt. Dennoch sind viele Aspekte meist unwichtig, und die Struktur ist in der Regel immer die gleiche.
+Für Einsteiger kann **BibTeX** aufgrund seiner vielen Besonderheiten und Formate herausfordernd erscheinen. Dieser Leitfaden bietet jedoch einen vereinfachten Überblick und zeigt, wie Sie BibTeX effizient mit LaTeX nutzen können.
 
-Und genau das ist das Ziel dieses kleinen Leitfadens: Er soll Dir einen grundlegenden Aufbau anhand eines Beispiels vermitteln und Dir zeigen, wie Du BibTeX von Grund auf verwenden kannst. In Zukunft werden wir auch auf andere Dokumentensysteme als LaTeX und auf Details auf dieser Website eingehen, aber vorerst werden wir uns auf die Grundlagen beschränken.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bHD94qM0vyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Schritt 1: Erstelle eine .bib-Datei und fülle sie mit Einträgen.
+## Schritt 1: Erstellung und Befüllung einer .bib-Datei
 
-
-Wir erzeugen zunächst eine .bib-Datei, z. B. `bibliography.bib`, die dann mit BibTeX-Einträgen gefüllt wird. Ein BibTeX-Eintrag wird im nachfolgenden Format geschrieben und stellt jede Literaturquelle (Buch, Aufsatz usw.) mit den für die Zitierung und Aufnahme in die Bibliographie erforderlichen Informationen dar.
-Angenommen, wir wollen das Buch "The Old Man and the Sea" von Ernest Hemingway zitieren, dann würde der Eintrag wie folgt aussehen:
+Um zu starten, erstellen Sie eine `.bib`-Datei, z.B. `bibliography.bib`, und fügen Sie BibTeX-Einträge hinzu. Ein typisches Beispiel ist das Hinzufügen einer Referenz für "The Old Man and the Sea" von Ernest Hemingway:
 
 ```latex
-@book{Hemingway1952,ur
+@book{Hemingway1952,
   title={The Old Man and the Sea},
   author={Hemingway, Ernest},
   year={1952},
@@ -34,9 +32,9 @@ Wenn Sie die "Anatomie" dieses Eintrags aufschlüsseln, müssen Sie sich nur die
 * **Zitat-Schlüssel**: Dieses Beispiel lautet `Hemingway1952` und wird verwendet, um in LaTeX In-Text-Zitate anzugeben, d.h. um auf die Quelle zu verweisen. Mit dem gleichen Beispiel machen wir dies mit `\cite{Hemingway1952}`. Der Zitierschlüssel kann eine beliebige Zeichenkette sein - oft eine Kombination aus Autor, Jahr und einem Wort aus dem Titel.
 
 
-## Schritt 2: Ein LaTeX-Dokument erstellen und eine Verbindung herstellen
+## Schritt 2: Integration in ein LaTeX-Dokument
 
-Beginnen wir damit, unsere Referenz in ein LaTeX-Dokument einzufügen. Sie können das folgende Beispiel kopieren und verwenden, ein minimales Grundgerüst, das für die Formatierung des Zitats ausreicht.
+Um Ihre Referenzen in LaTeX zu nutzen, folgen Sie dem nachstehenden Beispiel:
 
 ```latex
 \documentclass{article}
@@ -65,10 +63,10 @@ Nach dem Kompilieren des LaTeX-Dokuments werden wir feststellen, dass der Befehl
 
 Die .bib-Datei, die wir `bibliography.bib` genannt haben, ist in `\bibliography{bibliography}` definiert und der Zitier-/Bibliographiestil `\bibliographystyle{unsrt}`, wobei sich unsrt auf die `.bst-Datei` bezieht, in diesem Fall auf `unsrt.bst`, die alle Makros zur Formatierung Ihrer Referenzen im Stil enthält. Sie können stattdessen auch andere Stile wie `apalike.bst` verwenden.
 
-## Referenz-Manager
+## Empfehlungen für Referenz-Manager
 
-Die Formatierung von BibTeX-Dateien von Hand kann mühsam sein, weshalb es sich im Allgemeinen empfiehlt, einen Referenzmanager zu verwenden. Hier sind einige, die dafür gut geeignet sind:
+Die manuelle Bearbeitung von BibTeX-Dateien kann zeitaufwändig sein. Hier sind einige empfohlene Referenz-Manager, die Ihre Arbeit erleichtern können:
 
-* [CiteDrive](https://www.citedrive.com/) ist ein Bibtex-gesteuertes, kollaboratives und webbasiertes Tool zur Verwaltung Ihrer Referenzen und Teams in Projekten. Es bietet einen Ein-Klick-Export zu Overleaf ([*Vgl. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) sowie R Markdown ([*Vgl. Medium post: Bibliography Management in R Markdown with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), um Zitate synchron zu halten.
-* [Zotero](https://www.zotero.org/) ist eine kostenlose, quelloffene Literaturverwaltungssoftware, die bibliografische Daten und zugehörige Forschungsmaterialien (wie PDF-Dateien) verwaltet. Die beste Leistung für BibTeX in Zotero wird mit [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/) von retorque erreicht.
-* Die freie, quelloffene Software [JabRef](https://www.jabref.org/) ist ein BibTeX-gestützter Referenzmanager, der auf Windows, Mac und Linux läuft. Er basiert auf Java und wird von JabRef e.V. gepflegt.
+- [CiteDrive](https://www.citedrive.com/) ist ein Bibtex-gesteuertes, kollaboratives und webbasiertes Tool.
+- [Zotero](https://www.zotero.org/) bietet umfangreiche Funktionen und eine gute Integration in BibTeX durch das Add-on [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
+- [JabRef](https://www.jabref.org/) ist ein BibTeX-basierter Referenzmanager, der plattformübergreifend funktioniert.
