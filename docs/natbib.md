@@ -76,7 +76,7 @@ For those inclined towards numeric citation styles, here's how you adapt natbib:
 \bibliographystyle{abbrvnat}
 ```
 
-![Output example of reference management using natbib with BibTeX in numeric style](https://chat.openai.com/@site/static/img/tutorial/output_example_bibtex_natbib_numeric.png)Output example of reference management using natbib with BibTeX in numeric style
+![Output example of reference management using natbib with BibTeX in numeric style](@site/static/img/tutorial/output_example_bibtex_natbib_numeric.png)Output example of reference management using natbib with BibTeX in numeric style
 
 ## Deep Dive: Exploring the `cite{*}` Commands in natbib
 

@@ -77,7 +77,7 @@ Pro ty, kteří mají sklon k číselným citačním stylům, zde je způsob, ja
 \bibliographystyle{abbrvnat}
 ```
 
-![Příklad výstupu správy referencí pomocí natbib s BibTeXem v číselném stylu](https://chat.openai.com/@site/static/img/tutorial/output_example_bibtex_natbib_numeric.png)Příklad výstupu správy referencí pomocí natbib s BibTeXem v číselném stylu
+![Příklad výstupu správy referencí pomocí natbib s BibTeXem v číselném stylu](@site/static/img/tutorial/output_example_bibtex_natbib_numeric.png)Příklad výstupu správy referencí pomocí natbib s BibTeXem v číselném stylu
 
 ## Detailní pohled: Prozkoumání příkazů `cite{*}` v natbib
 
