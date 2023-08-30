@@ -140,6 +140,10 @@ module.exports = {
               label: "GitHub",
               href: "https://github.com/citedrive/bibtex.eu",
             },
+            {
+              label: "Datanautes",
+              href: "https://datanautes.com",
+            },
           ],
         },
       ],
