@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3967],{4257:function(t){t.exports=JSON.parse('{"label":"Bookdown","permalink":"/tr/blog/tags/bookdown","allTagsPath":"/tr/blog/tags","count":1}')}}]);

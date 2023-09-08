@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2805],{6646:function(a){a.exports=JSON.parse('{"label":"Language Tool","permalink":"/ru/blog/tags/language-tool","allTagsPath":"/ru/blog/tags","count":1}')}}]);

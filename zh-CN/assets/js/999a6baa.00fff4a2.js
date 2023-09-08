@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[8100],{3019:function(e){e.exports=JSON.parse('{"label":"gesti\xf3n de citas","permalink":"/zh-CN/blog/tags/gestion-de-citas","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);

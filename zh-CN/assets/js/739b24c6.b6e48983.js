@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3130],{7477:l=>{l.exports=JSON.parse('{"label":"plotly","permalink":"/zh-CN/blog/tags/plotly","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);

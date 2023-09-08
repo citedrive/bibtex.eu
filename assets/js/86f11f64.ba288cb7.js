@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[4731],{6415:function(e){e.exports=JSON.parse('{"label":"Bibtex","permalink":"/blog/tags/bibtex","allTagsPath":"/blog/tags","count":7}')}}]);

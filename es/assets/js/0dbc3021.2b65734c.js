@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[6938],{9091:e=>{e.exports=JSON.parse('{"label":"gesti\xf3n de literatura","permalink":"/es/blog/tags/gestion-de-literatura","allTagsPath":"/es/blog/tags","count":1}')}}]);

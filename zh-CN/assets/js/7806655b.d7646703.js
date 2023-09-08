@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[2408],{5981:e=>{e.exports=JSON.parse('{"label":"Mendeley","permalink":"/zh-CN/blog/tags/mendeley","allTagsPath":"/zh-CN/blog/tags","count":2}')}}]);

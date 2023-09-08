@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[5878],{1710:function(a){a.exports=JSON.parse('{"label":"Obsidian","permalink":"/zh-CN/blog/tags/obsidian","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);

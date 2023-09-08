@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[4829],{9159:a=>{a.exports=JSON.parse('{"label":"academics.","permalink":"/pt/blog/tags/academics","allTagsPath":"/pt/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7956],{8060:e=>{e.exports=JSON.parse('{"label":"dynamic documents","permalink":"/zh-CN/blog/tags/dynamic-documents","allTagsPath":"/zh-CN/blog/tags","count":1}')}}]);

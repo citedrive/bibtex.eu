@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[6751],{7497:a=>{a.exports=JSON.parse('{"label":"bibliography management","permalink":"/ko/blog/tags/bibliography-management","allTagsPath":"/ko/blog/tags","count":1}')}}]);

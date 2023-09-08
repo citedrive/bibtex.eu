@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[1462],{7697:e=>{e.exports=JSON.parse('{"label":"Zotero","permalink":"/blog/tags/zotero","allTagsPath":"/blog/tags","count":2}')}}]);

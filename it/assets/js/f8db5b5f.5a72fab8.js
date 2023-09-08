@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[6513],{8933:function(e){e.exports=JSON.parse('{"permalink":"/it/blog/tags/la-te-x","page":1,"postsPerPage":10,"totalPages":1,"totalCount":8,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

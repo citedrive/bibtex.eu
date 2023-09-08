@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[8811],{4569:function(s){s.exports=JSON.parse('{"label":"music","permalink":"/tr/blog/tags/music","allTagsPath":"/tr/blog/tags","count":1}')}}]);

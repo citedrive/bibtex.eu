@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7997],{7339:function(e){e.exports=JSON.parse('{"label":"data science","permalink":"/es/blog/tags/data-science","allTagsPath":"/es/blog/tags","count":1}')}}]);

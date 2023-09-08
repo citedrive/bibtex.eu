@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3806],{8730:a=>{a.exports=JSON.parse('{"label":"APA citation","permalink":"/da/blog/tags/apa-citation","allTagsPath":"/da/blog/tags","count":1}')}}]);

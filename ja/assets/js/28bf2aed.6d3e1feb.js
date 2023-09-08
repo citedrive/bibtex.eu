@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[9063],{9545:a=>{a.exports=JSON.parse('{"label":"\u5f15\u7528\u7ba1\u7406","permalink":"/ja/blog/tags/\u5f15\u7528\u7ba1\u7406","allTagsPath":"/ja/blog/tags","count":1}')}}]);

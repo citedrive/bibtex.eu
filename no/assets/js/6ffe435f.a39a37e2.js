@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[5570],{5357:function(a){a.exports=JSON.parse('{"label":"data analysis","permalink":"/no/blog/tags/data-analysis","allTagsPath":"/no/blog/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[4511],{7380:function(t){t.exports=JSON.parse('{"label":"citationsh\xe5ndtering","permalink":"/da/blog/tags/citationshandtering","allTagsPath":"/da/blog/tags","count":1}')}}]);

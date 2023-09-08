@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3414],{1889:t=>{t.exports=JSON.parse('{"label":"Document Formatting","permalink":"/ru/blog/tags/document-formatting","allTagsPath":"/ru/blog/tags","count":1}')}}]);

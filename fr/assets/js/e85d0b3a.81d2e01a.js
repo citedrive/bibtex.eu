@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[1029],{4372:function(e){e.exports=JSON.parse('{"label":"\xe9criture acad\xe9mique","permalink":"/fr/blog/tags/ecriture-academique","allTagsPath":"/fr/blog/tags","count":1}')}}]);

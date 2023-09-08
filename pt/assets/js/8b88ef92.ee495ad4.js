@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7144],{2505:function(e){e.exports=JSON.parse('{"label":"Research management","permalink":"/pt/blog/tags/research-management","allTagsPath":"/pt/blog/tags","count":2}')}}]);

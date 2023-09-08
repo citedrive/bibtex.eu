@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7781],{9158:a=>{a.exports=JSON.parse('{"label":"Grammar Check","permalink":"/no/blog/tags/grammar-check","allTagsPath":"/no/blog/tags","count":1}')}}]);

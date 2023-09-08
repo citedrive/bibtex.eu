@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3269],{3957:function(e){e.exports=JSON.parse('{"label":"reproducible reports","permalink":"/pt/blog/tags/reproducible-reports","allTagsPath":"/pt/blog/tags","count":1}')}}]);

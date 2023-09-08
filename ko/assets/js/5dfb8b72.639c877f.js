@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[3497],{1477:e=>{e.exports=JSON.parse('{"label":"text editor","permalink":"/ko/blog/tags/text-editor","allTagsPath":"/ko/blog/tags","count":2}')}}]);

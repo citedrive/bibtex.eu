@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[8287],{1066:e=>{e.exports=JSON.parse('{"label":"ggvis","permalink":"/de/blog/tags/ggvis","allTagsPath":"/de/blog/tags","count":1}')}}]);

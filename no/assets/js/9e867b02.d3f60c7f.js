@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[9810],{601:function(e){e.exports=JSON.parse('{"label":"technical documents","permalink":"/no/blog/tags/technical-documents","allTagsPath":"/no/blog/tags","count":2}')}}]);

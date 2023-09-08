@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[5608],{55:function(t){t.exports=JSON.parse('{"label":"automated data extraction","permalink":"/tr/blog/tags/automated-data-extraction","allTagsPath":"/tr/blog/tags","count":1}')}}]);

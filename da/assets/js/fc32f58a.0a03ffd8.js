@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7977],{2917:function(a){a.exports=JSON.parse('{"label":"akademisk skrivning","permalink":"/da/blog/tags/akademisk-skrivning","allTagsPath":"/da/blog/tags","count":1}')}}]);

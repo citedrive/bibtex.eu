@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[4638],{8810:function(a){a.exports=JSON.parse('{"label":"scrittura accademica","permalink":"/it/blog/tags/scrittura-accademica","allTagsPath":"/it/blog/tags","count":1}')}}]);

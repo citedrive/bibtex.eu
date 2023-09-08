@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7584],{9720:function(s){s.exports=JSON.parse('{"label":"Writing Assistance","permalink":"/ru/blog/tags/writing-assistance","allTagsPath":"/ru/blog/tags","count":1}')}}]);
