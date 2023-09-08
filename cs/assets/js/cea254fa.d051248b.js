@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbibtex=self.webpackChunkbibtex||[]).push([[7844],{8402:a=>{a.exports=JSON.parse('{"label":"spr\xe1va literatury","permalink":"/cs/blog/tags/sprava-literatury","allTagsPath":"/cs/blog/tags","count":1}')}}]);
