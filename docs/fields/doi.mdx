@@ -8,27 +8,34 @@ sidebar_label: doi
 import CiteDrive from '@site/src/components/CiteDrive';
 ```
 
-# BibTeX field type: doi
+The `doi` field is an integral part of modern referencing, allowing for a seamless and permanent method to locate digital objects such as journal articles, research reports, and data sets in an online environment. Here, we delve deeper into the functionality and significance of the `doi` field in BibTeX, as well as provide guidance on its correct usage.
 
-``doi`` is used to store any DOI (Digital Object Identifier of the International DOI Foundation). DOI is a digital identifier that is intended to be permanent and unique. It is used, among other things, and mostly for articles from scientific journals. It can be used in ``article``, but more rarely also in ``chapter``, ``book``, or ``inproceedings`` / ``conference``. This field is optional in all cases.
+<CiteDrive />
 
-## Format
+### Overview
 
-```tex
-@article{Mueller2014The,
+A Digital Object Identifier (DOI) is a unique alphanumeric string assigned to a digital object, facilitating a persistent link to its location on the internet. As a standardized method for identifying electronic resources, the DOI remains stable even if the URL of the item changes, ensuring the longevity of references.
 
+The `doi` field in BibTeX serves to record this identifier, allowing for precise and permanent citations. While it is predominantly found in the `article` entry type, it can also be used in other types such as `book`, `chapter`, `inproceedings`, or `conference` entries, albeit less frequently. Regardless of the entry type, the `doi` field is optional.
+
+### Syntax and Structure
+
+To correctly incorporate a DOI into your BibTeX entry, adhere to the following format:
+
+```bibtex
+@entrytype{citationkey,
   ...
-
-  doi={ https://doi.org/xxxxx }
-
+  doi={https://doi.org/xxxxx},
   ...
-
 }
 ```
+The `doi` field encapsulates the full DOI URL, which typically starts with "[https://doi.org/](https://doi.org/)" followed by a unique identifier string.
 
-## Example
+### Example
 
-```tex
+Here's an exemplar BibTeX entry that includes a DOI:
+
+```bibtex
 @article{steinbeck2003chemistry,
   title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
   author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
@@ -37,7 +44,22 @@ import CiteDrive from '@site/src/components/CiteDrive';
   number={2},
   pages={493--500},
   year={2003},
-  publisher={ACS Publications}
-  doi={https://doi.org/10.1021/ci025584y}
+  publisher={ACS Publications},
+  doi={https://doi.org/10.1021/ci025584y},
 }
 ```
+
+In this example, the `doi` field houses the permanent URL that leads directly to the referenced article.
+
+### Utilization Tips
+
+1. **Finding DOIs**: For scholarly articles, DOIs can often be found on the first page of the article or in the online database where the article is housed.
+2. **Cross-Referencing**: Utilize the `doi` field for cross-referencing in your paper, offering readers a direct route to the original source material.
+3. **Optional but Beneficial**: While the `doi` field is optional, including it enhances the reliability and traceability of your references.
+
+### Conclusion
+
+The inclusion of the `doi` field in your BibTeX entries represents best practice in scholarly writing, offering a steadfast link to the digital objects you reference. By adopting the DOI system, you promote the accessibility and permanence of scientific knowledge, supporting the global research community in their scholarly endeavors.
+
+As you build your bibliography, remember to capitalize on the capabilities of the `doi` field, fostering a richer, more reliable, and interconnected academic discourse.
+
