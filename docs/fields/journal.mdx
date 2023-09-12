@@ -8,14 +8,29 @@ sidebar_label: journal
 import CiteDrive from '@site/src/components/CiteDrive';
 ```
 
-# BibTeX field type: journal
+The `journal` field is utilized to specify the name of the journal where the article was published. This field is critical in differentiating articles from various publications and providing the correct context for the referenced work.
 
-The name of the journal in which the journal was published.
+<CiteDrive/>
 
+Here is a template to demonstrate how you can use the `journal` field in a `@article` entry:
 
-```tex
-
+```bibtex
 @article{ ... ,
- journal = {2007},
+ journal = {Name of the Journal},
+}
+
+```
+
+In the above format, replace "Name of the Journal" with the actual name of the journal where the article was published. It is important to enter this information accurately to ensure correct citations.
+
+For instance, the following is an example showcasing a correct use of the `journal` field:
+
+```bibtex
+@article{smith2023effects,
+ title = {The Effects of XYZ on ABC},
+ author = {Smith, John},
+ journal = {Journal of ABC Research},
+ year = {2023},
 }
 ```
+

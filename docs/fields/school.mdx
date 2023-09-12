@@ -8,17 +8,40 @@ sidebar_label: school
 import CiteDrive from '@site/src/components/CiteDrive';
 ```
 
-# BibTeX field type: school
+In BibTeX, the `school` field is utilized predominantly within `@phdthesis` or `@mastersthesis` entries. This field is used to indicate the educational institution where the thesis or dissertation was written. It is a mandatory field for both entry types, helping to provide detailed information about the origin of the scholarly work, which can be important for readers who may want to seek out more information or reference the work in their own research.
 
-`school` is specified when a `phdthesis` or `mastersthesis` is cited and is the educational institution where the student wrote the dissertation. This field is required in both entry types.
+<CiteDrive />
 
-```tex
-@phdthesis{key,
-  school={University of ...},
-}
+## Formatting Guidelines
 
+When entering the name of the school, it's advisable to use the full and official name of the institution to maintain a formal and standardized format in your references. Avoid using abbreviations unless they are widely recognized and accepted.
 
-@mastersthesis{key,
-  series={University of ...},
+## Examples
+
+Here are examples of how to use the `school` field for both `phdthesis` and `mastersthesis` entries:
+
+### PhD Thesis
+
+```bibtex
+@phdthesis{doe2023,
+  author = {John Doe},
+  title = {Explorations in Quantum Computing},
+  year = {2023},
+  school = {Massachusetts Institute of Technology},
 }
 ```
+
+### Masters Thesis
+
+```bibtex
+@mastersthesis{smith2023,
+  author = {Sarah Smith},
+  title = {A Comprehensive Study on Environmental Sustainability},
+  year = {2023},
+  school = {University of California, Berkeley},
+}
+```
+
+## Note
+
+In your example, you used the `series` field instead of the `school` field for the `mastersthesis` entry. However, the `school` field should be used for specifying the institution in both `phdthesis` and `mastersthesis` entries, as shown in the examples above.

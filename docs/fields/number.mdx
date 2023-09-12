@@ -8,13 +8,61 @@ sidebar_label: number
 import CiteDrive from '@site/src/components/CiteDrive';
 ```
 
-# BibTeX field type: number
+In BibTeX, the `number` field is used to specify the issue number of a journal, the number of a technical report, or other identifiers that are part of a larger series. This field helps to pinpoint the exact issue or edition of a series where the referenced work can be found, providing more precise information for locating the material.
 
-Usually the issue number (or similar identifier) of a journal, magazine or the number of technical report.
+<CiteDrive />
 
+This field is commonly used in conjunction with the `volume` field, especially for journal articles and periodicals. For a technical report, the `number` field would typically contain the report number assigned by the institution or organization that published the report.
 
-```tex
-@article{key,
-  number={ 3 },
+## Format
+
+The format for the `number` field is relatively straightforward. In the context of an article entry, it would appear as follows:
+
+```bibtex
+@article{citation_key,
+  ...
+  number={issue_number},
+  ...
+}
+
+```
+
+Here, "citation_key" represents a unique identifier for the entry, and "issue_number" represents the number of the journal issue, technical report, or other publication.
+
+## Examples
+
+Below are some examples showcasing the application of the `number` field in different contexts:
+
+### Example 1: Journal Article
+
+```bibtex
+@article{doe2023study,
+  author = {Doe, Jane},
+  title = {A Comprehensive Study on Quantum Computing},
+  journal = {Journal of Advanced Computing},
+  year = {2023},
+  volume = {29},
+  number = {3},
+  pages = {215-230},
+}
+
+```
+
+In this example, the `number` field specifies the third issue of the 29th volume of the "Journal of Advanced Computing".
+
+### Example 2: Technical Report
+
+```bibtex
+@techreport{smith2022analysis,
+  author = {Smith, John},
+  title = {An Analysis of Renewable Energy Trends},
+  institution = {Energy Research Institute},
+  year = {2022},
+  number = {TR-2022-45},
+  type = {Technical Report},
 }
 ```
+
+In this case, the `number` field is used to indicate the specific report number assigned by the "Energy Research Institute".
+
+Utilizing the `number` field accurately can facilitate the reader in finding the source material more easily and verifying the cited information. It's an essential detail in scholarly writing and research documentation.
