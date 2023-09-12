@@ -10,8 +10,6 @@ authors:
 tags: [biblatex, bibtex, music]
 ---
 
-# How to cite music in bibtex?
-
 To cite music in BibTeX, you can use the `@misc` entry type and include the following fields:
 
 -   `author`: The composer or artist who created the music.
@@ -21,9 +19,19 @@ To cite music in BibTeX, you can use the `@misc` entry type and include the foll
 
 Here is an example of how you might cite a piece of music in BibTeX:
 
-Copy code
+```mdx-code-block
+import CiteDrive from '@site/src/components/CiteDrive';
+```
+<CiteDrive /> 
 
-`@misc{beethoven_symphony_2018,   author = {Beethoven, Ludwig van},   title = {Symphony No. 5 in C Minor},   howpublished = {CD},   year = {2018} }`
+```bibtex
+@misc{beethoven_symphony_2018,
+	title        = {Symphony No. 5 in C Minor},
+	author       = {Beethoven, Ludwig van},
+	year         = 2018,
+	howpublished = {CD}
+}
+```
 
 If you are citing a specific recording of a piece of music, you may want to use the `@music` entry type instead of `@misc`. This entry type includes additional fields such as `performer` and `publisher` that you can use to provide more specific information about the recording.
 
