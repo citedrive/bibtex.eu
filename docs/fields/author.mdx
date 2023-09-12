@@ -4,83 +4,82 @@ title: "BibTeX field type: author"
 sidebar_label: author
 ---
 
-# BibTeX field type: author
+```mdx-code-block
+import CiteDrive from '@site/src/components/CiteDrive';
+```
 
-In the ``author``-field, you can specify all contributors to the work you want to cite. BibTeX has several ways of specifying author names but expects in all cases a consistent and exact arrangement so that inaccurate information could lead to the unwanted output of the author's name.
+In scholarly writing, accurately acknowledging the contributors to a work is fundamental. The `author` field in BibTeX allows you to specify all contributors to the work you are citing. It is imperative to ensure a consistent and precise arrangement of author names to avoid any misrepresentation or inaccurate citation output. Here, we explore various notations and conventions to specify author names in BibTeX effectively.
 
-**Notation: ``{Firstname Lastname}``**
+<CiteDrive />
 
-A natural indication such as ``{Firstname Lastname}`` is possible, but not vice versa, "Lastname Firstname."
+## Detailed Overview
 
-**Example, ``{Firstname Lastname}``**
+When specifying authors in BibTeX, you have multiple formats to choose from. These formats allow for the inclusion of first names, last names, and even suffixes, facilitating a detailed representation of each author's identity. Let's delve into the different notations that can be employed to accurately present author information.
 
-```tex
-@article{ (...),
+### Notation Formats
 
+#### Notation: `{Firstname Lastname}`
+
+The basic and straightforward way to note down an author is to use their first name followed by their last name. This is a widely accepted format but might not offer the control needed to distinguish clearly between first and last names, especially in cases of compound names.
+
+**Example**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {Isaac Newton},
   ...
-
-  author={Isaac Newton}
-
-  ...
-
 }
 ```
 
+#### Notation: `{Lastname, Firstname}`
 
-**Notation: ``{Lastname, Firstname}``**
-However, we recommend the following way ``{Lastname, Firstname}`` i.e., last name and first name separated by a comma. This way allows for more control to distinguish between the first and last name.
+A more refined approach involves using the last name followed by the first name, separated by a comma. This format is recommended as it provides a clearer distinction between the first and last names, avoiding any potential confusion.
 
-**Example, ``{Lastname, Firstname}``**
+**Example**:
 
-```tex
-@article{ (...),
-
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {Newton, Isaac},
   ...
-
-  author={Newton, Isaac}
-
-  ...
-
 }
 ```
 
+#### Notation: `{Lastname, Suffix, Firstname}`
 
-**Notation: ``{Lastname, Suffix, Firstname}``**
+In cases where there is a need to include a suffix (like Jr., Sr., III, etc.), this format comes in handy. It is important to maintain the order strictly to ensure accurate representation of the author's name.
 
-If you want to specify any suffix, for example, Junior, Senior, the 5th (Jr. Sr. V), do so in the following way strictly in this order, separating each component with a comma:
+**Example**:
 
-``{Lastname, Suffix, Firstname}``
-
-**Example, ``{Lastname, Suffix, Firstname}``**
-
-```tex
-@article{ (...),
-
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {King, Jr, Martin Luther},
   ...
-
-  author={King, Jr , Luther}
-
-  ...
-
 }
 ```
 
-**How to add multiple Authors in BibTeX?**
+### Including Multiple Authors
 
-You specify the individual authors in the manner described above. The separator, AND, divides multiple authors. So in this way:
-``{Lastname, Firstname AND Lastname, Firstname AND Lastname, Firstname AND ...}``
+When a work has multiple contributors, BibTeX accommodates this through the use of the `AND` separator. This separator is used to list multiple authors distinctly, adhering to the notation formats discussed above.
 
+**Example**:
 
-**Example, "How to add multiple Authors?""**
-
-```tex
-@article{ (...),
-
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {Fisher, James AND Clark, John},
   ...
-
-  author={Fisher, James AND Clark, John}
-
-  ...
-
 }
 ```
+
+## Conclusion
+
+Accurately noting author names in BibTeX is essential in maintaining the integrity of scholarly writing. It ensures that readers can correctly identify and attribute works to the respective authors. Being familiar with the various notations and guidelines is crucial in crafting a bibliography that is both accurate and professional.
+
+Remember, consistency is key. Once you choose a notation format, it should be consistently applied across all entries to maintain a cohesive and professional presentation.
