@@ -27,6 +27,8 @@ module.exports = {
         alt: "BibTeX Logo",
         src: "img/logo.svg",
         srcDark: "img/logo_dark.svg",
+        width: 32,
+        height: 32
       },
 
       items: [
