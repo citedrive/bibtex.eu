@@ -19,6 +19,13 @@ module.exports = {
     defaultLocale: "en",
     locales: ["en", "de", "cs", "es", "pt", "fr", "sv", "tr", "zh-CN", "da", "it", "ja", "ko", "no","ru"],
   },
+  scripts: [
+    {
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9078114372269384',
+      async: true,
+      crossorigin: 'anonymous',
+    }
+  ],
   themeConfig: {
     navbar: {
       title: "",
