@@ -4,6 +4,10 @@
 
 In order to use BibTeX in LaTeX, you need to know the following commands: `\bibliographystyle{<style name>}`, `\bibliography{bib-file}`, and `\cite{KEY}`. In this short guide post, we will discuss what each of these commands do and how to use them in your LaTeX documents.
 
+```mdx-code-block
+import CiteDrive from '@site/src/components/CiteDrive';
+```
+<CiteDrive /> 
 
 ## bibliographystyle
 The citation style is defined by `bibliographystyle{<style name>}`. BibTeX style files control the appearance of the bibliography and citations. BibTeX style files have a `.bst` extension and contain instructions in a stack-based programming language that controls the formatting of bibliographical entries. By default, LaTeX offers `plain`, `unsrt`, `alpha`, and `abbrv` as styles. natbib and jurabib are two LaTeX packages that provide extensive natural science and humanities additions, for example.

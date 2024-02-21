@@ -8,6 +8,11 @@ sidebar_label: crossref
 
 If you have several entries referring to the same `proceedings`, you can use `crossref` to specify fields common to several entries only once by defining `crossref = {citationkey}`. Where `citationkey` is the citation key of the cross-referenced entry.
 
+```mdx-code-block
+import CiteDrive from '@site/src/components/CiteDrive';
+```
+<CiteDrive /> 
+
 ```tex
 @inproceedings{...,
     crossref = {CITATIONKEY},
