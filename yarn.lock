@@ -68,7 +68,7 @@
   dependencies:
     prismjs "^1.29.0"
 
-"@astrojs/sitemap@^3.0.5":
+"@astrojs/sitemap@^3.0.5", "@astrojs/sitemap@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.1.1.tgz#2d0eb72d59f167f91067ff493f9b8cdf2be1cf20"
   integrity sha512-qPgdBIcDUaea98mTtLfi5z9oXZpzSjEn/kes70/Ex8FOZZ+DIHVKRYOLOtvy8p+FTXr/9oc7BjmIbTYmYLLJVg==
