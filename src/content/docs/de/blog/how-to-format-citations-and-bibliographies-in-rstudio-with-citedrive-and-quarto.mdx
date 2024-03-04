@@ -1,0 +1,61 @@
+---
+title: 'Formatierung von Zitaten und Bibliographien in RStudio mit CiteDrive und Quarto'
+tags: [citedrive, rstudio,quarto,rmarkdown]
+---
+
+Müssen Sie Zitate und ein Literaturverzeichnis für eine Forschungsarbeit in RStudio formatieren? Fällt es Ihnen schwer, den Überblick über alle Ihre Referenzen und Formatierungsanforderungen zu behalten? Keine Angst! CiteDrive und Quarto können Ihnen helfen. Dieser Blogbeitrag zeigt Ihnen, wie Sie mit beiden Tools schöne, korrekt formatierte Zitate und Bibliografien erstellen können.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive /> 
+
+## Los geht's
+
+Um Zitate und Bibliographien in RStudio mit CiteDrive und Quarto zu formatieren, folgen Sie diesen Schritten:
+
+
+### Schritt 1: Referenzen in Ihr Projekt einbinden
+
+Zunächst müssen Sie ein CiteDrive-Konto erstellen, indem Sie auf die Website gehen und die Schaltfläche "Sign Up" (Anmelden) anklicken. Wenn Sie Ihr Konto vervollständigt haben, können Sie ein "R-Markdown"-Projekt (*das funktioniert auch bei Quarto, keine Sorge*) erstellen; benennen Sie es einfach und [füllen Sie das Projekt mit Referenzen](https://citedrive.medium.com/adding-bibliographic-references-to-rstudio-using-citedrive-create-citations-in-r-markdown-or-9b1e1ab59cf6). Ihr Projekt könnte etwa so aussehen:
+
+![CiteDrive - Beispiel](@assets/images/tutorial/citedrive_project_example.png)
+
+### Schritt 2: Verbinden Sie Ihr Quarto-Dokument mit CiteDrive
+
+Verbinden wir nun Ihr neues CiteDrive mit Ihrem Quarto-Dokument. Klicken Sie dazu auf die Schaltfläche "bib". Daraufhin öffnet sich eine neue Registerkarte mit all Ihren Einträgen im BibTeX-Format. Kopieren Sie die URL aus der neuen Registerkarte und fügen Sie sie in den YAML-Teil Ihrer QMD-Datei ein.
+
+````md
+---
+bibliography: "https://api.citedrive.com/bib/514b115a-e8b7-4e14-a7c8-83e88337ad12/references.bib?x=eyJpZCI6ICI1MTRiFTE1YS1lOGI3LTRlMTQtYTdjOC04M2U4ODMzN2FkMTIiLCAidXNlciI6ICI5NzgiLCAic2lnbmF0dXJlIjogIjBkZDgzNGM1NDg2YzE2MTRhYTUzZDAyNmI1YjFhZjgxNTg3ODc4NDQ3Yzk1ODQ1ZWI2ZTA5UTQ5YTFlNDdlMGIifQ==.bib"
+---
+````
+
+Der folgende Clip zeigt den Ablauf bei Verwendung von R Markdown. Das Prinzip von Quarto ist jedoch das gleiche:
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/7ON96F0GD-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Schritt 3: Kopieren Sie die Zitierschlüssel.
+
+Sobald Ihre Referenzen importiert sind, können Sie sie in Ihr Quarto Dokument einfügen. Kehren Sie dazu zu Ihrem CiteDrive Projekt zurück und klicken Sie auf den Zitierknopf. CiteDrive kopiert dann den Zitierschlüssel in Ihre Zwischenablage.
+
+![CiteDrive - Beispiel](@assets/images/tutorial/citedrive_copy_citation.gif)
+
+Fügen Sie den Zitierschlüssel an der gewünschten Stelle in Ihrem Quarto-Dokument ein.
+
+![CiteDrive - Zitierschlüssel einfügen](@assets/images/tutorial/citedrive_paste_citation_rstudio.gif)
+
+
+Nachdem Sie den Schlüssel in den Abschnitt eingefügt haben, klicken Sie auf "Rendern". Das Zitat wird in dem von Ihnen gewünschten Stil ausgegeben, und die Referenz erscheint am Ende Ihres Dokuments.
+
+Das war's schon! CiteDrive ist das perfekte Werkzeug, um Ihre Bibliographie zu verwalten und Zitate in Quarto-Dokumente einzufügen. Testen Sie es jetzt und sehen Sie, wie viel Zeit Sie damit sparen können!
+
+## Zusätzliche Informationen
+
+### Quarto
+Quarto ist ein leistungsfähiges Werkzeug zur Erstellung von wissenschaftlichen Arbeiten, das automatisch Zitate und Bibliographien in verschiedenen Stilen erzeugen kann. Es unterstützt Bibliographiedateien in BibTeX und anderen Formaten, so dass Sie leicht den Überblick über Ihre Referenzen behalten können.
+
+
+### CiteDrive
+CiteDrive ist ein Tool zur Verwaltung von Referenzen, mit dem Sie Ihre bibliografischen Daten organisieren, einfach speichern und durchsuchen können. Organisieren Sie Ihre Teams und Referenzen in Projekten, zum Beispiel für eine eigene Quarto-Arbeit. CiteDrive hält Ihre Referenzen in Quarto automatisch auf dem neuesten Stand, wenn Sie oder einer Ihrer Mitarbeiter die bibliographischen Daten in Ihrem Projekt aktualisieren.
+
+Sie bevorzugen BibLaTeX? Kein Problem, CiteDrive ist zu 100 % BibTeX-fähig und bietet Freiheit bei den Feldern und Typen für jeden Eintrag, d.h. Sie können jedes BibTeX-basierte Paket oder eine Alternative wie BibLaTeX verwenden.

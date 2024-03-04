@@ -1,0 +1,17 @@
+---
+title: Verwendung von BibTeX-bezogenen Befehlen für LaTeX-Dokumente
+---
+
+
+Um BibTeX in LaTeX zu verwenden, müssen Sie die folgenden Befehle kennen: `\bibliographystyle{<Stilname>}`, `\bibliography{bib-Datei}` und `\cite{SCHLÜSSEL}`. In diesem kurzen Leitfaden werden wir besprechen, was jeder dieser Befehle bewirkt und wie Sie sie in Ihren LaTeX-Dokumenten verwenden können.
+
+## bibliographystyle
+Der Zitationsstil wird durch `bibliographystyle{<Stilname>}` definiert. BibTeX-Stildateien steuern das Erscheinungsbild des Literaturverzeichnisses und der Zitate. BibTeX-Stildateien haben die Erweiterung `.bst` und enthalten Anweisungen in einer auf Stapeln basierenden Programmiersprache, die die Formatierung bibliografischer Einträge steuert. Standardmäßig bietet LaTeX Stile wie `plain`, `unsrt`, `alpha` und `abbrv` an. Natbib und Jurabib sind zwei LaTeX-Pakete, die umfangreiche Ergänzungen für Naturwissenschaften bzw. Geisteswissenschaften bieten.
+
+## bibliography
+
+Das Literaturverzeichnis wird im Dokument durch den Befehl `\bibliography{bibfile}` erstellt, wenn der Dateiname der BibTeX-Datei mit Literaturangaben `bibfile.bib` lautet.
+
+## cite
+
+In einem LaTeX-Dokument wird der Befehl `\cite{SCHLÜSSEL}` durch die Zitation ersetzt, die in der BibTeX-Datei mit dieser ID angegeben ist, zum Beispiel `(Autor, Jahr)` in der endgültigen PDF-Datei.

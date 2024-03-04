@@ -1,0 +1,59 @@
+---
+import './style/props.css';
+import './style/reset.css';
+import './style/shiki.css';
+import './style/util.css';
+
+const {langu} = Astro.props;
+---
+
+
+<html
+lang={langu}
+>
+	<head>
+		<head>
+			<meta charset="utf-8"/>
+        </head>
+		<style>
+			html:not([data-has-toc]) {
+				--sl-mobile-toc-height: 0rem;
+			}
+			html:not([data-has-sidebar]) {
+				--sl-content-width: 67.5rem;
+			}
+			/* Add scroll padding to ensure anchor headings aren't obscured by nav */
+			html {
+				/* Additional padding is needed to account for the mobile TOC */
+				scroll-padding-top: calc(1.5rem + var(--sl-nav-height) + var(--sl-mobile-toc-height));
+			}
+			main {
+				padding-bottom: 3vh;
+			}
+			@media (min-width: 50em) {
+				[data-has-sidebar] {
+					--sl-content-inline-start: var(--sl-sidebar-width);
+				}
+			}
+			@media (min-width: 72em) {
+				html {
+					scroll-padding-top: calc(1.5rem + var(--sl-nav-height));
+				}
+			}
+		</style>
+	</head>
+	<body>
+		
+		<main class="main">
+		<slot />
+	</main>
+	</body>
+</html>
+
+<style>
+	.main{
+		max-width: 700px;
+		margin-left: auto;
+    margin-right: auto;
+	}
+</style>

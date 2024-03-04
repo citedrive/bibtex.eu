@@ -1,0 +1,144 @@
+---
+title: "Overleaf'te Kaynak Gösterme ve Kullanma: Araştırmacılar için Bir Kılavuz"
+tags: [citedrive, overleaf, latex, bibtex, biblatex,natbib]
+---
+
+Bir araştırma makalesi yazarken, iddialarınızı desteklemek için referanslar kullanmanız önemlidir. Kaynaklarınıza doğru şekilde atıfta bulunmak, sağlam bir argüman oluşturmanın ve intihalden kaçınmanın anahtarıdır. Bu kılavuz size CiteDrive kullanarak Overleaf'te kaynaklara nasıl atıfta bulunacağınızı gösterecektir. Ayrıca size çevrimiçi güvenilir kaynaklar bulmanız için ipuçları vereceğiz. Hadi başlayalım!
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive /> 
+
+## Adım 1: CiteDrive'ı Overleaf ile Bağlama
+
+Overleaf](https://www.overleaf.com/) adresinde henüz oturum açmadıysanız, şimdi yapmanız gerekir. Ardından, [CiteDrive](https://www.citedrive.com/) adresine gidin, bir Overleaf projesi oluşturun ve yeni projenize [add references](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) ekleyin. Projeniz şu şekilde görünebilir:
+
+![CiteDrive - Örnek](@assets/images/tutorial/citedrive_project_example.png)
+
+Bundan sonra, projenizin sol üst köşesindeki "bib "e tıklayın. Bu, Overleaf'iniz için kullanabileceğiniz dinamik BibTeX dosyasına yeni bir sekme açacak ve siz veya ekip arkadaşlarınız projenize referans eklediğinizde, güncellediğinizde veya sildiğinizde otomatik olarak güncellenecektir.
+
+
+
+Son olarak, Overleaf'e gidin, yeni bir dosya oluşturun, "Harici URL'den" seçeneğini seçin ve dinamik BibTeX'teki URL'yi "Dosyayı almak için URL" kısmına yapıştırın ve buraya *references.bib* adını verin.
+CiteDrive projeniz artık Overleaf'e bağlı! Overleaf'in en son durumu alması için CiteDrive projemizde değişiklik yaptığınızda yenilemeye tıklamanız gerektiğini unutmayın.
+
+![Overleaf'e dosya ekle](@assets/images/tutorial/export_bib_to_overleaf.png)
+
+## Adım 2: Overleaf'te bir TeX belgesi oluşturun
+
+Şimdi Overleaf için "document.tex" olarak adlandırabileceğimiz yeni bir tex dosyası oluşturalım, kaynakçayı, BibTeX dosyasını CiteDrive'dan `\bibliography{references}` ile tanımlayabiliriz. Peki hangi bibliyografya araçlarını kullanmalıyız? LaTeX/Overleaf'te bibliyografya yönetimi için birçok seçenek vardır: büyük olasılıkla natbib, bibtex ve biblatex. LaTeX'te bibliyografya yönetimi için BibTeX, formatın temelini oluşturan dayanak noktasıdır. Natbib ile BibTeX, metin içi alıntılar için daha fazla tasarım özgürlüğü sunan bir uzantı ile sağlanır ve biblatex, bibliyografyalar ve yerelleştirme seçenekleri için daha fazla referans türü, sıralama ve filtreleme seçeneği sunan BibTeX'in tam bir revizyonudur. BibteX en iyi bilinen program olsa da, BibLaTex sadece sağlam olmakla kalmaz, aynı zamanda yeni gelenler için en çok tavsiye edilen programdır. Referanslar ve listeler için atıf ve bibliyografik veriler, tıpkı CiteDrive'daki BibTeX dosyasında gördüğünüz gibi .bib-file olarak adlandırılan dosyada tutulur. Her zaman aynı formattadır:
+
+ ```latex
+ @article{smith201X,
+ 	title        = {An interesting article},
+ 	author       = {John Smith},
+ 	year         = {201X},
+ 	journal      = {Journal of Interesting Articles}
+ }
+ ```
+
+Burada `@article` kaynak türüdür, `title`, `author`, `year` ve `journal`, referans listelerinizde ve alıntılarınızda görüntülemek için kullanılan niteliklerdir ve son olarak, `smith201X`, özellikle cite(key) ile belgenizde referans vermek için kullanabileceğiniz benzersiz bir tanımlayıcıdır. CiteDrive biçim konusunda seçici değildir; seçtiğiniz bibliyografik paket için çalışmasını sağlayan herhangi bir alan ve giriş türü kabul edilebilir. CiteDrive'ın temel amacı bibliyografik verileri belge ve atıf stillerinden ayırmak olduğundan, tüm alternatifler CiteDrive tarafından desteklenir.
+
+
+ Sonuç olarak, başlamanız için aşağıda üç şablon sunuyoruz.
+
+ ### BibTeX ile başlama:
+
+ BibTeX ile başlamak istiyorsanız, aşağıdaki şablonu kullanın veya doğrudan Overleaf'e açın. BibTeX hakkında daha fazla bilgi için belgelere bakın.
+
+ ```latex title="document.tex"
+ \documentclass{article}
+ \usepackage[utf8]{inputenc}
+
+ \title{BibTeX references in \LaTeX}
+ \author{John Smith}
+
+ \begin{document}
+
+ \maketitle
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \bibliographystyle{unsrt}
+ \bibliography{references}
+
+ \end{document}
+ ```
+
+
+ ### natbib ile çalışmaya başlama:
+
+ ```latex
+ \documentclass{article}
+ \usepackage{natbib}
+ \bibliographystyle{apalike}
+ \title{A Short Guide to Reference Management using natbib with BibTeX}
+ \author{CiteDrive}
+ \date {January 1988}
+
+ \begin{document}
+
+ \maketitle
+ \textbf{Narrative citation:} \citet{Doe:1966} investigated the risks of incorrectly \\
+ recorded [...], which results in distortion.
+ \textbf{Parenthetical citation:} The risks of incorrect recording of [...] could lead to distortion
+ \citep{Doe:1966}.
+
+ \medskip
+
+ \bibliography{references}
+
+ \end{document}
+
+ ```
+
+
+
+
+
+ natbib hakkında daha fazla bilgi için lütfen buraya tıklayın.
+
+ ### BibLaTeX ile çalışmaya başlama:
+
+ ```latex
+ \documentclass{article}
+ \usepackage{biblatex}
+ \addbibresource{references.bib}
+
+ \begin{document}
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \printbibliography
+
+ \end{document}
+ ```
+
+
+
+ BibLaTeX hakkında daha fazla bilgi için lütfen buraya tıklayın.
+
+
+
+ ## Adım 3: Metin içi alıntılar
+
+
+
+ Tarayıcı uzantısı yüklüyse, metni seçip araç çubuğunuzdaki CiteDrive simgesine tıklayarak alıntılar oluşturabilirsiniz.
+
+
+
+ Ayrıca cite komutunu kullanarak referansları manuel olarak da gösterebilirsiniz. Örneğin, Smith'e (201X) atıfta bulunmak istiyorsanız, `\cite{smith201X}` komutunu kullanırsınız. Ya da overleaf'teki referans aramasını kullanın.
+
+
+
+ Kaynakça stilleri Overleaf'e önceden yüklenmiştir ve hangi paketi kullandığınıza bağlı olarak sonraki sayfalardaki referansları kullanabilirsiniz:
+
+
+
+ İşte bu kadar! Artık Overleaf'te referansları kullanmaya başlamak için ihtiyacınız olan her şeye sahip olmalısınız. Herhangi bir sorunuz veya geri bildiriminiz olursa lütfen hello@citedrive.com adresinden bize e-posta ile bildirin.
+
+
+
+ Mutlu TeXing'ler!

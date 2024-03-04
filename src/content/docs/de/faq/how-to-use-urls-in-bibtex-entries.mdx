@@ -1,0 +1,39 @@
+---
+title: Wie man URLs in BibTeX-Einträgen verwendet
+---
+
+Wenn Sie BibTeX verwenden, um Bibliographien für Ihre Forschungsarbeiten zu erstellen, haben Sie sich vielleicht gefragt, wie Sie URLs in Ihre Einträge einfügen können.
+
+Der Feldtyp URL wird in BibTeX noch nicht offiziell unterstützt, obwohl dies für Version 1.0 von Oren Patashnik geplant war. Trotzdem geht die Debatte über diese Version und ihre Absichten auf [Patashniks Papier von 2003](https://tug.org/TUGboat/tb24-1/patashnik.pdf) zurück, das allmählich durch das von Biber unterstützte biblatex ersetzt wird.
+
+Daher ist es wahrscheinlich, dass Sie eine der folgenden Umgehungen verwenden müssen, wenn Sie beispielsweise Websites zitieren:
+
+
+## Verwenden Sie den Feldtyp `note`:
+
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## Verwenden Sie den Feldtyp `howpublished`:
+
+```latex
+@misc{...,
+  note = "Erhältlich von \url{http://...}"
+}
+```
+
+## Verwenden Sie biblatex und seinen eingebauten URL-Feldtyp:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+
+Wenn Sie biblatex wählen, müssen Sie Biber als Backend anstelle von BibTeX verwenden. Wenn Sie mehr über biblatex und Biber wissen wollen, lesen Sie unsere Anleitung für den Einstieg.
+Wenn Sie Fragen oder Anmerkungen haben, lassen Sie es uns bitte wissen. Wir hoffen, dass dies hilfreich war!

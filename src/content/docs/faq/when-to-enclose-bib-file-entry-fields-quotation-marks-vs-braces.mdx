@@ -1,0 +1,37 @@
+---
+title: "When to Enclose .bib File Entry Fields: quotation marks vs. braces"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Do you ever wonder when to enclose your .bib file entry fields with quotes and when to enclose them with braces? Do they even matter? The answer is: it doesn't matter.
+Some people prefer to use "" simply for aesthetical reasons, and others prefer to use `{}`, arguing that it's preferable if you need to use a `"` character within a field.
+Note, that these are the only acceptable ways to enclose fields.
+
+
+<CiteDrive />
+
+## Examples
+
+### Enclosing fields with `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Use the date of access)]}
+}
+```
+
+### Enclosing fields with `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive brings reference management to Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+There is no right or wrong answer, as long as the information within the field is enclosed correctly. So why not experiment and see which method works best for you?

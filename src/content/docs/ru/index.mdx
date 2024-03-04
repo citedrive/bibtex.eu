@@ -1,0 +1,69 @@
+---
+title: Управление литературой с помощью BibTeX - Подробное руководство по LaTeX
+description: "Узнайте, как эффективно использовать BibTeX для управления литературой в LaTeX, начиная с создания файла .bib и заканчивая интеграцией в ваш документ LaTeX."
+sidebar:
+  label: Управление литературой в LaTeX с помощью BibTeX (Быстрый старт)
+---
+
+Для новичков **BibTeX** может показаться сложным из-за множества его особенностей и форматов. Однако это руководство предоставляет упрощенный обзор и показывает, как эффективно использовать BibTeX с LaTeX.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive /> 
+
+## Шаг 1: Создание и заполнение файла .bib
+
+Для начала создайте файл `.bib`, например, `bibliography.bib`, и добавьте записи BibTeX. Типичный пример - добавление ссылки на "Старика и море" Эрнеста Хемингуэя:
+
+```latex
+@book{Hemingway1952,
+  title={Старик и море},
+  author={Хемингуэй, Эрнест},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Разбирая "анатомию" этой записи, вы должны рассмотреть только три компонента, чтобы понять, как определена каждая запись BibTeX:
+
+- **Тип записи**: С помощью `@book` мы определяем тип ссылки, в этом случае книгу.
+- **Поля записи**: В этом примере это `title`, `author`, `year` и `publisher`.
+- **Ключ цитирования**: В этом примере это `Hemingway1952`, который используется для цитирования в тексте в LaTeX, чтобы ссылаться на источник. С этим ключом мы делаем это с помощью `\cite{Hemingway1952}`.
+
+## Шаг 2: Интеграция в документ LaTeX
+
+```latex
+Чтобы использовать свои ссылки в LaTeX, следуйте приведенному ниже примеру:
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Ссылки BibTeX в \LaTeX}
+\author{Иван Иванов}
+
+\begin{document}
+
+\maketitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{document}
+```
+
+После компиляции документа LaTeX вы увидите, что команда `\cite{Hemingway1952}` заменяется ссылкой, указанной в файле BibTeX с этим ID, например, `[1]`.
+
+![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+
+Файл .bib, который мы назвали `bibliography.bib`, определен в `\bibliography{bibliography}`, а стиль цитирования/библиографии - в `\bibliographystyle{unsrt}`.
+
+## Рекомендации по менеджерам ссылок
+
+Ручное редактирование файлов BibTeX может быть трудоемким. Вот несколько рекомендуемых менеджеров ссылок, которые могут упростить вашу работу:
+
+- [CiteDrive](https://www.citedrive.com/) - это веб-инструмент на базе BibTeX для совместной работы.
+- [Zotero](https://www.zotero.org/) предлагает обширные функции и хорошую интеграцию с BibTeX через дополнение [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
+- [JabRef](https://www.jabref.org/) - это менеджер ссылок на базе BibTeX, который работает на разных платформах.

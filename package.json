@@ -1,0 +1,18 @@
+{
+  "name": "capricious-chasm",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.21.1",
+    "astro": "^4.4.10",
+    "sharp": "^0.33.2",
+    "use-exit-intent": "^1.0.7"
+  }
+}
