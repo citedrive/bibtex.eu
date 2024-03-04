@@ -28,8 +28,9 @@ Veillez à remplacer "votrefichier" par le nom de votre fichier .bib.
 ## Étape 3 : Citer les références
 
 Pour citer une référence dans votre document, utilisez la commande ``cite{}` avec la clé qui correspond à la référence dans votre fichier .bib. Par exemple :
+
 ```latex
-Selon cite{smith2010}, cette méthode est efficace.
+Selon \cite{smith2010}, cette méthode est efficace.
 ```
 
 Cette commande créera une citation dans le texte qui comprendra le nom de l'auteur et l'année de publication, comme (Smith, 2010).
@@ -37,6 +38,7 @@ Cette commande créera une citation dans le texte qui comprendra le nom de l'aut
 ### Étape 4 : ajout d'une liste de références
 
 Pour ajouter une liste de références à votre document, utilisez la commande `bibliographystyle{}` pour spécifier le style de la bibliographie, suivie de la commande `bibliography{}` pour spécifier le fichier .bib :
+
 ```latex
 \bibliographystyle{apalike} 
 \bibliography{votrefichier.bib}
