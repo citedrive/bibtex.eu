@@ -1,0 +1,49 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+
+import { getCollection } from 'astro:content';
+const publishedBlogEntries = await getCollection('docs', ({ id }) => {
+    return id.startsWith(Astro.params.lang == undefined ? 'blog/': `${Astro.params.lang}/blog/`);
+});
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+
+import { languages } from "@utils/config.ts";
+
+
+export const getStaticPaths = () => Object.keys(languages).map((lang) => ({ params: { lang: lang === "en" ? undefined : lang   } }))
+
+
+const TAGS: Set<string> = new Set();
+
+for (let i = 0; i < publishedBlogEntries.length; i++) {
+  const entry = publishedBlogEntries[i];
+  const tags = entry.data.tags;
+
+  for (let j = 0; j < tags.length; j++) {
+    TAGS.add(tags[j]);
+  }
+}
+
+// Convert the set to an array if needed
+const uniqueTagsArray: string[] = Array.from(TAGS);
+
+console.log(uniqueTagsArray);
+
+---
+
+    <StarlightPage frontmatter={{ title: 'Blog' }}>
+
+<CardGrid>
+    {uniqueTagsArray.map(data => (
+          <LinkCard
+        href={"/" + data}
+        title={data}
+    />
+    ))}
+  
+</CardGrid>
+
+</StarlightPage>
+
