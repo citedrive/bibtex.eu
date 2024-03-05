@@ -8,7 +8,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Comprehensive BibTeX/BibLaTeX support',
 		SMALL_BANNER_LI_5: 'Save articles and websites directly from your browser',
 		SMALL_BANNER_LI_6: 'Search for new articles from a database of tens of millions of references',
-		SMALL_BANNER_BUTTON: 'Try out CiteDrive'
+		SMALL_BANNER_BUTTON: 'Try out CiteDrive',
+		SMALL_BANNER_VIDEO: '► Watch Demo'
 	},
 	de: {
 		SMALL_BANNER_H2:
@@ -20,7 +21,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_5: 'Artikel und Webseiten direkt aus Ihrem Browser speichern',
 		SMALL_BANNER_LI_6:
 			'Suche nach neuen Artikeln in einer Datenbank mit Zehnmillionen von Referenzen',
-		SMALL_BANNER_BUTTON: 'CiteDrive ausprobieren'
+		SMALL_BANNER_BUTTON: 'CiteDrive ausprobieren',
+		SMALL_BANNER_VIDEO: '► Demo ansehen'
 	},
 	cs: {
 		SMALL_BANNER_H2:
@@ -31,7 +33,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Komplexní podpora BibTeX/BibLaTeX',
 		SMALL_BANNER_LI_5: 'Ukládejte články a webové stránky přímo z vašeho prohlížeče',
 		SMALL_BANNER_LI_6: 'Vyhledávejte nové články v databázi desítek milionů referencí',
-		SMALL_BANNER_BUTTON: 'Vyzkoušejte CiteDrive'
+		SMALL_BANNER_BUTTON: 'Vyzkoušejte CiteDrive',
+		SMALL_BANNER_VIDEO: '► Sledovat ukázku'
 	},
 	es: {
 		SMALL_BANNER_H2:
@@ -43,7 +46,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_5: 'Guardar artículos y sitios web directamente desde su navegador',
 		SMALL_BANNER_LI_6:
 			'Buscar nuevos artículos en una base de datos con decenas de millones de referencias',
-		SMALL_BANNER_BUTTON: 'Pruebe CiteDrive'
+		SMALL_BANNER_BUTTON: 'Pruebe CiteDrive',
+		SMALL_BANNER_VIDEO: '► Ver demostración'
 	},
 	pt: {
 		SMALL_BANNER_H2:
@@ -55,7 +59,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_5: 'Salve artigos e sites diretamente do seu navegador',
 		SMALL_BANNER_LI_6:
 			'Pesquise novos artigos em um banco de dados com dezenas de milhões de referências',
-		SMALL_BANNER_BUTTON: 'Experimente o CiteDrive'
+		SMALL_BANNER_BUTTON: 'Experimente o CiteDrive',
+		SMALL_BANNER_VIDEO: '► Ver demonstração'
 	},
 	fr: {
 		SMALL_BANNER_H2:
@@ -68,7 +73,8 @@ export const SMALL_BANNER = {
 			'Enregistrez des articles et des sites web directement depuis votre navigateur',
 		SMALL_BANNER_LI_6:
 			'Recherchez de nouveaux articles dans une base de données de dizaines de millions de références',
-		SMALL_BANNER_BUTTON: 'Essayez CiteDrive'
+		SMALL_BANNER_BUTTON: 'Essayez CiteDrive',
+		SMALL_BANNER_VIDEO: '► Regarder la démo'
 	},
 	sv: {
 		SMALL_BANNER_H2:
@@ -79,7 +85,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Omfattande stöd för BibTeX/BibLaTeX',
 		SMALL_BANNER_LI_5: 'Spara artiklar och webbplatser direkt från din webbläsare',
 		SMALL_BANNER_LI_6: 'Sök efter nya artiklar i en databas med tiotals miljoner referenser',
-		SMALL_BANNER_BUTTON: 'Prova CiteDrive'
+		SMALL_BANNER_BUTTON: 'Prova CiteDrive',
+		SMALL_BANNER_VIDEO: '► Titta på demo'
 	},
 	tr: {
 		SMALL_BANNER_H2:
@@ -90,7 +97,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Kapsamlı BibTeX/BibLaTeX desteği',
 		SMALL_BANNER_LI_5: 'Makaleleri ve web sitelerini doğrudan tarayıcınızdan kaydedin',
 		SMALL_BANNER_LI_6: 'Milyonlarca referans içeren veritabanından yeni makaleler arayın',
-		SMALL_BANNER_BUTTON: "CiteDrive'ı Deneyin"
+		SMALL_BANNER_BUTTON: "CiteDrive'ı Deneyin",
+		SMALL_BANNER_VIDEO: '► Demo İzle'
 	},
 	'zh-cn': {
 		SMALL_BANNER_H2:
@@ -101,7 +109,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: '全面的BibTeX/BibLaTeX支持',
 		SMALL_BANNER_LI_5: '直接从您的浏览器保存文章和网站',
 		SMALL_BANNER_LI_6: '从包含数千万参考文献的数据库中搜索新文章',
-		SMALL_BANNER_BUTTON: '尝试CiteDrive'
+		SMALL_BANNER_BUTTON: '尝试CiteDrive',
+		SMALL_BANNER_VIDEO: '► 观看演示'
 	},
 	da: {
 		SMALL_BANNER_H2:
@@ -112,7 +121,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Omfattende BibTeX/BibLaTeX-understøttelse',
 		SMALL_BANNER_LI_5: 'Gem artikler og websteder direkte fra din browser',
 		SMALL_BANNER_LI_6: 'Søg efter nye artikler i en database med titusindvis af referencer',
-		SMALL_BANNER_BUTTON: 'Prøv CiteDrive'
+		SMALL_BANNER_BUTTON: 'Prøv CiteDrive',
+		SMALL_BANNER_VIDEO: '► Se demo'
 	},
 	it: {
 		SMALL_BANNER_H2:
@@ -123,7 +133,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Supporto completo per BibTeX/BibLaTeX',
 		SMALL_BANNER_LI_5: 'Salva articoli e siti web direttamente dal tuo browser',
 		SMALL_BANNER_LI_6: 'Cerca nuovi articoli in un database di decine di milioni di riferimenti',
-		'SMALL_BANNER_BUTT,ON': 'Prova CiteDrive'
+		SMALL_BANNER_BUTTON: 'Prova CiteDrive',
+		SMALL_BANNER_VIDEO: '► Guarda la demo'
 	},
 	ja: {
 		SMALL_BANNER_H2:
@@ -134,7 +145,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'BibTeX/BibLaTeXの包括的なサポート',
 		SMALL_BANNER_LI_5: 'ブラウザから直接記事とウェブサイトを保存',
 		SMALL_BANNER_LI_6: '数千万もの参照があるデータベースから新しい記事を検索',
-		SMALL_BANNER_BUTTON: 'CiteDriveを試す'
+		SMALL_BANNER_BUTTON: 'CiteDriveを試す',
+		SMALL_BANNER_VIDEO: '► デモを見る'
 	},
 	ko: {
 		SMALL_BANNER_H2:
@@ -145,7 +157,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'BibTeX/BibLaTeX에 대한 포괄적인 지원',
 		SMALL_BANNER_LI_5: '브라우저에서 직접 문서와 웹사이트 저장',
 		SMALL_BANNER_LI_6: '수천만 개의 참조가 있는 데이터베이스에서 새로운 기사 검색',
-		SMALL_BANNER_BUTTON: 'CiteDrive 사용해보기'
+		SMALL_BANNER_BUTTON: 'CiteDrive 사용해보기',
+		SMALL_BANNER_VIDEO: '► 데모 보기'
 	},
 	no: {
 		SMALL_BANNER_H2:
@@ -156,7 +169,8 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Omfattende støtte for BibTeX/BibLaTeX',
 		SMALL_BANNER_LI_5: 'Lagre artikler og nettsteder direkte fra nettleseren din',
 		SMALL_BANNER_LI_6: 'Søk etter nye artikler i en database med titalls millioner av referanser',
-		SMALL_BANNER_BUTTON: 'Prøv CiteDrive'
+		SMALL_BANNER_BUTTON: 'Prøv CiteDrive',
+		SMALL_BANNER_VIDEO: '► Se demo'
 	},
 	ru: {
 		SMALL_BANNER_H2:
@@ -167,6 +181,7 @@ export const SMALL_BANNER = {
 		SMALL_BANNER_LI_4: 'Полноценная поддержка BibTeX/BibLaTeX',
 		SMALL_BANNER_LI_5: 'Сохраняйте статьи и веб-сайты прямо из вашего браузера',
 		SMALL_BANNER_LI_6: 'Поиск новых статей в базе данных из десятков миллионов ссылок',
-		SMALL_BANNER_BUTTON: 'Попробовать CiteDrive'
+		SMALL_BANNER_BUTTON: 'Попробовать CiteDrive',
+		SMALL_BANNER_VIDEO: '► Смотреть демонстрацию'
 	}
 }

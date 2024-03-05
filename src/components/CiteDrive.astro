@@ -18,6 +18,7 @@ const t = useTranslations(lang)
 	</ul>
 
 	<a href=`https://www.citedrive.com/${lang}/` class="cta-button">{t('SMALL_BANNER_BUTTON')}</a>
+	<a href=`https://youtu.be/bHD94qM0vyg?si=Q6h3XDVqFzHx7kI8` class="cta-button-demo">{t('SMALL_BANNER_VIDEO')}</a>
 </div>
 
 <style>
@@ -64,6 +65,23 @@ const t = useTranslations(lang)
 		display: inline-block;
 		padding: 10px 20px;
 		border-radius: 25px;
+		background-color: #ffffff;
+		color: #521449!important;
+		text-decoration: none!important;
+		text-align: center;
+		border: 2px solid #fff;
+		margin-top: 20px;
+		transition: background-color 0.3s ease;
+	}
+
+	.cta-button:hover {
+		background-color: #d5d5d5;
+	}
+
+	.cta-button-demo {
+		display: inline-block;
+		padding: 10px 20px;
+		border-radius: 25px;
 		background-color: #9d208b;
 		color: white!important;
 		text-decoration: none!important;
@@ -73,9 +91,12 @@ const t = useTranslations(lang)
 		transition: background-color 0.3s ease;
 	}
 
-	.cta-button:hover {
+	.cta-button-demo:hover {
 		background-color: #824299;
 	}
+
+
+
 
 	.spanferkel {
 		text-decoration: underline 5px rgb(0, 255, 107);
