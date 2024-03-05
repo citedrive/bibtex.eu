@@ -1,7 +1,7 @@
 {
-  "name": "capricious-chasm",
+  "name": "bibtex.eu",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.2.3",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -12,8 +12,13 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.1.1",
     "@astrojs/starlight": "^0.21.1",
-    "astro": "^4.4.10",
-    "sharp": "^0.33.2",
+    "astro": "^4.3.5",
+    "sharp": "^0.32.5",
     "use-exit-intent": "^1.0.7"
-  }
+  },
+  
+    "trustedDependencies": [
+       "sharp"
+    ]
+  
 }
