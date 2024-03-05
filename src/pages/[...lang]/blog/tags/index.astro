@@ -12,9 +12,9 @@ import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { languages } from "@utils/config.ts";
 
 
-export const getStaticPaths = () => Object.keys(languages).map((lang) => ({ params: { lang: lang === "en" ? undefined : lang   } }))
 
 
+// define set to save all unique tags
 const TAGS: Set<string> = new Set();
 
 for (let i = 0; i < publishedBlogEntries.length; i++) {
@@ -26,24 +26,33 @@ for (let i = 0; i < publishedBlogEntries.length; i++) {
   }
 }
 
-// Convert the set to an array if needed
+function slugify(input: string): string {
+  return input
+    .toLowerCase()
+    .replace(/\s+/g, '-')        
+    .replace(/[^\w-]+/g, '')     
+    .replace(/--+/g, '-')        
+    .replace(/^-+|-+$/g, '');    
+}
+
+
+// Convert the set to an array: 
 const uniqueTagsArray: string[] = Array.from(TAGS);
 
-console.log(uniqueTagsArray);
+
+export const getStaticPaths = () => Object.keys(languages).map((lang) => ({ params: { lang: lang === "en" ? undefined : lang   } }))
 
 ---
 
-    <StarlightPage frontmatter={{ title: 'Blog' }}>
-
-<CardGrid>
-    {uniqueTagsArray.map(data => (
-          <LinkCard
-        href={"/" + data}
-        title={data}
-    />
-    ))}
-  
-</CardGrid>
-
+<StarlightPage frontmatter={{ title: 'Blog' }}>
+    <CardGrid>
+        {uniqueTagsArray.map(data => (
+            <LinkCard
+            href={slugify(data) + "/"}
+            title={data}
+        />
+        ))}
+    
+    </CardGrid>
 </StarlightPage>
 
