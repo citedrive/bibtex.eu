@@ -14,6 +14,5 @@ export const languages = {
 	ja: '日本語',
 	ko: '한국어',
 	no: 'Norsk',
-	ru: 'Русский',
-  ar: 'العربية'
+	ru: 'Русский'
 } as const
