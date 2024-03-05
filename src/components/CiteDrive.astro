@@ -1,0 +1,83 @@
+---
+import { getLangFromUrl, useTranslations } from '@locales/api'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<div class="styled-div">
+	<h2 set:html={t('SMALL_BANNER_H2')} />
+
+	<ul class="features-list">
+		<li>{t('SMALL_BANNER_LI_1')}</li>
+		<li>{t('SMALL_BANNER_LI_2')}</li>
+		<li>{t('SMALL_BANNER_LI_3')}</li>
+		<li>{t('SMALL_BANNER_LI_4')}</li>
+		<li>{t('SMALL_BANNER_LI_5')}</li>
+		<li>{t('SMALL_BANNER_LI_6')}</li>
+	</ul>
+
+	<a href=`https://www.citedrive.com/${lang}/` class="cta-button">{t('SMALL_BANNER_BUTTON')}</a>
+</div>
+
+<style>
+	.styled-div {
+		border: 2px solid white;
+		border-radius: 19px;
+		box-shadow: 2px 2px 5px rgb(0 0 0 / 17%);
+		padding: 20px;
+		background-image: linear-gradient(200deg, #560fcf 2.35%, #9d208b 100%);
+		font-family: Arial, sans-serif;
+		color: #fff;
+		/* margin-bottom: 2rem; */
+	}
+
+	.styled-div h2 {
+		/*text-align: center;*/
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	.features-list {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.features-list li {
+		position: relative;
+		padding-left: 25px;
+		margin-bottom: 10px;
+		list-style: none!important;
+	}
+
+	.features-list li:before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		color: #c0fdc0;
+	}
+
+	/* Call to action button styles */
+	.cta-button {
+		display: inline-block;
+		padding: 10px 20px;
+		border-radius: 25px;
+		background-color: #9d208b;
+		color: white!important;
+		text-decoration: none!important;
+		text-align: center;
+		border: 2px solid #fff;
+		margin-top: 20px;
+		transition: background-color 0.3s ease;
+	}
+
+	.cta-button:hover {
+		background-color: #824299;
+	}
+
+	.spanferkel {
+		text-decoration: underline 5px rgb(0, 255, 107);
+	}
+</style>

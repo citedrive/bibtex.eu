@@ -1,0 +1,63 @@
+---
+title: 'Come formattare citazioni e bibliografie in RStudio con CiteDrive e Quarto'
+tags: [citedrive, rstudio,quarto,rmarkdown]
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Dovete formattare citazioni e bibliografia per un lavoro di ricerca in RStudio? Avete difficoltà a tenere traccia di tutti i riferimenti e dei requisiti di formattazione? Non temete! CiteDrive e Quarto possono aiutarvi. Questo blog post vi mostrerà come utilizzare entrambi gli strumenti per creare citazioni e bibliografie belle e formattate correttamente.
+
+
+<CiteDrive /> 
+
+## Iniziare
+
+Per formattare citazioni e bibliografie in RStudio con CiteDrive e Quarto, seguite questi passaggi:
+
+
+### Passo 1: Includere i riferimenti nel progetto
+
+Per prima cosa, è necessario creare un account CiteDrive andando sul loro sito web e selezionando il pulsante "Sign Up". Il completamento dell'account vi consentirà di creare un progetto "R-Markdown" (*funziona anche per Quarto, non preoccupatevi*); basta dargli un nome e [riempire il progetto di riferimenti](https://citedrive.medium.com/adding-bibliographic-references-to-rstudio-using-citedrive-create-citations-in-r-markdown-or-9b1e1ab59cf6). Il vostro potrebbe avere un aspetto simile a questo:
+
+![CiteDrive - Esempio](@assets/images/tutorial/citedrive_project_example.png)
+
+### Passo 2: Collegare il documento Quarto a CiteDrive
+
+Ora colleghiamo il nuovo CiteDrive al documento di Quarto. Per farlo, fare clic sul pulsante "bib". Si aprirà una nuova scheda con tutte le voci in formato BibTeX. Copiare l'URL dalla nuova scheda e incollarlo nella parte YAML del file QMD.
+
+
+````md
+---
+bibliografia: "https://api.citedrive.com/bib/514b115a-e8b7-4e14-a7c8-83e88337ad12/references.bib?x=eyJpZCI6ICI1MTRiFTE1YS1lOGI3LTRlMTQtYTdjOC04M2U4ODMzN2FkMTIiLCAidXNlciI6ICI5NzgiLCAic2lnbmF0dXJlIjogIjBkZDgzNGM1NDg2YzE2MTRhYTUzZDAyNmI1YjFhZjgxNTg3ODc4NDQ3Yzk1ODQ1ZWI2ZTA5UTQ5YTFlNDdlMGIifQ==.bib"
+---
+````
+
+Il filmato seguente mostra il flusso quando si usa R Markdown. Tuttavia, il principio di Quarto è lo stesso:
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/7ON96F0GD-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Fase 3: Copiare le chiavi di citazione.
+
+Una volta importati i riferimenti, è possibile inserirli nel documento di Quarto. Per farlo, tornate al vostro progetto CiteDrive e a uno o più riferimenti che volete inserire nel vostro documento e fate clic sul pulsante cita. CiteDrive copierà la chiave di citazione negli appunti.
+
+![CiteDrive - Esempio](@assets/images/tutorial/citedrive_copy_citation.gif)
+
+Incollate la chiave di citazione nel passaggio necessario del vostro documento Quarto.
+
+![CiteDrive - Incolla chiave di citazione](@assets/images/tutorial/citedrive_paste_citation_rstudio.gif)
+
+
+Dopo aver inserito la chiave nella sezione, fare clic su "render". La citazione verrà prodotta nello stile desiderato e il riferimento apparirà alla fine del documento.
+
+È tutto! CiteDrive è lo strumento perfetto per aiutarvi a gestire la vostra bibliografia e a inserire citazioni nei documenti di Quarto. Provatelo subito e vedrete quanto tempo vi farà risparmiare!
+
+## Informazioni aggiuntive
+
+### Quarto
+Quarto è un potente strumento di scrittura per la ricerca che può generare automaticamente citazioni e bibliografie in vari stili. Supporta file di bibliografia in BibTeX e altri formati, rendendo più facile tenere traccia dei vostri riferimenti.
+
+
+### CiteDrive
+CiteDrive è uno strumento di gestione delle referenze che consente di organizzare, archiviare facilmente e ricercare i dati bibliografici. Organizzate i vostri gruppi di lavoro e i vostri riferimenti in progetti, ad esempio per un articolo dedicato a Quarto. CiteDrive mantiene automaticamente aggiornati i vostri riferimenti in Quarto ogni volta che voi o uno dei vostri collaboratori aggiornate i dati bibliografici del vostro progetto.
+
+Preferite BibLaTeX? Nessun problema, CiteDrive è al 100% compatibile con BibTeX e offre libertà nei campi e nei tipi per ogni voce, il che significa che è possibile utilizzare qualsiasi pacchetto o alternativa basata su BibTeX, come BibLaTeX.

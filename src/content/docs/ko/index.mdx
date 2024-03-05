@@ -1,0 +1,70 @@
+---
+title: BibTeX 문헌 관리 - LaTeX를 위한 자세한 안내서
+description: "LaTeX와 함께 BibTeX를 효과적으로 사용하는 방법을 배우세요. .bib 파일 생성에서 LaTeX 문서와의 통합까지."
+sidebar:
+  label: LaTeX와 BibTeX을 사용한 문헌 관리 (퀵 스타트)
+---
+
+초보자들에게 **BibTeX**는 그 많은 특징과 형식으로 인해 도전적으로 느껴질 수 있습니다. 그러나 이 가이드는 단순화된 개요를 제공하며 LaTeX에서 BibTeX를 어떻게 효과적으로 사용할 수 있는지 보여줍니다.
+
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive /> 
+
+## 단계 1: .bib 파일 생성 및 채우기
+
+시작하려면 `.bib` 파일, 예를 들면 `bibliography.bib`를 생성하고 BibTeX 항목을 추가합니다. 전형적인 예로는 Ernest Hemingway의 "The Old Man and the Sea" 참조를 추가하는 것이 있습니다.
+
+```latex
+@book{Hemingway1952,
+  title={물고기와 노인},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+이 항목의 "구조"를 분석하면 각 BibTeX 항목이 어떻게 정의되는지 이해하기 위해 다음 세 가지 구성 요소만 고려하면 됩니다:
+
+- **항목 유형**: `@book`을 사용하여 참조 유형을 정의합니다. 이 예에서는 책 유형을 나타냅니다. 다른 항목으로는 학술 논문을 위한 `@article` 등이 있습니다.
+- **입력 필드**: 이 예에서는 `title`, `author`, `year`, `publisher`입니다.
+- **인용 키**: 이 예에서는 `Hemingway1952`이며, LaTeX 텍스트 내 인용, 즉 출처를 참조하기 위해 사용됩니다. `\cite{Hemingway1952}`를 사용하여 이를 수행합니다.
+
+## 단계 2: LaTeX 문서와의 통합
+
+LaTeX에서 참조를 사용하려면 아래 예를 따르십시오:
+
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{LaTeX에서의 BibTeX 참조}
+\author{김영희}
+
+\begin{document}
+
+\maketitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{document}
+```
+
+LaTeX 문서를 컴파일한 후, `\cite{Hemingway1952}` 명령어는 BibTeX 파일에서 지정된 해당 ID의 참조, 이 예에서는 `[1]`로 교체된다는 것을 알게 될 것입니다.
+
+![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+
+우리가 `bibliography.bib`이라고 부른 .bib 파일은 `\bibliography{bibliography}`에서 정의되며, 인용/참고 문헌 스타일은 `\bibliographystyle{unsrt}`입니다.
+
+## 참고문헌 관리자 추천
+
+BibTeX 파일의 수동 편집은 시간이 많이 소요될 수 있습니다. 여러분의 작업을 간소화할 수 있는 권장되는 참고문헌 관리자는 다음과 같습니다:
+
+- [CiteDrive](https://www.citedrive.com/)는 BibTeX 중심의 협업 웹 기반 도구입니다.
+- [Zotero](https://www.zotero.org/)는 [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)의 애드온을 통해 BibTeX와의 통합성을 제공합니다.
+- [JabRef](https://www.jabref.org/)는 여러 플랫폼에서

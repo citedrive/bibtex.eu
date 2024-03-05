@@ -1,0 +1,195 @@
+---
+title: "Overleaf: Online LaTeX Editor"
+description: "Discover how to manage citations, bibliographies, and references in Overleaf using BibTeX, Natbib, and BibLaTeX. Plus, streamline your workflow with CiteDrive."
+sidebar:
+  label: Using Overleaf (Quick start)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com**, created from the merger of **WriteLaTeX** and **ShareLaTeX**, is a cloud-based LaTeX editor tailored for collaborative creation and publication of academic documents. 
+
+With more than 10 million users worldwide, it is a top editor for academics. It features a wide range of pre-installed tools that can be easily activated. Overleaf offers a wide range of templates that meet the design guidelines of most academic journals. This is complemented by a range of templates for university journals, compiled from the user-maintained collection in the Overleaf Gallery.
+
+<CiteDrive />
+
+## Getting started
+The following explains how to create a new project in Overleaf, either by starting from scratch, uploading your own files or using one of the many templates available.
+
+
+
+## Bibliography management in Overleaf/LaTeX
+
+### CiteDrive
+
+CiteDrive is a robust citation and reference management tool that works in tandem with Overleaf. 
+It is compatible with all popular reference management systems, such as BibTeX, Natbib, and BibLaTeX. Read more:
+
+[Overleaf.com | Blog -- Better bibliography management with Overleaf, CiteDrive, and BibTeX/BibLaTeX — about 3.0 and an updated guide](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+
+
+### BibTeX
+
+BibTeX is a popular reference management system used in LaTeX. It allows you to create a separate bibliography file with all your references and then cite them in your LaTeX document. Here are the steps to using BibTeX in Overleaf:
+
+1.  Create a new file in your Overleaf project and name it "references.bib."
+2.  Open the "references.bib" file and add your references in the following format:
+
+```bibtex
+`@article{AuthorYear,   
+	author = {Author, First and Author, Second},   
+	title = {Title of the Article},   
+	journal = {Journal Name},   
+	volume = {Volume Number},   
+	number = {Issue Number},   
+	pages = {Page Numbers},   
+	year = {Year Published},   
+	publisher = {Publisher Name} 
+}
+```
+
+3.  In your LaTeX document, add the following commands where you want your citations to appear:
+
+
+```latex
+\bibliography{references} 
+\bibliographystyle{plain}
+```
+
+The `bibliography` command tells LaTeX where to find your bibliography file, while the `bibliographystyle` command specifies the citation style you want to use.
+
+4.  To cite a reference, use the `\cite{AuthorYear}` command in your LaTeX document. This command will generate a citation in the format specified by the `bibliographystyle` command.
+
+### Natbib
+
+Natbib is another popular citation management system used in LaTeX. It provides more flexibility in formatting citations and references than BibTeX. Here are the steps to using Natbib in Overleaf:
+
+1.  Add the following commands to your LaTeX document's preamble:
+
+```latex
+\usepackage{natbib} 
+\bibliographystyle{plainnat}
+```
+
+2.  In your LaTeX document, use the `\citep{AuthorYear}` command to create a parenthetical citation or the `\citet{AuthorYear}` command to create a citation in the text.
+    
+3.  To create a bibliography, add the following command to the end of your document:
+    
+
+```latex
+\bibliography{references}
+```
+
+4.  In your "references.bib" file, add your references in the following format:
+
+```bibtex
+@article{AuthorYear,   
+	author = {Author, First and Author, Second},   
+	title = {Title of the Article},   
+	journal = {Journal Name},   
+	volume = {Volume Number},   
+	number = {Issue Number},   
+	pages = {Page Numbers},   
+	year = {Year Published},   
+	publisher = {Publisher Name} 
+}
+```
+
+### BibLaTeX
+
+BibLaTeX is a newer reference management system that provides even more flexibility than Natbib. It allows you to use different citation styles within the same document and provides more control over the formatting of references. Here are the steps to using BibLaTeX in Overleaf:
+
+1.  Add the following commands to your LaTeX document's preamble:
+
+```latex
+\usepackage[style=authoryear,backend=bibtex]{biblatex} 
+\bibliography{references}
+```
+
+The `style` option specifies the citation style you want to use, and the `backend` option specifies the reference management system you want to use BibTeX in this case.
+
+2.  In your LaTeX document, use the `\parencite{AuthorYear}` command to create a parenthetical citation or the `\textcite{Author}`
+
+## LaTeX basics
+
+```latex
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % Replace "references.bib" with your bibliography file
+
+\title{My First LaTeX Document}
+\author{Your Name}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a sample document demonstrating the basics of LaTeX.
+
+\section{Formatting}
+You can format text in \textbf{bold}, \textit{italic}, \underline{underline}, or \texttt{typewriter} font.
+
+\section{Lists}
+Here's an example of a bulleted list:
+\begin{itemize}
+  \item First item
+  \item Second item
+  \item Third item
+\end{itemize}
+
+\section{Mathematics}
+LaTeX is great for typesetting mathematical formulas. Here's an example of an equation:
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{Figures and Tables}
+You can include figures and tables in your document. Here's an example of a figure:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{An example figure}
+  \label{fig:example}
+\end{figure}
+
+And here's an example of a table:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Item} & \textbf{Quantity} \\
+    \hline
+    Apple & 3 \\
+    Orange & 5 \\
+    \hline
+  \end{tabular}
+  \caption{An example table}
+  \label{tab:example}
+\end{table}
+
+\section{References}
+You can refer to labeled sections, equations, figures, and tables. For example, see Figure~\ref{fig:example} and Table~\ref{tab:example}.
+
+\section{Citations and Bibliography}
+Cite references using \cite{author2022}. Here's an example citation.
+
+\printbibliography
+
+\end{document}
+``````
+
+1. **Document class**: Begin your LaTeX document by selecting a document class, such as `article`, `report`, or `book`. This determines the overall layout and formatting.
+2. **Preamble**: The preamble is the area between `\documentclass` and `\begin{document}`. It's where you load packages, define commands, and set document-wide settings.
+3. **Sections**: Use `\section`, `\subsection`, and `\subsubsection` to organize your document into sections. LaTeX automatically numbers them.
+4. **Text formatting**: You can format text using commands like `\textbf` for bold, `\textit` for italics, `\underline` for underline, and `\texttt` for typewriter font.
+5. **Lists**: Create bulleted lists with the `itemize` environment, numbered lists with the `enumerate` environment, and description lists with the `description` environment.
+6. **Mathematics**: LaTeX excels at typesetting mathematical formulas. Use `$...$` for inline math and `\[...\]` or `equation` environment for displayed math. You can use symbols, equations, matrices, fractions, and more.
+7. **Figures and tables**: Use the `graphicx` package to include figures (`\includegraphics`). For tables, use the `tabular` environment, and you can add captions using the `caption` package.
+8. **References**: Label important sections, equations, figures, or tables with `\label` and refer to them later using `\ref` or `\eqref`.
+9. **Citations and bibliography**: Manage references using BibTeX or BibLaTeX. Cite references in your document with `\cite` or `\parencite` and create a bibliography using `\bibliography` or `\printbibliography`.
+10. **Compilation**: Save your LaTeX file with a `.tex` extension. Compile it using a LaTeX distribution like TeX Live or MiKTeX, either through a command-line tool or a LaTeX editor like TeXstudio, Overleaf, or ShareLaTeX.

@@ -1,0 +1,58 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+
+import { getCollection } from 'astro:content';
+const publishedBlogEntries = await getCollection('docs', ({ id }) => {
+    return id.startsWith(Astro.params.lang == undefined ? 'blog/': `${Astro.params.lang}/blog/`);
+});
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+
+import { languages } from "@utils/config.ts";
+
+
+
+
+// define set to save all unique tags
+const TAGS: Set<string> = new Set();
+
+for (let i = 0; i < publishedBlogEntries.length; i++) {
+  const entry = publishedBlogEntries[i];
+  const tags = entry.data.tags;
+
+  for (let j = 0; j < tags.length; j++) {
+    TAGS.add(tags[j]);
+  }
+}
+
+function slugify(input: string): string {
+  return input
+    .toLowerCase()
+    .replace(/\s+/g, '-')        
+    .replace(/[^\w-]+/g, '')     
+    .replace(/--+/g, '-')        
+    .replace(/^-+|-+$/g, '');    
+}
+
+
+// Convert the set to an array: 
+const uniqueTagsArray: string[] = Array.from(TAGS);
+
+
+export const getStaticPaths = () => Object.keys(languages).map((lang) => ({ params: { lang: lang === "en" ? undefined : lang   } }))
+
+---
+
+<StarlightPage frontmatter={{ title: 'Blog' }}>
+    <CardGrid>
+        {uniqueTagsArray.map(data => (
+            <LinkCard
+            href={slugify(data) + "/"}
+            title={data}
+        />
+        ))}
+    
+    </CardGrid>
+</StarlightPage>
+

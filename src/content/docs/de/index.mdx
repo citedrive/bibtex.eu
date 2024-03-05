@@ -1,0 +1,71 @@
+---
+title: BibTeX Literaturverwaltung - Ein detaillierter Leitfaden für LaTeX
+description: "Lernen Sie, wie Sie BibTeX effektiv zur Literaturverwaltung mit LaTeX nutzen können, von der Erstellung einer .bib-Datei bis zur Integration in Ihr LaTeX-Dokument."
+sidebar:
+  label: LaTeX Literaturverwaltung mit BibTeX (Schnellstart)
+---
+
+Für Einsteiger kann **BibTeX** aufgrund seiner vielen Besonderheiten und Formate herausfordernd erscheinen. Dieser Leitfaden bietet jedoch einen vereinfachten Überblick und zeigt, wie Sie BibTeX effizient mit LaTeX nutzen können.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive /> 
+
+## Schritt 1: Erstellung und Befüllung einer .bib-Datei
+
+Um zu starten, erstellen Sie eine `.bib`-Datei, z.B. `bibliography.bib`, und fügen Sie BibTeX-Einträge hinzu. Ein typisches Beispiel ist das Hinzufügen einer Referenz für "The Old Man and the Sea" von Ernest Hemingway:
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Wenn Sie die "Anatomie" dieses Eintrags aufschlüsseln, müssen Sie sich nur die folgenden drei Komponenten ansehen, um zu verstehen, wie jeder BibTeX-Eintrag definiert ist:
+
+* **Eintragstyp**: Mit `@book` definieren wir die Art der Referenz, d.h. (und dieses Beispiel bezieht sich auf sich selbst) als ein Buch. Es sind auch `@article` für wissenschaftliche Artikel und andere möglich. BibTeX legt gerne fest, welche Felder optional und welche erforderlich sind, um sie in der Literatur korrekt anzugeben.
+* **Eingabefelder**: in diesem Beispiel sind dies `Titel`, `Autor`, `Jahr` und `Verlag`. (Vgl. [Felder](./fields))
+* **Zitat-Schlüssel**: Dieses Beispiel lautet `Hemingway1952` und wird verwendet, um in LaTeX In-Text-Zitate anzugeben, d.h. um auf die Quelle zu verweisen. Mit dem gleichen Beispiel machen wir dies mit `\cite{Hemingway1952}`. Der Zitierschlüssel kann eine beliebige Zeichenkette sein - oft eine Kombination aus Autor, Jahr und einem Wort aus dem Titel.
+
+
+## Schritt 2: Integration in ein LaTeX-Dokument
+
+Um Ihre Referenzen in LaTeX zu nutzen, folgen Sie dem nachstehenden Beispiel:
+
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{BibTeX references in \LaTeX}
+\author{John Smith}
+
+\begin{document}
+
+\maketitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{document}
+```
+
+Nach dem Kompilieren des LaTeX-Dokuments werden wir feststellen, dass der Befehl `\cite{Hemingway1952}` durch die in der BibTeX-Datei angegebene Referenz mit dieser ID im Beispiel `[1]` ersetzt wird.
+
+
+![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+
+Die .bib-Datei, die wir `bibliography.bib` genannt haben, ist in `\bibliography{bibliography}` definiert und der Zitier-/Bibliographiestil `\bibliographystyle{unsrt}`, wobei sich unsrt auf die `.bst-Datei` bezieht, in diesem Fall auf `unsrt.bst`, die alle Makros zur Formatierung Ihrer Referenzen im Stil enthält. Sie können stattdessen auch andere Stile wie `apalike.bst` verwenden.
+
+## Empfehlungen für Referenz-Manager
+
+Die manuelle Bearbeitung von BibTeX-Dateien kann zeitaufwändig sein. Hier sind einige empfohlene Referenz-Manager, die Ihre Arbeit erleichtern können:
+
+- [CiteDrive](https://www.citedrive.com/) ist ein Bibtex-gesteuertes, kollaboratives und webbasiertes Tool.
+- [Zotero](https://www.zotero.org/) bietet umfangreiche Funktionen und eine gute Integration in BibTeX durch das Add-on [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
+- [JabRef](https://www.jabref.org/) ist ein BibTeX-basierter Referenzmanager, der plattformübergreifend funktioniert.

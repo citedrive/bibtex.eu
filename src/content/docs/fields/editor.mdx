@@ -1,0 +1,80 @@
+---
+title: "BibTeX field type: editor"
+sidebar:
+  label: editor
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+The `editor` field in BibTeX is used to specify the editors of a published work. This field is essential for reference types such as books, proceedings, or collections where the role of an editor is distinct from the author. Specifying the editors appropriately can ensure correct attribution and smoother referencing in academic papers and articles. Here, we delve deeper into the ways to indicate editors in BibTeX.
+
+<CiteDrive />
+
+### Formatting Rules
+
+In the `editor` field, various notation formats are accepted. However, the formatting should be consistent and precise to avoid incorrect representation of the editor's name. Here are the commonly used notations:
+
+#### Notation: `{Firstname Lastname}`
+
+This is a straightforward method where you list the editor's first name followed by the last name. Note that the inverse, "Lastname Firstname", is not recommended.
+
+**Example**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={Isaac Newton},
+  ...
+}
+```
+
+#### Notation: `{Lastname, Firstname}`
+
+This is the recommended format as it provides clear differentiation between the first and last names, which is particularly beneficial for names with multiple components.
+
+**Example**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={Newton, Isaac},
+  ...
+}
+```
+
+#### Notation: `{Lastname, Suffix, Firstname}`
+
+For editors with suffixes (e.g., Junior, Sr., III), the name should be formatted with the last name first, followed by the suffix, and then the first name. All components should be separated by commas.
+
+**Example**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={King, Jr., Martin Luther},
+  ...
+}
+```
+
+### Adding Multiple Editors
+
+To specify multiple editors, use the keyword `AND` between individual editor details formatted as above. This notation helps in listing several editors distinctly and accurately.
+
+**Example**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={Smith, John AND Doe, Jane},
+  ...
+}
+```
+
+### Best Practices
+
+1. **Consistency**: Maintain consistency in the notation format across all entries in your BibTeX file to ensure uniform representation.
+2. **Suffixes**: Clearly specify suffixes to avoid confusion, especially in works with multiple editors having familial relations.
+
+### Conclusion
+
+The `editor` field is a critical component in BibTeX entries, especially for edited volumes, proceedings, and collections. Accurate and consistent notation ensures that editors receive proper attribution, thereby enhancing the credibility and readability of your citations. Remember to adhere to the recommended formats for a seamless citation experience.

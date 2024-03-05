@@ -1,0 +1,85 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getCollection } from 'astro:content';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { languages } from "@utils/config.ts";
+
+
+function slugify(str: string): string {
+    return str
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]+/g, '')
+        .replace(/\-\-+/g, '-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
+}
+
+
+const { lang } = Astro.params;
+
+export async function getStaticPaths() {
+
+
+  function slugify(str: string): string {
+    return str
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]+/g, '')
+        .replace(/\-\-+/g, '-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
+}
+
+
+  const allTags = await getCollection('docs')
+
+
+
+
+    const uniqueTags = Array.from(
+  allTags.reduce((acc, curr) => {
+    Object.keys(languages).forEach(locale => {
+      // Check if curr.data and curr.data.tags are defined before iterating
+      curr.data?.tags?.forEach(tag => {
+        acc.add(`${locale}/${tag}/${slugify(tag)}`);
+      });
+    });
+    return acc;
+  }, new Set<string>())
+);
+
+  
+
+  const paths = uniqueTags.map(page => {
+    const [lang, ...tag] = page.split('/');
+    return { params: { lang: lang === "en" ? undefined : lang, slug: tag[1] || undefined }, props: {lang, tag} };
+  });
+
+  return paths;
+}
+
+const page = Astro.props;
+
+const blogEntries = await getCollection("docs", ({ id, data }) => {
+  return id.startsWith(Astro.params.lang == undefined ? 'blog/': `${Astro.params.lang}/blog/`)  && data.tags?.includes(page.tag[0]);
+});
+
+const blogPosts = blogEntries.length; 
+
+
+---
+
+<StarlightPage frontmatter={{ title: blogPosts + '  posts tagged with "' +  page.tag[0] +  '"' }}>
+
+    <CardGrid>
+        {blogEntries.map(data => (
+            <LinkCard
+          href={"/" + data.slug}
+          title={data.data.title}
+          description={data.data.description}
+      />
+      ))}
+    </CardGrid>
+</StarlightPage>
+

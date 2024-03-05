@@ -1,0 +1,69 @@
+---
+title: Gerenciamento de Literatura BibTeX - Um guia detalhado para LaTeX
+description: "Aprenda a usar eficientemente o BibTeX para gerenciamento de literatura com LaTeX, desde a criação de um arquivo .bib até a integração em seu documento LaTeX."
+sidebar:
+  label: Gerenciamento de Literatura com LaTeX e BibTeX (Início rápido)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Para iniciantes, **BibTeX** pode parecer desafiador devido às suas muitas peculiaridades e formatos. No entanto, este guia oferece uma visão geral simplificada e mostra como usar o BibTeX de forma eficaz com LaTeX.
+
+<CiteDrive /> 
+
+## Passo 1: Criação e preenchimento de um arquivo .bib
+
+Para começar, crie um arquivo `.bib`, por exemplo, `bibliography.bib`, e adicione entradas BibTeX. Um exemplo típico é adicionar uma referência para "O Velho e o Mar" de Ernest Hemingway:
+
+```bibtex
+@book{Hemingway1952,
+  title={O Velho e o Mar},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Ao decompor a "anatomia" desta entrada, você precisa olhar apenas para três componentes para entender como cada entrada BibTeX é definida:
+
+- **Tipo de entrada**: Com `@book`, definimos o tipo de referência, neste caso, um livro. Também existem outras como `@article` para artigos científicos, entre outros.
+- **Campos de entrada**: Neste exemplo, eles são `título`, `autor`, `ano` e `editora`.
+- **Chave de citação**: Neste exemplo, é `Hemingway1952`, que é usado para citações no texto em LaTeX, ou seja, para referenciar a fonte. Usando esta chave, faríamos isso com `\cite{Hemingway1952}`.
+
+## Passo 2: Integração em um documento LaTeX
+
+Para usar suas referências no LaTeX, siga o exemplo abaixo:
+
+```latex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Referências BibTeX em \LaTeX}
+\author{João Silva}
+
+\begin{document}
+
+\maketitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end{document}
+```
+
+Após compilar o documento LaTeX, você verá que o comando `\cite{Hemingway1952}` é substituído pela referência especificada no arquivo BibTeX com essa ID, no exemplo, `[1]`.
+
+![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+
+O arquivo .bib que chamamos de `bibliography.bib` é definido em `\bibliography{bibliography}`, e o estilo de citação/bibliografia é `\bibliographystyle{unsrt}`.
+
+## Recomendações para gerenciadores de referência
+
+Editar manualmente arquivos BibTeX pode ser demorado. Aqui estão alguns gerenciadores de referências recomendados que podem facilitar seu trabalho:
+
+- [CiteDrive](https://www.citedrive.com/) é uma ferramenta colaborativa baseada na web alimentada por BibTeX.
+- [Zotero](https://www.zotero.org/) oferece recursos abrangentes e boa integração com BibTeX através do complemento [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
+- [JabRef](https://www.jabref.org/) é um gerenciador de referências baseado em BibTeX que funciona em várias plataformas.

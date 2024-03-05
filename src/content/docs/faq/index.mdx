@@ -1,0 +1,66 @@
+---
+title: "BibTeX FAQ"
+---
+
+**Q1: What is BibTeX?** A1: BibTeX is a reference management software used in conjunction with LaTeX to format and manage bibliographies and citations in documents. It allows users to store reference details in separate BibTeX files, which can be linked to LaTeX documents, ensuring consistent formatting of citations and references.
+
+**Q2: How do I cite a website using BibTeX?** A2: To cite a website in BibTeX, the `@misc` entry type is commonly used. Here's an example:
+
+```bibtex
+@misc{website2023,
+    author    = "John Doe",
+    title     = "Title of the Web Page",
+    year      = "2023",
+    url       = "http://www.example.com",
+    note      = "Accessed on: 2023-10-04"
+}
+```
+
+Make sure to replace the placeholders with appropriate details.
+
+**Q3: How do I cite a book?** 
+A3:
+
+```bibtex
+@book{author2023,
+    author    = "Jane Smith",
+    title     = "Title of the Book",
+    publisher = "Publishing House",
+    year      = "2023",
+    address   = "City of Publication",
+    edition   = "3rd"
+}
+
+```
+
+**Q4: How do I cite a journal article?** 
+A4:
+
+```bibtex
+@article{author2023,
+    author    = "Jane Smith",
+    title     = "Title of the Article",
+    journal   = "Name of the Journal",
+    year      = "2023",
+    volume    = "4",
+    number    = "2",
+    pages     = "100-105"
+}
+```
+
+
+**Q5: How do I integrate my BibTeX references into my LaTeX document?** A5: In your LaTeX document:
+
+1. At the place where you want your bibliography to appear, use the `\bibliography{filename}` command, without the `.bib` extension.
+2. Use `\cite{label}` in the document where you want to cite the reference.
+3. Compile your LaTeX document using `latex`, then run `bibtex`, and compile again using `latex` twice.
+
+**Q6: Why do I get a `?` instead of a citation number in my document?** A6: This usually happens if there are issues with the compilation order or if there's an error in the BibTeX entry. Ensure you're compiling in the correct order (LaTeX, BibTeX, LaTeX, LaTeX) and check your BibTeX entries for errors.
+
+**Q7: How do I specify the style of my bibliography?** A7: Use the `\bibliographystyle{stylename}` command in your LaTeX document. For example, `\bibliographystyle{plain}` will use the plain style. There are many predefined styles (like `plain`, `alpha`, `abbrv`, etc.), and you can also find custom ones online.
+
+**Q8: Can I have multiple BibTeX files for a single LaTeX document?** A8: Yes, you can. In the `\bibliography{}` command, list the filenames separated by commas, without spaces and without the `.bib` extension. For example, `\bibliography{file1,file2}`.
+
+**Q9: How do I handle special characters in BibTeX?** A9: BibTeX is sensitive to special characters like `#`, `$`, `%`, `&`, `_`, `{`, and `}`. In BibTeX, wrap them in curly braces or use a backslash (`\`) before the character.
+
+**Q10: Are there tools to manage and generate BibTeX entries?** A10: Yes, there are many tools available, both online and offline, to help with managing BibTeX databases and generating entries, like CiteDrive. 
