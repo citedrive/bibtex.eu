@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from "@astrojs/sitemap";
+import partytown from "@astrojs/partytown";
 const site = 'https://bibtex.eu/';
 
 
@@ -14,6 +15,13 @@ export default defineConfig({
       dark: './src/assets/images/logo_dark.svg',
       replacesTitle: true
     },
+    head: [{
+      tag: 'script',
+      attrs: {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-7DVBN2XB65',
+        type: "text/partytown"
+      }
+    }],
     social: {
       github: 'https://github.com/citedrive/bibtex.eu',
       twitter: 'https://twitter.com/bibtex_eu '
@@ -148,5 +156,5 @@ export default defineConfig({
         link: 'https://www.behaviorcloud.com/en/'
       }]
     }]
-  }), sitemap()]
+  }), sitemap(), partytown()]
 });
