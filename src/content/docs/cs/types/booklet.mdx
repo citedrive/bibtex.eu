@@ -1,0 +1,67 @@
+---
+title: "Úvod do BibTeXu a položky typu booklet (brožura)"
+sidebar:
+  label: booklet (brožura)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je systém pro správu odkazů pro formátování seznamů odkazů v dokumentu. Je široce využíván ve akademické komunitě, zejména ve vědeckých, technologických a matematických oborech.
+
+Jedním z mnoha typů záznamů, které lze zahrnout do souboru BibTeX, je položka typu `booklet (brožura)`. V tomto průvodci vás seznámíme s položkou typu `booklet (brožura)` a ukážeme vám, jak ji používat k správě odkazů ve vašich dokumentech v LaTeXu.
+
+<CiteDrive/>
+
+## Typ položky booklet (brožura)
+
+Typ položky `booklet (brožura)` slouží k odkazování na tištěné dílo, které není formálně publikováno, ale je svázáno dohromady jako kniha. Příklady položek `booklet (brožura)` mohou zahrnovat sborníky konferencí, programové průvodce nebo návody k obsluze.
+
+Povinná pole pro položku `booklet (brožura)` jsou:
+
+-   `title`: Název brožury.
+-   `author`: Autor nebo autoři brožury.
+-   `howpublished`: Způsob, jakým byla booklet (brožura) publikována.
+-   `address`: Adresa vydavatele nebo podporující instituce.
+-   `year`: Rok vydání brožury.
+
+Volitelná pole pro položku `booklet (brožura)` zahrnují:
+
+-   `editor`: Editor nebo editoři brožury.
+-   `volume`: Číslo svazku u vícesvazkové knihy.
+-   `number`: Číslo časopisu nebo série.
+-   `series`: Název série nebo sady knih.
+-   `organization`: Organizace, která brožuru vydala nebo podpořila.
+-   `month`: Měsíc vydání.
+-   `note`: Různé informace.
+
+Zde je příklad položky `booklet (brožura)`:
+
+```bibtex
+@booklet{example_booklet,
+	title        = {Sborník konference},
+	author       = {Jane Doe a John Smith},
+	year         = 2022,
+	month        = {červenec},
+	address      = {San Francisco, CA},
+	note         = {Toto je ukázkový záznam pro sborník konference.},
+	howpublished = {Prezentováno na každoroční konferenci o technologii},
+	editor       = {Bob Johnson}
+}
+
+```
+
+## Použití položky booklet (brožura) v LaTeXu
+
+Jakmile vytvoříte položku `booklet (brožura)` ve svém souboru BibTeX, můžete se na ni odkazovat ve svém dokumentu v LaTeXu pomocí příkazu `\cite`. Například:
+
+
+```latex
+`\documentclass{article}  
+\begin{document}  
+Podle \cite{example_booklet} byla každoroční konference o technologii úspěšná.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+V tomto příkladu je položka `example_booklet` ve souboru `references.bib` citována pomocí příkazu `\cite`. Bibliografie je pak generována pomocí stylu `plain`.

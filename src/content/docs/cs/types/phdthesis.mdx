@@ -1,0 +1,48 @@
+---
+title: "Průvodce BibTeXem typu PhdThesis"
+sidebar:
+  label: phdthesis (doktorská práce)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je nástroj pro správu bibliografie, který se běžně používá v dokumentech vytvořených v LaTeXu. BibTeX typ "phdthesis" je určen pro doktorské disertační práce nebo dizertační práce. V tomto průvodci vysvětlíme povinná a volitelná pole pro BibTeX typ "phdthesis".
+
+<CiteDrive/>
+
+## Povinná pole
+
+BibTeX typ "phdthesis" vyžaduje následující pole:
+
+-   `author`: Autor disertační práce.
+-   `title`: Název disertační práce.
+-   `school`: Název instituce, která udělila titul.
+-   `year`: Rok, kdy byl titul udělen.
+
+## Volitelná pole
+
+Kromě povinných polí má BibTeX typ "phdthesis" také několik volitelných polí, která lze použít k poskytnutí dalších informací. Tato pole zahrnují:
+
+-   `type`: Typ práce, například "PhD thesis" nebo "Master's thesis".
+-   `address`: Umístění instituce.
+-   `month`: Měsíc, kdy byla práce odevzdána.
+-   `note`: Další informace o práci.
+
+## Příklad
+
+Zde je příklad použití BibTeX typu "phdthesis":
+
+```bibtex
+@phdthesis{mojedisertace,
+	title        = {Analýza Příkladu},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {červen},
+	address      = {Město Příklad, CA},
+	note         = {Dostupné na \url{https://priklad.com/dizertace.pdf}},
+	school       = {Univerzita Příklad},
+	type         = {PhD thesis}
+}
+```
+
+V tomto příkladu definuje BibTeX záznam dizertační práci autora Johna Smithe s názvem "Analýza Příkladu". Titul byl udělen v roce 2022 na Univerzitě Příklad, a práce byla odevzdána v červnu v Městě Příklad, CA. Typ práce je specifikován jako "PhD thesis", a je připojen poznámka obsahující odkaz na online verzi práce.

@@ -1,0 +1,58 @@
+---
+title: Úvod do BibTeX a vstupu typu article (článek)
+sidebar:
+  label: article (článek)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je systém správy referencí používaný k formátování seznamů referencí v dokumentu. Je běžně používán při akademickém psaní, zejména ve vědeckých a technických oborech. V tomto průvodci vás seznámíme s vstupním typem `article` v BibTeXu a ukážeme vám, jak ho používat ve vašich LaTeXových dokumentech.
+
+<CiteDrive/>
+
+## Typ vstupu článku
+
+Typ vstupu `article` se používá k odkazování na články publikované v odborných časopisech, časopisech nebo novinách. Požadované pole pro vstup `article` jsou:
+
+-   `author`: Jméno/jména autora/autorů článku.
+-   `title`: Název článku.
+-   `journal`: Název časopisu, časopisu nebo novin, ve kterých byl article (článek) publikován.
+-   `year`: Rok publikace.
+
+Volitelná pole pro vstup `article` zahrnují:
+
+-   `volume`: Číslo svazku časopisu.
+-   `number`: Číslo čísla časopisu.
+-   `pages`: Čísla stránek, na kterých se article (článek) nachází.
+-   `month`: Měsíc publikace.
+-   `note`: Různé informace.
+
+Zde je příklad vstupu `article`:
+
+```bibtex
+@article{example_article,
+	title        = {Vliv klimatických změn},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {leden},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {Toto je vzorový záznam pro article (článek) v časopise.}
+}
+```
+
+## Použití typu vstupu článku v LaTeXu
+
+Jakmile jste vytvořili vstup `article` ve svém souboru BibTeX, můžete se na něj odkazovat ve svém LaTeXovém dokumentu pomocí příkazu `\cite`. Například:
+
+```latex
+\documentclass{article}  
+\begin{document}  Podle \cite{example_article} má klimatická změna významné dopady na planetu.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+V tomto příkladu je vstup `example_article` ve souboru `references.bib` citován pomocí příkazu `\cite`. Bibliografie je pak generována pomocí stylu `plain`.

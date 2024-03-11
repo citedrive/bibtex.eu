@@ -1,0 +1,50 @@
+---
+title: "Průvodce BibTeXem typu `Proceedings`"
+sidebar:
+  label: proceedings (sborník z konference)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je nástroj pro správu bibliografie, který se běžně používá v dokumentech vytvořených v LaTeXu. Typ BibTeXu "proceedings" je určen pro sborníky konferenčních příspěvků, například pro sbírku článků prezentovaných na konferenci. V tomto průvodci vysvětlíme povinná a volitelná pole pro typ "proceedings".
+
+<CiteDrive/>
+
+## Povinná pole
+
+Typ BibTeXu "proceedings" vyžaduje následující pole:
+
+-   `title`: Název konferenčních sborníků.
+-   `year`: Rok, kdy byly konferenční sborníky publikovány.
+
+## Volitelná pole
+
+Kromě povinných polí má typ BibTeXu "proceedings" také několik volitelných polí, která lze použít k poskytnutí dalších informací. Tato pole zahrnují:
+
+-   `editor`: Jméno (jména) editora (editorů) konferenčních sborníků.
+-   `volume`: Číslo svazku konferenčních sborníků, pokud je to aplikovatelné.
+-   `number`: Číslo vydání konferenčních sborníků, pokud je to aplikovatelné.
+-   `series`: Název série, ke které konferenční sborníky patří, pokud je to aplikovatelné.
+-   `address`: Místo konání konference.
+-   `month`: Měsíc, kdy se konference konala.
+-   `publisher`: Název vydavatele konferenčních sborníků.
+
+## Příklad
+
+Zde je příklad použití typu BibTeXu "proceedings":
+
+```bibtex
+@proceedings{mojeprispevky,
+	title        = {Sborník Mezinárodní konference na příklad},
+	year         = 2022,
+	month        = {červen},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Příklad Konferenční Sborníky},
+	volume       = 1,
+	number       = 2,
+	editor       = {Jane Doe a John Smith}
+}
+```
+
+V tomto příkladu definuje záznam BibTeXu sadu konferenčních sborníků s názvem "Sborník Mezinárodní konference na příklad". Sborníky byly publikovány v roce 2022 a editovány Jane Doe a John Smith. Konference se konala v červnu v New Yorku, NY, a sborníky byly publikovány jako svazek 1, číslo 2 série "Příklad Konferenční Sborníky" vydavatelem ACM Press.

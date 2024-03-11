@@ -1,0 +1,21 @@
+---
+title: BibTeX - Typ misc
+sidebar:
+  label: misc (Různé)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+V BibTeXu existuje řada typů záznamů a někdy se může stát, že narazíte na pramen, který přesně nesouhlasí s žádným předdefinovaným typem. V těchto případech můžete použít typ misc. Tento typ je určen pro cokoli, co nespadá do jedné z ostatních kategorií. Může to být například kus hudby, prezentace nebo zejména citace webových stránek. Pro tyto nepodporované typy pramenů se vytvářejí pomocí obcházejících polí $§note$§ a $§howpublished$§. Pokud často citujete typy pramenů, které nejsou podporovány BibTeXem, měli byste zvážit použití BibLaTeXu, který nabízí nadmnožinu polí a typů.
+
+<CiteDrive/>
+
+```bibtex
+@misc{klíčCitace,
+
+	...
+
+}
+```
+
+Pokud chcete použít typ misc k citaci webových stránek, podívejte se na tento průvodce.

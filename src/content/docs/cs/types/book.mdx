@@ -1,0 +1,39 @@
+---
+title: "Úvod do BibTeXu a položky typu book (kniha)"
+sidebar:
+  label: "book (kniha)"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je nástroj pro bibliografickou správu často používaný s dokumenty v LaTeXu. Pomáhá autorům spravovat bibliografické odkazy pohodlným a organizovaným způsobem, což usnadňuje citování pramenů a formátování bibliografie podle konkrétního stylu. V tomto příspěvku se zaměříme na vytváření položky typu "book (kniha)" v BibTeXu.
+
+<CiteDrive/>
+
+## Co je to položka typu book (kniha) v BibTeXu?
+Položka typu book (kniha) v BibTeXu odkazuje na tištěnou nebo elektronickou knihu. Zahrnuje informace, jako jsou autor, název, rok vydání, vydavatel a adresa. Položku typu book (kniha) lze vytvořit pomocí následujícího kódu BibTeXu:
+
+```tex
+@book{key,
+author = {Author, A.},
+year = {2021},
+title = {Title of the Book},
+publisher = {Publisher},
+address = {Address of the Publisher},
+}
+```
+
+## Jak vytvořit položku typu book (kniha) v BibTeXu
+
+1. Otevřete svůj soubor .bib v textovém editoru. Tento soubor bude obsahovat všechny vaše odkazy v BibTeXu.
+2. Přidejte uvedený kód pro vytvoření nového odkazu.
+3. Nahraďte "key" jedinečným identifikátorem tohoto odkazu v složených závorkách. Tento identifikátor bude použit k citaci knihy ve vašem dokumentu v LaTeXu.
+4. Nahraďte "Author, A." jménem autora (autorů).
+5. Nahraďte "2021" rokem vydání.
+6. Nahraďte "Title of the Book" názvem knihy.
+7. Nahraďte "Publisher" jménem vydavatele.
+8. Nahraďte "Address of the Publisher" adresou vydavatele.
+9. Uložte soubor .bib a hotovo!
+
+## Závěr
+Používání BibTeXu k řízení bibliografických odkazů může proces psaní a formátování dokumentu výrazně usnadnit. Vytvořením položky typu book (kniha) můžete sledovat své prameny a snadno formátovat svoji bibliografii profesionálním způsobem. Nezapomeňte použít jedinečný identifikátor a zahrnout všechny relevantní informace při vytváření položky typu book (kniha) v BibTeXu.

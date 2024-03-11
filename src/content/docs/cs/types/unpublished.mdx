@@ -1,0 +1,26 @@
+---
+title: "Rozumění vstupnímu typu `unpublished` v BibTeXu"
+sidebar:
+  label: unpublished (nepublikované)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je oblíbený systém pro správu bibliografie, který pomáhá výzkumníkům a akademikům organizovat a formátovat své bibliografie. Je široce používán v informatice, ale je užitečný i v mnoha dalších oblastech, které vyžadují citaci zdrojů. Vstupní typ "unpublished" v BibTeXu se používá k citaci zdrojů, které nebyly oficiálně publikovány, jako jsou bakalářské, diplomové práce a technické zprávy.
+
+Vstupní typ "unpublished" je všestranný typ, který autorům umožňuje zahrnout veškeré relevantní informace o nepublikovaném zdroji, jako jsou jméno autora, název, instituce a datum. Příklad BibTeX záznamu pro nepublikovaný zdroj je následující:
+
+<CiteDrive/>
+
+```bibtex
+@unpublished{key,   
+	author = {John Doe},   
+	title = {Význam nepublikovaných zdrojů},   
+	institution = {University of Example},   
+	year = {2022}, 
+}
+```
+
+Pole "key" v tomto příkladu je jedinečný identifikátor, který se používá k odkazování na zdroj v textu dokumentu. Pole "author" obsahuje jméno(na) autora(ů) zdroje, pole "title" obsahuje název zdroje, pole "institution" obsahuje název instituce, kde byl zdroj napsán, a pole "year" obsahuje rok, kdy byl zdroj napsán.
+
+Je třeba poznamenat, že vstupní typ "unpublished" by měl být používán pouze pro zdroje, které ještě nebyly formálně publikovány. Pokud byl zdroj publikován, i když pouze online, měl by být citován jako "techreport," "mastersthesis," nebo "phdthesis," v závislosti na typu publikace.

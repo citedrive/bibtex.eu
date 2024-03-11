@@ -1,0 +1,67 @@
+---
+title: "Úvod do BibTeXu a položky typu conference (konference)"
+sidebar:
+  label: conference (konference)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je systém pro správu odkazů používaný k formátování seznamů odkazů v dokumentu. Je široce využíván při akademickém psaní, zejména ve vědeckých a technických oblastech. V tomto průvodci vás seznámíme s položkou `conference (konference)` v BibTeXu a ukážeme vám, jak ji používat ve svých dokumentech v LaTeXu.
+
+<CiteDrive/>
+
+## Typ položky conference (konference)
+
+Typ položky `conference (konference)` slouží k odkazování na články publikované ve sbornících konferencí. Povinná pole pro položku `conference (konference)` jsou:
+
+-   `author`: Jméno(na) autora(ů) článku.
+-   `title`: Název článku.
+-   `booktitle`: Název sborníku conference (konference).
+-   `year`: Rok, kdy se conference (konference) konala.
+
+Volitelná pole pro položku `conference (konference)` zahrnují:
+
+-   `editor`: Jméno(na) editora(ů) sborníku conference (konference).
+-   `volume`: Číslo svazku sborníku.
+-   `number`: Číslo sborníku.
+-   `series`: Název série nebo sady knih, do které sborník conference (konference) patří.
+-   `pages`: Čísla stran, na kterých je článek umístěn.
+-   `address`: Místo konání conference (konference).
+-   `month`: Měsíc, ve kterém se conference (konference) konala.
+-   `organization`: Organizace, která konferenci sponzorovala.
+-   `publisher`: Vydavatel sborníku.
+-   `note`: Různé informace.
+
+Zde je příklad položky `conference (konference)`:
+
+```bibtex
+@conference{example_conference,
+	title        = {Vliv klimatických změn},
+	author       = {John Smith a Jane Doe},
+	year         = 2022,
+	month        = {červen},
+	booktitle    = {Sborník každoroční conference (konference) o klimatických změnách},
+	publisher    = {Springer},
+	address      = {Los Angeles, CA},
+	pages        = {55--62},
+	note         = {Toto je ukázkový záznam pro článek ve sborníku conference (konference).},
+	editor       = {Bob Johnson},
+	organization = {Asociace pro klimatické změny}
+}
+
+```
+
+## Použití položky conference (konference) v LaTeXu
+
+Jakmile vytvoříte položku `conference (konference)` ve svém souboru BibTeX, můžete se na ni odkazovat ve svém dokumentu v LaTeXu pomocí příkazu `\cite`. Například:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Podle \cite{example_conference} mají klimatické změny významné účinky na planetu.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+V tomto příkladu je položka `example_conference` ve souboru `references.bib` citována pomocí příkazu `\cite`. Bibliografie je pak generována pomocí stylu `plain`.

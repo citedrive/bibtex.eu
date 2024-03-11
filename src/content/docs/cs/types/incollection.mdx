@@ -1,0 +1,67 @@
+---
+title: "Úvod do BibTeXu a položky typu incollection"
+sidebar:
+  label: incollection (články ve sbírce)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je nástroj pro správu odkazů, který se běžně používá v dokumentech LaTeX. Umožňuje vytvořit bibliografickou databázi a snadno zahrnout odkazy do dokumentů LaTeXu. V tomto průvodci vám představíme BibTeX a vysvětlíme typ položky "incollection".
+
+<CiteDrive/>
+
+## Co je BibTeX?
+
+BibTeX je program a formát souboru používaný k správě bibliografických odkazů v dokumentech LaTeX. S BibTeXem můžete uložit všechny své odkazy do jednoho souboru a poté je zahrnout do svých dokumentů LaTeX pomocí citačních klíčů. To usnadňuje přidávání odkazů do vašeho dokumentu, změnu citačních stylů a správu rozsáhlých bibliografií.
+
+BibTeX má několik různých typů záznamů, které můžete použít kategorizovat své odkazy. Patří sem "article" pro články v časopisech, "book" pro knihy, "inproceedings" pro články z konferenčních sborníků a mnoho dalších.
+
+## Co je to položka typu Incollection?
+
+Typ záznamu BibTeX "incollection" se používá pro kapitoly nebo sekce knih. Podobný je typu "inproceedings", ale používá se pro práce publikované v knize místo ve sborníku konference.
+
+## Povinná pole
+
+Typ záznamu BibTeX "incollection" vyžaduje následující pole:
+
+-   `author`: Autor(ka) kapitoly nebo sekce.
+-   `title`: Název kapitoly nebo sekce.
+-   `booktitle`: Název knihy obsahující kapitolu nebo sekci.
+-   `publisher`: Jméno vydavatele knihy.
+-   `year`: Rok vydání knihy.
+
+## Volitelná pole
+
+Kromě povinných polí má typ záznamu BibTeX "incollection" také několik volitelných polí, která lze použít k poskytnutí dalších informací. Mezi tato pole patří:
+
+-   `editor`: Jméno(na) editora(ů) knihy.
+-   `volume`: Číslo svazku knihy, pokud je to případné.
+-   `number`: Číslo knihy, pokud je to případné.
+-   `series`: Název série, kam kniha patří, pokud je to případné.
+-   `pages`: Čísla stran, na kterých je kapitola nebo sekce v knize umístěna.
+-   `address`: Místo vydavatele.
+-   `month`: Měsíc vydání knihy.
+
+## Příklad
+
+Zde je příklad použití typu BibTeX "incollection":
+
+```bibtex
+`@incollection{mychapter,
+	title        = {Analýza příkladu},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {červen},
+	booktitle    = {Kniha příkladů},
+	publisher    = {Example Publisher},
+	address      = {New York, NY},
+	series       = {Série příkladů},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {Jane Doe}
+}
+
+```
+
+V tomto příkladu BibTeX definuje kapitolu s názvem "Analýza příkladu" napsanou Johnem Smithem, která se objevila v knize "Kniha příkladů". Kniha byla vydána v roce 2022 a editovala ji Jane Doe. Kapitola se objevila na stránkách 123-130 ve svazku 1, čísle 2 série "Série příkladů", kterou vydal Example Publisher v New Yorku, NY.

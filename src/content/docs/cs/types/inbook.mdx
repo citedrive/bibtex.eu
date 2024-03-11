@@ -1,0 +1,64 @@
+---
+title: "Úvod do BibTeXu a položky typu inbook"
+sidebar:
+  label: inbook (oddíly nebo kapitoly)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je systém pro správu odkazů používaný k formátování seznamů odkazů v dokumentu. Je široce využíván při akademickém psaní, zejména ve vědeckých a technických oblastech. V tomto průvodci vás seznámíme s položkou `inbook` v BibTeXu a ukážeme vám, jak ji používat ve svých dokumentech v LaTeXu.
+
+<CiteDrive/>
+
+## Typ položky inbook
+
+Typ položky `inbook` slouží k odkazování na konkrétní kapitolu nebo část v rámci knihy. Povinná pole pro položku `inbook` jsou:
+
+-   `author`: Jméno(na) autora(ů) kapitoly nebo části.
+-   `title`: Název kapitoly nebo části.
+-   `booktitle`: Název knihy obsahující kapitolu nebo část.
+-   `publisher`: Jméno vydavatele knihy.
+-   `year`: Rok vydání.
+
+Volitelná pole pro položku `inbook` zahrnují:
+
+-   `editor`: Jméno(na) editora(ů) knihy.
+-   `volume`: Číslo svazku knihy.
+-   `number`: Číslo série nebo sady knih.
+-   `series`: Název série nebo sady knih.
+-   `address`: Místo vydavatele.
+-   `edition`: Edice knihy.
+-   `month`: Měsíc vydání.
+-   `pages`: Čísla stran kapitoly nebo části.
+-   `note`: Různé informace.
+
+Zde je příklad položky `inbook`:
+
+```bibtex
+`@inbook{example_inbook,
+	title        = {Vliv klimatických změn},
+	author       = {John Smith},
+	year         = 2022,
+	booktitle    = {Environmentální otázky a řešení},
+	publisher    = {Wiley},
+	pages        = {101--112},
+	note         = {Toto je ukázkový záznam pro kapitolu v knize.},
+	editor       = {Jane Doe},
+	edition      = {3.}
+}
+```
+
+## Použití položky inbook v LaTeXu
+
+Jakmile vytvoříte položku `inbook` ve svém souboru BibTeX, můžete se na ni odkazovat ve svém dokumentu v LaTeXu pomocí příkazu `\cite`. Například:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Podle \cite{example_inbook} mají klimatické změny významné účinky na planetu.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+V tomto příkladu je položka `example_inbook` ve souboru `references.bib` citována pomocí příkazu `\cite`. Bibliografie je pak generována pomocí stylu `plain`.

@@ -1,0 +1,48 @@
+---
+title: "Průvodce typem BibTeXu MasterThesis"
+sidebar:
+  label: mastersthesis (Magisterská práce)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je nástroj pro správu odkazů, který se běžně používá v dokumentech LaTeX. Typ záznamu BibTeX "masterthesis" se používá pro magisterské práce. V tomto průvodci vysvětlíme povinná a volitelná pole pro typ "masterthesis" v BibTeXu.
+
+<CiteDrive/>
+
+## Povinná pole
+
+Typ záznamu BibTeX "masterthesis" vyžaduje následující pole:
+
+-   `author`: Autor práce.
+-   `title`: Název práce.
+-   `school`: Název instituce, která udělila titul.
+-   `year`: Rok, kdy byl titul udělen.
+
+## Volitelná pole
+
+Kromě povinných polí má typ záznamu BibTeX "masterthesis" také několik volitelných polí, která lze použít k poskytnutí dalších informací. Mezi tato pole patří:
+
+-   `type`: Typ práce, např. "Master's thesis".
+-   `address`: Místo instituce.
+-   `month`: Měsíc odevzdání práce.
+-   `note`: Další informace o práci.
+
+## Příklad
+
+Zde je příklad použití typu "masterthesis" v BibTeXu:
+
+```bibtex
+@masterthesis{mythesis,
+	title        = {Studie příkladu},
+	author       = {Jane Doe},
+	year         = 2022,
+	month        = {červen},
+	address      = {Příkladové město, CA},
+	note         = {Dostupné na adrese \url{https://example.com/thesis.pdf}},
+	school       = {Univerzita Příklad},
+	type         = {Magisterská práce}
+}
+```
+
+V tomto příkladu BibTeX definuje magisterskou práci, kterou napsala Jane Doe, s názvem "Studie příkladu". Titul byl udělen v roce 2022 Univerzitou Příklad, a práce byla odevzdána v červnu v Příkladovém městě, CA. Typ práce je specifikován jako "Magisterská práce", a poznámka obsahuje URL adresu pro práci.

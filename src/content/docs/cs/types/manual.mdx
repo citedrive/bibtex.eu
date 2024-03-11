@@ -1,0 +1,48 @@
+---
+title: "Průvodce typem BibTeXu `Manual`"
+sidebar:
+  label: manual (ruční)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je nástroj pro správu odkazů, který se běžně používá v dokumentech LaTeX. Typ záznamu BibTeX "manual" se používá pro technické manuály nebo uživatelské příručky. V tomto průvodci vysvětlíme povinná a volitelná pole pro typ "manual" v BibTeXu.
+
+<CiteDrive/>
+
+## Povinná pole
+
+Typ záznamu BibTeX "manual" vyžaduje následující pole:
+
+-   `title`: Název manuálu.
+-   `year`: Rok vydání manuálu.
+
+## Volitelná pole
+
+Kromě povinných polí má typ záznamu BibTeX "manual" také několik volitelných polí, která lze použít k poskytnutí dalších informací. Mezi tato pole patří:
+
+-   `author`: Autor(ka) manuálu.
+-   `organization`: Organizace zodpovědná za vytvoření manuálu.
+-   `address`: Místo sídla organizace.
+-   `edition`: Číslo edice manuálu.
+-   `month`: Měsíc vydání manuálu.
+-   `note`: Další informace o manuálu.
+
+## Příklad
+
+Zde je příklad použití typu BibTeX "manual":
+
+```bibtex
+@manual{mymanual,
+	title        = {Příklad uživatelské příručky},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {červen},
+	address      = {Příkladové město, CA},
+	note         = {Dostupné na adrese \url{https://example.com/manual.pdf}},
+	organization = {Příkladová korporace},
+	edition      = {3. vydání}
+}
+```
+
+V tomto příkladu BibTeX definuje technický manuál nebo uživatelskou příručku s názvem "Příklad uživatelské příručky". Manuál byl vydán v roce 2022 Příkladovou korporací v Příkladovém městě, CA. Manuál napsali John Smith a Jane Doe a jedná se o třetí vydání. Poznámka obsahuje URL adresu pro stažení manuálu.

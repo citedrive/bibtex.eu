@@ -1,0 +1,27 @@
+---
+title: "Rozumění vstupnímu typu `techreport` v BibTeXu"
+sidebar:
+  label: techreport (technická zpráva)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je známý systém pro správu bibliografie, který výzkumníci a učenci používají k organizaci a formátování svých bibliografií. Je zejména užitečný v informatice, ale lze jej využít i v jiných oblastech. "techreport" je v BibTeXu vstupním typem, který slouží k citaci technických zpráv.
+
+Technické zprávy jsou dokumenty obsahující podrobné technické informace o konkrétním tématu nebo projektu. Často jsou vytvářeny organizacemi, institucemi nebo výzkumníky a jsou určeny pro distribuci specifické skupině lidí. Technické zprávy jsou zřídka formálně publikovány, ale jsou cenným zdrojem informací a měly by být citovány v akademické práci.
+
+V BibTeXu je vstupní typ "techreport" používán k poskytnutí veškerých relevantních informací o technické zprávě, jako jsou autor, název, instituce, rok a číslo zprávy. Záznam BibTeXu pro technickou zprávu je uveden níže:
+
+<CiteDrive/>
+
+```bibtex
+@techreport{key,   
+	author = {Jane Smith},   
+	title = {Technická zpráva o pokročilé robotice},   
+	institution = {Institut technologie},   
+	year = {2021},   
+	number = {TR-1234}
+}
+```
+
+V tomto příkladu je pole "key" jedinečný identifikátor, který se používá k odkazování na zdroj v textu dokumentu. Pole "author" uvádí autora(ů) technické zprávy, pole "title" poskytuje název zprávy, pole "institution" uvádí instituci, kde byla zpráva napsána, pole "year" poskytuje rok napsání zprávy a pole "number" poskytuje číslo zprávy.

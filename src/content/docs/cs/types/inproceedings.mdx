@@ -1,0 +1,59 @@
+---
+title: "Průvodce typem BibTeXu `Inproceedings`"
+sidebar:
+  label: inproceedings (pro konferenční příspěvky)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX je nástroj pro správu odkazů, který se běžně používá v dokumentech LaTeX. Typ záznamu BibTeX "inproceedings" se používá pro články publikované ve sbornících konferencí. V tomto průvodci vysvětlíme povinná a volitelná pole pro typ "inproceedings" v BibTeXu.
+
+<CiteDrive/>
+
+## Povinná pole
+
+Typ záznamu BibTeX "inproceedings" vyžaduje následující pole:
+
+-   `author`: Autor(ka) článku.
+-   `title`: Název článku.
+-   `booktitle`: Název sborníku konferenčních příspěvků.
+-   `year`: Rok vydání sborníku konferenčních příspěvků.
+
+## Volitelná pole
+
+Kromě povinných polí má typ záznamu BibTeX "inproceedings" také několik volitelných polí, která lze použít k poskytnutí dalších informací. Mezi tato pole patří:
+
+-   `editor`: Jméno(na) editora(ů) konferenčních příspěvků.
+-   `volume`: Číslo svazku konferenčních příspěvků, pokud je to případné.
+-   `number`: Číslo konferenčních příspěvků, pokud je to případné.
+-   `series`: Název série, kam konferenční příspěvky patří, pokud je to případné.
+-   `pages`: Čísla stran, na kterých je článek v konferenčních příspěvcích umístěn.
+-   `address`: Místo konání konference.
+-   `month`: Měsíc konání konference.
+-   `organization`: Organizace, která konferenci sponzorovala.
+-   `publisher`: Jméno vydavatele konferenčních příspěvků.
+
+## Příklad
+
+Zde je příklad použití typu BibTeX "inproceedings":
+
+```bibtex
+`@inproceedings{mypaper,
+	title        = {Analýza příkladu},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {červen},
+	booktitle    = {Sborník mezinárodní konference o příkladu},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Sborník konference o příkladu},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown and Susan Green},
+	organization = {ACM}
+}
+
+```
+
+V tomto příkladu BibTeX definuje článek s názvem "Analýza příkladu" napsaný Johnem Smithem a Jane Doe, který se objevil ve sborníku Mezinárodní konference o příkladu. Sborník byl vydán v roce 2022 a editovali ho David Brown a Susan Green. Konference se konala v červnu v New Yorku, NY, a byla sponzorována ACM. Článek se objevil na stránkách 123-130 ve svazku 1, čísle 2 "Sborníku konference o příkladu" vydaném ACM Press.
