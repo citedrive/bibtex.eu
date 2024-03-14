@@ -1,0 +1,68 @@
+---
+title: "Introduktion til BibTeX og konferencens typeindgang"
+sidebar:
+  label: conference (konference)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencehåndteringssystem, der bruges til at formatere lister over referencer i et dokument. Det bruges i vid udstrækning til akademisk skrivning, især inden for videnskabelige og tekniske områder. I denne guide vil vi introducere dig til `conference`-posttypen i BibTeX og vise dig, hvordan du bruger den i dine LaTeX-dokumenter.
+
+<CiteDrive/>
+
+## Indgangstypen konference
+
+Posttypen `konference` bruges til at henvise til artikler, der er udgivet i konferencerapporter. De påkrævede felter for en `konference`-post er:
+
+- `forfatter`: Navn(e) på forfatter(e) af artiklen.
+- `title`: Titlen på artiklen.
+- `booktitle`: Navnet på konferencens proceedings.
+- `year`: Året, hvor konferencen blev afholdt.
+
+Valgfrie felter til en `konference`-post inkluderer:
+
+-   `editor`: Navnet/navnene på redaktøren/redaktørerne af konferenceindlægget.
+-   `volume`: Nummeret på det bind, som proceedings er udgivet i.
+-   `number`: Nummeret på proceedings.
+-   `series`: Navnet på den serie eller det sæt af bøger, som konferenceproceedings tilhører.
+-   `pages`: De sidetal, som artiklen optræder på.
+-   `address`: Lokationen for konferencen.
+-   `month`: Den måned, hvor konferencen blev afholdt.
+-   `organization`: Den organisation, der sponsorerede konferencen.
+-   `publisher`: Forlaget, der har udgivet proceedings.
+-   `note`: Diverse oplysninger.
+
+Her er et eksempel på en `conference`-post:
+
+
+```bibtex
+@konference{eksempel_konference,
+	title = {Effekterne af klimaforandringer},
+	author = {John Smith og Jane Doe},
+	year = 2022,
+	month = {juni},
+	booktitle = {Proceedings fra den årlige konference om klimaforandringer},
+	publisher = {Springer},
+	address = {Los Angeles, CA},
+	pages = {55--62},
+	note = {Dette er et eksempel på en artikel i et konferencemateriale},
+	editor = {Bob Johnson},
+	organization = {Climate Change Association}
+}
+
+```
+
+## Brug af indgangstypen konference i LaTeX
+
+Når du har oprettet en `conference`-post i din BibTeX-fil, kan du henvise til den i dit LaTeX-dokument ved hjælp af kommandoen `\cite`. For eksempel:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Ifølge \cite{example_conference} har klimaforandringerne en betydelig indvirkning på planeten.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+I dette eksempel citeres posten `example_conference` i filen `references.bib` ved hjælp af kommandoen `\cite`. Bibliografien genereres derefter ved hjælp af stilen `plain`.

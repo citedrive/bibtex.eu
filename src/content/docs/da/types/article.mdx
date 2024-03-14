@@ -1,0 +1,59 @@
+---
+title: Introduktion til BibTeX og Artiklens Type Entry
+sidebar:
+  label: article (artikel)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencehåndteringssystem, der bruges til at formatere lister over referencer i et dokument. Det bruges almindeligt i akademisk skrivning, især inden for videnskabelige og tekniske områder. I denne vejledning vil vi introducere dig til 'article' indgangstypen i BibTeX og vise dig, hvordan du bruger den i dine LaTeX-dokumenter.
+
+<CiteDrive/>
+
+## Artiklens Indgangstype
+
+'Article' indgangstypen bruges til at henvise til artikler, der er udgivet i videnskabelige tidsskrifter, magasiner eller aviser. De påkrævede felter for en 'article' indgang er:
+
+-   `author`: Navnet(e) på artiklens forfatter(e).
+-   `title`: Titlen på artiklen.
+-   `journal`: Navnet på tidsskriftet, magasinet eller avisen, hvor artiklen blev udgivet.
+-   `year`: Året for udgivelse.
+
+Valgfrie felter for en 'article' indgang inkluderer:
+
+-   `volume`: Volumennummeret på tidsskriftet.
+-   `number`: Nummeret på tidsskriftet.
+-   `pages`: Sidetal, hvor artiklen vises.
+-   `month`: Udgivelsesmåneden.
+-   `note`: Diverse information.
+
+Her er et eksempel på en 'article' indgang:
+
+```bibtex
+@article{example_article,
+	title        = {Klimaforandringerens Effekter},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {januar},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {Dette er et eksempel på en indgang for en artikel i et magasin.}
+}
+```
+
+## Brug af Artiklens Indgangstype i LaTeX
+
+Når du har oprettet en 'article' indgang i din BibTeX-fil, kan du henvise til den i dit LaTeX-dokument ved hjælp af `\cite`-kommandoen. For eksempel:
+
+
+```latex
+\documentclass{article}  
+\begin{document}  Ifølge \cite{example_article} har klimaforandringer betydelige virkninger på planeten.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+I dette eksempel citeres 'example_article' indgangen i 'references.bib'-filen ved hjælp af `\cite`-kommandoen. Bibliografien genereres derefter ved hjælp af 'plain' stilen.

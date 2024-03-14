@@ -1,0 +1,60 @@
+---
+title: "Guide til BibTeX-typen `Inproceedings`"
+sidebar:
+  label: inproceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencehåndteringsværktøj, der ofte bruges i LaTeX-dokumenter. BibTeX-typen "inproceedings" bruges til artikler, der udgives i konferencerapporter. I denne guide vil vi forklare de obligatoriske og valgfrie felter for BibTeX-typen "inproceedings".
+
+<CiteDrive/>
+
+## Påkrævede felter
+
+BibTeX-typen "inproceedings" kræver følgende felter:
+
+- `author`: Artiklens forfatter(e).
+- `title`: Titlen på artiklen.
+- `booktitle`: Titlen på konferencerapporten.
+- `year`: Det år, hvor konferencen blev udgivet.
+
+## Valgfrie felter
+
+Ud over de obligatoriske felter har BibTeX-typen "inproceedings" også en række valgfrie felter, der kan bruges til at give yderligere oplysninger. Disse felter omfatter:
+
+- `editor`: Navn(e) på redaktøren/redaktørerne af konferencens proceedings.
+- `volume`: Nummeret på det bind, som konferencen omhandler, hvis det er relevant.
+- `number`: Nummeret på udgaven af konferencerapporten, hvis relevant.
+- `series`: Navnet på den serie, som konferencerapporten tilhører, hvis relevant.
+- `pages`: De sider, som artiklen optræder på i konferencerapporten.
+- `address`: Lokationen for konferencen.
+- `month`: Den måned, konferencen blev afholdt.
+- `organization`: Den organisation, der sponsorerede konferencen.
+- `publisher`: Navnet på udgiveren af konferencematerialet.
+
+## Eksempel
+
+Her er et eksempel på, hvordan man bruger BibTeX-typen "inproceedings":
+
+
+```bibtex
+@inproceedings{mypaper,
+	title = {En analyse af et eksempel},
+	author = {John Smith og Jane Doe},
+	year = 2022,
+	month = {juni},
+	booktitle = {Proceedings of the International Conference on Example},
+	publisher = {ACM Press},
+	address = {New York, NY},
+	series = {Example Conference Proceedings},
+	volume = 1,
+	number = 2,
+	pages = {123--130},
+	editor = {David Brown og Susan Green},
+	organization = {ACM}
+}
+
+```
+
+I dette eksempel definerer BibTeX-posten en artikel med titlen "An Analysis of Example" forfattet af John Smith og Jane Doe, som blev udgivet i konferencedokumentationen for International Conference on Example. Referatet blev udgivet i 2022 og redigeret af David Brown og Susan Green. Konferencen blev afholdt i juni i New York, NY, og var sponsoreret af ACM. Artiklen er trykt på side 123-130 i bind 1, nummer 2 i serien "Example Conference Proceedings", som er udgivet af ACM Press.

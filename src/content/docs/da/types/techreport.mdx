@@ -1,0 +1,28 @@
+---
+title: "Forståelse af entry-typen techreport i BibTeX"
+sidebar:
+  label: techreport
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et velkendt bibliografisk styringssystem, som forskere og akademikere bruger til at organisere og formatere deres bibliografier. Det er især nyttigt inden for datalogi, men det kan også bruges inden for andre områder. "techreport" er en posttype i BibTeX, der bruges til at citere tekniske rapporter.
+
+Tekniske rapporter er dokumenter, der indeholder dybdegående teknisk information om et specifikt emne eller projekt. De udarbejdes ofte af organisationer, institutioner eller forskere og er beregnet til at blive distribueret til en bestemt gruppe mennesker. Tekniske rapporter udgives sjældent formelt, men de er en værdifuld kilde til information og bør citeres i akademisk arbejde.
+
+I BibTeX bruges indgangstypen "techreport" til at give alle relevante oplysninger om en teknisk rapport, såsom forfatter, titel, institution, år og rapportnummer. En BibTeX-post for en teknisk rapport er vist nedenfor:
+
+<CiteDrive/>
+
+
+```bibtex
+@techreport{key,   
+	author = {Jane Smith},   
+	title = {Teknisk rapport om avanceret robotteknologi},   
+	institution = {Institut for Teknologi},   
+	year = {2021},   
+	number = {TR-1234}
+}
+```
+
+I dette eksempel er feltet "key" en unik identifikator, der bruges til at henvise til kilden i dokumentets tekst. Feltet "author" angiver forfatteren/forfatterne til den tekniske rapport, feltet "title" angiver titlen på rapporten, feltet "institution" angiver den institution, hvor rapporten blev skrevet, feltet "year" angiver det år, rapporten blev skrevet, og feltet "number" angiver rapportens nummer.

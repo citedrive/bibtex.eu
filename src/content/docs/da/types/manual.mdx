@@ -1,0 +1,50 @@
+---
+title: "Guide til BibTeX-typen `Manual`"
+sidebar:
+  label: manual
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencehåndteringsværktøj, der ofte bruges i LaTeX-dokumenter. BibTeX-typen "manual" bruges til tekniske manualer eller brugervejledninger. I denne guide vil vi forklare de obligatoriske og valgfrie felter for BibTeX-typen "manual".
+
+<CiteDrive/>
+
+## Påkrævede felter
+
+BibTeX-typen "manual" kræver følgende felter:
+
+- `title`: Titlen på manualen.
+- `year`: Året, hvor manualen blev udgivet.
+
+## Valgfrie felter
+
+Ud over de obligatoriske felter har BibTeX-typen "manual" også en række valgfrie felter, der kan bruges til at give yderligere oplysninger. Disse felter omfatter:
+
+- `author`: Manualens forfatter(e).
+- `organization`: Den organisation, der er ansvarlig for at producere manualen.
+- `adress`: Organisationens placering.
+- `edition`: Nummeret på udgaven af manualen.
+- `month`: Den måned, hvor manualen blev udgivet.
+- `note`: Eventuelle yderligere oplysninger om manualen.
+
+## Eksempel
+
+Her er et eksempel på, hvordan man bruger BibTeX-typen "manual":
+
+
+
+```bibtex
+@manual{mymanual,
+	title = {Eksempel på en brugervejledning},
+	author = {John Smith og Jane Doe},
+	year = 2022,
+	month = {juni},
+	address = {Eksempelby, CA},
+	note = {Tilgængelig på \url{https://example.com/manual.pdf}},
+	organization = {Example Corporation},
+	edition = {3rd}
+}
+```
+
+I dette eksempel definerer BibTeX-posten en teknisk manual eller brugervejledning med titlen "Example User Guide". Manualen blev udgivet i 2022 af Example Corporation i Example City, CA. Manualen er skrevet af John Smith og Jane Doe, og dette er den tredje udgave. En note er inkluderet, som giver en URL til manualen.

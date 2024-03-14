@@ -1,0 +1,28 @@
+---
+title: "Forståelse af indgangstypen `unpublished` i BibTeX"
+sidebar:
+  label: unpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et populært bibliografisk administrationssystem, der hjælper forskere og akademikere med at organisere og formatere deres bibliografier. Det er meget brugt inden for datalogi, men det er også nyttigt inden for mange andre områder, der kræver kildehenvisninger. BibTeX' posttype "unpublished" bruges til at citere kilder, der ikke er blevet officielt udgivet, såsom specialer, afhandlinger og tekniske rapporter.
+
+"Unpublished" er en alsidig indgangstype, der giver forfattere mulighed for at inkludere alle relevante oplysninger om en upubliceret kilde, såsom forfatterens navn, titel, institution og dato. Et eksempel på en BibTeX-post for en upubliceret kilde er som følger:
+
+<CiteDrive/>
+
+```bibtex
+@unpublished{key,   
+	author = {John Doe},   
+	title = {Vigtigheden af upublicerede kilder},   
+	institution = {University of Example},   
+	year = {2022}, 
+}
+```
+
+
+
+Feltet "key" i dette eksempel er en unik identifikator, der bruges til at henvise til kilden i dokumentets tekst. Feltet "author" indeholder navnet på kildens forfatter(e), feltet "title" indeholder titlen på kilden, feltet "institution" indeholder navnet på den institution, hvor kilden er skrevet, og feltet "year" indeholder det år, kilden er skrevet.
+
+Det skal bemærkes, at indgangstypen "upubliceret" kun bør bruges til kilder, der endnu ikke er blevet formelt udgivet. Hvis en kilde er blevet udgivet, selv om det kun er online, skal den citeres som en "techreport", "mastersthesis" eller "phdthesis", afhængigt af typen af publikation.

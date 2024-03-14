@@ -1,0 +1,51 @@
+---
+title: "Guide til BibTeX-typen `Proceedings`"
+sidebar:
+  label: proceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencehåndteringsværktøj, der ofte bruges i LaTeX-dokumenter. BibTeX-typen "proceedings" bruges til konferencerapporter, såsom en samling af artikler, der præsenteres på en konference. I denne guide vil vi forklare de obligatoriske og valgfrie felter for BibTeX-typen "proceedings".
+
+<CiteDrive/>
+
+## Påkrævede felter
+
+BibTeX-typen "proceedings" kræver følgende felter:
+
+- `title`: Titlen på konferencens proceedings.
+- `year`: Året, hvor konferencens proceedings blev udgivet.
+
+## Valgfrie felter
+
+Ud over de obligatoriske felter har BibTeX-typen "proceedings" også en række valgfrie felter, der kan bruges til at give yderligere oplysninger. Disse felter omfatter:
+
+- `editor`: Navn(e) på redaktøren/redaktørerne af konferencens proceedings.
+- `volume`: Nummeret på det bind, som konferencen omhandler, hvis det er relevant.
+- `number`: Nummeret på udgaven af konferencerapporten, hvis relevant.
+- `series`: Navnet på den serie, som konferencerapporten tilhører, hvis det er relevant.
+- `address`: Lokationen for konferencen.
+- `month`: Den måned, konferencen blev afholdt.
+- `publisher`: Navnet på udgiveren af konferencerapporten.
+
+## Eksempel
+
+Her er et eksempel på, hvordan man bruger BibTeX-typen "proceedings":
+
+```bibtex
+@proceedings{myproceedings,
+	title = {Proceedings of the International Conference on Example},
+	year = 2022,
+	month = {juni},
+	publisher = {ACM Press},
+	address = {New York, NY},
+	series = {Example Conference Proceedings},
+	volume = 1,
+	number = 2,
+	editor = {Jane Doe og John Smith}.
+}
+
+```
+
+I dette eksempel definerer BibTeX-posten et sæt konferencerapporter med titlen "Proceedings of the International Conference on Example". Referatet blev udgivet i 2022 og redigeret af Jane Doe og John Smith. Konferencen blev afholdt i juni i New York, NY, og referatet blev udgivet som bind 1, nummer 2 i serien "Example Conference Proceedings" af ACM Press.

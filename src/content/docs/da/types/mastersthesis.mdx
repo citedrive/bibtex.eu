@@ -1,0 +1,51 @@
+---
+title: "Guide til BibTeX-typen MasterThesis"
+sidebar:
+  label: mastersthesis
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencehåndteringsværktøj, der ofte bruges i LaTeX-dokumenter. BibTeX-typen "masterthesis" bruges til kandidatspecialer. I denne guide vil vi forklare de obligatoriske og valgfrie felter for BibTeX-typen "masterthesis".
+
+<CiteDrive/>
+
+## Påkrævede felter
+
+BibTeX-typen "masterthesis" kræver følgende felter:
+
+- `author`: Forfatteren til specialet.
+- `title`: Titlen på specialet.
+- `school`: Navnet på den institution, der tildelte graden.
+- `year`: Det år, graden blev tildelt.
+
+## Valgfrie felter
+
+Ud over de obligatoriske felter har BibTeX-typen "masterthesis" også en række valgfrie felter, der kan bruges til at give yderligere oplysninger. Disse felter omfatter:
+
+- `type`: Specialets type, f.eks. "Master's thesis".
+- `adress`: Institutionens beliggenhed.
+- `month`: Den måned, hvor specialet blev afleveret.
+- `note`: Eventuelle yderligere oplysninger om afhandlingen.
+
+## Eksempel
+
+Her er et eksempel på, hvordan man bruger BibTeX-typen "masterthesis":
+
+
+
+```bibtex
+@masterthesis{mythesis,
+	title = {Et studie af et eksempel},
+	author = {Jane Doe},
+	year = 2022,
+	month = {juni},
+	address = {Example City, CA},
+	note = {Tilgængelig på \url{https://example.com/thesis.pdf}},
+	school = {University of Example},
+	type = {Master's thesis}
+}
+
+```
+
+I dette eksempel definerer BibTeX-posten et kandidatspeciale forfattet af Jane Doe med titlen "A Study of Example". Graden blev tildelt i 2022 af University of Example, og specialet blev afleveret i juni i Example City, CA. Specialets type er specificeret som "Master's thesis", og der er inkluderet en note, der giver en URL til specialet.

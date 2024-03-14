@@ -1,0 +1,65 @@
+---
+title: "Introduktion til BibTeX og Booklet Type Entry"
+sidebar:
+  label: booklet
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencestyringssystem til formatering af referencelister i et dokument. Det er meget udbredt i den akademiske verden, især inden for videnskab, teknologi og matematik.
+
+En af de mange typer af poster, der kan inkluderes i en BibTeX-fil, er posttypen `booklet`. I denne guide vil vi introducere dig til `booklet`-posttypen og vise dig, hvordan du bruger den til at administrere dine referencer i dine LaTeX-dokumenter.
+
+<CiteDrive/>
+
+## Indgangstypen hæfte
+
+Posttypen `booklet` bruges til at henvise til et trykt værk, der ikke er formelt udgivet, men er bundet sammen som en bog. Eksempler på `booklet`-poster kan være konferencerapporter, programvejledninger eller instruktionsmanualer.
+
+De påkrævede felter for en `booklet`-post er:
+-   `title`: The title of the booklet.
+-   `author`: The author or authors of the booklet.
+-   `howpublished`: How the booklet was published.
+-   `address`: The address of the publisher or sponsoring institution.
+-   `year`: The year the booklet was published.
+
+Valgfrie felter for en `booklet` post inkluderer:
+
+-   `editor`: Redaktøren eller redaktørerne af hæftet.
+-   `volume`: Bindnummeret på en bog i flere bind.
+-   `number`: Nummeret på et tidsskrift eller en serie.
+-   `series`: Navnet på en serie eller et sæt af bøger.
+-   `organization`: Den organisation, der har udgivet eller sponsoreret hæftet.
+-   `month`: Måneden for udgivelsen.
+-   `note`: Diverse oplysninger.
+
+Her er et eksempel på en `booklet`-post:
+
+```bibtex
+@booklet{eksempel_booklet,
+	title = {Konferenceforhandlinger},
+	author = {Jane Doe og John Smith},
+	year = 2022,
+	month = {juli},
+	address = {San Francisco, CA},
+	note = {Dette er et eksempel på et hæfte med konferencebidrag},
+	howpublished = {Presenteret ved den årlige konference om teknologi},
+	editor = {Bob Johnson}
+}
+```
+
+## Brug af indgangstypen Booklet i LaTeX
+
+Når du har oprettet en `booklet`-post i din BibTeX-fil, kan du henvise til den i dit LaTeX-dokument ved hjælp af kommandoen `\cite`. For eksempel:
+
+
+```latex
+`\documentclass{article}  
+\begin{document}  
+Ifølge \cite{example_booklet} var den årlige konference om teknologi en succes.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+I dette eksempel citeres posten `example_booklet` i filen `references.bib` ved hjælp af kommandoen `\cite`. Bibliografien genereres derefter ved hjælp af stilen `plain`.

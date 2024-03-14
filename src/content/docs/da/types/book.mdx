@@ -1,0 +1,45 @@
+---
+title: "Introduktion til BibTeX og bogtypeindtastningen"
+sidebar:
+  label: book
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et bibliografisk styringsværktøj, der ofte bruges sammen med LaTeX-dokumenter. Det hjælper forfattere med at administrere deres bibliografiske referencer på en praktisk og organiseret måde, hvilket gør det nemt at citere kilder og formatere bibliografien i henhold til en bestemt stil. I dette indlæg vil vi fokusere på at oprette en post af typen "bog" i BibTeX.
+
+<CiteDrive/>
+
+## Hvad er en BibTeX-bogtypepost?
+
+En BibTeX-bogtype henviser til en reference til en trykt eller elektronisk bog. Den indeholder oplysninger som forfatter, titel, udgivelsesår, udgiver og adresse. En bogtypepost kan oprettes ved hjælp af følgende BibTeX-kode:
+
+
+
+```bibtex
+@book{key,   
+	author = {Author, A.},   
+	year = {2021},   
+	title = {Titlen på bogen},   
+	publisher = {Forlaget},   
+	address = {Forlagets adresse}, 
+}
+```
+
+
+
+## Sådan opretter du en BibTeX-bogtypeindgang
+
+1.  Åbn din .bib-fil i en teksteditor. Denne fil vil indeholde alle dine BibTeX-referencer.
+2.  Tilføj koden vist ovenfor for at oprette en ny reference.
+3.  Erstat "key" med en unik identifikator for denne reference, i krøllede parenteser. Denne identifikator vil blive brugt til at citere bogen i dit LaTeX-dokument.
+4.  Erstat "Author, A." med navnet på forfatteren/forfatterne.
+5.  Erstat "2021" med udgivelsesåret.
+6.  Erstat "Title of the Book" med bogens titel.
+7.  Erstat "Publisher" med navnet på forlaget.
+8.  Erstat "Address of the Publisher" med forlagets adresse.
+9.  Gem .bib-filen, og du er færdig!
+
+## Konklusion
+
+At bruge BibTeX til at håndtere dine bibliografiske referencer kan gøre processen med at skrive og formatere et dokument meget lettere. Ved at oprette en bogtypepost kan du holde styr på dine kilder og nemt formatere din bibliografi på en professionel måde. Husk at bruge en unik identifikator og at medtage alle relevante oplysninger, når du opretter en bogtypepost i BibTeX.

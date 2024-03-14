@@ -1,0 +1,67 @@
+---
+title: "Introduktion til BibTeX og indføring af inkollektionstypen"
+sidebar:
+  label: incollection
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referencehåndteringsværktøj, der ofte bruges i LaTeX-dokumenter. Det giver dig mulighed for at oprette en bibliografisk database og nemt inkludere referencer i dine LaTeX-dokumenter. I denne guide vil vi introducere BibTeX og forklare "incollection"-typeindgangen.
+
+<CiteDrive/>
+
+## Hvad er BibTeX?
+
+BibTeX er et program og et filformat, der bruges til at håndtere bibliografiske referencer i LaTeX-dokumenter. Med BibTeX kan du gemme alle dine referencer i en enkelt fil og derefter inkludere dem i dine LaTeX-dokumenter ved hjælp af citation keys. Det gør det nemt at tilføje referencer til dit dokument, ændre citationsstile og administrere store bibliografier.
+
+BibTeX har en række forskellige indgangstyper, som du kan bruge til at kategorisere dine referencer. Disse inkluderer "article" for tidsskriftsartikler, "book" for bøger, "inproceedings" for artikler udgivet i konferencerapporter og mange flere.
+
+## Hvad er indgangen Incollection Type?
+
+BibTeX-typen "incollection" bruges til kapitler eller sektioner i bøger. Den svarer til typen "inproceedings", men bruges til værker, der er udgivet i en bog i stedet for et konferencebidrag.
+
+## Påkrævede felter
+
+BibTeX-typen "incollection" kræver følgende felter:
+
+- `author`: Forfatter(e) til kapitlet eller afsnittet.
+- `title`: Titlen på kapitlet eller afsnittet.
+- `booktitle`: Titlen på den bog, der indeholder kapitlet eller afsnittet.
+- `publisher`: Navnet på udgiveren af bogen.
+- `year`: Det år, bogen blev udgivet.
+
+## Valgfrie felter
+
+Ud over de obligatoriske felter har BibTeX-typen "incollection" også en række valgfrie felter, der kan bruges til at give yderligere oplysninger. Disse felter omfatter:
+
+- `editor`: Navn(e) på bogens redaktør(er).
+- `volume`: Bogens bindnummer, hvis det er relevant.
+- `nummer`: Bogens udgavenummer, hvis det er relevant.
+- `series`: Navnet på den serie, som bogen tilhører, hvis det er relevant.
+- `pages`: De sider, som kapitlet eller afsnittet optræder på i bogen.
+- `address`: Forlagets adresse.
+- `month`: Den måned, hvor bogen blev udgivet.
+
+## Eksempel
+
+Her er et eksempel på, hvordan man bruger BibTeX-typen `incollection`:
+
+```bibtex
+@incollection{mychapter,
+	title = {En analyse af et eksempel},
+	author = {John Smith},
+	year = 2022,
+	month = {juni},
+	booktitle = {Eksemplernes bog},
+	publisher = {Eksempelforlaget},
+	address = {New York, NY},
+	series = {Eksempelbogserien},
+	volume = 1,
+	number = 2,
+	pages = {123--130},
+	editor = {Jane Doe}
+}
+
+```
+
+I dette eksempel definerer BibTeX-posten et kapitel med titlen "An Analysis of Example" forfattet af John Smith, som udkom i bogen "The Book of Examples". Bogen blev udgivet i 2022 og redigeret af Jane Doe. Kapitlet udkom på side 123-130 i bind 1, udgave 2 af "Example Book Series" udgivet af Example Publisher i New York, NY.
