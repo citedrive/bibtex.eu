@@ -1,0 +1,67 @@
+---
+title: "Einführung in BibTeX und den Booklet Type Entry"
+sidebar:
+  label: "booklet (Gebundenes Druckwerk)"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Referenzverwaltungssystem zur Formatierung von Referenzlisten in einem Dokument. Es ist in der akademischen Gemeinschaft weit verbreitet, insbesondere in den Bereichen Wissenschaft, Technik und Mathematik.
+
+Eine der vielen Arten von Einträgen, die in eine BibTeX-Datei aufgenommen werden können, ist der Eintragstyp `booklet`. In diesem Leitfaden stellen wir Ihnen den Eintragstyp `booklet` vor und zeigen Ihnen, wie Sie ihn zur Verwaltung Ihrer Referenzen in Ihren LaTeX-Dokumenten verwenden können.
+
+<CiteDrive/>
+
+## Der Eintragstyp `booklet`
+
+Der Eintragstyp `booklet` wird verwendet, um ein gedrucktes Werk zu bezeichnen, das nicht formell veröffentlicht, sondern wie ein Buch gebunden ist. Beispiele für `booklet`-Einträge können Konferenzberichte, Programmführer oder Bedienungsanleitungen sein.
+
+Die erforderlichen Felder für einen `booklet`-Eintrag sind:
+
+- `title`:  Der Titel der Broschüre.
+- `author`: Der Autor oder die Autoren der Broschüre.
+- `howpublished`: Wie die Broschüre veröffentlicht wurde.
+- `address`: Die Adresse des Herausgebers oder der fördernden Einrichtung.
+- `year`: Das Jahr, in dem die Broschüre veröffentlicht wurde.
+
+Zu den fakultativen Feldern eines Eintrags für ein `booklet` gehören:
+
+- `editor`: Der Herausgeber oder die Herausgeber der Broschüre.
+- `volume`: Die Bandnummer eines mehrbändigen Buches.
+- `number`: Die Nummer einer Zeitschrift oder Reihe.
+- `series`: Der Name einer Reihe oder eines Satzes von Büchern.
+- `organization`: Die Organisation, die die Broschüre veröffentlicht oder gesponsert hat.
+- `month`: Der Monat der Veröffentlichung.
+- `note`: Verschiedene Informationen.
+
+Hier ist ein Beispiel für einen `booklet` Eintrag:
+
+```bibtex
+@booklet{example_booklet,
+	title = {Konferenzprotokolle},
+	author = {Jane Doe und John Smith},
+	year = 2022,
+	month = {Juli},
+	Adresse = {San Francisco, CA},
+	note = {Dies ist ein Beispieleintrag für einen Tagungsband},
+	howpublished = {Vorgestellt auf der Jahreskonferenz für Technologie},
+	editor = {Bob Johnson}
+}
+
+```
+
+## Verwendung des Eintragstyps `booklet` in LaTeX
+
+Sobald Sie einen `booklet`-Eintrag in Ihrer BibTeX-Datei erstellt haben, können Sie ihn in Ihrem LaTeX-Dokument mit dem Befehl "cite" referenzieren. Zum Beispiel:
+
+
+```latex
+documentclass{article}  
+\begin{document}  
+Laut \cite{example_booklet} war die Jahreskonferenz für Technologie ein Erfolg.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+In diesem Beispiel wird der Eintrag `example_booklet` in der Datei `references.bib` mit dem Befehl `\cite` zitiert. Das Literaturverzeichnis wird dann unter Verwendung des Stils "Plain" erstellt.

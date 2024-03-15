@@ -1,0 +1,23 @@
+---
+title: BibTeX misc type
+sidebar:
+  label: misc (Sonstige typen)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Es gibt eine Vielzahl von Eingabetypen in BibTeX, und manchmal werden Sie auf eine Quelle stoßen, die nicht genau einem der vordefinierten Typen entspricht. In solchen Fällen können Sie den Typ misc verwenden. Dieser Typ ist für alles gedacht, was in keine der anderen Kategorien passt. Das können Musikstücke oder Vorlesungsfolien sein, aber am häufigsten werden Webseiten zitiert. Diese nicht unterstützten Quellentypen werden mit Hilfe von Behelfsfeldern aus `note` und `howpublished` erstellt. Wenn Sie häufig Quellentypen zitieren, die von BibTex nicht unterstützt werden, sollten Sie sich BibLaTex ansehen, das eine Obermenge von Feldern und Typen bietet.
+
+<CiteDrive/>
+
+```latex
+
+@misc{citationKey,
+
+	...
+
+}
+
+```
+
+Wenn Sie misc verwenden möchten, um eine Website zu zitieren, lesen Sie diese Anleitung. 

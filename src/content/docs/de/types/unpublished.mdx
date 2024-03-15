@@ -1,0 +1,26 @@
+---
+title: "Den Eintragstyp 'unpublished' in BibTeX verstehen"
+sidebar:
+  label: unpublished (Unveröffentlicht)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein populäres bibliographisches Verwaltungssystem, das Forschern und Akademikern hilft, ihre Bibliographien zu organisieren und zu formatieren. Es wird häufig in der Informatik verwendet, ist aber auch in vielen anderen Bereichen nützlich, in denen Quellen zitiert werden müssen. Der BibTeX-Eintragstyp "unveröffentlicht" wird verwendet, um Quellen zu zitieren, die nicht offiziell veröffentlicht wurden, wie z.B. Diplomarbeiten, Dissertationen und technische Berichte.
+
+Der Eintragstyp "unveröffentlicht" ist ein vielseitiger Eintragstyp, der es dem Autor erlaubt, alle relevanten Informationen zu einer unveröffentlichten Quelle anzugeben, z.B. Name des Autors, Titel, Institution und Datum. Ein Beispiel für einen BibTeX-Eintrag für eine unveröffentlichte Quelle sieht wie folgt aus:
+
+<CiteDrive/>
+
+```bibtex
+unpublished{key,   
+	author = {John Doe},   
+	title = {Die Bedeutung unveröffentlichter Quellen},   
+	institution = {Universität des Beispiels},   
+	year = {2022}, 
+}
+```
+
+Das Feld "key" in diesem Beispiel ist ein eindeutiger Identifikator, der verwendet wird, um im Text des Dokuments auf die Quelle zu verweisen. Das Feld "author" enthält den/die Namen des/der Autoren der Quelle, das Feld "title" enthält den Titel der Quelle, das Feld "institution" enthält den Namen der Institution, in der die Quelle verfasst wurde, und das Feld "year" enthält das Jahr, in dem die Quelle verfasst wurde.
+
+Es ist zu beachten, dass der Eintragstyp "unveröffentlicht" nur für Quellen verwendet werden sollte, die noch nicht formell veröffentlicht wurden. Wenn eine Quelle veröffentlicht wurde, auch wenn sie nur online verfügbar ist, sollte sie je nach Art der Veröffentlichung als "techreport", "mastersthesis" oder "phdthesis" zitiert werden.

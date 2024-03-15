@@ -1,0 +1,52 @@
+---
+title: "Anleitung zum BibTeX-Typ `Manual`"
+sidebar:
+  label: manual (Anleitung)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Werkzeug zur Verwaltung von Referenzen, das häufig in LaTeX-Dokumenten verwendet wird. Der BibTeX-Typ "manual" wird für technische Handbücher oder Bedienungsanleitungen verwendet. Dieser Leitfaden beschreibt die obligatorischen und optionalen Felder für den BibTeX-Typ "manual".
+
+<CiteDrive/>
+
+## Erforderliche Felder
+
+Der BibTeX-Typ "manual" erfordert die folgenden Felder:
+
+-   `title`: Der Titel des Handbuchs.
+-   `year`: Das Jahr, in dem das Handbuch veröffentlicht wurde.
+
+## Optionale Felder
+
+Neben den erforderlichen Feldern hat der BibTeX-Typ "manual" auch eine Reihe optionaler Felder, die verwendet werden können, um zusätzliche Informationen bereitzustellen. Diese Felder umfassen:
+
+-   `author`: Der/die Autor(en) des Handbuchs.
+-   `organization`: Die Organisation, die für die Erstellung des Handbuchs verantwortlich ist.
+-   `address`: Der Standort der Organisation.
+-   `edition`: Die Ausgabe des Handbuchs.
+-   `month`: Der Monat, in dem das Handbuch veröffentlicht wurde.
+-   `note`: Jegliche zusätzliche Informationen zum Handbuch.
+
+
+## Beispiel
+
+Hier ist ein Beispiel für die Verwendung des "manual" BibTeX-Typs:
+
+
+
+```bibtex
+@manual{mymanual,
+	title        = {Example User Guide},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/manual.pdf}},
+	organization = {Example Corporation},
+	edition      = {3rd}
+}
+
+```
+
+In diesem Beispiel definiert der BibTeX-Eintrag ein technisches Handbuch oder ein Benutzerhandbuch mit dem Titel "Example User Guide". Das Handbuch wurde im Jahr 2022 von der Example Corporation in Example City, CA veröffentlicht. Das Handbuch wurde von John Smith und Jane Doe geschrieben, und dies ist die dritte Ausgabe. Ein Verweis auf die URL des Handbuchs ist enthalten.

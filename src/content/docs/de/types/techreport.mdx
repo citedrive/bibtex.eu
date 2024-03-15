@@ -1,0 +1,27 @@
+---
+title: "Den Techreport-Eingabetyp in BibTeX verstehen"
+sidebar:
+  label: techreport (Technisches Bericht)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein bekanntes bibliographisches Verwaltungssystem, das von Forschern und Wissenschaftlern zur Organisation und Formatierung ihrer Bibliographien verwendet wird. Es ist besonders in der Informatik nützlich, kann aber auch in anderen Bereichen verwendet werden. "techreport" ist ein Eintragstyp in BibTeX, der zum Zitieren von technischen Berichten verwendet wird.
+
+Technische Berichte sind Dokumente, die detaillierte technische Informationen zu einem bestimmten Thema oder Projekt enthalten. Sie werden häufig von Organisationen, Institutionen oder Forschern erstellt und sind für einen bestimmten Personenkreis bestimmt. Technische Berichte werden selten formell veröffentlicht, sind aber eine wertvolle Informationsquelle und sollten in wissenschaftlichen Arbeiten zitiert werden.
+
+In BibTeX wird der Eintragstyp "techreport" verwendet, um alle relevanten Informationen zu einem technischen Bericht anzugeben, wie z.B. Autor, Titel, Institution, Jahr und Berichtsnummer. Ein BibTeX-Eintrag für einen technischen Bericht ist unten abgebildet:
+<CiteDrive/>
+
+
+```bibtex
+@techreport{key,   
+	author = {Jane Smith},   
+	title = {Technical Report on Advanced Robotics},   
+	institution = {Institute of Technology},   
+	year = {2021},   
+	number = {TR-1234}
+}
+```
+
+In diesem Beispiel ist das Feld "Schlüssel" ein eindeutiger Identifikator, der verwendet wird, um im Text des Dokuments auf die Quelle zu verweisen. Das Feld "Autor" enthält den/die Autor(en) des technischen Berichts, das Feld "Titel" den Titel des Berichts, das Feld "Institution" die Institution, in der der Bericht verfasst wurde, das Feld "Jahr" das Jahr, in dem der Bericht verfasst wurde, und das Feld "Nummer" die Nummer des Berichts.

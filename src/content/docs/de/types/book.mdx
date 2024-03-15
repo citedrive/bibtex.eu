@@ -1,0 +1,43 @@
+---
+title: "Einführung in BibTeX und den 'book type' Buchtypeintrag"
+sidebar:
+  label: book (Buch)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Werkzeug zur Verwaltung bibliographischer Angaben, das häufig mit LaTeX-Dokumenten verwendet wird. Es hilft Autoren, ihre bibliographischen Referenzen auf bequeme und organisierte Weise zu verwalten, indem es das Zitieren von Quellen und das Formatieren der Bibliographie gemäß einem bestimmten Stil erleichtert. In diesem Beitrag werden wir uns auf die Erstellung eines Eintrags vom Typ "Buch" in BibTeX konzentrieren.
+
+<CiteDrive/>
+
+## Was ist ein BibTeX-Buchtyp-Eintrag?
+
+Ein BibTeX-Eintrag vom Typ Buch bezieht sich auf einen Verweis auf ein gedrucktes oder elektronisches Buch. Er enthält Informationen wie den Autor, den Titel, das Erscheinungsjahr, den Verlag und die Adresse. Ein Buchtyp-Eintrag kann mit dem folgenden BibTeX-Code erstellt werden:
+
+
+
+```tex
+@book{key,   
+	author = {Autor, A.},   
+	Jahr = {2021},   
+	title = {Titel des Buches},   
+	publisher = {Herausgeber},   
+	address = {Adresse des Herausgebers}, 
+}
+```
+
+## So erstellen Sie einen BibTeX-Buchtyp-Eintrag
+
+1.  Öffnen Sie Ihre .bib-Datei in einem Texteditor. Diese Datei wird alle Ihre BibTeX-Referenzen enthalten.
+2.  Fügen Sie den oben gezeigten Code ein, um einen neuen Verweis zu erstellen.
+3.  Ersetzen Sie `key` durch einen eindeutigen Bezeichner für diese Referenz, der in geschweiften Klammern steht. Dieser Bezeichner wird verwendet, um das Buch in Ihrem LaTeX-Dokument zu zitieren.
+4.  Ersetzen Sie `Autor, A.` durch den Namen des Autors/der Autoren.
+5.  Ersetzen Sie `2021` durch das Jahr der Veröffentlichung.
+6.  Ersetzen Sie `Titel des Buches` durch den Titel des Buches.
+7.  Ersetzen Sie `Herausgeber` durch den Namen des Herausgebers.
+8.  Ersetzen Sie `Adresse des Herausgebers` durch die Adresse des Herausgebers.
+9.  Speichern Sie die .bib-Datei und Sie sind fertig!
+
+## Schlussfolgerung
+
+Die Verwendung von BibTeX zur Verwaltung Ihrer bibliografischen Referenzen kann das Schreiben und Formatieren eines Dokuments erheblich erleichtern. Indem Sie einen Eintrag vom Typ Buch erstellen, können Sie Ihre Quellen verfolgen und Ihre Bibliographie auf einfache Weise professionell formatieren. Denken Sie daran, einen eindeutigen Bezeichner zu verwenden und alle relevanten Informationen anzugeben, wenn Sie einen bibliografischen Eintrag in BibTeX erstellen.

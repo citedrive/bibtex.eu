@@ -1,0 +1,50 @@
+---
+title: "Anleitung zum BibTeX-Typ 'phdthesis'"
+sidebar:
+  label: phdthesis (Doktorarbeit)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Werkzeug zur Verwaltung von Referenzen, das häufig in LaTeX-Dokumenten verwendet wird. Der BibTeX-Typ "phdthesis" wird für Dissertationen verwendet. Dieser Leitfaden beschreibt die obligatorischen und optionalen Felder für den BibTeX-Typ "phdthesis".
+<CiteDrive/>
+
+## Erforderliche Felder
+
+Der BibTeX-Typ "phdthesis" erfordert die folgenden Felder:
+
+-   `author`: Der Autor der Dissertation.
+-   `title`: Der Titel der Dissertation.
+-   `school`: Der Name der Institution, die den Abschluss verliehen hat.
+-   `year`: Das Jahr, in dem der Abschluss verliehen wurde.
+
+## Optionale Felder
+
+Neben den erforderlichen Feldern hat der BibTeX-Typ "phdthesis" auch eine Reihe optionaler Felder, die verwendet werden können, um zusätzliche Informationen bereitzustellen. Diese Felder umfassen:
+
+-   `type`: Die Art der Arbeit, wie "Doktorarbeit" oder "Masterarbeit".
+-   `address`: Der Standort der Institution.
+-   `month`: Der Monat, in dem die Arbeit eingereicht wurde.
+-   `note`: Jegliche zusätzliche Informationen über die Arbeit.
+
+
+## Beispiel
+
+Hier ist ein Beispiel für die Verwendung des BibTeX-Typs "phdthesis":
+
+```bibtex
+@phdthesis{mythesis,
+	title        = {An Analysis of Example},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {PhD thesis}
+}
+```
+
+
+
+In diesem Beispiel definiert der BibTeX-Eintrag eine Dissertation von John Smith mit dem Titel "An Analysis of Example". Die Dissertation wurde im Jahr 2022 von der University of Example verliehen und im Juni in Example City, Kalifornien, eingereicht. Die Art der Dissertation wird als "PhD thesis" angegeben, und es wird eine Anmerkung mit einer URL für die Dissertation hinzugefügt.

@@ -1,0 +1,60 @@
+---
+title: Anleitung zum BibTeX-Typ 'inproceedings'
+sidebar:
+  label: inproceedings (Artikel in einem Konferenzbericht)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Werkzeug zur Verwaltung von Referenzen, das häufig in LaTeX-Dokumenten verwendet wird. Der BibTeX-Typ "inproceedings" wird für Beiträge verwendet, die in Konferenzberichten veröffentlicht werden. Diese Anleitung beschreibt die obligatorischen und optionalen Felder für den BibTeX-Typ "inproceedings".
+
+<CiteDrive/>
+
+## Erforderliche Felder
+
+Der BibTeX-Typ "inproceedings" erfordert die folgenden Felder:
+
+- `author`: Die Autor(en) des Papers.
+- `title`: Der Titel des Papers.
+- `booktitle`: Der Titel der Konferenzberichte.
+- `year`: Das Jahr, in dem die Konferenzberichte veröffentlicht wurden.
+
+## Optionale Felder
+
+Neben den erforderlichen Feldern hat der BibTeX-Typ "inproceedings" auch eine Reihe optionaler Felder, die verwendet werden können, um zusätzliche Informationen bereitzustellen. Diese Felder umfassen:
+
+- `editor`: Der Name der Herausgeber der Konferenzberichte.
+- `volume`: Die Bandnummer der Konferenzberichte, falls zutreffend.
+- `number`: Die Ausgabennummer der Konferenzberichte, falls zutreffend.
+- `series`: Der Name der Serie, zu der die Konferenzberichte gehören, falls zutreffend.
+- `pages`: Die Seiten, auf denen das Paper in den Konferenzberichten erscheint.
+- `address`: Der Ort der Konferenz.
+- `month`: Der Monat, in dem die Konferenz stattfand.
+- `organization`: Die Organisation, die die Konferenz gesponsert hat.
+- `publisher`: Der Name des Verlags der Konferenzberichte.
+
+
+## Beispiel
+
+Hier ist ein Beispiel für die Verwendung des BibTeX-Typs "inproceedings":
+
+
+```bibtex
+@inproceedings{mypaper,
+	title        = {An Analysis of Example},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {June},
+	booktitle    = {Proceedings of the International Conference on Example},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Example Conference Proceedings},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown and Susan Green},
+	organization = {ACM}
+}
+```
+
+In diesem Beispiel definiert der BibTeX-Eintrag einen Artikel mit dem Titel "An Analysis of Example", der von John Smith und Jane Doe verfasst wurde und im Tagungsband der International Conference on Example erschienen ist. Der Tagungsband wurde von David Brown und Susan Green herausgegeben. Die Konferenz fand im Juni in New York, NY, statt und wurde von der ACM gesponsert. Der Beitrag erschien auf den Seiten 123-130 in Volume 1, Issue 2 der Reihe "Example Conference Proceedings", herausgegeben von ACM Press.

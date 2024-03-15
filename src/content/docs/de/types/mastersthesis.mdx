@@ -1,0 +1,50 @@
+---
+title: "Leitfaden zum BibTeX-Typ 'masterthesis'"
+sidebar:
+  label: mastersthesis (Masterarbeit)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Werkzeug zur Verwaltung von Referenzen, das häufig in LaTeX-Dokumenten verwendet wird. Der BibTeX-Typ "masterthesis" wird für Masterarbeiten verwendet. Dieser Leitfaden erklärt die obligatorischen und optionalen Felder für den BibTeX-Typ "masterthesis".
+<CiteDrive/>
+
+## Erforderliche Felder
+
+Der BibTeX-Typ "masterthesis" erfordert die folgenden Felder:
+
+-   `author`: Der Autor der Arbeit.
+-   `title`: Der Titel der Arbeit.
+-   `school`: Der Name der Institution, die den Abschluss verliehen hat.
+-   `year`: Das Jahr, in dem der Abschluss verliehen wurde.
+
+## Optionale Felder
+
+Neben den erforderlichen Feldern hat der BibTeX-Typ "masterthesis" auch eine Reihe optionaler Felder, die verwendet werden können, um zusätzliche Informationen bereitzustellen. Diese Felder umfassen:
+
+-   `type`: Die Art der Arbeit, z.B. "Masterarbeit".
+-   `address`: Der Standort der Institution.
+-   `month`: Der Monat, in dem die Arbeit eingereicht wurde.
+-   `note`: Jegliche zusätzliche Informationen über die Arbeit.
+
+## Beispiel
+
+Hier ist ein Beispiel für die Verwendung des BibTeX-Typs `masterthesis`:
+
+
+
+```bibtex
+@masterthesis{mythesis,
+	title        = {A Study of Example},
+	author       = {Jane Doe},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {Master's thesis}
+}
+
+```
+
+In diesem Beispiel definiert der BibTeX-Eintrag eine Masterarbeit von Jane Doe mit dem Titel "A Study of Example". Der Abschluss wurde im Jahr 2022 von der University of Example verliehen, und die Arbeit wurde im Juni in Example City, CA, eingereicht. Die Art der Arbeit wird als "Master's thesis" angegeben, und es wird eine Anmerkung mit einer URL für die Arbeit hinzugefügt.

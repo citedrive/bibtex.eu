@@ -1,0 +1,66 @@
+---
+title: "Einführung in BibTeX und Inbook Type Entry"
+sidebar:
+  label: inbook (Kapitel, Sektion, etc.)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Referenzmanagementsystem, das zur Formatierung von Referenzlisten in einem Dokument verwendet wird. Es ist in der akademischen Literatur weit verbreitet, insbesondere in den Bereichen Wissenschaft und Technik. In dieser Anleitung stellen wir Ihnen den Eintragstyp `inbook` in BibTeX vor und zeigen Ihnen, wie Sie ihn in Ihren LaTeX-Dokumenten verwenden können.
+
+<CiteDrive/>
+
+## Der inbook-Eintragstyp
+
+Der `inbook`-Eintragstyp wird verwendet, um auf ein bestimmtes Kapitel oder einen Abschnitt innerhalb eines Buches zu verweisen. Die erforderlichen Felder für einen inbook-Eintrag sind
+
+-   `author`: Der/die Name(n) des/der Autor(en) des Kapitels oder Abschnitts.
+-   `title`: Der Titel des Kapitels oder Abschnitts.
+-   `booktitle`: Der Titel des Buches, das das Kapitel oder den Abschnitt enthält.
+-   `publisher`: Der Name des Herausgebers des Buches.
+-   `year`: Das Jahr der Veröffentlichung.
+
+Optionale Felder für einen Eintrag in einem `inbook`:
+
+-   `editor`: Der/die Name(n) des/der Herausgeber(s) des Buches.
+-   `volume`: Die Bandnummer des Buches.
+-   `number`: Die Nummer einer Serie oder einer Reihe von Büchern.
+-   `series`: Der Name einer Serie oder einer Reihe von Büchern.
+-   `address`: Der Sitz des Verlags.
+-   `edition`: Die Auflage des Buches.
+-   `month`: Der Monat der Veröffentlichung.
+-   `pages`:  Die Seitenzahl des Kapitels oder Abschnitts.
+-   `note`: Verschiedene/Zusätzliche Informationen.
+
+Hier ist ein Beispiel für einen "inbook"-Eintrag:
+
+```bibtex
+@inbook{example_inbook,
+	title = {Die Auswirkungen des Klimawandels},
+	author = {John Smith},
+	Jahr = 2022,
+	booktitle = {Environmental Issues and Solutions},
+	publisher = {Wiley},
+	pages = {101--112},
+	note = {Dies ist ein Beispieleintrag für ein Kapitel in einem Buch.},
+	Herausgeber = {Jane Doe},
+	edition = {3rd}
+}
+```
+
+## Verwendung des "Inbook"-Eintragstyps in LaTeX
+
+Sobald Sie einen "Inbook"-Eintrag in Ihrer BibTeX-Datei erstellt haben, können Sie in Ihrem LaTeX-Dokument mit dem Befehl "cite" darauf verweisen. Zum Beispiel:
+
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Laut \cite{example_inbook} hat der Klimawandel 
+erhebliche Auswirkungen auf die Erde.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+	
+In diesem Beispiel wird der Eintrag `example_inbook` in der Datei `references.bib` mit dem Befehl `cite` zitiert. Das Literaturverzeichnis wird dann mit dem Stil `Plain` erstellt.

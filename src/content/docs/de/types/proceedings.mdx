@@ -1,0 +1,51 @@
+---
+title: "Leitfaden für BibTeX Typ 'Proceedings'"
+sidebar:
+  label: proceedings (Konferenzberichte)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Werkzeug zur Verwaltung von Referenzen, das häufig in LaTeX-Dokumenten verwendet wird. Der BibTeX-Typ "Proceedings" wird für Konferenzberichte verwendet, z.B. für eine Sammlung von Beiträgen, die auf einer Konferenz präsentiert wurden. Diese Anleitung beschreibt die obligatorischen und optionalen Felder für den BibTeX-Typ "Proceedings".
+<CiteDrive/>
+
+## Erforderliche Felder
+
+Der BibTeX-Typ "proceedings" erfordert die folgenden Felder:
+
+-   `title`: Der Titel der Konferenzberichte.
+-   `year`: Das Jahr, in dem die Konferenzberichte veröffentlicht wurden.
+
+## Optionale Felder
+
+Neben den erforderlichen Feldern hat der BibTeX-Typ "proceedings" auch eine Reihe optionaler Felder, die verwendet werden können, um zusätzliche Informationen bereitzustellen. Diese Felder umfassen:
+
+-   `editor`: Der/die Name(n) des/der Herausgeber(s) der Konferenzberichte.
+-   `volume`: Die Bandnummer der Konferenzberichte, falls zutreffend.
+-   `number`: Die Ausgabennummer der Konferenzberichte, falls zutreffend.
+-   `series`: Der Name der Serie, zu der die Konferenzberichte gehören, falls zutreffend.
+-   `address`: Der Ort der Konferenz.
+-   `month`: Der Monat, in dem die Konferenz stattfand.
+-   `publisher`: Der Name des Verlags der Konferenzberichte.
+
+
+## Beispiel
+
+Hier ist ein Beispiel für die Verwendung des BibTeX-Typs "proceedings":
+
+```bibtex
+@proceedings{myproceedings,
+	title        = {Proceedings of the International Conference on Example},
+	year         = 2022,
+	month        = {June},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Example Conference Proceedings},
+	volume       = 1,
+	number       = 2,
+	editor       = {Jane Doe and John Smith}
+}
+
+```
+
+In diesem Beispiel definiert der BibTeX-Eintrag eine Reihe von Konferenzberichten mit dem Titel "Proceedings of the International Conference on Example". Der Konferenzbericht wurde im Jahr 2022 veröffentlicht und von Jane Doe und John Smith herausgegeben. Die Konferenz fand im Juni in New York, NY, statt und der Tagungsband wurde als Band 1, Ausgabe 2 der Reihe "Example Conference Proceedings" von ACM Press veröffentlicht.

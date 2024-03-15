@@ -1,0 +1,66 @@
+---
+title: "Einführung in BibTeX und den Konferenztypeneintrag"
+sidebar:
+  label: conference (Wissenschaftliche Konferenz)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX ist ein Referenzmanagementsystem, das zur Formatierung von Referenzlisten in einem Dokument verwendet wird. Es ist in der akademischen Literatur weit verbreitet, insbesondere in den Bereichen Wissenschaft und Technik. In dieser Anleitung stellen wir Ihnen den Eintragstyp `conference` in BibTeX vor und zeigen Ihnen, wie Sie ihn in Ihren LaTeX-Dokumenten verwenden können.
+<CiteDrive/>
+
+## Der Eintragstyp `conferenz`
+
+Der Eintragstyp "Konferenz" wird verwendet, um auf Beiträge zu verweisen, die in Konferenzbänden veröffentlicht werden. Die erforderlichen Felder für einen "Conference"-Eintrag sind
+
+- `author`: Der/die Name(n) des Autors/der Autoren des Beitrags.
+- `title`: Der Titel des Beitrags.
+- `booktitle`: Der Name des Konferenzbandes.
+- `year`: Das Jahr, in dem die Konferenz stattgefunden hat.
+
+Optionale Felder für einen "Konferenz"-Eintrag umfassen:
+
+- `editor`: Der/die Name(n) des/der Herausgeber(s) des Konferenzbandes.
+- `volume`: Die Bandnummer des Tagungsbandes.
+- `number`: Die Nummer des Tagungsbandes.
+- `series`: Der Name der Buchreihe, zu der der Tagungsband gehört.
+- `pages`: Die Seitenzahlen, auf denen der Beitrag erscheint.
+- `address`: Der Ort der Konferenz.
+- `month`: Der Monat, in dem die Konferenz stattgefunden hat.
+- `organization`: Die Organisation, die die Konferenz gesponsert hat.
+- `publisher`: Der Herausgeber des Tagungsbandes.
+- `note`: Verschiedene Informationen.
+
+Hier ist ein Beispiel für einen `conferenz`-Eintrag:
+
+```bibtex
+@conference{example_conference,
+	title = {Die Auswirkungen des Klimawandels},
+	author = {John Smith und Jane Doe},
+	year = 2022,
+	month = {Juni},
+	booktitle = {Proceedings of the Annual Conference on Climate Change},
+	Herausgeber = {Springer},
+	Adresse = {Los Angeles, CA},
+	Seiten = {55--62},
+	note = {Dies ist ein Beispieleintrag für einen Beitrag in einem Konferenzband},
+	Herausgeber = {Bob Johnson},
+	organisation = {Climate Change Association}
+}
+
+```
+
+## Verwendung des Eintragstyps `conferenz` in LaTeX
+
+Sobald Sie einen `conferenz`-Eintrag in Ihrer BibTeX-Datei erstellt haben, können Sie in Ihrem LaTeX-Dokument mit dem Befehl "cite" darauf verweisen. Zum Beispiel:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Laut \cite{example_conference} hat der Klimawandel erhebliche Auswirkungen auf den Planeten.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+In diesem Beispiel wird der Eintrag `example_conference` in der Datei `references.bib` mit dem Befehl `\cite` zitiert. Das Literaturverzeichnis wird dann unter Verwendung des Stils "Plain" erstellt.
