@@ -1,0 +1,52 @@
+---
+title: "Guía de `materthesis` tipo BibTeX (Tesis de máster)"
+sidebar:
+  label: mastersthesis (Tesis de máster)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX es una herramienta de gestión de referencias que se utiliza habitualmente en documentos LaTeX. El tipo BibTeX "masterthesis" se utiliza para tesis de máster. En esta guía explicaremos los campos obligatorios y opcionales del tipo BibTeX "masterthesis".
+
+<CiteDrive/>
+
+## Campos Requeridos
+
+El tipo BibTeX "masterthesis" requiere los siguientes campos:
+
+-   `author`: El autor de la tesis.
+-   `title`: El título de la tesis.
+-   `school`: El nombre de la institución que otorgó el grado.
+-   `year`: El año en que se otorgó el grado.
+
+## Campos Opcionales
+
+Además de los campos requeridos, el tipo BibTeX "masterthesis" también tiene varios campos opcionales que se pueden utilizar para proporcionar información adicional. Estos campos incluyen:
+
+-   `type`: El tipo de la tesis, como "Tesis de maestría".
+-   `address`: La ubicación de la institución.
+-   `month`: El mes en que se presentó la tesis.
+-   `note`: Cualquier información adicional sobre la tesis.
+
+
+## Ejemplo
+
+He aquí un ejemplo de cómo utilizar el tipo BibTeX "masterthesis":
+
+
+
+```bibtex
+@masterthesis{mythesis,
+	title        = {A Study of Example},
+	author       = {Jane Doe},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {Master's thesis}
+}
+
+```
+
+En este ejemplo, la entrada BibTeX define una tesis de máster escrita por Jane Doe titulada "A Study of Example". El título fue concedido en 2022 por la Universidad de Example, y la tesis fue presentada en junio en Example City, CA. El tipo de la tesis se especifica como "Tesis de maestría", y se incluye una nota que proporciona una URL para la tesis.

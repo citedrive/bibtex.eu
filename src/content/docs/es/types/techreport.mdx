@@ -1,0 +1,28 @@
+---
+title: "Comprender el tipo de entrada techreport en BibTeX"
+sidebar:
+  label: techreport (informe técnico)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX es un conocido sistema de gestión bibliográfica que investigadores y académicos utilizan para organizar y dar formato a sus bibliografías. Es especialmente útil en informática, pero también puede utilizarse en otros campos. "techreport" es un tipo de entrada en BibTeX que se utiliza para citar informes técnicos.
+
+Los informes técnicos son documentos que contienen información técnica detallada sobre un tema o proyecto específico. Con frecuencia son creados por organizaciones, instituciones o investigadores y están destinados a ser distribuidos a un grupo específico de personas. Los informes técnicos rara vez se publican formalmente, pero son una valiosa fuente de información y deben citarse en los trabajos académicos.
+
+En BibTeX, el tipo de entrada "techreport" se utiliza para proporcionar toda la información pertinente sobre un informe técnico, como el autor, el título, la institución, el año y el número de informe. A continuación se muestra una entrada BibTeX para un informe técnico:
+
+<CiteDrive/>
+
+
+```bibtex
+@techreport{key,   
+	author = {Jane Smith},   
+	title = {Informe técnico sobre robótica avanzada},   
+	institution = {Instituto de Tecnología},   
+	year = {2021},   
+	number = {TR-1234}
+}
+```
+
+En este ejemplo, el campo "clave" es un identificador único que se utiliza para referirse a la fuente en el texto del documento. El campo "autor" indica el autor o autores del informe técnico, el campo "título" indica el título del informe, el campo "institución" indica la institución en la que se redactó el informe, el campo "año" indica el año en que se redactó el informe y el campo "número" indica el número del informe.

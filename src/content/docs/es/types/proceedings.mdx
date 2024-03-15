@@ -1,0 +1,52 @@
+---
+title: "Guía para BibTeX Tipo 'Proceedings'"
+sidebar:
+  label: proceedings (Actas)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX es una herramienta de gestión de referencias que se utiliza habitualmente en documentos LaTeX. El tipo BibTeX "proceedings" se utiliza para actas de congresos, como una colección de ponencias presentadas en un congreso. En esta guía explicaremos los campos obligatorios y opcionales del tipo BibTeX "proceedings".
+
+<CiteDrive/>
+
+## Campos Requeridos
+
+El tipo BibTeX "proceedings" requiere los siguientes campos:
+
+-   `title`: El título de las actas de la conferencia.
+-   `year`: El año en que se publicaron las actas de la conferencia.
+
+## Campos Opcionales
+
+Además de los campos requeridos, el tipo BibTeX "proceedings" también tiene varios campos opcionales que se pueden utilizar para proporcionar información adicional. Estos campos incluyen:
+
+-   `editor`: El nombre(s) del editor(es) de las actas de la conferencia.
+-   `volume`: El número de volumen de las actas de la conferencia, si corresponde.
+-   `number`: El número de la edición de las actas de la conferencia, si corresponde.
+-   `series`: El nombre de la serie a la que pertenecen las actas de la conferencia, si corresponde.
+-   `address`: La ubicación de la conferencia.
+-   `month`: El mes en que se celebró la conferencia.
+-   `publisher`: El nombre del editor de las actas de la conferencia.
+
+
+## Ejemplo
+
+He aquí un ejemplo de cómo utilizar el tipo BibTeX "proceedings":
+
+```bibtex
+@proceedings{myproceedings,
+	title = {Proceedings de la Conferencia Internacional sobre Ejemplo},
+	year = 2022,
+	month = {Junio},
+	publisher = {ACM Press},
+	address = {Nueva York, NY},
+	series = {Actas de la Conferencia sobre el Ejemplo},
+	volume = 1,
+	number = 2,
+	editor = {Jane Doe y John Smith}
+}
+
+```
+
+En este ejemplo, la entrada BibTeX define un conjunto de actas de conferencia titulado "Proceedings of the International Conference on Example". Las actas fueron publicadas en 2022 y editadas por Jane Doe y John Smith. La conferencia se celebró en junio en Nueva York, NY, y las actas se publicaron como volumen 1, número 2 de la serie "Example Conference Proceedings" de ACM Press.

@@ -1,0 +1,23 @@
+---
+title: BibTeX tipo misc
+sidebar:
+  label: misc (Miscelánea)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+En BibTeX existen varios tipos de entrada, y a veces se encontrará con una fuente que no se ajusta a ninguno de los tipos predefinidos. En estos casos, puede utilizar el tipo misc. Este tipo es para cualquier cosa que no encaje en ninguna de las otras categorías. Puede tratarse de piezas musicales o diapositivas de conferencias, pero la mayoría de las veces se trata de citar páginas web. Estos tipos de fuentes no compatibles se crean con campos de solución de `note` y `howpublished`. Si cita con frecuencia tipos de fuentes no soportados por BibTex, debería echar un vistazo a BibLaTex, que ofrece un superconjunto en términos de campos y tipos.
+
+<CiteDrive/>
+
+```latex
+
+@misc{citationKey,
+
+	...
+
+}
+
+```
+
+Si desea utilizar misc para citar un sitio web, consulte esta guía. 

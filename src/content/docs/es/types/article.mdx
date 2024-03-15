@@ -1,0 +1,60 @@
+---
+title: Introducción a BibTeX y a la entrada de tipo 'article' (Artículo)
+sidebar:
+  label: article (Artículo)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX es un sistema de gestión de referencias que se utiliza para dar formato a las listas de referencias de un documento. Se utiliza habitualmente en la escritura académica, sobre todo en los ámbitos científico y técnico. En esta guía le presentaremos el tipo de entrada `article` en BibTeX y le mostraremos cómo utilizarlo en sus documentos LaTeX.
+
+<CiteDrive/>
+
+## El Tipo de Entrada de Artículo
+
+El tipo de entrada `article` se utiliza para referirse a artículos publicados en revistas académicas, revistas o periódicos. Los campos requeridos para una entrada `article` son:
+
+-   `author`: El nombre(s) del autor(es) del artículo.
+-   `title`: El título del artículo.
+-   `journal`: El nombre de la revista, revista o periódico en el que se publicó el artículo.
+-   `year`: El año de publicación.
+
+Los campos opcionales para una entrada `article` incluyen:
+
+-   `volume`: El número de volumen de la revista.
+-   `number`: El número de la edición de la revista.
+-   `pages`: Los números de página en los que aparece el artículo.
+-   `month`: El mes de publicación.
+-   `note`: Información miscelánea.
+
+Aquí tienes un ejemplo de una entrada `article`:
+
+
+
+```bibtex
+@article{example_article,
+	title        = {The Effects of Climate Change},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {January},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {This is a sample entry for an article in a magazine.}
+}
+```
+
+## Usar el tipo de entrada de artículo en LaTeX
+
+Una vez que haya creado una entrada `article` en su archivo BibTeX, puede hacer referencia a ella en su documento LaTeX utilizando el comando `\cite`. Por ejemplo
+
+```latex
+\documentclass{article}  
+\begin{document}  Según \cite{ejemplo_artículo}, el cambio climático tiene importantes efectos sobre el planeta.  
+\bibliografía{referencias}
+\bibliographystyle{plain} 
+\pend{document}
+```
+
+En este ejemplo, la entrada `example_article` del archivo `references.bib` se cita utilizando el comando `\cite`. La bibliografía se genera utilizando el estilo `plain`.

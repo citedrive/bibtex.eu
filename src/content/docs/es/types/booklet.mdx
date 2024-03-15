@@ -1,0 +1,68 @@
+---
+title: "Introducción a BibTeX y a la entrada de tipo 'booklet' (folleto)"
+sidebar:
+  label: booklet (folleto)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX es un sistema de gestión de referencias para formatear listas de referencias en un documento. Su uso está muy extendido en la comunidad académica, especialmente en los campos de la ciencia, la tecnología y las matemáticas.
+
+Uno de los muchos tipos de entradas que pueden incluirse en un archivo BibTeX es el tipo de entrada `booklet`. En esta guía le presentaremos el tipo de entrada `booklet` y le mostraremos cómo utilizarlo para gestionar las referencias en sus documentos LaTeX.
+
+<CiteDrive/>
+
+## El Tipo de Entrada de Folleto
+
+El tipo de entrada `booklet` se utiliza para referirse a un trabajo impreso que no está formalmente publicado, pero que está encuadernado como un libro. Ejemplos de entradas `booklet` podrían incluir actas de conferencias, guías de programas o manuales de instrucciones.
+
+Los campos requeridos para una entrada `booklet` son:
+
+-   `title`: El título del folleto.
+-   `author`: El autor o autores del folleto.
+-   `howpublished`: Cómo se publicó el folleto.
+-   `address`: La dirección del editor o la institución patrocinadora.
+-   `year`: El año en que se publicó el folleto.
+
+Los campos opcionales para una entrada `booklet` incluyen:
+
+-   `editor`: El editor o editores del folleto.
+-   `volume`: El número de volumen de un libro de varios volúmenes.
+-   `number`: El número de una revista o serie.
+-   `series`: El nombre de una serie o conjunto de libros.
+-   `organization`: La organización que publicó o patrocinó el folleto.
+-   `month`: El mes de publicación.
+-   `note`: Información miscelánea.
+
+
+Este es un ejemplo de entrada de un 'booklet':
+
+```bibtex
+@folleto{folleto_ejemplo,
+	title = {Actas de la conferencia},
+	author = {Jane Doe y John Smith},
+	year = 2022,
+	mes = {Julio},
+	address = {San Francisco, CA},
+	note = {Esta es una entrada de muestra para un cuaderno de actas de conferencia.},
+	howpublished = {Presentado en la Conferencia Anual sobre Tecnología},
+	editor = {Bob Johnson}
+}
+
+```
+
+## Uso del tipo de entrada Booklet en LaTeX
+
+Una vez que haya creado una entrada `booklet` en su archivo BibTeX, puede hacer referencia a ella en su documento LaTeX utilizando el comando `\cite`. Por ejemplo
+
+
+```latex
+clase_documento_artículo  
+\begin{documento}  
+Según \cite{example_booklet}, la Conferencia Anual sobre Tecnología fue un éxito.  
+\bibliography{referencias} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+En este ejemplo, la entrada `example_booklet` del archivo `references.bib` se cita utilizando el comando `\cite`. La bibliografía se genera utilizando el estilo `plain`.
