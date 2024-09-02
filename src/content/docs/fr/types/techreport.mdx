@@ -1,0 +1,27 @@
+---
+title: "Comprendre le type d'entrée techreport dans BibTeX"
+sidebar:
+  label: techreport
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX est un système de gestion bibliographique bien connu que les chercheurs et les universitaires utilisent pour organiser et formater leurs bibliographies. Il est particulièrement utile en informatique, mais il peut également être utilisé dans d'autres domaines. Le type d'entrée "techreport" dans BibTeX est utilisé pour citer des rapports techniques.
+
+Les rapports techniques sont des documents contenant des informations techniques approfondies sur un sujet ou un projet spécifique. Ils sont souvent créés par des organisations, des institutions ou des chercheurs et sont destinés à être distribués à un groupe spécifique de personnes. Les rapports techniques sont rarement publiés officiellement, mais ils constituent une source d'information précieuse et doivent être cités dans les travaux académiques.
+
+Dans BibTeX, le type d'entrée "techreport" est utilisé pour fournir toutes les informations pertinentes sur un rapport technique, telles que l'auteur, le titre, l'institution, l'année et le numéro du rapport. Voici un exemple d'entrée BibTeX pour un rapport technique :
+
+<CiteDrive/>
+
+```bibtex
+@techreport{key,   
+	author = {Jane Smith},   
+	title = {Rapport technique sur la robotique avancée},   
+	institution = {Institut de Technologie},   
+	year = {2021},   
+	number = {TR-1234}
+}
+```
+
+Dans cet exemple, le champ "key" est un identifiant unique utilisé pour référencer la source dans le texte du document. Le champ "author" liste l'auteur ou les auteurs du rapport technique, le champ "title" fournit le titre du rapport, le champ "institution" liste l'institution où le rapport a été rédigé, le champ "year" indique l'année de rédaction du rapport, et le champ "number" fournit le numéro du rapport.

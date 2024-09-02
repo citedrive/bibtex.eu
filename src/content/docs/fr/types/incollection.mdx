@@ -1,0 +1,66 @@
+---
+title: "Introduction à BibTeX et au type d'entrée Incollection"
+sidebar:
+  label: incollection
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX est un outil de gestion de références couramment utilisé dans les documents LaTeX. Il vous permet de créer une base de données bibliographique et d'inclure facilement des références dans vos documents LaTeX. Dans ce guide, nous allons vous présenter BibTeX et expliquer le type d'entrée "incollection".
+
+<CiteDrive/>
+
+## Qu'est-ce que BibTeX ?
+
+BibTeX est un programme et un format de fichier utilisé pour gérer les références bibliographiques dans les documents LaTeX. Avec BibTeX, vous pouvez stocker toutes vos références dans un seul fichier, puis les inclure dans vos documents LaTeX en utilisant des clés de citation. Cela permet d'ajouter facilement des références à votre document, de changer de style de citation et de gérer de grandes bibliographies.
+
+BibTeX propose plusieurs types d'entrées que vous pouvez utiliser pour catégoriser vos références. Ceux-ci incluent "article" pour les articles de revues, "book" pour les livres, "inproceedings" pour les articles publiés dans des actes de conférences, et bien d'autres encore.
+
+## Qu'est-ce que le type d'entrée Incollection ?
+
+Le type BibTeX "incollection" est utilisé pour les chapitres ou sections de livres. Il est similaire au type "inproceedings", mais il est utilisé pour des travaux publiés dans un livre plutôt que dans des actes de conférence.
+
+## Champs obligatoires
+
+Le type BibTeX "incollection" nécessite les champs suivants :
+
+-   `author` : L'auteur ou les auteurs du chapitre ou de la section.
+-   `title` : Le titre du chapitre ou de la section.
+-   `booktitle` : Le titre du livre contenant le chapitre ou la section.
+-   `publisher` : Le nom de l'éditeur du livre.
+-   `year` : L'année de publication du livre.
+
+## Champs optionnels
+
+En plus des champs obligatoires, le type "incollection" BibTeX dispose également de plusieurs champs optionnels qui peuvent être utilisés pour fournir des informations supplémentaires. Ces champs incluent :
+
+-   `editor` : Le nom ou les noms de l'éditeur ou des éditeurs du livre.
+-   `volume` : Le numéro de volume du livre, si applicable.
+-   `number` : Le numéro du livre, si applicable.
+-   `series` : Le nom de la série à laquelle le livre appartient, si applicable.
+-   `pages` : Les pages sur lesquelles le chapitre ou la section apparaît dans le livre.
+-   `address` : Le lieu de l'éditeur.
+-   `month` : Le mois de publication du livre.
+
+## Exemple
+
+Voici un exemple d'utilisation du type "incollection" dans BibTeX :
+
+```bibtex
+@incollection{mychapter,
+	title        = {Une analyse d'exemple},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {Juin},
+	booktitle    = {Le Livre des Exemples},
+	publisher    = {Éditeur Exemple},
+	address      = {New York, NY},
+	series       = {Série de Livres Exemple},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {Jane Doe}
+}
+```
+
+Dans cet exemple, l'entrée BibTeX définit un chapitre intitulé "Une analyse d'exemple" écrit par John Smith, qui apparaît dans le livre "Le Livre des Exemples". Le livre a été publié en 2022 et édité par Jane Doe. Le chapitre apparaît aux pages 123-130 du volume 1, numéro 2 de la "Série de Livres Exemple" publiée par Éditeur Exemple à New York, NY.

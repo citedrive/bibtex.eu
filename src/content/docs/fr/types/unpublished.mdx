@@ -1,0 +1,26 @@
+---
+title: "Comprendre le type d'entrée `unpublished` dans BibTeX"
+sidebar:
+  label: unpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX est un système de gestion bibliographique populaire qui aide les chercheurs et les universitaires à organiser et formater leurs bibliographies. Il est largement utilisé en informatique, mais il est également utile dans de nombreux autres domaines nécessitant la citation de sources. Le type d'entrée "unpublished" dans BibTeX est utilisé pour citer des sources qui n'ont pas été publiées officiellement, telles que les thèses, les mémoires et les rapports techniques.
+
+Le type d'entrée "unpublished" est un type d'entrée polyvalent qui permet aux auteurs d'inclure toutes les informations pertinentes sur une source non publiée, telles que le nom de l'auteur, le titre, l'institution et la date. Un exemple d'entrée BibTeX pour une source non publiée est le suivant :
+
+<CiteDrive/>
+
+```bibtex
+@unpublished{key,   
+	author = {John Doe},   
+	title = {L'importance des sources non publiées},   
+	institution = {Université d'Exemple},   
+	year = {2022}, 
+}
+```
+
+Le champ "key" dans cet exemple est un identifiant unique utilisé pour référencer la source dans le texte du document. Le champ "author" contient le(s) nom(s) de l'auteur(s) de la source, le champ "title" contient le titre de la source, le champ "institution" contient le nom de l'institution où la source a été rédigée, et le champ "year" contient l'année de rédaction de la source.
+
+Il convient de noter que le type d'entrée "unpublished" ne doit être utilisé que pour les sources qui n'ont pas encore été publiées officiellement. Si une source a été publiée, même si c'est uniquement en ligne, elle doit être citée comme "techreport", "mastersthesis" ou "phdthesis", en fonction du type de publication.

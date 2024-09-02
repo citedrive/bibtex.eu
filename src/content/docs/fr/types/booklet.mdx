@@ -1,0 +1,65 @@
+---
+title: "Introduction à BibTeX et au type d'entrée Brochure"
+sidebar:
+  label: booklet
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX est un système de gestion de références utilisé pour formater des listes de références dans un document. Il est largement utilisé dans la communauté académique, en particulier dans les domaines des sciences, de la technologie et des mathématiques.
+
+L'un des nombreux types d'entrées pouvant être inclus dans un fichier BibTeX est le type d'entrée `booklet`. Dans ce guide, nous vous présenterons le type d'entrée `booklet` et vous montrerons comment l'utiliser pour gérer vos références dans vos documents LaTeX.
+
+<CiteDrive/>
+
+## Le type d'entrée Booklet
+
+Le type d'entrée `booklet` est utilisé pour faire référence à un ouvrage imprimé qui n'est pas formellement publié, mais qui est relié comme un livre. Des exemples d'entrées `booklet` pourraient inclure des actes de conférences, des guides de programme ou des manuels d'instructions.
+
+Les champs obligatoires pour une entrée `booklet` sont :
+
+-   `title` : Le titre de la brochure.
+-   `author` : L'auteur ou les auteurs de la brochure.
+-   `howpublished` : Comment la brochure a été publiée.
+-   `address` : L'adresse de l'éditeur ou de l'institution sponsorisante.
+-   `year` : L'année de publication de la brochure.
+
+Les champs optionnels pour une entrée `booklet` incluent :
+
+-   `editor` : L'éditeur ou les éditeurs de la brochure.
+-   `volume` : Le numéro de volume d'un livre en plusieurs volumes.
+-   `number` : Le numéro d'un journal ou d'une série.
+-   `series` : Le nom d'une série ou d'un ensemble de livres.
+-   `organization` : L'organisation qui a publié ou sponsorisé la brochure.
+-   `month` : Le mois de publication.
+-   `note` : Informations diverses.
+
+Voici un exemple d'une entrée `booklet` :
+
+```bibtex
+@booklet{example_booklet,
+	title        = {Actes de Conférence},
+	author       = {Jane Doe et John Smith},
+	year         = 2022,
+	month        = {Juillet},
+	address      = {San Francisco, CA},
+	note         = {Ceci est un exemple d'entrée pour une brochure des actes d'une conférence.},
+	howpublished = {Présenté à la Conférence Annuelle sur la Technologie},
+	editor       = {Bob Johnson}
+}
+```
+
+## Utilisation du type d'entrée Booklet dans LaTeX
+
+Une fois que vous avez créé une entrée `booklet` dans votre fichier BibTeX, vous pouvez la référencer dans votre document LaTeX en utilisant la commande `\cite`. Par exemple :
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Selon \cite{example_booklet}, la Conférence Annuelle sur la Technologie a été un succès.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+Dans cet exemple, l'entrée `example_booklet` dans le fichier `references.bib` est citée en utilisant la commande `\cite`. La bibliographie est ensuite générée en utilisant le style `plain`.

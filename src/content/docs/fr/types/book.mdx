@@ -1,0 +1,43 @@
+---
+title: "Introduction à BibTeX et au type d'entrée Livre"
+sidebar:
+  label: book
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX est un outil de gestion bibliographique couramment utilisé avec les documents LaTeX. Il aide les auteurs à gérer leurs références bibliographiques de manière pratique et organisée, facilitant ainsi la citation des sources et la mise en forme de la bibliographie selon un style spécifique. Dans cet article, nous nous concentrerons sur la création d'une entrée de type "livre" dans BibTeX.
+
+<CiteDrive/>
+
+## Qu'est-ce qu'une entrée de type Livre dans BibTeX ?
+
+Une entrée de type livre dans BibTeX fait référence à un livre imprimé ou électronique. Elle inclut des informations telles que l'auteur, le titre, l'année de publication, l'éditeur et l'adresse. Une entrée de type livre peut être créée à l'aide du code BibTeX suivant :
+
+
+
+```tex
+@book{key,   
+	author = {Author, A.},   
+	year = {2021},   
+	title = {Titre du Livre},   
+	publisher = {Éditeur},   
+	address = {Adresse de l'Éditeur}, 
+}
+```
+
+## Comment créer une entrée de type Livre dans BibTeX
+
+1.  Ouvrez votre fichier .bib dans un éditeur de texte. Ce fichier contiendra toutes vos références BibTeX.
+2.  Ajoutez le code ci-dessus pour créer une nouvelle référence.
+3.  Remplacez "key" par un identifiant unique pour cette référence, entre accolades. Cet identifiant sera utilisé pour citer le livre dans votre document LaTeX.
+4.  Remplacez "Author, A." par le nom de l'auteur ou des auteurs.
+5.  Remplacez "2021" par l'année de publication.
+6.  Remplacez "Titre du Livre" par le titre du livre.
+7.  Remplacez "Éditeur" par le nom de l'éditeur.
+8.  Remplacez "Adresse de l'Éditeur" par l'adresse de l'éditeur.
+9.  Enregistrez le fichier .bib, et c'est terminé !
+
+## Conclusion
+
+Utiliser BibTeX pour gérer vos références bibliographiques peut rendre le processus de rédaction et de mise en forme d'un document beaucoup plus facile. En créant une entrée de type livre, vous pouvez suivre vos sources et formater facilement votre bibliographie de manière professionnelle. N'oubliez pas d'utiliser un identifiant unique et d'inclure toutes les informations pertinentes lors de la création d'une entrée de type livre dans BibTeX.

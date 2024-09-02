@@ -1,0 +1,50 @@
+---
+title: "Guide du type d'entrée `Proceedings` dans BibTeX"
+sidebar:
+  label: proceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX est un outil de gestion des références couramment utilisé dans les documents LaTeX. Le type d'entrée "proceedings" dans BibTeX est utilisé pour les actes de conférence, tels qu'une collection d'articles présentés lors d'une conférence. Dans ce guide, nous expliquerons les champs requis et optionnels pour le type d'entrée "proceedings".
+
+<CiteDrive/>
+
+## Champs Requis
+
+Le type d'entrée "proceedings" dans BibTeX nécessite les champs suivants :
+
+-   `title` : Le titre des actes de la conférence.
+-   `year` : L'année de publication des actes de la conférence.
+
+## Champs Optionnels
+
+En plus des champs requis, le type d'entrée "proceedings" dans BibTeX possède également plusieurs champs optionnels qui peuvent être utilisés pour fournir des informations supplémentaires. Ces champs incluent :
+
+-   `editor` : Le(s) nom(s) de l'(des) éditeur(s) des actes de la conférence.
+-   `volume` : Le numéro du volume des actes de la conférence, le cas échéant.
+-   `number` : Le numéro du numéro des actes de la conférence, le cas échéant.
+-   `series` : Le nom de la série à laquelle appartiennent les actes de la conférence, le cas échéant.
+-   `address` : Le lieu de la conférence.
+-   `month` : Le mois où la conférence a eu lieu.
+-   `publisher` : Le nom de l'éditeur des actes de la conférence.
+
+## Exemple
+
+Voici un exemple de comment utiliser le type d'entrée "proceedings" dans BibTeX :
+
+```bibtex
+@proceedings{myproceedings,
+	title        = {Actes de la Conférence Internationale sur l'Exemple},
+	year         = 2022,
+	month        = {Juin},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Actes de la Conférence Exemple},
+	volume       = 1,
+	number       = 2,
+	editor       = {Jane Doe et John Smith}
+}
+```
+
+Dans cet exemple, l'entrée BibTeX définit un ensemble d'actes de conférence intitulés "Actes de la Conférence Internationale sur l'Exemple". Les actes ont été publiés en 2022 et édités par Jane Doe et John Smith. La conférence s'est tenue en juin à New York, NY, et les actes ont été publiés en tant que volume 1, numéro 2 de la série "Actes de la Conférence Exemple" par ACM Press.

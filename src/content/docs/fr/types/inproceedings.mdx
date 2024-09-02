@@ -1,0 +1,58 @@
+---
+title: Guide sur le type BibTeX `Inproceedings`
+sidebar:
+  label: inproceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX est un outil de gestion des références couramment utilisé dans les documents LaTeX. Le type BibTeX "inproceedings" est utilisé pour les articles publiés dans les actes de conférence. Dans ce guide, nous expliquerons les champs requis et optionnels pour le type BibTeX "inproceedings".
+
+<CiteDrive/>
+
+## Champs Requis
+
+Le type BibTeX "inproceedings" nécessite les champs suivants :
+
+-   `author` : Les auteur(s) de l'article.
+-   `title` : Le titre de l'article.
+-   `booktitle` : Le titre des actes de la conférence.
+-   `year` : L'année de publication des actes de la conférence.
+
+## Champs Optionnels
+
+En plus des champs requis, le type BibTeX "inproceedings" comporte plusieurs champs optionnels qui peuvent être utilisés pour fournir des informations supplémentaires. Ces champs incluent :
+
+-   `editor` : Les nom(s) de l'éditeur(s) des actes de la conférence.
+-   `volume` : Le numéro de volume des actes de la conférence, si applicable.
+-   `number` : Le numéro du numéro des actes de la conférence, si applicable.
+-   `series` : Le nom de la série à laquelle les actes de la conférence appartiennent, si applicable.
+-   `pages` : Les pages sur lesquelles l'article apparaît dans les actes de la conférence.
+-   `address` : Le lieu de la conférence.
+-   `month` : Le mois où la conférence a eu lieu.
+-   `organization` : L'organisation qui a sponsorisé la conférence.
+-   `publisher` : Le nom de l'éditeur des actes de la conférence.
+
+## Exemple
+
+Voici un exemple d'utilisation du type BibTeX "inproceedings" :
+
+```bibtex
+@inproceedings{mypaper,
+	title        = {Une Analyse d'Exemple},
+	author       = {John Smith et Jane Doe},
+	year         = 2022,
+	month        = {Juin},
+	booktitle    = {Actes de la Conférence Internationale sur l'Exemple},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Actes de la Conférence Exemple},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown et Susan Green},
+	organization = {ACM}
+}
+```
+
+Dans cet exemple, l'entrée BibTeX définit un article intitulé "Une Analyse d'Exemple" rédigé par John Smith et Jane Doe, qui est paru dans les actes de la Conférence Internationale sur l'Exemple. Les actes ont été publiés en 2022 et édités par David Brown et Susan Green. La conférence a eu lieu en juin à New York, NY, et a été sponsorisée par l'ACM. L'article est paru sur les pages 123-130 du volume 1, numéro 2 de la série "Actes de la Conférence Exemple" publiée par ACM Press.
