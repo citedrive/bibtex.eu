@@ -1,60 +1,58 @@
 ---
-title: "Guide to BibTeX Type `Inproceedings`"
+title: "Guida al Tipo di Voce `Inproceedings` in BibTeX"
 sidebar:
   label: inproceedings
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "inproceedings" BibTeX type is used for papers published in conference proceedings. In this guide, we will explain the required and optional fields for the "inproceedings" BibTeX type.
+BibTeX è uno strumento di gestione delle referenze comunemente utilizzato nei documenti LaTeX. Il tipo di BibTeX "inproceedings" è utilizzato per articoli pubblicati negli atti di conferenze. In questa guida, spiegheremo i campi richiesti e facoltativi per il tipo di BibTeX "inproceedings".
 
 <CiteDrive/>
 
-## Required Fields
+## Campi Richiesti
 
-The "inproceedings" BibTeX type requires the following fields:
+Il tipo di BibTeX "inproceedings" richiede i seguenti campi:
 
--   `author`: The author(s) of the paper.
--   `title`: The title of the paper.
--   `booktitle`: The title of the conference proceedings.
--   `year`: The year the conference proceedings were published.
+-   `author`: L'autore/i dell'articolo.
+-   `title`: Il titolo dell'articolo.
+-   `booktitle`: Il titolo degli atti della conferenza.
+-   `year`: L'anno di pubblicazione degli atti della conferenza.
 
-## Optional Fields
+## Campi Facoltativi
 
-In addition to the required fields, the "inproceedings" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+Oltre ai campi richiesti, il tipo di BibTeX "inproceedings" include anche diversi campi facoltativi che possono essere utilizzati per fornire informazioni aggiuntive. Questi campi includono:
 
--   `editor`: The name(s) of the editor(s) of the conference proceedings.
--   `volume`: The volume number of the conference proceedings, if applicable.
--   `number`: The issue number of the conference proceedings, if applicable.
--   `series`: The name of the series that the conference proceedings belong to, if applicable.
--   `pages`: The pages on which the paper appears in the conference proceedings.
--   `address`: The location of the conference.
--   `month`: The month the conference was held.
--   `organization`: The organization that sponsored the conference.
--   `publisher`: The name of the publisher of the conference proceedings.
+-   `editor`: L'autore/i degli atti della conferenza.
+-   `volume`: Il numero del volume degli atti della conferenza, se applicabile.
+-   `number`: Il numero della rivista degli atti della conferenza, se applicabile.
+-   `series`: Il nome della serie a cui appartengono gli atti della conferenza, se applicabile.
+-   `pages`: Le pagine su cui appare l'articolo negli atti della conferenza.
+-   `address`: La località della conferenza.
+-   `month`: Il mese in cui si è tenuta la conferenza.
+-   `organization`: L'organizzazione che ha sponsorizzato la conferenza.
+-   `publisher`: Il nome dell'editore degli atti della conferenza.
 
-## Example
+## Esempio
 
-Here is an example of how to use the "inproceedings" BibTeX type:
-
+Ecco un esempio di come utilizzare il tipo di BibTeX "inproceedings":
 
 ```bibtex
 @inproceedings{mypaper,
-	title        = {An Analysis of Example},
-	author       = {John Smith and Jane Doe},
+	title        = {Un'Analisi di Esempio},
+	author       = {John Smith e Jane Doe},
 	year         = 2022,
-	month        = {June},
-	booktitle    = {Proceedings of the International Conference on Example},
+	month        = {Giugno},
+	booktitle    = {Atti della Conferenza Internazionale su Esempio},
 	publisher    = {ACM Press},
 	address      = {New York, NY},
-	series       = {Example Conference Proceedings},
+	series       = {Atti della Conferenza Esempio},
 	volume       = 1,
 	number       = 2,
 	pages        = {123--130},
-	editor       = {David Brown and Susan Green},
+	editor       = {David Brown e Susan Green},
 	organization = {ACM}
 }
-
 ```
 
-In this example, the BibTeX entry defines a paper titled "An Analysis of Example" authored by John Smith and Jane Doe that appeared in the conference proceedings of the International Conference on Example. The proceedings were published in 2022 and edited by David Brown and Susan Green. The conference was held in June in New York, NY, and was sponsored by the ACM. The paper appeared on pages 123-130 of volume 1, issue 2 of the "Example Conference Proceedings" series published by ACM Press.
+In questo esempio, l'entrata BibTeX definisce un articolo intitolato "Un'Analisi di Esempio" scritto da John Smith e Jane Doe, apparso negli atti della Conferenza Internazionale su Esempio. Gli atti sono stati pubblicati nel 2022 e curati da David Brown e Susan Green. La conferenza si è tenuta a Giugno a New York, NY, e è stata sponsorizzata dall'ACM. L'articolo appare nelle pagine 123-130 del volume 1, numero 2 della serie "Atti della Conferenza Esempio" pubblicata da ACM Press.

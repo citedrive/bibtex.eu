@@ -1,51 +1,50 @@
 ---
-title: "Guide to BibTeX Type `Proceedings`"
+title: "Guida al Tipo di Voce `Proceedings` in BibTeX"
 sidebar:
   label: proceedings
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "proceedings" BibTeX type is used for conference proceedings, such as a collection of papers presented at a conference. In this guide, we will explain the required and optional fields for the "proceedings" BibTeX type.
+BibTeX è uno strumento di gestione delle referenze comunemente utilizzato nei documenti LaTeX. Il tipo di BibTeX "proceedings" è utilizzato per gli atti di conferenze, come una raccolta di articoli presentati in una conferenza. In questa guida, spiegheremo i campi richiesti e facoltativi per il tipo di BibTeX "proceedings".
 
 <CiteDrive/>
 
-## Required Fields
+## Campi Richiesti
 
-The "proceedings" BibTeX type requires the following fields:
+Il tipo di BibTeX "proceedings" richiede i seguenti campi:
 
--   `title`: The title of the conference proceedings.
--   `year`: The year the conference proceedings were published.
+-   `title`: Il titolo degli atti della conferenza.
+-   `year`: L'anno di pubblicazione degli atti della conferenza.
 
-## Optional Fields
+## Campi Facoltativi
 
-In addition to the required fields, the "proceedings" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+Oltre ai campi richiesti, il tipo di BibTeX "proceedings" include anche diversi campi facoltativi che possono essere utilizzati per fornire informazioni aggiuntive. Questi campi includono:
 
--   `editor`: The name(s) of the editor(s) of the conference proceedings.
--   `volume`: The volume number of the conference proceedings, if applicable.
--   `number`: The issue number of the conference proceedings, if applicable.
--   `series`: The name of the series that the conference proceedings belong to, if applicable.
--   `address`: The location of the conference.
--   `month`: The month the conference was held.
--   `publisher`: The name of the publisher of the conference proceedings.
+-   `editor`: Il nome/i del/della editore/editori degli atti della conferenza.
+-   `volume`: Il numero del volume degli atti della conferenza, se applicabile.
+-   `number`: Il numero del fascicolo degli atti della conferenza, se applicabile.
+-   `series`: Il nome della serie a cui appartengono gli atti della conferenza, se applicabile.
+-   `address`: La località della conferenza.
+-   `month`: Il mese in cui si è tenuta la conferenza.
+-   `publisher`: Il nome dell'editore degli atti della conferenza.
 
-## Example
+## Esempio
 
-Here is an example of how to use the "proceedings" BibTeX type:
+Ecco un esempio di come utilizzare il tipo di BibTeX "proceedings":
 
 ```bibtex
 @proceedings{myproceedings,
-	title        = {Proceedings of the International Conference on Example},
+	title        = {Atti della Conferenza Internazionale su Esempio},
 	year         = 2022,
-	month        = {June},
+	month        = {Giugno},
 	publisher    = {ACM Press},
 	address      = {New York, NY},
-	series       = {Example Conference Proceedings},
+	series       = {Atti della Conferenza Esempio},
 	volume       = 1,
 	number       = 2,
-	editor       = {Jane Doe and John Smith}
+	editor       = {Jane Doe e John Smith}
 }
-
 ```
 
-In this example, the BibTeX entry defines a set of conference proceedings titled "Proceedings of the International Conference on Example". The proceedings were published in 2022 and edited by Jane Doe and John Smith. The conference was held in June in New York, NY, and the proceedings were published as volume 1, issue 2 of the "Example Conference Proceedings" series by ACM Press.
+In questo esempio, l'entrata BibTeX definisce un insieme di atti di conferenza intitolati "Atti della Conferenza Internazionale su Esempio". Gli atti sono stati pubblicati nel 2022 e sono stati editati da Jane Doe e John Smith. La conferenza si è tenuta a Giugno a New York, NY, e gli atti sono stati pubblicati come volume 1, numero 2 della serie "Atti della Conferenza Esempio" da ACM Press.

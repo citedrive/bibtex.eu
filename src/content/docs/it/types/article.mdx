@@ -1,59 +1,59 @@
 ---
-title: Introduction to BibTeX and the Article Type Entry
+title: "Introduzione a BibTeX e al Tipo di Voce Article"
 sidebar:
   label: article
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management system used to format lists of references in a document. It is commonly used in academic writing, particularly in scientific and technical fields. In this guide, we will introduce you to the `article` entry type in BibTeX and show you how to use it in your LaTeX documents.
+BibTeX è un sistema di gestione delle referenze utilizzato per formattare le liste di referenze in un documento. È comunemente usato nella scrittura accademica, in particolare nei campi scientifici e tecnici. In questa guida, introdurremo il tipo di voce `article` in BibTeX e ti mostreremo come usarlo nei tuoi documenti LaTeX.
 
 <CiteDrive/>
 
-## The Article Entry Type
+## Il Tipo di Voce Article
 
-The `article` entry type is used to refer to articles published in scholarly journals, magazines, or newspapers. The required fields for an `article` entry are:
+Il tipo di voce `article` è utilizzato per riferirsi agli articoli pubblicati in riviste accademiche, magazine o giornali. I campi richiesti per una voce `article` sono:
 
--   `author`: The name(s) of the author(s) of the article.
--   `title`: The title of the article.
--   `journal`: The name of the journal, magazine, or newspaper in which the article was published.
--   `year`: The year of publication.
+-   `author`: Il nome(nomi) dell'autore(o) dell'articolo.
+-   `title`: Il titolo dell'articolo.
+-   `journal`: Il nome della rivista, del magazine o del giornale in cui è stato pubblicato l'articolo.
+-   `year`: L'anno di pubblicazione.
 
-Optional fields for an `article` entry include:
+I campi opzionali per una voce `article` includono:
 
--   `volume`: The volume number of the journal.
--   `number`: The issue number of the journal.
--   `pages`: The page numbers on which the article appears.
--   `month`: The month of publication.
--   `note`: Miscellaneous information.
+-   `volume`: Il numero del volume della rivista.
+-   `number`: Il numero dell'edizione della rivista.
+-   `pages`: I numeri di pagina su cui appare l'articolo.
+-   `month`: Il mese di pubblicazione.
+-   `note`: Informazioni varie.
 
-Here is an example of an `article` entry:
-
+Ecco un esempio di una voce `article`:
 
 ```bibtex
 @article{example_article,
-	title        = {The Effects of Climate Change},
+	title        = {Gli Effetti del Cambiamento Climatico},
 	author       = {John Smith},
 	year         = 2022,
-	month        = {January},
+	month        = {Gennaio},
 	journal      = {Scientific American},
 	volume       = 327,
 	number       = 1,
 	pages        = {44--49},
-	note         = {This is a sample entry for an article in a magazine.}
+	note         = {Questo è un esempio di voce per un articolo in una rivista.}
 }
 ```
 
-## Using the Article Entry Type in LaTeX
+## Utilizzare il Tipo di Voce Article in LaTeX
 
-Once you have created an `article` entry in your BibTeX file, you can reference it in your LaTeX document using the `\cite` command. For example:
+Una volta creata una voce `article` nel tuo file BibTeX, puoi riferirti ad essa nel tuo documento LaTeX utilizzando il comando `\cite`. Ad esempio:
 
 ```latex
 \documentclass{article}  
-\begin{document}  According to \cite{example_article}, climate change has significant effects on the planet.  
+\begin{document}  
+Secondo \cite{example_article}, il cambiamento climatico ha effetti significativi sul pianeta.  
 \bibliography{references}
 \bibliographystyle{plain} 
 \end{document}
 ```
 
-In this example, the `example_article` entry in the `references.bib` file is cited using the `\cite` command. The bibliography is then generated using the `plain` style.
+In questo esempio, la voce `example_article` nel file `references.bib` è citata utilizzando il comando `\cite`. La bibliografia viene poi generata utilizzando lo stile `plain`.

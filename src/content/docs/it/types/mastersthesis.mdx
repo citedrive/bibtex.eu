@@ -1,51 +1,48 @@
 ---
-title: "Guide to BibTeX Type MasterThesis"
+title: "Guida al Tipo di Voce MasterThesis in BibTeX"
 sidebar:
   label: mastersthesis
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "masterthesis" BibTeX type is used for master's theses. In this guide, we will explain the required and optional fields for the "masterthesis" BibTeX type.
+BibTeX è uno strumento di gestione delle referenze comunemente utilizzato nei documenti LaTeX. Il tipo di BibTeX "masterthesis" è utilizzato per le tesi di master. In questa guida, spiegheremo i campi richiesti e facoltativi per il tipo di BibTeX "masterthesis".
 
 <CiteDrive/>
 
-## Required Fields
+## Campi Richiesti
 
-The "masterthesis" BibTeX type requires the following fields:
+Il tipo di BibTeX "masterthesis" richiede i seguenti campi:
 
--   `author`: The author of the thesis.
--   `title`: The title of the thesis.
--   `school`: The name of the institution that awarded the degree.
--   `year`: The year the degree was awarded.
+-   `author`: L'autore della tesi.
+-   `title`: Il titolo della tesi.
+-   `school`: Il nome dell'istituzione che ha conferito il titolo.
+-   `year`: L'anno in cui è stato conferito il titolo.
 
-## Optional Fields
+## Campi Facoltativi
 
-In addition to the required fields, the "masterthesis" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+Oltre ai campi richiesti, il tipo di BibTeX "masterthesis" include anche diversi campi facoltativi che possono essere utilizzati per fornire informazioni aggiuntive. Questi campi includono:
 
--   `type`: The type of the thesis, such as "Master's thesis".
--   `address`: The location of the institution.
--   `month`: The month the thesis was submitted.
--   `note`: Any additional information about the thesis.
+-   `type`: Il tipo di tesi, come "Tesi di master".
+-   `address`: La località dell'istituzione.
+-   `month`: Il mese in cui è stata presentata la tesi.
+-   `note`: Qualsiasi informazione aggiuntiva sulla tesi.
 
-## Example
+## Esempio
 
-Here is an example of how to use the "masterthesis" BibTeX type:
-
-
+Ecco un esempio di come utilizzare il tipo di BibTeX "masterthesis":
 
 ```bibtex
 @masterthesis{mythesis,
-	title        = {A Study of Example},
+	title        = {Uno Studio di Esempio},
 	author       = {Jane Doe},
 	year         = 2022,
-	month        = {June},
-	address      = {Example City, CA},
-	note         = {Available at \url{https://example.com/thesis.pdf}},
-	school       = {University of Example},
-	type         = {Master's thesis}
+	month        = {Giugno},
+	address      = {Esempio Città, CA},
+	note         = {Disponibile su \url{https://example.com/thesis.pdf}},
+	school       = {Università di Esempio},
+	type         = {Tesi di master}
 }
-
 ```
 
-In this example, the BibTeX entry defines a master's thesis authored by Jane Doe titled "A Study of Example". The degree was awarded in 2022 by the University of Example, and the thesis was submitted in June in Example City, CA. The type of the thesis is specified as "Master's thesis", and a note is included that provides a URL for the thesis.
+In questo esempio, l'entrata BibTeX definisce una tesi di master scritta da Jane Doe intitolata "Uno Studio di Esempio". Il titolo è stato conferito nel 2022 dall'Università di Esempio, e la tesi è stata presentata a Giugno a Esempio Città, CA. Il tipo di tesi è specificato come "Tesi di master", e una nota è inclusa con un URL per la tesi.

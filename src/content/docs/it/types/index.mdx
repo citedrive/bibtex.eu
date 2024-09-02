@@ -1,90 +1,91 @@
 ---
-title: BibTeX Entry types
+title: Tipi di Voce BibTeX
 ---
 
-BibTeX is a popular bibliographic reference management tool used in the field of computer science and other technical disciplines. It is used to store and manage bibliographic references, such as books, articles, and conference papers, in a structured format. This format can then be used to automatically generate bibliographies in various document formats.
+import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX has several types of entries, each with its own set of fields, to represent different types of publications. Here is a comprehensive list of all BibTeX types and their fields:
+BibTeX è uno strumento popolare di gestione delle referenze bibliografiche utilizzato nel campo dell'informatica e in altre discipline tecniche. Viene utilizzato per memorizzare e gestire le referenze bibliografiche, come libri, articoli e atti di conferenze, in un formato strutturato. Questo formato può poi essere utilizzato per generare automaticamente bibliografie in vari formati di documento.
 
+<CiteDrive />
+
+BibTeX ha diversi tipi di voci, ognuno con il proprio insieme di campi, per rappresentare diversi tipi di pubblicazioni. Ecco un elenco completo di tutti i tipi di BibTeX e dei loro campi:
 
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-
-
 <CardGrid>
     <LinkCard
-        href="/types/"
-        title="BibTeX Entry types"
-        description="Explore various types of bibliographic references in BibTeX."
+        href="/it/types/"
+        title="Tipi di Voce BibTeX"
+        description="Esplora vari tipi di referenze bibliografiche in BibTeX."
     />
     <LinkCard
-        href="/types/article/"
+        href="/it/types/article/"
         title="article"
-        description="Citations for articles published in journals, magazines, or other periodic publications."
+        description="Citazioni per articoli pubblicati in riviste, magazine o altre pubblicazioni periodiche."
     />
     <LinkCard
-        href="/types/book/"
+        href="/it/types/book/"
         title="book"
-        description="Citations for standalone books by one or more authors, including specifics like the publisher."
+        description="Citazioni per libri autonomi scritti da uno o più autori, inclusi dettagli come l'editore."
     />
     <LinkCard
-        href="/types/booklet/"
+        href="/it/types/booklet/"
         title="booklet"
-        description="For printed works that are bound but lack a formal publisher or sponsoring institution."
+        description="Per lavori stampati rilegati ma privi di un editore formale o di un'istituzione patrocinante."
     />
     <LinkCard
-        href="/types/conference/"
+        href="/it/types/conference/"
         title="conference"
-        description="References for papers presented at conferences, often interchangeable with inproceedings."
+        description="Riferimenti per articoli presentati a conferenze, spesso intercambiabili con inproceedings."
     />
     <LinkCard
-        href="/types/inbook/"
+        href="/it/types/inbook/"
         title="inbook"
-        description="Citations for specific portions of a book, such as chapters or defined sections."
+        description="Citazioni per porzioni specifiche di un libro, come capitoli o sezioni definite."
     />
     <LinkCard
-        href="/types/incollection/"
+        href="/it/types/incollection/"
         title="incollection"
-        description="Citations for parts of a book with their distinct title, typically housed within a larger collection."
+        description="Citazioni per parti di un libro con un titolo distinto, tipicamente inserite in una raccolta più ampia."
     />
     <LinkCard
-        href="/types/inproceedings/"
+        href="/it/types/inproceedings/"
         title="inproceedings"
-        description="References for articles or papers presented within the proceedings of a conference."
+        description="Riferimenti per articoli o documenti presentati all'interno degli atti di una conferenza."
     />
     <LinkCard
-        href="/types/manual/"
+        href="/it/types/manual/"
         title="manual"
-        description="Technical documentation or manuals, often detailing software or hardware specifics."
+        description="Documentazione tecnica o manuali, spesso dettaglianti specifiche software o hardware."
     />
     <LinkCard
-        href="/types/mastersthesis/"
+        href="/it/types/mastersthesis/"
         title="mastersthesis"
-        description="Citations for Master's level theses detailing academic research at postgraduate levels."
+        description="Citazioni per tesi di livello Master che dettagliano la ricerca accademica a livello post-laurea."
     />
     <LinkCard
-        href="/types/misc/"
+        href="/it/types/misc/"
         title="misc"
-        description="A catch-all entry type for references that don't neatly fit into standard categories."
+        description="Un tipo di voce generale per referenze che non rientrano nelle categorie standard."
     />
     <LinkCard
-        href="/types/phdthesis/"
+        href="/it/types/phdthesis/"
         title="phdthesis"
-        description="Citations for doctoral dissertations, showcasing in-depth academic research and contributions."
+        description="Citazioni per tesi di dottorato, che mostrano ricerche e contributi accademici approfonditi."
     />
     <LinkCard
-        href="/types/proceedings/"
+        href="/it/types/proceedings/"
         title="proceedings"
-        description="For collections of academic papers presented at professional conferences or symposia."
+        description="Per raccolte di articoli accademici presentati a conferenze professionali o simposi."
     />
     <LinkCard
-        href="/types/techreport/"
+        href="/it/types/techreport/"
         title="techreport"
-        description="Reports detailing technical aspects, often published by institutions or organizations."
+        description="Rapporti che dettagliano aspetti tecnici, spesso pubblicati da istituzioni o organizzazioni."
     />
     <LinkCard
-        href="/types/unpublished/"
+        href="/it/types/unpublished/"
         title="unpublished"
-        description="Works that have been drafted or completed but remain unpublished."
+        description="Opere che sono state redatte o completate ma rimangono non pubblicate."
     />
 </CardGrid>
