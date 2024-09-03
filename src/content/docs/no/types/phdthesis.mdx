@@ -1,0 +1,48 @@
+---
+title: "Guide til BibTeX-typen PhdThesis"
+sidebar:
+  label: phdthesis
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referansehåndteringsverktøy som ofte brukes i LaTeX-dokumenter. BibTeX-typen `phdthesis` brukes for PhD-avhandlinger eller doktorgradsarbeider. I denne veiledningen forklarer vi de obligatoriske og valgfrie feltene for BibTeX-typen `phdthesis`.
+
+<CiteDrive/>
+
+## Obligatoriske felt
+
+BibTeX-typen `phdthesis` krever følgende felt:
+
+-   `author`: Forfatteren av avhandlingen.
+-   `title`: Tittelen på avhandlingen.
+-   `school`: Navnet på institusjonen som tildelte graden.
+-   `year`: Året graden ble tildelt.
+
+## Valgfrie felt
+
+I tillegg til de obligatoriske feltene har BibTeX-typen `phdthesis` en rekke valgfrie felt som kan brukes for å gi tilleggsinformasjon. Disse feltene inkluderer:
+
+-   `type`: Typen av avhandlingen, for eksempel "PhD-avhandling" eller "Masteroppgave".
+-   `address`: Institusjonens beliggenhet.
+-   `month`: Måneden avhandlingen ble levert.
+-   `note`: Tilleggsinformasjon om avhandlingen.
+
+## Eksempel
+
+Her er et eksempel på hvordan du bruker BibTeX-typen `phdthesis`:
+
+```bibtex
+@phdthesis{mythesis,
+	title        = {An Analysis of Example},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Tilgjengelig på \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {PhD thesis}
+}
+```
+
+I dette eksempelet definerer BibTeX-posten en PhD-avhandling skrevet av John Smith med tittelen "An Analysis of Example". Graden ble tildelt i 2022 av University of Example, og avhandlingen ble levert i juni i Example City, CA. Typen av avhandlingen er spesifisert som "PhD thesis", og en merknad er inkludert med en URL til avhandlingen.

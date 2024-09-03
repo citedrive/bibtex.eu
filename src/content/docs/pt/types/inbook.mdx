@@ -1,0 +1,65 @@
+---
+title: "Introdução ao BibTeX e ao Tipo de Entrada Inbook"
+sidebar:
+  label: inbook
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O BibTeX é um sistema de gerenciamento de referências usado para formatar listas de referências em um documento. É amplamente utilizado na redação acadêmica, particularmente em campos científicos e técnicos. Neste guia, vamos apresentar o tipo de entrada `inbook` no BibTeX e mostrar como usá-lo em seus documentos LaTeX.
+
+<CiteDrive/>
+
+## O Tipo de Entrada Inbook
+
+O tipo de entrada `inbook` é usado para se referir a um capítulo ou seção específica dentro de um livro. Os campos obrigatórios para uma entrada `inbook` são:
+
+-   `author`: O(s) nome(s) do(s) autor(es) do capítulo ou seção.
+-   `title`: O título do capítulo ou seção.
+-   `booktitle`: O título do livro que contém o capítulo ou seção.
+-   `publisher`: O nome da editora do livro.
+-   `year`: O ano de publicação.
+
+Os campos opcionais para uma entrada `inbook` incluem:
+
+-   `editor`: O(s) nome(s) do(s) editor(es) do livro.
+-   `volume`: O número do volume do livro.
+-   `number`: O número de uma série ou conjunto de livros.
+-   `series`: O nome de uma série ou conjunto de livros.
+-   `address`: A localização da editora.
+-   `edition`: A edição do livro.
+-   `month`: O mês de publicação.
+-   `pages`: Os números das páginas do capítulo ou seção.
+-   `note`: Informações diversas.
+
+Aqui está um exemplo de uma entrada `inbook`:
+
+```bibtex
+@inbook{example_inbook,
+	title        = {Os Efeitos das Mudanças Climáticas},
+	author       = {John Smith},
+	year         = 2022,
+	booktitle    = {Questões Ambientais e Soluções},
+	publisher    = {Wiley},
+	pages        = {101--112},
+	note         = {Esta é uma entrada de exemplo para um capítulo em um livro.},
+	editor       = {Jane Doe},
+	edition      = {3ª}
+}
+```
+
+## Usando o Tipo de Entrada Inbook no LaTeX
+
+Depois de criar uma entrada `inbook` no seu arquivo BibTeX, você pode referenciá-la em seu documento LaTeX usando o comando `\cite`. Por exemplo:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+De acordo com \cite{example_inbook}, as mudanças climáticas têm 
+efeitos significativos no planeta.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+Neste exemplo, a entrada `example_inbook` no arquivo `references.bib` é citada usando o comando `\cite`. A bibliografia é então gerada usando o estilo `plain`.

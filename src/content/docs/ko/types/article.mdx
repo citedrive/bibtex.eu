@@ -1,0 +1,59 @@
+---
+title: "BibTeX 및 Article 유형 항목 소개"
+sidebar:
+  label: article
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 문서의 참조 목록을 형식화하는 데 사용되는 서지 관리 시스템입니다. 주로 과학 및 기술 분야의 학술 저작에서 사용됩니다. 이 가이드에서는 BibTeX에서 `article` 항목 유형을 소개하고, 이를 LaTeX 문서에서 사용하는 방법을 설명하겠습니다.
+
+<CiteDrive/>
+
+## Article 항목 유형
+
+`article` 항목 유형은 학술지, 잡지 또는 신문에 게재된 기사를 참조하는 데 사용됩니다. `article` 항목에 필요한 필드는 다음과 같습니다:
+
+-   `author`: 기사의 저자 이름
+-   `title`: 기사의 제목
+-   `journal`: 기사가 게재된 학술지, 잡지 또는 신문의 이름
+-   `year`: 출판 연도
+
+`article` 항목의 선택적 필드는 다음과 같습니다:
+
+-   `volume`: 학술지의 권 번호
+-   `number`: 학술지의 호 번호
+-   `pages`: 기사가 게재된 페이지 번호
+-   `month`: 출판 월
+-   `note`: 기타 정보
+
+다음은 `article` 항목의 예입니다:
+
+```bibtex
+@article{example_article,
+	title        = {The Effects of Climate Change},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {January},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {This is a sample entry for an article in a magazine.}
+}
+```
+
+## LaTeX에서 Article 항목 유형 사용하기
+
+BibTeX 파일에 `article` 항목을 생성한 후, LaTeX 문서에서 `\cite` 명령어를 사용하여 참조할 수 있습니다. 예를 들어:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+According to \cite{example_article}, climate change has significant effects on the planet.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+이 예제에서는 `references.bib` 파일의 `example_article` 항목을 `\cite` 명령어를 사용하여 인용하고, `plain` 스타일을 사용하여 참고 문헌을 생성합니다.

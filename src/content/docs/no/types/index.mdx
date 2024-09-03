@@ -1,0 +1,94 @@
+---
+title: BibTeX Oppføringstyper
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et populært verktøy for bibliografisk referansehåndtering som brukes innen datavitenskap og andre tekniske disipliner. Det brukes til å lagre og administrere bibliografiske referanser, som bøker, artikler og konferansepapirer, i et strukturert format. Dette formatet kan deretter brukes til å automatisk generere bibliografier i ulike dokumentformater.
+
+<CiteDrive/>
+
+BibTeX har flere typer oppføringer, hver med sitt eget sett med felter, for å representere forskjellige typer publikasjoner. Her er en omfattende liste over alle BibTeX-typer og deres felter:
+
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+
+
+<CardGrid>
+    <LinkCard
+        href="/no/types/"
+        title="BibTeX Oppføringstyper"
+        description="Utforsk ulike typer bibliografiske referanser i BibTeX."
+    />
+    <LinkCard
+        href="/no/types/article/"
+        title="article"
+        description="Siteringer for artikler publisert i tidsskrifter, magasiner eller andre periodiske publikasjoner."
+    />
+    <LinkCard
+        href="/no/types/book/"
+        title="book"
+        description="Siteringer for enkeltstående bøker av en eller flere forfattere, inkludert spesifikasjoner som utgiver."
+    />
+    <LinkCard
+        href="/no/types/booklet/"
+        title="booklet"
+        description="For trykte verk som er bundet men mangler en formell utgiver eller sponsorerende institusjon."
+    />
+    <LinkCard
+        href="/no/types/conference/"
+        title="conference"
+        description="Referanser for papirer presentert på konferanser, ofte utskiftbare med inproceedings."
+    />
+    <LinkCard
+        href="/no/types/inbook/"
+        title="inbook"
+        description="Siteringer for spesifikke deler av en bok, som kapitler eller definerte seksjoner."
+    />
+    <LinkCard
+        href="/no/types/incollection/"
+        title="incollection"
+        description="Siteringer for deler av en bok med egen tittel, vanligvis plassert i en større samling."
+    />
+    <LinkCard
+        href="/no/types/inproceedings/"
+        title="inproceedings"
+        description="Referanser for artikler eller papirer presentert innenfor prosedyrene til en konferanse."
+    />
+    <LinkCard
+        href="/no/types/manual/"
+        title="manual"
+        description="Teknisk dokumentasjon eller manualer, ofte som beskriver programvare eller maskinvare."
+    />
+    <LinkCard
+        href="/no/types/mastersthesis/"
+        title="mastersthesis"
+        description="Siteringer for masteroppgaver som beskriver akademisk forskning på videregående nivå."
+    />
+    <LinkCard
+        href="/no/types/misc/"
+        title="misc"
+        description="En samlebetegnelse for referanser som ikke passer inn i standardkategorier."
+    />
+    <LinkCard
+        href="/no/types/phdthesis/"
+        title="phdthesis"
+        description="Siteringer for doktorgradsavhandlinger, som viser grundig akademisk forskning og bidrag."
+    />
+    <LinkCard
+        href="/no/types/proceedings/"
+        title="proceedings"
+        description="For samlinger av akademiske papirer presentert på profesjonelle konferanser eller symposier."
+    />
+    <LinkCard
+        href="/no/types/techreport/"
+        title="techreport"
+        description="Rapporter som beskriver tekniske aspekter, ofte publisert av institusjoner eller organisasjoner."
+    />
+    <LinkCard
+        href="/no/types/unpublished/"
+        title="unpublished"
+        description="Verk som er utarbeidet eller fullført, men som fortsatt ikke er publisert."
+    />
+</CardGrid>

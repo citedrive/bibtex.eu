@@ -1,0 +1,66 @@
+---
+title: "BibTeX 및 Conference 유형 항목 소개"
+sidebar:
+  label: conference
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 문서의 참고 문헌 목록을 형식화하는 데 사용되는 참조 관리 시스템입니다. 이는 학술적 글쓰기, 특히 과학 및 기술 분야에서 널리 사용됩니다. 이 가이드에서는 BibTeX의 `conference` 항목 유형을 소개하고 이를 LaTeX 문서에서 사용하는 방법을 보여드리겠습니다.
+
+<CiteDrive/>
+
+## Conference 항목 유형
+
+`conference` 항목 유형은 학술 대회 자료집에 실린 논문을 참조하는 데 사용됩니다. `conference` 항목에 필요한 필드는 다음과 같습니다:
+
+-   `author`: 논문의 저자 이름.
+-   `title`: 논문의 제목.
+-   `booktitle`: 학술 대회 자료집의 이름.
+-   `year`: 대회가 열린 연도.
+
+`conference` 항목의 선택 필드에는 다음이 포함됩니다:
+
+-   `editor`: 학술 대회 자료집의 편집자 이름.
+-   `volume`: 자료집의 권 번호.
+-   `number`: 자료집의 번호.
+-   `series`: 학술 대회 자료집이 속한 시리즈 또는 세트의 이름.
+-   `pages`: 논문이 실린 페이지 번호.
+-   `address`: 대회가 열린 장소.
+-   `month`: 대회가 열린 월.
+-   `organization`: 대회를 후원한 조직.
+-   `publisher`: 자료집의 출판사.
+-   `note`: 기타 정보.
+
+다음은 `conference` 항목의 예입니다:
+
+```bibtex
+@conference{example_conference,
+	title        = {The Effects of Climate Change},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {June},
+	booktitle    = {Proceedings of the Annual Conference on Climate Change},
+	publisher    = {Springer},
+	address      = {Los Angeles, CA},
+	pages        = {55--62},
+	note         = {This is a sample entry for a paper in conference proceedings.},
+	editor       = {Bob Johnson},
+	organization = {Climate Change Association}
+}
+```
+
+## LaTeX에서 Conference 항목 유형 사용하기
+
+BibTeX 파일에 `conference` 항목을 생성한 후, LaTeX 문서에서 `\cite` 명령어를 사용하여 이를 참조할 수 있습니다. 예를 들어:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+According to \cite{example_conference}, climate change has significant effects on the planet.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+이 예제에서는 `references.bib` 파일의 `example_conference` 항목을 `\cite` 명령어를 사용하여 인용합니다. 그런 다음 `plain` 스타일을 사용하여 참고 문헌이 생성됩니다.

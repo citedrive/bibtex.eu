@@ -1,0 +1,48 @@
+---
+title: "BibTeX 항목 유형 `Manual` 가이드"
+sidebar:
+  label: manual
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 LaTeX 문서에서 일반적으로 사용되는 참고 문헌 관리 도구입니다. "manual" BibTeX 유형은 기술 매뉴얼이나 사용자 가이드에 사용됩니다. 이 가이드에서는 "manual" BibTeX 유형에 필요한 필드와 선택적 필드에 대해 설명하겠습니다.
+
+<CiteDrive/>
+
+## 필수 필드
+
+"manual" BibTeX 유형에는 다음과 같은 필수 필드가 필요합니다:
+
+- `title`: 매뉴얼의 제목.
+- `year`: 매뉴얼이 출판된 연도.
+
+## 선택적 필드
+
+필수 필드 외에도 "manual" BibTeX 유형에는 추가 정보를 제공할 수 있는 선택적 필드가 몇 가지 있습니다. 이 필드들은 다음과 같습니다:
+
+- `author`: 매뉴얼의 저자(들).
+- `organization`: 매뉴얼을 제작한 기관.
+- `address`: 기관의 위치.
+- `edition`: 매뉴얼의 판 번호.
+- `month`: 매뉴얼이 출판된 월.
+- `note`: 매뉴얼에 대한 추가 정보.
+
+## 예제
+
+다음은 "manual" BibTeX 유형을 사용하는 예제입니다:
+
+```bibtex
+@manual{mymanual,
+	title        = {Example User Guide},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/manual.pdf}},
+	organization = {Example Corporation},
+	edition      = {3rd}
+}
+```
+
+이 예제에서 BibTeX 항목은 "Example User Guide"라는 제목의 기술 매뉴얼 또는 사용자 가이드를 정의합니다. 이 매뉴얼은 2022년에 Example Corporation에서 Example City, CA에서 출판되었습니다. 매뉴얼의 저자는 John Smith와 Jane Doe이며, 이것은 제3판입니다. 매뉴얼에 대한 URL이 포함된 노트가 추가되었습니다.

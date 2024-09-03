@@ -1,0 +1,58 @@
+---
+title: Introdução ao BibTeX e ao Tipo de Entrada Article
+sidebar:
+  label: article
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O BibTeX é um sistema de gerenciamento de referências usado para formatar listas de referências em um documento. É comumente utilizado na escrita acadêmica, particularmente em campos científicos e técnicos. Neste guia, apresentaremos o tipo de entrada `article` no BibTeX e mostraremos como usá-lo em seus documentos LaTeX.
+
+<CiteDrive/>
+
+## O Tipo de Entrada Article
+
+O tipo de entrada `article` é usado para se referir a artigos publicados em periódicos acadêmicos, revistas ou jornais. Os campos obrigatórios para uma entrada `article` são:
+
+-   `author`: O(s) nome(s) do(s) autor(es) do artigo.
+-   `title`: O título do artigo.
+-   `journal`: O nome do periódico, revista ou jornal em que o artigo foi publicado.
+-   `year`: O ano de publicação.
+
+Os campos opcionais para uma entrada `article` incluem:
+
+-   `volume`: O número do volume do periódico.
+-   `number`: O número da edição do periódico.
+-   `pages`: Os números das páginas em que o artigo aparece.
+-   `month`: O mês de publicação.
+-   `note`: Informações diversas.
+
+Aqui está um exemplo de uma entrada `article`:
+
+```bibtex
+@article{example_article,
+	title        = {Os Efeitos das Mudanças Climáticas},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {Janeiro},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {Esta é uma entrada de exemplo para um artigo em uma revista.}
+}
+```
+
+## Usando o Tipo de Entrada Article no LaTeX
+
+Depois de criar uma entrada `article` em seu arquivo BibTeX, você pode referenciá-la em seu documento LaTeX usando o comando `\cite`. Por exemplo:
+
+```latex
+\documentclass{article}  
+\begin{document}  De acordo com \cite{example_article}, as mudanças climáticas têm efeitos significativos no planeta.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+Neste exemplo, a entrada `example_article` no arquivo `references.bib` é citada usando o comando `\cite`. A bibliografia é então gerada usando o estilo `plain`.

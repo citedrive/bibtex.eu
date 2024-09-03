@@ -1,0 +1,48 @@
+---
+title: "Guide til BibTeX-typen MasterThesis"
+sidebar:
+  label: mastersthesis
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referansehåndteringsverktøy som ofte brukes i LaTeX-dokumenter. BibTeX-typen `masterthesis` brukes for masteroppgaver. I denne veiledningen forklarer vi de obligatoriske og valgfrie feltene for BibTeX-typen `masterthesis`.
+
+<CiteDrive/>
+
+## Obligatoriske felt
+
+BibTeX-typen `masterthesis` krever følgende felt:
+
+-   `author`: Forfatteren av oppgaven.
+-   `title`: Tittelen på oppgaven.
+-   `school`: Navnet på institusjonen som tildelte graden.
+-   `year`: Året graden ble tildelt.
+
+## Valgfrie felt
+
+I tillegg til de obligatoriske feltene har BibTeX-typen `masterthesis` en rekke valgfrie felt som kan brukes for å gi tilleggsinformasjon. Disse feltene inkluderer:
+
+-   `type`: Typen av oppgaven, for eksempel "Masteroppgave".
+-   `address`: Institusjonens beliggenhet.
+-   `month`: Måneden oppgaven ble levert.
+-   `note`: Tilleggsinformasjon om oppgaven.
+
+## Eksempel
+
+Her er et eksempel på hvordan du bruker BibTeX-typen `masterthesis`:
+
+```bibtex
+@masterthesis{mythesis,
+	title        = {En studie av Eksempel},
+	author       = {Jane Doe},
+	year         = 2022,
+	month        = {Juni},
+	address      = {Eksempelby, CA},
+	note         = {Tilgjengelig på \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {Masteroppgave}
+}
+```
+
+I dette eksempelet definerer BibTeX-posten en masteroppgave skrevet av Jane Doe med tittelen "En studie av Eksempel". Graden ble tildelt i 2022 av University of Example, og oppgaven ble levert i juni i Eksempelby, CA. Typen av oppgaven er spesifisert som "Masteroppgave", og en merknad er inkludert med en URL til oppgaven.

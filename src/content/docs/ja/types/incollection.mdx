@@ -1,50 +1,50 @@
 ---
-title: "Introduction to BibTeX and the Incollection Type Entry"
+title: "BibTeXとincollectionタイプエントリの紹介"
 sidebar:
   label: incollection
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. It allows you to create a bibliographic database and easily include references in your LaTeX documents. In this guide, we will introduce BibTeX and explain the "incollection" type entry.
+BibTeXは、LaTeX文書での文献管理ツールです。BibTeXを使用すると、文献データベースを作成し、LaTeX文書に簡単に参照を含めることができます。このガイドでは、BibTeXの概要と「incollection」タイプエントリについて説明します。
 
 <CiteDrive/>
 
-## What is BibTeX?
+## BibTeXとは？
 
-BibTeX is a program and file format used to manage bibliographic references in LaTeX documents. With BibTeX, you can store all of your references in a single file, and then include them in your LaTeX documents using citation keys. This makes it easy to add references to your document, change citation styles, and manage large bibliographies.
+BibTeXは、LaTeX文書で文献参照を管理するためのプログラムおよびファイル形式です。BibTeXを使用すると、すべての参照を1つのファイルに保存し、そのファイル内の引用キーを使用してLaTeX文書に含めることができます。これにより、文献を簡単に追加したり、引用スタイルを変更したり、大規模な文献リストを管理したりすることができます。
 
-BibTeX has a number of different entry types that you can use to categorize your references. These include "article" for journal articles, "book" for books, "inproceedings" for papers published in conference proceedings, and many more.
+BibTeXには、参照を分類するためのさまざまなエントリタイプがあります。これには、「article」（ジャーナル記事の引用）、「book」（書籍の引用）、「inproceedings」（会議論文集に掲載された論文の引用）などが含まれます。
 
-## What is the Incollection Type Entry?
+## incollectionタイプエントリとは？
 
-The "incollection" BibTeX type is used for chapters or sections of books. It is similar to the "inproceedings" type, but is used for works published in a book rather than a conference proceedings.
+「incollection」BibTeXタイプは、書籍の章やセクションのために使用されます。これは「inproceedings」タイプと似ていますが、会議論文集ではなく書籍に掲載された作品のために使用されます。
 
-## Required Fields
+## 必須フィールド
 
-The "incollection" BibTeX type requires the following fields:
+「incollection」BibTeXタイプには、以下のフィールドが必要です：
 
--   `author`: The author(s) of the chapter or section.
--   `title`: The title of the chapter or section.
--   `booktitle`: The title of the book containing the chapter or section.
--   `publisher`: The name of the publisher of the book.
--   `year`: The year the book was published.
+- `author`: 章やセクションの著者
+- `title`: 章やセクションのタイトル
+- `booktitle`: 章やセクションが掲載されている書籍のタイトル
+- `publisher`: 書籍の出版社名
+- `year`: 書籍が出版された年
 
-## Optional Fields
+## 任意フィールド
 
-In addition to the required fields, the "incollection" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+必須フィールドに加えて、「incollection」BibTeXタイプには、追加情報を提供するために使用できるいくつかの任意フィールドがあります。これらのフィールドには以下が含まれます：
 
--   `editor`: The name(s) of the editor(s) of the book.
--   `volume`: The volume number of the book, if applicable.
--   `number`: The issue number of the book, if applicable.
--   `series`: The name of the series that the book belongs to, if applicable.
--   `pages`: The pages on which the chapter or section appears in the book.
--   `address`: The location of the publisher.
--   `month`: The month the book was published.
+- `editor`: 書籍の編集者
+- `volume`: 書籍の巻号（該当する場合）
+- `number`: 書籍の号数（該当する場合）
+- `series`: 書籍が属するシリーズ名（該当する場合）
+- `pages`: 書籍内で章やセクションが掲載されているページ
+- `address`: 出版社の所在地
+- `month`: 書籍が出版された月
 
-## Example
+## 例
 
-Here is an example of how to use the "incollection" BibTeX type:
+以下は「incollection」BibTeXタイプの使用例です：
 
 ```bibtex
 @incollection{mychapter,
@@ -64,4 +64,4 @@ Here is an example of how to use the "incollection" BibTeX type:
 
 ```
 
-In this example, the BibTeX entry defines a chapter titled "An Analysis of Example" authored by John Smith that appeared in the book "The Book of Examples". The book was published in 2022 and edited by Jane Doe. The chapter appeared on pages 123-130 of volume 1, issue 2 of the "Example Book Series" published by Example Publisher in New York, NY.
+この例では、BibTeXエントリが「An Analysis of Example」という章を定義しており、著者はJohn Smithです。この章は「The Book of Examples」という書籍に掲載されています。書籍は2022年に出版され、編集者はJane Doeです。章は「Example Book Series」の巻1、号2のページ123-130に掲載されており、出版社はExample Publisher、所在地はNew York, NYです。

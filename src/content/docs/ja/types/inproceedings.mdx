@@ -1,60 +1,58 @@
 ---
-title: "Guide to BibTeX Type `Inproceedings`"
+title: "BibTeXタイプ`Inproceedings`のガイド"
 sidebar:
   label: inproceedings
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "inproceedings" BibTeX type is used for papers published in conference proceedings. In this guide, we will explain the required and optional fields for the "inproceedings" BibTeX type.
+BibTeXは、LaTeX文書で一般的に使用される参考文献管理ツールです。`inproceedings` BibTeXタイプは、学会の論文集に発表された論文に使用されます。このガイドでは、`inproceedings` BibTeXタイプの必須フィールドとオプションフィールドについて説明します。
 
 <CiteDrive/>
 
-## Required Fields
+## 必須フィールド
 
-The "inproceedings" BibTeX type requires the following fields:
+`inproceedings` BibTeXタイプには、次のフィールドが必要です：
 
--   `author`: The author(s) of the paper.
--   `title`: The title of the paper.
--   `booktitle`: The title of the conference proceedings.
--   `year`: The year the conference proceedings were published.
+-   `author`: 論文の著者。
+-   `title`: 論文のタイトル。
+-   `booktitle`: 学会の論文集のタイトル。
+-   `year`: 学会の論文集が出版された年。
 
-## Optional Fields
+## オプションフィールド
 
-In addition to the required fields, the "inproceedings" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+必須フィールドに加えて、`inproceedings` BibTeXタイプには追加の情報を提供するためのいくつかのオプションフィールドがあります。これらのフィールドには以下が含まれます：
 
--   `editor`: The name(s) of the editor(s) of the conference proceedings.
--   `volume`: The volume number of the conference proceedings, if applicable.
--   `number`: The issue number of the conference proceedings, if applicable.
--   `series`: The name of the series that the conference proceedings belong to, if applicable.
--   `pages`: The pages on which the paper appears in the conference proceedings.
--   `address`: The location of the conference.
--   `month`: The month the conference was held.
--   `organization`: The organization that sponsored the conference.
--   `publisher`: The name of the publisher of the conference proceedings.
+-   `editor`: 学会の論文集の編集者。
+-   `volume`: 学会の論文集の巻数（該当する場合）。
+-   `number`: 学会の論文集の号数（該当する場合）。
+-   `series`: 学会の論文集が属するシリーズ名（該当する場合）。
+-   `pages`: 論文が学会の論文集に掲載されているページ。
+-   `address`: 学会が開催された場所。
+-   `month`: 学会が開催された月。
+-   `organization`: 学会を主催した組織。
+-   `publisher`: 学会の論文集の出版社。
 
-## Example
+## 例
 
-Here is an example of how to use the "inproceedings" BibTeX type:
-
+以下は、`inproceedings` BibTeXタイプの使用例です：
 
 ```bibtex
 @inproceedings{mypaper,
-	title        = {An Analysis of Example},
-	author       = {John Smith and Jane Doe},
+	title        = {例の分析},
+	author       = {ジョン・スミス と ジェーン・ドウ},
 	year         = 2022,
-	month        = {June},
-	booktitle    = {Proceedings of the International Conference on Example},
+	month        = {6月},
+	booktitle    = {国際会議「例」論文集},
 	publisher    = {ACM Press},
-	address      = {New York, NY},
-	series       = {Example Conference Proceedings},
+	address      = {ニューヨーク, NY},
+	series       = {例会議論文集},
 	volume       = 1,
 	number       = 2,
 	pages        = {123--130},
-	editor       = {David Brown and Susan Green},
+	editor       = {デイビッド・ブラウン と スーザン・グリーン},
 	organization = {ACM}
 }
-
 ```
 
-In this example, the BibTeX entry defines a paper titled "An Analysis of Example" authored by John Smith and Jane Doe that appeared in the conference proceedings of the International Conference on Example. The proceedings were published in 2022 and edited by David Brown and Susan Green. The conference was held in June in New York, NY, and was sponsored by the ACM. The paper appeared on pages 123-130 of volume 1, issue 2 of the "Example Conference Proceedings" series published by ACM Press.
+この例では、BibTeXエントリは「例の分析」と題されたジョン・スミスとジェーン・ドウによる論文を定義しています。この論文は国際会議「例」の論文集に掲載されており、2022年に出版されました。編集者はデイビッド・ブラウンとスーザン・グリーンで、学会は6月にニューヨークで開催され、ACMがスポンサーです。論文は「例会議論文集」シリーズの第1巻、第2号の123ページから130ページに掲載されています。

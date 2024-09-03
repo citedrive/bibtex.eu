@@ -1,0 +1,21 @@
+---
+title: "BibTeX misc 항목 유형"
+sidebar:
+  label: misc
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX에는 다양한 항목 유형이 있으며, 때때로 정의된 유형 중 어느 것에도 완전히 맞지 않는 출처를 접할 수 있습니다. 이러한 경우, `misc` 유형을 사용할 수 있습니다. 이 유형은 다른 카테고리에 맞지 않는 모든 항목에 사용됩니다. 음악 작품이나 강의 슬라이드일 수도 있지만, 대부분은 웹 페이지를 인용하는 데 사용됩니다. 이러한 지원되지 않는 출처 유형은 `note`와 `howpublished` 필드를 사용하여 우회적으로 생성됩니다. BibTeX가 지원하지 않는 출처 유형을 자주 인용하는 경우, 필드와 유형 측면에서 더 많은 기능을 제공하는 BibLaTeX를 살펴보는 것이 좋습니다.
+
+<CiteDrive/>
+
+```latex
+@misc{citationKey,
+
+	...
+
+}
+```
+
+웹사이트를 인용하기 위해 `misc`를 사용하려는 경우, 이 가이드를 확인해 보세요.

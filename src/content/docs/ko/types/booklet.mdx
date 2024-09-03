@@ -1,0 +1,65 @@
+---
+title: "BibTeX 및 Booklet 유형 항목 소개"
+sidebar:
+  label: booklet
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 문서의 참고 문헌 목록을 형식화하는 참조 관리 시스템입니다. 이는 학술 공동체에서 널리 사용되며, 특히 과학, 기술 및 수학 분야에서 자주 활용됩니다.
+
+BibTeX 파일에 포함할 수 있는 다양한 항목 유형 중 하나가 `booklet` 항목 유형입니다. 이 가이드에서는 `booklet` 항목 유형을 소개하고, 이를 LaTeX 문서에서 참조를 관리하는 데 어떻게 사용하는지 보여드리겠습니다.
+
+<CiteDrive/>
+
+## Booklet 항목 유형
+
+`booklet` 항목 유형은 공식적으로 출판되지 않았지만 책처럼 제본된 인쇄물을 참조하는 데 사용됩니다. `booklet` 항목의 예로는 학술 대회 자료집, 프로그램 가이드 또는 설명서가 포함될 수 있습니다.
+
+`booklet` 항목에 필요한 필드는 다음과 같습니다:
+
+-   `title`: 책자의 제목.
+-   `author`: 책자의 저자.
+-   `howpublished`: 책자가 출판된 방법.
+-   `address`: 출판사 또는 후원 기관의 주소.
+-   `year`: 책자가 출판된 연도.
+
+`booklet` 항목의 선택 필드에는 다음이 포함됩니다:
+
+-   `editor`: 책자의 편집자.
+-   `volume`: 다권의 책에서 권 번호.
+-   `number`: 저널 또는 시리즈의 번호.
+-   `series`: 시리즈 또는 세트의 이름.
+-   `organization`: 책자를 출판하거나 후원한 조직.
+-   `month`: 출판된 월.
+-   `note`: 기타 정보.
+
+다음은 `booklet` 항목의 예입니다:
+
+```bibtex
+@booklet{example_booklet,
+	title        = {Conference Proceedings},
+	author       = {Jane Doe and John Smith},
+	year         = 2022,
+	month        = {July},
+	address      = {San Francisco, CA},
+	note         = {This is a sample entry for a conference proceedings booklet.},
+	howpublished = {Presented at the Annual Conference on Technology},
+	editor       = {Bob Johnson}
+}
+```
+
+## LaTeX에서 Booklet 항목 유형 사용하기
+
+BibTeX 파일에 `booklet` 항목을 생성한 후, LaTeX 문서에서 `\cite` 명령어를 사용하여 이를 참조할 수 있습니다. 예를 들어:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+According to \cite{example_booklet}, the Annual Conference on Technology was a success.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+이 예제에서는 `references.bib` 파일의 `example_booklet` 항목을 `\cite` 명령어를 사용하여 인용합니다. 그런 다음 `plain` 스타일을 사용하여 참고 문헌이 생성됩니다.

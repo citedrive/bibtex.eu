@@ -1,0 +1,65 @@
+---
+title: "Introduksjon til BibTeX og Booklet Type Oppføring"
+sidebar:
+  label: booklet
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referansehåndteringssystem for å formatere lister med referanser i et dokument. Det er mye brukt i akademiske kretser, spesielt innen vitenskap, teknologi og matematikk.
+
+En av de mange oppføringstypene som kan inkluderes i en BibTeX-fil er `booklet` oppføringstypen. I denne guiden vil vi introdusere deg for `booklet` oppføringstypen, og vise deg hvordan du bruker den til å administrere referansene dine i LaTeX-dokumentene dine.
+
+<CiteDrive/>
+
+## Booklet Oppføringstype
+
+`booklet` oppføringstypen brukes til å referere til et trykt verk som ikke er formelt publisert, men som er bundet sammen som en bok. Eksempler på `booklet` oppføringer kan inkludere konferanseprosedyrer, programguider eller bruksanvisninger.
+
+De nødvendige feltene for en `booklet` oppføring er:
+
+-   `title`: Tittelen på bookletet.
+-   `author`: Forfatteren eller forfatterne av bookletet.
+-   `howpublished`: Hvordan bookletet ble publisert.
+-   `address`: Adressen til utgiveren eller sponsoren.
+-   `year`: Året bookletet ble publisert.
+
+Valgfrie felter for en `booklet` oppføring inkluderer:
+
+-   `editor`: Redaktøren eller redaktørene av bookletet.
+-   `volume`: Volumnummeret til en flerbinds bok.
+-   `number`: Nummeret på et tidsskrift eller serie.
+-   `series`: Navnet på en serie eller sett av bøker.
+-   `organization`: Organisasjonen som publiserte eller sponsorerte bookletet.
+-   `month`: Måned for publiseringen.
+-   `note`: Diverse informasjon.
+
+Her er et eksempel på en `booklet` oppføring:
+
+```bibtex
+@booklet{example_booklet,
+	title        = {Konferanseprosedyrer},
+	author       = {Jane Doe og John Smith},
+	year         = 2022,
+	month        = {Juli},
+	address      = {San Francisco, CA},
+	note         = {Dette er et eksempel på en oppføring for et konferanseprosedyr-booklet.},
+	howpublished = {Presentert på den årlige konferansen om teknologi},
+	editor       = {Bob Johnson}
+}
+```
+
+## Bruke Booklet Oppføringstype i LaTeX
+
+Når du har opprettet en `booklet` oppføring i BibTeX-filen din, kan du referere til den i LaTeX-dokumentet ditt ved å bruke `\cite` kommandoen. For eksempel:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Ifølge \cite{example_booklet}, var den årlige konferansen om teknologi en suksess.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+I dette eksemplet blir `example_booklet` oppføringen i `references.bib` filen sitert ved å bruke `\cite` kommandoen. Bibliografien blir deretter generert ved å bruke `plain` stilen.

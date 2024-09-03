@@ -1,0 +1,50 @@
+---
+title: "BibTeX 항목 유형 `Proceedings` 가이드"
+sidebar:
+  label: proceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 LaTeX 문서에서 일반적으로 사용되는 참고 문헌 관리 도구입니다. "proceedings" BibTeX 유형은 학회에서 발표된 논문 모음과 같은 학회 프로시딩스(Proceedings)에 사용됩니다. 이 가이드에서는 "proceedings" BibTeX 유형에 필요한 필드와 선택적 필드에 대해 설명하겠습니다.
+
+<CiteDrive/>
+
+## 필수 필드
+
+"proceedings" BibTeX 유형에는 다음과 같은 필수 필드가 필요합니다:
+
+- `title`: 학회 프로시딩스의 제목.
+- `year`: 학회 프로시딩스가 출판된 연도.
+
+## 선택적 필드
+
+필수 필드 외에도 "proceedings" BibTeX 유형에는 추가 정보를 제공할 수 있는 선택적 필드가 여러 개 있습니다. 이 필드들은 다음과 같습니다:
+
+- `editor`: 학회 프로시딩스의 편집자(들) 이름.
+- `volume`: 해당되는 경우, 학회 프로시딩스의 권 번호.
+- `number`: 해당되는 경우, 학회 프로시딩스의 호 번호.
+- `series`: 해당되는 경우, 학회 프로시딩스가 속한 시리즈의 이름.
+- `address`: 학회가 열린 장소.
+- `month`: 학회가 열린 월.
+- `publisher`: 학회 프로시딩스의 출판사 이름.
+
+## 예제
+
+다음은 "proceedings" BibTeX 유형을 사용하는 예제입니다:
+
+```bibtex
+@proceedings{myproceedings,
+	title        = {Proceedings of the International Conference on Example},
+	year         = 2022,
+	month        = {June},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Example Conference Proceedings},
+	volume       = 1,
+	number       = 2,
+	editor       = {Jane Doe and John Smith}
+}
+```
+
+이 예제에서 BibTeX 항목은 "Proceedings of the International Conference on Example"이라는 제목의 학회 프로시딩스를 정의합니다. 이 프로시딩스는 2022년에 출판되었으며, Jane Doe와 John Smith가 편집하였습니다. 학회는 6월에 뉴욕, NY에서 열렸으며, 프로시딩스는 ACM Press에서 "Example Conference Proceedings" 시리즈의 1권 2호로 출판되었습니다.

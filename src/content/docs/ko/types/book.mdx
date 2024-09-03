@@ -1,0 +1,41 @@
+---
+title: "BibTeX 및 Book 유형 항목 소개"
+sidebar:
+  label: book
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 LaTeX 문서와 함께 사용되는 서지 관리 도구입니다. 이는 저자들이 서지 참조를 편리하고 조직적인 방식으로 관리할 수 있도록 도와주며, 특정 스타일에 따라 출처를 인용하고 참고 문헌을 형식화하는 것을 쉽게 만들어 줍니다. 이 게시물에서는 BibTeX에서 "book" 유형 항목을 생성하는 방법에 중점을 두겠습니다.
+
+<CiteDrive/>
+
+## BibTeX Book 유형 항목이란?
+
+BibTeX book 유형 항목은 인쇄된 책 또는 전자책에 대한 참조를 나타냅니다. 여기에는 저자, 제목, 출판 연도, 출판사 및 출판사의 주소와 같은 정보가 포함됩니다. 책 유형 항목은 다음과 같은 BibTeX 코드를 사용하여 생성할 수 있습니다:
+
+```tex
+@book{key,   
+	author = {Author, A.},   
+	year = {2021},   
+	title = {Title of the Book},   
+	publisher = {Publisher},   
+	address = {Address of the Publisher}, 
+}
+```
+
+## BibTeX Book 유형 항목 생성 방법
+
+1.  .bib 파일을 텍스트 편집기에서 엽니다. 이 파일에는 모든 BibTeX 참조가 포함됩니다.
+2.  위에 표시된 코드를 추가하여 새 참조를 생성합니다.
+3.  "key"를 이 참조에 대한 고유 식별자로 대괄호 안에 입력합니다. 이 식별자는 LaTeX 문서에서 책을 인용하는 데 사용됩니다.
+4.  "Author, A."를 저자 이름으로 교체합니다.
+5.  "2021"을 출판 연도로 교체합니다.
+6.  "Title of the Book"을 책 제목으로 교체합니다.
+7.  "Publisher"를 출판사 이름으로 교체합니다.
+8.  "Address of the Publisher"를 출판사의 주소로 교체합니다.
+9.  .bib 파일을 저장하면 완료입니다!
+
+## 결론
+
+BibTeX를 사용하여 서지 참조를 관리하면 문서 작성 및 형식화 과정을 훨씬 쉽게 만들 수 있습니다. 책 유형 항목을 생성함으로써 출처를 추적하고 참고 문헌을 전문적인 방식으로 쉽게 형식화할 수 있습니다. 책 유형 항목을 생성할 때는 고유 식별자를 사용하고 모든 관련 정보를 포함하는 것을 잊지 마세요.

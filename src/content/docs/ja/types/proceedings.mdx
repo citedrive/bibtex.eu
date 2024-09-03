@@ -1,51 +1,50 @@
 ---
-title: "Guide to BibTeX Type `Proceedings`"
+title: "BibTeXタイプ`Proceedings`のガイド"
 sidebar:
   label: proceedings
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "proceedings" BibTeX type is used for conference proceedings, such as a collection of papers presented at a conference. In this guide, we will explain the required and optional fields for the "proceedings" BibTeX type.
+BibTeXは、LaTeX文書で一般的に使用される参考文献管理ツールです。`proceedings` BibTeXタイプは、会議で発表された論文集など、会議の議事録に使用されます。このガイドでは、`proceedings` BibTeXタイプの必須フィールドとオプションフィールドについて説明します。
 
 <CiteDrive/>
 
-## Required Fields
+## 必須フィールド
 
-The "proceedings" BibTeX type requires the following fields:
+`proceedings` BibTeXタイプには、次のフィールドが必要です：
 
--   `title`: The title of the conference proceedings.
--   `year`: The year the conference proceedings were published.
+-   `title`: 会議の議事録のタイトル。
+-   `year`: 会議の議事録が出版された年。
 
-## Optional Fields
+## オプションフィールド
 
-In addition to the required fields, the "proceedings" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+必須フィールドに加えて、`proceedings` BibTeXタイプには追加の情報を提供するためのいくつかのオプションフィールドがあります。これらのフィールドには以下が含まれます：
 
--   `editor`: The name(s) of the editor(s) of the conference proceedings.
--   `volume`: The volume number of the conference proceedings, if applicable.
--   `number`: The issue number of the conference proceedings, if applicable.
--   `series`: The name of the series that the conference proceedings belong to, if applicable.
--   `address`: The location of the conference.
--   `month`: The month the conference was held.
--   `publisher`: The name of the publisher of the conference proceedings.
+-   `editor`: 会議の議事録の編集者の名前。
+-   `volume`: 会議の議事録の巻号（該当する場合）。
+-   `number`: 会議の議事録の号数（該当する場合）。
+-   `series`: 会議の議事録が属するシリーズ名（該当する場合）。
+-   `address`: 会議の開催場所。
+-   `month`: 会議が開催された月。
+-   `publisher`: 会議の議事録の出版社名。
 
-## Example
+## 例
 
-Here is an example of how to use the "proceedings" BibTeX type:
+以下は、`proceedings` BibTeXタイプの使用例です：
 
 ```bibtex
 @proceedings{myproceedings,
-	title        = {Proceedings of the International Conference on Example},
+	title        = {国際会議「Example」の議事録},
 	year         = 2022,
-	month        = {June},
+	month        = {6月},
 	publisher    = {ACM Press},
-	address      = {New York, NY},
+	address      = {ニューヨーク, NY},
 	series       = {Example Conference Proceedings},
 	volume       = 1,
 	number       = 2,
-	editor       = {Jane Doe and John Smith}
+	editor       = {ジェーン・ドウ と ジョン・スミス}
 }
-
 ```
 
-In this example, the BibTeX entry defines a set of conference proceedings titled "Proceedings of the International Conference on Example". The proceedings were published in 2022 and edited by Jane Doe and John Smith. The conference was held in June in New York, NY, and the proceedings were published as volume 1, issue 2 of the "Example Conference Proceedings" series by ACM Press.
+この例では、BibTeXエントリは「国際会議「Example」の議事録」と題された会議の議事録セットを定義しています。議事録は2022年に出版され、ジェーン・ドウとジョン・スミスによって編集されました。会議は6月にニューヨークで開催され、議事録はACM Pressから「Example Conference Proceedings」シリーズの第1巻第2号として出版されました。

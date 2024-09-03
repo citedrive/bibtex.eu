@@ -1,0 +1,58 @@
+---
+title: Introduksjon til BibTeX og artikkeltypen "article"
+sidebar:
+  label: article
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referansehåndteringssystem som brukes til å formatere referanselister i et dokument. Det er ofte brukt i akademisk skriving, spesielt innen vitenskapelige og tekniske felt. I denne veiledningen vil vi introdusere deg for `article`-typen i BibTeX og vise deg hvordan du bruker den i LaTeX-dokumenter.
+
+<CiteDrive/>
+
+## Artikkeltypen "article"
+
+Artikkeltypen `article` brukes til å referere til artikler som er publisert i vitenskapelige tidsskrifter, magasiner eller aviser. De obligatoriske feltene for en `article`-post er:
+
+-   `author`: Navnene på forfatteren(e) av artikkelen.
+-   `title`: Tittelen på artikkelen.
+-   `journal`: Navnet på tidsskriftet, magasinet eller avisen hvor artikkelen ble publisert.
+-   `year`: Publikasjonsåret.
+
+Valgfrie felter for en `article`-post inkluderer:
+
+-   `volume`: Volumet til tidsskriftet.
+-   `number`: Nummeret på tidsskriftets utgave.
+-   `pages`: Sidetallene der artikkelen vises.
+-   `month`: Publikasjonsmåneden.
+-   `note`: Diverse informasjon.
+
+Her er et eksempel på en `article`-post:
+
+```bibtex
+@article{example_article,
+	title        = {The Effects of Climate Change},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {January},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {Dette er en eksempelpost for en artikkel i et magasin.}
+}
+```
+
+## Bruke artikkeltypen "article" i LaTeX
+
+Når du har opprettet en `article`-post i BibTeX-filen din, kan du referere til den i LaTeX-dokumentet ved å bruke kommandoen `\cite`. For eksempel:
+
+```latex
+\documentclass{article}  
+\begin{document}  Ifølge \cite{example_article} har klimaendringer betydelige effekter på planeten.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+I dette eksempelet refereres det til posten `example_article` i filen `references.bib` ved å bruke kommandoen `\cite`. Bibliografien genereres deretter ved hjelp av stilen `plain`.

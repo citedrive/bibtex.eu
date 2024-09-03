@@ -1,0 +1,48 @@
+---
+title: "BibTeX 항목 유형 PhdThesis 가이드"
+sidebar:
+  label: phdthesis
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 LaTeX 문서에서 일반적으로 사용되는 참고 문헌 관리 도구입니다. "phdthesis" BibTeX 유형은 박사 학위 논문에 사용됩니다. 이 가이드에서는 "phdthesis" BibTeX 유형에 필요한 필드와 선택적 필드에 대해 설명하겠습니다.
+
+<CiteDrive/>
+
+## 필수 필드
+
+"phdthesis" BibTeX 유형에는 다음과 같은 필수 필드가 필요합니다:
+
+- `author`: 논문의 저자.
+- `title`: 논문의 제목.
+- `school`: 학위를 수여한 기관의 이름.
+- `year`: 학위가 수여된 연도.
+
+## 선택적 필드
+
+필수 필드 외에도 "phdthesis" BibTeX 유형에는 추가 정보를 제공할 수 있는 선택적 필드가 몇 가지 있습니다. 이 필드들은 다음과 같습니다:
+
+- `type`: 논문의 유형, 예를 들어 "PhD thesis" 또는 "Master's thesis".
+- `address`: 기관의 위치.
+- `month`: 논문이 제출된 월.
+- `note`: 논문에 대한 추가 정보.
+
+## 예제
+
+다음은 "phdthesis" BibTeX 유형을 사용하는 예제입니다:
+
+```bibtex
+@phdthesis{mythesis,
+	title        = {An Analysis of Example},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {PhD thesis}
+}
+```
+
+이 예제에서 BibTeX 항목은 John Smith가 저술한 "An Analysis of Example"이라는 제목의 박사 학위 논문을 정의합니다. 이 학위는 2022년에 University of Example에서 수여되었으며, 논문은 Example City, CA에서 6월에 제출되었습니다. 논문의 유형은 "PhD thesis"로 지정되었으며, 논문에 대한 URL이 포함된 노트가 추가되었습니다.

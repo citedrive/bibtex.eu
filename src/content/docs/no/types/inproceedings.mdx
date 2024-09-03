@@ -1,0 +1,60 @@
+---
+title: "Guide til BibTeX Type `Inproceedings`"
+sidebar:
+  label: inproceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referansehåndteringsverktøy som ofte brukes i LaTeX-dokumenter. BibTeX-typen "inproceedings" brukes for å sitere artikler publisert i konferanseprosedyrer. Denne guiden vil forklare de nødvendige og valgfrie feltene for BibTeX-typen "inproceedings".
+
+<CiteDrive/>
+
+## Nødvendige Felter
+
+BibTeX-typen "inproceedings" krever følgende felter:
+
+-   **`author`**: Forfatter(en) av artikkelen.
+-   **`title`**: Tittelen på artikkelen.
+-   **`booktitle`**: Tittelen på konferanseprosedyrer.
+-   **`year`**: Året konferanseprosedyrer ble publisert.
+
+## Valgfrie Felter
+
+I tillegg til de nødvendige feltene inkluderer BibTeX-typen "inproceedings" også valgfrie felter for å gi mer detaljert informasjon. Disse feltene inkluderer:
+
+-   **`editor`**: Navnene på redaktørene av konferanseprosedyrer.
+-   **`volume`**: Volumnummeret til konferanseprosedyrer, hvis aktuelt.
+-   **`number`**: Utgavenummeret til konferanseprosedyrer, hvis aktuelt.
+-   **`series`**: Navnet på serien konferanseprosedyrer tilhører, hvis aktuelt.
+-   **`pages`**: Sidene der artikkelen vises i konferanseprosedyrer.
+-   **`address`**: Stedet for konferansen.
+-   **`month`**: Måned konferansen ble holdt.
+-   **`organization`**: Organisasjonen som sponsorerte konferansen.
+-   **`publisher`**: Utgiveren av konferanseprosedyrer.
+
+## Eksempel
+
+Nedenfor er et eksempel på hvordan du lager en BibTeX-oppføring ved hjelp av typen "inproceedings":
+
+```bibtex
+@inproceedings{mypaper,
+	title        = {En Analyse av Eksempel},
+	author       = {John Smith og Jane Doe},
+	year         = 2022,
+	month        = {Juni},
+	booktitle    = {Proceedings of the International Conference on Example},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Example Conference Proceedings},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown og Susan Green},
+	organization = {ACM}
+}
+```
+
+I dette eksemplet beskriver BibTeX-oppføringen en artikkel med tittelen *"En Analyse av Eksempel"* skrevet av John Smith og Jane Doe. Artikkelen ble publisert i *Proceedings of the International Conference on Example* i 2022, redigert av David Brown og Susan Green. Konferansen fant sted i juni i New York, NY, og prosedyrene ble utgitt av ACM Press. Artikkelen vises på sidene 123-130 i volum 1, utgave 2 i serien *Example Conference Proceedings*.
+
+Denne malen hjelper med å organisere referanser til konferanseartikler på en strukturert måte som er lett å sitere i LaTeX-dokumenter.

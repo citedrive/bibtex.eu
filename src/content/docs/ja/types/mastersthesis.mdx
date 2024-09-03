@@ -1,51 +1,48 @@
 ---
-title: "Guide to BibTeX Type MasterThesis"
+title: "BibTeXタイプ`MasterThesis`のガイド"
 sidebar:
   label: mastersthesis
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "masterthesis" BibTeX type is used for master's theses. In this guide, we will explain the required and optional fields for the "masterthesis" BibTeX type.
+BibTeXは、LaTeX文書で一般的に使用される参考文献管理ツールです。`masterthesis` BibTeXタイプは、修士論文に使用されます。このガイドでは、`masterthesis` BibTeXタイプの必須フィールドとオプションフィールドについて説明します。
 
 <CiteDrive/>
 
-## Required Fields
+## 必須フィールド
 
-The "masterthesis" BibTeX type requires the following fields:
+`masterthesis` BibTeXタイプには、次のフィールドが必要です：
 
--   `author`: The author of the thesis.
--   `title`: The title of the thesis.
--   `school`: The name of the institution that awarded the degree.
--   `year`: The year the degree was awarded.
+-   `author`: 論文の著者。
+-   `title`: 論文のタイトル。
+-   `school`: 学位を授与した機関の名前。
+-   `year`: 学位が授与された年。
 
-## Optional Fields
+## オプションフィールド
 
-In addition to the required fields, the "masterthesis" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+必須フィールドに加えて、`masterthesis` BibTeXタイプには追加の情報を提供するためのいくつかのオプションフィールドがあります。これらのフィールドには以下が含まれます：
 
--   `type`: The type of the thesis, such as "Master's thesis".
--   `address`: The location of the institution.
--   `month`: The month the thesis was submitted.
--   `note`: Any additional information about the thesis.
+-   `type`: 論文の種類（例：「Master's thesis」）。
+-   `address`: 機関の所在地。
+-   `month`: 論文が提出された月。
+-   `note`: 論文に関する追加情報。
 
-## Example
+## 例
 
-Here is an example of how to use the "masterthesis" BibTeX type:
-
-
+以下は、`masterthesis` BibTeXタイプの使用例です：
 
 ```bibtex
 @masterthesis{mythesis,
-	title        = {A Study of Example},
-	author       = {Jane Doe},
+	title        = {例の研究},
+	author       = {ジェーン・ドウ},
 	year         = 2022,
-	month        = {June},
-	address      = {Example City, CA},
-	note         = {Available at \url{https://example.com/thesis.pdf}},
-	school       = {University of Example},
+	month        = {6月},
+	address      = {例市, CA},
+	note         = {こちらからアクセス可能：\url{https://example.com/thesis.pdf}},
+	school       = {例大学},
 	type         = {Master's thesis}
 }
-
 ```
 
-In this example, the BibTeX entry defines a master's thesis authored by Jane Doe titled "A Study of Example". The degree was awarded in 2022 by the University of Example, and the thesis was submitted in June in Example City, CA. The type of the thesis is specified as "Master's thesis", and a note is included that provides a URL for the thesis.
+この例では、BibTeXエントリは「例の研究」と題されたジェーン・ドウによる修士論文を定義しています。学位は2022年に例大学から授与され、論文は6月に例市、CAで提出されました。論文の種類は「Master's thesis」と指定され、論文へのURLが含まれたノートも追加されています。

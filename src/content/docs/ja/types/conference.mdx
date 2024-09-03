@@ -1,38 +1,38 @@
 ---
-title: "Introduction to BibTeX and the Conference Type Entry"
+title: "BibTeXとConferenceタイプエントリの紹介"
 sidebar:
   label: conference
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management system used to format lists of references in a document. It is widely used in academic writing, particularly in scientific and technical fields. In this guide, we will introduce you to the `conference` entry type in BibTeX and show you how to use it in your LaTeX documents.
+BibTeXは、文書内の参考文献リストをフォーマットするための参照管理システムです。特に科学技術分野の学術的な執筆で広く使用されています。このガイドでは、BibTeXの`conference`エントリタイプを紹介し、LaTeX文書での使用方法を示します。
 
 <CiteDrive/>
 
-## The Conference Entry Type
+## Conferenceエントリタイプとは
 
-The `conference` entry type is used to refer to papers published in conference proceedings. The required fields for a `conference` entry are:
+`conference`エントリタイプは、会議の議事録に掲載された論文を参照するために使用されます。`conference`エントリに必要なフィールドは以下の通りです：
 
--   `author`: The name(s) of the author(s) of the paper.
--   `title`: The title of the paper.
--   `booktitle`: The name of the conference proceedings.
--   `year`: The year the conference was held.
+- `author`: 論文の著者の名前
+- `title`: 論文のタイトル
+- `booktitle`: 会議の議事録の名前
+- `year`: 会議が開催された年
 
-Optional fields for a `conference` entry include:
+`conference`エントリの任意フィールドには以下が含まれます：
 
--   `editor`: The name(s) of the editor(s) of the conference proceedings.
--   `volume`: The volume number of the proceedings.
--   `number`: The number of the proceedings.
--   `series`: The name of the series or set of books that the conference proceedings belong to.
--   `pages`: The page numbers on which the paper appears.
--   `address`: The location of the conference.
--   `month`: The month in which the conference was held.
--   `organization`: The organization that sponsored the conference.
--   `publisher`: The publisher of the proceedings.
--   `note`: Miscellaneous information.
+- `editor`: 会議の議事録の編集者の名前
+- `volume`: 議事録の巻号
+- `number`: 議事録の番号
+- `series`: 議事録が属するシリーズやセットの名前
+- `pages`: 論文が掲載されているページ番号
+- `address`: 会議の開催場所
+- `month`: 会議が開催された月
+- `organization`: 会議を後援した組織
+- `publisher`: 議事録の出版社
+- `note`: その他の情報
 
-Here is an example of a `conference` entry:
+以下は`conference`エントリの例です：
 
 ```bibtex
 @conference{example_conference,
@@ -44,16 +44,15 @@ Here is an example of a `conference` entry:
 	publisher    = {Springer},
 	address      = {Los Angeles, CA},
 	pages        = {55--62},
-	note         = {This is a sample entry for a paper in conference proceedings.},
+	note         = {これは会議の議事録内の論文のサンプルエントリです。},
 	editor       = {Bob Johnson},
 	organization = {Climate Change Association}
 }
-
 ```
 
-## Using the Conference Entry Type in LaTeX
+## LaTeXでのConferenceエントリタイプの使用
 
-Once you have created a `conference` entry in your BibTeX file, you can reference it in your LaTeX document using the `\cite` command. For example:
+BibTeXファイル内に`conference`エントリを作成したら、LaTeX文書で`\cite`コマンドを使用して参照できます。例えば：
 
 ```latex
 \documentclass{article}  
@@ -64,4 +63,4 @@ According to \cite{example_conference}, climate change has significant effects o
 \end{document}
 ```
 
-In this example, the `example_conference` entry in the `references.bib` file is cited using the `\cite` command. The bibliography is then generated using the `plain` style.
+この例では、`references.bib`ファイル内の`example_conference`エントリが`\cite`コマンドを使用して引用されています。その後、`plain`スタイルを使用して参考文献が生成されます。

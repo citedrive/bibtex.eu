@@ -1,0 +1,66 @@
+---
+title: "BibTeX 및 Incollection 유형 항목 소개"
+sidebar:
+  label: incollection
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 LaTeX 문서에서 참고 문헌을 관리하기 위해 널리 사용되는 도구입니다. BibTeX를 사용하면 참고 문헌 데이터베이스를 생성하고 LaTeX 문서에 쉽게 참조를 포함할 수 있습니다. 이 가이드에서는 BibTeX와 "incollection" 유형 항목에 대해 설명합니다.
+
+<CiteDrive/>
+
+## BibTeX란 무엇인가요?
+
+BibTeX는 LaTeX 문서에서 참고 문헌을 관리하기 위해 사용되는 프로그램 및 파일 형식입니다. BibTeX를 사용하면 모든 참고 문헌을 하나의 파일에 저장한 다음, 인용 키를 사용하여 LaTeX 문서에 포함할 수 있습니다. 이를 통해 문서에 참고 문헌을 쉽게 추가하고, 인용 스타일을 변경하며, 대규모 참고 문헌 목록을 관리할 수 있습니다.
+
+BibTeX에는 참조를 분류할 수 있는 다양한 항목 유형이 있습니다. 여기에는 저널 기사에 대한 "article", 책에 대한 "book", 학회 프로시딩스에 발표된 논문에 대한 "inproceedings" 등이 포함됩니다.
+
+## Incollection 유형 항목이란?
+
+"incollection" BibTeX 유형은 책의 장이나 섹션에 사용됩니다. "inproceedings" 유형과 유사하지만, 학회 프로시딩스 대신 책에 수록된 작업에 사용됩니다.
+
+## 필수 필드
+
+"incollection" BibTeX 유형은 다음과 같은 필수 필드를 요구합니다:
+
+-   `author`: 장이나 섹션의 저자.
+-   `title`: 장이나 섹션의 제목.
+-   `booktitle`: 장이나 섹션이 포함된 책의 제목.
+-   `publisher`: 책의 출판사 이름.
+-   `year`: 책이 출판된 연도.
+
+## 선택 필드
+
+필수 필드 외에도 "incollection" BibTeX 유형에는 추가 정보를 제공하기 위해 사용할 수 있는 여러 선택 필드가 있습니다. 이 필드들은 다음과 같습니다:
+
+-   `editor`: 책의 편집자 이름.
+-   `volume`: 책의 권 번호, 해당되는 경우.
+-   `number`: 책의 호 번호, 해당되는 경우.
+-   `series`: 책이 속한 시리즈의 이름, 해당되는 경우.
+-   `pages`: 책에서 장이나 섹션이 수록된 페이지.
+-   `address`: 출판사의 위치.
+-   `month`: 책이 출판된 월.
+
+## 예제
+
+다음은 "incollection" BibTeX 유형을 사용하는 방법의 예입니다:
+
+```bibtex
+@incollection{mychapter,
+	title        = {An Analysis of Example},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {June},
+	booktitle    = {The Book of Examples},
+	publisher    = {Example Publisher},
+	address      = {New York, NY},
+	series       = {Example Book Series},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {Jane Doe}
+}
+```
+
+이 예제에서 BibTeX 항목은 "An Analysis of Example"이라는 제목의 장을 정의하고 있습니다. 이 장은 John Smith가 저술하였으며, "The Book of Examples"라는 책에 수록되어 있습니다. 이 책은 2022년에 출판되었고, Jane Doe가 편집하였습니다. 이 장은 "Example Book Series"의 제1권 제2호의 123-130페이지에 수록되어 있으며, Example Publisher가 뉴욕, NY에서 출판하였습니다.

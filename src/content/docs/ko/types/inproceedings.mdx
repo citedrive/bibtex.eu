@@ -1,0 +1,58 @@
+---
+title: "BibTeX 항목 유형 `Inproceedings` 가이드"
+sidebar:
+  label: inproceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 LaTeX 문서에서 일반적으로 사용되는 참고 문헌 관리 도구입니다. "inproceedings" BibTeX 유형은 학회 프로시딩스(Proceedings)에서 발표된 논문에 사용됩니다. 이 가이드에서는 "inproceedings" BibTeX 유형에 필요한 필드와 선택적 필드에 대해 설명하겠습니다.
+
+<CiteDrive/>
+
+## 필수 필드
+
+"inproceedings" BibTeX 유형에는 다음과 같은 필수 필드가 필요합니다:
+
+- `author`: 논문의 저자(들).
+- `title`: 논문의 제목.
+- `booktitle`: 학회 프로시딩스의 제목.
+- `year`: 학회 프로시딩스가 출판된 연도.
+
+## 선택적 필드
+
+필수 필드 외에도 "inproceedings" BibTeX 유형에는 추가 정보를 제공할 수 있는 선택적 필드가 몇 가지 있습니다. 이 필드들은 다음과 같습니다:
+
+- `editor`: 학회 프로시딩스의 편집자(들) 이름.
+- `volume`: 해당되는 경우, 학회 프로시딩스의 권 번호.
+- `number`: 해당되는 경우, 학회 프로시딩스의 호 번호.
+- `series`: 해당되는 경우, 학회 프로시딩스가 속한 시리즈의 이름.
+- `pages`: 논문이 학회 프로시딩스에 실린 페이지 번호.
+- `address`: 학회가 열린 장소.
+- `month`: 학회가 열린 월.
+- `organization`: 학회를 후원한 조직.
+- `publisher`: 학회 프로시딩스의 출판사 이름.
+
+## 예제
+
+다음은 "inproceedings" BibTeX 유형을 사용하는 예제입니다:
+
+```bibtex
+@inproceedings{mypaper,
+	title        = {An Analysis of Example},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {June},
+	booktitle    = {Proceedings of the International Conference on Example},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Example Conference Proceedings},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown and Susan Green},
+	organization = {ACM}
+}
+```
+
+이 예제에서 BibTeX 항목은 John Smith와 Jane Doe가 저술한 "An Analysis of Example"이라는 제목의 논문을 정의합니다. 이 논문은 International Conference on Example의 학회 프로시딩스에 실렸습니다. 프로시딩스는 2022년에 출판되었으며, David Brown과 Susan Green이 편집하였습니다. 학회는 6월에 뉴욕, NY에서 열렸으며, ACM이 후원하였습니다. 논문은 ACM Press에서 출판된 "Example Conference Proceedings" 시리즈의 1권 2호에 123-130 페이지에 실려 있습니다.

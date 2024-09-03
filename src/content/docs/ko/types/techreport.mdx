@@ -1,0 +1,27 @@
+---
+title: "BibTeX에서 techreport 항목 유형 이해하기"
+sidebar:
+  label: techreport
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX는 연구자와 학자가 참고 문헌을 정리하고 형식을 맞추는 데 사용하는 잘 알려진 서지 관리 시스템입니다. 컴퓨터 과학 분야에서 특히 유용하지만, 다른 분야에서도 사용할 수 있습니다. "techreport"는 기술 보고서를 인용할 때 사용되는 BibTeX의 항목 유형입니다.
+
+기술 보고서는 특정 주제나 프로젝트에 대한 깊이 있는 기술 정보를 담고 있는 문서입니다. 조직, 기관, 연구자들에 의해 자주 작성되며 특정 그룹의 사람들에게 배포될 목적으로 작성됩니다. 기술 보고서는 공식적으로 출판되는 경우가 드물지만, 유용한 정보의 출처가 되므로 학술 작업에서 인용해야 합니다.
+
+BibTeX에서 "techreport" 항목 유형은 기술 보고서에 대한 모든 관련 정보를 제공하는 데 사용됩니다. 여기에는 저자, 제목, 기관, 연도, 보고서 번호 등이 포함됩니다. 기술 보고서에 대한 BibTeX 항목은 다음과 같습니다:
+
+<CiteDrive/>
+
+```bibtex
+@techreport{key,   
+	author = {Jane Smith},   
+	title = {Advanced Robotics에 관한 기술 보고서},   
+	institution = {Institute of Technology},   
+	year = {2021},   
+	number = {TR-1234}
+}
+```
+
+이 예제에서 "key" 필드는 문서 텍스트에서 출처를 참조하는 데 사용되는 고유 식별자입니다. "author" 필드는 기술 보고서의 저자(들)를 나열하며, "title" 필드는 보고서의 제목을 제공하고, "institution" 필드는 보고서가 작성된 기관을 나열하며, "year" 필드는 보고서가 작성된 연도를 제공하고, "number" 필드는 보고서 번호를 제공합니다.

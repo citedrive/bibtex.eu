@@ -1,0 +1,50 @@
+---
+title: "Guia para o Tipo BibTeX `Proceedings`"
+sidebar:
+  label: proceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O BibTeX é uma ferramenta de gerenciamento de referências comumente utilizada em documentos LaTeX. O tipo BibTeX "proceedings" é usado para anais de conferências, como uma coleção de artigos apresentados em uma conferência. Neste guia, explicaremos os campos obrigatórios e opcionais para o tipo BibTeX "proceedings".
+
+<CiteDrive/>
+
+## Campos Obrigatórios
+
+O tipo BibTeX "proceedings" exige os seguintes campos:
+
+-   `title`: O título dos anais da conferência.
+-   `year`: O ano em que os anais da conferência foram publicados.
+
+## Campos Opcionais
+
+Além dos campos obrigatórios, o tipo BibTeX "proceedings" também possui uma série de campos opcionais que podem ser usados para fornecer informações adicionais. Estes campos incluem:
+
+-   `editor`: O(s) nome(s) do(s) editor(es) dos anais da conferência.
+-   `volume`: O número do volume dos anais da conferência, se aplicável.
+-   `number`: O número da edição dos anais da conferência, se aplicável.
+-   `series`: O nome da série à qual os anais da conferência pertencem, se aplicável.
+-   `address`: O local da conferência.
+-   `month`: O mês em que a conferência foi realizada.
+-   `publisher`: O nome da editora dos anais da conferência.
+
+## Exemplo
+
+Aqui está um exemplo de como usar o tipo BibTeX "proceedings":
+
+```bibtex
+@proceedings{meusanalis,
+	title        = {Anais da Conferência Internacional sobre Exemplo},
+	year         = 2022,
+	month        = {Junho},
+	publisher    = {ACM Press},
+	address      = {Nova York, NY},
+	series       = {Anais da Conferência Exemplo},
+	volume       = 1,
+	number       = 2,
+	editor       = {Jane Doe e John Smith}
+}
+```
+
+Neste exemplo, a entrada BibTeX define um conjunto de anais de conferência intitulado "Anais da Conferência Internacional sobre Exemplo". Os anais foram publicados em 2022 e editados por Jane Doe e John Smith. A conferência foi realizada em junho em Nova York, NY, e os anais foram publicados como volume 1, edição 2 da série "Anais da Conferência Exemplo" pela ACM Press.

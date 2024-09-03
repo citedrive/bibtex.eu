@@ -1,51 +1,48 @@
 ---
-title: "Guide to BibTeX Type `Manual`"
+title: "BibTeXタイプ`Manual`のガイド"
 sidebar:
   label: manual
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "manual" BibTeX type is used for technical manuals or user guides. In this guide, we will explain the required and optional fields for the "manual" BibTeX type.
+BibTeXは、LaTeX文書で一般的に使用される参考文献管理ツールです。`manual` BibTeXタイプは、技術マニュアルやユーザーガイドに使用されます。このガイドでは、`manual` BibTeXタイプの必須フィールドとオプションフィールドについて説明します。
 
 <CiteDrive/>
 
-## Required Fields
+## 必須フィールド
 
-The "manual" BibTeX type requires the following fields:
+`manual` BibTeXタイプには、次のフィールドが必要です：
 
--   `title`: The title of the manual.
--   `year`: The year the manual was published.
+-   `title`: マニュアルのタイトル。
+-   `year`: マニュアルが出版された年。
 
-## Optional Fields
+## オプションフィールド
 
-In addition to the required fields, the "manual" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+必須フィールドに加えて、`manual` BibTeXタイプには追加の情報を提供するためのいくつかのオプションフィールドがあります。これらのフィールドには以下が含まれます：
 
--   `author`: The author(s) of the manual.
--   `organization`: The organization responsible for producing the manual.
--   `address`: The location of the organization.
--   `edition`: The edition number of the manual.
--   `month`: The month the manual was published.
--   `note`: Any additional information about the manual.
+-   `author`: マニュアルの著者。
+-   `organization`: マニュアルを制作した組織。
+-   `address`: 組織の所在地。
+-   `edition`: マニュアルの版数。
+-   `month`: マニュアルが出版された月。
+-   `note`: マニュアルに関する追加情報。
 
-## Example
+## 例
 
-Here is an example of how to use the "manual" BibTeX type:
-
-
+以下は、`manual` BibTeXタイプの使用例です：
 
 ```bibtex
 @manual{mymanual,
-	title        = {Example User Guide},
-	author       = {John Smith and Jane Doe},
+	title        = {例ユーザーガイド},
+	author       = {ジョン・スミス と ジェーン・ドウ},
 	year         = 2022,
-	month        = {June},
-	address      = {Example City, CA},
-	note         = {Available at \url{https://example.com/manual.pdf}},
-	organization = {Example Corporation},
-	edition      = {3rd}
+	month        = {6月},
+	address      = {例市, CA},
+	note         = {こちらからアクセス可能：\url{https://example.com/manual.pdf}},
+	organization = {例コーポレーション},
+	edition      = {第3版}
 }
-
 ```
 
-In this example, the BibTeX entry defines a technical manual or user guide titled "Example User Guide". The manual was published in 2022 by the Example Corporation in Example City, CA. The manual was authored by John Smith and Jane Doe, and this is the third edition. A note is included that provides a URL for the manual.
+この例では、BibTeXエントリは「例ユーザーガイド」と題された技術マニュアルまたはユーザーガイドを定義しています。マニュアルは2022年に例コーポレーションによって例市、CAで出版されました。著者はジョン・スミスとジェーン・ドウで、この版は第3版です。マニュアルへのURLが含まれたノートも追加されています。

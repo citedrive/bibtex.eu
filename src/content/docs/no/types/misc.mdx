@@ -1,0 +1,21 @@
+---
+title: BibTeX-typen `misc`
+sidebar:
+  label: misc
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Det finnes flere posttyper i BibTeX, og noen ganger kommer du over en kilde som ikke helt passer inn i noen av de forhåndsdefinerte typene. I slike tilfeller kan du bruke `misc`-typen. Denne typen brukes for alt som ikke passer inn i en av de andre kategoriene. Dette kan være musikkstykker eller forelesningslysark, men oftest brukes den for å sitere nettsider. Disse ikke-støttede kildetypene blir ofte laget med alternative felt som `note` og `howpublished`. Hvis du ofte siterer kildetyper som ikke støttes av BibTeX, bør du vurdere å bruke BibLaTeX, som tilbyr et større sett av felter og typer.
+
+<CiteDrive/>
+
+```latex
+@misc{citationKey,
+
+	...
+
+}
+```
+
+Hvis du ønsker å bruke `misc` til å sitere en nettside, sjekk ut denne veiledningen.

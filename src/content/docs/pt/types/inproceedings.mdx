@@ -1,0 +1,58 @@
+---
+title: "Guia para o Tipo BibTeX `Inproceedings`"
+sidebar:
+  label: inproceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O BibTeX é uma ferramenta de gerenciamento de referências comumente utilizada em documentos LaTeX. O tipo BibTeX "inproceedings" é usado para artigos publicados em anais de conferências. Neste guia, explicaremos os campos obrigatórios e opcionais para o tipo BibTeX "inproceedings".
+
+<CiteDrive/>
+
+## Campos Obrigatórios
+
+O tipo BibTeX "inproceedings" exige os seguintes campos:
+
+-   `author`: O(s) autor(es) do artigo.
+-   `title`: O título do artigo.
+-   `booktitle`: O título dos anais da conferência.
+-   `year`: O ano em que os anais da conferência foram publicados.
+
+## Campos Opcionais
+
+Além dos campos obrigatórios, o tipo BibTeX "inproceedings" também possui uma série de campos opcionais que podem ser usados para fornecer informações adicionais. Estes campos incluem:
+
+-   `editor`: O(s) nome(s) do(s) editor(es) dos anais da conferência.
+-   `volume`: O número do volume dos anais da conferência, se aplicável.
+-   `number`: O número da edição dos anais da conferência, se aplicável.
+-   `series`: O nome da série à qual os anais da conferência pertencem, se aplicável.
+-   `pages`: As páginas nas quais o artigo aparece nos anais da conferência.
+-   `address`: O local da conferência.
+-   `month`: O mês em que a conferência foi realizada.
+-   `organization`: A organização que patrocinou a conferência.
+-   `publisher`: O nome da editora dos anais da conferência.
+
+## Exemplo
+
+Aqui está um exemplo de como usar o tipo BibTeX "inproceedings":
+
+```bibtex
+@inproceedings{meuartigo,
+	title        = {Uma Análise de Exemplo},
+	author       = {João Silva e Maria Oliveira},
+	year         = 2022,
+	month        = {Junho},
+	booktitle    = {Anais da Conferência Internacional sobre Exemplo},
+	publisher    = {ACM Press},
+	address      = {Nova York, NY},
+	series       = {Anais da Conferência Exemplo},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown e Susan Green},
+	organization = {ACM}
+}
+```
+
+Neste exemplo, a entrada BibTeX define um artigo intitulado "Uma Análise de Exemplo", escrito por João Silva e Maria Oliveira, que apareceu nos anais da Conferência Internacional sobre Exemplo. Os anais foram publicados em 2022 e editados por David Brown e Susan Green. A conferência foi realizada em junho em Nova York, NY, e foi patrocinada pela ACM. O artigo apareceu nas páginas 123-130 do volume 1, edição 2 da série "Anais da Conferência Exemplo", publicada pela ACM Press.

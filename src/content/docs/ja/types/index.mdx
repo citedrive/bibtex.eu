@@ -1,90 +1,87 @@
 ---
-title: BibTeX Entry types
+title: "BibTeXエントリタイプ"
 ---
 
-BibTeX is a popular bibliographic reference management tool used in the field of computer science and other technical disciplines. It is used to store and manage bibliographic references, such as books, articles, and conference papers, in a structured format. This format can then be used to automatically generate bibliographies in various document formats.
+BibTeXは、コンピュータサイエンスやその他の技術分野で広く使用されている文献管理ツールです。書籍、記事、会議論文などの文献を構造化された形式で保存・管理するために使用されます。この形式を使用して、さまざまな文書形式で自動的に参考文献リストを生成することができます。
 
-BibTeX has several types of entries, each with its own set of fields, to represent different types of publications. Here is a comprehensive list of all BibTeX types and their fields:
-
+BibTeXには、さまざまな出版物のタイプを表すために、各エントリタイプに固有のフィールドが用意されています。以下は、すべてのBibTeXタイプとそのフィールドの包括的なリストです：
 
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-
-
 <CardGrid>
     <LinkCard
-        href="/types/"
-        title="BibTeX Entry types"
-        description="Explore various types of bibliographic references in BibTeX."
+        href="/ja/types/"
+        title="BibTeXエントリタイプ"
+        description="BibTeXでのさまざまな文献参照タイプを探る。"
     />
     <LinkCard
-        href="/types/article/"
+        href="/ja/types/article/"
         title="article"
-        description="Citations for articles published in journals, magazines, or other periodic publications."
+        description="ジャーナル、雑誌、またはその他の定期刊行物に掲載された記事の引用。"
     />
     <LinkCard
-        href="/types/book/"
+        href="/ja/types/book/"
         title="book"
-        description="Citations for standalone books by one or more authors, including specifics like the publisher."
+        description="著者が1人以上である単独の書籍の引用。出版社などの詳細情報も含む。"
     />
     <LinkCard
-        href="/types/booklet/"
+        href="/ja/types/booklet/"
         title="booklet"
-        description="For printed works that are bound but lack a formal publisher or sponsoring institution."
+        description="印刷された作品で、バウンドされているが、正式な出版社や支援機関がないもの。"
     />
     <LinkCard
-        href="/types/conference/"
+        href="/ja/types/conference/"
         title="conference"
-        description="References for papers presented at conferences, often interchangeable with inproceedings."
+        description="会議で発表された論文の参考文献。`inproceedings`と同様に扱われることが多い。"
     />
     <LinkCard
-        href="/types/inbook/"
+        href="/ja/types/inbook/"
         title="inbook"
-        description="Citations for specific portions of a book, such as chapters or defined sections."
+        description="書籍の特定の部分、例えば章や定義されたセクションの引用。"
     />
     <LinkCard
-        href="/types/incollection/"
+        href="/ja/types/incollection/"
         title="incollection"
-        description="Citations for parts of a book with their distinct title, typically housed within a larger collection."
+        description="大規模なコレクション内の特定のタイトルを持つ書籍の部分の引用。"
     />
     <LinkCard
-        href="/types/inproceedings/"
+        href="/ja/types/inproceedings/"
         title="inproceedings"
-        description="References for articles or papers presented within the proceedings of a conference."
+        description="会議の論文集に掲載された記事や論文の参考文献。"
     />
     <LinkCard
-        href="/types/manual/"
+        href="/ja/types/manual/"
         title="manual"
-        description="Technical documentation or manuals, often detailing software or hardware specifics."
+        description="技術文書やマニュアルで、ソフトウェアやハードウェアの詳細を説明するもの。"
     />
     <LinkCard
-        href="/types/mastersthesis/"
+        href="/ja/types/mastersthesis/"
         title="mastersthesis"
-        description="Citations for Master's level theses detailing academic research at postgraduate levels."
+        description="大学院レベルの研究を詳細に示す修士論文の引用。"
     />
     <LinkCard
-        href="/types/misc/"
+        href="/ja/types/misc/"
         title="misc"
-        description="A catch-all entry type for references that don't neatly fit into standard categories."
+        description="標準的なカテゴリにうまく収まらない参考文献のための汎用エントリタイプ。"
     />
     <LinkCard
-        href="/types/phdthesis/"
+        href="/ja/types/phdthesis/"
         title="phdthesis"
-        description="Citations for doctoral dissertations, showcasing in-depth academic research and contributions."
+        description="博士論文の引用で、深い学術的研究や貢献を示す。"
     />
     <LinkCard
-        href="/types/proceedings/"
+        href="/ja/types/proceedings/"
         title="proceedings"
-        description="For collections of academic papers presented at professional conferences or symposia."
+        description="専門的な会議やシンポジウムで発表された学術論文のコレクション。"
     />
     <LinkCard
-        href="/types/techreport/"
+        href="/ja/types/techreport/"
         title="techreport"
-        description="Reports detailing technical aspects, often published by institutions or organizations."
+        description="技術的側面を詳細に説明した報告書で、機関や組織によって発表されることが多い。"
     />
     <LinkCard
-        href="/types/unpublished/"
+        href="/ja/types/unpublished/"
         title="unpublished"
-        description="Works that have been drafted or completed but remain unpublished."
+        description="ドラフトや完成したが、まだ出版されていない作品。"
     />
 </CardGrid>

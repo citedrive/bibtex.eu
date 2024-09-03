@@ -1,0 +1,50 @@
+---
+title: "Guide til BibTeX-typen `Proceedings`"
+sidebar:
+  label: proceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX er et referansehåndteringsverktøy som ofte brukes i LaTeX-dokumenter. BibTeX-typen `proceedings` brukes for konferanseprotokoller, for eksempel en samling av artikler presentert på en konferanse. I denne veiledningen forklarer vi de obligatoriske og valgfrie feltene for BibTeX-typen `proceedings`.
+
+<CiteDrive/>
+
+## Obligatoriske felt
+
+BibTeX-typen `proceedings` krever følgende felt:
+
+-   `title`: Tittelen på konferanseprotokollene.
+-   `year`: Året da konferanseprotokollene ble publisert.
+
+## Valgfrie felt
+
+I tillegg til de obligatoriske feltene har BibTeX-typen `proceedings` en rekke valgfrie felt som kan brukes for å gi tilleggsinformasjon. Disse feltene inkluderer:
+
+-   `editor`: Navnene på redaktørene av konferanseprotokollene.
+-   `volume`: Volumnummeret på konferanseprotokollene, hvis aktuelt.
+-   `number`: Utgavenummeret på konferanseprotokollene, hvis aktuelt.
+-   `series`: Navnet på serien som konferanseprotokollene tilhører, hvis aktuelt.
+-   `address`: Stedet der konferansen ble holdt.
+-   `month`: Måneden da konferansen ble holdt.
+-   `publisher`: Navnet på utgiveren av konferanseprotokollene.
+
+## Eksempel
+
+Her er et eksempel på hvordan du bruker BibTeX-typen `proceedings`:
+
+```bibtex
+@proceedings{myproceedings,
+	title        = {Proceedings of the International Conference on Example},
+	year         = 2022,
+	month        = {June},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Example Conference Proceedings},
+	volume       = 1,
+	number       = 2,
+	editor       = {Jane Doe and John Smith}
+}
+```
+
+I dette eksempelet definerer BibTeX-posten en samling konferanseprotokoller med tittelen "Proceedings of the International Conference on Example". Protokollene ble publisert i 2022 og redigert av Jane Doe og John Smith. Konferansen ble holdt i juni i New York, NY, og protokollene ble publisert som volum 1, utgave 2 i serien "Example Conference Proceedings" av ACM Press.

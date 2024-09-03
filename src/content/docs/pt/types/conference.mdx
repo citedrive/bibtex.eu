@@ -1,0 +1,66 @@
+---
+title: "Introdução ao BibTeX e ao Tipo de Entrada Conference"
+sidebar:
+  label: conference
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O BibTeX é um sistema de gerenciamento de referências usado para formatar listas de referências em um documento. É amplamente utilizado na redação acadêmica, particularmente em campos científicos e técnicos. Neste guia, vamos apresentar o tipo de entrada `conference` no BibTeX e mostrar como usá-lo em seus documentos LaTeX.
+
+<CiteDrive/>
+
+## O Tipo de Entrada Conference
+
+O tipo de entrada `conference` é usado para se referir a artigos publicados em anais de conferências. Os campos obrigatórios para uma entrada `conference` são:
+
+-   `author`: O(s) nome(s) do(s) autor(es) do artigo.
+-   `title`: O título do artigo.
+-   `booktitle`: O nome dos anais da conferência.
+-   `year`: O ano em que a conferência foi realizada.
+
+Os campos opcionais para uma entrada `conference` incluem:
+
+-   `editor`: O(s) nome(s) do(s) editor(es) dos anais da conferência.
+-   `volume`: O número do volume dos anais.
+-   `number`: O número dos anais.
+-   `series`: O nome da série ou conjunto de livros ao qual os anais pertencem.
+-   `pages`: Os números das páginas onde o artigo aparece.
+-   `address`: A localização da conferência.
+-   `month`: O mês em que a conferência foi realizada.
+-   `organization`: A organização que patrocinou a conferência.
+-   `publisher`: A editora dos anais.
+-   `note`: Informações diversas.
+
+Aqui está um exemplo de uma entrada `conference`:
+
+```bibtex
+@conference{example_conference,
+	title        = {Os Efeitos das Mudanças Climáticas},
+	author       = {John Smith e Jane Doe},
+	year         = 2022,
+	month        = {Junho},
+	booktitle    = {Anais da Conferência Anual sobre Mudanças Climáticas},
+	publisher    = {Springer},
+	address      = {Los Angeles, CA},
+	pages        = {55--62},
+	note         = {Esta é uma entrada de exemplo para um artigo em anais de conferência.},
+	editor       = {Bob Johnson},
+	organization = {Associação de Mudanças Climáticas}
+}
+```
+
+## Usando o Tipo de Entrada Conference no LaTeX
+
+Depois de criar uma entrada `conference` no seu arquivo BibTeX, você pode referenciá-la em seu documento LaTeX usando o comando `\cite`. Por exemplo:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+De acordo com \cite{example_conference}, as mudanças climáticas têm efeitos significativos no planeta.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+Neste exemplo, a entrada `example_conference` no arquivo `references.bib` é citada usando o comando `\cite`. A bibliografia é então gerada usando o estilo `plain`.

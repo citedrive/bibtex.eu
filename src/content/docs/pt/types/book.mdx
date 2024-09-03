@@ -1,0 +1,41 @@
+---
+title: "Introdução ao BibTeX e ao Tipo de Entrada Book"
+sidebar:
+  label: book
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O BibTeX é uma ferramenta de gerenciamento bibliográfico comumente usada com documentos LaTeX. Ele ajuda os autores a gerenciar suas referências bibliográficas de maneira conveniente e organizada, facilitando a citação de fontes e a formatação da bibliografia de acordo com um estilo específico. Neste post, vamos focar na criação de uma entrada do tipo "book" no BibTeX.
+
+<CiteDrive/>
+
+## O Que é uma Entrada do Tipo Book no BibTeX?
+
+Uma entrada do tipo book no BibTeX refere-se a uma referência a um livro impresso ou eletrônico. Inclui informações como autor, título, ano de publicação, editora e endereço. Uma entrada do tipo book pode ser criada usando o seguinte código BibTeX:
+
+```tex
+@book{key,   
+	author = {Autor, A.},   
+	year = {2021},   
+	title = {Título do Livro},   
+	publisher = {Editora},   
+	address = {Endereço da Editora}, 
+}
+```
+
+## Como Criar uma Entrada do Tipo Book no BibTeX
+
+1. Abra seu arquivo .bib em um editor de texto. Este arquivo conterá todas as suas referências BibTeX.
+2. Adicione o código mostrado acima para criar uma nova referência.
+3. Substitua "key" por um identificador único para esta referência, entre chaves. Este identificador será usado para citar o livro em seu documento LaTeX.
+4. Substitua "Autor, A." pelo nome do(s) autor(es).
+5. Substitua "2021" pelo ano de publicação.
+6. Substitua "Título do Livro" pelo título do livro.
+7. Substitua "Editora" pelo nome da editora.
+8. Substitua "Endereço da Editora" pelo endereço da editora.
+9. Salve o arquivo .bib e pronto!
+
+## Conclusão
+
+Usar o BibTeX para gerenciar suas referências bibliográficas pode tornar o processo de escrita e formatação de um documento muito mais fácil. Ao criar uma entrada do tipo book, você pode acompanhar suas fontes e formatar sua bibliografia de maneira profissional. Lembre-se de usar um identificador único e incluir todas as informações relevantes ao criar uma entrada do tipo book no BibTeX.
