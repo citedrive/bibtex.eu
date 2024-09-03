@@ -1,0 +1,65 @@
+---
+title: "Introduktion till BibTeX och Posttypen Inbook"
+sidebar:
+  label: inbook
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett system för hantering av referenser som används för att formatera referenslistor i ett dokument. Det är mycket använt inom akademiskt skrivande, särskilt inom vetenskapliga och tekniska områden. I denna guide kommer vi att introducera dig till posttypen `inbook` i BibTeX och visa hur du använder den i dina LaTeX-dokument.
+
+<CiteDrive/>
+
+## Posttypen Inbook
+
+Posttypen `inbook` används för att referera till ett specifikt kapitel eller avsnitt inom en bok. De obligatoriska fälten för en `inbook`-post är:
+
+-   `author`: Namnet på författaren/ författarna av kapitlet eller avsnittet.
+-   `title`: Titeln på kapitlet eller avsnittet.
+-   `booktitle`: Titeln på boken som innehåller kapitlet eller avsnittet.
+-   `publisher`: Namnet på förlaget som publicerade boken.
+-   `year`: Året boken publicerades.
+
+Valfria fält för en `inbook`-post inkluderar:
+
+-   `editor`: Namnen på redaktörerna av boken.
+-   `volume`: Volymnumret på boken.
+-   `number`: Nummer på en serie eller uppsättning av böcker.
+-   `series`: Namnet på en serie eller uppsättning av böcker.
+-   `address`: Platsen för förlaget.
+-   `edition`: Utgåvan av boken.
+-   `month`: Månaden då boken publicerades.
+-   `pages`: Sidnumren för kapitlet eller avsnittet.
+-   `note`: Diverse information.
+
+Här är ett exempel på en `inbook`-post:
+
+```bibtex
+@inbook{example_inbook,
+	title        = {Effekterna av Klimatförändringar},
+	author       = {John Smith},
+	year         = 2022,
+	booktitle    = {Miljöproblem och Lösningar},
+	publisher    = {Wiley},
+	pages        = {101--112},
+	note         = {Detta är ett exempel på en post för ett kapitel i en bok.},
+	editor       = {Jane Doe},
+	edition      = {3:e}
+}
+```
+
+## Användning av Inbook-Posttypen i LaTeX
+
+När du har skapat en `inbook`-post i din BibTeX-fil kan du referera till den i ditt LaTeX-dokument med hjälp av `\cite`-kommandot. Till exempel:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Enligt \cite{example_inbook}, har klimatförändringar 
+betydande effekter på planeten.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+	
+I detta exempel citeras `example_inbook`-posten i filen `references.bib` med hjälp av `\cite`-kommandot. Bibliografin genereras sedan med hjälp av stilen `plain`.

@@ -1,0 +1,58 @@
+---
+title: "Guide till BibTeX Typen `Inproceedings`"
+sidebar:
+  label: inproceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett referenshanteringsverktyg som vanligtvis används i LaTeX-dokument. BibTeX-typen "inproceedings" används för artiklar publicerade i konferensproceedings. I denna guide förklarar vi de obligatoriska och valfria fälten för BibTeX-typen "inproceedings".
+
+<CiteDrive/>
+
+## Obligatoriska Fält
+
+BibTeX-typen "inproceedings" kräver följande fält:
+
+-   `author`: Författaren/författarna av artikeln.
+-   `title`: Titeln på artikeln.
+-   `booktitle`: Titeln på konferensproceedings.
+-   `year`: Året då konferensproceedings publicerades.
+
+## Valfria Fält
+
+Förutom de obligatoriska fälten finns det även ett antal valfria fält som kan användas för att ge ytterligare information. Dessa fält inkluderar:
+
+-   `editor`: Namn på redaktören/redaktörerna av konferensproceedings.
+-   `volume`: Volymnumret på konferensproceedings, om tillämpligt.
+-   `number`: Nummer på utgåvan av konferensproceedings, om tillämpligt.
+-   `series`: Namnet på serien som konferensproceedings tillhör, om tillämpligt.
+-   `pages`: Sidorna där artikeln förekommer i konferensproceedings.
+-   `address`: Platsen där konferensen hölls.
+-   `month`: Månaden då konferensen hölls.
+-   `organization`: Organisationen som sponsrade konferensen.
+-   `publisher`: Namnet på förlaget av konferensproceedings.
+
+## Exempel
+
+Här är ett exempel på hur man använder BibTeX-typen "inproceedings":
+
+```bibtex
+@inproceedings{mypaper,
+	title        = {An Analysis of Example},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {June},
+	booktitle    = {Proceedings of the International Conference on Example},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Example Conference Proceedings},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown and Susan Green},
+	organization = {ACM}
+}
+```
+
+I detta exempel definierar BibTeX-posten en artikel med titeln "An Analysis of Example" författad av John Smith och Jane Doe som förekom i konferensproceedings från International Conference on Example. Proceedings publicerades 2022 och redigerades av David Brown och Susan Green. Konferensen hölls i juni i New York, NY, och sponsrades av ACM. Artikeln återfinns på sidorna 123–130 i volym 1, nummer 2 av serien "Example Conference Proceedings" som publicerades av ACM Press.

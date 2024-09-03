@@ -1,0 +1,41 @@
+---
+title: "BibTeX'e Giriş ve Kitap Türü Girişi"
+sidebar:
+  label: book
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, genellikle LaTeX belgeleri ile kullanılan bir bibliyografik yönetim aracıdır. Yazarların bibliyografik referanslarını düzenli ve kolay bir şekilde yönetmelerine yardımcı olur, böylece kaynakları alıntılamak ve bibliyografyayı belirli bir stile göre formatlamak kolaylaşır. Bu yazıda, BibTeX'te bir "kitap" türü girişi oluşturmayı ele alacağız.
+
+<CiteDrive/>
+
+## BibTeX Kitap Türü Girişi Nedir?
+
+BibTeX kitap türü girişi, basılı veya elektronik bir kitaba referans verir. Yazar, başlık, yayın yılı, yayınevi ve adres gibi bilgileri içerir. Bir kitap türü girişi aşağıdaki BibTeX kodu ile oluşturulabilir:
+
+```tex
+@book{key,   
+	author = {Yazar, A.},   
+	year = {2021},   
+	title = {Kitabın Başlığı},   
+	publisher = {Yayınevi},   
+	address = {Yayınevinin Adresi}, 
+}
+```
+
+## BibTeX Kitap Türü Girişi Nasıl Oluşturulur?
+
+1.  .bib dosyanızı bir metin düzenleyicisinde açın. Bu dosya, tüm BibTeX referanslarınızı içerecek.
+2.  Yeni bir referans oluşturmak için yukarıda gösterilen kodu ekleyin.
+3.  "key" kısmını bu referans için benzersiz bir tanımlayıcı ile değiştirin, süslü parantezler içinde. Bu tanımlayıcı, LaTeX belgenizde kitabı alıntılamak için kullanılacak.
+4.  "Yazar, A." kısmını yazar(lar)ın adı ile değiştirin.
+5.  "2021" kısmını yayın yılı ile değiştirin.
+6.  "Kitabın Başlığı" kısmını kitabın başlığı ile değiştirin.
+7.  "Yayınevi" kısmını yayınevinin adı ile değiştirin.
+8.  "Yayınevinin Adresi" kısmını yayınevinin adresi ile değiştirin.
+9.  .bib dosyasını kaydedin ve işiniz bitti!
+
+## Sonuç
+
+BibTeX kullanarak bibliyografik referanslarınızı yönetmek, bir belgeyi yazma ve formatlama sürecini çok daha kolay hale getirebilir. Kitap türü girişi oluşturarak kaynaklarınızı takip edebilir ve bibliyografinizi profesyonel bir şekilde kolayca formatlayabilirsiniz. Bir kitap türü girişi oluştururken benzersiz bir tanımlayıcı kullanmayı ve tüm ilgili bilgileri dahil etmeyi unutmayın.

@@ -1,0 +1,58 @@
+---
+title: "Introduktion till BibTeX och Artikeltypen"
+sidebar:
+  label: article
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett referenshanteringssystem som används för att formatera listor över referenser i ett dokument. Det är vanligt förekommande inom akademiskt skrivande, särskilt inom vetenskapliga och tekniska områden. I denna guide kommer vi att introducera dig till `article`-typen i BibTeX och visa dig hur du använder den i dina LaTeX-dokument.
+
+<CiteDrive/>
+
+## Artikeltypen
+
+`article`-typen används för att referera till artiklar som publicerats i vetenskapliga tidskrifter, magasin eller tidningar. De obligatoriska fälten för en `article`-post är:
+
+-   `author`: Namn på författaren/erna till artikeln.
+-   `title`: Titeln på artikeln.
+-   `journal`: Namnet på tidskriften, magasinet eller tidningen där artikeln publicerades.
+-   `year`: Publiceringsåret.
+
+Valfria fält för en `article`-post inkluderar:
+
+-   `volume`: Volymnumret på tidskriften.
+-   `number`: Nummer i tidskriften.
+-   `pages`: Sidesiffrorna där artikeln finns.
+-   `month`: Månaden för publicering.
+-   `note`: Övrig information.
+
+Här är ett exempel på en `article`-post:
+
+```bibtex
+@article{example_article,
+	title        = {The Effects of Climate Change},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {Januari},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {Detta är ett exempel på en post för en artikel i ett magasin.}
+}
+```
+
+## Använda Artikeltypen i LaTeX
+
+När du har skapat en `article`-post i din BibTeX-fil kan du referera till den i ditt LaTeX-dokument med hjälp av `\cite`-kommandot. Till exempel:
+
+```latex
+\documentclass{article}  
+\begin{document}  Enligt \cite{example_article} har klimatförändringar betydande effekter på planeten.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+I detta exempel citeras `example_article`-posten i `references.bib`-filen med hjälp av `\cite`-kommandot. Bibliografin genereras sedan med `plain`-stilen.

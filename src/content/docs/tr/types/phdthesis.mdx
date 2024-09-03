@@ -1,0 +1,48 @@
+---
+title: "BibTeX'te `PhdThesis` Türüne Yönelik Kılavuz"
+sidebar:
+  label: phdthesis
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, genellikle LaTeX belgelerinde kullanılan bir referans yönetim aracıdır. "phdthesis" (Doktora Tezi) BibTeX türü, doktora tezleri veya tezleri için kullanılır. Bu kılavuzda, "phdthesis" BibTeX türü için gerekli ve opsiyonel alanları açıklayacağız.
+
+<CiteDrive/>
+
+## Gerekli Alanlar
+
+"Phdthesis" BibTeX türü aşağıdaki alanları gerektirir:
+
+-   `author`: Tezin yazarı.
+-   `title`: Tezin başlığı.
+-   `school`: Derecenin verildiği kurumun adı.
+-   `year`: Derecenin verildiği yıl.
+
+## Opsiyonel Alanlar
+
+Gerekli alanlara ek olarak, "phdthesis" BibTeX türünde ek bilgi sağlamak için kullanılabilecek çeşitli opsiyonel alanlar da vardır. Bu alanlar şunlardır:
+
+-   `type`: Tezin türü, örneğin "Doktora Tezi" veya "Yüksek Lisans Tezi".
+-   `address`: Kurumun konumu.
+-   `month`: Tezin teslim edildiği ay.
+-   `note`: Tez hakkında ek bilgiler.
+
+## Örnek
+
+"Phdthesis" BibTeX türünün nasıl kullanılacağını gösteren bir örnek:
+
+```bibtex
+@phdthesis{mythesis,
+	title        = {Örnek Üzerine Bir Analiz},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {Haziran},
+	address      = {Örnek Şehir, CA},
+	note         = {Teze \url{https://example.com/thesis.pdf} adresinden erişilebilir},
+	school       = {Örnek Üniversitesi},
+	type         = {Doktora Tezi}
+}
+```
+
+Bu örnekte, BibTeX girişi "Örnek Üzerine Bir Analiz" başlıklı bir doktora tezini tanımlar. Tez, John Smith tarafından yazılmış ve 2022 yılında Örnek Üniversitesi tarafından verilmiştir. Tez, Haziran ayında Örnek Şehir, CA'de teslim edilmiştir. Tezin türü "Doktora Tezi" olarak belirtilmiş ve tezin URL'sini içeren bir not eklenmiştir.

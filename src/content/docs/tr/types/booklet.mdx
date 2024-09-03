@@ -1,0 +1,65 @@
+---
+title: "BibTeX'e Giriş ve Booklet Türü Girişi"
+sidebar:
+  label: booklet
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, belgelerde referans listelerini biçimlendirmek için kullanılan bir referans yönetim sistemidir. Bilim, teknoloji ve matematik alanlarında özellikle akademik toplulukta yaygın olarak kullanılır.
+
+BibTeX dosyanıza dahil edilebilecek birçok giriş türünden biri de `booklet` giriş türüdür. Bu kılavuzda, `booklet` giriş türünü tanıtacağız ve LaTeX belgelerinizde referanslarınızı nasıl yöneteceğinizi göstereceğiz.
+
+<CiteDrive/>
+
+## Booklet Türü Girişi
+
+`booklet` giriş türü, resmi olarak yayımlanmamış, ancak bir kitap gibi ciltlenmiş basılı bir eseri referans almak için kullanılır. `booklet` girişlerine örnekler arasında konferans bildirileri, program kılavuzları veya kullanım kılavuzları olabilir.
+
+Bir `booklet` girişi için gerekli alanlar şunlardır:
+
+-   `title`: Booklet'in başlığı.
+-   `author`: Booklet'in yazarı veya yazarları.
+-   `howpublished`: Booklet'in nasıl yayımlandığı.
+-   `address`: Yayınevi veya sponsor kurumun adresi.
+-   `year`: Booklet'in yayımlandığı yıl.
+
+Bir `booklet` girişi için isteğe bağlı alanlar şunlardır:
+
+-   `editor`: Booklet'in editörü veya editörleri.
+-   `volume`: Çok ciltli bir kitabın cilt numarası.
+-   `number`: Bir dergi veya seri numarası.
+-   `series`: Bir seri veya kitap setinin adı.
+-   `organization`: Booklet'i yayımlayan veya sponsor olan organizasyon.
+-   `month`: Yayımlanma ayı.
+-   `note`: Çeşitli bilgiler.
+
+İşte bir `booklet` girişine örnek:
+
+```bibtex
+@booklet{example_booklet,
+	title        = {Konferans Bildirileri},
+	author       = {Jane Doe ve John Smith},
+	year         = 2022,
+	month        = {Temmuz},
+	address      = {San Francisco, CA},
+	note         = {Bu, bir konferans bildirileri booklet'i için örnek bir giriştir.},
+	howpublished = {Yıllık Teknoloji Konferansında Sunulmuştur},
+	editor       = {Bob Johnson}
+}
+```
+
+## LaTeX'te Booklet Türü Girişini Kullanma
+
+BibTeX dosyanızda bir `booklet` girişi oluşturduktan sonra, LaTeX belgenizde `\cite` komutunu kullanarak buna referans verebilirsiniz. Örneğin:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Teknoloji Konferansı'nın başarılı olduğunu \cite{example_booklet} belirtiyor.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+Bu örnekte, `references.bib` dosyasındaki `example_booklet` girişi `\cite` komutu ile alıntılanmıştır. Bibliyografya daha sonra `plain` stili kullanılarak oluşturulur.

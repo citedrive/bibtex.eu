@@ -1,0 +1,58 @@
+---
+title: "BibTeX'te `Inproceedings` Türüne Yönelik Kılavuz"
+sidebar:
+  label: inproceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, genellikle LaTeX belgelerinde kullanılan bir referans yönetim aracıdır. "inproceedings" (Kongre Bildirileri) BibTeX türü, kongre bildirilerinde yayımlanan makaleler için kullanılır. Bu kılavuzda, "inproceedings" BibTeX türü için gerekli ve opsiyonel alanları açıklayacağız.
+
+<CiteDrive/>
+
+## Gerekli Alanlar
+
+"Inproceedings" BibTeX türü aşağıdaki alanları gerektirir:
+
+-   `author`: Makalenin yazarı(ları).
+-   `title`: Makalenin başlığı.
+-   `booktitle`: Kongre bildirilerinin başlığı.
+-   `year`: Kongre bildirilerinin yayımlandığı yıl.
+
+## Opsiyonel Alanlar
+
+Gerekli alanlara ek olarak, "inproceedings" BibTeX türünde ek bilgi sağlamak için kullanılabilecek çeşitli opsiyonel alanlar da vardır. Bu alanlar şunlardır:
+
+-   `editor`: Kongre bildirilerinin editörü(leri).
+-   `volume`: Kongre bildirilerinin cilt numarası (varsa).
+-   `number`: Kongre bildirilerinin sayı numarası (varsa).
+-   `series`: Kongre bildirilerinin ait olduğu seri adı (varsa).
+-   `pages`: Makalenin kongre bildirilerindeki sayfaları.
+-   `address`: Kongrenin düzenlendiği yer.
+-   `month`: Kongrenin yapıldığı ay.
+-   `organization`: Kongreyi destekleyen organizasyon.
+-   `publisher`: Kongre bildirilerinin yayımlayıcısı.
+
+## Örnek
+
+"Inproceedings" BibTeX türünün nasıl kullanılacağını gösteren bir örnek:
+
+```bibtex
+@inproceedings{mypaper,
+	title        = {Örnek Üzerine Bir Analiz},
+	author       = {John Smith ve Jane Doe},
+	year         = 2022,
+	month        = {Haziran},
+	booktitle    = {Uluslararası Örnek Konferansı Bildirileri},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Örnek Konferans Bildirileri},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {David Brown ve Susan Green},
+	organization = {ACM}
+}
+```
+
+Bu örnekte, BibTeX girişi "Örnek Üzerine Bir Analiz" başlıklı bir makaleyi tanımlar. Makale, John Smith ve Jane Doe tarafından yazılmış ve Uluslararası Örnek Konferansı Bildirileri'nde yayımlanmıştır. Bildiriler 2022 yılında yayımlanmış ve David Brown ile Susan Green tarafından düzenlenmiştir. Kongre Haziran ayında New York, NY'de yapılmış ve ACM tarafından desteklenmiştir. Makale, "Örnek Konferans Bildirileri" serisinin 1. cilt, 2. sayısında 123-130 sayfaları arasında yer almıştır ve ACM Press tarafından yayımlanmıştır.

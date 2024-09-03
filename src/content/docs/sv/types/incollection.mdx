@@ -1,0 +1,66 @@
+---
+title: "Introduktion till BibTeX och Posttypen Incollection"
+sidebar:
+  label: incollection
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett verktyg för hantering av bibliografiska referenser som ofta används i LaTeX-dokument. Det låter dig skapa en bibliografisk databas och enkelt inkludera referenser i dina LaTeX-dokument. I denna guide kommer vi att introducera BibTeX och förklara posttypen "incollection".
+
+<CiteDrive/>
+
+## Vad är BibTeX?
+
+BibTeX är ett program och filformat som används för att hantera bibliografiska referenser i LaTeX-dokument. Med BibTeX kan du lagra alla dina referenser i en enda fil, och sedan inkludera dem i dina LaTeX-dokument med hjälp av citeringsnycklar. Detta gör det enkelt att lägga till referenser i ditt dokument, ändra citeringsstilar och hantera stora bibliografier.
+
+BibTeX har flera olika posttyper som du kan använda för att kategorisera dina referenser. Dessa inkluderar "article" för tidskriftsartiklar, "book" för böcker, "inproceedings" för artiklar publicerade i konferensproceedings och många fler.
+
+## Vad är Posttypen Incollection?
+
+Posttypen "incollection" i BibTeX används för kapitel eller sektioner av böcker. Den liknar typen "inproceedings", men används för verk som publicerats i en bok snarare än i ett konferensproceeding.
+
+## Obligatoriska Fält
+
+Posttypen "incollection" i BibTeX kräver följande fält:
+
+-   `author`: Författaren/-arna till kapitlet eller sektionen.
+-   `title`: Titeln på kapitlet eller sektionen.
+-   `booktitle`: Titeln på boken som innehåller kapitlet eller sektionen.
+-   `publisher`: Namnet på förlaget som publicerade boken.
+-   `year`: Året boken publicerades.
+
+## Valfria Fält
+
+Utöver de obligatoriska fälten har posttypen "incollection" även ett antal valfria fält som kan användas för att ge ytterligare information. Dessa fält inkluderar:
+
+-   `editor`: Namnen på redaktörerna av boken.
+-   `volume`: Volymnumret av boken, om tillämpligt.
+-   `number`: Nummer av boken, om tillämpligt.
+-   `series`: Namnet på serien som boken tillhör, om tillämpligt.
+-   `pages`: Sidorna där kapitlet eller sektionen finns i boken.
+-   `address`: Förlagets plats.
+-   `month`: Månaden då boken publicerades.
+
+## Exempel
+
+Här är ett exempel på hur man använder posttypen "incollection" i BibTeX:
+
+```bibtex
+@incollection{mychapter,
+	title        = {En analys av exempel},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {Juni},
+	booktitle    = {Boken om Exempel},
+	publisher    = {Exempel Förlag},
+	address      = {New York, NY},
+	series       = {Exempel Bokserie},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {Jane Doe}
+}
+```
+
+I detta exempel definierar BibTeX-posten ett kapitel med titeln "En analys av exempel" författat av John Smith som förekom i boken "Boken om Exempel". Boken publicerades 2022 och redigerades av Jane Doe. Kapitlet fanns på sidorna 123-130 i volym 1, nummer 2 av "Exempel Bokserie", publicerad av Exempel Förlag i New York, NY.

@@ -1,0 +1,59 @@
+---
+title: "BibTeX'e Giriş ve Makale Türü Girişi"
+sidebar:
+  label: article
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, bir belgede referans listelerini formatlamak için kullanılan bir referans yönetim sistemidir. Akademik yazımda, özellikle bilimsel ve teknik alanlarda yaygın olarak kullanılır. Bu kılavuzda, BibTeX'teki `article` (makale) türü girişini tanıtacağız ve LaTeX belgelerinizde nasıl kullanacağınızı göstereceğiz.
+
+<CiteDrive/>
+
+## Makale Türü Girişi
+
+`article` (makale) türü girişi, akademik dergilerde, magazinlerde veya gazetelerde yayımlanan makaleleri referans almak için kullanılır. Bir `article` girişi için gerekli alanlar şunlardır:
+
+-   `author`: Makalenin yazar(lar)ının adı.
+-   `title`: Makalenin başlığı.
+-   `journal`: Makalenin yayımlandığı derginin, magazinin veya gazetenin adı.
+-   `year`: Yayın yılı.
+
+Bir `article` girişi için isteğe bağlı alanlar şunlardır:
+
+-   `volume`: Derginin cilt numarası.
+-   `number`: Derginin sayı numarası.
+-   `pages`: Makalenin yer aldığı sayfa numaraları.
+-   `month`: Yayınlandığı ay.
+-   `note`: Çeşitli bilgiler.
+
+Bir `article` girişi örneği:
+
+```bibtex
+@article{example_article,
+	title        = {İklim Değişikliğinin Etkileri},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {Ocak},
+	journal      = {Scientific American},
+	volume       = 327,
+	number       = 1,
+	pages        = {44--49},
+	note         = {Bu, bir dergideki makale için örnek bir giriş.}
+}
+```
+
+## Makale Türü Girişini LaTeX'te Kullanma
+
+BibTeX dosyanızda bir `article` girişi oluşturduktan sonra, LaTeX belgenizde `\cite` komutunu kullanarak bu referansı alıntılayabilirsiniz. Örneğin:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+\cite{example_article} göre, iklim değişikliği gezegen üzerinde önemli etkiler yaratmaktadır.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+Bu örnekte, `references.bib` dosyasındaki `example_article` girişi `\cite` komutu ile alıntılanmıştır. Bibliyografi daha sonra `plain` stili kullanılarak oluşturulur.

@@ -1,0 +1,26 @@
+---
+title: "`yayınlanmamış` Giriş Türünü BibTeX'te Anlamak"
+sidebar:
+  label: yayınlanmamış
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, araştırmacıların ve akademisyenlerin bibliyografilerini düzenlemelerine ve formatlamalarına yardımcı olan popüler bir bibliyografik yönetim sistemidir. Bilgisayar bilimlerinde yaygın olarak kullanılsa da, kaynakların alıntılanmasının gerekli olduğu birçok diğer alanda da faydalıdır. BibTeX'teki "yayınlanmamış" giriş türü, resmi olarak yayınlanmamış kaynakları alıntılamak için kullanılır; örneğin tezler, bitirme çalışmaları ve teknik raporlar gibi.
+
+"Yayınlanmamış" giriş türü, yazarların yayınlanmamış bir kaynağa ait tüm ilgili bilgileri eklemelerine olanak tanır; yazarın adı, başlık, kurum ve tarih gibi. Yayınlanmamış bir kaynak için bir BibTeX girişi örneği şu şekildedir:
+
+<CiteDrive/>
+
+```bibtex
+@unpublished{key,   
+	author = {John Doe},   
+	title = {Yayınlanmamış Kaynakların Önemi},   
+	institution = {Örnek Üniversitesi},   
+	year = {2022}, 
+}
+```
+
+Bu örnekteki "key" alanı, kaynağa belgede atıfta bulunmak için kullanılan benzersiz bir tanımlayıcıdır. "Author" alanı, kaynağın yazar(lar)ının adını içerir, "title" alanı kaynağın başlığını içerir, "institution" alanı kaynağın yazıldığı kurumu içerir ve "year" alanı kaynağın yazıldığı yılı içerir.
+
+"Yayınlanmamış" giriş türünün sadece resmi olarak yayınlanmamış kaynaklar için kullanılmalıdır. Bir kaynak yayınlandıysa, hatta sadece çevrimiçi olarak, "techreport," "mastersthesis," veya "phdthesis" olarak alıntılanmalıdır, yayın türüne bağlı olarak.

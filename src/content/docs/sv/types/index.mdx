@@ -1,0 +1,91 @@
+---
+title: BibTeX Posttyper
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett populärt verktyg för hantering av bibliografiska referenser som används inom datavetenskap och andra tekniska discipliner. Det används för att lagra och hantera bibliografiska referenser, såsom böcker, artiklar och konferenspapper, i ett strukturerat format. Detta format kan sedan användas för att automatiskt generera bibliografier i olika dokumentformat.
+
+<CiteDrive/>
+
+BibTeX har flera olika typer av poster, var och en med sin egen uppsättning fält, för att representera olika typer av publikationer. Här är en omfattande lista över alla BibTeX-typer och deras fält:
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<CardGrid>
+    <LinkCard
+        href="/sv/types/"
+        title="BibTeX Posttyper"
+        description="Utforska olika typer av bibliografiska referenser i BibTeX."
+    />
+    <LinkCard
+        href="/sv/types/article/"
+        title="article"
+        description="Referenser för artiklar publicerade i tidskrifter, magasin eller andra periodiska publikationer."
+    />
+    <LinkCard
+        href="/sv/types/book/"
+        title="book"
+        description="Referenser för fristående böcker av en eller flera författare, inklusive detaljer som förlag."
+    />
+    <LinkCard
+        href="/sv/types/booklet/"
+        title="booklet"
+        description="För tryckta verk som är bundna men saknar ett formellt förlag eller sponsrande institution."
+    />
+    <LinkCard
+        href="/sv/types/conference/"
+        title="conference"
+        description="Referenser för artiklar presenterade vid konferenser, ofta utbytbart med inproceedings."
+    />
+    <LinkCard
+        href="/sv/types/inbook/"
+        title="inbook"
+        description="Referenser för specifika delar av en bok, såsom kapitel eller definierade sektioner."
+    />
+    <LinkCard
+        href="/sv/types/incollection/"
+        title="incollection"
+        description="Referenser för delar av en bok med deras distinkta titel, vanligtvis ingående i en större samling."
+    />
+    <LinkCard
+        href="/sv/types/inproceedings/"
+        title="inproceedings"
+        description="Referenser för artiklar eller papper presenterade inom proceedings av en konferens."
+    />
+    <LinkCard
+        href="/sv/types/manual/"
+        title="manual"
+        description="Teknisk dokumentation eller manualer, ofta som beskriver specifikationer för programvara eller hårdvara."
+    />
+    <LinkCard
+        href="/sv/types/mastersthesis/"
+        title="mastersthesis"
+        description="Referenser för masteruppsatser som beskriver akademisk forskning på forskarnivå."
+    />
+    <LinkCard
+        href="/sv/types/misc/"
+        title="misc"
+        description="En catch-all posttyp för referenser som inte passar in i standardkategorier."
+    />
+    <LinkCard
+        href="/sv/types/phdthesis/"
+        title="phdthesis"
+        description="Referenser för doktorsavhandlingar som visar djupgående akademisk forskning och bidrag."
+    />
+    <LinkCard
+        href="/sv/types/proceedings/"
+        title="proceedings"
+        description="För samlingar av akademiska artiklar presenterade vid professionella konferenser eller symposier."
+    />
+    <LinkCard
+        href="/sv/types/techreport/"
+        title="techreport"
+        description="Rapporter som beskriver tekniska aspekter, ofta publicerade av institutioner eller organisationer."
+    />
+    <LinkCard
+        href="/sv/types/unpublished/"
+        title="unpublished"
+        description="Verk som har skrivits eller avslutats men förblir opublicerade."
+    />
+</CardGrid>

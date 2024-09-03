@@ -1,0 +1,27 @@
+---
+title: "BibTeX'te `techreport` Giriş Türünü Anlamak"
+sidebar:
+  label: teknik rapor
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, araştırmacıların ve akademisyenlerin bibliyografilerini düzenlemelerine ve formatlamalarına yardımcı olan tanınmış bir bibliyografik yönetim sistemidir. Özellikle bilgisayar bilimlerinde faydalıdır, ancak diğer alanlarda da kullanılabilir. "techreport" (teknik rapor) BibTeX'te teknik raporları alıntılamak için kullanılan bir giriş türüdür.
+
+Teknik raporlar, belirli bir konu veya proje hakkında derinlemesine teknik bilgileri içeren belgelerdir. Genellikle organizasyonlar, kurumlar veya araştırmacılar tarafından hazırlanır ve belirli bir kitleye dağıtım için tasarlanmıştır. Teknik raporlar nadiren resmi olarak yayınlanır, ancak değerli bilgi kaynaklarıdır ve akademik çalışmalarda alıntılanmalıdır.
+
+BibTeX'te, "techreport" giriş türü, teknik rapor hakkında yazar, başlık, kurum, yıl ve rapor numarası gibi tüm ilgili bilgileri sağlamaya yönelik kullanılır. Bir teknik rapor için BibTeX girişi aşağıda gösterilmiştir:
+
+<CiteDrive/>
+
+```bibtex
+@techreport{key,   
+	author = {Jane Smith},   
+	title = {İleri Robotik Üzerine Teknik Rapor},   
+	institution = {Teknoloji Enstitüsü},   
+	year = {2021},   
+	number = {TR-1234}
+}
+```
+
+Bu örnekte, "key" alanı, kaynağa belgede atıfta bulunmak için kullanılan benzersiz bir tanımlayıcıdır. "Author" (yazar) alanı, teknik raporun yazar(lar)ını listeler, "title" (başlık) alanı raporun başlığını sağlar, "institution" (kurum) alanı raporun yazıldığı kurumu listeler, "year" (yıl) alanı raporun yazıldığı yılı sağlar ve "number" (numara) alanı rapor numarasını içerir.

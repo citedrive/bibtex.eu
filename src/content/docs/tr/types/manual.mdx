@@ -1,0 +1,48 @@
+---
+title: "BibTeX'te `Manual` Türüne Yönelik Kılavuz"
+sidebar:
+  label: manual
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, genellikle LaTeX belgelerinde kullanılan bir referans yönetim aracıdır. "manual" (Kılavuz) BibTeX türü, teknik kılavuzlar veya kullanıcı kılavuzları için kullanılır. Bu kılavuzda, "manual" BibTeX türü için gerekli ve opsiyonel alanları açıklayacağız.
+
+<CiteDrive/>
+
+## Gerekli Alanlar
+
+"Manual" BibTeX türü aşağıdaki alanları gerektirir:
+
+-   `title`: Kılavuzun başlığı.
+-   `year`: Kılavuzun yayınlandığı yıl.
+
+## Opsiyonel Alanlar
+
+Gerekli alanlara ek olarak, "manual" BibTeX türünde ek bilgi sağlamak için kullanılabilecek çeşitli opsiyonel alanlar da vardır. Bu alanlar şunlardır:
+
+-   `author`: Kılavuzun yazarı(ları).
+-   `organization`: Kılavuzu üreten organizasyon.
+-   `address`: Organizasyonun konumu.
+-   `edition`: Kılavuzun baskı numarası.
+-   `month`: Kılavuzun yayınlandığı ay.
+-   `note`: Kılavuz hakkında ek bilgiler.
+
+## Örnek
+
+"Manual" BibTeX türünün nasıl kullanılacağını gösteren bir örnek:
+
+```bibtex
+@manual{mymanual,
+	title        = {Örnek Kullanıcı Kılavuzu},
+	author       = {John Smith ve Jane Doe},
+	year         = 2022,
+	month        = {Haziran},
+	address      = {Örnek Şehir, CA},
+	note         = {Kılavuza \url{https://example.com/manual.pdf} adresinden erişilebilir},
+	organization = {Örnek Şirketi},
+	edition      = {3. Baskı}
+}
+```
+
+Bu örnekte, BibTeX girişi "Örnek Kullanıcı Kılavuzu" başlıklı bir teknik kılavuzu veya kullanıcı kılavuzunu tanımlar. Kılavuz, 2022 yılında Örnek Şirketi tarafından Örnek Şehir, CA'de yayınlanmıştır. Kılavuz, John Smith ve Jane Doe tarafından yazılmış ve bu üçüncü baskıdır. Kılavuzun URL'sini içeren bir not eklenmiştir.

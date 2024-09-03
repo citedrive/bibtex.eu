@@ -1,0 +1,65 @@
+---
+title: "Introduktion till BibTeX och Posttypen Broschyr"
+sidebar:
+  label: booklet
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett referenshanteringssystem som används för att formatera referenslistor i ett dokument. Det är mycket använt inom akademiska kretsar, särskilt inom områden som vetenskap, teknik och matematik.
+
+En av de många posttyper som kan ingå i en BibTeX-fil är posttypen `booklet`. I denna guide kommer vi att introducera dig till posttypen `booklet` och visa hur du använder den för att hantera dina referenser i dina LaTeX-dokument.
+
+<CiteDrive/>
+
+## Posttypen Broschyr
+
+Posttypen `booklet` används för att referera till ett tryckt verk som inte är formellt publicerat, men som är bundet som en bok. Exempel på `booklet`-poster kan inkludera konferensproceedings, programguider eller instruktionsmanualer.
+
+De obligatoriska fälten för en `booklet`-post är:
+
+-   `title`: Titeln på broschyren.
+-   `author`: Författaren eller författarna av broschyren.
+-   `howpublished`: Hur broschyren publicerades.
+-   `address`: Adressen till förlaget eller den sponsrande institutionen.
+-   `year`: Året broschyren publicerades.
+
+Valfria fält för en `booklet`-post inkluderar:
+
+-   `editor`: Redaktören eller redaktörerna av broschyren.
+-   `volume`: Volymnumret för en flervolym bok.
+-   `number`: Numret på en tidskrift eller serie.
+-   `series`: Namnet på en serie eller uppsättning böcker.
+-   `organization`: Organisationen som publicerade eller sponsrade broschyren.
+-   `month`: Månaden för publiceringen.
+-   `note`: Diverse information.
+
+Här är ett exempel på en `booklet`-post:
+
+```bibtex
+@booklet{example_booklet,
+	title        = {Konferensproceedings},
+	author       = {Jane Doe och John Smith},
+	year         = 2022,
+	month        = {Juli},
+	address      = {San Francisco, CA},
+	note         = {Detta är ett exempel på en post för en broschyr med konferensproceedings.},
+	howpublished = {Presenterad vid den årliga konferensen om teknologi},
+	editor       = {Bob Johnson}
+}
+```
+
+## Användning av Broschyr-Posttypen i LaTeX
+
+När du har skapat en `booklet`-post i din BibTeX-fil kan du referera till den i ditt LaTeX-dokument med hjälp av `\cite`-kommandot. Till exempel:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+Enligt \cite{example_booklet} var den årliga konferensen om teknologi en succé.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+I detta exempel citeras `example_booklet`-posten i filen `references.bib` med hjälp av `\cite`-kommandot. Bibliografin genereras sedan med hjälp av stilen `plain`.

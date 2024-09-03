@@ -1,0 +1,94 @@
+---
+title: Типы записей BibTeX
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX — это популярный инструмент для управления библиографическими ссылками, который используется в области компьютерных наук и других технических дисциплин. Он используется для хранения и управления библиографическими ссылками, такими как книги, статьи и доклады конференций, в структурированном формате. Этот формат затем можно использовать для автоматического создания библиографий в различных форматах документов.
+
+<CiteDrive/>
+
+BibTeX имеет несколько типов записей, каждая из которых имеет свой набор полей для представления различных типов публикаций. Вот полный список всех типов BibTeX и их полей:
+
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+
+
+<CardGrid>
+    <LinkCard
+        href="/ru/types/"
+        title="Типы записей BibTeX"
+        description="Исследуйте различные типы библиографических ссылок в BibTeX."
+    />
+    <LinkCard
+        href="/ru/types/article/"
+        title="article"
+        description="Ссылки на статьи, опубликованные в журналах, газетах или других периодических изданиях."
+    />
+    <LinkCard
+        href="/ru/types/book/"
+        title="book"
+        description="Ссылки на книги, написанные одним или несколькими авторами, включая информацию о издателе."
+    />
+    <LinkCard
+        href="/ru/types/booklet/"
+        title="booklet"
+        description="Для печатных изданий, которые имеют переплет, но не имеют официального издателя или спонсорского учреждения."
+    />
+    <LinkCard
+        href="/ru/types/conference/"
+        title="conference"
+        description="Ссылки на доклады, представленные на конференциях, часто взаимозаменяемы с inproceedings."
+    />
+    <LinkCard
+        href="/ru/types/inbook/"
+        title="inbook"
+        description="Ссылки на конкретные части книги, такие как главы или определенные разделы."
+    />
+    <LinkCard
+        href="/ru/types/incollection/"
+        title="incollection"
+        description="Ссылки на части книги, имеющие отдельное название, обычно размещенные в большом сборнике."
+    />
+    <LinkCard
+        href="/ru/types/inproceedings/"
+        title="inproceedings"
+        description="Ссылки на статьи или доклады, представленные в сборниках конференций."
+    />
+    <LinkCard
+        href="/ru/types/manual/"
+        title="manual"
+        description="Техническая документация или руководства, часто описывающие программное или аппаратное обеспечение."
+    />
+    <LinkCard
+        href="/ru/types/mastersthesis/"
+        title="mastersthesis"
+        description="Ссылки на магистерские диссертации, представляющие результаты академических исследований на уровне магистратуры."
+    />
+    <LinkCard
+        href="/ru/types/misc/"
+        title="misc"
+        description="Тип записи для ссылок, которые не укладываются в стандартные категории."
+    />
+    <LinkCard
+        href="/ru/types/phdthesis/"
+        title="phdthesis"
+        description="Ссылки на докторские диссертации, демонстрирующие углубленные академические исследования и вклад."
+    />
+    <LinkCard
+        href="/ru/types/proceedings/"
+        title="proceedings"
+        description="Для сборников научных докладов, представленных на профессиональных конференциях или симпозиумах."
+    />
+    <LinkCard
+        href="/ru/types/techreport/"
+        title="techreport"
+        description="Отчеты, содержащие технические детали, часто опубликованные учреждениями или организациями."
+    />
+    <LinkCard
+        href="/ru/types/unpublished/"
+        title="unpublished"
+        description="Работы, которые были написаны или завершены, но еще не опубликованы."
+    />
+</CardGrid>

@@ -1,0 +1,26 @@
+---
+title: "Förstå `unpublished` Typen av Post i BibTeX"
+sidebar:
+  label: unpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett populärt system för bibliografisk hantering som hjälper forskare och akademiker att organisera och formatera sina bibliografier. Det används ofta inom datavetenskap, men det är också användbart inom många andra områden som kräver citering av källor. Typen av post "unpublished" i BibTeX används för att citera källor som inte har publicerats officiellt, såsom avhandlingar, uppsatser och tekniska rapporter.
+
+Typen av post "unpublished" är en mångsidig posttyp som gör det möjligt för författare att inkludera all relevant information om en opublicerad källa, såsom författarens namn, titel, institution och datum. Ett exempel på en BibTeX-post för en opublicerad källa ser ut som följer:
+
+<CiteDrive/>
+
+```bibtex
+@unpublished{key,   
+	author = {John Doe},   
+	title = {The Importance of Unpublished Sources},   
+	institution = {University of Example},   
+	year = {2022}, 
+}
+```
+
+"key"-fältet i detta exempel är en unik identifierare som används för att referera till källan i dokumentets text. "author"-fältet innehåller namnet på källans författare, "title"-fältet innehåller titeln på källan, "institution"-fältet innehåller namnet på den institution där källan skrevs, och "year"-fältet innehåller året då källan skrevs.
+
+Det bör noteras att typen av post "unpublished" endast ska användas för källor som ännu inte har publicerats formellt. Om en källa har publicerats, även om det bara är online, bör den citeras som en "techreport," "mastersthesis," eller "phdthesis," beroende på typen av publikationen.

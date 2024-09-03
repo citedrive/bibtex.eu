@@ -1,0 +1,41 @@
+---
+title: "Introduktion till BibTeX och Boktypen"
+sidebar:
+  label: book
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett bibliografiskt hanteringsverktyg som vanligtvis används med LaTeX-dokument. Det hjälper författare att hantera sina bibliografiska referenser på ett bekvämt och organiserat sätt, vilket gör det enkelt att citera källor och formatera bibliografin enligt en specifik stil. I detta inlägg kommer vi att fokusera på att skapa en "book" typ-post i BibTeX.
+
+<CiteDrive/>
+
+## Vad är en BibTeX Boktyp-Post?
+
+En BibTeX boktyp-post avser en referens till en tryckt eller elektronisk bok. Den inkluderar information som författare, titel, publiceringsår, förlag och adress. En boktyp-post kan skapas med följande BibTeX-kod:
+
+```tex
+@book{key,   
+	author = {Author, A.},   
+	year = {2021},   
+	title = {Titel på Boken},   
+	publisher = {Förlag},   
+	address = {Adress till Förlaget}, 
+}
+```
+
+## Hur Man Skapar en BibTeX Boktyp-Post
+
+1.  Öppna din .bib-fil i en textredigerare. Denna fil kommer att innehålla alla dina BibTeX-referenser.
+2.  Lägg till koden ovan för att skapa en ny referens.
+3.  Ersätt "key" med ett unikt identifierare för denna referens inom måsvingar. Denna identifierare kommer att användas för att citera boken i ditt LaTeX-dokument.
+4.  Ersätt "Author, A." med namnet på författaren/författarna.
+5.  Ersätt "2021" med publiceringsåret.
+6.  Ersätt "Titel på Boken" med bokens titel.
+7.  Ersätt "Förlag" med namnet på förlaget.
+8.  Ersätt "Adress till Förlaget" med förlagets adress.
+9.  Spara .bib-filen och du är klar!
+
+## Slutsats
+
+Att använda BibTeX för att hantera dina bibliografiska referenser kan göra processen att skriva och formatera ett dokument mycket enklare. Genom att skapa en boktyp-post kan du hålla reda på dina källor och enkelt formatera din bibliografi på ett professionellt sätt. Kom ihåg att använda en unik identifierare och att inkludera all relevant information när du skapar en boktyp-post i BibTeX.

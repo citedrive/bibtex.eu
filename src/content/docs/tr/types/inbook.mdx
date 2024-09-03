@@ -1,0 +1,64 @@
+---
+title: "BibTeX'e Giriş ve `Inbook` Türü Girişi"
+sidebar:
+  label: inbook
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, belgelerde referans listelerini biçimlendirmek için kullanılan bir referans yönetim sistemidir. Özellikle bilimsel ve teknik alanlarda akademik yazımda yaygın olarak kullanılır. Bu kılavuzda, BibTeX'teki `inbook` giriş türünü tanıtacağız ve bunu LaTeX belgelerinizde nasıl kullanacağınızı göstereceğiz.
+
+<CiteDrive/>
+
+## `Inbook` Türü Girişi
+
+`inbook` giriş türü, bir kitap içindeki belirli bir bölümü veya kısmı referans almak için kullanılır. Bir `inbook` girişi için gerekli alanlar şunlardır:
+
+-   `author`: Bölüm veya kısım yazar(ları)nın adı(ları).
+-   `title`: Bölüm veya kısım başlığı.
+-   `booktitle`: Bölüm veya kısmı içeren kitabın başlığı.
+-   `publisher`: Kitabın yayınevi.
+-   `year`: Yayın yılı.
+
+Bir `inbook` girişi için isteğe bağlı alanlar şunlardır:
+
+-   `editor`: Kitabın editör(ler)i.
+-   `volume`: Kitabın cilt numarası.
+-   `number`: Bir seri veya kitap setinin numarası.
+-   `series`: Bir seri veya kitap setinin adı.
+-   `address`: Yayınevinin konumu.
+-   `edition`: Kitabın baskısı.
+-   `month`: Yayınlanma ayı.
+-   `pages`: Bölüm veya kısımdaki sayfa numaraları.
+-   `note`: Çeşitli bilgiler.
+
+İşte bir `inbook` girişine örnek:
+
+```bibtex
+@inbook{example_inbook,
+	title        = {İklim Değişikliğinin Etkileri},
+	author       = {John Smith},
+	year         = 2022,
+	booktitle    = {Çevresel Sorunlar ve Çözümler},
+	publisher    = {Wiley},
+	pages        = {101--112},
+	note         = {Bu, bir kitaptaki bölüm için örnek bir giriştir.},
+	editor       = {Jane Doe},
+	edition      = {3. Baskı}
+}
+```
+
+## LaTeX'te `Inbook` Türü Girişini Kullanma
+
+BibTeX dosyanızda bir `inbook` girişi oluşturduktan sonra, LaTeX belgenizde `\cite` komutunu kullanarak buna referans verebilirsiniz. Örneğin:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+İklim değişikliğinin gezegen üzerindeki önemli etkileri vardır \cite{example_inbook}.  
+\bibliography{references}
+\bibliographystyle{plain} 
+\end{document}
+```
+
+Bu örnekte, `references.bib` dosyasındaki `example_inbook` girişi `\cite` komutu ile alıntılanmıştır. Bibliyografya daha sonra `plain` stili kullanılarak oluşturulur.

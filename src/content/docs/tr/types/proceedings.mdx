@@ -1,0 +1,50 @@
+---
+title: "BibTeX'te `Proceedings` Türüne Yönelik Kılavuz"
+sidebar:
+  label: proceedings
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, genellikle LaTeX belgelerinde kullanılan bir referans yönetim aracıdır. "Proceedings" BibTeX türü, bir konferansta sunulan makaleler gibi konferans bildirilerini alıntılamak için kullanılır. Bu kılavuzda, "proceedings" BibTeX türü için gerekli ve opsiyonel alanları açıklayacağız.
+
+<CiteDrive/>
+
+## Gerekli Alanlar
+
+"Proceedings" BibTeX türü aşağıdaki alanları gerektirir:
+
+-   `title`: Konferans bildirilerinin başlığı.
+-   `year`: Konferans bildirilerinin yayınlandığı yıl.
+
+## Opsiyonel Alanlar
+
+Gerekli alanlara ek olarak, "proceedings" BibTeX türünde ek bilgi sağlamak için kullanılabilecek çeşitli opsiyonel alanlar da vardır. Bu alanlar şunlardır:
+
+-   `editor`: Konferans bildirilerinin editör(ler)inin adı(ları).
+-   `volume`: Konferans bildirilerinin cilt numarası, varsa.
+-   `number`: Konferans bildirilerinin sayı numarası, varsa.
+-   `series`: Konferans bildirilerinin ait olduğu seri adı, varsa.
+-   `address`: Konferansın yapıldığı yer.
+-   `month`: Konferansın yapıldığı ay.
+-   `publisher`: Konferans bildirilerinin yayıncısının adı.
+
+## Örnek
+
+"Proceedings" BibTeX türünün nasıl kullanılacağını gösteren bir örnek:
+
+```bibtex
+@proceedings{myproceedings,
+	title        = {Uluslararası Örnek Konferansı Bildirileri},
+	year         = 2022,
+	month        = {Haziran},
+	publisher    = {ACM Press},
+	address      = {New York, NY},
+	series       = {Örnek Konferans Bildirileri},
+	volume       = 1,
+	number       = 2,
+	editor       = {Jane Doe ve John Smith}
+}
+```
+
+Bu örnekte, BibTeX girişi "Uluslararası Örnek Konferansı Bildirileri" başlıklı bir dizi konferans bildirisini tanımlar. Bildiriler 2022 yılında yayınlanmış ve Jane Doe ile John Smith tarafından edit edilmiştir. Konferans Haziran ayında New York, NY'de yapılmış ve bildiriler ACM Press tarafından "Örnek Konferans Bildirileri" serisinin 1. cilt, 2. sayısı olarak yayınlanmıştır.

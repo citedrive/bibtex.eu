@@ -1,0 +1,48 @@
+---
+title: "Guide till BibTeX Typen MasterThesis"
+sidebar:
+  label: mastersthesis
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX är ett referenshanteringsverktyg som vanligtvis används i LaTeX-dokument. BibTeX-typen "masterthesis" används för masteruppsatser. I denna guide förklarar vi de obligatoriska och valfria fälten för BibTeX-typen "masterthesis".
+
+<CiteDrive/>
+
+## Obligatoriska Fält
+
+BibTeX-typen "masterthesis" kräver följande fält:
+
+-   `author`: Författaren av uppsatsen.
+-   `title`: Titeln på uppsatsen.
+-   `school`: Namnet på institutionen som beviljade graden.
+-   `year`: Året då graden beviljades.
+
+## Valfria Fält
+
+Förutom de obligatoriska fälten finns det även ett antal valfria fält som kan användas för att ge ytterligare information. Dessa fält inkluderar:
+
+-   `type`: Typen av uppsatsen, såsom "Master's thesis".
+-   `address`: Platsen för institutionen.
+-   `month`: Månaden då uppsatsen lämnades in.
+-   `note`: Eventuell ytterligare information om uppsatsen.
+
+## Exempel
+
+Här är ett exempel på hur man använder BibTeX-typen "masterthesis":
+
+```bibtex
+@masterthesis{mythesis,
+	title        = {A Study of Example},
+	author       = {Jane Doe},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/thesis.pdf}},
+	school       = {University of Example},
+	type         = {Master's thesis}
+}
+```
+
+I detta exempel definierar BibTeX-posten en masteruppsats författad av Jane Doe med titeln "A Study of Example". Graden beviljades 2022 av University of Example, och uppsatsen lämnades in i juni i Example City, CA. Typen av uppsatsen specificeras som "Master's thesis", och en notering är inkluderad som ger en URL till uppsatsen.

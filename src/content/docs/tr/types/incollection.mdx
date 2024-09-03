@@ -1,0 +1,66 @@
+---
+title: "BibTeX'e Giriş ve `Incollection` Türü Girişi"
+sidebar:
+  label: incollection
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, LaTeX belgelerinde sıklıkla kullanılan bir referans yönetim aracıdır. Bibliyografik veritabanı oluşturmanıza ve referansları LaTeX belgelerinize kolayca eklemenize olanak tanır. Bu kılavuzda, BibTeX'i tanıtacağız ve "incollection" türü girişini açıklayacağız.
+
+<CiteDrive/>
+
+## BibTeX Nedir?
+
+BibTeX, LaTeX belgelerinde bibliyografik referansları yönetmek için kullanılan bir program ve dosya formatıdır. BibTeX ile tüm referanslarınızı tek bir dosyada saklayabilir ve ardından LaTeX belgelerinize alıntı anahtarları kullanarak dahil edebilirsiniz. Bu, belgelerinize referans eklemeyi, alıntı stillerini değiştirmeyi ve büyük bibliyografileri yönetmeyi kolaylaştırır.
+
+BibTeX, referanslarınızı kategorize etmek için kullanabileceğiniz birkaç farklı giriş türü sunar. Bunlar arasında "article" (makale) dergi makaleleri için, "book" (kitap) kitaplar için, "inproceedings" (konferans bildirileri) konferans bildirileri için ve daha birçok tür bulunmaktadır.
+
+## `Incollection` Türü Girişi Nedir?
+
+`incollection` BibTeX türü, kitapların bölümleri veya kısımları için kullanılır. Bu tür, "inproceedings" türüne benzer, ancak konferans bildirileri yerine kitapta yayımlanan çalışmalar için kullanılır.
+
+## Gereken Alanlar
+
+`incollection` BibTeX türü aşağıdaki alanları gerektirir:
+
+-   `author`: Bölüm veya kısmın yazarı(ları).
+-   `title`: Bölüm veya kısmın başlığı.
+-   `booktitle`: Bölüm veya kısmı içeren kitabın başlığı.
+-   `publisher`: Kitabın yayınevi.
+-   `year`: Kitabın yayımlandığı yıl.
+
+## İsteğe Bağlı Alanlar
+
+Gerekli alanlara ek olarak, `incollection` BibTeX türü, ek bilgiler sağlamak için kullanılabilecek birkaç isteğe bağlı alana sahiptir. Bu alanlar şunları içerir:
+
+-   `editor`: Kitabın editör(ler)i.
+-   `volume`: Kitabın cilt numarası, geçerliyse.
+-   `number`: Kitabın sayı numarası, geçerliyse.
+-   `series`: Kitabın ait olduğu seri adı, geçerliyse.
+-   `pages`: Bölüm veya kısmın kitapta yer aldığı sayfalar.
+-   `address`: Yayınevinin konumu.
+-   `month`: Kitabın yayımlandığı ay.
+
+## Örnek
+
+İşte `incollection` BibTeX türünün nasıl kullanılacağına dair bir örnek:
+
+```bibtex
+@incollection{mychapter,
+	title        = {Örnek Analizi},
+	author       = {John Smith},
+	year         = 2022,
+	month        = {Haziran},
+	booktitle    = {Örnekler Kitabı},
+	publisher    = {Örnek Yayınevi},
+	address      = {New York, NY},
+	series       = {Örnek Kitap Serisi},
+	volume       = 1,
+	number       = 2,
+	pages        = {123--130},
+	editor       = {Jane Doe}
+}
+```
+
+Bu örnekte, BibTeX girişi "Örnekler Kitabı" başlıklı kitapta yer alan "Örnek Analizi" başlıklı bir bölümü tanımlar. Bölüm, John Smith tarafından yazılmıştır ve 2022 yılında yayımlanmıştır. Kitap, Jane Doe tarafından edit edilmiştir ve "Örnek Kitap Serisi"nin 1. cilt, 2. sayı numarasının 123-130 sayfaları arasında yer almaktadır. Kitap, New York, NY'deki Örnek Yayınevi tarafından yayımlanmıştır.

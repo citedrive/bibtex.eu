@@ -1,0 +1,51 @@
+---
+title: "Guide to BibTeX Type `Manual`"
+sidebar:
+  label: manual
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX is a reference management tool that is commonly used in LaTeX documents. The "manual" BibTeX type is used for technical manuals or user guides. In this guide, we will explain the required and optional fields for the "manual" BibTeX type.
+
+<CiteDrive/>
+
+## Required Fields
+
+The "manual" BibTeX type requires the following fields:
+
+-   `title`: The title of the manual.
+-   `year`: The year the manual was published.
+
+## Optional Fields
+
+In addition to the required fields, the "manual" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+
+-   `author`: The author(s) of the manual.
+-   `organization`: The organization responsible for producing the manual.
+-   `address`: The location of the organization.
+-   `edition`: The edition number of the manual.
+-   `month`: The month the manual was published.
+-   `note`: Any additional information about the manual.
+
+## Example
+
+Here is an example of how to use the "manual" BibTeX type:
+
+
+
+```bibtex
+@manual{mymanual,
+	title        = {Example User Guide},
+	author       = {John Smith and Jane Doe},
+	year         = 2022,
+	month        = {June},
+	address      = {Example City, CA},
+	note         = {Available at \url{https://example.com/manual.pdf}},
+	organization = {Example Corporation},
+	edition      = {3rd}
+}
+
+```
+
+In this example, the BibTeX entry defines a technical manual or user guide titled "Example User Guide". The manual was published in 2022 by the Example Corporation in Example City, CA. The manual was authored by John Smith and Jane Doe, and this is the third edition. A note is included that provides a URL for the manual.

@@ -1,0 +1,94 @@
+---
+title: "BibTeX Giriş Türleri"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, bilgisayar bilimi ve diğer teknik disiplinlerde yaygın olarak kullanılan popüler bir bibliyografik referans yönetim aracıdır. Kitaplar, makaleler ve konferans bildirileri gibi bibliyografik referansları yapılandırılmış bir formatta saklamak ve yönetmek için kullanılır. Bu format, çeşitli belge formatlarında otomatik olarak bibliyografiler oluşturmak için kullanılabilir.
+
+<CiteDrive/>
+
+BibTeX, farklı yayın türlerini temsil etmek için kendi alan setine sahip birkaç giriş türü sunar. İşte tüm BibTeX türlerinin ve alanlarının kapsamlı bir listesi:
+
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+
+
+<CardGrid>
+    <LinkCard
+        href="/tr/types/"
+        title="BibTeX Giriş Türleri"
+        description="BibTeX'teki çeşitli bibliyografik referans türlerini keşfedin."
+    />
+    <LinkCard
+        href="/tr/types/article/"
+        title="article"
+        description="Dergilerde, gazetelerde veya diğer periyodik yayınlarda yayımlanan makaleler için alıntılar."
+    />
+    <LinkCard
+        href="/tr/types/book/"
+        title="book"
+        description="Bir veya daha fazla yazar tarafından yazılmış bağımsız kitaplar için alıntılar, yayınevi gibi ayrıntıları içerir."
+    />
+    <LinkCard
+        href="/tr/types/booklet/"
+        title="booklet"
+        description="Yayınevi veya sponsor kurum olmayan, ancak ciltlenmiş basılı eserler için."
+    />
+    <LinkCard
+        href="/tr/types/conference/"
+        title="conference"
+        description="Konferanslarda sunulan makaleler için referanslar, genellikle inproceedings ile değiştirilebilir."
+    />
+    <LinkCard
+        href="/tr/types/inbook/"
+        title="inbook"
+        description="Bir kitabın belirli bölümleri, örneğin bölümler veya tanımlanmış kısımlar için alıntılar."
+    />
+    <LinkCard
+        href="/tr/types/incollection/"
+        title="incollection"
+        description="Daha büyük bir koleksiyon içinde yer alan, kendine özgü başlığa sahip kitap parçaları için alıntılar."
+    />
+    <LinkCard
+        href="/tr/types/inproceedings/"
+        title="inproceedings"
+        description="Bir konferansın bildiri kitabında sunulan makaleler veya bildiriler için referanslar."
+    />
+    <LinkCard
+        href="/tr/types/manual/"
+        title="manual"
+        description="Genellikle yazılım veya donanım ayrıntılarını açıklayan teknik belgeler veya kılavuzlar."
+    />
+    <LinkCard
+        href="/tr/types/mastersthesis/"
+        title="mastersthesis"
+        description="Yüksek lisans seviyesinde akademik araştırmayı detaylandıran tezler için alıntılar."
+    />
+    <LinkCard
+        href="/tr/types/misc/"
+        title="misc"
+        description="Standart kategorilere uymayan referanslar için genel bir giriş türü."
+    />
+    <LinkCard
+        href="/tr/types/phdthesis/"
+        title="phdthesis"
+        description="Doktora tezleri için alıntılar, derinlemesine akademik araştırmaları ve katkıları sergiler."
+    />
+    <LinkCard
+        href="/tr/types/proceedings/"
+        title="proceedings"
+        description="Profesyonel konferanslar veya sempozyumlarda sunulan akademik makalelerin toplandığı koleksiyonlar."
+    />
+    <LinkCard
+        href="/tr/types/techreport/"
+        title="techreport"
+        description="Genellikle kurumlar veya organizasyonlar tarafından yayımlanan teknik ayrıntıları detaylandıran raporlar."
+    />
+    <LinkCard
+        href="/tr/types/unpublished/"
+        title="unpublished"
+        description="Taslak olarak hazırlanmış veya tamamlanmış ancak yayımlanmamış eserler."
+    />
+</CardGrid>

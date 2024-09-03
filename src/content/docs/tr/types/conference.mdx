@@ -1,0 +1,66 @@
+---
+title: "BibTeX'e Giriş ve Konferans Türü Girişi"
+sidebar:
+  label: conference
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, belgelerde referans listelerini biçimlendirmek için kullanılan bir referans yönetim sistemidir. Özellikle bilimsel ve teknik alanlarda akademik yazımda yaygın olarak kullanılır. Bu kılavuzda, BibTeX'teki `conference` (konferans) giriş türünü tanıtacağız ve bunu LaTeX belgelerinizde nasıl kullanacağınızı göstereceğiz.
+
+<CiteDrive/>
+
+## Konferans Türü Girişi
+
+`conference` giriş türü, konferans bildirilerini referans almak için kullanılır. Bir `conference` girişi için gerekli alanlar şunlardır:
+
+-   `author`: Bildirinin yazar(ları)nın adı(ları).
+-   `title`: Bildirinin başlığı.
+-   `booktitle`: Konferans bildirilerinin başlığı.
+-   `year`: Konferansın yapıldığı yıl.
+
+Bir `conference` girişi için isteğe bağlı alanlar şunlardır:
+
+-   `editor`: Konferans bildirilerinin editör(ler)i.
+-   `volume`: Bildirilerin cilt numarası.
+-   `number`: Bildirilerin numarası.
+-   `series`: Konferans bildirilerinin ait olduğu seri veya kitap setinin adı.
+-   `pages`: Bildirinin bulunduğu sayfa numaraları.
+-   `address`: Konferansın yapıldığı yer.
+-   `month`: Konferansın yapıldığı ay.
+-   `organization`: Konferansı düzenleyen organizasyon.
+-   `publisher`: Bildirilerin yayınevi.
+-   `note`: Çeşitli bilgiler.
+
+İşte bir `conference` girişine örnek:
+
+```bibtex
+@conference{example_conference,
+	title        = {İklim Değişikliğinin Etkileri},
+	author       = {John Smith ve Jane Doe},
+	year         = 2022,
+	month        = {Haziran},
+	booktitle    = {Yıllık İklim Değişikliği Konferansı Bildirileri},
+	publisher    = {Springer},
+	address      = {Los Angeles, CA},
+	pages        = {55--62},
+	note         = {Bu, konferans bildirileri için örnek bir giriştir.},
+	editor       = {Bob Johnson},
+	organization = {İklim Değişikliği Derneği}
+}
+```
+
+## LaTeX'te Konferans Türü Girişini Kullanma
+
+BibTeX dosyanızda bir `conference` girişi oluşturduktan sonra, LaTeX belgenizde `\cite` komutunu kullanarak buna referans verebilirsiniz. Örneğin:
+
+```latex
+\documentclass{article}  
+\begin{document}  
+İklim değişikliğinin gezegen üzerinde önemli etkileri vardır \cite{example_conference}.  
+\bibliography{references} 
+\bibliographystyle{plain}  
+\end{document}
+```
+
+Bu örnekte, `references.bib` dosyasındaki `example_conference` girişi `\cite` komutu ile alıntılanmıştır. Bibliyografya daha sonra `plain` stili kullanılarak oluşturulur.

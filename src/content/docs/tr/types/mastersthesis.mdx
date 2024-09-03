@@ -1,0 +1,48 @@
+---
+title: "BibTeX'te `MasterThesis` Türüne Yönelik Kılavuz"
+sidebar:
+  label: mastersthesis
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX, genellikle LaTeX belgelerinde kullanılan bir referans yönetim aracıdır. "masterthesis" (Yüksek Lisans Tezi) BibTeX türü, yüksek lisans tezleri için kullanılır. Bu kılavuzda, "masterthesis" BibTeX türü için gerekli ve opsiyonel alanları açıklayacağız.
+
+<CiteDrive/>
+
+## Gerekli Alanlar
+
+"Masterthesis" BibTeX türü aşağıdaki alanları gerektirir:
+
+-   `author`: Tezin yazarı.
+-   `title`: Tezin başlığı.
+-   `school`: Derecenin verildiği kurumun adı.
+-   `year`: Derecenin verildiği yıl.
+
+## Opsiyonel Alanlar
+
+Gerekli alanlara ek olarak, "masterthesis" BibTeX türünde ek bilgi sağlamak için kullanılabilecek çeşitli opsiyonel alanlar da vardır. Bu alanlar şunlardır:
+
+-   `type`: Tezin türü, örneğin "Yüksek Lisans Tezi".
+-   `address`: Kurumun konumu.
+-   `month`: Tezin teslim edildiği ay.
+-   `note`: Tez hakkında ek bilgiler.
+
+## Örnek
+
+"Masterthesis" BibTeX türünün nasıl kullanılacağını gösteren bir örnek:
+
+```bibtex
+@masterthesis{mythesis,
+	title        = {Örnek Üzerine Bir Çalışma},
+	author       = {Jane Doe},
+	year         = 2022,
+	month        = {Haziran},
+	address      = {Örnek Şehir, CA},
+	note         = {Teze \url{https://example.com/thesis.pdf} adresinden erişilebilir},
+	school       = {Örnek Üniversitesi},
+	type         = {Yüksek Lisans Tezi}
+}
+```
+
+Bu örnekte, BibTeX girişi "Örnek Üzerine Bir Çalışma" başlıklı bir yüksek lisans tezini tanımlar. Tez, Jane Doe tarafından yazılmış ve 2022 yılında Örnek Üniversitesi tarafından verilmiştir. Tez, Haziran ayında Örnek Şehir, CA'de teslim edilmiştir. Tezin türü "Yüksek Lisans Tezi" olarak belirtilmiş ve tezin URL'sini içeren bir not eklenmiştir.
