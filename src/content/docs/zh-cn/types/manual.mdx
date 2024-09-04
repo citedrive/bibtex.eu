@@ -1,38 +1,36 @@
 ---
-title: "Guide to BibTeX Type `Manual`"
+title: "BibTeX 类型 `Manual` 指南"
 sidebar:
   label: manual
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "manual" BibTeX type is used for technical manuals or user guides. In this guide, we will explain the required and optional fields for the "manual" BibTeX type.
+BibTeX 是一种常用于 LaTeX 文档中的参考管理工具。"manual" 是用于引用技术手册或用户指南的 BibTeX 类型。在本指南中，我们将解释 "manual" BibTeX 类型的必填字段和可选字段。
 
 <CiteDrive/>
 
-## Required Fields
+## 必填字段
 
-The "manual" BibTeX type requires the following fields:
+"manual" BibTeX 类型要求填写以下字段：
 
--   `title`: The title of the manual.
--   `year`: The year the manual was published.
+-   `title`: 手册的标题。
+-   `year`: 手册的出版年份。
 
-## Optional Fields
+## 可选字段
 
-In addition to the required fields, the "manual" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+除了必填字段外，"manual" BibTeX 类型还包含许多可选字段，用于提供更多信息。这些字段包括：
 
--   `author`: The author(s) of the manual.
--   `organization`: The organization responsible for producing the manual.
--   `address`: The location of the organization.
--   `edition`: The edition number of the manual.
--   `month`: The month the manual was published.
--   `note`: Any additional information about the manual.
+-   `author`: 手册的作者。
+-   `organization`: 负责制作手册的组织。
+-   `address`: 该组织的所在地。
+-   `edition`: 手册的版次。
+-   `month`: 手册的出版月份。
+-   `note`: 关于手册的其他信息。
 
-## Example
+## 示例
 
-Here is an example of how to use the "manual" BibTeX type:
-
-
+以下是使用 "manual" BibTeX 类型的示例：
 
 ```bibtex
 @manual{mymanual,
@@ -45,7 +43,6 @@ Here is an example of how to use the "manual" BibTeX type:
 	organization = {Example Corporation},
 	edition      = {3rd}
 }
-
 ```
 
-In this example, the BibTeX entry defines a technical manual or user guide titled "Example User Guide". The manual was published in 2022 by the Example Corporation in Example City, CA. The manual was authored by John Smith and Jane Doe, and this is the third edition. A note is included that provides a URL for the manual.
+在此示例中，BibTeX 条目定义了一本题为 "Example User Guide" 的技术手册或用户指南。该手册由 Example Corporation 于 2022 年在 Example City, CA 出版。手册的作者是 John Smith 和 Jane Doe，这是第三版。备注中提供了手册的链接。

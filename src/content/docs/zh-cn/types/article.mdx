@@ -1,59 +1,59 @@
 ---
-title: Introduction to BibTeX and the Article Type Entry
+title: "BibTeX 介绍及 `article` 类型条目"
 sidebar:
   label: article
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management system used to format lists of references in a document. It is commonly used in academic writing, particularly in scientific and technical fields. In this guide, we will introduce you to the `article` entry type in BibTeX and show you how to use it in your LaTeX documents.
+BibTeX 是一种用于格式化文档参考文献列表的管理系统。它在学术写作中，特别是在科学和技术领域，使用广泛。在本指南中，我们将介绍 BibTeX 中的 `article` 类型条目，并展示如何在 LaTeX 文档中使用它。
 
 <CiteDrive/>
 
-## The Article Entry Type
+## `article` 类型条目
 
-The `article` entry type is used to refer to articles published in scholarly journals, magazines, or newspapers. The required fields for an `article` entry are:
+`article` 类型条目用于引用发表在学术期刊、杂志或报纸上的文章。`article` 类型条目的必需字段包括：
 
--   `author`: The name(s) of the author(s) of the article.
--   `title`: The title of the article.
--   `journal`: The name of the journal, magazine, or newspaper in which the article was published.
--   `year`: The year of publication.
+-   `author`: 文章的作者姓名。
+-   `title`: 文章标题。
+-   `journal`: 文章发表的期刊、杂志或报纸的名称。
+-   `year`: 出版年份。
 
-Optional fields for an `article` entry include:
+`article` 类型条目的可选字段包括：
 
--   `volume`: The volume number of the journal.
--   `number`: The issue number of the journal.
--   `pages`: The page numbers on which the article appears.
--   `month`: The month of publication.
--   `note`: Miscellaneous information.
+-   `volume`: 期刊的卷号。
+-   `number`: 期刊的期号。
+-   `pages`: 文章出现的页码。
+-   `month`: 出版月份。
+-   `note`: 其他信息。
 
-Here is an example of an `article` entry:
-
+以下是 `article` 类型条目的示例：
 
 ```bibtex
 @article{example_article,
-	title        = {The Effects of Climate Change},
+	title        = {气候变化的影响},
 	author       = {John Smith},
 	year         = 2022,
-	month        = {January},
+	month        = {一月},
 	journal      = {Scientific American},
 	volume       = 327,
 	number       = 1,
 	pages        = {44--49},
-	note         = {This is a sample entry for an article in a magazine.}
+	note         = {这是一个杂志文章的示例条目。}
 }
 ```
 
-## Using the Article Entry Type in LaTeX
+## 在 LaTeX 中使用 `article` 类型条目
 
-Once you have created an `article` entry in your BibTeX file, you can reference it in your LaTeX document using the `\cite` command. For example:
+一旦在你的 BibTeX 文件中创建了 `article` 条目，你可以在 LaTeX 文档中使用 `\cite` 命令引用它。例如：
 
 ```latex
 \documentclass{article}  
-\begin{document}  According to \cite{example_article}, climate change has significant effects on the planet.  
-\bibliography{references}
-\bibliographystyle{plain} 
+\begin{document}  
+根据 \cite{example_article}，气候变化对地球有显著影响。  
+\bibliography{references} 
+\bibliographystyle{plain}  
 \end{document}
 ```
 
-In this example, the `example_article` entry in the `references.bib` file is cited using the `\cite` command. The bibliography is then generated using the `plain` style.
+在这个示例中，`references.bib` 文件中的 `example_article` 条目使用 `\cite` 命令进行引用。然后使用 `plain` 样式生成参考文献列表。

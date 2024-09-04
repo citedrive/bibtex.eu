@@ -1,37 +1,37 @@
 ---
-title: "Guide to BibTeX Type `Proceedings`"
+title: "BibTeX 类型 `Proceedings` 指南"
 sidebar:
   label: proceedings
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "proceedings" BibTeX type is used for conference proceedings, such as a collection of papers presented at a conference. In this guide, we will explain the required and optional fields for the "proceedings" BibTeX type.
+BibTeX 是一种常用于 LaTeX 文档中的参考管理工具。"proceedings" 是 BibTeX 的一种类型，用于引用会议论文集，例如在会议上发表的论文合集。在本指南中，我们将解释 "proceedings" BibTeX 类型的必填字段和可选字段。
 
 <CiteDrive/>
 
-## Required Fields
+## 必填字段
 
-The "proceedings" BibTeX type requires the following fields:
+"proceedings" BibTeX 类型要求填写以下字段：
 
--   `title`: The title of the conference proceedings.
--   `year`: The year the conference proceedings were published.
+-   `title`: 会议论文集的标题。
+-   `year`: 会议论文集的出版年份。
 
-## Optional Fields
+## 可选字段
 
-In addition to the required fields, the "proceedings" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+除了必填字段之外，"proceedings" BibTeX 类型还包含许多可选字段，用于提供更多信息。这些字段包括：
 
--   `editor`: The name(s) of the editor(s) of the conference proceedings.
--   `volume`: The volume number of the conference proceedings, if applicable.
--   `number`: The issue number of the conference proceedings, if applicable.
--   `series`: The name of the series that the conference proceedings belong to, if applicable.
--   `address`: The location of the conference.
--   `month`: The month the conference was held.
--   `publisher`: The name of the publisher of the conference proceedings.
+-   `editor`: 会议论文集的编辑者姓名。
+-   `volume`: 会议论文集的卷号（如果适用）。
+-   `number`: 会议论文集的期号（如果适用）。
+-   `series`: 会议论文集所属的系列名称（如果适用）。
+-   `address`: 会议的地点。
+-   `month`: 会议举办的月份。
+-   `publisher`: 会议论文集的出版商名称。
 
-## Example
+## 示例
 
-Here is an example of how to use the "proceedings" BibTeX type:
+以下是使用 "proceedings" BibTeX 类型的示例：
 
 ```bibtex
 @proceedings{myproceedings,
@@ -45,7 +45,6 @@ Here is an example of how to use the "proceedings" BibTeX type:
 	number       = 2,
 	editor       = {Jane Doe and John Smith}
 }
-
 ```
 
-In this example, the BibTeX entry defines a set of conference proceedings titled "Proceedings of the International Conference on Example". The proceedings were published in 2022 and edited by Jane Doe and John Smith. The conference was held in June in New York, NY, and the proceedings were published as volume 1, issue 2 of the "Example Conference Proceedings" series by ACM Press.
+在此示例中，BibTeX 条目定义了一套题为 "Proceedings of the International Conference on Example" 的会议论文集。该论文集于 2022 年出版，由 Jane Doe 和 John Smith 编辑。会议于六月在纽约（NY）举行，论文集作为 "Example Conference Proceedings" 系列的第 1 卷第 2 期由 ACM Press 出版。

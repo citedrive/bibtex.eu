@@ -1,42 +1,41 @@
 ---
-title: "Guide to BibTeX Type `Inproceedings`"
+title: "BibTeX 类型 `Inproceedings` 指南"
 sidebar:
   label: inproceedings
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management tool that is commonly used in LaTeX documents. The "inproceedings" BibTeX type is used for papers published in conference proceedings. In this guide, we will explain the required and optional fields for the "inproceedings" BibTeX type.
+BibTeX 是一种常用于 LaTeX 文档中的参考管理工具。"inproceedings" 是用于引用会议论文集中的论文的 BibTeX 类型。在本指南中，我们将解释 "inproceedings" BibTeX 类型的必填字段和可选字段。
 
 <CiteDrive/>
 
-## Required Fields
+## 必填字段
 
-The "inproceedings" BibTeX type requires the following fields:
+"inproceedings" BibTeX 类型要求填写以下字段：
 
--   `author`: The author(s) of the paper.
--   `title`: The title of the paper.
--   `booktitle`: The title of the conference proceedings.
--   `year`: The year the conference proceedings were published.
+-   `author`: 论文的作者。
+-   `title`: 论文的标题。
+-   `booktitle`: 会议论文集的标题。
+-   `year`: 会议论文集的出版年份。
 
-## Optional Fields
+## 可选字段
 
-In addition to the required fields, the "inproceedings" BibTeX type also has a number of optional fields that can be used to provide additional information. These fields include:
+除了必填字段外，"inproceedings" BibTeX 类型还包含许多可选字段，用于提供更多信息。这些字段包括：
 
--   `editor`: The name(s) of the editor(s) of the conference proceedings.
--   `volume`: The volume number of the conference proceedings, if applicable.
--   `number`: The issue number of the conference proceedings, if applicable.
--   `series`: The name of the series that the conference proceedings belong to, if applicable.
--   `pages`: The pages on which the paper appears in the conference proceedings.
--   `address`: The location of the conference.
--   `month`: The month the conference was held.
--   `organization`: The organization that sponsored the conference.
--   `publisher`: The name of the publisher of the conference proceedings.
+-   `editor`: 会议论文集的编辑者姓名。
+-   `volume`: 会议论文集的卷号（如果适用）。
+-   `number`: 会议论文集的期号（如果适用）。
+-   `series`: 会议论文集所属的系列名称（如果适用）。
+-   `pages`: 论文在会议论文集中的页码。
+-   `address`: 会议的地点。
+-   `month`: 会议举行的月份。
+-   `organization`: 会议的主办机构。
+-   `publisher`: 会议论文集的出版商名称。
 
-## Example
+## 示例
 
-Here is an example of how to use the "inproceedings" BibTeX type:
-
+以下是使用 "inproceedings" BibTeX 类型的示例：
 
 ```bibtex
 @inproceedings{mypaper,
@@ -54,7 +53,6 @@ Here is an example of how to use the "inproceedings" BibTeX type:
 	editor       = {David Brown and Susan Green},
 	organization = {ACM}
 }
-
 ```
 
-In this example, the BibTeX entry defines a paper titled "An Analysis of Example" authored by John Smith and Jane Doe that appeared in the conference proceedings of the International Conference on Example. The proceedings were published in 2022 and edited by David Brown and Susan Green. The conference was held in June in New York, NY, and was sponsored by the ACM. The paper appeared on pages 123-130 of volume 1, issue 2 of the "Example Conference Proceedings" series published by ACM Press.
+在此示例中，BibTeX 条目定义了一篇由 John Smith 和 Jane Doe 撰写的题为 "An Analysis of Example" 的论文，该论文发表在 International Conference on Example 的会议论文集中。论文集于 2022 年出版，由 David Brown 和 Susan Green 编辑。会议于 6 月在纽约市举行，由 ACM 主办。该论文出现在 "Example Conference Proceedings" 系列第 1 卷第 2 期的第 123-130 页，由 ACM Press 出版。

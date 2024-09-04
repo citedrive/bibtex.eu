@@ -1,67 +1,65 @@
 ---
-title: "Introduction to BibTeX and the Booklet Type Entry"
+title: "BibTeX 介绍及 `booklet` 类型条目"
 sidebar:
   label: booklet
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a reference management system for formatting lists of references in a document. It is widely used in the academic community, especially in the fields of science, technology, and mathematics.
+BibTeX 是一种用于在文档中格式化参考文献列表的参考管理系统。它在学术界广泛使用，特别是在科学、技术和数学领域。
 
-One of the many types of entries that can be included in a BibTeX file is the `booklet` entry type. In this guide, we will introduce you to the `booklet` entry type, and show you how to use it to manage your references in your LaTeX documents.
+BibTeX 文件中可以包含的多种条目类型之一是 `booklet` 类型条目。在本指南中，我们将介绍 `booklet` 类型条目，并展示如何在 LaTeX 文档中使用它来管理参考文献。
 
 <CiteDrive/>
 
-## The Booklet Entry Type
+## `booklet` 类型条目
 
-The `booklet` entry type is used to refer to a printed work that is not formally published, but is bound together like a book. Examples of `booklet` entries could include conference proceedings, program guides, or instruction manuals.
+`booklet` 类型条目用于引用那些未正式出版但像书籍一样装订的印刷品。例如，`booklet` 条目可以包括会议论文集、程序指南或说明手册。
 
-The required fields for a `booklet` entry are:
+`booklet` 条目所需的字段包括：
 
--   `title`: The title of the booklet.
--   `author`: The author or authors of the booklet.
--   `howpublished`: How the booklet was published.
--   `address`: The address of the publisher or sponsoring institution.
--   `year`: The year the booklet was published.
+-   `title`: 小册子的标题。
+-   `author`: 小册子的作者。
+-   `howpublished`: 小册子的出版方式。
+-   `address`: 出版商或赞助机构的地址。
+-   `year`: 小册子的出版年份。
 
-Optional fields for a `booklet` entry include:
+`booklet` 条目的可选字段包括：
 
--   `editor`: The editor or editors of the booklet.
--   `volume`: The volume number of a multi-volume book.
--   `number`: The number of a journal or series.
--   `series`: The name of a series or set of books.
--   `organization`: The organization that published or sponsored the booklet.
--   `month`: The month of publication.
--   `note`: Miscellaneous information.
+-   `editor`: 小册子的编辑。
+-   `volume`: 多卷书籍的卷号。
+-   `number`: 期刊或系列的编号。
+-   `series`: 书籍系列的名称。
+-   `organization`: 出版或赞助小册子的组织。
+-   `month`: 出版月份。
+-   `note`: 其他信息。
 
-Here is an example of a `booklet` entry:
+以下是一个 `booklet` 条目的示例：
 
 ```bibtex
 @booklet{example_booklet,
-	title        = {Conference Proceedings},
-	author       = {Jane Doe and John Smith},
+	title        = {会议论文集},
+	author       = {Jane Doe 和 John Smith},
 	year         = 2022,
-	month        = {July},
-	address      = {San Francisco, CA},
-	note         = {This is a sample entry for a conference proceedings booklet.},
-	howpublished = {Presented at the Annual Conference on Technology},
+	month        = {7月},
+	address      = {旧金山, CA},
+	note         = {这是一个会议论文集小册子的示例条目。},
+	howpublished = {在年度技术会议上发布},
 	editor       = {Bob Johnson}
 }
-
 ```
 
-## Using the Booklet Entry Type in LaTeX
+## 在 LaTeX 中使用 `booklet` 类型条目
 
-Once you have created a `booklet` entry in your BibTeX file, you can reference it in your LaTeX document using the `\cite` command. For example:
-
+在你的 BibTeX 文件中创建了 `booklet` 条目后，你可以使用 `\cite` 命令在 LaTeX 文档中引用它。例如：
 
 ```latex
-`\documentclass{article}  
+\documentclass{article}  
 \begin{document}  
-According to \cite{example_booklet}, the Annual Conference on Technology was a success.  
+根据 \cite{example_booklet}，年度技术会议取得了成功。  
 \bibliography{references} 
 \bibliographystyle{plain}  
 \end{document}
 ```
 
-In this example, the `example_booklet` entry in the `references.bib` file is cited using the `\cite` command. The bibliography is then generated using the `plain` style.
+在这个例子中，`references.bib` 文件中的 `example_booklet` 条目使用 `\cite` 命令进行引用。然后，使用 `plain` 样式生成参考文献列表。
