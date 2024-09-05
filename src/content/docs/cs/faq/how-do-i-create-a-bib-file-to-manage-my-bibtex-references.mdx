@@ -1,0 +1,44 @@
+---
+title: "Jak vytvořit soubor .BIB pro správu mých BibTeX referencí?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Pokud hledáte způsob, jak spravovat své `BibTeX` reference, možná se ptáte, jak vytvořit soubor `.BIB`. V tomto článku vám ukážeme, jak na to! Také poskytneme několik tipů, jak efektivně používat soubory ".BIB".
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) je webový kolaborativní nástroj pro správu referencí založený na BibTeX, který se automaticky synchronizuje s publikačními systémy, jako jsou [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) a [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) a formátuje váš bib soubor za vás.
+:::
+
+
+<CiteDrive />
+
+## Vytvoření souboru .BIB ručně
+
+Vytvoření souboru `.BIB` je vlastně velmi jednoduché. Stačí vytvořit textový soubor s příponou `.bib`. Do tohoto souboru můžete přidat své BibTeX reference, jednu na řádek. Například:
+
+```latex
+	@article{smith201X,
+		title        = {Zajímavý článek},
+		author       = {John Smith},
+		year         = {201X},
+		journal      = {Žurnál zajímavých článků}
+	}
+```
+
+Jakmile máte svůj `.BIB` soubor vytvořený, můžete ho použít ve svých dokumentech LaTeX pomocí příkazu `\bibliography{filename}`. Například:
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{filename}
+
+\end{document}
+```
+
+To je vše! Vytvoření souboru `.BIB` je jednoduchý způsob, jak spravovat své BibTeX reference. Nezapomeňte se podívat na naše další články o BibTeX pro více tipů a triků!

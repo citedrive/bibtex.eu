@@ -1,0 +1,20 @@
+---
+title: "Jak používat příkazy související s BibTeX pro dokumenty LaTeX"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Pro použití BibTeX v LaTeXu musíte znát následující příkazy: `\bibliographystyle{<název stylu>}`, `\bibliography{bib-file}` a `\cite{KEY}`. V tomto krátkém průvodci si vysvětlíme, co každý z těchto příkazů dělá a jak je používat ve vašich dokumentech LaTeX.
+
+<CiteDrive />
+
+## bibliographystyle
+Styl citace je definován pomocí `bibliographystyle{<název stylu>}`. BibTeX stylové soubory řídí vzhled bibliografie a citací. Stylové soubory BibTeX mají příponu `.bst` a obsahují instrukce ve stack-based programovacím jazyce, který řídí formátování bibliografických záznamů. LaTeX nabízí jako výchozí styly `plain`, `unsrt`, `alpha` a `abbrv`. natbib a jurabib jsou dva balíčky LaTeX, které poskytují rozsáhlé přídavky pro přírodní vědy a humanitní obory.
+
+## bibliography
+
+Bibliografie je vytvořena v dokumentu pomocí příkazu `\bibliography{bibfile}`, pokud je název souboru BibTeX s literárními záznamy `bibfile.bib`.
+
+## cite
+
+V dokumentu LaTeX je příkaz `\cite{KEY}` nahrazen citací uvedenou v souboru BibTeX s tímto ID, která je například `(Autor, Rok)` v konečném PDF.

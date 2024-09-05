@@ -1,0 +1,34 @@
+---
+title: "Kdy používat uvozovky vs. složené závorky pro pole v .bib souborech"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Zajímá vás někdy, kdy používat uvozovky a kdy složené závorky pro pole v .bib souborech? Odpověď je: nezáleží na tom. Někteří lidé upřednostňují použití `""` z estetických důvodů, jiní preferují `{}`, protože to je výhodnější, pokud potřebujete použít znak `"` uvnitř pole. Všimněte si, že to jsou jediné akceptovatelné způsoby, jak obklopit pole.
+
+<CiteDrive />
+
+## Příklady
+
+### Použití složených závorek `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive přináší správu referencí do Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Přístup: (Použijte datum přístupu)]}
+}
+```
+
+### Použití uvozovek `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive přináší správu referencí do Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Neexistuje správná nebo špatná odpověď, pokud je informace v poli správně uzavřena. Tak proč neexperimentovat a zjistit, která metoda vám nejlépe vyhovuje?

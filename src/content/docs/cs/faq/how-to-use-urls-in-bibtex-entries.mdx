@@ -1,0 +1,40 @@
+---
+title: "Jak používat URL v záznamech BibTeX"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Pokud používáte BibTeX k vytváření bibliografií pro vaše výzkumné práce, možná jste se ptali, jak zahrnout URL do svých záznamů.
+
+Typ pole URL není v BibTeXu formálně podporován, i když byl plánován pro verzi 1.0 od Orena Patashnika. Přestože o této verzi a jejích záměrech se diskutuje od [Patashnikova článku z roku 2003](https://tug.org/TUGboat/tb24-1/patashnik.pdf), který je postupně nahrazován Biberem podloženým biblatexem.
+
+Je tedy pravděpodobné, že budete muset použít jednu z následujících alternativ, například při citování webových stránek:
+
+<CiteDrive />
+
+## Použijte pole note:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## Použijte pole howpublished:
+
+```latex
+@misc{...,
+  note = "Dostupné na \url{http://...}"
+}
+```
+
+## Použijte biblatex a jeho vestavěný typ pole URL:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+Pokud se rozhodnete pro biblatex, budete muset používat Biber jako backend místo BibTeXu. Pokud chcete vědět více o biblatex a Biberovi, přečtěte si naši úvodní příručku.
+Pokud máte jakékoliv dotazy nebo komentáře, dejte nám vědět. Doufáme, že to pomohlo!

@@ -1,0 +1,72 @@
+---
+title: "BibTeX FAQ"
+---
+
+**Q1: Co je BibTeX?** 
+A1: BibTeX je software pro správu referencí používaný v kombinaci s LaTeXem k formátování a správě bibliografií a citací v dokumentech. Umožňuje uživatelům uchovávat podrobnosti o referencích v samostatných souborech BibTeX, které lze propojit s dokumenty LaTeX, čímž zajišťuje konzistentní formátování citací a referencí.
+
+**Q2: Jak citovat webovou stránku pomocí BibTeX?** 
+A2: Pro citování webové stránky se běžně používá typ záznamu `@misc`. Zde je příklad:
+
+```bibtex
+@misc{website2023,
+    author    = "John Doe",
+    title     = "Název webové stránky",
+    year      = "2023",
+    url       = "http://www.example.com",
+    note      = "Přístup: 2023-10-04"
+}
+```
+
+Ujistěte se, že nahradíte zástupné znaky odpovídajícími detaily.
+
+**Q3: Jak citovat knihu?** 
+A3:
+
+```bibtex
+@book{author2023,
+    author    = "Jane Smith",
+    title     = "Název knihy",
+    publisher = "Vydavatelský dům",
+    year      = "2023",
+    address   = "Město vydání",
+    edition   = "3. vydání"
+}
+```
+
+**Q4: Jak citovat článek v časopise?** 
+A4:
+
+```bibtex
+@article{author2023,
+    author    = "Jane Smith",
+    title     = "Název článku",
+    journal   = "Název časopisu",
+    year      = "2023",
+    volume    = "4",
+    number    = "2",
+    pages     = "100-105"
+}
+```
+
+**Q5: Jak integrovat mé BibTeX reference do mého LaTeX dokumentu?** 
+A5: V dokumentu LaTeX:
+
+1. Na místě, kde chcete, aby se bibliografie objevila, použijte příkaz `\bibliography{filename}`, bez přípony `.bib`.
+2. Použijte `\cite{label}` v dokumentu, kde chcete citovat referenci.
+3. Sestavte svůj LaTeX dokument pomocí `latex`, poté spusťte `bibtex` a znovu sestavte pomocí `latex` dvakrát.
+
+**Q6: Proč se místo čísla citace objevuje `?`?** 
+A6: To se obvykle stává, pokud dojde k problémům s pořadím kompilace nebo pokud je v záznamu BibTeX chyba. Ujistěte se, že kompilujete ve správném pořadí (LaTeX, BibTeX, LaTeX, LaTeX) a zkontrolujte své záznamy BibTeX na chyby.
+
+**Q7: Jak specifikovat styl mé bibliografie?** 
+A7: Použijte příkaz `\bibliographystyle{stylename}` ve vašem LaTeX dokumentu. Například `\bibliographystyle{plain}` použije styl plain. Existuje mnoho předdefinovaných stylů (např. `plain`, `alpha`, `abbrv` atd.), a můžete také najít vlastní styly online.
+
+**Q8: Mohu mít více souborů BibTeX pro jeden LaTeX dokument?** 
+A8: Ano, můžete. V příkazu `\bibliography{}` uveďte názvy souborů oddělené čárkami, bez mezer a bez přípony `.bib`. Například `\bibliography{file1,file2}`.
+
+**Q9: Jak zacházet se speciálními znaky v BibTeX?** 
+A9: BibTeX je citlivý na speciální znaky jako `#`, `$`, `%`, `&`, `_`, `{` a `}`. V BibTeXu je obalte složenými závorkami nebo použijte zpětné lomítko (`\`) před znakem.
+
+**Q10: Existují nástroje pro správu a generování BibTeX záznamů?** 
+A10: Ano, existuje mnoho nástrojů, jak online, tak offline, které pomáhají spravovat databáze BibTeX a generovat záznamy, jako je CiteDrive.
