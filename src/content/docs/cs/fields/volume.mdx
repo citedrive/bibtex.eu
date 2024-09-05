@@ -1,28 +1,28 @@
 ---
-title: "BibTeX field type: volume"
+title: "BibTeX pole: volume"
 sidebar:
   label: volume
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `volume` field in a BibTeX entry is essential when you are referencing a part of a larger work, such as an article in a journal or a chapter in a multi-volume book. This field allows you to specify which volume of a journal or book you are citing, providing the reader with more precise information to locate the cited work.
+Pole `volume` v záznamu BibTeX je zásadní, když odkazujete na část většího díla, jako je článek v časopise nebo kapitola v knize s více svazky. Toto pole vám umožňuje specifikovat, který svazek časopisu nebo knihy citujete, čímž čtenáři poskytujete přesnější informace k nalezení citovaného díla.
 
 <CiteDrive />
 
-In many scholarly and academic publications, journals are published in volumes, often with several issues in each volume. The volume number usually indicates a collection of issues published within a specific time frame, typically a year. Similarly, multi-volume books or series are segmented into different volumes, each containing a portion of the entire work.
+V mnoha vědeckých a akademických publikacích jsou časopisy vydávány ve svazcích, často s několika čísly v každém svazku. Číslo svazku obvykle označuje sbírku čísel publikovaných v určitém časovém rámci, obvykle během roku. Podobně jsou knihy nebo série s více svazky rozděleny do různých svazků, přičemž každý obsahuje část celého díla.
 
-The `volume` field is particularly crucial when citing journals, as it enables readers to find the specific collection of issues where the cited article was published. It is typically used in conjunction with the `number` field, which further specifies the issue within the volume where the article can be found.
+Pole `volume` je zvlášť důležité při citování časopisů, protože umožňuje čtenářům najít konkrétní sbírku čísel, kde byl citovaný článek publikován. Obvykle se používá ve spojení s polem `number`, které dále specifikuje číslo v rámci svazku, kde se článek nachází.
 
-Here's how you can use the `volume` field in a BibTeX entry:
+Zde je příklad, jak můžete použít pole `volume` v záznamu BibTeX:
 
-## Example
+## Příklad
 
 ```bibtex
 @article{key,
-    title={Title of the Article},
-    author={Author Name},
-    journal={Journal Name},
+    title={Název článku},
+    author={Jméno autora},
+    journal={Název časopisu},
     volume={5},
     number={3},
     pages={123-456},
@@ -30,6 +30,6 @@ Here's how you can use the `volume` field in a BibTeX entry:
 }
 ```
 
-In this example, the `volume` field specifies that the article was published in volume 5 of the journal. Including this detail helps in providing a complete and precise citation, making it easier for readers to locate the cited work.
+V tomto příkladu pole `volume` specifikuje, že článek byl publikován ve svazku 5 časopisu. Zahrnutí tohoto detailu pomáhá poskytnout úplný a přesný odkaz, čímž usnadňuje čtenářům nalezení citovaného díla.
 
-Similarly, in multi-volume books or series, you can use the `volume` field to indicate the specific volume that contains the chapter or section you are citing. This usage again assists readers in finding the exact source material more efficiently.
+Podobně, u knih nebo sérií s více svazky můžete použít pole `volume` k označení konkrétního svazku, který obsahuje kapitolu nebo sekci, kterou citujete. Tento způsob použití opět pomáhá čtenářům efektivněji nalézt přesný zdrojový materiál.

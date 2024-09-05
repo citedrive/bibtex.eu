@@ -1,25 +1,25 @@
 ---
-title: "BibTeX field type: howpublished"
+title: "BibTeX pole: howpublished"
 sidebar:
   label: howpublished
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `howpublished` field is utilized in the `@misc` entry type, usually to address those source types that are not directly supported by BibTeX. This field comes in handy, especially when you are citing web pages and you want to provide a URL.
+Pole `howpublished` se používá v typu záznamu `@misc`, obvykle k označení těch typů zdrojů, které nejsou přímo podporovány BibTeXem. Toto pole je užitečné zejména při citování webových stránek, kde je potřeba poskytnout URL.
 
 <CiteDrive/>
 
-In your BibTeX entries, you can utilize the `howpublished` field to detail the publication medium or source of the reference. This field is highly useful when you need to incorporate non-traditional sources into your references, such as web pages or online reports.
+Ve vašich BibTeX záznamech můžete využít pole `howpublished` k podrobnostem o médiu publikace nebo zdroji reference. Toto pole je velmi užitečné, když potřebujete začlenit netradiční zdroje do vašich odkazů, jako jsou webové stránky nebo online zprávy.
 
-Here is an example demonstrating how to use the `howpublished` field to specify a URL when citing a web page:
+Zde je příklad, jak použít pole `howpublished` k určení URL při citování webové stránky:
 
 ```bibtex
 @misc{BibTeXeu,
   title = {{Reference management with BibTeX: A short guide}},
   howpublished = {\url{https://bibtex.eu/}},
-  note = {Accessed: 2022-06-12}
+  note = {Přístup: 2022-06-12}
 }
 ```
 
-In this example, the `howpublished` field is used to provide the URL of the web page being cited, offering readers a direct link to the source. Remember to include a `note` field to specify the access date, which is a common requirement when citing online sources.
+V tomto příkladu je pole `howpublished` použito k poskytnutí URL webové stránky, kterou citujete, a nabízí čtenářům přímý odkaz na zdroj. Nezapomeňte zahrnout pole `note`, abyste specifikovali datum přístupu, což je běžná požadavek při citování online zdrojů.

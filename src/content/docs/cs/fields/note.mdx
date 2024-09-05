@@ -1,63 +1,60 @@
 ---
-slug: note
-title: "BibTeX field type: note"
+title: "BibTeX pole: note"
 sidebar:
   label: note
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `note` field in a BibTeX entry is utilized to convey additional information regarding the cited work that doesn't fit into other standardized fields. This could include supplementary remarks, explanations, or clarifications that are pertinent for the reader to understand the context or the significance of the work in question. The `note` field proves to be a versatile tool in BibTeX, allowing for the inclusion of various kinds of information that could enhance the detail and depth of the citation.
+Pole `note` v záznamu BibTeX se používá k předání dodatečných informací o citovaném díle, které se nevejdou do jiných standardizovaných polí. To může zahrnovat doplňující poznámky, vysvětlení nebo objasnění, která jsou důležitá pro čtenáře k pochopení kontextu nebo významu daného díla. Pole `note` je v BibTeX velmi univerzální nástroj, který umožňuje zahrnout různé druhy informací, které mohou obohatit detail a hloubku citace.
 
 <CiteDrive />
 
-Utilizing the `note` field can often bring more depth to a reference by including additional context, remarks on the publication status, specific annotations, or any other relevant data that would benefit the reader. This might include links to supplementary materials, commentary on the work's influence or reception, or any other pertinent details.
+Použití pole `note` může často přinést více hloubky do reference tím, že zahrne dodatečný kontext, poznámky o stavu publikace, specifické anotace nebo jiné relevantní údaje, které by čtenáři prospěly. To může zahrnovat odkazy na doplňkové materiály, komentáře o vlivu nebo přijetí díla, nebo jakékoli jiné důležité informace.
 
-## Format
+## Formát
 
-To employ the `note` field, you would include it in your BibTeX entry as shown in the format below:
+Pro použití pole `note` jej zahrňte do svého záznamu BibTeX podle níže uvedeného formátu:
 
 ```bibtex
 @entrytype{citationkey,
   ...
-  note={your note here},
+  note={vaše poznámka zde},
   ...
 }
-
 ```
 
-In the above format, replace "entrytype" with the appropriate type of work (e.g., @book, @article) and "citationkey" with a unique identifier for the entry. Then, you can insert your additional information in the `note` field.
+V uvedeném formátu nahraďte "entrytype" příslušným typem díla (např. @book, @article) a "citationkey" jedinečným identifikátorem záznamu. Poté můžete vložit své dodatečné informace do pole `note`.
 
-## Examples
+## Příklady
 
-Here are a few practical examples showcasing how to use the `note` field in various entries:
+Zde je několik praktických příkladů ukazujících, jak používat pole `note` v různých záznamech:
 
-### Example 1: Additional Information
+### Příklad 1: Dodatečné Informace
 
 ```bibtex
 @book{smith2023innovations,
-  title = {Innovations in Modern Technology},
+  title = {Inovace v moderní technologii},
   author = {Smith, John},
   year = {2023},
   publisher = {Technology Press},
-  note = {Includes bibliographical references and index},
+  note = {Obsahuje bibliografické odkazy a rejstřík},
 }
-
 ```
-### Example 2: Supplementary Material
+
+### Příklad 2: Doplňkový Materiál
 
 ```bibtex
 @article{johnson2023ai,
-  title = {AI and Its Future Applications},
+  title = {AI a její budoucí aplikace},
   author = {Johnson, Mark},
   year = {2023},
   journal = {Journal of Technological Advances},
   volume = {5},
   issue = {2},
   pages = {123-135},
-  note = {Supplementary material available at: http://example.com/supplementary_material},
+  note = {Doplňkový materiál dostupný na: http://example.com/supplementary_material},
 }
-
 ```
 
-In these examples, the `note` field is used to indicate the inclusion of references and an index in a book and to provide a link to supplementary materials for an article, thereby offering the reader additional resources and information.
+V těchto příkladech je pole `note` použito k uvedení zahrnutí odkazů a rejstříku v knize a k poskytnutí odkazu na doplňkové materiály pro článek, čímž čtenáři nabízíte další zdroje a informace.

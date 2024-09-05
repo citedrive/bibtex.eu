@@ -1,28 +1,28 @@
 ---
-title: "BibTeX field type: edition"
+title: "BibTeX pole: edition"
 sidebar:
   label: edition
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In the academic and publishing world, the edition of a book signifies the version or form in which a work is published. The `edition` field in a BibTeX entry is used to specify this detail, often highlighting the revisions or updates that the work has undergone since its initial release. Including the edition is particularly pertinent when referencing textbooks or scholarly works that have undergone multiple iterations. Below, we elaborate on how to effectively use the `edition` field in your BibTeX entries.
+Ve vědeckém a vydavatelském světě označuje edice knihy verzi nebo formu, ve které je dílo publikováno. Pole `edition` v BibTeX záznamu se používá k specifikaci tohoto detailu, často zdůrazňující revize nebo aktualizace, které dílo prodělalo od svého prvního vydání. Uvádění edice je zvlášť důležité při citování učebnic nebo vědeckých prací, které prošly několika iteracemi. Níže podrobněji vysvětlujeme, jak efektivně používat pole `edition` ve vašich BibTeX záznamech.
 
 <CiteDrive />
 
-### Overview
+### Přehled
 
-The `edition` field is utilized to denote the edition of a book. This information is essential when the book you are citing has been published in various editions, each potentially having different contents or pagination. Indicating the edition helps in providing a clear and accurate reference, aiding readers in locating the exact version of the work you used.
+Pole `edition` se používá k označení edice knihy. Tyto informace jsou zásadní, pokud byla kniha, kterou citujete, publikována v různých edicích, přičemž každá může mít odlišný obsah nebo číslování stran. Uvedení edice pomáhá poskytnout jasnou a přesnou citaci, což čtenářům usnadňuje nalezení přesné verze díla, které jste použili.
 
-### Guidelines
+### Pokyny
 
-1. **Formatting**: It is recommended to enter the edition as an ordinal number (e.g., "First," "Second," "Third," etc.) with the first letter capitalized.
-2. **Spelling Out**: Instead of numerical representations (1st, 2nd, 3rd), spelling out the ordinal numbers is favored for better readability.
-3. **Language Adaptation**: For works in languages other than English, the edition can be indicated in that language (e.g., "Erste" for first in German).
+1. **Formátování**: Doporučuje se uvádět edici jako řadové číslo (např. "První," "Druhá," "Třetí" atd.) s velkým počátečním písmenem.
+2. **Slovní vyjádření**: Místo číselných zápisů (1., 2., 3.) je preferováno psaní řadových čísel pro lepší čitelnost.
+3. **Jazyková adaptace**: Pro díla v jiných jazycích než angličtině může být edice uvedena v tomto jazyce (např. "Erste" pro první v němčině).
 
-### Syntax and Structure
+### Syntaxe a struktura
 
-The syntax for the `edition` field is straightforward, as shown below:
+Syntaxe pole `edition` je jednoduchá, jak ukazuje následující příklad:
 
 ```bibtex
 @book{citationkey,
@@ -32,28 +32,27 @@ The syntax for the `edition` field is straightforward, as shown below:
 }
 ```
 
-### Example
+### Příklad
 
-Here's an example of a BibTeX entry incorporating the `edition` field:
+Zde je příklad BibTeX záznamu obsahujícího pole `edition`:
 
 ```bibtex
 @book{author2023title,
-  title={The Title of the Book},
-  author={Author, A.},
+  title={Název knihy},
+  author={Autor, A.},
   year={2023},
-  publisher={Publishing House},
-  edition={First},
+  publisher={Vydavatelský dům},
+  edition={První},
 }
 ```
 
-In this example, the `edition` field clearly indicates that the cited work is the first edition of the book.
+V tomto příkladu pole `edition` jasně uvádí, že citované dílo je první edice knihy.
 
-### Additional Tips
+### Další tipy
 
-1. **Revised Editions**: For books with revised editions, you might also use terms like "Revised" or "Updated" along with the edition number (e.g., "Second, Revised").
-2. **Later Editions**: If citing from a much later edition, it might be pertinent to include a note in your citation explaining the choice if the edition contains significantly different or updated content.
+1. **Revidované edice**: U knih s revidovanými edicemi můžete také použít termíny jako "Revidováno" nebo "Aktualizováno" spolu s číslem edice (např. "Druhá, revidováno").
+2. **Pozdější edice**: Pokud citujete z mnohem pozdější edice, může být užitečné přidat do citace poznámku vysvětlující volbu, pokud edice obsahuje výrazně odlišný nebo aktualizovaný obsah.
 
+### Závěr
 
-### Conclusion
-
-Properly specifying the `edition` field in your BibTeX entries ensures a more accurate and trustworthy citation process. It helps in steering your readers towards the exact version of a source material that you referred to, thereby promoting clarity and scholarly integrity. Utilize this field wisely to enhance the quality and reliability of your bibliographic references.
+Správné uvedení pole `edition` ve vašich BibTeX záznamech zajišťuje přesnější a důvěryhodnější citaci. Pomáhá nasměrovat vaše čtenáře k přesné verzi zdrojového materiálu, který jste citovali, čímž podporuje jasnost a vědeckou integritu. Toto pole používejte uvážlivě, abyste zvýšili kvalitu a spolehlivost vašich bibliografických odkazů.

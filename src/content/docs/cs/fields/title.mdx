@@ -1,20 +1,20 @@
 ---
-title: "BibTeX field type: title"
+title: "BibTeX pole: title"
 sidebar:
   label: title
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `title` field in a BibTeX entry is used to specify the main title of the work you are referencing. It is one of the essential fields and is supported by almost all BibTeX entry types. Accurate capitalization and adherence to LaTeX syntax are critical when populating this field to ensure that the title is displayed correctly in the generated bibliography.
+Pole `title` v záznamu BibTeX se používá k určení hlavního názvu díla, které citujete. Je to jedno z základních polí a je podporováno téměř všemi typy záznamů BibTeX. Přesné použití velkých písmen a dodržování syntaxe LaTeX je klíčové při vyplňování tohoto pole, aby byl název správně zobrazen v generované bibliografii.
 
 <CiteDrive />
 
-To maintain proper formatting, LaTeX commands can be used within the `title` field to preserve the capitalization of certain words or phrases. Moreover, if the title contains special characters or mathematical symbols, they should be entered using the appropriate LaTeX commands.
+Pro zachování správného formátování lze v poli `title` použít příkazy LaTeX, které zachovají velká písmena u určitých slov nebo frází. Pokud název obsahuje speciální znaky nebo matematické symboly, měly by být zadány pomocí příslušných příkazů LaTeX.
 
-## Example
+## Příklad
 
-Here's a simple example showcasing how to use the `title` field:
+Zde je jednoduchý příklad, jak použít pole `title`:
 
 ```bibtex
 @article{key,
@@ -22,7 +22,7 @@ Here's a simple example showcasing how to use the `title` field:
 }
 ```
 
-A more detailed example, including additional fields to provide a comprehensive reference, is given below:
+Podrobnější příklad, který zahrnuje další pole pro poskytnutí komplexního odkazu, je uveden níže:
 
 ```bibtex
 @article{luscombe2001bioinformatics,
@@ -37,6 +37,6 @@ A more detailed example, including additional fields to provide a comprehensive 
 }
 ```
 
-In these examples, the `title` field is populated with the title of the article being cited. Note the use of braces `{}` to encapsulate the title text, which helps in maintaining the capitalization and formatting of the title as intended by the author.
+V těchto příkladech je pole `title` vyplněno názvem citovaného článku. Všimněte si použití složených závorek `{}`, které obklopují text názvu, což pomáhá udržovat velká písmena a formátování názvu tak, jak zamýšlel autor.
 
-Remember, the `title` field is crucial in helping readers identify the specific work being referenced, so ensure that it is entered accurately and formatted correctly in your BibTeX entries.
+Pamatujte, že pole `title` je klíčové při pomoci čtenářům identifikovat konkrétní dílo, na které se odkazujete, takže zajistěte, aby bylo zadáno přesně a formátováno správně ve vašich záznamech BibTeX.

@@ -1,50 +1,48 @@
 ---
-title: "BibTeX field type: address"
+title: "BibTeX pole: address"
 sidebar:
   label: address
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `address` field within a BibTeX entry holds substantial significance when citing various sources in your academic or professional documentation. It typically encompasses the geographical details of the publisher or a pertinent institution related to the cited work. Here, we will delve deeper into the utilization and the notation standards followed for the `address` field in BibTeX entries.
+Pole `address` v záznamu BibTeX má značný význam při citování různých zdrojů ve vaší akademické nebo profesionální dokumentaci. Obvykle obsahuje geografické údaje o vydavateli nebo relevantní instituci spojené s citovaným dílem. Zde se podíváme podrobněji na využití a standardy notace, které se u pole `address` v záznamech BibTeX dodržují.
 
 <CiteDrive />
 
-## Detailed Overview
+## Podrobný přehled
 
-The `address` field is essential in pointing out the specific location details of the publishing entity or other significant institutions related to the citation. Often, the field may contain the city of publication, possibly followed by additional details depending on the region or specific citation requirements.
+Pole `address` je zásadní pro uvedení konkrétních místních údajů o vydavatelské entitě nebo jiné důležité instituci spojené s citací. Často může pole obsahovat město vydání, případně s dalšími detaily v závislosti na regionu nebo specifických požadavcích citace.
 
-### Address Format Guidelines
+### Pokyny k formátování adres
 
-#### American Publications
+#### Americké publikace
 
-For sources published in the United States, the format usually includes the city's name, followed by the state's abbreviation according to the United States Postal Service (USPS) code enclosed in brackets.
+Pro zdroje publikované ve Spojených státech obvykle formát zahrnuje název města, následovaný zkratkou státu podle kódu USPS v hranatých závorkách.
 
-> **Example**: "Columbus, Ohio" should be notated as "Columbus, OH."
+> **Příklad**: "Columbus, Ohio" by mělo být uvedeno jako "Columbus, OH."
 
-#### European Publications
+#### Evropské publikace
 
-In contrast, European publications prefer the full representation of the state or province, without any abbreviation, followed by the country name.
+Naopak, evropské publikace preferují úplné uvedení státu nebo provincie bez zkratek, následované názvem země.
 
-> **Example**: A publication from Dusseldorf, Germany, would be denoted as "Dusseldorf, Germany."
+> **Příklad**: Publikace z Düsseldorfu, Německo, by byla uvedena jako "Düsseldorf, Germany."
 
+## Příklady a scénáře použití
 
-
-## Examples and Usage Scenarios
-
-The `address` field finds its application in various BibTeX entry types. Below, we have elaborated on a few scenarios where it is prominently utilized.
+Pole `address` se uplatňuje v různých typech záznamů BibTeX. Níže uvádíme několik scénářů, kde je pole významně využíváno.
 
 ### PhdThesis
 
-In a `phdthesis` entry type, the author might want to include the university's address where the doctoral candidate pursued their research and completed their thesis. This information assists in adding credibility and specificity to the citation.
+V záznamu typu `phdthesis` může autor chtít zahrnout adresu univerzity, kde doktorand prováděl výzkum a dokončil svou disertační práci. Tyto informace pomáhají přidat důvěryhodnost a specifičnost citaci.
 
 ```bibtex
 @phdthesis{Peterson2003very,
   author  = {Arnold Peterson},
-  title   = {My very own PhD-Thesis by Arnold Peterson},
-  school  = {The university / school name},
+  title   = {Moje vlastní disertační práce Arnolda Petersona},
+  school  = {Název univerzity / školy},
   year    = 2004,
-  address = {123 University Lane, University City, State [or Province], Country},
+  address = {123 University Lane, University City, State [nebo provincie], Country},
   month   = 1,
   ...
 }
@@ -52,23 +50,21 @@ In a `phdthesis` entry type, the author might want to include the university's a
 
 ### Proceedings / Inproceedings
 
-The `address` field in `proceedings` or `inproceedings` entry types is a point of contention. While some prefer to include the conference venue's address, others opt for the publisher or organizer's address. It's essential to adhere to the guidelines of your specific context or reference style. Below is an example of how to use the `address` field in these entry types:
+Pole `address` v typech záznamů `proceedings` nebo `inproceedings` je předmětem diskuse. Někteří preferují zahrnout adresu místa konání konference, jiní volí adresu vydavatele nebo organizátora. Je důležité řídit se pokyny vaší specifické situace nebo referenčního stylu. Níže je uveden příklad použití pole `address` v těchto typech záznamů:
 
 ```bibtex
 @PROCEEDINGS{Conference2023,
-  title    = {Conference Proceedings Title},
-  editor   = {Editor Name},
+  title    = {Název konferenčních sborníků},
+  editor   = {Jméno editora},
   year     = 2023,
-  address  = {123 Conference Venue Street, City, State [or Province], Country},
-  publisher = {Publisher Name},
+  address  = {123 Conference Venue Street, City, State [nebo provincie], Country},
+  publisher = {Název vydavatele},
   ...
 }
 ```
 
-## Conclusion
+## Závěr
 
-Understanding and correctly utilizing the `address` field in your BibTeX entries can significantly enhance the clarity and comprehensiveness of your citations. It ensures that readers can precisely identify the geographical context of the cited works, adding a layer of authenticity and reliability to your document.
+Pochopení a správné používání pole `address` ve vašich záznamech BibTeX může výrazně zlepšit jasnost a komplexnost vašich citací. Zajišťuje, že čtenáři mohou přesně identifikovat geografický kontext citovaných děl, čímž se přidává vrstva autentičnosti a spolehlivosti vašemu dokumentu.
 
-Ensure to consult with the specific guidelines of your citation style or institutional requirements to use the `address` field effectively.
-
-
+Ujistěte se, že se řídíte specifickými pokyny vašeho citačního stylu nebo institucionálních požadavků pro efektivní použití pole `address`.

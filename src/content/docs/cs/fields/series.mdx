@@ -1,43 +1,43 @@
 ---
-title: "BibTeX field type: series"
+title: "BibTeX pole: series"
 sidebar:
   label: series
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `series` field in BibTeX is used to denote the series to which a book, report, or other publication belongs. Specifying the series can offer additional context for the reader, as it may relate to a broader thematic or scholarly discourse.
+Pole `series` v BibTeX se používá k označení série, do které kniha, zpráva nebo jiná publikace patří. Specifikování série může čtenáři poskytnout další kontext, protože může souviset s širším tematickým nebo vědeckým diskursem.
 
 <CiteDrive />
 
-This field is optional and can be employed in various entry types including, but not limited to `@book`, `@inbook`, `@incollection`, and `@inproceedings`. It is particularly useful when the cited work is part of an ongoing series or a larger corpus of works that share a common theme, author, or publisher.
+Toto pole je volitelné a může být použito v různých typech záznamů včetně, ale ne pouze, `@book`, `@inbook`, `@incollection` a `@inproceedings`. Je zvlášť užitečné, když citované dílo je součástí probíhající série nebo většího corpus děl, které sdílejí společné téma, autora nebo vydavatele.
 
-When inputting data into the `series` field, it is recommended to use the full official title of the series. If the series has an ISSN, it might also be relevant to include this for more precise referencing.
+Při zadávání dat do pole `series` se doporučuje použít plný oficiální název série. Pokud má série ISSN, může být rovněž relevantní zahrnout tento údaj pro přesnější odkazování.
 
-## Format
+## Formát
 
-The general format for including a series in your BibTeX entry is as follows:
+Obecný formát pro zahrnutí série do vašeho záznamu BibTeX je následující:
 
 ```bibtex
 @entrytype{key,
   ...
-  series = {Name of the Series},
+  series = {Název série},
   ...
 }
 ```
 
-## Example
+## Příklad
 
-Here is an example of how to use the `series` field in a `@book` entry:
+Zde je příklad, jak použít pole `series` v záznamu `@book`:
 
 ```bibtex
 @book{doe2023,
   author = {John Doe},
-  title = {Advanced Studies in Quantum Mechanics},
+  title = {Pokročilé studie v kvantové mechanice},
   year = {2023},
   publisher = {Scientific Publishing Ltd.},
   series = {Cambridge Advanced Series in Physics},
 }
 ```
 
-In this example, the book is part of the "Cambridge Advanced Series in Physics," which might encompass various titles covering advanced topics in the field of physics. Including the series helps to locate the work within a larger academic conversation and can provide readers with additional resources on the topic.
+V tomto příkladu je kniha součástí "Cambridge Advanced Series in Physics," která může zahrnovat různá díla pokrývající pokročilá témata v oblasti fyziky. Zahrnutí série pomáhá umístit dílo do širší akademické diskuse a může čtenářům poskytnout další zdroje na dané téma.

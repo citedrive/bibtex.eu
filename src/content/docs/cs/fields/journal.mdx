@@ -1,35 +1,33 @@
 ---
-slug: journal
-title: "BibTeX field type: journal"
+title: "BibTeX pole: journal"
 sidebar:
   label: journal
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `journal` field is utilized to specify the name of the journal where the article was published. This field is critical in differentiating articles from various publications and providing the correct context for the referenced work.
+Pole `journal` se používá k určení názvu časopisu, ve kterém byl článek publikován. Toto pole je klíčové pro odlišení článků z různých publikací a poskytuje správný kontext pro citované dílo.
 
 <CiteDrive/>
 
-Here is a template to demonstrate how you can use the `journal` field in a `@article` entry:
+Zde je šablona, která ukazuje, jak můžete použít pole `journal` v záznamu typu `@article`:
 
 ```bibtex
 @article{ ... ,
- journal = {Name of the Journal},
+ journal = {Název časopisu},
 }
 
 ```
 
-In the above format, replace "Name of the Journal" with the actual name of the journal where the article was published. It is important to enter this information accurately to ensure correct citations.
+V uvedeném formátu nahraďte "Název časopisu" skutečným názvem časopisu, ve kterém byl článek publikován. Je důležité zadat tuto informaci přesně, aby citace byly správné.
 
-For instance, the following is an example showcasing a correct use of the `journal` field:
+Například následuje příklad ukazující správné použití pole `journal`:
 
 ```bibtex
 @article{smith2023effects,
- title = {The Effects of XYZ on ABC},
+ title = {Účinky XYZ na ABC},
  author = {Smith, John},
  journal = {Journal of ABC Research},
  year = {2023},
 }
 ```
-

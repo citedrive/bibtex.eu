@@ -1,22 +1,22 @@
 ---
-title: "BibTeX field type: email"
+title: "BibTeX pole: email"
 sidebar:
   label: email
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `email` field in BibTeX is used to include the email addresses of the authors in your citation. While not a commonly used field and possibly unsupported in various styles, it can sometimes be useful to provide a direct line of contact to the authors. Here, we explore how to appropriately integrate email addresses into your BibTeX entries.
+Pole `email` v BibTeXu se používá k zahrnutí e-mailových adres autorů do vaší citace. Ačkoli se jedná o méně běžně používané pole, které může být v různých stylech nepodporované, může být užitečné poskytnout přímou cestu ke kontaktu s autory. Zde se podíváme na to, jak správně integrovat e-mailové adresy do vašich BibTeX záznamů.
 
 <CiteDrive />
 
-## Including Email Addresses
+## Zahrnutí e-mailových adres
 
-If you decide to specify email addresses in your BibTeX entries, here are two recommended methods:
+Pokud se rozhodnete specifikovat e-mailové adresy ve vašich BibTeX záznamech, zde jsou dvě doporučené metody:
 
-### Display as a Note at the End of the Reference
+### Zobrazení jako poznámka na konci reference
 
-In this approach, the email address is added as a note that appears at the end of the citation. This way, it is distinctly separated from the author's name and other details, ensuring clarity.
+V tomto přístupu je e-mailová adresa přidána jako poznámka, která se zobrazuje na konci citace. Tímto způsobem je jasně oddělena od jména autora a dalších detailů, čímž se zajišťuje přehlednost.
 
 ```bibtex
 @book{Sample2023,
@@ -27,9 +27,9 @@ In this approach, the email address is added as a note that appears at the end o
 }
 ```
 
-### Display Behind the Family Name
+### Zobrazení za příjmením
 
-Another method is to incorporate the email address directly behind the family name. This approach provides a direct association between the author and their email address, facilitating immediate contact.
+Další metodou je zahrnout e-mailovou adresu přímo za příjmení autora. Tento přístup poskytuje přímou asociaci mezi autorem a jejich e-mailovou adresou, což usnadňuje okamžitý kontakt.
 
 ```bibtex
 @book{Sample2023,
@@ -38,15 +38,14 @@ Another method is to incorporate the email address directly behind the family na
 }
 ```
 
-## Guidelines for Including Email Addresses
+## Směrnice pro zahrnutí e-mailových adres
 
-1. **Privacy Considerations**: Before including an author's email address, ensure you have their permission to do so, respecting their privacy and adhering to ethical guidelines.
+1. **Zohlednění soukromí**: Než zahrnete e-mailovou adresu autora, ujistěte se, že máte jejich souhlas, abyste respektovali jejich soukromí a dodržovali etické pokyny.
     
-2. **Formatting**: Maintain a clear and readable format by using the Teletype (`\tt`) font style to differentiate the email address from other text elements.
+2. **Formátování**: Udržujte jasný a čitelný formát použitím stylu písma Teletype (`\tt`), abyste odlišili e-mailovou adresu od ostatních textových prvků.
     
-3. **Compatibility**: Be aware that the `email` field is not standard and may not be supported in all BibTeX styles. Always check the compatibility with your chosen style to avoid formatting issues.
-    
+3. **Kompatibilita**: Buďte si vědomi, že pole `email` není standardní a nemusí být podporováno ve všech BibTeX stylech. Vždy zkontrolujte kompatibilitu s vybraným stylem, abyste se vyhnuli problémům s formátováním.
 
-## Conclusion
+## Závěr
 
-While not common, including email addresses in your BibTeX entries can sometimes facilitate direct communication with the authors. Always adhere to ethical guidelines and verify compatibility with your chosen BibTeX style when using the `email` field. By following the recommended formats, you can integrate email addresses into your citations seamlessly.
+Ačkoli není běžné, zahrnutí e-mailových adres do vašich BibTeX záznamů může někdy usnadnit přímou komunikaci s autory. Vždy dodržujte etické pokyny a ověřte kompatibilitu s vybraným BibTeX stylem při použití pole `email`. Dodržováním doporučených formátů můžete e-mailové adresy bez problémů integrovat do svých citací.

@@ -1,24 +1,24 @@
 ---
-title: "BibTeX field type: school"
+title: "BibTeX pole: school"
 sidebar:
   label: school
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In BibTeX, the `school` field is utilized predominantly within `@phdthesis` or `@mastersthesis` entries. This field is used to indicate the educational institution where the thesis or dissertation was written. It is a mandatory field for both entry types, helping to provide detailed information about the origin of the scholarly work, which can be important for readers who may want to seek out more information or reference the work in their own research.
+V BibTeX se pole `school` používá převážně v záznamech typu `@phdthesis` nebo `@mastersthesis`. Toto pole slouží k označení vzdělávací instituce, kde byla práce nebo disertační práce napsána. Je to povinné pole pro oba typy záznamů, což pomáhá poskytnout podrobné informace o původu vědecké práce, což může být důležité pro čtenáře, kteří mohou chtít vyhledat více informací nebo citovat práci ve svém vlastním výzkumu.
 
 <CiteDrive />
 
-## Formatting Guidelines
+## Pokyny k formátování
 
-When entering the name of the school, it's advisable to use the full and official name of the institution to maintain a formal and standardized format in your references. Avoid using abbreviations unless they are widely recognized and accepted.
+Při zadávání názvu školy je doporučeno použít celý a oficiální název instituce, aby se udržel formální a standardizovaný formát ve vašich odkazech. Vyvarujte se používání zkratek, pokud nejsou široce uznávané a přijímané.
 
-## Examples
+## Příklady
 
-Here are examples of how to use the `school` field for both `phdthesis` and `mastersthesis` entries:
+Zde jsou příklady, jak použít pole `school` pro záznamy typu `phdthesis` a `mastersthesis`:
 
-### PhD Thesis
+### Doktorská práce
 
 ```bibtex
 @phdthesis{doe2023,
@@ -29,7 +29,7 @@ Here are examples of how to use the `school` field for both `phdthesis` and `mas
 }
 ```
 
-### Masters Thesis
+### Magisterská práce
 
 ```bibtex
 @mastersthesis{smith2023,
@@ -40,6 +40,6 @@ Here are examples of how to use the `school` field for both `phdthesis` and `mas
 }
 ```
 
-## Note
+## Poznámka
 
-In your example, you used the `series` field instead of the `school` field for the `mastersthesis` entry. However, the `school` field should be used for specifying the institution in both `phdthesis` and `mastersthesis` entries, as shown in the examples above.
+Ve vašem příkladu jste použili pole `series` místo pole `school` pro záznam `mastersthesis`. Nicméně pole `school` by mělo být použito k určení instituce v obou záznamech `phdthesis` a `mastersthesis`, jak je ukázáno v příkladech výše.

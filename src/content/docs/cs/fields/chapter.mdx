@@ -1,45 +1,45 @@
 ---
-title: "BibTeX field type: chapter"
+title: "BibTeX pole: chapter"
 sidebar:
   label: chapter
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In the world of scholarly writing, citations serve as the backbone for validating arguments and referencing existing works. The `chapter` field in BibTeX entries further refines this by allowing users to specify the exact chapter, section, or range of pages being referred to in a cited book. This field is particularly important in `inbook` and `incollection` entries, facilitating more precise referencing and aiding readers in locating the exact source material. Let's delve deeper into understanding and effectively using the `chapter` field in BibTeX.
+Ve světě vědeckého psaní slouží citace jako páteř pro ověřování argumentů a odkazování na existující práce. Pole `chapter` v BibTeX záznamech dále zpřesňuje citace tím, že umožňuje uživatelům specifikovat konkrétní kapitolu, sekci nebo rozsah stránek, na které se odkazují v citované knize. Toto pole je zvláště důležité v záznamech typu `inbook` a `incollection`, usnadňuje přesnější citování a pomáhá čtenářům najít přesný zdroj materiálu. Pojďme se podívat na to, jak efektivně používat pole `chapter` v BibTeX.
 
 <CiteDrive />
 
-### Overview
+### Přehled
 
-The `chapter` field is utilized to numerically represent a specific chapter or section within a book that you wish to cite. In the case of `inbook` entries, including the `chapter` field is mandatory to provide detailed citation information. However, it is not applicable for the `book` entry type as this type is used to cite a book in its entirety, thus not requiring specific chapter details.
+Pole `chapter` se používá k číselnému označení konkrétní kapitoly nebo sekce v knize, kterou chcete citovat. V případě záznamů typu `inbook` je zahrnutí pole `chapter` povinné pro poskytnutí podrobných citovacích informací. Nicméně, není použitelné pro typ záznamu `book`, protože tento typ se používá k citování celé knihy, a tedy nevyžaduje konkrétní podrobnosti o kapitole.
 
-### Formatting and Usage
+### Formátování a použití
 
-To accurately represent the chapter or section you are citing, employ the `chapter` field as illustrated below:
+Pro přesné označení kapitoly nebo sekce, kterou citujete, použijte pole `chapter` podle níže uvedeného příkladu:
 
 ```bibtex
 @inbook{ReferenceID,
-  author  = {Author Name},
-  title   = {Title of the Book},
-  chapter = {Chapter Number},
-  pages   = {Page Range},
-  year    = {Publication Year},
-  publisher = {Publisher Name},
-  address   = {Publication Location},
+  author  = {Autor},
+  title   = {Název knihy},
+  chapter = {Číslo kapitoly},
+  pages   = {Rozsah stránek},
+  year    = {Rok vydání},
+  publisher = {Název vydavatele},
+  address   = {Místo vydání},
 }
 ```
 
-In the above template, replace "Chapter Number" with the actual number of the chapter you are citing. If citing a specific section or range of pages instead, this can be indicated in the `pages` field.
+V tomto šabloně nahraďte "Číslo kapitoly" skutečným číslem kapitoly, kterou citujete. Pokud citujete specifickou sekci nebo rozsah stránek, tento může být uveden v poli `pages`.
 
-### Example
+### Příklad
 
-Here's a concrete example demonstrating how to properly use the `chapter` field:
+Zde je konkrétní příklad ilustrující, jak správně použít pole `chapter`:
 
 ```bibtex
 @inbook{Mueller2014The,
   author   = {Hans Mueller},
-  title    = {Theories of Modern Physics},
+  title    = {Teorie moderní fyziky},
   chapter  = {2},
   pages    = {23-45},
   year     = 2014,
@@ -48,16 +48,14 @@ Here's a concrete example demonstrating how to properly use the `chapter` field:
 }
 ```
 
-In this example, the `chapter` field is used to specifically reference chapter 2 of the cited book, allowing readers to easily locate the referenced material.
+V tomto příkladu je pole `chapter` použito k specifickému odkazu na kapitolu 2 citované knihy, což umožňuje čtenářům snadno najít citovaný materiál.
 
-### Points to Remember
+### Body k zapamatování
 
-1. **Specificity**: The `chapter` field helps in pinpointing the exact section of the book being referred to, promoting precise and accurate citation.
-2. **Mandatory for `inbook` Entries**: When using the `inbook` entry type, the inclusion of the `chapter` field is mandatory to provide a detailed reference.
-3. **Not Applicable for `book` Entries**: The `chapter` field is not used in `book` entries as these entries are meant to cite the entire book.
+1. **Specifičnost**: Pole `chapter` pomáhá přesně lokalizovat konkrétní sekci knihy, na kterou se odkazujete, což podporuje přesné a správné citování.
+2. **Povinné pro `inbook` záznamy**: Při použití typu záznamu `inbook` je zahrnutí pole `chapter` povinné pro poskytnutí podrobného odkazu.
+3. **Neaplikovatelné pro `book` záznamy**: Pole `chapter` se nepoužívá v `book` záznamech, protože tyto záznamy jsou určeny pro citování celé knihy.
 
+### Závěr
 
-
-### Conclusion
-
-Mastering the use of the `chapter` field in BibTeX not only enhances the accuracy of your citations but also aids readers in efficiently locating the cited material within larger works. Remember to maintain consistency in your formatting to ensure a well-organized and professional bibliography. Always double-check your entries to prevent any errors and uphold the standards of scholarly writing.
+Ovládnutí použití pole `chapter` v BibTeX nejenže zvyšuje přesnost vašich citací, ale také pomáhá čtenářům efektivně lokalizovat citovaný materiál v širších dílech. Nezapomeňte udržovat konzistenci ve formátování, aby byla vaše bibliografie dobře organizovaná a profesionální. Vždy dvakrát zkontrolujte své záznamy, abyste předešli chybám a udrželi standardy vědeckého psaní.

@@ -1,62 +1,55 @@
 ---
-title: "Getting Started with BibLaTeX: A Quick Guide"
+title: "Začínáme s BibLaTeXem: Rychlý průvodce"
 sidebar:
-  label: Using BibLaTeX (Quick start)
+  label: Použití BibLaTeX (rychlý start)
 sidebar_position: 4
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The following guide is still in the works, but since BibLaTeX is seen by many as the BibTeX killer (and we do not disagree), we thought it would be helpful to give you a head start. Please keep in mind that many options and customizations are available in BibLaTeX, and we will gradually expand the section.
+Následující průvodce je stále ve vývoji, ale protože je BibLaTeX považován mnoha za „zabijáka“ BibTeXu (a s tím souhlasíme), považovali jsme za užitečné poskytnout vám rychlý start. Mějte prosím na paměti, že BibLaTeX nabízí mnoho možností a přizpůsobení, které budeme postupně rozšiřovat.
 
-1.  Install BibLaTeX: Before you can use BibLaTeX, you must first install it on your computer. This is usually accomplished by installing a LaTeX distribution that includes BibLaTeX, such as MikTeX or TeX Live, or by using Overleaf, which, like many other packages, includes everything, including styles, out of the box. 
-    
-2.  Add the BibLaTeX package to your LaTeX document: To add BibLaTeX to your LaTeX document, you need to include the following code in the preamble of your document:
-    
+1. **Nainstalujte BibLaTeX**: Než budete moci použít BibLaTeX, musíte si ho nejprve nainstalovat na svůj počítač. To obvykle zahrnuje instalaci LaTeX distribuce, která obsahuje BibLaTeX, jako je MikTeX nebo TeX Live, nebo použití Overleaf, který, jako mnoho dalších balíčků, obsahuje vše, včetně stylů, ihned po instalaci.
 
-<CiteDrive />
+2. **Přidejte balíček BibLaTeX do svého LaTeX dokumentu**: Chcete-li přidat BibLaTeX do svého LaTeX dokumentu, musíte do preambule dokumentu přidat následující kód:
 
-```latex
-\usepackage[style=authoryear,backend=biber]{biblatex}
-```
+   ```latex
+   \usepackage[style=authoryear,backend=biber]{biblatex}
+   ```
 
-This line tells LaTeX to use the BibLaTeX package with the "authoryear" style and the "biber" backend. If that makes sense to you, you can also use BibTeX as a backend. However, many features will be missing, and we should emphasize that using BibTeX is not recommended - even for nostalgic reasons. 
+   Tento řádek říká LaTeXu, aby použil balíček BibLaTeX se stylem „authoryear“ a backendem „biber“. Pokud vám to dává smysl, můžete také použít BibTeX jako backend. Nicméně, mnoho funkcí bude chybět a měli bychom zdůraznit, že použití BibTeXu není doporučeno – ani z nostalgických důvodů.
 
-3. If you're used to BibTeX, everything has stayed the same except that BibLaTeX now supports a few more types and fields. You keep your references in a separate bibliographic database, a text file with a `.bib-file` extension. Here's an example of a simple database, which we may call `bibliography.bib`: 
+3. **Pokud jste zvyklí na BibTeX**, vše zůstává stejné, kromě toho, že BibLaTeX nyní podporuje několik dalších typů a polí. Udržujete své reference v samostatné bibliografické databázi, textovém souboru s příponou `.bib`. Zde je příklad jednoduché databáze, kterou můžeme nazvat `bibliography.bib`:
 
-```latex
-@book{key,   
-	author = {Author, A.},   
-	title = {The Title of the Book},   
-	year = {2021},   
-	publisher = 
-	{Publisher}, 
-}
-```
+   ```latex
+   @book{key,
+     author    = {Autor, A.},
+     title     = {Název knihy},
+     year      = {2021},
+     publisher = {Vydavatel},
+   }
+   ```
 
+4. **Chcete-li zahrnout bib-file** (vaši databázi referencí), použijte následující příkaz ve vašem TeX dokumentu:
 
-4.  To include the bib-file (your reference database), use the following command in your TeX document: 
+   ```latex
+   \addbibresource{bibliography.bib}
+   ```
 
-```latex
-\addbibresource{bibliography.bib}
-```
+5. **Chcete-li citovat referenci ve vašem dokumentu**, použijte následující syntaxi:
 
+   ```latex
+   \autocite{key}
+   ```
 
-5.  To cite a reference in your document, use the following syntax:
+   kde „key“ je klíč reference, kterou chcete citovat.
 
-```latex
-\autocite{key}
-```
+6. **Chcete-li zahrnout bibliografii**, nebo seznam referencí do svého dokumentu, musíte zahrnout následující kód do dokumentu, kde chcete, aby se bibliografie objevila:
 
-where "key" is the key of the reference you want to cite.
+   ```latex
+   \printbibliography
+   ```
 
-6.  To include the bibliography, or reference list into for your document, you need to include the following code in your document where you want the bibliography to appear:
+7. **Nakonec použijte LaTeX kompilátor**, jako je `pdflatex` nebo `xelatex`, k sestavení vašeho dokumentu. BibLaTeX automaticky vygeneruje bibliografii na základě referencí, které jste ve svém dokumentu citovali, když dokument sestavíte.
 
-
-```latex
-\printbibliography
-```
-
-7.  Finally, use a LaTeX compiler, such as `pdflatex` or `xelatex`, to compile your document. BibLaTeX will automatically generate the bibliography based on the references you have cited in your paper when you compile your document.
-
-That's all! You should now be able to use BibLaTeX to manage your references and citations in your LaTeX documents after following these simple steps. Remember that BibLaTeX is a highly customizable tool; as previously stated, we will add more in the future. But for the time being, you should be able to get started right away.
+To je vše! Nyní byste měli být schopni používat BibLaTeX pro správu vašich referencí a citací ve vašich LaTeX dokumentech po těchto jednoduchých krocích. Pamatujte, že BibLaTeX je vysoce přizpůsobitelný nástroj; jak již bylo uvedeno, budeme v budoucnu přidávat více informací. Ale prozatím byste měli být schopni začít okamžitě.

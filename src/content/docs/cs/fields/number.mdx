@@ -1,21 +1,20 @@
 ---
-slug: number
-title: "BibTeX field type: number"
+title: "BibTeX pole: number"
 sidebar:
   label: number
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In BibTeX, the `number` field is used to specify the issue number of a journal, the number of a technical report, or other identifiers that are part of a larger series. This field helps to pinpoint the exact issue or edition of a series where the referenced work can be found, providing more precise information for locating the material.
+V BibTeX se pole `number` používá k určení čísla vydání časopisu, čísla technického reportu nebo jiných identifikátorů, které jsou součástí větší série. Toto pole pomáhá přesněji určit vydání nebo edici série, kde lze nalezený dokument najít, a poskytuje tak přesnější informace pro lokalizaci materiálu.
 
 <CiteDrive />
 
-This field is commonly used in conjunction with the `volume` field, especially for journal articles and periodicals. For a technical report, the `number` field would typically contain the report number assigned by the institution or organization that published the report.
+Toto pole se často používá spolu s polem `volume`, zejména pro články v časopisech a periodikách. U technického reportu by pole `number` obvykle obsahovalo číslo reportu přidělené institucí nebo organizací, která report publikovala.
 
-## Format
+## Formát
 
-The format for the `number` field is relatively straightforward. In the context of an article entry, it would appear as follows:
+Formát pole `number` je relativně jednoduchý. V kontextu záznamu článku by to vypadalo následovně:
 
 ```bibtex
 @article{citation_key,
@@ -23,45 +22,43 @@ The format for the `number` field is relatively straightforward. In the context 
   number={issue_number},
   ...
 }
-
 ```
 
-Here, "citation_key" represents a unique identifier for the entry, and "issue_number" represents the number of the journal issue, technical report, or other publication.
+Zde "citation_key" představuje jedinečný identifikátor záznamu a "issue_number" představuje číslo vydání časopisu, technického reportu nebo jiného publikace.
 
-## Examples
+## Příklady
 
-Below are some examples showcasing the application of the `number` field in different contexts:
+Níže jsou uvedeny příklady ukazující použití pole `number` v různých kontextech:
 
-### Example 1: Journal Article
+### Příklad 1: Článek v Časopise
 
 ```bibtex
 @article{doe2023study,
   author = {Doe, Jane},
-  title = {A Comprehensive Study on Quantum Computing},
-  journal = {Journal of Advanced Computing},
+  title = {Komplexní studie o kvantovém počítání},
+  journal = {Časopis pokročilého počítání},
   year = {2023},
   volume = {29},
   number = {3},
   pages = {215-230},
 }
-
 ```
 
-In this example, the `number` field specifies the third issue of the 29th volume of the "Journal of Advanced Computing".
+V tomto příkladu pole `number` specifikuje třetí číslo 29. ročníku "Časopisu pokročilého počítání".
 
-### Example 2: Technical Report
+### Příklad 2: Technický Report
 
 ```bibtex
 @techreport{smith2022analysis,
   author = {Smith, John},
-  title = {An Analysis of Renewable Energy Trends},
-  institution = {Energy Research Institute},
+  title = {Analýza trendů v obnovitelných zdrojích energie},
+  institution = {Institut pro výzkum energie},
   year = {2022},
   number = {TR-2022-45},
-  type = {Technical Report},
+  type = {Technický report},
 }
 ```
 
-In this case, the `number` field is used to indicate the specific report number assigned by the "Energy Research Institute".
+V tomto případě pole `number` používáme k určení specifického čísla reportu přiděleného "Institutem pro výzkum energie".
 
-Utilizing the `number` field accurately can facilitate the reader in finding the source material more easily and verifying the cited information. It's an essential detail in scholarly writing and research documentation.
+Přesné používání pole `number` může čtenáři usnadnit nalezení zdrojového materiálu a ověření citovaných informací. Je to důležitý detail ve vědeckém psaní a výzkumné dokumentaci.

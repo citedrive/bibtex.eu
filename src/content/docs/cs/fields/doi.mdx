@@ -1,24 +1,24 @@
 ---
-title: "BibTeX field type: doi"
+title: "BibTeX pole: doi"
 sidebar:
   label: doi
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `doi` field is an integral part of modern referencing, allowing for a seamless and permanent method to locate digital objects such as journal articles, research reports, and data sets in an online environment. Here, we delve deeper into the functionality and significance of the `doi` field in BibTeX, as well as provide guidance on its correct usage.
+Pole `doi` je nedílnou součástí moderního citování a umožňuje bezproblémovou a trvalou metodu lokalizace digitálních objektů, jako jsou články v časopisech, výzkumné zprávy a datové sady v online prostředí. Níže se podíváme na funkčnost a význam pole `doi` v BibTeX, stejně jako na správné použití.
 
 <CiteDrive />
 
-### Overview
+### Přehled
 
-A Digital Object Identifier (DOI) is a unique alphanumeric string assigned to a digital object, facilitating a persistent link to its location on the internet. As a standardized method for identifying electronic resources, the DOI remains stable even if the URL of the item changes, ensuring the longevity of references.
+Digitální objektový identifikátor (DOI) je unikátní alfanumerický řetězec přiřazený digitálnímu objektu, který usnadňuje trvalý odkaz na jeho umístění na internetu. Jako standardizovaná metoda pro identifikaci elektronických zdrojů zůstává DOI stabilní, i když se URL položky změní, čímž zajišťuje dlouhověkost odkazů.
 
-The `doi` field in BibTeX serves to record this identifier, allowing for precise and permanent citations. While it is predominantly found in the `article` entry type, it can also be used in other types such as `book`, `chapter`, `inproceedings`, or `conference` entries, albeit less frequently. Regardless of the entry type, the `doi` field is optional.
+Pole `doi` v BibTeX slouží k zaznamenání tohoto identifikátoru, což umožňuje přesné a trvalé citace. Ačkoli se většinou nachází v typu záznamu `article`, může být také použito v dalších typech, jako jsou `book`, `chapter`, `inproceedings` nebo `conference`, i když méně často. Bez ohledu na typ záznamu je pole `doi` volitelné.
 
-### Syntax and Structure
+### Syntaxe a struktura
 
-To correctly incorporate a DOI into your BibTeX entry, adhere to the following format:
+Pro správné zařazení DOI do vašeho BibTeX záznamu dodržujte následující formát:
 
 ```bibtex
 @entrytype{citationkey,
@@ -27,11 +27,12 @@ To correctly incorporate a DOI into your BibTeX entry, adhere to the following f
   ...
 }
 ```
-The `doi` field encapsulates the full DOI URL, which typically starts with "[https://doi.org/](https://doi.org/)" followed by a unique identifier string.
 
-### Example
+Pole `doi` obsahuje celou URL DOI, která obvykle začíná "[https://doi.org/](https://doi.org/)" následovanou unikátním identifikačním řetězcem.
 
-Here's an exemplar BibTeX entry that includes a DOI:
+### Příklad
+
+Zde je příklad BibTeX záznamu, který zahrnuje DOI:
 
 ```bibtex
 @article{steinbeck2003chemistry,
@@ -47,17 +48,16 @@ Here's an exemplar BibTeX entry that includes a DOI:
 }
 ```
 
-In this example, the `doi` field houses the permanent URL that leads directly to the referenced article.
+V tomto příkladu pole `doi` obsahuje trvalou URL, která vede přímo na citovaný článek.
 
-### Utilization Tips
+### Tipy pro využití
 
-1. **Finding DOIs**: For scholarly articles, DOIs can often be found on the first page of the article or in the online database where the article is housed.
-2. **Cross-Referencing**: Utilize the `doi` field for cross-referencing in your paper, offering readers a direct route to the original source material.
-3. **Optional but Beneficial**: While the `doi` field is optional, including it enhances the reliability and traceability of your references.
+1. **Hledání DOI**: Pro vědecké články lze DOI často nalézt na první stránce článku nebo v online databázi, kde je článek uložen.
+2. **Křížové odkazy**: Využijte pole `doi` pro křížové odkazy ve vaší práci, což čtenářům nabízí přímou cestu k původnímu materiálu.
+3. **Volitelné, ale prospěšné**: I když je pole `doi` volitelné, jeho zahrnutí zvyšuje spolehlivost a sledovatelnost vašich odkazů.
 
-### Conclusion
+### Závěr
 
-The inclusion of the `doi` field in your BibTeX entries represents best practice in scholarly writing, offering a steadfast link to the digital objects you reference. By adopting the DOI system, you promote the accessibility and permanence of scientific knowledge, supporting the global research community in their scholarly endeavors.
+Začlenění pole `doi` do vašich BibTeX záznamů představuje nejlepší praxi ve vědeckém psaní a poskytuje stabilní odkaz na digitální objekty, které citujete. Přijetím systému DOI podporujete přístupnost a trvanlivost vědeckých znalostí, čímž podporujete globální výzkumnou komunitu ve jejich akademických snahách.
 
-As you build your bibliography, remember to capitalize on the capabilities of the `doi` field, fostering a richer, more reliable, and interconnected academic discourse.
-
+Při sestavování vaší bibliografie nezapomeňte využít možnosti pole `doi`, čímž podpoříte bohatší, spolehlivější a vzájemně propojenou akademickou diskusi.

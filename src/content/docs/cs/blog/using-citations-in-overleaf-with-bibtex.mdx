@@ -1,50 +1,47 @@
 ---
-title: "Using Citations in Overleaf with BibTeX"
-tags: ["LaTeX", "Overleaf", "CiteDrive", "typesetting", "technical documents", "scientific documents", "research papers", "theses", "markup language", "formatting", "text editor", "collaboration", "citation management"]
+title: "Používání citací v Overleaf s BibTeX"
+tags: ["LaTeX", "Overleaf", "CiteDrive", "sazba", "technické dokumenty", "vědecké dokumenty", "výzkumné práce", "diplomové práce", "značkovací jazyk", "formátování", "textový editor", "spolupráce", "správa citací"]
 date: 2023-01-28
 ---
 
-Citations are an important aspect of academic writing, as they allow authors to give credit to the sources they have used in their work. In this post, we will discuss how to use citations in Overleaf, a popular online LaTeX editor, with BibTeX, a tool for managing bibliographic references.
+Citace jsou důležitým aspektem akademického psaní, protože umožňují autorům připsat uznání zdrojům, které použili ve své práci. V tomto příspěvku se podíváme na to, jak používat citace v Overleaf, populárním online editoru LaTeX, s BibTeX, nástrojem pro správu bibliografických odkazů.
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-
 <CiteDrive />
 
-## Adding a bibliography to your Overleaf project
+## Přidání bibliografie do vašeho projektu v Overleaf
 
-The first step in using citations in Overleaf is to add a bibliography to your project. This can be done by creating a new file in your project and naming it `references.bib`. This file will contain all of the references that you wish to cite in your document. An alternative option is to use [CiteDrive](https://www.citedrive.com/) which connects to Overleaf and allows you to collaborate on your bibliography and citations. CiteDrive supports BibTeX natively and also Biblatex.
+Prvním krokem při používání citací v Overleaf je přidání bibliografie do vašeho projektu. To lze provést vytvořením nového souboru ve vašem projektu a jeho pojmenováním `references.bib`. Tento soubor bude obsahovat všechny odkazy, které chcete citovat ve svém dokumentu. Alternativní možností je použití [CiteDrive](https://www.citedrive.com/), který se připojuje k Overleaf a umožňuje vám spolupracovat na vaší bibliografii a citacích. CiteDrive nativně podporuje BibTeX a také Biblatex.
 
-To add a reference to this file, you can use the following format:
+Pro přidání odkazu do tohoto souboru můžete použít následující formát:
 
-`@article{key,   author = {Author, A.},   title = {Title},   journal = {Journal},   year = {Year}, }`
+`@article{key,   author = {Autor, A.},   title = {Název},   journal = {Časopis},   year = {Rok}, }`
 
-The `key` is a unique identifier for the reference and will be used to cite it in your document. The `author`, `title`, `journal`, and `year` fields are required for a basic reference, but there are many other fields that can be included as well.
+`key` je unikátní identifikátor pro odkaz a bude použit k jeho citování ve vašem dokumentu. Pole `author`, `title`, `journal` a `year` jsou povinná pro základní odkaz, ale existuje mnoho dalších polí, která lze zahrnout.
 
-## Citing references in your document
+## Citování odkazů ve vašem dokumentu
 
-Once you have added your references to the `references.bib` file, you can cite them in your document using the `cite` command. For example, to cite the reference with the key `key`, you would use the following command:
+Jakmile přidáte své odkazy do souboru `references.bib`, můžete je citovat ve svém dokumentu pomocí příkazu `cite`. Například, chcete-li citovat odkaz s klíčem `key`, použijete následující příkaz:
 
 `\cite{key}`
 
-This will insert the citation into your document in the format specified by the bibliography style you have chosen.
+To vloží citaci do vašeho dokumentu ve formátu určeném stylem bibliografie, který jste zvolili.
 
-## Formatting your bibliography
+## Formátování vaší bibliografie
 
-In order to format your bibliography, you need to specify a bibliography style. This can be done by including the following command in the preamble of your document:
-
+Pro formátování vaší bibliografie musíte specifikovat styl bibliografie. To lze provést zahrnutím následujícího příkazu do preambule vašeho dokumentu:
 
 `\bibliographystyle{style}`
 
-Where `style` is the name of the bibliography style you wish to use. Some commonly used styles include `plain`, `unsrt`, and `apalike`.
+Kde `style` je název stylu bibliografie, který chcete použít. Některé běžně používané styly zahrnují `plain`, `unsrt` a `apalike`.
 
-Finally, you need to include the following command at the end of your document to generate the bibliography:
-
+Nakonec je třeba přidat následující příkaz na konec vašeho dokumentu, aby se vygenerovala bibliografie:
 
 `\bibliography{references}`
 
-Where `references` is the name of your bibliography file (`references.bib` in our example).
+Kde `references` je název vašeho souboru s bibliografií (`references.bib` v našem příkladu).
 
-## Conclusion
+## Závěr
 
-In this post, we have discussed how to use citations in Overleaf with BibTeX. By following the steps outlined above, you can easily add references to your project, cite them in your document, and format your bibliography to meet the requirements of your academic institution or publisher. Additionally, the use of CiteDrive, which connects to Overleaf, allows for easy collaboration on your references and citations. CiteDrive natively supports both BibTeX and Biblatex making it a versatile option for managing your bibliographic references.
+V tomto příspěvku jsme se podívali na to, jak používat citace v Overleaf s BibTeX. Dodržením výše uvedených kroků můžete snadno přidat odkazy do svého projektu, citovat je ve svém dokumentu a formátovat svou bibliografii tak, aby vyhovovala požadavkům vaší akademické instituce nebo vydavatele. Navíc použití CiteDrive, který se připojuje k Overleaf, umožňuje snadnou spolupráci na vašich odkazech a citacích. CiteDrive nativně podporuje jak BibTeX, tak Biblatex, což z něj činí univerzální možnost pro správu vašich bibliografických odkazů.

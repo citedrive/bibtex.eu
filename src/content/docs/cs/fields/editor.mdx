@@ -1,24 +1,24 @@
 ---
-title: "BibTeX field type: editor"
+title: "BibTeX pole: editor"
 sidebar:
   label: editor
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `editor` field in BibTeX is used to specify the editors of a published work. This field is essential for reference types such as books, proceedings, or collections where the role of an editor is distinct from the author. Specifying the editors appropriately can ensure correct attribution and smoother referencing in academic papers and articles. Here, we delve deeper into the ways to indicate editors in BibTeX.
+Pole `editor` v BibTeXu se používá k specifikaci editorů publikovaného díla. Toto pole je zásadní pro typy referencí jako jsou knihy, sborníky nebo kolekce, kde je role editora odlišná od autora. Správné uvedení editorů zajišťuje správné přisuzování a hladší citace v akademických pracích a článcích. Zde se podíváme na způsoby, jak uvést editory v BibTeXu.
 
 <CiteDrive />
 
-### Formatting Rules
+### Pravidla formátování
 
-In the `editor` field, various notation formats are accepted. However, the formatting should be consistent and precise to avoid incorrect representation of the editor's name. Here are the commonly used notations:
+V poli `editor` jsou akceptovány různé formáty zápisu. Formátování by mělo být konzistentní a přesné, aby se předešlo nesprávnému zobrazení jména editora. Zde jsou běžně používané zápisy:
 
-#### Notation: `{Firstname Lastname}`
+#### Zápis: `{Firstname Lastname}`
 
-This is a straightforward method where you list the editor's first name followed by the last name. Note that the inverse, "Lastname Firstname", is not recommended.
+Toto je jednoduchá metoda, kde uvedete jméno editora následované příjmením. Inverzní formát „Lastname Firstname“ se nedoporučuje.
 
-**Example**
+**Příklad**
 
 ```bibtex
 @book{Example2023,
@@ -28,11 +28,11 @@ This is a straightforward method where you list the editor's first name followed
 }
 ```
 
-#### Notation: `{Lastname, Firstname}`
+#### Zápis: `{Lastname, Firstname}`
 
-This is the recommended format as it provides clear differentiation between the first and last names, which is particularly beneficial for names with multiple components.
+Toto je doporučený formát, který jasně odděluje jméno a příjmení, což je zvláště užitečné pro jména s více komponentami.
 
-**Example**
+**Příklad**
 
 ```bibtex
 @book{Example2023,
@@ -42,11 +42,11 @@ This is the recommended format as it provides clear differentiation between the 
 }
 ```
 
-#### Notation: `{Lastname, Suffix, Firstname}`
+#### Zápis: `{Lastname, Suffix, Firstname}`
 
-For editors with suffixes (e.g., Junior, Sr., III), the name should be formatted with the last name first, followed by the suffix, and then the first name. All components should be separated by commas.
+Pro editory s příponami (např. Junior, Sr., III) by mělo být jméno formátováno s příjmením jako první, následovaným příponou a potom jménem. Všechny komponenty by měly být odděleny čárkami.
 
-**Example**
+**Příklad**
 
 ```bibtex
 @book{Example2023,
@@ -56,11 +56,11 @@ For editors with suffixes (e.g., Junior, Sr., III), the name should be formatted
 }
 ```
 
-### Adding Multiple Editors
+### Přidání více editorů
 
-To specify multiple editors, use the keyword `AND` between individual editor details formatted as above. This notation helps in listing several editors distinctly and accurately.
+Pro specifikaci více editorů použijte klíčové slovo `AND` mezi jednotlivými údaji o editorech, formátovanými výše uvedeným způsobem. Tento zápis pomáhá jasně a přesně uvádět několik editorů.
 
-**Example**
+**Příklad**
 
 ```bibtex
 @book{Example2023,
@@ -70,11 +70,11 @@ To specify multiple editors, use the keyword `AND` between individual editor det
 }
 ```
 
-### Best Practices
+### Nejlepší praktiky
 
-1. **Consistency**: Maintain consistency in the notation format across all entries in your BibTeX file to ensure uniform representation.
-2. **Suffixes**: Clearly specify suffixes to avoid confusion, especially in works with multiple editors having familial relations.
+1. **Konzistence**: Udržujte konzistenci ve formátu zápisu napříč všemi záznamy ve vašem BibTeX souboru, aby byla zajištěna jednotná reprezentace.
+2. **Přípony**: Jasně specifikujte přípony, aby se předešlo záměnám, zejména u prací s více editory, kteří mají rodinné vztahy.
 
-### Conclusion
+### Závěr
 
-The `editor` field is a critical component in BibTeX entries, especially for edited volumes, proceedings, and collections. Accurate and consistent notation ensures that editors receive proper attribution, thereby enhancing the credibility and readability of your citations. Remember to adhere to the recommended formats for a seamless citation experience.
+Pole `editor` je kritickou součástí BibTeX záznamů, zejména pro editované svazky, sborníky a kolekce. Přesné a konzistentní formátování zajišťuje, že editoři obdrží správné přisuzování, čímž zvyšuje důvěryhodnost a čitelnost vašich citací. Nezapomeňte dodržovat doporučené formáty pro hladký citací zážitek.

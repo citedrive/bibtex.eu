@@ -1,48 +1,45 @@
 ---
-title: Reference management with BibTeX, when using Quarto -- A short guide
-description: "This quick tutorial will show you how to manage your references using BibTeX. BibTeX is a reference management software that allows you to store and organize your references in a simple, easy-to-use format."
+title: "Správa Referencí s BibTeX v Quarto - Krátký Průvodce"
+description: "Tento rychlý tutoriál vám ukáže, jak spravovat své reference pomocí BibTeX. BibTeX je software pro správu referencí, který vám umožňuje ukládat a organizovat vaše reference v jednoduchém a snadno použitelném formátu."
 sidebar:
-  label: Using Quarto (RStudio/Posit) (Quick start)
+  label: Použití Quarto (RStudio/Posit) (Rychlý start)
 sidebar_position: 5
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-Quarto is an excellent tool for producing reproducible reports, papers, and presentations, among other things. One of the features that distinguishes Quarto is its ability to integrate with other tools and software. BibTeX, a reference management system for LaTeX documents, is one such tool. BibTeX makes it simple to cite sources and create a bibliography in your document.
+Quarto je vynikající nástroj pro vytváření replikovatelných zpráv, článků a prezentací, mezi jinými. Jednou z vlastností, která Quarto odlišuje, je jeho schopnost integrace s dalšími nástroji a softwarem. BibTeX, systém pro správu referencí pro dokumenty LaTeX, je jedním z těchto nástrojů. BibTeX usnadňuje citování zdrojů a vytváření bibliografie ve vašem dokumentu.
 
 <CiteDrive />
 
-## Step 1: Create a .bib-file and create some entries.
+## Krok 1: Vytvoření .bib souboru a přidání záznamů
 
-As in the previous section, we begin by creating a.bib-file called 'bibliography.bib,' which is then filled with BibTeX entries.
-BibTeX entries are built in the following format and contain enough information for citation and bibliography inclusion for each literature source (book, essay, etc.).
+Jak bylo uvedeno v předchozí části, začneme vytvořením .bib souboru nazvaného 'bibliography.bib', který poté naplníme BibTeX záznamy. BibTeX záznamy jsou vytvořeny v následujícím formátu a obsahují dostatečné informace pro citování a zahrnutí do bibliografie pro každý literární zdroj (kniha, esej, atd.).
 
-We use the example from the previous section and quote the book "The Old Man and the Sea" by Ernest Hemingway. The result is as follows:
+Používáme příklad z předchozí části a citujeme knihu "Stařec a moře" od Ernesta Hemingwaye. Výsledkem je:
 
 ```latex
 @book{Hemingway1952,
-  title={The Old Man and the Sea},
+  title={Stařec a moře},
   author={Hemingway, Ernest},
   year={1952},
   publisher={Charles Scribner's Sons}
 }
 ```
 
-Again, we dissect this entry's "anatomy," focusing on three components to understand how each BibTeX entry is defined:
+Opět se podívejme na "anatomii" tohoto záznamu, přičemž se zaměříme na tři komponenty, abychom pochopili, jak je každý BibTeX záznam definován:
 
-* **Entry-type**: with `@book` we define the type according to the schema `@type` of the reference. Possible are `@article` for scientific articles and others. BibTeX likes to specify which fields are optional and which are required to indicate them correctly in the literature.
-* **Entry fields**: in this case of our `@book` example, these are `title`, `author`, `year` and `publisher`. (Cf. [fields](./fields))
-* **citation-key**: in our example, it is `Hemingway1952` and is used to indicate an in-text citation in LaTeX, i.e., to refer to the source. in Quarto we do this with `[@Hemingway1952]`. The citation key can be any string - often a combination of author, year, and a word from the title.
+* **Typ záznamu**: s `@book` definujeme typ podle schématu `@type` reference. Možné jsou například `@article` pro vědecké články a další. BibTeX ráda specifikuje, které pole jsou volitelné a které povinné pro jejich správné uvedení v literatuře.
+* **Pole záznamu**: v případě našeho příkladu `@book` jsou to `title`, `author`, `year` a `publisher`. (Viz [pole](./fields))
+* **Citace klíč**: v našem příkladu je to `Hemingway1952` a používá se k označení citace v textu v LaTeXu, tj. k odkazu na zdroj. V Quarto to děláme pomocí `[@Hemingway1952]`. Citace klíč může být jakýkoli řetězec - často kombinace autora, roku a slova z názvu.
 
+## Krok 2: Vytvoření dokumentu Quarto a propojení
 
-
-## Step 2: Create a Quarto document and connect
-
-It is very simple to integrate BibTeX with Quarto. Simply specify the bib-file with 'bibliography: bibliography.bib' in YAML and the citation with '[@Hemingway1952]' at the location where you want the in-text citation to appear.
+Integrace BibTeX s Quarto je velmi jednoduchá. Stačí specifikovat bib-file s 'bibliography: bibliography.bib' v YAML a citaci s '[@Hemingway1952]' na místě, kde chcete, aby se citace v textu objevila.
 
 ```md
 ---
-title: "BibTeX references in Quarto"
+title: "BibTeX citace v Quarto"
 author: "John Doe"
 date: '2022-07-19'
 bibliography: bibliography.bib
@@ -50,7 +47,7 @@ output: html_document
 ---
 
 
-## BibTeX references in Quarto
+## BibTeX citace v Quarto
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
@@ -59,11 +56,10 @@ Cras a molestie nulla. [@Hemingway1952]
 
 ```
 
+## Nástroje pro správu referencí
 
-## Reference managers
+Ruční formátování BibTeX souborů může být časově náročné, proto se obecně doporučuje používat nástroj pro správu referencí. Zde jsou některé, které jsou pro to ideální:
 
-Manually formatting BibTeX files can be time-consuming, which is why it is generally recommended to use a reference manager. Here are a few that are ideal for this:
-
-* [CiteDrive](https://www.citedrive.com/) is a bibtex-powered, collaborative, and cloud-based tool for managing project references and teams. It provides a one-click export to Overleaf ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) along with Quarto ([*Cf. Medium post: Bibliography Management in Quarto with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), while keeping citations in sync.
-* [Zotero](https://www.zotero.org/) is a free, open-source literature management tool that manages bibliographic data and related research materials (such as PDF files). The best performance for BibTeX in Zotero is achieved with **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** by retorque.
-* The free, open-source software [JabRef](https://www.jabref.org/) is a BibTeX-supported reference manager that runs on Windows, Mac, and Linux. It is based on Java and is maintained by JabRef e.V.
+* [CiteDrive](https://www.citedrive.com/) je nástroj pro správu referencí a citací založený na BibTeX, který je kolaborativní a cloudový. Nabízí export jedním kliknutím do Overleaf ([*Viz blogový příspěvek Overleaf - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) spolu s Quarto ([*Viz příspěvek na Medium: Správa Bibliografie v Quarto s CiteDrive a RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), přičemž citace jsou synchronizovány.
+* Zotero je zdarma dostupný, open-source nástroj pro správu literatury, který spravuje bibliografická data a související výzkumné materiály (například PDF soubory). Nejlepší výkon pro BibTeX v Zotero je dosažen s **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** od retorque.
+* Zdarma a open-source software JabRef je správce referencí podporující BibTeX, který běží na Windows, Mac a Linux. Je založen na Javě a je udržován JabRef e.V.

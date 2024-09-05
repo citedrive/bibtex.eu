@@ -1,59 +1,57 @@
 ---
-title: "BibTeX field type: organization"
+title: "BibTeX pole: organization"
 sidebar:
   label: organization
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `organization` field in a BibTeX entry is used to specify the name of the organization responsible for publishing the document or hosting the event being cited. This could be a company, an institution, or a group that sponsored or organized a conference, workshop, manual, etc. Including the organization provides the reader with a clear context of the entity behind the document, which can be crucial for determining the reliability and authority of the source.
+Pole `organization` v záznamu BibTeX se používá k určení názvu organizace, která je zodpovědná za publikaci dokumentu nebo pořádání události, na kterou se odkazuje. Může se jednat o společnost, instituci nebo skupinu, která sponzorovala nebo organizovala konferenci, workshop, manuál atd. Zahrnutí organizace poskytuje čtenáři jasný kontext o entitě stojící za dokumentem, což může být klíčové pro určení spolehlivosti a autority zdroje.
 
 <CiteDrive />
 
-You will typically encounter this field in `@proceedings` and `@manual` entries, but it might appear in other types of entries as well, depending on the specific requirements of the bibliography style being used.
+Toto pole se obvykle vyskytuje v záznamech typu `@proceedings` a `@manual`, ale může se objevit i v jiných typech záznamů v závislosti na konkrétních požadavcích citovacího stylu, který je používán.
 
-## Format
+## Formát
 
-The format for specifying the `organization` field is as follows:
+Formát pro specifikaci pole `organization` je následující:
 
 ```bibtex
 @entry_type{citation_key,
   ...
-  organization={Organization Name},
+  organization={Název Organizace},
   ...
 }
-
 ```
 
-Here, "entry_type" refers to the type of BibTeX entry (such as `@proceedings` or `@manual`), "citation_key" is a unique identifier for the entry, and "Organization Name" is the name of the organization involved.
+Zde "entry_type" označuje typ BibTeX záznamu (například `@proceedings` nebo `@manual`), "citation_key" je jedinečný identifikátor záznamu a "Název Organizace" je název zapojené organizace.
 
-## Examples
+## Příklady
 
-Here are a couple of examples demonstrating how to use the `organization` field in different contexts:
+Zde je několik příkladů ukazujících, jak používat pole `organization` v různých kontextech:
 
-### Example 1: Conference Proceedings
+### Příklad 1: Konferenční Sborník
 
 ```bibtex
 @proceedings{ICML2023,
-  title = {Proceedings of the 40th International Conference on Machine Learning},
+  title = {Sborník 40. Mezinárodní konference o strojovém učení},
   year = {2023},
-  organization = {International Machine Learning Society},
+  organization = {Mezinárodní společnost pro strojové učení},
 }
-
 ```
 
-In this example, the `organization` field specifies the entity responsible for organizing the conference whose proceedings are being cited.
+V tomto příkladu pole `organization` specifikuje subjekt odpovědný za organizaci konference, jejíž sborník je citován.
 
-### Example 2: Manual
+### Příklad 2: Manuál
 
 ```bibtex
 @manual{UserGuide2022,
-  title = {XYZ Software User Guide},
+  title = {Uživatelská příručka k softwaru XYZ},
   year = {2022},
   organization = {XYZ Software Inc.},
 }
 ```
 
-Here, the `organization` field is used to indicate the company that published the software manual.
+Zde je pole `organization` použito k označení společnosti, která publikovala manuál k softwaru.
 
-Including the `organization` field in your BibTeX entries can help to provide a complete and detailed reference, facilitating more straightforward identification and retrieval of the source materials.
+Zahrnutí pole `organization` do vašich BibTeX záznamů může pomoci poskytnout úplný a podrobný odkaz, což usnadní identifikaci a nalezení zdrojových materiálů.

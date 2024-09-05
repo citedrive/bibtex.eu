@@ -1,48 +1,47 @@
 ---
-title: "Using Overleaf for Writing Papers with Citations and natbib"
-tags: [AcademicWriting, natbib, LaTeX, CitationManagement, Overleaf, BibTeX, BibLaTeX, natbib, Zotero, Mendeley, Research, WritingTips, Academia, ScholarlyWriting, References]
+title: "Používání Overleaf pro psaní prací s citacemi a natbib"
+tags: [AkademickéPsání, natbib, LaTeX, SprávaCitací, Overleaf, BibTeX, BibLaTeX, Zotero, Mendeley, Výzkum, TipyNaPsaní, Akademie, VědeckéPsání, Odkazy]
 date: 2023-01-27
 ---
 
-Overleaf is a popular online LaTeX editor that allows users to collaborate on documents in real-time. One of the great features of Overleaf is the ability to easily add citations and bibliographies to your documents using the natbib package. In this post, we will go over the basics of using natbib with Overleaf to add citations and bibliographies to your papers.
+Overleaf je populární online editor LaTeX, který umožňuje uživatelům spolupracovat na dokumentech v reálném čase. Jednou z skvělých funkcí Overleaf je možnost snadno přidávat citace a bibliografie do vašich dokumentů pomocí balíčku natbib. V tomto příspěvku se podíváme na základy používání natbib s Overleaf k přidání citací a bibliografií do vašich prací.
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-
 <CiteDrive />
-## Adding Citations
 
-To add citations in Overleaf, you first need to add the natbib package to your document. This can be done by adding the following line to the preamble of your document:
+## Přidávání Citací
+
+Chcete-li přidat citace v Overleaf, nejprve musíte přidat balíček natbib do vašeho dokumentu. To lze provést přidáním následujícího řádku do preambule vašeho dokumentu:
 
 `\usepackage[numbers]{natbib}`
 
-This will allow you to use the `\citep` and `\cite` commands to add citations to your document. The `\citep` command is used for in-text citations and will display the citation as a number in parentheses, while the `\cite` command is used for in-text citations and will display the citation as a number.
+Tímto způsobem můžete používat příkazy `\citep` a `\cite` k přidání citací do vašeho dokumentu. Příkaz `\citep` se používá pro citace v textu a zobrazí citaci jako číslo v závorkách, zatímco příkaz `\cite` se používá pro citace v textu a zobrazí citaci jako číslo.
 
-For example, to cite a paper by Smith et al. (2020) in-text, you would use the following command:
+Například, chcete-li citovat práci Smith et al. (2020) v textu, použijete následující příkaz:
 
-`According to \citep{Smith2020}, this is an important finding.`
+`Podle \citep{Smith2020} je to důležitý nález.`
 
-This will display the citation as:
+To se zobrazí jako:
 
-> According to (Smith et al., 2020), this is an important finding.
+> Podle (Smith et al., 2020) je to důležitý nález.
 
-## Adding a Bibliography
+## Přidání Bibliografie
 
-To add a bibliography to your document in Overleaf, you first need to create a `.bib` file that contains the information for all of the references that you will be citing. The `.bib` file should be saved in the same directory as your main `.tex` file. One of the easiest ways to create this `.bib` file is by using [CiteDrive](https://www.citedrive.com/), a tool that connects to Overleaf and generates the bib file for you. More information can be found in the [blog post on Overleaf.com](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
+Chcete-li přidat bibliografii do vašeho dokumentu v Overleaf, nejprve musíte vytvořit soubor `.bib`, který obsahuje informace o všech odkazech, které budete citovat. Soubor `.bib` by měl být uložen ve stejné složce jako váš hlavní soubor `.tex`. Jedním z nejjednodušších způsobů, jak tento soubor `.bib` vytvořit, je použít [CiteDrive](https://www.citedrive.com/), nástroj, který se připojuje k Overleaf a generuje soubor bib za vás. Další informace naleznete v [příspěvku na blogu na Overleaf.com](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
 
-Once you have created your `.bib` file, you can add a bibliography to your document by adding the following command to your document:
+Jakmile vytvoříte svůj soubor `.bib`, můžete přidat bibliografii do svého dokumentu přidáním následujícího příkazu do dokumentu:
 
 `\bibliography{mybibfile}`
 
-where `mybibfile` is the name of your `.bib` file.
+kde `mybibfile` je název vašeho souboru `.bib`.
 
-You can also specify the style of your bibliography by adding the following command to your document:
-
+Můžete také specifikovat styl vaší bibliografie přidáním následujícího příkazu do dokumentu:
 
 `\bibliographystyle{plainnat}`
 
-This will format your bibliography in a plain style. There are many different bibliography styles available, and you can find a list of them [here](https://www.overleaf.com/learn/latex/Bibliography_styles).
+Tímto se formátuje vaše bibliografie v jednoduchém stylu. Existuje mnoho různých stylů bibliografie, a seznam z nich najdete [zde](https://www.overleaf.com/learn/latex/Bibliography_styles).
 
-## Conclusion
+## Závěr
 
-In this post, we have gone over the basics of using natbib with Overleaf to add citations and bibliographies to your papers. With Overleaf's easy-to-use interface and natbib's powerful citation and bibliography management capabilities, you can easily keep track of your references and format your bibliography in the style that is required by your publication. Additionally, using CiteDrive to generate the bib file for you can save a lot of time and effort.
+V tomto příspěvku jsme se podívali na základy používání natbib s Overleaf k přidání citací a bibliografií do vašich prací. Díky snadno použitelnému rozhraní Overleaf a silným schopnostem správy citací a bibliografií natbib můžete snadno sledovat své odkazy a formátovat svou bibliografii ve stylu, který je požadován vaší publikací. Navíc použití CiteDrive k vygenerování souboru bib za vás může ušetřit spoustu času a úsilí.
