@@ -1,26 +1,26 @@
 ---
-title: "Understanding the `unpublished` Entry Type in BibTeX"
+title: "理解 BibTeX 中的 `unpublished` 条目类型"
 sidebar:
   label: unpublished
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-BibTeX is a popular bibliographic management system that assists researchers and academics in organizing and formatting their bibliographies. It is widely used in computer science, but it is also useful in many other fields that require citation of sources. The "unpublished" entry type in BibTeX is used to cite sources that have not been officially published, such as theses, dissertations, and technical reports.
+BibTeX 是一种流行的参考文献管理系统，帮助研究人员和学术人士组织和格式化他们的参考文献。虽然它在计算机科学领域应用广泛，但在许多其他需要引用来源的领域也非常有用。BibTeX 中的 "unpublished" 条目类型用于引用尚未正式出版的来源，如学位论文、毕业论文和技术报告。
 
-The "unpublished" entry type is a versatile entry type that allows authors to include all relevant information about an unpublished source, such as the author's name, title, institution, and date. An example of a BibTeX entry for an unpublished source is as follows:
+"unpublished" 条目类型是一种多功能的条目类型，允许作者包括有关未出版来源的所有相关信息，如作者姓名、标题、机构和日期。以下是一个未出版来源的 BibTeX 条目示例：
 
 <CiteDrive/>
 
 ```bibtex
 @unpublished{key,   
 	author = {John Doe},   
-	title = {The Importance of Unpublished Sources},   
-	institution = {University of Example},   
+	title = {未出版来源的重要性},   
+	institution = {示例大学},   
 	year = {2022}, 
 }
 ```
 
-The "key" field in this example is a unique identifier that is used to refer to the source in the document's text. The "author" field contains the name(s) of the source's author(s), the "title" field contains the title of the source, the "institution" field contains the name of the institution where the source was written, and the "year" field contains the year the source was written.
+在这个示例中，“key”字段是一个唯一标识符，用于在文档文本中引用该来源。“author”字段包含来源作者的姓名，“title”字段包含来源的标题，“institution”字段包含来源编写的机构名称，“year”字段包含来源编写的年份。
 
-It should be noted that the "unpublished" entry type should only be used for sources that have not yet been formally published. If a source has been published, even if only online, it should be cited as a "techreport," "mastersthesis," or "phdthesis," depending on the type of publication.
+需要注意的是，“unpublished” 条目类型应仅用于尚未正式出版的来源。如果来源已经出版，即使仅在线发布，也应根据出版类型使用 "techreport"、"mastersthesis" 或 "phdthesis" 来进行引用。
