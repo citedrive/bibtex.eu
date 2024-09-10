@@ -1,0 +1,43 @@
+---
+title: "Hvordan bruger jeg URLs i BibTeX-poster?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Hvis du bruger BibTeX til at oprette bibliografier til dine forskningsartikler, har du måske spekuleret på, hvordan du inkluderer URLs i dine poster.
+
+URL-felttypen er ikke formelt understøttet i BibTeX endnu, selvom den var planlagt til version 1.0 af Oren Patashnik. På trods af dette er debatten om denne version og dens intentioner dateret tilbage til [Patashnik's artikel fra 2003](https://tug.org/TUGboat/tb24-1/patashnik.pdf), som gradvist bliver erstattet af Biber-backend biblatex.
+
+Derfor vil du sandsynligvis skulle bruge en af følgende løsninger, for eksempel når du citerer websteder:
+
+
+<CiteDrive />
+
+
+## Brug note-felttypen:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## Brug howpublished-felttypen:
+
+```latex
+@misc{...,
+  note = "Tilgængelig fra \url{http://...}"
+}
+```
+
+## Brug biblatex og dets indbyggede URL-felttype:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+
+Hvis du vælger biblatex, skal du bruge Biber som din backend i stedet for BibTeX. Hvis du vil vide mere om biblatex og Biber, skal du læse vores guide til at komme i gang.
+Hvis du har spørgsmål eller kommentarer, så lad os det vide. Vi håber, dette har hjulpet!

@@ -1,0 +1,167 @@
+---
+title: "Overleaf: Citation & Reference Management - Introduktion til LaTeX Bibliografier"
+description: "Opdag, hvordan du håndterer citationer, bibliografier og referencer i Overleaf ved hjælp af BibTeX, Natbib og BibLaTeX. Plus, strømline dit arbejdsflow med CiteDrive."
+sidebar:
+  label: Brug af Overleaf (Hurtig start)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com**, den skybaserede LaTeX-editor, er den foretrukne platform for samarbejdsvillig oprettelse og publicering af akademiske dokumenter. Født fra sammenlægningen af **WriteLaTeX** og **ShareLaTeX**, har den over 10 millioner brugere verden over. Overleaf tilbyder en bred vifte af forudinstallerede værktøjer og skabeloner skræddersyet til akademiske tidsskrifter, hvilket gør det til et topvalg for forskere og akademikere.
+
+Med Overleaf kan du nemt håndtere citationer og referencer ved hjælp af kraftfulde værktøjer som **CiteDrive**. Denne integration forenkler dit arbejdsflow og gør referencehåndtering mere effektiv.
+
+<CiteDrive />
+
+## Bibliografi Håndtering i Overleaf/LaTeX
+
+### Hvorfor Vælge CiteDrive?
+
+**CiteDrive** er et robust citation- og referencehåndteringsværktøj, der fungerer problemfrit med Overleaf. Her er hvorfor du bør overveje at bruge CiteDrive:
+
+- **Problemfri Integration**: Arbejder glat sammen med Overleaf og populære referencesystemer som BibTeX, Natbib og BibLaTeX.
+- **Øget Effektivitet**: Automatiserer citationformattering og håndterer referencer med lethed.
+- **Brugervenlig**: Tilbyder en intuitiv grænseflade til organisering og citation af referencer.
+- **Web-baseret og Kollektivt**: Få adgang til og administrer dine citationer fra hvor som helst med realtids samarbejdsfunktioner.
+[Læs mere om CiteDrive’s funktioner og fordele](https://www.citedrive.com).
+
+### BibTeX
+
+BibTeX er et vidt anvendt referencehåndteringssystem i LaTeX. For at bruge BibTeX i Overleaf:
+
+1. **Opret en Bibliografifil**: Opret en fil ved navn `references.bib` i dit Overleaf-projekt.
+2. **Tilføj Referencer**: Inkluder referencer i dette format:
+
+   ```bibtex
+   @article{AuthorYear,
+       author = {Author, First and Author, Second},
+       title = {Title of the Article},
+       journal = {Journal Name},
+       volume = {Volume Number},
+       number = {Issue Number},
+       pages = {Page Numbers},
+       year = {Year Published},
+       publisher = {Publisher Name}
+   }
+   ```
+
+3. **Citer Referencer**: I dit LaTeX-dokument, tilføj:
+
+   ```latex
+   \bibliography{references}
+   \bibliographystyle{plain}
+   ```
+
+   Brug `\cite{AuthorYear}` for at citere en reference.
+
+4. **Strømlin med CiteDrive**: Automatiser og administrer dine BibTeX-referencer mere effektivt med CiteDrive.
+
+### Natbib
+
+Natbib tilbyder større fleksibilitet til citationformattering. For at bruge Natbib i Overleaf:
+
+1. **Tilføj Kommandoer**: Inkluder i præamblen:
+
+   ```latex
+   \usepackage{natbib}
+   \bibliographystyle{plainnat}
+   ```
+
+2. **Citer Referencer**: Brug `\citep{AuthorYear}` for parentetiske citationer eller `\citet{AuthorYear}` for tekstuelle citationer.
+
+3. **Bibliografi**: Tilføj:
+
+   ```latex
+   \bibliography{references}
+   ```
+
+4. **Forbedr med CiteDrive**: Forenkle citationhåndtering og formatering med CiteDrive.
+
+### BibLaTeX
+
+BibLaTeX tilbyder avancerede citationsegenskaber. For at bruge BibLaTeX i Overleaf:
+
+1. **Tilføj Kommandoer**: Inkluder i præamblen:
+
+   ```latex
+   \usepackage[style=authoryear,backend=bibtex]{biblatex}
+   \bibliography{references}
+   ```
+
+2. **Citer Referencer**: Brug `\parencite{AuthorYear}` for parentetiske citationer eller `\textcite{Author}` for in-text citationer.
+
+3. **Optimer med CiteDrive**: Nyd forbedret kontrol og fleksibilitet med CiteDrive’s support for BibLaTeX.
+
+## LaTeX Grundlæggende
+
+For dem, der er nye til LaTeX, her er en kort oversigt:
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % Erstat "references.bib" med din bibliografifil
+
+\title{Mit Første LaTeX Dokument}
+\author{Dit Navn}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduktion}
+Dette er et eksempel på dokument, der demonstrerer grundlæggende LaTeX.
+
+\section{Formatering}
+Du kan formatere tekst i \textbf{fed}, \textit{kursiv}, \underline{understreget}, eller \texttt{typewriter} skrifttype.
+
+\section{Lister}
+Her er et eksempel på en punktliste:
+\begin{itemize}
+  \item Første punkt
+  \item Andet punkt
+  \item Tredje punkt
+\end{itemize}
+
+\section{Matematik}
+LaTeX er fantastisk til opsætning af matematiske formler. Her er et eksempel på en ligning:
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{Figurer og Tabeller}
+Du kan inkludere figurer og tabeller i dit dokument. Her er et eksempel på en figur:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{Et eksempel på en figur}
+  \label{fig:example}
+\end{figure}
+
+Og her er et eksempel på en tabel:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Vare} & \textbf{Mængde} \\
+    \hline
+    Æble & 3 \\
+    Appelsin & 5 \\
+    \hline
+  \end{tabular}
+  \caption{En eksempel tabel}
+  \label{tab:example}
+\end{table}
+
+\section{Referencer}
+Du kan referere til mærkede sektioner, ligninger, figurer og tabeller. For eksempel, se Figur~\ref{fig:example} og Tabel~\ref{tab:example}.
+
+\section{Citationer og Bibliografi}
+Citer referencer ved hjælp af \cite{author2022}. Her er et eksempel på en citation.
+
+\printbibliography
+
+\end{document}
+```

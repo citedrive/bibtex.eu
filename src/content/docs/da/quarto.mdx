@@ -1,0 +1,65 @@
+---
+title: "Referencehåndtering med BibTeX, når du bruger Quarto - En kort guide"
+description: "Denne hurtige vejledning viser dig, hvordan du håndterer dine referencer med BibTeX. BibTeX er et referencehåndteringsværktøj, der giver dig mulighed for at opbevare og organisere dine referencer i et simpelt, brugervenligt format."
+sidebar:
+  label: Brug af Quarto (RStudio/Posit) (Hurtig start)
+  sidebar_position: 5
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Quarto er et fremragende værktøj til at producere reproducerbare rapporter, artikler, præsentationer og meget mere. En af de funktioner, der adskiller Quarto, er dens evne til at integrere med andre værktøjer og software. BibTeX, et referencehåndteringssystem til LaTeX-dokumenter, er et sådant værktøj. BibTeX gør det nemt at citere kilder og oprette en bibliografi i dit dokument.
+
+<CiteDrive />
+
+## Trin 1: Opret en .bib-fil og tilføj nogle poster
+
+Som i den tidligere sektion starter vi med at oprette en .bib-fil kaldet 'bibliography.bib', som derefter fyldes med BibTeX-poster. BibTeX-poster bygges i følgende format og indeholder nok information til citation og bibliografiinklusion for hver litteraturkilde (bog, artikel osv.).
+
+Vi bruger eksemplet fra den tidligere sektion og citerer bogen "Den gamle mand og havet" af Ernest Hemingway. Resultatet er som følger:
+
+```latex
+@book{Hemingway1952,
+  title={Den gamle mand og havet},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Vi gennemgår igen denne posts "anatomy," og fokuserer på tre komponenter for at forstå, hvordan hver BibTeX-post er defineret:
+
+* **Entry-type**: Med `@book` definerer vi typen i henhold til schemaet `@type` for referencen. Mulige typer er `@article` for videnskabelige artikler og andre. BibTeX specificerer ofte, hvilke felter der er valgfrie og hvilke der er obligatoriske, for korrekt angivelse i litteraturen.
+* **Entry fields**: I vores `@book` eksempel er disse `title`, `author`, `year` og `publisher`. (Se [felter](./fields))
+* **Citation-key**: I vores eksempel er det `Hemingway1952` og bruges til at angive en tekstcitat i LaTeX, dvs. at referere til kilden. I Quarto gør vi dette med `[@Hemingway1952]`. Citation-nøglen kan være en hvilken som helst streng - ofte en kombination af forfatter, år og et ord fra titlen.
+
+## Trin 2: Opret et Quarto-dokument og forbind det
+
+Det er meget enkelt at integrere BibTeX med Quarto. Angiv blot bib-filen med `bibliography: bibliography.bib` i YAML og citationen med `[@Hemingway1952]` på det sted, hvor du ønsker, at tekstcitaten skal vises.
+
+```md
+---
+title: "BibTeX-referencer i Quarto"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## BibTeX-referencer i Quarto
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+
+
+```
+
+## Referencehåndteringsværktøjer
+
+Manuel formatering af BibTeX-filer kan være tidskrævende, hvorfor det generelt anbefales at bruge et referencehåndteringsværktøj. Her er nogle, der er ideelle til dette:
+
+* [CiteDrive](https://www.citedrive.com/) er et bibtex-drevet, kollaborativt og cloud-baseret værktøj til at administrere projektreferencer og -teams. Det tilbyder eksport med ét klik til Overleaf ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) samt Quarto ([*Cf. Medium post: Bibliography Management in Quarto with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), mens det holder citationer synkroniseret.
+* Zotero er et gratis, open-source litteraturhåndteringsværktøj, der administrerer bibliografiske data og relaterede forskningsmaterialer (såsom PDF-filer). Den bedste ydeevne for BibTeX i Zotero opnås med **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** af retorque.
+* Den gratis, open-source software JabRef er en BibTeX-understøttet referencehåndterer, der kører på Windows, Mac og Linux. Den er baseret på Java og vedligeholdes af JabRef e.V.

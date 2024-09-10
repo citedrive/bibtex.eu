@@ -1,0 +1,26 @@
+---
+title: "Hvordan citerer man et videospil i BibTeX?"
+tags: [citedrive, bibtex, doi, spil]
+date: 2022-12-18
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Her er et eksempel på, hvordan du kan citere et spil i BibTeX:
+
+```bibtex
+@misc{gameTitle,
+  title = {Spil Titel},
+  publisher = {Udgiver},
+  year = {År},
+  url = {URL til spillet},
+}
+```
+
+<CiteDrive />
+
+I dette eksempel bruges `@misc`-posttypen for at angive, at den citerede genstand er en blandet type arbejde, som et spil. Feltet `title` specificerer titlen på spillet, feltet `publisher` specificerer navnet på udgiveren, feltet `year` angiver året, hvori spillet blev udgivet, og feltet `url` angiver en URL, hvor spillet kan tilgås.
+
+Du kan derefter bruge kommandoen `\cite{game_title}` for at indsætte en citation af spillet i dit dokument. Det specifikke format for citationen afhænger af den citationstil, du bruger.
+
+Det er vigtigt at bemærke, at ovenstående eksempel kun er en måde at citere et spil i BibTeX på, og der kan være andre tilgange afhængigt af de specifikke krav til dit projekt. Hvis du er usikker på, hvordan du korrekt citerer et spil i BibTeX, kan du overveje at konsultere en stilguide eller søge vejledning fra din vejleder eller redaktør.

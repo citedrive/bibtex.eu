@@ -1,0 +1,72 @@
+---
+title: "BibTeX FAQ"
+---
+
+**Q1: Hvad er BibTeX?** 
+A1: BibTeX er et referencehåndteringsværktøj, der bruges sammen med LaTeX til at formatere og administrere bibliografier og citationer i dokumenter. Det gør det muligt for brugere at gemme referencedetaljer i separate BibTeX-filer, som kan linkes til LaTeX-dokumenter og sikrer ensartet formatering af citationer og referencer.
+
+**Q2: Hvordan citerer jeg en hjemmeside med BibTeX?** 
+A2: For at citere en hjemmeside i BibTeX anvendes den ofte `@misc` indtastningstype. Her er et eksempel:
+
+```bibtex
+@misc{website2023,
+    author    = "John Doe",
+    title     = "Titel på Websiden",
+    year      = "2023",
+    url       = "http://www.example.com",
+    note      = "Adgangsdato: 2023-10-04"
+}
+```
+
+Erstat pladsholderne med de relevante oplysninger.
+
+**Q3: Hvordan citerer jeg en bog?** 
+A3:
+
+```bibtex
+@book{author2023,
+    author    = "Jane Smith",
+    title     = "Titel på Bogen",
+    publisher = "Forlag",
+    year      = "2023",
+    address   = "Udgivelsesby",
+    edition   = "3. udgave"
+}
+```
+
+**Q4: Hvordan citerer jeg en tidsskriftartikel?** 
+A4:
+
+```bibtex
+@article{author2023,
+    author    = "Jane Smith",
+    title     = "Titel på Artiklen",
+    journal   = "Navn på Tidsskrift",
+    year      = "2023",
+    volume    = "4",
+    number    = "2",
+    pages     = "100-105"
+}
+```
+
+**Q5: Hvordan integrerer jeg mine BibTeX-referencer i mit LaTeX-dokument?** 
+A5: I dit LaTeX-dokument:
+
+1. Brug `\bibliography{filename}` kommandoen, hvor `filename` er navnet på din BibTeX-fil uden `.bib`-udvidelsen, på det sted, hvor du ønsker, at din bibliografi skal vises.
+2. Brug `\cite{label}` i dokumentet, hvor du vil citere referencen.
+3. Kompiler dit LaTeX-dokument ved at køre `latex`, derefter `bibtex`, og kompiler igen med `latex` to gange.
+
+**Q6: Hvorfor får jeg et `?` i stedet for et citationsnummer i mit dokument?** 
+A6: Dette sker normalt, hvis der er problemer med kompilationsrækkefølgen eller hvis der er en fejl i BibTeX-indgangen. Sørg for, at du kompilerer i den rigtige rækkefølge (LaTeX, BibTeX, LaTeX, LaTeX) og tjek dine BibTeX-indgange for fejl.
+
+**Q7: Hvordan angiver jeg stilen på min bibliografi?** 
+A7: Brug `\bibliographystyle{stylename}` kommandoen i dit LaTeX-dokument. For eksempel vil `\bibliographystyle{plain}` bruge plain-stilen. Der er mange foruddefinerede stilarter (som `plain`, `alpha`, `abbrv` osv.), og du kan også finde brugerdefinerede stilarter online.
+
+**Q8: Kan jeg have flere BibTeX-filer til et enkelt LaTeX-dokument?** 
+A8: Ja, du kan. I `\bibliography{}` kommandoen, liste filnavne adskilt af kommaer, uden mellemrum og uden `.bib`-udvidelsen. For eksempel, `\bibliography{file1,file2}`.
+
+**Q9: Hvordan håndterer jeg specialtegn i BibTeX?** 
+A9: BibTeX er følsom over for specialtegn som `#`, `$`, `%`, `&`, `_`, `{` og `}`. I BibTeX, indpak dem i krøllede parenteser eller brug en skråstreg (`\`) før tegnet.
+
+**Q10: Er der værktøjer til at administrere og generere BibTeX-indgange?** 
+A10: Ja, der er mange værktøjer tilgængelige, både online og offline, til at hjælpe med at administrere BibTeX-databaser og generere indgange, såsom CiteDrive.

@@ -1,0 +1,43 @@
+---
+title: "Hvordan opretter jeg en .BIB-fil til at administrere mine BibTeX-referencer?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Hvis du leder efter en måde at administrere dine `BibTeX`-referencer på, undrer du dig måske over, hvordan du opretter en `.BIB-fil`. I denne artikel viser vi dig, hvordan du gør det! Vi giver også nogle tips til, hvordan du bruger ".BIB"-filer effektivt.
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) er et webbaseret kollaborativt reference management værktøj bygget på BibTeX, som automatisk synkroniseres med publiceringssystemer som [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) og [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) og håndterer formateringen af din bib-fil for dig.
+:::
+
+<CiteDrive />
+
+## Oprettelse af en bib-fil manuelt
+
+At oprette en `.BIB-fil` er faktisk ganske enkelt. Alt du behøver at gøre er at oprette en tekstfil med `.bib`-udvidelsen. Du kan derefter tilføje dine BibTeX-referencer til denne fil, én pr. linje. For eksempel:
+
+```latex
+@article{smith201X,
+	title        = {An interesting article},
+	author       = {John Smith},
+	year         = {201X},
+	journal      = {Journal of Interesting Articles}
+}
+```
+
+Når du har oprettet din `.BIB-fil`, kan du bruge den i dine LaTeX-dokumenter ved at specificere `\bibliography{filename}` kommandoen. For eksempel:
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{filename}
+
+\end{document}
+```
+
+Det er alt, hvad der er til det! At oprette en `.BIB-fil` er en simpel måde at administrere dine BibTeX-referencer på. Sørg for at tjekke vores andre artikler om BibTeX for flere tips og tricks!

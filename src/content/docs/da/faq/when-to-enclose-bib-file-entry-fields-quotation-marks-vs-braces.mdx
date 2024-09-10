@@ -1,0 +1,36 @@
+---
+title: "Hvornår skal du bruge anførselstegn vs. krøllede parenteser til .bib filindgange?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Har du nogensinde undret dig over, hvornår du skal indkapsle dine .bib filindgange med anførselstegn, og hvornår du skal bruge krøllede parenteser? Betydning? Svaret er: det betyder ikke noget.
+Nogle mennesker foretrækker at bruge `""` af æstetiske grunde, mens andre foretrækker at bruge `{}`, argumenterende at det er at foretrække, hvis du skal bruge et `"` tegn inden i et felt.
+Bemærk, at dette er de eneste acceptable måder at indkapsle felter på.
+
+<CiteDrive />
+
+## Eksempler
+
+### Indkapsling af felter med `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Use the date of access)]}
+}
+```
+
+### Indkapsling af felter med `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive brings reference management to Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Der er ikke noget rigtigt eller forkert svar, så længe oplysningerne inden for feltet er korrekt indkapslet. Så hvorfor ikke eksperimentere og se, hvilken metode der fungerer bedst for dig?
