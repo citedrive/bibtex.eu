@@ -1,22 +1,22 @@
 ---
-title: "BibTeX field type: publisher"
+title: "BibTeX-felt type: publisher"
 sidebar:
-  label: publisher
+  label: forlægger (publisher)
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `publisher` field is used in various BibTeX entries such as `@book`, `@inbook`, or `@incollection` to specify the name of the publisher that published the referred work. Including the publisher in your citation helps to provide a comprehensive and precise reference, which can aid readers in locating the original source.
+`publisher`-feltet bruges i forskellige BibTeX-poster såsom `@book`, `@inbook` eller `@incollection` til at specificere navnet på den forlægger, der har udgivet det refererede værk. Inkludering af forlæggeren i din citation hjælper med at give en omfattende og præcis reference, som kan hjælpe læsere med at finde den originale kilde.
 
 <CiteDrive />
 
-When including a publisher in your BibTeX entry, be sure to use the full and official name of the publisher. This will ensure the citation is both professional and credible. Additionally, it helps to prevent confusion with other publishers that may have similar names.
+Når du inkluderer en forlægger i din BibTeX-post, skal du sørge for at bruge det fulde og officielle navn på forlæggeren. Dette vil sikre, at citationen er både professionel og troværdig. Derudover hjælper det med at forhindre forvirring med andre forlæggere, der måtte have lignende navne.
 
-## Examples
+## Eksempler
 
-Here are a few examples demonstrating how to properly specify a publisher in different BibTeX entries:
+Her er nogle eksempler på, hvordan du korrekt angiver en forlægger i forskellige BibTeX-poster:
 
-### Book
+### Bog
 
 ```bibtex
 @book{key1,
@@ -25,25 +25,24 @@ Here are a few examples demonstrating how to properly specify a publisher in dif
   year = {2023},
   publisher = {Cambridge University Press},
 }
-
 ```
 
-### Inbook
+### I-bog
 
 ```bibtex
 @inbook{key2,
   title = {Chapter on Quantum Mechanics},
   author = {Jane Doe},
-  year = {2023},
+ ```mdx
+2023},
   publisher = {Oxford University Press},
   pages = {45--78},
   editor = {Sarah Smith},
   booktitle = {Modern Physics},
 }
-
 ```
 
-### Incollection
+### I-samling
 
 ```bibtex
 @incollection{key3,
@@ -54,7 +53,6 @@ Here are a few examples demonstrating how to properly specify a publisher in dif
   booktitle = {Sustainable Development: Theories and Practices},
   editor = {Mark Lee},
 }
-
 ```
 
-Note that the `publisher` field is usually accompanied by other important fields such as `title`, `author`, `year`, etc., to provide a complete citation. It's also worth noting that depending on the citation style being used, the format and placement of the publisher field may vary, so always be sure to follow the guidelines of the specific style you are adhering to.
+Bemærk, at `publisher`-feltet normalt ledsages af andre vigtige felter som `title`, `author`, `year` osv. for at give en fuldstændig citation. Det er også værd at bemærke, at afhængigt af den anvendte citationsstil kan formatet og placeringen af forlæggerfeltet variere, så sørg altid for at følge retningslinjerne for den specifikke stil, du overholder.

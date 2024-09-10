@@ -6,41 +6,31 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `pages` field in a BibTeX entry denotes the specific pages that are being referred to within a larger work, such as a book or journal. This field can be essential when citing a chapter of a book or an article in a journal, helping to point readers directly to the pertinent section of the work.
+`pages`-feltet i en BibTeX-post angiver de specifikke sider, der henvises til inden for et større værk, såsom en bog eller et tidsskrift. Dette felt kan være væsentligt, når du citerer et kapitel i en bog eller en artikel i et tidsskrift, da det hjælper med at pege læseren direkte mod den relevante sektion af værket.
 
 <CiteDrive />
 
-## Formatting Guidelines
+## Formateringsvejledning
 
-You can specify a single page, a range of pages, or even non-consecutive pages. The recommended way to separate page numbers is either with commas or double dashes. Here are some guidelines to format the `pages` field properly:
+Du kan angive en enkelt side, et rækkevidde af sider eller endda ikke-sammenhængende sider. Den anbefalede måde at adskille sidetal er enten med kommaer eller dobbelte bindestreger. Her er nogle retningslinjer for korrekt formatering af `pages`-feltet:
 
-1. **Single Page:** If referring to a single page, you simply write the page number.
+1. **Enkel Side:** Hvis du henviser til en enkelt side, skriver du blot sidetallet.
     
-2. **Range of Pages:** For a range of pages, you should use double dashes (--). This indicates a continuous range from the first number to the second.
+2. **Rækkevidde af Sider:** For en rækkevidde af sider skal du bruge dobbelte bindestreger (--). Dette angiver et kontinuerligt interval fra det første nummer til det andet.
     
-3. **Non-consecutive Pages:** If referring to non-consecutive pages, separate the different page numbers or ranges with a comma.
+3. **Ikke-sammenhængende Sider:** Hvis du henviser til ikke-sammenhængende sider, skal du adskille de forskellige sidetal eller rækkevidder med et komma.
     
 
-## Examples
+## Eksempler
 
-Here are some examples demonstrating how to use the `pages` field:
+Her er nogle eksempler, der viser, hvordan du bruger `pages`-feltet:
 
 ```bibtex
 @book{key,
   title = {Title of the Book},
   author = {Author Name},
   year = {2023},
-  pages = {33--44},   % Range of pages from 33 to 44
-}
-```
-
-
-```bibtex
-@book{key,
-  title = {Title of the Book},
-  author = {Author Name},
-  year = {2023},
-  pages = {22, 33--44},   % Page 22 and a range from 33 to 44
+  pages = {33--44},   % Rækkevidde af sider fra 33 til 44
 }
 ```
 
@@ -49,10 +39,19 @@ Here are some examples demonstrating how to use the `pages` field:
   title = {Title of the Book},
   author = {Author Name},
   year = {2023},
-  pages = {17},    % Single page
+  pages = {22, 33--44},   % Side 22 og en rækkevidde fra 33 til 44
 }
 ```
 
-## Note
+```bibtex
+@book{key,
+  title = {Title of the Book},
+  author = {Author Name},
+  year = {2023},
+  pages = {17},    % Enkel side
+}
+```
 
-It is important to note that the `pages` field is not limited to `@book` entries, and can also be used in other entry types like `@article` or `@inbook` to denote the relevant pages in those contexts. Using the `pages` field correctly helps to create more accurate and helpful citations.
+## Bemærk
+
+Det er vigtigt at bemærke, at `pages`-feltet ikke er begrænset til `@book`-poster, og det kan også bruges i andre entry-typer som `@article` eller `@inbook` for at angive de relevante sider i disse sammenhænge. At bruge `pages`-feltet korrekt hjælper med at skabe mere nøjagtige og nyttige citater.

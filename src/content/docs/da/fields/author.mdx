@@ -6,21 +6,21 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In scholarly writing, accurately acknowledging the contributors to a work is fundamental. The `author` field in BibTeX allows you to specify all contributors to the work you are citing. It is imperative to ensure a consistent and precise arrangement of author names to avoid any misrepresentation or inaccurate citation output. Here, we explore various notations and conventions to specify author names in BibTeX effectively.
+I akademisk skrivning er det grundlæggende at anerkende bidragyderne til et værk korrekt. `author`-feltet i BibTeX giver dig mulighed for at specificere alle bidragydere til det værk, du citerer. Det er vigtigt at sikre en konsekvent og præcis anordning af forfatternes navne for at undgå misrepræsentation eller unøjagtige citationer. Her udforsker vi forskellige notationer og konventioner for effektivt at specificere forfatternes navne i BibTeX.
 
 <CiteDrive />
 
-## Detailed Overview
+## Detaljeret Oversigt
 
-When specifying authors in BibTeX, you have multiple formats to choose from. These formats allow for the inclusion of first names, last names, and even suffixes, facilitating a detailed representation of each author's identity. Let's delve into the different notations that can be employed to accurately present author information.
+Når du specificerer forfattere i BibTeX, har du flere formater at vælge imellem. Disse formater gør det muligt at inkludere fornavne, efternavne og endda suffikser, hvilket letter en detaljeret repræsentation af hver forfatters identitet. Lad os dykke ned i de forskellige notationer, der kan anvendes for at præcist præsentere forfatterinformation.
 
-### Notation Formats
+### Notationsformater
 
 #### Notation: `{Firstname Lastname}`
 
-The basic and straightforward way to note down an author is to use their first name followed by their last name. This is a widely accepted format but might not offer the control needed to distinguish clearly between first and last names, especially in cases of compound names.
+Den grundlæggende og enkle måde at notere en forfatter på er at bruge deres fornavn efterfulgt af deres efternavn. Dette er et bredt accepteret format, men det giver muligvis ikke den kontrol, der er nødvendig for at skelne tydeligt mellem for- og efternavne, især i tilfælde af sammensatte navne.
 
-**Example**:
+**Eksempel**:
 
 ```bibtex
 @article{Doe2023,
@@ -33,9 +33,9 @@ The basic and straightforward way to note down an author is to use their first n
 
 #### Notation: `{Lastname, Firstname}`
 
-A more refined approach involves using the last name followed by the first name, separated by a comma. This format is recommended as it provides a clearer distinction between the first and last names, avoiding any potential confusion.
+En mere raffineret tilgang involverer brug af efternavnet efterfulgt af fornavnet, adskilt med et komma. Dette format anbefales, da det giver en klarere skelnen mellem for- og efternavne og undgår eventuel forvirring.
 
-**Example**:
+**Eksempel**:
 
 ```bibtex
 @article{Doe2023,
@@ -48,9 +48,9 @@ A more refined approach involves using the last name followed by the first name,
 
 #### Notation: `{Lastname, Suffix, Firstname}`
 
-In cases where there is a need to include a suffix (like Jr., Sr., III, etc.), this format comes in handy. It is important to maintain the order strictly to ensure accurate representation of the author's name.
+I tilfælde hvor der er behov for at inkludere et suffix (som Jr., Sr., III, osv.), er dette format nyttigt. Det er vigtigt at opretholde rækkefølgen strengt for at sikre en nøjagtig repræsentation af forfatterens navn.
 
-**Example**:
+**Eksempel**:
 
 ```bibtex
 @article{Doe2023,
@@ -61,11 +61,11 @@ In cases where there is a need to include a suffix (like Jr., Sr., III, etc.), t
 }
 ```
 
-### Including Multiple Authors
+### Inkludering af Flere Forfattere
 
-When a work has multiple contributors, BibTeX accommodates this through the use of the `AND` separator. This separator is used to list multiple authors distinctly, adhering to the notation formats discussed above.
+Når et værk har flere bidragydere, tillader BibTeX dette gennem brugen af `AND`-separatoren. Denne separator anvendes til at liste flere forfattere adskilt, i overensstemmelse med de diskuterede notationsformater.
 
-**Example**:
+**Eksempel**:
 
 ```bibtex
 @article{Doe2023,
@@ -76,8 +76,8 @@ When a work has multiple contributors, BibTeX accommodates this through the use 
 }
 ```
 
-## Conclusion
+## Konklusion
 
-Accurately noting author names in BibTeX is essential in maintaining the integrity of scholarly writing. It ensures that readers can correctly identify and attribute works to the respective authors. Being familiar with the various notations and guidelines is crucial in crafting a bibliography that is both accurate and professional.
+Korrekt notering af forfatternavne i BibTeX er afgørende for at opretholde integriteten i akademisk skrivning. Det sikrer, at læsere korrekt kan identificere og tilskrive værker til de respektive forfattere. At være bekendt med de forskellige notationer og retningslinjer er vigtigt for at skabe en bibliografi, der er både præcis og professionel.
 
-Remember, consistency is key. Once you choose a notation format, it should be consistently applied across all entries to maintain a cohesive and professional presentation.
+Husk, konsistens er nøglen. Når du vælger et notationsformat, bør det anvendes konsekvent på tværs af alle poster for at opretholde en sammenhængende og professionel præsentation.

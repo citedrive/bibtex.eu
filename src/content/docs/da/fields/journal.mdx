@@ -6,22 +6,21 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `journal` field is utilized to specify the name of the journal where the article was published. This field is critical in differentiating articles from various publications and providing the correct context for the referenced work.
+`journal`-feltet bruges til at angive navnet på det tidsskrift, hvor artiklen blev udgivet. Dette felt er afgørende for at differentiere artikler fra forskellige publikationer og give den rette kontekst for det refererede arbejde.
 
 <CiteDrive/>
 
-Here is a template to demonstrate how you can use the `journal` field in a `@article` entry:
+Her er en skabelon, der viser, hvordan du kan bruge `journal`-feltet i en `@article`-post:
 
 ```bibtex
 @article{ ... ,
  journal = {Name of the Journal},
 }
-
 ```
 
-In the above format, replace "Name of the Journal" with the actual name of the journal where the article was published. It is important to enter this information accurately to ensure correct citations.
+I det ovenstående format, skal du erstatte "Name of the Journal" med det faktiske navn på tidsskriftet, hvor artiklen blev udgivet. Det er vigtigt at indtaste denne information korrekt for at sikre korrekte citater.
 
-For instance, the following is an example showcasing a correct use of the `journal` field:
+For eksempel er følgende et eksempel, der viser korrekt brug af `journal`-feltet:
 
 ```bibtex
 @article{smith2023effects,
@@ -31,4 +30,3 @@ For instance, the following is an example showcasing a correct use of the `journ
  year = {2023},
 }
 ```
-

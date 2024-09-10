@@ -6,13 +6,13 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `howpublished` field is utilized in the `@misc` entry type, usually to address those source types that are not directly supported by BibTeX. This field comes in handy, especially when you are citing web pages and you want to provide a URL.
+`howpublished`-feltet anvendes i `@misc`-posttypen, typisk til at håndtere kildetyper, som ikke er direkte understøttet af BibTeX. Dette felt er især nyttigt, når du citerer websteder og ønsker at angive en URL.
 
 <CiteDrive/>
 
-In your BibTeX entries, you can utilize the `howpublished` field to detail the publication medium or source of the reference. This field is highly useful when you need to incorporate non-traditional sources into your references, such as web pages or online reports.
+I dine BibTeX-poster kan du bruge `howpublished`-feltet til at beskrive publikationsmediet eller kilden til referencen. Dette felt er meget nyttigt, når du skal inkludere ikke-traditionelle kilder i dine referencer, som f.eks. websteder eller online rapporter.
 
-Here is an example demonstrating how to use the `howpublished` field to specify a URL when citing a web page:
+Her er et eksempel, der viser, hvordan du bruger `howpublished`-feltet til at specificere en URL, når du citerer en webside:
 
 ```bibtex
 @misc{BibTeXeu,
@@ -22,4 +22,4 @@ Here is an example demonstrating how to use the `howpublished` field to specify 
 }
 ```
 
-In this example, the `howpublished` field is used to provide the URL of the web page being cited, offering readers a direct link to the source. Remember to include a `note` field to specify the access date, which is a common requirement when citing online sources.
+I dette eksempel bruges `howpublished`-feltet til at angive URL'en til den webside, der citeres, hvilket giver læserne et direkte link til kilden. Husk at inkludere et `note`-felt for at specificere adgangsdatum, hvilket er et almindeligt krav ved citat af online kilder.

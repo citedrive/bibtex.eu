@@ -1,45 +1,45 @@
 ---
-title: "BibTeX field type: school"
+title: "BibTeX-felt type: skole"
 sidebar:
-  label: school
+  label: skole
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In BibTeX, the `school` field is utilized predominantly within `@phdthesis` or `@mastersthesis` entries. This field is used to indicate the educational institution where the thesis or dissertation was written. It is a mandatory field for both entry types, helping to provide detailed information about the origin of the scholarly work, which can be important for readers who may want to seek out more information or reference the work in their own research.
+I BibTeX anvendes `school`-feltet primært i `@phdthesis`- eller `@mastersthesis`-poster. Dette felt bruges til at angive den uddannelsesinstitution, hvor afhandlingen eller speciale blev skrevet. Det er et obligatorisk felt for begge posttyper og hjælper med at give detaljerede oplysninger om oprindelsen af det videnskabelige arbejde, hvilket kan være vigtigt for læsere, der ønsker at finde yderligere oplysninger eller henvise til arbejdet i deres egen forskning.
 
 <CiteDrive />
 
-## Formatting Guidelines
+## Formateringsretningslinjer
 
-When entering the name of the school, it's advisable to use the full and official name of the institution to maintain a formal and standardized format in your references. Avoid using abbreviations unless they are widely recognized and accepted.
+Når du indtaster navnet på skolen, anbefales det at bruge det fulde og officielle navn på institutionen for at opretholde et formelt og standardiseret format i dine referencer. Undgå at bruge forkortelser, medmindre de er bredt anerkendte og accepterede.
 
-## Examples
+## Eksempler
 
-Here are examples of how to use the `school` field for both `phdthesis` and `mastersthesis` entries:
+Her er eksempler på, hvordan du bruger `school`-feltet for både `phdthesis` og `mastersthesis`-poster:
 
-### PhD Thesis
+### PhD-afhandling
 
 ```bibtex
 @phdthesis{doe2023,
   author = {John Doe},
-  title = {Explorations in Quantum Computing},
+  title = {Udforskninger i Kvantecomputing},
   year = {2023},
   school = {Massachusetts Institute of Technology},
 }
 ```
 
-### Masters Thesis
+### Masters Speciale
 
 ```bibtex
 @mastersthesis{smith2023,
   author = {Sarah Smith},
-  title = {A Comprehensive Study on Environmental Sustainability},
+  title = {En Omfattende Studie af Miljømæssig Bæredygtighed},
   year = {2023},
   school = {University of California, Berkeley},
 }
 ```
 
-## Note
+## Bemærkning
 
-In your example, you used the `series` field instead of the `school` field for the `mastersthesis` entry. However, the `school` field should be used for specifying the institution in both `phdthesis` and `mastersthesis` entries, as shown in the examples above.
+I dit eksempel brugte du `series`-feltet i stedet for `school`-feltet for `mastersthesis`-posten. `school`-feltet bør dog bruges til at angive institutionen i både `phdthesis`- og `mastersthesis`-poster, som vist i eksemplerne ovenfor.

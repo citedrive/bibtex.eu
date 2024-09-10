@@ -6,15 +6,15 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `organization` field in a BibTeX entry is used to specify the name of the organization responsible for publishing the document or hosting the event being cited. This could be a company, an institution, or a group that sponsored or organized a conference, workshop, manual, etc. Including the organization provides the reader with a clear context of the entity behind the document, which can be crucial for determining the reliability and authority of the source.
+`organization`-feltet i en BibTeX-post bruges til at angive navnet på den organisation, der er ansvarlig for at udgive dokumentet eller arrangere den hændelse, der citeres. Dette kan være en virksomhed, en institution eller en gruppe, der har sponsoreret eller organiseret en konference, workshop, manual osv. Inkluderingen af organisationen giver læseren en klar kontekst for enheden bag dokumentet, hvilket kan være afgørende for at bestemme kildens pålidelighed og autoritet.
 
 <CiteDrive />
 
-You will typically encounter this field in `@proceedings` and `@manual` entries, but it might appear in other types of entries as well, depending on the specific requirements of the bibliography style being used.
+Du vil typisk støde på dette felt i `@proceedings` og `@manual`-poster, men det kan også forekomme i andre typer poster afhængigt af de specifikke krav til den bibliografiske stil, der anvendes.
 
 ## Format
 
-The format for specifying the `organization` field is as follows:
+Formatet til angivelse af `organization`-feltet er som følger:
 
 ```bibtex
 @entry_type{citation_key,
@@ -22,16 +22,15 @@ The format for specifying the `organization` field is as follows:
   organization={Organization Name},
   ...
 }
-
 ```
 
-Here, "entry_type" refers to the type of BibTeX entry (such as `@proceedings` or `@manual`), "citation_key" is a unique identifier for the entry, and "Organization Name" is the name of the organization involved.
+Her refererer "entry_type" til typen af BibTeX-post (f.eks. `@proceedings` eller `@manual`), "citation_key" er en unik identifikator for posten, og "Organization Name" er navnet på den involverede organisation.
 
-## Examples
+## Eksempler
 
-Here are a couple of examples demonstrating how to use the `organization` field in different contexts:
+Her er et par eksempler, der viser, hvordan du bruger `organization`-feltet i forskellige sammenhænge:
 
-### Example 1: Conference Proceedings
+### Eksempel 1: Konference Proceedings
 
 ```bibtex
 @proceedings{ICML2023,
@@ -39,12 +38,11 @@ Here are a couple of examples demonstrating how to use the `organization` field 
   year = {2023},
   organization = {International Machine Learning Society},
 }
-
 ```
 
-In this example, the `organization` field specifies the entity responsible for organizing the conference whose proceedings are being cited.
+I dette eksempel specificerer `organization`-feltet enheden, der er ansvarlig for at organisere konferencen, hvis proceedings citeres.
 
-### Example 2: Manual
+### Eksempel 2: Manual
 
 ```bibtex
 @manual{UserGuide2022,
@@ -54,6 +52,6 @@ In this example, the `organization` field specifies the entity responsible for o
 }
 ```
 
-Here, the `organization` field is used to indicate the company that published the software manual.
+Her bruges `organization`-feltet til at angive virksomheden, der udgav softwaremanualen.
 
-Including the `organization` field in your BibTeX entries can help to provide a complete and detailed reference, facilitating more straightforward identification and retrieval of the source materials.
+Inkluderingen af `organization`-feltet i dine BibTeX-poster kan hjælpe med at give en komplet og detaljeret reference, der letter en lettere identifikation og hentning af kilde-materialerne.

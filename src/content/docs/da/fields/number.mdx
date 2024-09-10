@@ -6,15 +6,15 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In BibTeX, the `number` field is used to specify the issue number of a journal, the number of a technical report, or other identifiers that are part of a larger series. This field helps to pinpoint the exact issue or edition of a series where the referenced work can be found, providing more precise information for locating the material.
+I BibTeX bruges `number`-feltet til at angive nummeret på en journaludgave, nummeret på en teknisk rapport eller andre identifikatorer, der er en del af en større serie. Dette felt hjælper med at præcisere den præcise udgave eller nummer af en serie, hvor det refererede værk kan findes, hvilket giver mere præcise oplysninger til at lokalisere materialet.
 
 <CiteDrive />
 
-This field is commonly used in conjunction with the `volume` field, especially for journal articles and periodicals. For a technical report, the `number` field would typically contain the report number assigned by the institution or organization that published the report.
+Dette felt anvendes ofte sammen med `volume`-feltet, især for tidsskriftartikler og periodika. For en teknisk rapport vil `number`-feltet typisk indeholde rapportnummeret tildelt af den institution eller organisation, der har udgivet rapporten.
 
 ## Format
 
-The format for the `number` field is relatively straightforward. In the context of an article entry, it would appear as follows:
+Formatet for `number`-feltet er relativt ligetil. I konteksten af en artikelpost ser det således ud:
 
 ```bibtex
 @article{citation_key,
@@ -22,16 +22,15 @@ The format for the `number` field is relatively straightforward. In the context 
   number={issue_number},
   ...
 }
-
 ```
 
-Here, "citation_key" represents a unique identifier for the entry, and "issue_number" represents the number of the journal issue, technical report, or other publication.
+Her repræsenterer "citation_key" en unik identifikator for posten, og "issue_number" repræsenterer nummeret på journaludgaven, den tekniske rapport eller anden publikation.
 
-## Examples
+## Eksempler
 
-Below are some examples showcasing the application of the `number` field in different contexts:
+Nedenfor er nogle eksempler, der viser anvendelsen af `number`-feltet i forskellige sammenhænge:
 
-### Example 1: Journal Article
+### Eksempel 1: Tidsskriftartikel
 
 ```bibtex
 @article{doe2023study,
@@ -43,12 +42,11 @@ Below are some examples showcasing the application of the `number` field in diff
   number = {3},
   pages = {215-230},
 }
-
 ```
 
-In this example, the `number` field specifies the third issue of the 29th volume of the "Journal of Advanced Computing".
+I dette eksempel angiver `number`-feltet det tredje nummer af den 29. volumen af "Journal of Advanced Computing".
 
-### Example 2: Technical Report
+### Eksempel 2: Teknisk Rapport
 
 ```bibtex
 @techreport{smith2022analysis,
@@ -61,6 +59,6 @@ In this example, the `number` field specifies the third issue of the 29th volume
 }
 ```
 
-In this case, the `number` field is used to indicate the specific report number assigned by the "Energy Research Institute".
+I dette tilfælde bruges `number`-feltet til at angive det specifikke rapportnummer tildelt af "Energy Research Institute".
 
-Utilizing the `number` field accurately can facilitate the reader in finding the source material more easily and verifying the cited information. It's an essential detail in scholarly writing and research documentation.
+Korrekt anvendelse af `number`-feltet kan lette læseren i at finde kilde-materialet lettere og verificere den citerede information. Det er en væsentlig detalje i akademisk skrivning og forskningsdokumentation.

@@ -6,19 +6,19 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `doi` field is an integral part of modern referencing, allowing for a seamless and permanent method to locate digital objects such as journal articles, research reports, and data sets in an online environment. Here, we delve deeper into the functionality and significance of the `doi` field in BibTeX, as well as provide guidance on its correct usage.
+`doi`-feltet er en integreret del af moderne referencering, der giver en sømløs og permanent metode til at finde digitale objekter såsom tidsskriftsartikler, forskningsrapporter og datasæt online. Her dykker vi dybere ned i funktionaliteten og betydningen af `doi`-feltet i BibTeX og giver vejledning om korrekt brug.
 
 <CiteDrive />
 
-### Overview
+### Oversigt
 
-A Digital Object Identifier (DOI) is a unique alphanumeric string assigned to a digital object, facilitating a persistent link to its location on the internet. As a standardized method for identifying electronic resources, the DOI remains stable even if the URL of the item changes, ensuring the longevity of references.
+En Digital Object Identifier (DOI) er en unik alfanumerisk streng tildelt et digitalt objekt, der muliggør et vedvarende link til dets placering på internettet. Som en standardiseret metode til identifikation af elektroniske ressourcer forbliver DOI'en stabil, selvom URL'en til objektet ændrer sig, hvilket sikrer referencernes varighed.
 
-The `doi` field in BibTeX serves to record this identifier, allowing for precise and permanent citations. While it is predominantly found in the `article` entry type, it can also be used in other types such as `book`, `chapter`, `inproceedings`, or `conference` entries, albeit less frequently. Regardless of the entry type, the `doi` field is optional.
+`doi`-feltet i BibTeX bruges til at registrere denne identifikator, hvilket muliggør præcise og permanente citater. Selvom det primært findes i `article`-entry-typen, kan det også anvendes i andre typer som `book`, `chapter`, `inproceedings` eller `conference`, omend sjældnere. Uanset entry-typen er `doi`-feltet valgfrit.
 
-### Syntax and Structure
+### Syntax og Struktur
 
-To correctly incorporate a DOI into your BibTeX entry, adhere to the following format:
+For korrekt at inkludere en DOI i din BibTeX-post skal du følge dette format:
 
 ```bibtex
 @entrytype{citationkey,
@@ -27,11 +27,11 @@ To correctly incorporate a DOI into your BibTeX entry, adhere to the following f
   ...
 }
 ```
-The `doi` field encapsulates the full DOI URL, which typically starts with "[https://doi.org/](https://doi.org/)" followed by a unique identifier string.
+`doi`-feltet indeholder den fulde DOI-URL, som typisk starter med "[https://doi.org/](https://doi.org/)" efterfulgt af en unik identifikatorstreng.
 
-### Example
+### Eksempel
 
-Here's an exemplar BibTeX entry that includes a DOI:
+Her er et eksempel på en BibTeX-post, der inkluderer en DOI:
 
 ```bibtex
 @article{steinbeck2003chemistry,
@@ -47,17 +47,16 @@ Here's an exemplar BibTeX entry that includes a DOI:
 }
 ```
 
-In this example, the `doi` field houses the permanent URL that leads directly to the referenced article.
+I dette eksempel indeholder `doi`-feltet den permanente URL, der fører direkte til den citerede artikel.
 
-### Utilization Tips
+### Udnyttelsestips
 
-1. **Finding DOIs**: For scholarly articles, DOIs can often be found on the first page of the article or in the online database where the article is housed.
-2. **Cross-Referencing**: Utilize the `doi` field for cross-referencing in your paper, offering readers a direct route to the original source material.
-3. **Optional but Beneficial**: While the `doi` field is optional, including it enhances the reliability and traceability of your references.
+1. **Find DOIs**: For videnskabelige artikler kan DOIs ofte findes på første side af artiklen eller i den online database, hvor artiklen er opbevaret.
+2. **Krydsreferencering**: Brug `doi`-feltet til krydsreferencering i dit papir, hvilket giver læserne en direkte rute til det originale kilde materiale.
+3. **Valgfrit men Gavnligt**: Selvom `doi`-feltet er valgfrit, forbedrer inkluderingen dets pålidelighed og sporbarhed af dine referencer.
 
-### Conclusion
+### Konklusion
 
-The inclusion of the `doi` field in your BibTeX entries represents best practice in scholarly writing, offering a steadfast link to the digital objects you reference. By adopting the DOI system, you promote the accessibility and permanence of scientific knowledge, supporting the global research community in their scholarly endeavors.
+Inkluderingen af `doi`-feltet i dine BibTeX-poster repræsenterer en god praksis inden for akademisk skrivning, der tilbyder et fast link til de digitale objekter, du refererer til. Ved at anvende DOI-systemet fremmer du tilgængeligheden og varigheden af videnskabelig viden, hvilket understøtter det globale forskningssamfund i deres akademiske bestræbelser.
 
-As you build your bibliography, remember to capitalize on the capabilities of the `doi` field, fostering a richer, more reliable, and interconnected academic discourse.
-
+Når du opbygger din bibliografi, skal du huske at udnytte `doi`-feltets muligheder for at fremme en rigere, mere pålidelig og sammenkoblet akademisk diskurs.

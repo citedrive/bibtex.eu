@@ -6,15 +6,15 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `note` field in a BibTeX entry is utilized to convey additional information regarding the cited work that doesn't fit into other standardized fields. This could include supplementary remarks, explanations, or clarifications that are pertinent for the reader to understand the context or the significance of the work in question. The `note` field proves to be a versatile tool in BibTeX, allowing for the inclusion of various kinds of information that could enhance the detail and depth of the citation.
+`note`-feltet i en BibTeX-post bruges til at videregive yderligere information vedrørende det citerede værk, som ikke passer ind i andre standardfelter. Dette kan inkludere supplerende bemærkninger, forklaringer eller afklaringer, der er relevante for læseren for at forstå konteksten eller betydningen af det pågældende værk. `note`-feltet viser sig at være et alsidigt værktøj i BibTeX, som tillader inklusion af forskellige typer information, der kan forbedre detaljegraden og dybden af citationen.
 
 <CiteDrive />
 
-Utilizing the `note` field can often bring more depth to a reference by including additional context, remarks on the publication status, specific annotations, or any other relevant data that would benefit the reader. This might include links to supplementary materials, commentary on the work's influence or reception, or any other pertinent details.
+Anvendelse af `note`-feltet kan ofte tilføre mere dybde til en reference ved at inkludere yderligere kontekst, bemærkninger om udgivelsesstatus, specifikke annotationer eller andre relevante data, som ville være til gavn for læseren. Dette kan inkludere links til supplerende materialer, kommentarer om værkets indflydelse eller modtagelse, eller andre relevante detaljer.
 
 ## Format
 
-To employ the `note` field, you would include it in your BibTeX entry as shown in the format below:
+For at bruge `note`-feltet skal du inkludere det i din BibTeX-post som vist i formatet nedenfor:
 
 ```bibtex
 @entrytype{citationkey,
@@ -22,16 +22,15 @@ To employ the `note` field, you would include it in your BibTeX entry as shown i
   note={your note here},
   ...
 }
-
 ```
 
-In the above format, replace "entrytype" with the appropriate type of work (e.g., @book, @article) and "citationkey" with a unique identifier for the entry. Then, you can insert your additional information in the `note` field.
+I det ovenstående format, erstat "entrytype" med den passende type værk (f.eks. @book, @article) og "citationkey" med en unik identifikator for posten. Derefter kan du indsætte dine yderligere oplysninger i `note`-feltet.
 
-## Examples
+## Eksempler
 
-Here are a few practical examples showcasing how to use the `note` field in various entries:
+Her er et par praktiske eksempler, der viser, hvordan du bruger `note`-feltet i forskellige poster:
 
-### Example 1: Additional Information
+### Eksempel 1: Yderligere Information
 
 ```bibtex
 @book{smith2023innovations,
@@ -41,9 +40,9 @@ Here are a few practical examples showcasing how to use the `note` field in vari
   publisher = {Technology Press},
   note = {Includes bibliographical references and index},
 }
-
 ```
-### Example 2: Supplementary Material
+
+### Eksempel 2: Supplerende Materiale
 
 ```bibtex
 @article{johnson2023ai,
@@ -56,7 +55,6 @@ Here are a few practical examples showcasing how to use the `note` field in vari
   pages = {123-135},
   note = {Supplementary material available at: http://example.com/supplementary_material},
 }
-
 ```
 
-In these examples, the `note` field is used to indicate the inclusion of references and an index in a book and to provide a link to supplementary materials for an article, thereby offering the reader additional resources and information.
+I disse eksempler bruges `note`-feltet til at angive inkluderingen af referencer og et indeks i en bog og til at give et link til supplerende materialer for en artikel, hvilket dermed tilbyder læseren yderligere ressourcer og information.

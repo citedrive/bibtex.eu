@@ -1,34 +1,34 @@
 ---
-title: "BibTeX field type: series"
+title: "BibTeX felttype: series"
 sidebar:
   label: series
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `series` field in BibTeX is used to denote the series to which a book, report, or other publication belongs. Specifying the series can offer additional context for the reader, as it may relate to a broader thematic or scholarly discourse.
+Feltet `series` i BibTeX bruges til at angive den serie, som en bog, rapport eller anden publikation tilhører. Ved at specificere serien kan du give læseren yderligere kontekst, da det kan relatere til et bredere tematisk eller akademisk diskurs.
 
 <CiteDrive />
 
-This field is optional and can be employed in various entry types including, but not limited to `@book`, `@inbook`, `@incollection`, and `@inproceedings`. It is particularly useful when the cited work is part of an ongoing series or a larger corpus of works that share a common theme, author, or publisher.
+Dette felt er valgfrit og kan bruges i forskellige posttyper, herunder, men ikke begrænset til, `@book`, `@inbook`, `@incollection` og `@inproceedings`. Det er særligt nyttigt, når det citerede værk er en del af en igangværende serie eller et større korpus af værker, der deler et fælles tema, forfatter eller udgiver.
 
-When inputting data into the `series` field, it is recommended to use the full official title of the series. If the series has an ISSN, it might also be relevant to include this for more precise referencing.
+Når du indtaster data i feltet `series`, anbefales det at bruge seriens fulde officielle titel. Hvis serien har et ISSN, kan det også være relevant at inkludere dette for en mere præcis reference.
 
 ## Format
 
-The general format for including a series in your BibTeX entry is as follows:
+Det generelle format for at inkludere en serie i din BibTeX-post er som følger:
 
 ```bibtex
 @entrytype{key,
   ...
-  series = {Name of the Series},
+  series = {Navn på serien},
   ...
 }
 ```
 
-## Example
+## Eksempel
 
-Here is an example of how to use the `series` field in a `@book` entry:
+Her er et eksempel på, hvordan du bruger feltet `series` i en `@book`-post:
 
 ```bibtex
 @book{doe2023,
@@ -40,4 +40,4 @@ Here is an example of how to use the `series` field in a `@book` entry:
 }
 ```
 
-In this example, the book is part of the "Cambridge Advanced Series in Physics," which might encompass various titles covering advanced topics in the field of physics. Including the series helps to locate the work within a larger academic conversation and can provide readers with additional resources on the topic.
+I dette eksempel er bogen en del af "Cambridge Advanced Series in Physics", som kan omfatte forskellige titler, der dækker avancerede emner inden for fysik. Ved at inkludere serien hjælper du med at placere værket i en større akademisk samtale og kan give læserne yderligere ressourcer om emnet.

@@ -1,20 +1,20 @@
 ---
-title: "BibTeX field type: title"
+title: "BibTeX felttype: title"
 sidebar:
   label: title
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `title` field in a BibTeX entry is used to specify the main title of the work you are referencing. It is one of the essential fields and is supported by almost all BibTeX entry types. Accurate capitalization and adherence to LaTeX syntax are critical when populating this field to ensure that the title is displayed correctly in the generated bibliography.
+Feltet `title` i en BibTeX-post bruges til at angive hovedtitlen på det værk, du refererer til. Det er et af de vigtigste felter og understøttes af næsten alle BibTeX-posttyper. Nøjagtig brug af store bogstaver og overholdelse af LaTeX-syntaks er afgørende, når dette felt udfyldes, for at sikre, at titlen vises korrekt i den genererede bibliografi.
 
 <CiteDrive />
 
-To maintain proper formatting, LaTeX commands can be used within the `title` field to preserve the capitalization of certain words or phrases. Moreover, if the title contains special characters or mathematical symbols, they should be entered using the appropriate LaTeX commands.
+For at opretholde korrekt formatering kan LaTeX-kommandoer bruges i feltet `title` til at bevare brugen af store bogstaver for bestemte ord eller sætninger. Hvis titlen indeholder specielle tegn eller matematiske symboler, bør de indtastes ved hjælp af de passende LaTeX-kommandoer.
 
-## Example
+## Eksempel
 
-Here's a simple example showcasing how to use the `title` field:
+Her er et enkelt eksempel, der viser, hvordan du bruger feltet `title`:
 
 ```bibtex
 @article{key,
@@ -22,7 +22,7 @@ Here's a simple example showcasing how to use the `title` field:
 }
 ```
 
-A more detailed example, including additional fields to provide a comprehensive reference, is given below:
+Et mere detaljeret eksempel, der inkluderer yderligere felter for at give en mere omfattende reference, vises her:
 
 ```bibtex
 @article{luscombe2001bioinformatics,
@@ -37,6 +37,6 @@ A more detailed example, including additional fields to provide a comprehensive 
 }
 ```
 
-In these examples, the `title` field is populated with the title of the article being cited. Note the use of braces `{}` to encapsulate the title text, which helps in maintaining the capitalization and formatting of the title as intended by the author.
+I disse eksempler er feltet `title` udfyldt med titlen på den artikel, der citeres. Bemærk brugen af krøllede parenteser `{}` til at omslutte titelteksten, hvilket hjælper med at bevare den oprindelige brug af store bogstaver og formatering, som forfatteren har angivet.
 
-Remember, the `title` field is crucial in helping readers identify the specific work being referenced, so ensure that it is entered accurately and formatted correctly in your BibTeX entries.
+Husk, at feltet `title` er afgørende for at hjælpe læserne med at identificere det specifikke værk, der refereres til, så sørg for, at det indtastes nøjagtigt og formateres korrekt i dine BibTeX-poster.

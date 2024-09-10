@@ -6,17 +6,17 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `email` field in BibTeX is used to include the email addresses of the authors in your citation. While not a commonly used field and possibly unsupported in various styles, it can sometimes be useful to provide a direct line of contact to the authors. Here, we explore how to appropriately integrate email addresses into your BibTeX entries.
+`email`-feltet i BibTeX bruges til at inkludere forfatternes e-mailadresser i din citation. Selvom det ikke er et ofte anvendt felt og muligvis ikke understøttes af forskellige stilarter, kan det nogle gange være nyttigt at give en direkte kontaktlinje til forfatterne. Her undersøger vi, hvordan du passende kan integrere e-mailadresser i dine BibTeX-poster.
 
 <CiteDrive />
 
-## Including Email Addresses
+## Inkludering af E-mailadresser
 
-If you decide to specify email addresses in your BibTeX entries, here are two recommended methods:
+Hvis du beslutter dig for at angive e-mailadresser i dine BibTeX-poster, er her to anbefalede metoder:
 
-### Display as a Note at the End of the Reference
+### Vise som en Note i Slutningen af Referencen
 
-In this approach, the email address is added as a note that appears at the end of the citation. This way, it is distinctly separated from the author's name and other details, ensuring clarity.
+Denne tilgang tilføjer e-mailadressen som en note, der vises i slutningen af citationen. På denne måde adskilles den tydeligt fra forfatternes navn og andre detaljer, hvilket sikrer klarhed.
 
 ```bibtex
 @book{Sample2023,
@@ -27,9 +27,9 @@ In this approach, the email address is added as a note that appears at the end o
 }
 ```
 
-### Display Behind the Family Name
+### Vise Bag Familienavnet
 
-Another method is to incorporate the email address directly behind the family name. This approach provides a direct association between the author and their email address, facilitating immediate contact.
+En anden metode er at inkorporere e-mailadressen direkte bag familienavnet. Denne tilgang giver en direkte forbindelse mellem forfatteren og deres e-mailadresse, hvilket letter umiddelbar kontakt.
 
 ```bibtex
 @book{Sample2023,
@@ -38,15 +38,14 @@ Another method is to incorporate the email address directly behind the family na
 }
 ```
 
-## Guidelines for Including Email Addresses
+## Retningslinjer for Inkludering af E-mailadresser
 
-1. **Privacy Considerations**: Before including an author's email address, ensure you have their permission to do so, respecting their privacy and adhering to ethical guidelines.
+1. **Privatlivsovervejelser**: Sørg for at have forfatternes tilladelse, før du inkluderer deres e-mailadresse, og respekter deres privatliv samt overhold etiske retningslinjer.
     
-2. **Formatting**: Maintain a clear and readable format by using the Teletype (`\tt`) font style to differentiate the email address from other text elements.
+2. **Formatering**: Opbevar en klar og læsbar format ved at bruge Teletype (`\tt`) skrifttypestilen for at adskille e-mailadressen fra andre tekstelementer.
     
-3. **Compatibility**: Be aware that the `email` field is not standard and may not be supported in all BibTeX styles. Always check the compatibility with your chosen style to avoid formatting issues.
-    
+3. **Kompatibilitet**: Vær opmærksom på, at `email`-feltet ikke er standard og muligvis ikke understøttes i alle BibTeX-stilarter. Kontroller altid kompatibiliteten med din valgte stil for at undgå formateringsproblemer.
 
-## Conclusion
+## Konklusion
 
-While not common, including email addresses in your BibTeX entries can sometimes facilitate direct communication with the authors. Always adhere to ethical guidelines and verify compatibility with your chosen BibTeX style when using the `email` field. By following the recommended formats, you can integrate email addresses into your citations seamlessly.
+Selvom det ikke er almindeligt, kan inklusion af e-mailadresser i dine BibTeX-poster nogle gange lette direkte kommunikation med forfatterne. Overhold altid etiske retningslinjer og verificer kompatibilitet med din valgte BibTeX-stil, når du bruger `email`-feltet. Ved at følge de anbefalede formater kan du integrere e-mailadresser i dine citationer på en sømløs måde.
