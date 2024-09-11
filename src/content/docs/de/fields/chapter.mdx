@@ -1,45 +1,45 @@
 ---
-title: "BibTeX field type: chapter"
+title: "BibTeX-Feldtyp: chapter"
 sidebar:
   label: chapter
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In the world of scholarly writing, citations serve as the backbone for validating arguments and referencing existing works. The `chapter` field in BibTeX entries further refines this by allowing users to specify the exact chapter, section, or range of pages being referred to in a cited book. This field is particularly important in `inbook` and `incollection` entries, facilitating more precise referencing and aiding readers in locating the exact source material. Let's delve deeper into understanding and effectively using the `chapter` field in BibTeX.
+In der wissenschaftlichen Arbeit dienen Zitationen als Rückgrat zur Validierung von Argumenten und zur Referenzierung vorhandener Werke. Das `chapter`-Feld in BibTeX-Einträgen verfeinert dies weiter, indem es den Nutzern ermöglicht, das genaue Kapitel, die Sektion oder den Seitenbereich anzugeben, auf den in einem zitierten Buch verwiesen wird. Dieses Feld ist besonders wichtig bei `inbook`- und `incollection`-Einträgen, da es eine genauere Referenzierung ermöglicht und den Lesern hilft, das genaue Quellmaterial zu finden. Lassen Sie uns genauer untersuchen, wie das `chapter`-Feld in BibTeX verwendet wird.
 
 <CiteDrive />
 
-### Overview
+### Überblick
 
-The `chapter` field is utilized to numerically represent a specific chapter or section within a book that you wish to cite. In the case of `inbook` entries, including the `chapter` field is mandatory to provide detailed citation information. However, it is not applicable for the `book` entry type as this type is used to cite a book in its entirety, thus not requiring specific chapter details.
+Das `chapter`-Feld wird verwendet, um ein bestimmtes Kapitel oder eine Sektion innerhalb eines Buches numerisch darzustellen, auf das Sie verweisen möchten. Im Falle von `inbook`-Einträgen ist die Einbeziehung des `chapter`-Feldes zwingend erforderlich, um detaillierte Zitationsinformationen bereitzustellen. Es ist jedoch nicht für den `book`-Eintragstyp anwendbar, da dieser Typ verwendet wird, um ein Buch in seiner Gesamtheit zu zitieren, und daher keine spezifischen Kapitelangaben erfordert.
 
-### Formatting and Usage
+### Formatierung und Nutzung
 
-To accurately represent the chapter or section you are citing, employ the `chapter` field as illustrated below:
+Um das Kapitel oder die Sektion genau darzustellen, auf die Sie sich beziehen, verwenden Sie das `chapter`-Feld wie folgt:
 
 ```bibtex
-@inbook{ReferenceID,
-  author  = {Author Name},
-  title   = {Title of the Book},
-  chapter = {Chapter Number},
-  pages   = {Page Range},
-  year    = {Publication Year},
-  publisher = {Publisher Name},
-  address   = {Publication Location},
+@inbook{ReferenzID,
+  author  = {Name des Autors},
+  title   = {Titel des Buches},
+  chapter = {Kapitelnummer},
+  pages   = {Seitenbereich},
+  year    = {Jahr der Veröffentlichung},
+  publisher = {Name des Verlags},
+  address   = {Veröffentlichungsort},
 }
 ```
 
-In the above template, replace "Chapter Number" with the actual number of the chapter you are citing. If citing a specific section or range of pages instead, this can be indicated in the `pages` field.
+Ersetzen Sie in der obigen Vorlage „Kapitelnummer“ durch die tatsächliche Nummer des Kapitels, auf das Sie sich beziehen. Wenn Sie eine bestimmte Sektion oder einen Seitenbereich angeben möchten, kann dies im `pages`-Feld angezeigt werden.
 
-### Example
+### Beispiel
 
-Here's a concrete example demonstrating how to properly use the `chapter` field:
+Hier ist ein konkretes Beispiel, das zeigt, wie man das `chapter`-Feld richtig verwendet:
 
 ```bibtex
 @inbook{Mueller2014The,
   author   = {Hans Mueller},
-  title    = {Theories of Modern Physics},
+  title    = {Theorien der modernen Physik},
   chapter  = {2},
   pages    = {23-45},
   year     = 2014,
@@ -48,16 +48,14 @@ Here's a concrete example demonstrating how to properly use the `chapter` field:
 }
 ```
 
-In this example, the `chapter` field is used to specifically reference chapter 2 of the cited book, allowing readers to easily locate the referenced material.
+In diesem Beispiel wird das `chapter`-Feld verwendet, um spezifisch auf Kapitel 2 des zitierten Buches zu verweisen, was es den Lesern ermöglicht, das referenzierte Material leicht zu finden.
 
-### Points to Remember
+### Punkte, die zu beachten sind
 
-1. **Specificity**: The `chapter` field helps in pinpointing the exact section of the book being referred to, promoting precise and accurate citation.
-2. **Mandatory for `inbook` Entries**: When using the `inbook` entry type, the inclusion of the `chapter` field is mandatory to provide a detailed reference.
-3. **Not Applicable for `book` Entries**: The `chapter` field is not used in `book` entries as these entries are meant to cite the entire book.
+1. **Spezifizität**: Das `chapter`-Feld hilft dabei, den genauen Abschnitt des Buches zu bestimmen, auf den verwiesen wird, und fördert präzise und genaue Zitationen.
+2. **Verpflichtend für `inbook`-Einträge**: Bei Verwendung des `inbook`-Eintragstyps ist die Einbeziehung des `chapter`-Feldes obligatorisch, um eine detaillierte Referenz bereitzustellen.
+3. **Nicht anwendbar für `book`-Einträge**: Das `chapter`-Feld wird in `book`-Einträgen nicht verwendet, da diese Einträge dazu gedacht sind, das gesamte Buch zu zitieren.
 
+### Fazit
 
-
-### Conclusion
-
-Mastering the use of the `chapter` field in BibTeX not only enhances the accuracy of your citations but also aids readers in efficiently locating the cited material within larger works. Remember to maintain consistency in your formatting to ensure a well-organized and professional bibliography. Always double-check your entries to prevent any errors and uphold the standards of scholarly writing.
+Die Beherrschung der Nutzung des `chapter`-Feldes in BibTeX verbessert nicht nur die Genauigkeit Ihrer Zitationen, sondern hilft auch den Lesern, das zitierte Material effizient innerhalb größerer Werke zu finden. Achten Sie darauf, Konsistenz in Ihrer Formatierung zu wahren, um eine gut organisierte und professionelle Bibliografie zu gewährleisten. Überprüfen Sie Ihre Einträge stets auf Fehler und halten Sie die Standards der wissenschaftlichen Arbeit ein.

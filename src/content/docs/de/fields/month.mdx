@@ -1,48 +1,47 @@
 ---
-title: "BibTeX field type: month"
+title: "BibTeX-Feldtyp: month"
 sidebar:
   label: month
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `month` field in BibTeX is utilized to denote the month in which a particular work was published or created (if unpublished). This information assists in offering a detailed timeline of the piece and can be vital for certain types of academic or historical research.
+Das Feld `month` in BibTeX wird verwendet, um den Monat anzugeben, in dem ein bestimmtes Werk veröffentlicht oder erstellt wurde (falls unveröffentlicht). Diese Information hilft dabei, eine detaillierte Zeitleiste des Werks zu erstellen und kann für bestimmte Arten von akademischer oder historischer Forschung von entscheidender Bedeutung sein.
 
 <CiteDrive />
 
-In BibTeX entries, it's common to denote the month using either the numeric representation or a three-letter abbreviation. Using a standardized format can help maintain consistency in your bibliography. Here are a few formats that are generally accepted:
+In BibTeX-Einträgen ist es üblich, den Monat entweder mit der numerischen Darstellung oder einer dreibuchstabigen Abkürzung anzugeben. Die Verwendung eines standardisierten Formats kann helfen, Konsistenz in Ihrer Bibliografie zu gewährleisten. Hier sind einige allgemein akzeptierte Formate:
 
-1. Numeric representation (01 to 12).
-2. Three-letter abbreviation (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
+1. Numerische Darstellung (01 bis 12).
+2. Dreibuchstabige Abkürzung (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
 
-It's important to note that the month field should be used judiciously, especially when citing books or works without a specific publication month, to avoid inaccurate information.
+Es ist wichtig zu beachten, dass das `month`-Feld sorgfältig verwendet werden sollte, insbesondere beim Zitieren von Büchern oder Werken ohne spezifischen Veröffentlichungsmonat, um ungenaue Informationen zu vermeiden.
 
 ## Format
 
-You can use the month field in various BibTeX entries like `@book`, `@article`, etc., as demonstrated in the following template:
+Sie können das `month`-Feld in verschiedenen BibTeX-Einträgen wie `@book`, `@article` usw. verwenden, wie im folgenden Beispiel gezeigt:
 
 ```bibtex
 @book{...,
- month = {month representation},
+ month = {Monatsdarstellung},
  ... 
 }
 ```
 
-In the above template, replace "month representation" with either the numeric representation or the three-letter abbreviation of the month.
+In der obigen Vorlage ersetzen Sie "Monatsdarstellung" entweder durch die numerische Darstellung oder die dreibuchstabige Abkürzung des Monats.
 
-## Example
+## Beispiel
 
-Here is a practical example demonstrating how to use the `month` field in a `@book` entry:
+Hier ist ein praktisches Beispiel, das zeigt, wie das `month`-Feld in einem `@book`-Eintrag verwendet wird:
 
 ```bibtex
 @book{johnson2023deep,
- title = {Deep Learning and its Applications},
+ title = {Deep Learning und seine Anwendungen},
  author = {Johnson, Mark},
  month = {mar},
  year = {2023},
  publisher = {Tech Publishing House},
 }
-
 ```
 
-In this example, the book was published in March 2023, providing a clear and specific timeline for the publication. Remember to verify the publication month from reliable sources to maintain the accuracy of your references.
+In diesem Beispiel wurde das Buch im März 2023 veröffentlicht, was eine klare und spezifische Zeitleiste für die Veröffentlichung bietet. Denken Sie daran, den Veröffentlichungsmonat aus zuverlässigen Quellen zu überprüfen, um die Genauigkeit Ihrer Referenzen zu gewährleisten.

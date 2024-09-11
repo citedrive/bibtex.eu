@@ -1,26 +1,26 @@
 ---
-title: "BibTeX field type: publisher"
+title: "BibTeX-Feldtyp: publisher"
 sidebar:
   label: publisher
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `publisher` field is used in various BibTeX entries such as `@book`, `@inbook`, or `@incollection` to specify the name of the publisher that published the referred work. Including the publisher in your citation helps to provide a comprehensive and precise reference, which can aid readers in locating the original source.
+Das Feld `publisher` wird in verschiedenen BibTeX-Einträgen wie `@book`, `@inbook` oder `@incollection` verwendet, um den Namen des Verlags anzugeben, der das zitierte Werk veröffentlicht hat. Die Angabe des Verlags in Ihrer Zitierung hilft dabei, eine umfassende und präzise Referenz zu erstellen, die den Lesern hilft, die Originalquelle zu finden.
 
 <CiteDrive />
 
-When including a publisher in your BibTeX entry, be sure to use the full and official name of the publisher. This will ensure the citation is both professional and credible. Additionally, it helps to prevent confusion with other publishers that may have similar names.
+Beim Hinzufügen eines Verlags zu Ihrem BibTeX-Eintrag sollten Sie den vollständigen und offiziellen Namen des Verlags verwenden. Dadurch wird sichergestellt, dass die Zitierung sowohl professionell als auch glaubwürdig ist. Zudem hilft es, Verwechslungen mit anderen Verlagen zu vermeiden, die ähnliche Namen haben könnten.
 
-## Examples
+## Beispiele
 
-Here are a few examples demonstrating how to properly specify a publisher in different BibTeX entries:
+Hier sind einige Beispiele, die zeigen, wie ein Verlag in verschiedenen BibTeX-Einträgen korrekt angegeben wird:
 
-### Book
+### Buch
 
 ```bibtex
 @book{key1,
-  title = {The Art of Scientific Research},
+  title = {Die Kunst der wissenschaftlichen Forschung},
   author = {John Doe},
   year = {2023},
   publisher = {Cambridge University Press},
@@ -32,13 +32,13 @@ Here are a few examples demonstrating how to properly specify a publisher in dif
 
 ```bibtex
 @inbook{key2,
-  title = {Chapter on Quantum Mechanics},
+  title = {Kapitel über Quantenmechanik},
   author = {Jane Doe},
   year = {2023},
   publisher = {Oxford University Press},
   pages = {45--78},
   editor = {Sarah Smith},
-  booktitle = {Modern Physics},
+  booktitle = {Moderne Physik},
 }
 
 ```
@@ -47,14 +47,14 @@ Here are a few examples demonstrating how to properly specify a publisher in dif
 
 ```bibtex
 @incollection{key3,
-  title = {Essay on Environmental Conservation},
+  title = {Essay über Umweltschutz},
   author = {Alex Johnson},
   year = {2023},
   publisher = {Springer},
-  booktitle = {Sustainable Development: Theories and Practices},
+  booktitle = {Nachhaltige Entwicklung: Theorien und Praktiken},
   editor = {Mark Lee},
 }
 
 ```
 
-Note that the `publisher` field is usually accompanied by other important fields such as `title`, `author`, `year`, etc., to provide a complete citation. It's also worth noting that depending on the citation style being used, the format and placement of the publisher field may vary, so always be sure to follow the guidelines of the specific style you are adhering to.
+Es ist wichtig zu beachten, dass das Feld `publisher` normalerweise von anderen wichtigen Feldern wie `title`, `author`, `year` usw. begleitet wird, um eine vollständige Zitierung zu ermöglichen. Es sollte auch erwähnt werden, dass sich das Format und die Platzierung des Verlagsfeldes je nach verwendetem Zitierstil unterscheiden können. Achten Sie also immer darauf, den spezifischen Richtlinien des jeweiligen Stils zu folgen.

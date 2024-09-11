@@ -1,27 +1,27 @@
 ---
-title: "BibTeX field type: editor"
+title: "BibTeX-Feldtyp: editor"
 sidebar:
   label: editor
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `editor` field in BibTeX is used to specify the editors of a published work. This field is essential for reference types such as books, proceedings, or collections where the role of an editor is distinct from the author. Specifying the editors appropriately can ensure correct attribution and smoother referencing in academic papers and articles. Here, we delve deeper into the ways to indicate editors in BibTeX.
+Das `editor`-Feld in BibTeX wird verwendet, um die Herausgeber eines veröffentlichten Werkes anzugeben. Dieses Feld ist besonders wichtig für Referenztypen wie Bücher, Tagungsbände oder Sammlungen, bei denen die Rolle des Herausgebers von der des Autors zu unterscheiden ist. Die korrekte Angabe der Herausgeber stellt sicher, dass die Attribution korrekt ist und erleichtert die Referenzierung in wissenschaftlichen Arbeiten und Artikeln. Hier gehen wir näher darauf ein, wie man Herausgeber in BibTeX angibt.
 
 <CiteDrive />
 
-### Formatting Rules
+### Formatierungsregeln
 
-In the `editor` field, various notation formats are accepted. However, the formatting should be consistent and precise to avoid incorrect representation of the editor's name. Here are the commonly used notations:
+Im `editor`-Feld werden verschiedene Notationsformate akzeptiert. Die Formatierung sollte jedoch konsistent und präzise sein, um eine falsche Darstellung des Namens des Herausgebers zu vermeiden. Hier sind die gängigen Notationen:
 
 #### Notation: `{Firstname Lastname}`
 
-This is a straightforward method where you list the editor's first name followed by the last name. Note that the inverse, "Lastname Firstname", is not recommended.
+Dies ist eine einfache Methode, bei der der Vorname des Herausgebers vor dem Nachnamen aufgelistet wird. Das Gegenteil, „Lastname Firstname“, wird nicht empfohlen.
 
-**Example**
+**Beispiel**
 
 ```bibtex
-@book{Example2023,
+@book{Beispiel2023,
   ...
   editor={Isaac Newton},
   ...
@@ -30,12 +30,12 @@ This is a straightforward method where you list the editor's first name followed
 
 #### Notation: `{Lastname, Firstname}`
 
-This is the recommended format as it provides clear differentiation between the first and last names, which is particularly beneficial for names with multiple components.
+Dies ist das empfohlene Format, da es eine klare Unterscheidung zwischen Vor- und Nachnamen bietet, was besonders bei Namen mit mehreren Komponenten von Vorteil ist.
 
-**Example**
+**Beispiel**
 
 ```bibtex
-@book{Example2023,
+@book{Beispiel2023,
   ...
   editor={Newton, Isaac},
   ...
@@ -44,26 +44,26 @@ This is the recommended format as it provides clear differentiation between the 
 
 #### Notation: `{Lastname, Suffix, Firstname}`
 
-For editors with suffixes (e.g., Junior, Sr., III), the name should be formatted with the last name first, followed by the suffix, and then the first name. All components should be separated by commas.
+Für Herausgeber mit Suffixen (z.B. Junior, Sr., III) sollte der Name mit dem Nachnamen zuerst, gefolgt vom Suffix und dann dem Vornamen, formatiert werden. Alle Komponenten sollten durch Kommas getrennt werden.
 
-**Example**
+**Beispiel**
 
 ```bibtex
-@book{Example2023,
+@book{Beispiel2023,
   ...
   editor={King, Jr., Martin Luther},
   ...
 }
 ```
 
-### Adding Multiple Editors
+### Mehrere Herausgeber hinzufügen
 
-To specify multiple editors, use the keyword `AND` between individual editor details formatted as above. This notation helps in listing several editors distinctly and accurately.
+Um mehrere Herausgeber anzugeben, verwenden Sie das Schlüsselwort `AND` zwischen den einzelnen Herausgeberangaben, die wie oben formatiert sind. Diese Notation hilft dabei, mehrere Herausgeber klar und genau aufzulisten.
 
-**Example**
+**Beispiel**
 
 ```bibtex
-@book{Example2023,
+@book{Beispiel2023,
   ...
   editor={Smith, John AND Doe, Jane},
   ...
@@ -72,9 +72,9 @@ To specify multiple editors, use the keyword `AND` between individual editor det
 
 ### Best Practices
 
-1. **Consistency**: Maintain consistency in the notation format across all entries in your BibTeX file to ensure uniform representation.
-2. **Suffixes**: Clearly specify suffixes to avoid confusion, especially in works with multiple editors having familial relations.
+1. **Konsistenz**: Halten Sie die Notationsformate in allen Einträgen Ihrer BibTeX-Datei konsistent, um eine einheitliche Darstellung sicherzustellen.
+2. **Suffixe**: Geben Sie Suffixe klar an, um Verwirrung zu vermeiden, insbesondere bei Werken mit mehreren Herausgebern, die familiäre Beziehungen haben.
 
-### Conclusion
+### Fazit
 
-The `editor` field is a critical component in BibTeX entries, especially for edited volumes, proceedings, and collections. Accurate and consistent notation ensures that editors receive proper attribution, thereby enhancing the credibility and readability of your citations. Remember to adhere to the recommended formats for a seamless citation experience.
+Das `editor`-Feld ist ein wesentlicher Bestandteil von BibTeX-Einträgen, insbesondere für herausgegebene Bände, Tagungsbände und Sammlungen. Eine genaue und konsistente Notation stellt sicher, dass Herausgeber die angemessene Anerkennung erhalten, was die Glaubwürdigkeit und Lesbarkeit Ihrer Zitationen erhöht. Denken Sie daran, die empfohlenen Formate für eine nahtlose Zitiererfahrung einzuhalten.

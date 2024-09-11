@@ -1,61 +1,61 @@
 ---
-title: "BibTeX field type: booktitle"
+title: "BibTeX-Feldtyp: booktitle"
 sidebar:
   label: booktitle
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In scholarly writing, citing sections or chapters within a book or a conference proceeding accurately is of paramount importance. The `booktitle` field in BibTeX plays a critical role in this process, providing a way to specify the title of the larger work that contains the cited section. Here we will explore in depth how to use the `booktitle` field to create detailed and precise citations for "incollection" and "inproceedings" entries.
+In der wissenschaftlichen Arbeit ist es von größter Bedeutung, Abschnitte oder Kapitel innerhalb eines Buches oder einer Konferenzschrift genau zu zitieren. Das `booktitle`-Feld in BibTeX spielt eine entscheidende Rolle bei diesem Prozess, indem es eine Möglichkeit bietet, den Titel des größeren Werkes, das den zitierten Abschnitt enthält, anzugeben. Hier werden wir eingehend untersuchen, wie man das `booktitle`-Feld verwendet, um detaillierte und präzise Zitationen für "incollection" und "inproceedings" Einträge zu erstellen.
 
 <CiteDrive />
 
-## Understanding the `Booktitle` Field
+## Verständnis des `Booktitle`-Feldes
 
-The `booktitle` field is utilized when you want to cite a section, chapter, or article that is part of a larger work, such as a book or conference proceedings. It serves to clearly differentiate between the title of the individual section (`title` field) and the title of the larger work. By including the `booktitle` field in your BibTeX entries, you provide readers with a clear and full picture of the context in which the cited section appears.
+Das `booktitle`-Feld wird verwendet, wenn Sie einen Abschnitt, ein Kapitel oder einen Artikel zitieren möchten, der Teil eines größeren Werkes ist, wie z. B. eines Buches oder einer Konferenzschrift. Es dient dazu, klar zwischen dem Titel des einzelnen Abschnitts (`title`-Feld) und dem Titel des größeren Werkes zu unterscheiden. Durch die Einbeziehung des `booktitle`-Feldes in Ihre BibTeX-Einträge bieten Sie den Lesern ein klares und vollständiges Bild des Kontextes, in dem der zitierte Abschnitt erscheint.
 
-### Formatting Guidelines
+### Formatierungsrichtlinien
 
-To use the `booktitle` field appropriately, follow the standard BibTeX formatting. Here is a basic structure demonstrating how to include a `booktitle` in an `incollection` entry:
+Um das `booktitle`-Feld korrekt zu verwenden, folgen Sie der Standard-BibTeX-Formatierung. Hier ist eine grundlegende Struktur, die zeigt, wie man ein `booktitle` in einem `incollection`-Eintrag einfügt:
 
 ```bibtex
-@incollection{ReferenceID,
-  author    = {Author Name},
-  title     = {Title of the Section},
-  booktitle = {Title of the Larger Work},
-  year      = {Publication Year},
-  pages     = {Page Range},
-  publisher = {Publisher Name},
-  address   = {Publication Location},
-  editor    = {Editor(s) Name(s)},
+@incollection{ReferenzID,
+  author    = {Name des Autors},
+  title     = {Titel des Abschnitts},
+  booktitle = {Titel des größeren Werkes},
+  year      = {Jahr der Veröffentlichung},
+  pages     = {Seitenbereich},
+  publisher = {Name des Verlags},
+  address   = {Veröffentlichungsort},
+  editor    = {Name(n) des Herausgebers},
 }
 ```
 
-### Real World Example
+### Beispiel aus der Praxis
 
-Below is an actual example of how to use the `booktitle` field in a citation:
+Hier ist ein tatsächliches Beispiel, wie man das `booktitle`-Feld in einer Zitation verwendet:
 
 ```bibtex
 @incollection{Mihalcea2006Knowledge,
-	title     = {Knowledge-Based Methods for {WSD}},
-	author    = {Rada Mihalcea},
-	year      = 2006,
-	booktitle = {Word Sense Disambiguation: Algorithms and Applications},
-	publisher = {Springer},
-	address   = {Dordrecht, the Netherlands},
-	pages     = {107--132},
-	editor    = {Eneko Agirre and Philip Edmonds},
+  title     = {Knowledge-Based Methods for {WSD}},
+  author    = {Rada Mihalcea},
+  year      = 2006,
+  booktitle = {Word Sense Disambiguation: Algorithms and Applications},
+  publisher = {Springer},
+  address   = {Dordrecht, die Niederlande},
+  pages     = {107--132},
+  editor    = {Eneko Agirre und Philip Edmonds},
 }
 ```
 
-In this example, the `booktitle` field clearly indicates the larger work in which the cited section appears, providing a comprehensive view of the publication context.
+In diesem Beispiel gibt das `booktitle`-Feld klar das größere Werk an, in dem der zitierte Abschnitt erscheint, und bietet einen umfassenden Überblick über den Veröffentlichungskontext.
 
-### Tips for Effective Usage
+### Tipps für eine effektive Nutzung
 
-1. **Consistency**: Maintain a consistent format for all `booktitle` entries to ensure a cohesive bibliography.
-2. **Accuracy**: Ensure that the `booktitle` field accurately represents the larger work to avoid misleading the readers.
-3. **Comprehensive Information**: Include comprehensive details such as editors and publication location to enrich the citation.
+1. **Konsistenz**: Behalten Sie ein konsistentes Format für alle `booktitle`-Einträge bei, um eine kohärente Bibliografie zu gewährleisten.
+2. **Genauigkeit**: Stellen Sie sicher, dass das `booktitle`-Feld das größere Werk genau widerspiegelt, um Leser nicht irrezuführen.
+3. **Umfassende Informationen**: Fügen Sie umfassende Details wie Herausgeber und Veröffentlichungsort hinzu, um die Zitation zu bereichern.
 
-## Conclusion
+## Fazit
 
-Effectively using the `booktitle` field in BibTeX entries enables a richer and more detailed bibliography, offering readers an enhanced understanding of the context of cited sections or chapters. This practice promotes scholarly integrity by ensuring accurate and precise attribution of works within larger collections or proceedings. Always refer to specific guidelines or styles (APA, MLA, etc.) to tailor your citations appropriately.
+Die effektive Nutzung des `booktitle`-Feldes in BibTeX-Einträgen ermöglicht eine reichhaltigere und detailliertere Bibliografie, die den Lesern ein besseres Verständnis des Kontextes der zitierten Abschnitte oder Kapitel bietet. Diese Praxis fördert die wissenschaftliche Integrität, indem sie eine genaue und präzise Zuordnung von Werken innerhalb größerer Sammlungen oder Tagungsbände sicherstellt. Konsultieren Sie immer spezifische Richtlinien oder Stile (APA, MLA usw.), um Ihre Zitationen angemessen anzupassen.

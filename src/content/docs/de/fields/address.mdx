@@ -1,50 +1,48 @@
 ---
-title: "BibTeX field type: address"
+title: "BibTeX-Feldtyp: address"
 sidebar:
   label: address
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `address` field within a BibTeX entry holds substantial significance when citing various sources in your academic or professional documentation. It typically encompasses the geographical details of the publisher or a pertinent institution related to the cited work. Here, we will delve deeper into the utilization and the notation standards followed for the `address` field in BibTeX entries.
+Das `address`-Feld innerhalb eines BibTeX-Eintrags ist von wesentlicher Bedeutung, wenn es darum geht, verschiedene Quellen in Ihrer akademischen oder professionellen Dokumentation zu zitieren. Es umfasst typischerweise die geografischen Details des Herausgebers oder einer relevanten Institution, die mit dem zitierten Werk verbunden ist. Hier werden wir näher auf die Verwendung und die Notationsstandards für das `address`-Feld in BibTeX-Einträgen eingehen.
 
 <CiteDrive />
 
-## Detailed Overview
+## Detaillierte Übersicht
 
-The `address` field is essential in pointing out the specific location details of the publishing entity or other significant institutions related to the citation. Often, the field may contain the city of publication, possibly followed by additional details depending on the region or specific citation requirements.
+Das `address`-Feld ist wichtig, um die spezifischen Standortdetails der veröffentlichten Einheit oder anderer bedeutender Institutionen im Zusammenhang mit der Zitation anzugeben. Oft kann das Feld den Veröffentlichungsort enthalten, möglicherweise gefolgt von zusätzlichen Details, je nach Region oder spezifischen Zitieranforderungen.
 
-### Address Format Guidelines
+### Formatierungsrichtlinien für Adressen
 
-#### American Publications
+#### Amerikanische Publikationen
 
-For sources published in the United States, the format usually includes the city's name, followed by the state's abbreviation according to the United States Postal Service (USPS) code enclosed in brackets.
+Für Quellen, die in den Vereinigten Staaten veröffentlicht wurden, umfasst das Format üblicherweise den Namen der Stadt, gefolgt von der Abkürzung des Bundesstaates gemäß dem Code des United States Postal Service (USPS), in Klammern.
 
-> **Example**: "Columbus, Ohio" should be notated as "Columbus, OH."
+> **Beispiel**: „Columbus, Ohio“ sollte als „Columbus, OH“ notiert werden.
 
-#### European Publications
+#### Europäische Publikationen
 
-In contrast, European publications prefer the full representation of the state or province, without any abbreviation, followed by the country name.
+Im Gegensatz dazu bevorzugen europäische Publikationen die vollständige Darstellung des Bundeslandes oder der Provinz, ohne Abkürzung, gefolgt vom Ländernamen.
 
-> **Example**: A publication from Dusseldorf, Germany, would be denoted as "Dusseldorf, Germany."
+> **Beispiel**: Eine Veröffentlichung aus Düsseldorf, Deutschland, würde als „Düsseldorf, Deutschland“ angegeben werden.
 
+## Beispiele und Anwendungsszenarien
 
-
-## Examples and Usage Scenarios
-
-The `address` field finds its application in various BibTeX entry types. Below, we have elaborated on a few scenarios where it is prominently utilized.
+Das `address`-Feld wird in verschiedenen BibTeX-Eintragsarten verwendet. Im Folgenden haben wir einige Szenarien erläutert, in denen es prominent genutzt wird.
 
 ### PhdThesis
 
-In a `phdthesis` entry type, the author might want to include the university's address where the doctoral candidate pursued their research and completed their thesis. This information assists in adding credibility and specificity to the citation.
+In einem `phdthesis`-Eintrag könnte der Autor die Adresse der Universität angeben, an der der Doktorand seine Forschung durchgeführt und seine Dissertation abgeschlossen hat. Diese Information trägt zur Glaubwürdigkeit und Spezifität der Zitation bei.
 
 ```bibtex
 @phdthesis{Peterson2003very,
   author  = {Arnold Peterson},
-  title   = {My very own PhD-Thesis by Arnold Peterson},
-  school  = {The university / school name},
+  title   = {Meine eigene PhD-Dissertation von Arnold Peterson},
+  school  = {Der Name der Universität / Schule},
   year    = 2004,
-  address = {123 University Lane, University City, State [or Province], Country},
+  address = {123 University Lane, University City, Bundesstaat [oder Provinz], Land},
   month   = 1,
   ...
 }
@@ -52,23 +50,21 @@ In a `phdthesis` entry type, the author might want to include the university's a
 
 ### Proceedings / Inproceedings
 
-The `address` field in `proceedings` or `inproceedings` entry types is a point of contention. While some prefer to include the conference venue's address, others opt for the publisher or organizer's address. It's essential to adhere to the guidelines of your specific context or reference style. Below is an example of how to use the `address` field in these entry types:
+Das `address`-Feld in `proceedings`- oder `inproceedings`-Einträgen ist umstritten. Während einige es bevorzugen, die Adresse des Konferenzortes anzugeben, wählen andere die Adresse des Herausgebers oder Veranstalters. Es ist wichtig, sich an die Richtlinien Ihres spezifischen Kontexts oder Zitierstils zu halten. Hier ein Beispiel, wie das `address`-Feld in diesen Eintragstypen verwendet werden kann:
 
 ```bibtex
 @PROCEEDINGS{Conference2023,
-  title    = {Conference Proceedings Title},
-  editor   = {Editor Name},
+  title    = {Titel der Konferenzakten},
+  editor   = {Name des Herausgebers},
   year     = 2023,
-  address  = {123 Conference Venue Street, City, State [or Province], Country},
-  publisher = {Publisher Name},
+  address  = {123 Conference Venue Street, Stadt, Bundesstaat [oder Provinz], Land},
+  publisher = {Name des Herausgebers},
   ...
 }
 ```
 
-## Conclusion
+## Fazit
 
-Understanding and correctly utilizing the `address` field in your BibTeX entries can significantly enhance the clarity and comprehensiveness of your citations. It ensures that readers can precisely identify the geographical context of the cited works, adding a layer of authenticity and reliability to your document.
+Das Verständnis und die korrekte Verwendung des `address`-Feldes in Ihren BibTeX-Einträgen können die Klarheit und Vollständigkeit Ihrer Zitationen erheblich verbessern. Es stellt sicher, dass Leser den geografischen Kontext der zitierten Werke genau identifizieren können, und verleiht Ihrem Dokument eine zusätzliche Schicht an Authentizität und Zuverlässigkeit.
 
-Ensure to consult with the specific guidelines of your citation style or institutional requirements to use the `address` field effectively.
-
-
+Stellen Sie sicher, dass Sie die spezifischen Richtlinien Ihres Zitierstils oder der institutionellen Anforderungen konsultieren, um das `address`-Feld effektiv zu nutzen.

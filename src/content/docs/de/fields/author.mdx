@@ -1,30 +1,30 @@
 ---
-title: "BibTeX field type: author"
+title: "BibTeX-Feldtyp: author"
 sidebar:
   label: author
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In scholarly writing, accurately acknowledging the contributors to a work is fundamental. The `author` field in BibTeX allows you to specify all contributors to the work you are citing. It is imperative to ensure a consistent and precise arrangement of author names to avoid any misrepresentation or inaccurate citation output. Here, we explore various notations and conventions to specify author names in BibTeX effectively.
+In der wissenschaftlichen Arbeit ist es grundlegend, die Beitragenden zu einem Werk genau anzuerkennen. Das `author`-Feld in BibTeX ermöglicht es Ihnen, alle Mitwirkenden des zitierten Werkes anzugeben. Es ist wichtig, eine konsistente und präzise Anordnung der Autorennamen sicherzustellen, um Missrepräsentationen oder ungenaue Zitationsergebnisse zu vermeiden. Hier untersuchen wir verschiedene Notationen und Konventionen, um Autorennamen in BibTeX effektiv anzugeben.
 
 <CiteDrive />
 
-## Detailed Overview
+## Detaillierte Übersicht
 
-When specifying authors in BibTeX, you have multiple formats to choose from. These formats allow for the inclusion of first names, last names, and even suffixes, facilitating a detailed representation of each author's identity. Let's delve into the different notations that can be employed to accurately present author information.
+Bei der Angabe von Autoren in BibTeX haben Sie verschiedene Formate zur Auswahl. Diese Formate ermöglichen es, Vornamen, Nachnamen und sogar Suffixe aufzunehmen und bieten eine detaillierte Darstellung der Identität jedes Autors. Lassen Sie uns die unterschiedlichen Notationen untersuchen, die verwendet werden können, um die Autoreninformationen genau darzustellen.
 
-### Notation Formats
+### Notationsformate
 
 #### Notation: `{Firstname Lastname}`
 
-The basic and straightforward way to note down an author is to use their first name followed by their last name. This is a widely accepted format but might not offer the control needed to distinguish clearly between first and last names, especially in cases of compound names.
+Die grundlegende und unkomplizierte Methode zur Notierung eines Autors besteht darin, den Vornamen gefolgt vom Nachnamen zu verwenden. Dies ist ein weit akzeptiertes Format, bietet jedoch möglicherweise nicht die Kontrolle, die erforderlich ist, um zwischen Vor- und Nachnamen eindeutig zu unterscheiden, insbesondere bei zusammengesetzten Namen.
 
-**Example**:
+**Beispiel**:
 
 ```bibtex
 @article{Doe2023,
-  title  = {Title of the Article},
+  title  = {Titel des Artikels},
   year   = 2023,
   author = {Isaac Newton},
   ...
@@ -33,13 +33,13 @@ The basic and straightforward way to note down an author is to use their first n
 
 #### Notation: `{Lastname, Firstname}`
 
-A more refined approach involves using the last name followed by the first name, separated by a comma. This format is recommended as it provides a clearer distinction between the first and last names, avoiding any potential confusion.
+Ein verfeinerter Ansatz besteht darin, den Nachnamen gefolgt vom Vornamen, getrennt durch ein Komma, zu verwenden. Dieses Format wird empfohlen, da es eine klarere Unterscheidung zwischen Vor- und Nachnamen bietet und mögliche Verwirrungen vermeidet.
 
-**Example**:
+**Beispiel**:
 
 ```bibtex
 @article{Doe2023,
-  title  = {Title of the Article},
+  title  = {Titel des Artikels},
   year   = 2023,
   author = {Newton, Isaac},
   ...
@@ -48,36 +48,36 @@ A more refined approach involves using the last name followed by the first name,
 
 #### Notation: `{Lastname, Suffix, Firstname}`
 
-In cases where there is a need to include a suffix (like Jr., Sr., III, etc.), this format comes in handy. It is important to maintain the order strictly to ensure accurate representation of the author's name.
+In Fällen, in denen ein Suffix (wie Jr., Sr., III usw.) angegeben werden muss, ist dieses Format nützlich. Es ist wichtig, die Reihenfolge strikt einzuhalten, um eine genaue Darstellung des Namens des Autors sicherzustellen.
 
-**Example**:
+**Beispiel**:
 
 ```bibtex
 @article{Doe2023,
-  title  = {Title of the Article},
+  title  = {Titel des Artikels},
   year   = 2023,
   author = {King, Jr, Martin Luther},
   ...
 }
 ```
 
-### Including Multiple Authors
+### Mehrere Autoren einbeziehen
 
-When a work has multiple contributors, BibTeX accommodates this through the use of the `AND` separator. This separator is used to list multiple authors distinctly, adhering to the notation formats discussed above.
+Wenn ein Werk mehrere Mitwirkende hat, ermöglicht BibTeX dies durch die Verwendung des `AND`-Trennzeichens. Dieses Trennzeichen wird verwendet, um mehrere Autoren deutlich aufzulisten, wobei die oben besprochenen Notationsformate eingehalten werden.
 
-**Example**:
+**Beispiel**:
 
 ```bibtex
 @article{Doe2023,
-  title  = {Title of the Article},
+  title  = {Titel des Artikels},
   year   = 2023,
   author = {Fisher, James AND Clark, John},
   ...
 }
 ```
 
-## Conclusion
+## Fazit
 
-Accurately noting author names in BibTeX is essential in maintaining the integrity of scholarly writing. It ensures that readers can correctly identify and attribute works to the respective authors. Being familiar with the various notations and guidelines is crucial in crafting a bibliography that is both accurate and professional.
+Die genaue Notierung von Autorennamen in BibTeX ist entscheidend, um die Integrität wissenschaftlicher Arbeiten zu wahren. Sie stellt sicher, dass Leser die Arbeiten korrekt den jeweiligen Autoren zuordnen können. Mit den verschiedenen Notationen und Richtlinien vertraut zu sein, ist entscheidend, um eine Bibliografie zu erstellen, die sowohl genau als auch professionell ist.
 
-Remember, consistency is key. Once you choose a notation format, it should be consistently applied across all entries to maintain a cohesive and professional presentation.
+Denken Sie daran, dass Konsistenz wichtig ist. Sobald Sie sich für ein Notationsformat entschieden haben, sollte es konsequent in allen Einträgen angewendet werden, um eine kohärente und professionelle Darstellung zu gewährleisten.

@@ -1,62 +1,63 @@
 ---
-title: "BibTeX field type: note"
+title: "BibTeX-Feldtyp: note"
 sidebar:
   label: note
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `note` field in a BibTeX entry is utilized to convey additional information regarding the cited work that doesn't fit into other standardized fields. This could include supplementary remarks, explanations, or clarifications that are pertinent for the reader to understand the context or the significance of the work in question. The `note` field proves to be a versatile tool in BibTeX, allowing for the inclusion of various kinds of information that could enhance the detail and depth of the citation.
+Das `note`-Feld in einem BibTeX-Eintrag wird verwendet, um zusätzliche Informationen zu dem zitierten Werk anzugeben, die nicht in andere standardisierte Felder passen. Dies könnten ergänzende Bemerkungen, Erklärungen oder Klarstellungen sein, die für den Leser relevant sind, um den Kontext oder die Bedeutung des jeweiligen Werks zu verstehen. Das `note`-Feld erweist sich als vielseitiges Werkzeug in BibTeX und ermöglicht die Aufnahme verschiedener Informationen, die die Detailtiefe der Zitation erweitern können.
 
 <CiteDrive />
 
-Utilizing the `note` field can often bring more depth to a reference by including additional context, remarks on the publication status, specific annotations, or any other relevant data that would benefit the reader. This might include links to supplementary materials, commentary on the work's influence or reception, or any other pertinent details.
+Die Verwendung des `note`-Feldes kann eine Referenz oft vertiefen, indem es zusätzlichen Kontext, Anmerkungen zum Veröffentlichungsstatus, spezifische Kommentare oder andere relevante Daten enthält, die für den Leser von Vorteil sein könnten. Dies könnte Links zu ergänzendem Material, Kommentare zum Einfluss des Werks oder andere relevante Details umfassen.
 
 ## Format
 
-To employ the `note` field, you would include it in your BibTeX entry as shown in the format below:
+Um das `note`-Feld zu verwenden, fügen Sie es in Ihren BibTeX-Eintrag wie im folgenden Format gezeigt ein:
 
 ```bibtex
 @entrytype{citationkey,
   ...
-  note={your note here},
+  note={Ihr Hinweis hier},
   ...
 }
 
 ```
 
-In the above format, replace "entrytype" with the appropriate type of work (e.g., @book, @article) and "citationkey" with a unique identifier for the entry. Then, you can insert your additional information in the `note` field.
+Ersetzen Sie im obigen Format "entrytype" durch den entsprechenden Werkstyp (z. B. @book, @article) und "citationkey" durch einen eindeutigen Bezeichner für den Eintrag. Danach können Sie Ihre zusätzlichen Informationen im `note`-Feld einfügen.
 
-## Examples
+## Beispiele
 
-Here are a few practical examples showcasing how to use the `note` field in various entries:
+Hier sind einige praktische Beispiele, die zeigen, wie man das `note`-Feld in verschiedenen Einträgen verwendet:
 
-### Example 1: Additional Information
+### Beispiel 1: Zusätzliche Informationen
 
 ```bibtex
 @book{smith2023innovations,
-  title = {Innovations in Modern Technology},
+  title = {Innovationen in der modernen Technologie},
   author = {Smith, John},
   year = {2023},
   publisher = {Technology Press},
-  note = {Includes bibliographical references and index},
+  note = {Beinhaltet bibliografische Referenzen und Index},
 }
 
 ```
-### Example 2: Supplementary Material
+
+### Beispiel 2: Ergänzendes Material
 
 ```bibtex
 @article{johnson2023ai,
-  title = {AI and Its Future Applications},
+  title = {KI und ihre zukünftigen Anwendungen},
   author = {Johnson, Mark},
   year = {2023},
   journal = {Journal of Technological Advances},
   volume = {5},
   issue = {2},
   pages = {123-135},
-  note = {Supplementary material available at: http://example.com/supplementary_material},
+  note = {Ergänzendes Material verfügbar unter: http://example.com/supplementary_material},
 }
 
 ```
 
-In these examples, the `note` field is used to indicate the inclusion of references and an index in a book and to provide a link to supplementary materials for an article, thereby offering the reader additional resources and information.
+In diesen Beispielen wird das `note`-Feld verwendet, um die Einbeziehung von Referenzen und eines Index in einem Buch anzugeben und um einen Link zu ergänzendem Material für einen Artikel bereitzustellen, wodurch dem Leser zusätzliche Ressourcen und Informationen angeboten werden.
