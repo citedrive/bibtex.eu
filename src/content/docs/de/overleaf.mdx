@@ -1,100 +1,100 @@
 ---
-title: "Overleaf: Citation & Reference Management - LaTeX Bibliographies Intro"
-description: "Discover how to manage citations, bibliographies, and references in Overleaf using BibTeX, Natbib, and BibLaTeX. Plus, streamline your workflow with CiteDrive."
+title: "Overleaf: Zitierung & Referenzmanagement - Einführung in LaTeX-Bibliographien"
+description: "Erfahren Sie, wie Sie Zitationen, Bibliographien und Referenzen in Overleaf mit BibTeX, Natbib und BibLaTeX verwalten. Optimieren Sie Ihren Workflow mit CiteDrive."
 sidebar:
-  label: Using Overleaf (Quick start)
+  label: Overleaf verwenden (Schnellstart)
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-**Overleaf.com**, the cloud-based LaTeX editor, is the go-to platform for collaborative creation and publication of academic documents. Born from the merger of **WriteLaTeX** and **ShareLaTeX**, it boasts over 10 million users worldwide. Overleaf features a wide range of pre-installed tools and templates tailored for academic journals, making it a top choice for researchers and academics.
+**Overleaf.com**, der cloudbasierte LaTeX-Editor, ist die bevorzugte Plattform für die kollaborative Erstellung und Veröffentlichung akademischer Dokumente. Entstanden aus der Fusion von **WriteLaTeX** und **ShareLaTeX**, zählt es weltweit über 10 Millionen Nutzer. Overleaf bietet eine Vielzahl von vorinstallierten Werkzeugen und Vorlagen, die auf akademische Zeitschriften zugeschnitten sind, was es zu einer Top-Wahl für Forscher und Akademiker macht.
 
-With Overleaf, you can easily manage citations and references using powerful tools like **CiteDrive**. This integration simplifies your workflow, making citation management more efficient.
+Mit Overleaf können Sie Zitationen und Referenzen einfach verwalten, indem Sie leistungsstarke Werkzeuge wie **CiteDrive** verwenden. Diese Integration vereinfacht Ihren Workflow und macht das Management von Zitationen effizienter.
 
 <CiteDrive />
 
-## Bibliography Management in Overleaf/LaTeX
+## Bibliographiemanagement in Overleaf/LaTeX
 
-### Why Choose CiteDrive?
+### Warum CiteDrive wählen?
 
-**CiteDrive** is a robust citation and reference management tool that works seamlessly with Overleaf. Here’s why you should consider using CiteDrive:
+**CiteDrive** ist ein leistungsstarkes Werkzeug zur Verwaltung von Zitationen und Referenzen, das nahtlos mit Overleaf funktioniert. Hier sind einige Gründe, warum Sie CiteDrive in Betracht ziehen sollten:
 
-- **Seamless Integration**: Works smoothly with Overleaf and popular reference systems such as BibTeX, Natbib, and BibLaTeX.
-- **Enhanced Efficiency**: Automates citation formatting and manages references with ease.
-- **User-Friendly**: Provides an intuitive interface for organizing and citing references.
-- **Web-Based and Collaborative**: Access and manage your citations from anywhere with real-time collaboration features.
-[Learn more about CiteDrive’s features and benefits](https://www.citedrive.com).
+- **Nahtlose Integration**: Funktioniert problemlos mit Overleaf und beliebten Referenzsystemen wie BibTeX, Natbib und BibLaTeX.
+- **Erhöhte Effizienz**: Automatisiert die Formatierung von Zitationen und verwaltet Referenzen mühelos.
+- **Benutzerfreundlich**: Bietet eine intuitive Oberfläche zur Organisation und Zitation von Referenzen.
+- **Webbasiert und kollaborativ**: Zugriff und Verwaltung Ihrer Zitationen von überall mit Echtzeit-Kollaborationsfunktionen.
+[Erfahren Sie mehr über die Funktionen und Vorteile von CiteDrive](https://www.citedrive.com).
 
 ### BibTeX
 
-BibTeX is a widely used reference management system in LaTeX. To use BibTeX in Overleaf:
+BibTeX ist ein weit verbreitetes Referenzmanagementsystem in LaTeX. Um BibTeX in Overleaf zu verwenden:
 
-1. **Create a Bibliography File**: Create a file named `references.bib` in your Overleaf project.
-2. **Add References**: Include references in this format:
+1. **Erstellen Sie eine Bibliographiedatei**: Erstellen Sie eine Datei namens `references.bib` in Ihrem Overleaf-Projekt.
+2. **Fügen Sie Referenzen hinzu**: Verwenden Sie folgendes Format:
 
    ```bibtex
    @article{AuthorYear,
-       author = {Author, First and Author, Second},
-       title = {Title of the Article},
-       journal = {Journal Name},
-       volume = {Volume Number},
-       number = {Issue Number},
-       pages = {Page Numbers},
-       year = {Year Published},
-       publisher = {Publisher Name}
+       author = {Autor, Vorname und Autor, Zweiter},
+       title = {Titel des Artikels},
+       journal = {Name der Zeitschrift},
+       volume = {Bandnummer},
+       number = {Ausgabenummer},
+       pages = {Seitenzahlen},
+       year = {Jahr der Veröffentlichung},
+       publisher = {Name des Verlags}
    }
    ```
 
-3. **Cite References**: In your LaTeX document, add:
+3. **Zitieren Sie Referenzen**: Fügen Sie in Ihrem LaTeX-Dokument hinzu:
 
    ```latex
    \bibliography{references}
    \bibliographystyle{plain}
    ```
 
-   Use `\cite{AuthorYear}` to cite a reference.
+   Verwenden Sie `\cite{AuthorYear}` um eine Referenz zu zitieren.
 
-4. **Streamline with CiteDrive**: Automate and manage your BibTeX references more efficiently with CiteDrive.
+4. **Optimieren mit CiteDrive**: Automatisieren und verwalten Sie Ihre BibTeX-Referenzen effizienter mit CiteDrive.
 
 ### Natbib
 
-Natbib offers greater flexibility for citation formatting. To use Natbib in Overleaf:
+Natbib bietet größere Flexibilität bei der Formatierung von Zitaten. Um Natbib in Overleaf zu verwenden:
 
-1. **Add Commands**: Include in the preamble:
+1. **Fügen Sie Befehle hinzu**: In der Präambel einfügen:
 
    ```latex
    \usepackage{natbib}
    \bibliographystyle{plainnat}
    ```
 
-2. **Cite References**: Use `\citep{AuthorYear}` for parenthetical citations or `\citet{AuthorYear}` for textual citations.
+2. **Zitieren Sie Referenzen**: Verwenden Sie `\citep{AuthorYear}` für Zitationen in Klammern oder `\citet{AuthorYear}` für textuelle Zitationen.
 
-3. **Bibliography**: Add:
+3. **Bibliographie**: Fügen Sie hinzu:
 
    ```latex
    \bibliography{references}
    ```
 
-4. **Enhance with CiteDrive**: Simplify citation management and formatting with CiteDrive.
+4. **Verbessern mit CiteDrive**: Vereinfachen Sie das Management und die Formatierung von Zitaten mit CiteDrive.
 
 ### BibLaTeX
 
-BibLaTeX provides advanced citation features. To use BibLaTeX in Overleaf:
+BibLaTeX bietet erweiterte Zitationsfunktionen. Um BibLaTeX in Overleaf zu verwenden:
 
-1. **Add Commands**: Include in the preamble:
+1. **Fügen Sie Befehle hinzu**: In der Präambel einfügen:
 
    ```latex
    \usepackage[style=authoryear,backend=bibtex]{biblatex}
    \bibliography{references}
    ```
 
-2. **Cite References**: Use `\parencite{AuthorYear}` for parenthetical citations or `\textcite{Author}` for in-text citations.
+2. **Zitieren Sie Referenzen**: Verwenden Sie `\parencite{AuthorYear}` für Zitationen in Klammern oder `\textcite{Author}` für Zitationen im Text.
 
-3. **Optimize with CiteDrive**: Enjoy enhanced control and flexibility with CiteDrive’s support for BibLaTeX.
+3. **Optimieren mit CiteDrive**: Genießen Sie erweiterte Kontrolle und Flexibilität mit der Unterstützung von BibLaTeX durch CiteDrive.
 
-## LaTeX Basics
+## LaTeX-Grundlagen
 
-For those new to LaTeX, here’s a brief overview:
+Für Einsteiger in LaTeX hier eine kurze Übersicht:
 
 ```latex
 \documentclass{article}
@@ -102,66 +102,67 @@ For those new to LaTeX, here’s a brief overview:
 \usepackage{caption}
 \usepackage{biblatex}
 
-\addbibresource{references.bib} % Replace "references.bib" with your bibliography file
+\addbibresource{references.bib} % Ersetzen Sie "references.bib" durch Ihre Bibliographiedatei
 
-\title{My First LaTeX Document}
-\author{Your Name}
+\title{Mein erstes LaTeX-Dokument}
+\author{Ihr Name}
 
 \begin{document}
 
 \maketitle
 
-\section{Introduction}
-This is a sample document demonstrating the basics of LaTeX.
+\section{Einführung}
+Dies ist ein Beispiel-Dokument, das die Grundlagen von LaTeX demonstriert.
 
-\section{Formatting}
-You can format text in \textbf{bold}, \textit{italic}, \underline{underline}, or \texttt{typewriter} font.
+\section{Formatierung}
+Sie können Text in \textbf{fett}, \textit{kursiv}, \underline{unterstrichen} oder \texttt{Schreibmaschinen}-Schrift formatieren.
 
-\section{Lists}
-Here's an example of a bulleted list:
+\section{Listen}
+Hier ein Beispiel für eine Aufzählungsliste:
 \begin{itemize}
-  \item First item
-  \item Second item
-  \item Third item
+  \item Erstes Element
+  \item Zweites Element
+  \item Drittes Element
 \end{itemize}
 
-\section{Mathematics}
-LaTeX is great for typesetting mathematical formulas. Here's an example of an equation:
+\section{Mathematik}
+LaTeX ist großartig zum Setzen mathematischer Formeln. Hier ein Beispiel für eine Gleichung:
 \begin{equation}
   E = mc^2
 \end{equation}
 
-\section{Figures and Tables}
-You can include figures and tables in your document. Here's an example of a figure:
+\section{Abbildungen und Tabellen}
+Sie können Abbildungen und Tabellen in Ihr Dokument einfügen. Hier ein Beispiel für eine Abbildung:
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image}
-  \caption{An example figure}
+  \caption{Eine Beispielabbildung}
   \label{fig:example}
 \end{figure}
 
-And here's an example of a table:
+Und hier ein Beispiel für eine Tabelle:
 \begin{table}[ht]
   \centering
   \begin{tabular}{|c|c|}
     \hline
-    \textbf{Item} & \textbf{Quantity} \\
+    \textbf{Artikel} & \textbf{Menge} \\
     \hline
-    Apple & 3 \\
+    Apfel & 3 \\
     Orange & 5 \\
     \hline
   \end{tabular}
-  \caption{An example table}
+  \caption{Eine Beispieltabelle}
   \label{tab:example}
 \end{table}
 
-\section{References}
-You can refer to labeled sections, equations, figures, and tables. For example, see Figure~\ref{fig:example} and Table~\ref{tab:example}.
+\section{Referenzen}
+Sie können auf bezeichnete Abschnitte, Gleichungen, Abbildungen und Tabellen verweisen. Zum Beispiel, siehe Abbildung~\ref{fig:example} und Tabelle~\ref{tab:example}.
 
-\section{Citations and Bibliography}
-Cite references using \cite{author2022}. Here's an example citation.
+\section{Zitationen und Bibliographie}
+Zitieren Sie Referenzen mit \cite{author2022}. Hier ist ein Beispiel für eine Zitation.
 
 \printbibliography
 
 \end{document}
 ```
+
