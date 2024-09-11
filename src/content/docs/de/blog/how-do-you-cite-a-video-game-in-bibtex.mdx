@@ -1,0 +1,25 @@
+---
+title: "Wie zitiert man ein Videospiel in BibTeX?"
+tags: [citedrive, bibtex, doi, spiel]
+date: 2022-12-18
+---
+import CiteDrive from '@components/CiteDrive.astro';
+
+Hier ist ein Beispiel, wie Sie ein Spiel in BibTeX zitieren könnten:
+
+```bibtex
+  @misc{spielTitel,
+    title = {Titel des Spiels},
+    publisher = {Publisher},
+    year = {Jahr},
+    url = {URL des Spiels},
+  }
+```
+
+<CiteDrive /> 
+
+In diesem Beispiel wird der `@misc` Eintragstyp verwendet, um anzuzeigen, dass es sich bei dem zitierten Objekt um eine sonstige Art von Werk, wie ein Spiel, handelt. Das Feld `title` gibt den Titel des Spiels an, das Feld `publisher` den Namen des Herausgebers, das Feld `year` das Jahr, in dem das Spiel veröffentlicht wurde, und das Feld `url` eine URL, unter der das Spiel erreichbar ist.
+
+Sie können dann den Befehl `\cite{spiel_titel}` verwenden, um eine Zitation des Spiels in Ihr Dokument einzufügen. Das spezifische Format der Zitation hängt vom verwendeten Zitierstil ab.
+
+Es ist wichtig zu beachten, dass das obige Beispiel nur eine Möglichkeit ist, ein Spiel in BibTeX zu zitieren, und es möglicherweise andere Ansätze gibt, je nach den spezifischen Anforderungen Ihres Projekts. Wenn Sie unsicher sind, wie Sie ein Spiel in BibTeX korrekt zitieren, sollten Sie möglicherweise einen Stilführer konsultieren oder Rat von Ihrem Dozenten oder Redakteur einholen.

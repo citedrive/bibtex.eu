@@ -1,0 +1,60 @@
+---
+title: "Verwendung von Zitationen in Overleaf mit BibTeX"
+tags: ["LaTeX", "Overleaf", "CiteDrive", "Satz", "Technische Dokumente", "Wissenschaftliche Dokumente", "Forschungspapiere", "Abhandlungen", "Markup-Sprache", "Formatierung", "Texteditor", "Zusammenarbeit", "Zitationsmanagement"]
+date: 2023-01-28
+---
+
+Zitationen sind ein wichtiger Aspekt des wissenschaftlichen Schreibens, da sie es den Autoren ermöglichen, den Quellen, die sie in ihrer Arbeit verwendet haben, Anerkennung zu zollen. In diesem Beitrag werden wir besprechen, wie man Zitationen in Overleaf, einem beliebten Online-LaTeX-Editor, mit BibTeX, einem Werkzeug zur Verwaltung bibliografischer Referenzen, verwendet.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Hinzufügen einer Bibliografie zu Ihrem Overleaf-Projekt
+
+Der erste Schritt bei der Verwendung von Zitationen in Overleaf besteht darin, eine Bibliografie zu Ihrem Projekt hinzuzufügen. Dies kann erfolgen, indem Sie eine neue Datei in Ihrem Projekt erstellen und sie `references.bib` benennen. Diese Datei wird alle Referenzen enthalten, die Sie in Ihrem Dokument zitieren möchten. Eine alternative Möglichkeit ist die Verwendung von [CiteDrive](https://www.citedrive.com/), das mit Overleaf verbunden ist und es Ihnen ermöglicht, bei der Bibliografie und den Zitationen zusammenzuarbeiten. CiteDrive unterstützt nativ BibTeX und auch Biblatex.
+
+Um eine Referenz zu dieser Datei hinzuzufügen, können Sie folgendes Format verwenden:
+
+```bibtex
+@article{key,   
+   author = {Author, A.},   
+   title = {Title},   
+   journal = {Journal},   
+   year = {Year}, 
+}
+```
+
+Der `key` ist eine eindeutige Kennung für die Referenz und wird verwendet, um sie in Ihrem Dokument zu zitieren. Die Felder `author`, `title`, `journal` und `year` sind für eine grundlegende Referenz erforderlich, aber es gibt viele weitere Felder, die ebenfalls hinzugefügt werden können.
+
+## Zitationen in Ihrem Dokument einfügen
+
+Nachdem Sie Ihre Referenzen zur `references.bib`-Datei hinzugefügt haben, können Sie sie in Ihrem Dokument mit dem Befehl `cite` zitieren. Zum Beispiel, um die Referenz mit dem Schlüssel `key` zu zitieren, würden Sie folgenden Befehl verwenden:
+
+```latex
+\cite{key}
+```
+
+Dies wird die Zitation in Ihr Dokument im Format der von Ihnen gewählten Bibliografiestils einfügen.
+
+## Formatierung Ihrer Bibliografie
+
+Um Ihre Bibliografie zu formatieren, müssen Sie einen Bibliografiestil angeben. Dies kann durch Einfügen des folgenden Befehls in den Vorspann Ihres Dokuments erfolgen:
+
+```latex
+\bibliographystyle{style}
+```
+
+Dabei ist `style` der Name des Bibliografiestils, den Sie verwenden möchten. Zu den häufig verwendeten Stilen gehören `plain`, `unsrt` und `apalike`.
+
+Schließlich müssen Sie den folgenden Befehl am Ende Ihres Dokuments einfügen, um die Bibliografie zu generieren:
+
+```latex
+\bibliography{references}
+```
+
+Dabei ist `references` der Name Ihrer Bibliografiedatei (`references.bib` in unserem Beispiel).
+
+## Fazit
+
+In diesem Beitrag haben wir besprochen, wie man Zitationen in Overleaf mit BibTeX verwendet. Indem Sie die oben beschriebenen Schritte befolgen, können Sie problemlos Referenzen zu Ihrem Projekt hinzufügen, sie in Ihrem Dokument zitieren und Ihre Bibliografie formatieren, um die Anforderungen Ihrer akademischen Institution oder Ihres Verlags zu erfüllen. Darüber hinaus ermöglicht die Verwendung von CiteDrive, das mit Overleaf verbunden ist, eine einfache Zusammenarbeit bei Ihren Referenzen und Zitationen. CiteDrive unterstützt sowohl BibTeX als auch Biblatex, was es zu einer vielseitigen Option für die Verwaltung Ihrer bibliografischen Referenzen macht.

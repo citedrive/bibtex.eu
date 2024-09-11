@@ -1,0 +1,167 @@
+---
+title: "Overleaf: Citation & Reference Management - LaTeX Bibliographies Intro"
+description: "Discover how to manage citations, bibliographies, and references in Overleaf using BibTeX, Natbib, and BibLaTeX. Plus, streamline your workflow with CiteDrive."
+sidebar:
+  label: Using Overleaf (Quick start)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com**, the cloud-based LaTeX editor, is the go-to platform for collaborative creation and publication of academic documents. Born from the merger of **WriteLaTeX** and **ShareLaTeX**, it boasts over 10 million users worldwide. Overleaf features a wide range of pre-installed tools and templates tailored for academic journals, making it a top choice for researchers and academics.
+
+With Overleaf, you can easily manage citations and references using powerful tools like **CiteDrive**. This integration simplifies your workflow, making citation management more efficient.
+
+<CiteDrive />
+
+## Bibliography Management in Overleaf/LaTeX
+
+### Why Choose CiteDrive?
+
+**CiteDrive** is a robust citation and reference management tool that works seamlessly with Overleaf. Here’s why you should consider using CiteDrive:
+
+- **Seamless Integration**: Works smoothly with Overleaf and popular reference systems such as BibTeX, Natbib, and BibLaTeX.
+- **Enhanced Efficiency**: Automates citation formatting and manages references with ease.
+- **User-Friendly**: Provides an intuitive interface for organizing and citing references.
+- **Web-Based and Collaborative**: Access and manage your citations from anywhere with real-time collaboration features.
+[Learn more about CiteDrive’s features and benefits](https://www.citedrive.com).
+
+### BibTeX
+
+BibTeX is a widely used reference management system in LaTeX. To use BibTeX in Overleaf:
+
+1. **Create a Bibliography File**: Create a file named `references.bib` in your Overleaf project.
+2. **Add References**: Include references in this format:
+
+   ```bibtex
+   @article{AuthorYear,
+       author = {Author, First and Author, Second},
+       title = {Title of the Article},
+       journal = {Journal Name},
+       volume = {Volume Number},
+       number = {Issue Number},
+       pages = {Page Numbers},
+       year = {Year Published},
+       publisher = {Publisher Name}
+   }
+   ```
+
+3. **Cite References**: In your LaTeX document, add:
+
+   ```latex
+   \bibliography{references}
+   \bibliographystyle{plain}
+   ```
+
+   Use `\cite{AuthorYear}` to cite a reference.
+
+4. **Streamline with CiteDrive**: Automate and manage your BibTeX references more efficiently with CiteDrive.
+
+### Natbib
+
+Natbib offers greater flexibility for citation formatting. To use Natbib in Overleaf:
+
+1. **Add Commands**: Include in the preamble:
+
+   ```latex
+   \usepackage{natbib}
+   \bibliographystyle{plainnat}
+   ```
+
+2. **Cite References**: Use `\citep{AuthorYear}` for parenthetical citations or `\citet{AuthorYear}` for textual citations.
+
+3. **Bibliography**: Add:
+
+   ```latex
+   \bibliography{references}
+   ```
+
+4. **Enhance with CiteDrive**: Simplify citation management and formatting with CiteDrive.
+
+### BibLaTeX
+
+BibLaTeX provides advanced citation features. To use BibLaTeX in Overleaf:
+
+1. **Add Commands**: Include in the preamble:
+
+   ```latex
+   \usepackage[style=authoryear,backend=bibtex]{biblatex}
+   \bibliography{references}
+   ```
+
+2. **Cite References**: Use `\parencite{AuthorYear}` for parenthetical citations or `\textcite{Author}` for in-text citations.
+
+3. **Optimize with CiteDrive**: Enjoy enhanced control and flexibility with CiteDrive’s support for BibLaTeX.
+
+## LaTeX Basics
+
+For those new to LaTeX, here’s a brief overview:
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % Replace "references.bib" with your bibliography file
+
+\title{My First LaTeX Document}
+\author{Your Name}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a sample document demonstrating the basics of LaTeX.
+
+\section{Formatting}
+You can format text in \textbf{bold}, \textit{italic}, \underline{underline}, or \texttt{typewriter} font.
+
+\section{Lists}
+Here's an example of a bulleted list:
+\begin{itemize}
+  \item First item
+  \item Second item
+  \item Third item
+\end{itemize}
+
+\section{Mathematics}
+LaTeX is great for typesetting mathematical formulas. Here's an example of an equation:
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{Figures and Tables}
+You can include figures and tables in your document. Here's an example of a figure:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{An example figure}
+  \label{fig:example}
+\end{figure}
+
+And here's an example of a table:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Item} & \textbf{Quantity} \\
+    \hline
+    Apple & 3 \\
+    Orange & 5 \\
+    \hline
+  \end{tabular}
+  \caption{An example table}
+  \label{tab:example}
+\end{table}
+
+\section{References}
+You can refer to labeled sections, equations, figures, and tables. For example, see Figure~\ref{fig:example} and Table~\ref{tab:example}.
+
+\section{Citations and Bibliography}
+Cite references using \cite{author2022}. Here's an example citation.
+
+\printbibliography
+
+\end{document}
+```
