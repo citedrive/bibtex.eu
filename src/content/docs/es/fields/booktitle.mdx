@@ -1,61 +1,62 @@
 ---
-title: "BibTeX field type: booktitle"
+title: "Tipo de Campo BibTeX: Título del Libro"
 sidebar:
   label: booktitle
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In scholarly writing, citing sections or chapters within a book or a conference proceeding accurately is of paramount importance. The `booktitle` field in BibTeX plays a critical role in this process, providing a way to specify the title of the larger work that contains the cited section. Here we will explore in depth how to use the `booktitle` field to create detailed and precise citations for "incollection" and "inproceedings" entries.
+En la escritura académica, citar secciones o capítulos dentro de un libro o actas de conferencias con precisión es de suma importancia. El campo `booktitle` en BibTeX desempeña un papel crucial en este proceso, proporcionando una manera de especificar el título de la obra más grande que contiene la sección citada. Aquí exploraremos en profundidad cómo utilizar el campo `booktitle` para crear citas detalladas y precisas para entradas de tipo "incollection" e "inproceedings".
 
 <CiteDrive />
 
-## Understanding the `Booktitle` Field
+## Comprendiendo el Campo `Booktitle`
 
-The `booktitle` field is utilized when you want to cite a section, chapter, or article that is part of a larger work, such as a book or conference proceedings. It serves to clearly differentiate between the title of the individual section (`title` field) and the title of the larger work. By including the `booktitle` field in your BibTeX entries, you provide readers with a clear and full picture of the context in which the cited section appears.
+El campo `booktitle` se utiliza cuando deseas citar una sección, capítulo o artículo que es parte de una obra más grande, como un libro o actas de conferencias. Sirve para diferenciar claramente entre el título de la sección individual (`title` field) y el título de la obra más grande. Al incluir el campo `booktitle` en tus entradas BibTeX, proporcionas a los lectores una imagen clara y completa del contexto en el que aparece la sección citada.
 
-### Formatting Guidelines
+### Directrices de Formato
 
-To use the `booktitle` field appropriately, follow the standard BibTeX formatting. Here is a basic structure demonstrating how to include a `booktitle` in an `incollection` entry:
+Para usar el campo `booktitle` adecuadamente, sigue el formato estándar de BibTeX. Aquí tienes una estructura básica que muestra cómo incluir un `booktitle` en una entrada `incollection`:
 
 ```bibtex
-@incollection{ReferenceID,
-  author    = {Author Name},
-  title     = {Title of the Section},
-  booktitle = {Title of the Larger Work},
-  year      = {Publication Year},
-  pages     = {Page Range},
-  publisher = {Publisher Name},
-  address   = {Publication Location},
-  editor    = {Editor(s) Name(s)},
+@incollection{ReferenciaID,
+  author    = {Nombre del Autor},
+  title     = {Título de la Sección},
+  booktitle = {Título de la Obra Mayor},
+  year      = {Año de Publicación},
+  pages     = {Rango de Páginas},
+  publisher = {Nombre del Editor},
+  address   = {Ubicación de Publicación},
+  editor    = {Nombre(s) del Editor(es)},
 }
 ```
 
-### Real World Example
+### Ejemplo del Mundo Real
 
-Below is an actual example of how to use the `booktitle` field in a citation:
+A continuación, un ejemplo real de cómo utilizar el campo `booktitle` en una cita:
 
 ```bibtex
 @incollection{Mihalcea2006Knowledge,
-	title     = {Knowledge-Based Methods for {WSD}},
-	author    = {Rada Mihalcea},
-	year      = 2006,
-	booktitle = {Word Sense Disambiguation: Algorithms and Applications},
-	publisher = {Springer},
-	address   = {Dordrecht, the Netherlands},
-	pages     = {107--132},
-	editor    = {Eneko Agirre and Philip Edmonds},
+  title     = {Métodos Basados en Conocimientos para {WSD}},
+  author    = {Rada Mihalcea},
+  year      = 2006,
+  booktitle = {Desambiguación de Sentidos de Palabras: Algoritmos y Aplicaciones},
+  publisher = {Springer},
+  address   = {Dordrecht, Países Bajos},
+  pages     = {107--132},
+  editor    = {Eneko Agirre y Philip Edmonds},
 }
 ```
 
-In this example, the `booktitle` field clearly indicates the larger work in which the cited section appears, providing a comprehensive view of the publication context.
+En este ejemplo, el campo `booktitle` indica claramente la obra más grande en la que aparece la sección citada, proporcionando una visión completa del contexto de la publicación.
 
-### Tips for Effective Usage
+### Consejos para un Uso Efectivo
 
-1. **Consistency**: Maintain a consistent format for all `booktitle` entries to ensure a cohesive bibliography.
-2. **Accuracy**: Ensure that the `booktitle` field accurately represents the larger work to avoid misleading the readers.
-3. **Comprehensive Information**: Include comprehensive details such as editors and publication location to enrich the citation.
+1. **Consistencia**: Mantén un formato consistente para todas las entradas `booktitle` para asegurar una bibliografía cohesiva.
+2. **Exactitud**: Asegúrate de que el campo `booktitle` represente con precisión la obra más grande para evitar confundir a los lectores.
+3. **Información Completa**: Incluye detalles completos como los editores y la ubicación de publicación para enriquecer la cita.
 
-## Conclusion
+## Conclusión
 
-Effectively using the `booktitle` field in BibTeX entries enables a richer and more detailed bibliography, offering readers an enhanced understanding of the context of cited sections or chapters. This practice promotes scholarly integrity by ensuring accurate and precise attribution of works within larger collections or proceedings. Always refer to specific guidelines or styles (APA, MLA, etc.) to tailor your citations appropriately.
+Utilizar de manera efectiva el campo `booktitle` en las entradas de BibTeX permite una bibliografía más rica y detallada, ofreciendo a los lectores una comprensión mejorada del contexto de las secciones o capítulos citados. Esta práctica promueve la integridad académica al asegurar una atribución precisa y exacta de las obras dentro de colecciones o actas más grandes. Siempre consulta las directrices o estilos específicos (APA, MLA, etc.) para adaptar tus citas adecuadamente.
+

@@ -1,63 +1,61 @@
 ---
-title: "BibTeX field type: chapter"
+title: "Tipo de Campo BibTeX: Capítulo"
 sidebar:
   label: chapter
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In the world of scholarly writing, citations serve as the backbone for validating arguments and referencing existing works. The `chapter` field in BibTeX entries further refines this by allowing users to specify the exact chapter, section, or range of pages being referred to in a cited book. This field is particularly important in `inbook` and `incollection` entries, facilitating more precise referencing and aiding readers in locating the exact source material. Let's delve deeper into understanding and effectively using the `chapter` field in BibTeX.
+En el mundo de la escritura académica, las citas sirven como el fundamento para validar argumentos y referenciar trabajos existentes. El campo `chapter` en las entradas BibTeX refina aún más esto al permitir a los usuarios especificar el capítulo, sección o rango de páginas exacto al que se refieren en un libro citado. Este campo es particularmente importante en las entradas `inbook` e `incollection`, facilitando una referencia más precisa y ayudando a los lectores a localizar el material fuente exacto. Vamos a profundizar en la comprensión y el uso efectivo del campo `chapter` en BibTeX.
 
 <CiteDrive />
 
-### Overview
+### Visión General
 
-The `chapter` field is utilized to numerically represent a specific chapter or section within a book that you wish to cite. In the case of `inbook` entries, including the `chapter` field is mandatory to provide detailed citation information. However, it is not applicable for the `book` entry type as this type is used to cite a book in its entirety, thus not requiring specific chapter details.
+El campo `chapter` se utiliza para representar numéricamente un capítulo o sección específica dentro de un libro que deseas citar. En el caso de las entradas `inbook`, incluir el campo `chapter` es obligatorio para proporcionar información de citación detallada. Sin embargo, no es aplicable para el tipo de entrada `book`, ya que este tipo se usa para citar un libro en su totalidad, no requiriendo detalles específicos del capítulo.
 
-### Formatting and Usage
+### Formato y Uso
 
-To accurately represent the chapter or section you are citing, employ the `chapter` field as illustrated below:
+Para representar con precisión el capítulo o sección que estás citando, utiliza el campo `chapter` como se ilustra a continuación:
 
 ```bibtex
-@inbook{ReferenceID,
-  author  = {Author Name},
-  title   = {Title of the Book},
-  chapter = {Chapter Number},
-  pages   = {Page Range},
-  year    = {Publication Year},
-  publisher = {Publisher Name},
-  address   = {Publication Location},
+@inbook{ReferenciaID,
+  author  = {Nombre del Autor},
+  title   = {Título del Libro},
+  chapter = {Número del Capítulo},
+  pages   = {Rango de Páginas},
+  year    = {Año de Publicación},
+  publisher = {Nombre del Editor},
+  address   = {Ubicación de Publicación},
 }
 ```
 
-In the above template, replace "Chapter Number" with the actual number of the chapter you are citing. If citing a specific section or range of pages instead, this can be indicated in the `pages` field.
+En la plantilla anterior, reemplaza "Número del Capítulo" con el número real del capítulo que estás citando. Si estás citando una sección específica o rango de páginas, esto puede indicarse en el campo `pages`.
 
-### Example
+### Ejemplo
 
-Here's a concrete example demonstrating how to properly use the `chapter` field:
+Aquí tienes un ejemplo concreto que demuestra cómo usar correctamente el campo `chapter`:
 
 ```bibtex
 @inbook{Mueller2014The,
   author   = {Hans Mueller},
-  title    = {Theories of Modern Physics},
+  title    = {Teorías de la Física Moderna},
   chapter  = {2},
   pages    = {23-45},
   year     = 2014,
   publisher= {Scientific Press},
-  address  = {New York, USA},
+  address  = {Nueva York, EE. UU.},
 }
 ```
 
-In this example, the `chapter` field is used to specifically reference chapter 2 of the cited book, allowing readers to easily locate the referenced material.
+En este ejemplo, el campo `chapter` se usa para referirse específicamente al capítulo 2 del libro citado, permitiendo a los lectores localizar fácilmente el material referido.
 
-### Points to Remember
+### Puntos a Recordar
 
-1. **Specificity**: The `chapter` field helps in pinpointing the exact section of the book being referred to, promoting precise and accurate citation.
-2. **Mandatory for `inbook` Entries**: When using the `inbook` entry type, the inclusion of the `chapter` field is mandatory to provide a detailed reference.
-3. **Not Applicable for `book` Entries**: The `chapter` field is not used in `book` entries as these entries are meant to cite the entire book.
+1. **Especificidad**: El campo `chapter` ayuda a precisar la sección exacta del libro al que se hace referencia, promoviendo una cita precisa y exacta.
+2. **Obligatorio para Entradas `inbook`**: Al usar el tipo de entrada `inbook`, la inclusión del campo `chapter` es obligatoria para proporcionar una referencia detallada.
+3. **No Aplicable para Entradas `book`**: El campo `chapter` no se usa en entradas `book` ya que estas entradas están destinadas a citar el libro en su totalidad.
 
+### Conclusión
 
-
-### Conclusion
-
-Mastering the use of the `chapter` field in BibTeX not only enhances the accuracy of your citations but also aids readers in efficiently locating the cited material within larger works. Remember to maintain consistency in your formatting to ensure a well-organized and professional bibliography. Always double-check your entries to prevent any errors and uphold the standards of scholarly writing.
+Dominar el uso del campo `chapter` en BibTeX no solo mejora la precisión de tus citas, sino que también ayuda a los lectores a localizar de manera eficiente el material citado dentro de obras más grandes. Recuerda mantener la consistencia en tu formato para asegurar una bibliografía bien organizada y profesional. Siempre revisa tus entradas para prevenir errores y mantener los estándares de la escritura académica.
