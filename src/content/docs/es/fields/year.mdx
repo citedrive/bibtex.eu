@@ -1,28 +1,29 @@
+
 ---
-title: "BibTeX field type: year"
+title: "Tipo de campo BibTeX: year"
 sidebar:
   label: year
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `year` field is used in a BibTeX entry to indicate the year when the work was published or created, if it is unpublished. This is a vital field as it gives the reader an understanding of the timeframe in which the work was produced, and it can influence the way the information in the work is perceived or utilized.
+El campo `year` se utiliza en una entrada BibTeX para indicar el año en que se publicó o creó el trabajo, si es que no está publicado. Este es un campo vital ya que proporciona al lector una comprensión del período en el que se produjo el trabajo, y puede influir en la forma en que se percibe o utiliza la información contenida en él.
 
 <CiteDrive />
 
-This field is typically mandatory in most BibTeX entry types because it helps in accurately citing and referencing a piece of work. Including the publication year is a standard practice in scholarly writing, as it provides essential context regarding the timeliness and relevancy of the cited material.
+Este campo es típicamente obligatorio en la mayoría de los tipos de entrada BibTeX porque ayuda a citar y referenciar con precisión una pieza de trabajo. Incluir el año de publicación es una práctica estándar en la escritura académica, ya que proporciona un contexto esencial sobre la actualidad y relevancia del material citado.
 
-The `year` field should be filled with a four-digit year format to maintain consistency and clarity in your references. This detail facilitates a chronological understanding and easy sorting of the references in a bibliography.
+El campo `year` debe llenarse con un formato de año de cuatro dígitos para mantener la consistencia y claridad en tus referencias. Este detalle facilita una comprensión cronológica y una fácil clasificación de las referencias en una bibliografía.
 
-Here is how you can use the `year` field in a BibTeX entry:
+Aquí tienes cómo puedes usar el campo `year` en una entrada BibTeX:
 
-## Example
+## Ejemplo
 
 ```bibtex
-@article{key,
-    author = {Author Name},
-    title = {Title of the Article},
-    journal = {Journal Name},
+@article{clave,
+    author = {Nombre del Autor},
+    title = {Título del Artículo},
+    journal = {Nombre de la Revista},
     volume = {3},
     number = {2},
     pages = {123-456},
@@ -30,4 +31,4 @@ Here is how you can use the `year` field in a BibTeX entry:
 }
 ```
 
-In this example, the `year` field indicates that the article was published in the year 2007. It is a critical piece of information that helps readers to ascertain the temporal context of the cited work, which might be vital for historical or chronological analyses in research.
+En este ejemplo, el campo `year` indica que el artículo se publicó en el año 2007. Es una pieza crítica de información que ayuda a los lectores a determinar el contexto temporal del trabajo citado, lo cual puede ser vital para análisis históricos o cronológicos en la investigación.

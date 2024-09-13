@@ -1,66 +1,64 @@
 ---
-title: "BibTeX field type: number"
+title: "Tipo de campo BibTeX: number"
 sidebar:
   label: number
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In BibTeX, the `number` field is used to specify the issue number of a journal, the number of a technical report, or other identifiers that are part of a larger series. This field helps to pinpoint the exact issue or edition of a series where the referenced work can be found, providing more precise information for locating the material.
+En BibTeX, el campo `number` se utiliza para especificar el número del número de una revista, el número de un informe técnico u otros identificadores que forman parte de una serie más amplia. Este campo ayuda a precisar el número exacto o la edición de una serie en la que se puede encontrar el trabajo citado, proporcionando información más precisa para localizar el material.
 
 <CiteDrive />
 
-This field is commonly used in conjunction with the `volume` field, especially for journal articles and periodicals. For a technical report, the `number` field would typically contain the report number assigned by the institution or organization that published the report.
+Este campo se utiliza comúnmente en conjunto con el campo `volume`, especialmente para artículos de revistas y publicaciones periódicas. Para un informe técnico, el campo `number` generalmente contiene el número del informe asignado por la institución u organización que publicó el informe.
 
-## Format
+## Formato
 
-The format for the `number` field is relatively straightforward. In the context of an article entry, it would appear as follows:
+El formato para el campo `number` es relativamente sencillo. En el contexto de una entrada de artículo, aparecería de la siguiente manera:
 
 ```bibtex
-@article{citation_key,
+@article{clave_cita,
   ...
-  number={issue_number},
+  number={numero_issue},
   ...
 }
-
 ```
 
-Here, "citation_key" represents a unique identifier for the entry, and "issue_number" represents the number of the journal issue, technical report, or other publication.
+Aquí, "clave_cita" representa un identificador único para la entrada, y "numero_issue" representa el número del número de la revista, informe técnico u otra publicación.
 
-## Examples
+## Ejemplos
 
-Below are some examples showcasing the application of the `number` field in different contexts:
+A continuación se presentan algunos ejemplos que muestran la aplicación del campo `number` en diferentes contextos:
 
-### Example 1: Journal Article
+### Ejemplo 1: Artículo de Revista
 
 ```bibtex
 @article{doe2023study,
   author = {Doe, Jane},
-  title = {A Comprehensive Study on Quantum Computing},
-  journal = {Journal of Advanced Computing},
+  title = {Un Estudio Integral sobre la Computación Cuántica},
+  journal = {Revista de Computación Avanzada},
   year = {2023},
   volume = {29},
   number = {3},
   pages = {215-230},
 }
-
 ```
 
-In this example, the `number` field specifies the third issue of the 29th volume of the "Journal of Advanced Computing".
+En este ejemplo, el campo `number` especifica el tercer número del 29º volumen de la "Revista de Computación Avanzada".
 
-### Example 2: Technical Report
+### Ejemplo 2: Informe Técnico
 
 ```bibtex
 @techreport{smith2022analysis,
   author = {Smith, John},
-  title = {An Analysis of Renewable Energy Trends},
-  institution = {Energy Research Institute},
+  title = {Un Análisis de las Tendencias en Energía Renovable},
+  institution = {Instituto de Investigación Energética},
   year = {2022},
   number = {TR-2022-45},
-  type = {Technical Report},
+  type = {Informe Técnico},
 }
 ```
 
-In this case, the `number` field is used to indicate the specific report number assigned by the "Energy Research Institute".
+En este caso, el campo `number` se utiliza para indicar el número específico del informe asignado por el "Instituto de Investigación Energética".
 
-Utilizing the `number` field accurately can facilitate the reader in finding the source material more easily and verifying the cited information. It's an essential detail in scholarly writing and research documentation.
+Utilizar el campo `number` de manera precisa puede facilitar al lector la búsqueda del material fuente y la verificación de la información citada. Es un detalle esencial en la redacción académica y la documentación de investigación.

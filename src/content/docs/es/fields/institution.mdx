@@ -1,23 +1,23 @@
 ---
-title: "BibTeX field type: institution"
+title: "Tipo de campo BibTeX: institución"
 sidebar:
-  label: institution
+  label: institución
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `institution` field is designated to be used within the `@techreport` entry type, where it serves to denote the name of the institution that was responsible for issuing or publishing the report. This helps to give proper attribution and helps readers to find the original source more easily.
+El campo `institution` está destinado a ser utilizado dentro del tipo de entrada `@techreport`, donde sirve para denotar el nombre de la institución responsable de emitir o publicar el informe. Esto ayuda a proporcionar la atribución adecuada y facilita a los lectores la localización de la fuente original.
 
 <CiteDrive/>
 
-Here is an example structure demonstrating how you might use the `institution` field in a `@techreport` entry:
+Aquí tienes un ejemplo de estructura que demuestra cómo podrías usar el campo `institution` en una entrada `@techreport`:
 
 ```bibtex
-@techreport{key,
+@techreport{clave,
   institution = {...},
 }
 ```
 
-In this format, the "key" is a unique identifier for the BibTeX entry, and the "institution" field should contain the name of the institution that published the report. It is essential to provide accurate and detailed information in this field to facilitate proper citation and referencing.
+En este formato, la "clave" es un identificador único para la entrada BibTeX, y el campo "institution" debe contener el nombre de la institución que publicó el informe. Es esencial proporcionar información precisa y detallada en este campo para facilitar la citación y referencia adecuadas.
 
-Ensure to replace the `{...}` with the actual name of the institution when you are creating your BibTeX entries. This field helps to organize and categorize technical reports properly in your reference list.
+Asegúrate de reemplazar el `{...}` con el nombre real de la institución al crear tus entradas BibTeX. Este campo ayuda a organizar y categorizar adecuadamente los informes técnicos en tu lista de referencias.

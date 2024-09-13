@@ -1,59 +1,57 @@
 ---
-title: "BibTeX field type: organization"
+title: "Tipo de campo BibTeX: organization"
 sidebar:
   label: organization
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `organization` field in a BibTeX entry is used to specify the name of the organization responsible for publishing the document or hosting the event being cited. This could be a company, an institution, or a group that sponsored or organized a conference, workshop, manual, etc. Including the organization provides the reader with a clear context of the entity behind the document, which can be crucial for determining the reliability and authority of the source.
+El campo `organization` en una entrada de BibTeX se utiliza para especificar el nombre de la organización responsable de la publicación del documento o de la organización del evento citado. Esto podría ser una empresa, una institución o un grupo que patrocinó o organizó una conferencia, taller, manual, etc. Incluir la organización proporciona al lector un contexto claro sobre la entidad detrás del documento, lo que puede ser crucial para determinar la fiabilidad y la autoridad de la fuente.
 
 <CiteDrive />
 
-You will typically encounter this field in `@proceedings` and `@manual` entries, but it might appear in other types of entries as well, depending on the specific requirements of the bibliography style being used.
+Normalmente encontrarás este campo en las entradas `@proceedings` y `@manual`, pero podría aparecer en otros tipos de entradas, dependiendo de los requisitos específicos del estilo de bibliografía que se esté utilizando.
 
-## Format
+## Formato
 
-The format for specifying the `organization` field is as follows:
+El formato para especificar el campo `organization` es el siguiente:
 
 ```bibtex
-@entry_type{citation_key,
+@entry_type{clave_cita,
   ...
-  organization={Organization Name},
+  organization={Nombre de la Organización},
   ...
 }
-
 ```
 
-Here, "entry_type" refers to the type of BibTeX entry (such as `@proceedings` or `@manual`), "citation_key" is a unique identifier for the entry, and "Organization Name" is the name of the organization involved.
+Aquí, "entry_type" se refiere al tipo de entrada BibTeX (como `@proceedings` o `@manual`), "clave_cita" es un identificador único para la entrada, y "Nombre de la Organización" es el nombre de la organización involucrada.
 
-## Examples
+## Ejemplos
 
-Here are a couple of examples demonstrating how to use the `organization` field in different contexts:
+A continuación, se presentan un par de ejemplos que demuestran cómo usar el campo `organization` en diferentes contextos:
 
-### Example 1: Conference Proceedings
+### Ejemplo 1: Actas de Conferencia
 
 ```bibtex
 @proceedings{ICML2023,
-  title = {Proceedings of the 40th International Conference on Machine Learning},
+  title = {Actas de la 40ª Conferencia Internacional sobre Aprendizaje Automático},
   year = {2023},
-  organization = {International Machine Learning Society},
+  organization = {Sociedad Internacional de Aprendizaje Automático},
 }
-
 ```
 
-In this example, the `organization` field specifies the entity responsible for organizing the conference whose proceedings are being cited.
+En este ejemplo, el campo `organization` especifica la entidad responsable de la organización de la conferencia cuyas actas se están citando.
 
-### Example 2: Manual
+### Ejemplo 2: Manual
 
 ```bibtex
-@manual{UserGuide2022,
-  title = {XYZ Software User Guide},
+@manual{GuiaUsuario2022,
+  title = {Guía del Usuario del Software XYZ},
   year = {2022},
   organization = {XYZ Software Inc.},
 }
 ```
 
-Here, the `organization` field is used to indicate the company that published the software manual.
+Aquí, el campo `organization` se utiliza para indicar la empresa que publicó el manual del software.
 
-Including the `organization` field in your BibTeX entries can help to provide a complete and detailed reference, facilitating more straightforward identification and retrieval of the source materials.
+Incluir el campo `organization` en tus entradas de BibTeX puede ayudar a proporcionar una referencia completa y detallada, facilitando la identificación y recuperación de los materiales de origen.

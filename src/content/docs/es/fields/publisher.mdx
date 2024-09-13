@@ -1,60 +1,57 @@
 ---
-title: "BibTeX field type: publisher"
+title: "Tipo de campo BibTeX: publisher"
 sidebar:
   label: publisher
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `publisher` field is used in various BibTeX entries such as `@book`, `@inbook`, or `@incollection` to specify the name of the publisher that published the referred work. Including the publisher in your citation helps to provide a comprehensive and precise reference, which can aid readers in locating the original source.
+El campo `publisher` se utiliza en varias entradas de BibTeX, como `@book`, `@inbook` o `@incollection`, para especificar el nombre del editor que publicó el trabajo referido. Incluir el editor en tu cita ayuda a proporcionar una referencia completa y precisa, lo que puede facilitar a los lectores la localización de la fuente original.
 
 <CiteDrive />
 
-When including a publisher in your BibTeX entry, be sure to use the full and official name of the publisher. This will ensure the citation is both professional and credible. Additionally, it helps to prevent confusion with other publishers that may have similar names.
+Al incluir un editor en tu entrada de BibTeX, asegúrate de utilizar el nombre completo y oficial del editor. Esto garantizará que la cita sea tanto profesional como creíble. Además, ayuda a prevenir confusiones con otros editores que puedan tener nombres similares.
 
-## Examples
+## Ejemplos
 
-Here are a few examples demonstrating how to properly specify a publisher in different BibTeX entries:
+Aquí tienes algunos ejemplos que demuestran cómo especificar correctamente un editor en diferentes entradas de BibTeX:
 
-### Book
+### Libro
 
 ```bibtex
-@book{key1,
-  title = {The Art of Scientific Research},
+@book{clave1,
+  title = {El Arte de la Investigación Científica},
   author = {John Doe},
   year = {2023},
   publisher = {Cambridge University Press},
 }
-
 ```
 
 ### Inbook
 
 ```bibtex
-@inbook{key2,
-  title = {Chapter on Quantum Mechanics},
+@inbook{clave2,
+  title = {Capítulo sobre Mecánica Cuántica},
   author = {Jane Doe},
   year = {2023},
   publisher = {Oxford University Press},
   pages = {45--78},
   editor = {Sarah Smith},
-  booktitle = {Modern Physics},
+  booktitle = {Física Moderna},
 }
-
 ```
 
 ### Incollection
 
 ```bibtex
-@incollection{key3,
-  title = {Essay on Environmental Conservation},
+@incollection{clave3,
+  title = {Ensayo sobre Conservación Ambiental},
   author = {Alex Johnson},
   year = {2023},
   publisher = {Springer},
-  booktitle = {Sustainable Development: Theories and Practices},
+  booktitle = {Desarrollo Sostenible: Teorías y Prácticas},
   editor = {Mark Lee},
 }
-
 ```
 
-Note that the `publisher` field is usually accompanied by other important fields such as `title`, `author`, `year`, etc., to provide a complete citation. It's also worth noting that depending on the citation style being used, the format and placement of the publisher field may vary, so always be sure to follow the guidelines of the specific style you are adhering to.
+Ten en cuenta que el campo `publisher` generalmente se acompaña de otros campos importantes como `title`, `author`, `year`, etc., para proporcionar una cita completa. También es importante notar que, dependiendo del estilo de cita que se esté utilizando, el formato y la colocación del campo del editor pueden variar, por lo que siempre debes seguir las directrices del estilo específico al que te adhieres.
