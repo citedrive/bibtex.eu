@@ -1,0 +1,55 @@
+---
+title: "Usando Citaciones en Overleaf con BibTeX"
+tags: ["LaTeX", "Overleaf", "CiteDrive", "tipografía", "documentos técnicos", "documentos científicos", "trabajos de investigación", "tesis", "lenguaje de marcado", "formato", "editor de texto", "colaboración", "gestión de citas"]
+date: 2023-01-28
+---
+
+Las citaciones son un aspecto importante de la escritura académica, ya que permiten a los autores dar crédito a las fuentes que han utilizado en su trabajo. En esta publicación, discutiremos cómo usar citaciones en Overleaf, un popular editor en línea de LaTeX, con BibTeX, una herramienta para gestionar referencias bibliográficas.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Agregar una bibliografía a tu proyecto en Overleaf
+
+El primer paso para usar citaciones en Overleaf es agregar una bibliografía a tu proyecto. Esto se puede hacer creando un nuevo archivo en tu proyecto y nombrándolo `references.bib`. Este archivo contendrá todas las referencias que deseas citar en tu documento. Una opción alternativa es usar [CiteDrive](https://www.citedrive.com/), que se conecta a Overleaf y te permite colaborar en tu bibliografía y citaciones. CiteDrive admite BibTeX de forma nativa y también Biblatex.
+
+Para agregar una referencia a este archivo, puedes usar el siguiente formato:
+
+```bibtex
+@article{key,   author = {Autor, A.},   title = {Título},   journal = {Revista},   year = {Año}, }
+```
+
+La `key` es un identificador único para la referencia y se usará para citarla en tu documento. Los campos `author`, `title`, `journal` y `year` son obligatorios para una referencia básica, pero también hay muchos otros campos que se pueden incluir.
+
+## Citando referencias en tu documento
+
+Una vez que hayas agregado tus referencias al archivo `references.bib`, puedes citarlas en tu documento usando el comando `\cite`. Por ejemplo, para citar la referencia con la clave `key`, usarías el siguiente comando:
+
+```latex
+\cite{key}
+```
+
+Esto insertará la citación en tu documento en el formato especificado por el estilo de bibliografía que hayas elegido.
+
+## Formatear tu bibliografía
+
+Para formatear tu bibliografía, necesitas especificar un estilo de bibliografía. Esto se puede hacer incluyendo el siguiente comando en el preámbulo de tu documento:
+
+```latex
+\bibliographystyle{style}
+```
+
+Donde `style` es el nombre del estilo de bibliografía que deseas usar. Algunos estilos comúnmente usados incluyen `plain`, `unsrt` y `apalike`.
+
+Finalmente, debes incluir el siguiente comando al final de tu documento para generar la bibliografía:
+
+```latex
+\bibliography{references}
+```
+
+Donde `references` es el nombre de tu archivo de bibliografía (`references.bib` en nuestro ejemplo).
+
+## Conclusión
+
+En esta publicación, hemos discutido cómo usar citaciones en Overleaf con BibTeX. Siguiendo los pasos descritos anteriormente, puedes agregar fácilmente referencias a tu proyecto, citarlas en tu documento y formatear tu bibliografía para cumplir con los requisitos de tu institución académica o editorial. Además, el uso de CiteDrive, que se conecta a Overleaf, permite una colaboración fácil en tus referencias y citaciones. CiteDrive admite tanto BibTeX como Biblatex, lo que lo convierte en una opción versátil para gestionar tus referencias bibliográficas.

@@ -1,0 +1,58 @@
+---
+title: "Introducción a BibLaTeX: Una Guía Rápida"
+sidebar:
+  label: Usando BibLaTeX (Inicio rápido)
+sidebar_position: 4
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+La siguiente guía está aún en desarrollo, pero dado que BibLaTeX es considerado por muchos como el sucesor de BibTeX (y no lo desacreditamos), pensamos que sería útil darte un buen comienzo. Ten en cuenta que hay muchas opciones y personalizaciones disponibles en BibLaTeX, y expandiremos la sección gradualmente.
+
+<CiteDrive />
+
+
+1. **Instalar BibLaTeX**: Antes de poder usar BibLaTeX, primero debes instalarlo en tu computadora. Esto generalmente se logra instalando una distribución de LaTeX que incluya BibLaTeX, como MikTeX o TeX Live, o usando Overleaf, que incluye todo, incluidos estilos, de manera predeterminada.
+
+2. **Agregar el paquete BibLaTeX a tu documento LaTeX**: Para agregar BibLaTeX a tu documento LaTeX, debes incluir el siguiente código en el preámbulo de tu documento:
+
+```latex
+\usepackage[style=authoryear,backend=biber]{biblatex}
+```
+
+Esta línea le dice a LaTeX que use el paquete BibLaTeX con el estilo "authoryear" y el backend "biber". Si eso tiene sentido para ti, también puedes usar BibTeX como backend. Sin embargo, muchas características estarán faltando, y debemos enfatizar que no se recomienda usar BibTeX, ni siquiera por razones nostálgicas.
+
+3. **Si estás acostumbrado a BibTeX**, todo ha permanecido igual, excepto que BibLaTeX ahora admite algunos tipos y campos adicionales. Mantienes tus referencias en una base de datos bibliográfica separada, un archivo de texto con una extensión `.bib`. Aquí tienes un ejemplo de una base de datos simple, que podríamos llamar `bibliography.bib`:
+
+```latex
+@book{key,   
+	author = {Author, A.},   
+	title = {The Title of the Book},   
+	year = {2021},   
+	publisher = {Publisher}, 
+}
+```
+
+4. **Para incluir el archivo bib** (tu base de datos de referencias), usa el siguiente comando en tu documento TeX:
+
+```latex
+\addbibresource{bibliography.bib}
+```
+
+5. **Para citar una referencia en tu documento**, usa la siguiente sintaxis:
+
+```latex
+\autocite{key}
+```
+
+donde "key" es la clave de la referencia que deseas citar.
+
+6. **Para incluir la bibliografía** o lista de referencias en tu documento, necesitas incluir el siguiente código en tu documento donde desees que aparezca la bibliografía:
+
+```latex
+\printbibliography
+```
+
+7. **Finalmente**, usa un compilador LaTeX, como `pdflatex` o `xelatex`, para compilar tu documento. BibLaTeX generará automáticamente la bibliografía basada en las referencias que hayas citado en tu documento al compilar.
+
+¡Eso es todo! Ahora deberías poder usar BibLaTeX para gestionar tus referencias y citas en tus documentos LaTeX después de seguir estos sencillos pasos. Recuerda que BibLaTeX es una herramienta altamente personalizable; como se mencionó anteriormente, añadiremos más detalles en el futuro. Pero por el momento, deberías poder comenzar de inmediato.

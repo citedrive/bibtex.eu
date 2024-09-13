@@ -1,0 +1,32 @@
+---
+title: "Cuándo usar comillas vs. llaves para encerrar los campos en un archivo .bib"
+---
+
+¿Alguna vez te has preguntado cuándo encerrar los campos de tu archivo .bib con comillas y cuándo encerrarlos con llaves? ¿Realmente importa? La respuesta es: no importa. Algunas personas prefieren usar `""` simplemente por razones estéticas, mientras que otras prefieren usar `{}`, argumentando que es preferible si necesitas usar un carácter `"` dentro de un campo. Ten en cuenta que estas son las únicas formas aceptables para encerrar campos.
+
+<CiteDrive />
+
+## Ejemplos
+
+### Encerrando campos con `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Use the date of access)]}
+}
+```
+
+### Encerrando campos con `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive brings reference management to Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+No hay una respuesta correcta o incorrecta, siempre que la información dentro del campo esté encerrada correctamente. Entonces, ¿por qué no experimentar y ver qué método funciona mejor para ti?

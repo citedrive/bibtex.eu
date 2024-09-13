@@ -1,0 +1,64 @@
+---
+title: "Usando Biblatex en Overleaf con CiteDrive: Una Guía Completa"
+tags: [Overleaf, Biblatex, CiteDrive, Referencias bibliográficas, Gestión de investigación]
+date: 2023-02-05
+---
+
+Overleaf es una plataforma en línea popular para redactar artículos académicos y de investigación, que ofrece una interfaz colaborativa y fácil de usar para crear, editar y compartir documentos con otros. Uno de los elementos más importantes de un artículo académico es la cita adecuada, y Overleaf ofrece varias herramientas para ayudarte a formatear y gestionar tus referencias.
+
+En esta guía, veremos cómo usar Biblatex, un potente sistema de gestión de citas, para crear y formatear citas en tus documentos de Overleaf.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Paso 1: Configurar Biblatex
+
+Para comenzar con Biblatex, necesitarás agregar algunas líneas de código a tu documento de Overleaf para cargar el paquete y configurarlo según tus necesidades. Aquí tienes un ejemplo de cómo podría verse el preámbulo de tu documento:
+
+```latex
+\usepackage[style=authoryear,backend=biber]{biblatex} \addbibresource{references.bib}
+```
+
+Este código carga el paquete Biblatex y establece el estilo de cita en `authoryear`, que es un estilo de cita comúnmente utilizado en muchos campos académicos. También establece el backend en `biber`, que es un robusto procesador de bibliografía que puede manejar requisitos de cita complejos.
+
+Finalmente, el comando `\addbibresource` le indica a Biblatex dónde encontrar tus referencias bibliográficas, las cuales discutiremos en el siguiente paso.
+
+## Paso 2: Crear Tu Bibliografía
+
+Antes de comenzar a usar Biblatex en Overleaf, necesitarás tener una base de datos de referencias bibliográficas, comúnmente conocida como archivo bib, que contenga todos los detalles de tus fuentes. Crear un archivo bib puede ser una tarea tediosa, pero con la ayuda de [CiteDrive, una herramienta colaborativa basada en la web para la gestión de investigación](https://www.citedrive.com/), puedes crear, gestionar y compartir tus referencias bibliográficas fácilmente.
+
+CiteDrive se basa en BibTeX y admite completamente Biblatex, lo que lo convierte en una excelente opción para investigadores y académicos que desean aprovechar el poder y la flexibilidad de estas herramientas. Además, CiteDrive se conecta perfectamente con Overleaf, por lo que puedes acceder y editar tus referencias bibliográficas directamente desde tus documentos de Overleaf.
+
+Para comenzar con CiteDrive, simplemente regístrate para obtener una cuenta gratuita y comienza a agregar tus referencias. Puedes importar referencias de bases de datos populares como PubMed, Google Scholar y más, o agregar referencias manualmente a tu biblioteca. Una vez que hayas creado tu biblioteca, puedes exportarla como un archivo BibTeX o Biblatex, que luego puedes usar en tus documentos de Overleaf.
+
+Para obtener más información sobre cómo usar CiteDrive con Overleaf, puedes consultar el blog en [https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
+
+Aquí tienes un ejemplo de una referencia simple en formato Biblatex:
+
+```bibtex
+@article{example_reference,   
+	author = {John Doe},   
+	title = {Un Artículo de Ejemplo},   
+	journal = {Revista de Ejemplos},   
+	year = {2021},   
+	volume = {1},   
+	pages = {1-10}, 
+}
+```
+
+Puedes agregar tantas referencias como necesites a este archivo, y Biblatex las formateará automáticamente según el estilo de cita que hayas elegido.
+
+## Paso 3: Insertar Citas en Tu Documento
+
+Con tus referencias bibliográficas en su lugar, ahora puedes insertar citas en tu documento de Overleaf. Para hacer esto, utiliza el comando `\cite` seguido de la clave de tu referencia. Por ejemplo:
+
+`Como lo demuestra Doe (2021), es posible usar Biblatex con Overleaf.`
+
+La cita aparecerá en tu documento como una referencia entre paréntesis, con el autor y el año de publicación, y Biblatex la formateará según el estilo de cita que hayas elegido.
+
+## Paso 4: Generar la Bibliografía
+
+Finalmente, para generar la bibliografía de tu documento, necesitarás agregar un comando `\printbibliography` al final de tu documento. Esto le indicará a Biblatex que compile la bibliografía a partir de tus referencias y la formatee según el estilo de cita que hayas elegido.
+
+¡Y eso es todo! Ahora estás listo para usar Biblatex para crear y formatear citas en tus documentos de Overleaf. Con sus potentes características y opciones de configuración flexibles, Biblatex es una excelente opción para cualquiera que busque un sistema de gestión de citas completo y fácil de usar.

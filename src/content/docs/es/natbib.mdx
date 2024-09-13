@@ -1,0 +1,127 @@
+---
+title: "Tutorial de Natbib: Dominando la Gestión de Referencias en LaTeX con BibTeX"
+description: "Explora las capacidades de natbib para gestionar referencias bibliográficas en LaTeX. Este tutorial en profundidad cubre los aspectos esenciales de natbib, desde citas en el texto hasta la integración con BibTeX."
+sidebar:
+  label: "Natbib (Tutorial en profundidad)"
+sidebar_position: 3
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Gestionar referencias bibliográficas en LaTeX se vuelve ágil y eficiente con el paquete `natbib`. Ya sea que estés trabajando con el comando tradicional `\cite{*}` o profundizando en métodos de citación avanzados, esta guía proporciona conocimientos fundamentales para comenzar.
+
+<CiteDrive />
+
+## Introducción a `natbib` y Sus Fortalezas
+
+El paquete `natbib` amplía las capacidades del comando estándar `\cite{*}` en LaTeX. Se destaca especialmente en las citas en el texto con varias opciones y personalizaciones, especialmente para esquemas autor-año y la visualización de citas textuales y parentéticas cuando se integra con BibTeX.
+
+:::tip
+Bueno saberlo: el paquete funciona sin problemas tanto con citas autor-año como numéricas y admite los archivos de bibliografía estándar `*.bst`.
+:::
+
+Vamos a profundizar en los detalles sobre cómo aprovechar el poder de `natbib` para formatear y citar tus fuentes bibliográficas.
+
+## Comenzando Tu Camino: Citas Parentéticas y Textuales/Narrativas en el Texto con natbib
+
+Configurar `natbib` requiere una estructura similar a la configuración estándar de LaTeX. Comienza cargando la biblioteca con `\usepackage{natbib}`. La biblioteca ofrece varias opciones de configuración a través de `\usepackage[options]{natbib}`, que se discuten en detalle a continuación. Los comandos de citación principales en Natbib son `\citet{*}` para citas textuales/narrativas y `\citep{*}` para citas parentéticas.
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\title{Una Guía Completa para la Gestión de Referencias usando natbib con BibTeX}
+\author{CiteDrive}
+\date {Enero 1988}
+
+\begin{document}
+
+\maketitle
+\textbf{Cita narrativa:} \citet{Doe:1966} investigó los riesgos de registros incorrectos \\
+de [...], lo que resulta en distorsión.
+\textbf{Cita parentética:} Los riesgos de un registro incorrecto de [...] podrían llevar a distorsión
+\citep{Doe:1966}.
+
+\medskip
+
+\bibliography{sample}
+
+\end{document}
+```
+
+Al usar `\bibliography{sample}`, le indicas a LaTeX que utilice tu archivo `.bib`, que contiene entradas bibliográficas como:
+
+```bibtex
+@article{Doe:1966,
+	title        = {Estudio sobre los riesgos de registros incorrectos [...] y su impacto en [...].},
+	author       = {John Doe},
+	year         = 1966,
+	journal      = {BibTeX Publishing},
+	volume       = 44,
+	number       = 44,
+	pages        = {123--456}
+}
+@article{smith2017,
+	title        = {Un artículo interesante},
+	author       = {John Smith},
+	year         = {2017},
+	journal      = {Journal of Interesting Articles}
+}
+```
+
+![Ejemplo de salida de gestión de referencias usando natbib con BibTeX](@assets/images/tutorial/output_example_bibtex_natbib.png)Ejemplo de salida de gestión de referencias usando natbib con BibTeX
+
+Para aquellos inclinados hacia estilos de citación numéricos, aquí se muestra cómo adaptar natbib:
+
+```latex
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+```
+
+![Ejemplo de salida de gestión de referencias usando natbib con BibTeX en estilo numérico](@assets/images/tutorial/output_example_bibtex_natbib_numeric.png)Ejemplo de salida de gestión de referencias usando natbib con BibTeX en estilo numérico
+
+## Profundización: Explorando los Comandos `cite{*}` en natbib
+
+Comprender el rango de comandos `cite{*}` proporcionados por `natbib` te permite citar fuentes de manera eficiente. Esta tabla desglosa sus salidas:
+
+| Comando (citación única) | Salida (autor-año) | Salida (Numérica) | Comando (Múltiples citas) | Salida (autor-año) | Salida (Numérica) |
+|---------------------------|----------------------|------------------|------------------------------|---|---|
+|`\citet{Doe:1966}`|Doe (1966) |Doe [1]|`\citet{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citet[chap.~4]{Doe:1966}`|Doe (1966, cap. 4)|Doe [1, cap. 4]|`\citet[chap.~4]{Doe:1966,smith2017}`|Doe (1966); Smith (2017, cap. 4)|Doe [1], Smith [2, cap. 4]|
+|`\citep{Doe:1966}`|(Doe, 1966)|[1]|`\citep{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2|
+|`\citep[chap.~4]{Doe:1966}`|(Doe, 1966, cap. 4)|[1, cap. 4|`\citep[chap.~4]{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017, cap. 4)|1, 2, cap. 4]|
+|`\citep[see][]{Doe:1966}`|(ver Doe, 1966)|[ver 1]|`\citep[see][]{Doe:1966,smith2017}`|(ver Doe, 1966; Smith, 2017)|[ver 1, 2]|
+|`\citep[see][chap.~4]{Doe:1966}`|(ver Doe, 1966, cap. 4)|[ver 1, cap. 4]|`\citep[see][chap.~4]{Doe:1966,smith2017}`|(ver Doe, 1966; Smith, 2017, cap. 4)|[ver 1, 2, cap. 4]|
+|`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+
+Otros comandos de `natbib`, como `\citealp` y `\citealt`, ofrecen flexibilidad adicional al suprimir corchetes. Descubre toda la gama de comandos en la [Hoja de referencia para el uso de natbib](https://gking.harvard.edu/files/natnotes2.pdf).
+
+## Apéndice: Dominando las Opciones para `natbib`
+
+Al trabajar con `natbib`, personalizar su comportamiento puede hacer tu flujo de trabajo más fluido. Aquí tienes un desglose de las opciones disponibles a través de `\usepackage[options]{natbib}`:
+
+| Opción | Descripción |
+|----------------------|----------|
+|round|muestra paréntesis redondos|
+|square|muestra corchetes cuadrados|
+|curly|muestra llaves rizadas|
+|angle|muestra corchetes angulares|
+|semicolon|las citas múltiples se separan por punto y coma|
+|colon|igual que punto y coma|
+|comma|las citas múltiples se separan por coma|
+|authoryear|muestra citas autor-año|
+|numbers|muestra citas numéricas|
+|super|muestra números en superíndice para citas numéricas|
+|sort|ordena las citas múltiples en el orden de las referencias mostradas en la bibliografía|
+|compress|las citas numéricas múltiples se comprimen donde sea apropiado|
+|sort&compress|las citas numéricas múltiples se comprimen donde sea apropiado|
+|longnamesfirst|el nombre completo del autor aparece en la primera cita|
+|sectionbib|redefine `\thebibliography` para mostrar `\section` en lugar de `\chapter`|
+|nonamebreak|muestra todos los nombres de los autores de una cita en una línea|
+
+### Lecturas Adicionales y Fuentes
+
+- Profundiza en la gestión de bibliografías con [Gestión de bibliografías con natbib](https://www.overleaf.com/learn/latex/Bibliography_management_with_natbib) en Overleaf.
+- Familiarízate con diferentes estilos de bibliografía con [Estilos de bibliografía Natbib](https://www.overleaf.com/learn/latex/Natbib_bibliography_styles) en Overleaf.
+- Para una hoja de referencia útil, consulta la [Hoja de referencia para el uso de

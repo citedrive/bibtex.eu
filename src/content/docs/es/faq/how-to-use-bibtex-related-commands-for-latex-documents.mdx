@@ -1,0 +1,21 @@
+---
+title: "Cómo Utilizar Comandos Relacionados con BibTeX para Documentos LaTeX"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Para utilizar BibTeX en LaTeX, necesitas conocer los siguientes comandos: `\bibliographystyle{<nombre del estilo>}`, `\bibliography{archivo-bib}`, y `\cite{CLAVE}`. En esta breve guía, discutiremos qué hace cada uno de estos comandos y cómo usarlos en tus documentos LaTeX.
+
+<CiteDrive />
+
+## bibliographystyle
+
+El estilo de citación se define mediante `\bibliographystyle{<nombre del estilo>}`. Los archivos de estilo de BibTeX controlan la apariencia de la bibliografía y las citas. Los archivos de estilo de BibTeX tienen una extensión `.bst` y contienen instrucciones en un lenguaje de programación basado en pilas que controla el formato de las entradas bibliográficas. Por defecto, LaTeX ofrece los estilos `plain`, `unsrt`, `alpha` y `abbrv`. natbib y jurabib son dos paquetes de LaTeX que proporcionan extensiones para ciencias naturales y humanidades, por ejemplo.
+
+## bibliography
+
+La bibliografía se crea en el documento mediante el comando `\bibliography{archivo-bib}` si el nombre del archivo BibTeX con los registros de literatura es `archivo-bib.bib`.
+
+## cite
+
+En un documento LaTeX, el comando `\cite{CLAVE}` se reemplaza por la citación dada en el archivo BibTeX con esta ID, que, por ejemplo, es `(Autor, Año)` en el PDF final.

@@ -1,41 +1,42 @@
 ---
-title: "Introduction to Overleaf Citations"
+title: "Introducción a las citas en Overleaf"
 tags: [AcademicWriting, LaTeX, CitationManagement, Overleaf, BibTeX, BibLaTeX, natbib, Zotero, Mendeley, Research, WritingTips, Academia, ScholarlyWriting, References]
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-Proper citation is essential in academic writing for giving credit to the sources you use in your research. Overleaf is a popular online LaTeX editor that allows users to easily create and collaborate on academic documents. It also includes a number of powerful citation management tools, including BibTeX, NatBib, and BibLaTeX.
+La citación adecuada es esencial en la escritura académica para dar crédito a las fuentes que usas en tu investigación. Overleaf es un popular editor de LaTeX en línea que permite a los usuarios crear y colaborar fácilmente en documentos académicos. También incluye una serie de poderosas herramientas de gestión de citas, incluyendo BibTeX, NatBib y BibLaTeX.
 
 
 <CiteDrive /> 
 
-## Adding Citations
+## Agregar Citas
 
-To add a citation in Overleaf, first create a '.bib' file with the information about your sources. Each source's author, title, publication date, and other pertinent information should be included in this file. You can either create your '.bib' file manually or use a tool like [CiteDrifve](https://www.citedrive.com/), a collaborative BibTeX/BibLaTeX-management tool built for the web, to do it for you. **CiteDrive** integrates with Overleaf, keeping all of your references in sync with your LaTeX document.  More information can be found at **Overleaf.com**: 
-[Overleaf.com | Blog - Better bibliography management with Overleaf, CiteDrive, and BibTeX/BibLaTeX — about 3.0 and an updated guide](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+Para agregar una cita en Overleaf, primero crea un archivo '.bib' con la información sobre tus fuentes. Este archivo debe incluir el autor, título, fecha de publicación y otra información pertinente sobre cada fuente. Puedes crear tu archivo '.bib' manualmente o usar una herramienta como [CiteDrive](https://www.citedrive.com/), una herramienta colaborativa de gestión de BibTeX/BibLaTeX diseñada para la web, para hacerlo por ti. **CiteDrive** se integra con Overleaf, manteniendo todas tus referencias sincronizadas con tu documento LaTeX. Más información se puede encontrar en **Overleaf.com**: 
+[Overleaf.com | Blog - Mejor gestión de bibliografía con Overleaf, CiteDrive y BibTeX/BibLaTeX — sobre 3.0 y una guía actualizada](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
 
-Once you have your `.bib` file ready, you can add citations to your Overleaf document by using the `\cite` command. For example, if you want to cite a source with the key `example_source`, you would use the command `\cite{example_source}`.
+Una vez que tengas listo tu archivo `.bib`, puedes agregar citas a tu documento de Overleaf usando el comando `\cite`. Por ejemplo, si quieres citar una fuente con la clave `example_source`, usarías el comando `\cite{example_source}`.
 
-You can also use the `\citep` and `\citet` commands to specify the formatting of your citations. The `\citep` command is used for in-text citations, and is typically used for referencing a source within parentheses. The `\citet` command is used for author-date citations, and is typically used for referencing a source in the text.
+También puedes usar los comandos `\citep` y `\citet` para especificar el formato de tus citas. El comando `\citep` se utiliza para citas dentro del texto, y generalmente se usa para referenciar una fuente dentro de paréntesis. El comando `\citet` se usa para citas autor-fecha, y generalmente se usa para referenciar una fuente en el texto.
 
-## Managing Your Sources
+## Gestionar tus Fuentes
 
-Overleaf makes it easy to manage your sources and keep your `.bib` file up-to-date. You can easily add new sources, edit existing ones, and even import and export your `.bib` file to other citation management tools.
+Overleaf facilita la gestión de tus fuentes y la actualización de tu archivo `.bib`. Puedes agregar nuevas fuentes, editar las existentes e incluso importar y exportar tu archivo `.bib` a otras herramientas de gestión de citas.
 
-You can also use the `\bibliography` command to automatically generate a bibliography at the end of your document. This command takes the name of your `.bib` file as an argument, and will automatically format and organize your sources based on the citation style you choose.
+También puedes usar el comando `\bibliography` para generar automáticamente una bibliografía al final de tu documento. Este comando toma el nombre de tu archivo `.bib` como argumento y formateará y organizará automáticamente tus fuentes según el estilo de cita que elijas.
 
-## Using the right package
+## Usando el Paquete Adecuado
 
-The choice of which package to use for citations in Overleaf will depend on your specific needs and preferences.
+La elección de qué paquete usar para las citas en Overleaf dependerá de tus necesidades y preferencias específicas.
 
-- **BibTeX** is the most traditional and widely used citation management package for LaTeX. It is simple to use, and supports a wide range of citation styles. However, it does not provide as much flexibility and control over the formatting of citations as the other two options.
-* ***[natbib](/natbib)** works as an extension for BibTeX, that provides advanced features and flexibility for citation management. It is particularly useful for author-year citation styles, and it allows you to customize the formatting of citations in the text.
+- **BibTeX** es el paquete de gestión de citas más tradicional y ampliamente utilizado para LaTeX. Es simple de usar y soporta una amplia gama de estilos de cita. Sin embargo, no proporciona tanta flexibilidad y control sobre el formato de las citas como las otras dos opciones.
 
-- **BibLaTeX** is a more modern and powerful alternative to BibTeX. It provides more advanced features such as localization, advanced sorting, and support for more types of entries. Additionally, it can handle all bibliographic data in Unicode and it is compatible with most of the citation styles available in BibTeX.
+- **natbib** funciona como una extensión para BibTeX, que proporciona características avanzadas y flexibilidad para la gestión de citas. Es particularmente útil para estilos de cita autor-año, y te permite personalizar el formato de las citas en el texto.
 
-In summary, if you are looking for a simple and widely supported option, use BibTeX. If you want more control over the formatting and advanced features, use BibLaTeX or natbib.
+- **BibLaTeX** es una alternativa más moderna y poderosa a BibTeX. Proporciona características más avanzadas como localización, ordenación avanzada y soporte para más tipos de entradas. Además, puede manejar todos los datos bibliográficos en Unicode y es compatible con la mayoría de los estilos de cita disponibles en BibTeX.
 
-## Conclusion
+En resumen, si buscas una opción simple y ampliamente soportada, usa BibTeX. Si deseas más control sobre el formato y características avanzadas, usa BibLaTeX o natbib.
 
-Citation management can be a tedious task, but Overleaf makes it easy with its built-in citation tool. With Overleaf, you can easily add, edit, and manage your sources, and automatically generate a bibliography at the end of your document. Whether you're a student, researcher, or professional academic, Overleaf is a powerful tool to help you create high-quality, properly-cited documents with ease.
+## Conclusión
+
+La gestión de citas puede ser una tarea tediosa, pero Overleaf lo hace fácil con su herramienta de citas integrada. Con Overleaf, puedes agregar, editar y gestionar tus fuentes fácilmente, y generar automáticamente una bibliografía al final de tu documento. Ya seas estudiante, investigador o académico profesional, Overleaf es una herramienta poderosa para ayudarte a crear documentos de alta calidad y correctamente citados con facilidad.
