@@ -1,0 +1,72 @@
+---
+title: "FAQ BibTeX"  
+---
+
+**Q1: Qu'est-ce que BibTeX ?**  
+A1: BibTeX est un logiciel de gestion des références utilisé en conjonction avec LaTeX pour formater et gérer les bibliographies et les citations dans les documents. Il permet aux utilisateurs de stocker les détails des références dans des fichiers BibTeX séparés, qui peuvent être liés aux documents LaTeX, assurant ainsi un formatage cohérent des citations et des références.
+
+**Q2: Comment citer un site web en utilisant BibTeX ?**  
+A2: Pour citer un site web en BibTeX, le type d'entrée `@misc` est couramment utilisé. Voici un exemple :
+
+```bibtex
+@misc{website2023,
+    author    = "John Doe",
+    title     = "Titre de la page Web",
+    year      = "2023",
+    url       = "http://www.example.com",
+    note      = "Consulté le : 2023-10-04"
+}
+```
+
+Assurez-vous de remplacer les espaces réservés par les détails appropriés.
+
+**Q3: Comment citer un livre ?**  
+A3:
+
+```bibtex
+@book{author2023,
+    author    = "Jane Smith",
+    title     = "Titre du livre",
+    publisher = "Maison d'édition",
+    year      = "2023",
+    address   = "Ville de publication",
+    edition   = "3e"
+}
+```
+
+**Q4: Comment citer un article de journal ?**  
+A4:
+
+```bibtex
+@article{author2023,
+    author    = "Jane Smith",
+    title     = "Titre de l'article",
+    journal   = "Nom du journal",
+    year      = "2023",
+    volume    = "4",
+    number    = "2",
+    pages     = "100-105"
+}
+```
+
+**Q5: Comment intégrer mes références BibTeX dans mon document LaTeX ?**  
+A5: Dans votre document LaTeX :
+
+1. À l'endroit où vous souhaitez que votre bibliographie apparaisse, utilisez la commande `\bibliography{filename}`, sans l'extension `.bib`.
+2. Utilisez `\cite{label}` dans le document à l'endroit où vous souhaitez citer la référence.
+3. Compilez votre document LaTeX en utilisant `latex`, puis exécutez `bibtex`, et compilez à nouveau en utilisant `latex` deux fois.
+
+**Q6: Pourquoi puis-je voir un `?` au lieu d'un numéro de citation dans mon document ?**  
+A6: Cela se produit généralement s'il y a des problèmes avec l'ordre de compilation ou s'il y a une erreur dans l'entrée BibTeX. Assurez-vous que vous compilez dans le bon ordre (LaTeX, BibTeX, LaTeX, LaTeX) et vérifiez vos entrées BibTeX pour des erreurs.
+
+**Q7: Comment spécifier le style de ma bibliographie ?**  
+A7: Utilisez la commande `\bibliographystyle{stylename}` dans votre document LaTeX. Par exemple, `\bibliographystyle{plain}` utilisera le style plain. Il existe de nombreux styles prédéfinis (comme `plain`, `alpha`, `abbrv`, etc.), et vous pouvez également en trouver des personnalisés en ligne.
+
+**Q8: Puis-je avoir plusieurs fichiers BibTeX pour un seul document LaTeX ?**  
+A8: Oui, vous pouvez. Dans la commande `\bibliography{}`, listez les noms de fichiers séparés par des virgules, sans espaces et sans l'extension `.bib`. Par exemple, `\bibliography{file1,file2}`.
+
+**Q9: Comment gérer les caractères spéciaux dans BibTeX ?**  
+A9: BibTeX est sensible aux caractères spéciaux tels que `#`, `$`, `%`, `&`, `_`, `{`, et `}`. En BibTeX, entourez-les d'accolades ou utilisez un antislash (`\`) avant le caractère.
+
+**Q10: Existe-t-il des outils pour gérer et générer des entrées BibTeX ?**  
+A10: Oui, il existe de nombreux outils disponibles, en ligne et hors ligne, pour aider à gérer les bases de données BibTeX et générer des entrées, comme CiteDrive.

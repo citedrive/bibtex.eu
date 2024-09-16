@@ -1,0 +1,36 @@
+---
+title: "Quand utiliser des guillemets ou des accolades pour les champs d'entrée du fichier .bib ?"  
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Vous vous demandez parfois quand utiliser des guillemets ou des accolades pour les champs d'entrée de votre fichier `.bib` ? Est-ce que cela a vraiment de l'importance ? La réponse est : cela n'a pas d'importance.
+
+Certaines personnes préfèrent utiliser des guillemets `""` simplement pour des raisons esthétiques, tandis que d'autres préfèrent utiliser des accolades `{}`, arguant que c'est préférable si vous devez utiliser un caractère `"` dans un champ. Notez que ce sont les seules manières acceptables d'enfermer les champs.
+
+<CiteDrive />
+
+## Exemples
+
+### Champs enfermés avec `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive apporte la gestion des références à Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Consulté le : (Utilisez la date d'accès)]}
+}
+```
+
+### Champs enfermés avec `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive apporte la gestion des références à Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Il n'y a pas de bonne ou de mauvaise réponse, tant que les informations dans le champ sont correctement enfermées. Alors pourquoi ne pas expérimenter et voir quelle méthode vous convient le mieux ?

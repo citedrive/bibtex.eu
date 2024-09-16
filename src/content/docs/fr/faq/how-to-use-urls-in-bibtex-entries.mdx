@@ -1,0 +1,39 @@
+---
+title: "Comment utiliser les URLs dans les entrées BibTeX"  
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Si vous utilisez BibTeX pour créer des bibliographies pour vos articles de recherche, vous vous êtes peut-être demandé comment inclure des URLs dans vos entrées.
+
+Le type de champ URL n'est pas encore officiellement pris en charge dans BibTeX, bien qu'il ait été prévu pour la version 1.0 par Oren Patashnik. Malgré cela, le débat concernant cette version et ses intentions remonte au [document de Patashnik de 2003](https://tug.org/TUGboat/tb24-1/patashnik.pdf), qui est progressivement remplacé par biblatex supporté par Biber.
+
+Par conséquent, il est probable que vous deviez utiliser l'un des contournements suivants, par exemple, lors de la citation de sites web :
+
+<CiteDrive />
+
+## Utiliser le champ note :
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## Utiliser le champ howpublished :
+
+```latex
+@misc{...,
+  note = "Disponible sur \url{http://...}"
+}
+```
+
+## Utiliser biblatex et son champ URL intégré :
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+Si vous choisissez biblatex, vous devrez utiliser Biber comme backend au lieu de BibTeX. Si vous souhaitez en savoir plus sur biblatex et Biber, lisez notre guide de démarrage. Si vous avez des questions ou des commentaires, faites-le nous savoir. Nous espérons que cela vous a aidé !

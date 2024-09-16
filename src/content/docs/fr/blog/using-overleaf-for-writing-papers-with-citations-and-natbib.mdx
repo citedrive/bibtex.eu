@@ -1,0 +1,55 @@
+---
+title: "Utiliser Overleaf pour Écrire des Articles avec Citations et natbib"  
+tags: [ÉcritureAcadémique, natbib, LaTeX, GestionDesCitations, Overleaf, BibTeX, BibLaTeX, Zotero, Mendeley, Recherche, ConseilsDeRédaction, Académia, RédactionScientifique, Références]  
+date: 2023-01-27  
+---
+
+Overleaf est un éditeur LaTeX en ligne populaire qui permet aux utilisateurs de collaborer sur des documents en temps réel. L'un des grands avantages d'Overleaf est la possibilité d'ajouter facilement des citations et des bibliographies à vos documents en utilisant le package natbib. Dans cet article, nous allons passer en revue les bases de l'utilisation de natbib avec Overleaf pour ajouter des citations et des bibliographies à vos articles.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Ajouter des Citations
+
+Pour ajouter des citations dans Overleaf, vous devez d'abord ajouter le package natbib à votre document. Cela peut se faire en ajoutant la ligne suivante au préambule de votre document :
+
+```latex
+\usepackage[numbers]{natbib}
+```
+
+Cela vous permettra d'utiliser les commandes `\citep` et `\cite` pour ajouter des citations à votre document. La commande `\citep` est utilisée pour les citations dans le texte et affichera la citation sous forme de numéro entre parenthèses, tandis que la commande `\cite` est utilisée pour les citations dans le texte et affichera la citation sous forme de numéro.
+
+Par exemple, pour citer un article de Smith et al. (2020) dans le texte, vous utiliseriez la commande suivante :
+
+```latex
+According to \citep{Smith2020}, this is an important finding.
+```
+
+Cela affichera la citation comme suit :
+
+> According to (Smith et al., 2020), this is an important finding.
+
+## Ajouter une Bibliographie
+
+Pour ajouter une bibliographie à votre document dans Overleaf, vous devez d'abord créer un fichier `.bib` contenant les informations pour toutes les références que vous allez citer. Le fichier `.bib` doit être sauvegardé dans le même répertoire que votre fichier `.tex` principal. L'un des moyens les plus simples pour créer ce fichier `.bib` est d'utiliser [CiteDrive](https://www.citedrive.com/), un outil qui se connecte à Overleaf et génère le fichier bib pour vous. Plus d'informations peuvent être trouvées dans le [blog sur Overleaf.com](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
+
+Une fois que vous avez créé votre fichier `.bib`, vous pouvez ajouter une bibliographie à votre document en ajoutant la commande suivante :
+
+```latex
+\bibliography{mybibfile}
+```
+
+où `mybibfile` est le nom de votre fichier `.bib`.
+
+Vous pouvez également spécifier le style de votre bibliographie en ajoutant la commande suivante à votre document :
+
+```latex
+\bibliographystyle{plainnat}
+```
+
+Cela formatera votre bibliographie dans un style simple. Il existe de nombreux styles de bibliographie différents, et vous pouvez trouver une liste de ceux-ci [ici](https://www.overleaf.com/learn/latex/Bibliography_styles).
+
+## Conclusion
+
+Dans cet article, nous avons passé en revue les bases de l'utilisation de natbib avec Overleaf pour ajouter des citations et des bibliographies à vos articles. Avec l'interface facile à utiliser d'Overleaf et les puissantes capacités de gestion des citations et des bibliographies de natbib, vous pouvez facilement suivre vos références et formater votre bibliographie dans le style requis par votre publication. De plus, utiliser CiteDrive pour générer le fichier bib pour vous peut vous faire gagner beaucoup de temps et d'efforts.

@@ -1,0 +1,21 @@
+---
+title: "Comment utiliser les commandes liées à BibTeX pour les documents LaTeX"  
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Pour utiliser BibTeX dans LaTeX, vous devez connaître les commandes suivantes : `\bibliographystyle{<style name>}`, `\bibliography{bib-file}` et `\cite{KEY}`. Dans ce guide rapide, nous discuterons de ce que fait chacune de ces commandes et comment les utiliser dans vos documents LaTeX.
+
+<CiteDrive />
+
+## bibliographystyle
+
+Le style de citation est défini par `bibliographystyle{<style name>}`. Les fichiers de style BibTeX contrôlent l'apparence de la bibliographie et des citations. Les fichiers de style BibTeX ont une extension `.bst` et contiennent des instructions dans un langage de programmation basé sur une pile qui contrôle le formatage des entrées bibliographiques. Par défaut, LaTeX propose les styles `plain`, `unsrt`, `alpha` et `abbrv`. Les packages natbib et jurabib sont deux extensions LaTeX qui fournissent des ajouts étendus pour les sciences naturelles et les sciences humaines, par exemple.
+
+## bibliography
+
+La bibliographie est créée dans le document par la commande `\bibliography{bibfile}` si le nom du fichier BibTeX contenant les enregistrements littéraires est `bibfile.bib`.
+
+## cite
+
+Dans un document LaTeX, la commande `\cite{KEY}` est remplacée par la citation donnée dans le fichier BibTeX avec cet identifiant, qui est, par exemple, `(Auteur, Année)` dans le PDF final.

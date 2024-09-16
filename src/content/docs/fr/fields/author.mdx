@@ -1,0 +1,83 @@
+---
+title: "Champ BibTeX : author"  
+sidebar:  
+  label: author  
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Dans l'écriture académique, il est fondamental de reconnaître avec précision les contributeurs à un travail. Le champ `author` dans BibTeX vous permet de spécifier tous les contributeurs à l'œuvre que vous citez. Il est impératif de garantir un agencement cohérent et précis des noms d'auteurs pour éviter toute déformation ou citation inexacte. Ici, nous explorons les différentes notations et conventions pour spécifier les noms d'auteurs dans BibTeX de manière efficace.
+
+<CiteDrive />
+
+## Vue d'ensemble détaillée
+
+Lorsque vous spécifiez des auteurs dans BibTeX, vous avez plusieurs formats à choisir. Ces formats permettent d'inclure les prénoms, noms de famille et même les suffixes, facilitant une représentation détaillée de l'identité de chaque auteur. Examinons les différentes notations qui peuvent être employées pour présenter correctement les informations sur les auteurs.
+
+### Formats de Notation
+
+#### Notation : `{Prénom Nom}`
+
+La manière de base et directe de noter un auteur est d'utiliser son prénom suivi de son nom de famille. Ce format est largement accepté mais peut ne pas offrir le contrôle nécessaire pour distinguer clairement entre prénoms et noms de famille, notamment dans les cas de noms composés.
+
+**Exemple** :
+
+```bibtex
+@article{Doe2023,
+  title  = {Titre de l'Article},
+  year   = 2023,
+  author = {Isaac Newton},
+  ...
+}
+```
+
+#### Notation : `{Nom, Prénom}`
+
+Une approche plus raffinée consiste à utiliser le nom de famille suivi du prénom, séparés par une virgule. Ce format est recommandé car il fournit une distinction plus claire entre les prénoms et les noms de famille, évitant ainsi toute confusion potentielle.
+
+**Exemple** :
+
+```bibtex
+@article{Doe2023,
+  title  = {Titre de l'Article},
+  year   = 2023,
+  author = {Newton, Isaac},
+  ...
+}
+```
+
+#### Notation : `{Nom, Suffixe, Prénom}`
+
+Dans les cas où il est nécessaire d'inclure un suffixe (comme Jr., Sr., III, etc.), ce format est utile. Il est important de maintenir l'ordre strictement pour assurer une représentation exacte du nom de l'auteur.
+
+**Exemple** :
+
+```bibtex
+@article{Doe2023,
+  title  = {Titre de l'Article},
+  year   = 2023,
+  author = {King, Jr, Martin Luther},
+  ...
+}
+```
+
+### Inclure Plusieurs Auteurs
+
+Lorsque une œuvre a plusieurs contributeurs, BibTeX le prend en charge grâce à l'utilisation du séparateur `AND`. Ce séparateur est utilisé pour lister plusieurs auteurs distinctement, en respectant les formats de notation discutés ci-dessus.
+
+**Exemple** :
+
+```bibtex
+@article{Doe2023,
+  title  = {Titre de l'Article},
+  year   = 2023,
+  author = {Fisher, James AND Clark, John},
+  ...
+}
+```
+
+## Conclusion
+
+Noter les noms des auteurs avec précision dans BibTeX est essentiel pour maintenir l'intégrité de l'écriture académique. Cela garantit que les lecteurs peuvent correctement identifier et attribuer les œuvres aux auteurs respectifs. Connaître les différentes notations et directives est crucial pour créer une bibliographie à la fois précise et professionnelle.
+
+Rappelez-vous, la cohérence est essentielle. Une fois que vous choisissez un format de notation, il doit être appliqué de manière cohérente à toutes les entrées pour maintenir une présentation cohérente et professionnelle.

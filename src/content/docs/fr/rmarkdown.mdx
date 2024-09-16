@@ -1,0 +1,66 @@
+---
+title: Gestion des Références avec BibTeX, en Utilisant R Markdown -- Un Guide Rapide  
+description: "Ce tutoriel rapide vous montrera comment gérer vos références en utilisant BibTeX. BibTeX est un logiciel de gestion des références qui vous permet de stocker et organiser vos références dans un format simple et facile à utiliser."  
+sidebar:  
+  label: Utilisation de R Markdown (Démarrage rapide)  
+sidebar_position: 6  
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+R Markdown est un excellent outil pour créer des rapports, des articles, des présentations reproductibles, et plus encore. L'une des choses qui rend R Markdown si puissant est sa capacité à s'intégrer à d'autres outils et logiciels. L'un de ces outils est BibTeX, un système de gestion des références pour les documents LaTeX. BibTeX vous permet de citer facilement des sources dans votre document et de créer une bibliographie.
+
+<CiteDrive />
+
+## Étape 1 : Créer un fichier .bib et ajouter des entrées
+
+Comme dans la section précédente, nous commençons par générer un fichier .bib, tel que `bibliography.bib`, qui est ensuite rempli avec des entrées BibTeX.
+Les entrées BibTeX sont construites dans le format suivant et contiennent suffisamment d'informations pour la citation et l'inclusion dans la bibliographie de chaque source littéraire (livre, essai, etc.).
+
+Nous utilisons l'exemple de la section précédente et citons le livre "Le Vieil Homme et la Mer" d'Ernest Hemingway. L'entrée ressemble alors à ceci :
+
+```latex
+@book{Hemingway1952,
+  title={Le Vieil Homme et la Mer},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Encore une fois, nous décortiquons "l'anatomie" de cette entrée, en examinant trois composants pour comprendre comment chaque entrée BibTeX est définie :
+
+* **Type d'entrée** : avec `@book`, nous définissons le type selon le schéma `@type` de la référence. Les types possibles sont `@article` pour les articles scientifiques et autres. BibTeX aime spécifier quels champs sont optionnels et lesquels sont requis pour les indiquer correctement dans la littérature.
+* **Champs d'entrée** : dans le cas de notre exemple `@book`, ceux-ci sont `title`, `author`, `year` et `publisher`. (Cf. [champs](./fields))
+* **Clé de citation** : dans notre exemple, il s'agit de `Hemingway1952` et est utilisé pour indiquer une citation dans le texte en LaTeX, c'est-à-dire pour se référer à la source. Dans R Markdown, nous faisons cela avec `[@Hemingway1952]`. La clé de citation peut être n'importe quelle chaîne - souvent une combinaison d'auteur, d'année, et d'un mot du titre.
+
+## Étape 2 : Créer un document R Markdown et se connecter
+
+Intégrer BibTeX avec R Markdown est très simple. Il vous suffit de spécifier le fichier bib avec `bibliography: bibliography.bib` dans YAML et la citation avec `[@Hemingway1952]` à l'endroit où vous souhaitez que la citation dans le texte apparaisse.
+
+```md
+---
+title: "Références BibTeX dans R Markdown"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## Références BibTeX dans R Markdown
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+
+
+```
+
+## Gestionnaires de Références
+
+Le formatage manuel des fichiers BibTeX peut être fastidieux, c'est pourquoi il est généralement recommandé d'utiliser un gestionnaire de références. Voici quelques-uns qui sont bien adaptés pour cela :
+
+* [CiteDrive](https://www.citedrive.com/) est un outil collaboratif et basé sur le cloud, alimenté par BibTeX, pour gérer vos références et équipes dans les projets. Il offre une exportation en un clic vers Overleaf ([*Cf. Publication Overleaf - https://www.overleaf.com/blog/citedrive... | CiteDrive - Gestion Facile des Références pour Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) ainsi qu'à R Markdown ([*Cf. Publication Medium : Gestion des Bibliographies dans R Markdown avec CiteDrive et RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), tout en gardant les citations synchronisées.
+* Zotero est un outil de gestion de littérature gratuit et open-source qui gère les données bibliographiques et les matériaux de recherche connexes (tels que les fichiers PDF). La meilleure performance pour BibTeX dans Zotero est obtenue avec **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** par retorque.
+* Le logiciel libre et open-source JabRef est un gestionnaire de références compatible BibTeX qui fonctionne sur Windows, Mac, et Linux. Il est basé sur Java et est maintenu par JabRef e.V.
