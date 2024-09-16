@@ -1,25 +1,25 @@
 ---
-title: "BibTeX field type: howpublished"
+title: "Type de champ BibTeX : howpublished"
 sidebar:
   label: howpublished
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `howpublished` field is utilized in the `@misc` entry type, usually to address those source types that are not directly supported by BibTeX. This field comes in handy, especially when you are citing web pages and you want to provide a URL.
+Le champ `howpublished` est utilisé dans le type d'entrée `@misc`, généralement pour traiter les types de sources qui ne sont pas directement pris en charge par BibTeX. Ce champ est particulièrement utile lorsque vous citez des pages web et souhaitez fournir une URL.
 
 <CiteDrive/>
 
-In your BibTeX entries, you can utilize the `howpublished` field to detail the publication medium or source of the reference. This field is highly useful when you need to incorporate non-traditional sources into your references, such as web pages or online reports.
+Dans vos entrées BibTeX, vous pouvez utiliser le champ `howpublished` pour détailler le support de publication ou la source de la référence. Ce champ est très utile lorsque vous devez incorporer des sources non traditionnelles dans vos références, telles que des pages web ou des rapports en ligne.
 
-Here is an example demonstrating how to use the `howpublished` field to specify a URL when citing a web page:
+Voici un exemple illustrant comment utiliser le champ `howpublished` pour spécifier une URL lors de la citation d'une page web :
 
 ```bibtex
 @misc{BibTeXeu,
-  title = {{Reference management with BibTeX: A short guide}},
+  title = {{Gestion des références avec BibTeX : Un guide rapide}},
   howpublished = {\url{https://bibtex.eu/}},
-  note = {Accessed: 2022-06-12}
+  note = {Consulté le : 2022-06-12}
 }
 ```
 
-In this example, the `howpublished` field is used to provide the URL of the web page being cited, offering readers a direct link to the source. Remember to include a `note` field to specify the access date, which is a common requirement when citing online sources.
+Dans cet exemple, le champ `howpublished` est utilisé pour fournir l'URL de la page web citée, offrant ainsi aux lecteurs un lien direct vers la source. N'oubliez pas d'inclure un champ `note` pour spécifier la date d'accès, ce qui est une exigence courante lors de la citation de sources en ligne.

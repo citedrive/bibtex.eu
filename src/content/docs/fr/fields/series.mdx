@@ -6,38 +6,38 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `series` field in BibTeX is used to denote the series to which a book, report, or other publication belongs. Specifying the series can offer additional context for the reader, as it may relate to a broader thematic or scholarly discourse.
+Le champ `series` dans BibTeX est utilisé pour indiquer la série à laquelle un livre, un rapport ou une autre publication appartient. Spécifier la série peut offrir un contexte supplémentaire au lecteur, car elle peut se rapporter à un discours thématique ou académique plus large.
 
 <CiteDrive />
 
-This field is optional and can be employed in various entry types including, but not limited to `@book`, `@inbook`, `@incollection`, and `@inproceedings`. It is particularly useful when the cited work is part of an ongoing series or a larger corpus of works that share a common theme, author, or publisher.
+Ce champ est optionnel et peut être utilisé dans divers types d'entrées, notamment, mais sans s'y limiter, `@book`, `@inbook`, `@incollection` et `@inproceedings`. Il est particulièrement utile lorsque le travail cité fait partie d'une série en cours ou d'un corpus plus vaste de travaux partageant un thème, un auteur ou un éditeur commun.
 
-When inputting data into the `series` field, it is recommended to use the full official title of the series. If the series has an ISSN, it might also be relevant to include this for more precise referencing.
+Lors de la saisie des données dans le champ `series`, il est recommandé d'utiliser le titre complet et officiel de la série. Si la série dispose d'un ISSN, il peut également être pertinent de l'inclure pour une référence plus précise.
 
 ## Format
 
-The general format for including a series in your BibTeX entry is as follows:
+Le format général pour inclure une série dans votre entrée BibTeX est le suivant :
 
 ```bibtex
 @entrytype{key,
   ...
-  series = {Name of the Series},
+  series = {Nom de la Série},
   ...
 }
 ```
 
-## Example
+## Exemple
 
-Here is an example of how to use the `series` field in a `@book` entry:
+Voici un exemple de l'utilisation du champ `series` dans une entrée `@book` :
 
 ```bibtex
 @book{doe2023,
   author = {John Doe},
-  title = {Advanced Studies in Quantum Mechanics},
+  title = {Études Avancées en Mécanique Quantique},
   year = {2023},
   publisher = {Scientific Publishing Ltd.},
-  series = {Cambridge Advanced Series in Physics},
+  series = {Série Avancée de Cambridge en Physique},
 }
 ```
 
-In this example, the book is part of the "Cambridge Advanced Series in Physics," which might encompass various titles covering advanced topics in the field of physics. Including the series helps to locate the work within a larger academic conversation and can provide readers with additional resources on the topic.
+Dans cet exemple, le livre fait partie de la "Série Avancée de Cambridge en Physique", qui pourrait comprendre divers titres couvrant des sujets avancés dans le domaine de la physique. Inclure la série aide à situer l'œuvre dans une conversation académique plus large et peut fournir aux lecteurs des ressources supplémentaires sur le sujet.

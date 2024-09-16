@@ -6,15 +6,15 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In BibTeX, the `number` field is used to specify the issue number of a journal, the number of a technical report, or other identifiers that are part of a larger series. This field helps to pinpoint the exact issue or edition of a series where the referenced work can be found, providing more precise information for locating the material.
+Dans BibTeX, le champ `number` est utilisé pour spécifier le numéro d'un numéro de journal, le numéro d'un rapport technique ou d'autres identifiants faisant partie d'une série plus large. Ce champ aide à localiser le numéro exact ou l'édition d'une série où le travail référencé peut être trouvé, offrant ainsi des informations plus précises pour localiser le matériel.
 
 <CiteDrive />
 
-This field is commonly used in conjunction with the `volume` field, especially for journal articles and periodicals. For a technical report, the `number` field would typically contain the report number assigned by the institution or organization that published the report.
+Ce champ est couramment utilisé en conjonction avec le champ `volume`, surtout pour les articles de journaux et les périodiques. Pour un rapport technique, le champ `number` contiendrait généralement le numéro de rapport attribué par l'institution ou l'organisation ayant publié le rapport.
 
 ## Format
 
-The format for the `number` field is relatively straightforward. In the context of an article entry, it would appear as follows:
+Le format pour le champ `number` est relativement simple. Dans le contexte d'une entrée d'article, il apparaîtrait comme suit :
 
 ```bibtex
 @article{citation_key,
@@ -22,16 +22,15 @@ The format for the `number` field is relatively straightforward. In the context 
   number={issue_number},
   ...
 }
-
 ```
 
-Here, "citation_key" represents a unique identifier for the entry, and "issue_number" represents the number of the journal issue, technical report, or other publication.
+Ici, "citation_key" représente un identifiant unique pour l'entrée, et "issue_number" représente le numéro du numéro de journal, du rapport technique ou d'autre publication.
 
-## Examples
+## Exemples
 
-Below are some examples showcasing the application of the `number` field in different contexts:
+Voici quelques exemples illustrant l'application du champ `number` dans différents contextes :
 
-### Example 1: Journal Article
+### Exemple 1 : Article de Journal
 
 ```bibtex
 @article{doe2023study,
@@ -43,12 +42,11 @@ Below are some examples showcasing the application of the `number` field in diff
   number = {3},
   pages = {215-230},
 }
-
 ```
 
-In this example, the `number` field specifies the third issue of the 29th volume of the "Journal of Advanced Computing".
+Dans cet exemple, le champ `number` spécifie le troisième numéro du 29e volume du "Journal of Advanced Computing".
 
-### Example 2: Technical Report
+### Exemple 2 : Rapport Technique
 
 ```bibtex
 @techreport{smith2022analysis,
@@ -61,6 +59,6 @@ In this example, the `number` field specifies the third issue of the 29th volume
 }
 ```
 
-In this case, the `number` field is used to indicate the specific report number assigned by the "Energy Research Institute".
+Dans ce cas, le champ `number` est utilisé pour indiquer le numéro de rapport spécifique attribué par l'"Energy Research Institute".
 
-Utilizing the `number` field accurately can facilitate the reader in finding the source material more easily and verifying the cited information. It's an essential detail in scholarly writing and research documentation.
+Utiliser le champ `number` avec précision peut aider le lecteur à trouver plus facilement le matériel source et à vérifier les informations citées. C'est un détail essentiel dans l'écriture académique et la documentation de recherche.

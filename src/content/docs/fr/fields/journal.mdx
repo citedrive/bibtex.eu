@@ -1,27 +1,26 @@
 ---
-title: "BibTeX field type: journal"
+title: "Champs BibTeX : journal"
 sidebar:
   label: journal
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `journal` field is utilized to specify the name of the journal where the article was published. This field is critical in differentiating articles from various publications and providing the correct context for the referenced work.
+Le champ `journal` est utilisé pour spécifier le nom du journal où l'article a été publié. Ce champ est crucial pour différencier les articles des diverses publications et fournir le contexte correct pour le travail référencé.
 
 <CiteDrive/>
 
-Here is a template to demonstrate how you can use the `journal` field in a `@article` entry:
+Voici un modèle pour démontrer comment utiliser le champ `journal` dans une entrée `@article` :
 
 ```bibtex
 @article{ ... ,
- journal = {Name of the Journal},
+ journal = {Nom du Journal},
 }
-
 ```
 
-In the above format, replace "Name of the Journal" with the actual name of the journal where the article was published. It is important to enter this information accurately to ensure correct citations.
+Dans ce format, remplacez "Nom du Journal" par le nom réel du journal où l'article a été publié. Il est important de saisir cette information avec précision pour garantir des citations correctes.
 
-For instance, the following is an example showcasing a correct use of the `journal` field:
+Voici un exemple illustrant l'utilisation correcte du champ `journal` :
 
 ```bibtex
 @article{smith2023effects,
@@ -31,4 +30,3 @@ For instance, the following is an example showcasing a correct use of the `journ
  year = {2023},
 }
 ```
-

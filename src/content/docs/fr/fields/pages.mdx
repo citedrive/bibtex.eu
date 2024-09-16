@@ -6,53 +6,52 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `pages` field in a BibTeX entry denotes the specific pages that are being referred to within a larger work, such as a book or journal. This field can be essential when citing a chapter of a book or an article in a journal, helping to point readers directly to the pertinent section of the work.
+Le champ `pages` dans une entrée BibTeX indique les pages spécifiques auxquelles il est fait référence dans un ouvrage plus vaste, tel qu'un livre ou un journal. Ce champ peut être essentiel lorsqu'on cite un chapitre d'un livre ou un article dans une revue, aidant ainsi les lecteurs à se rendre directement à la section pertinente de l'œuvre.
 
 <CiteDrive />
 
-## Formatting Guidelines
+## Directives de Formatage
 
-You can specify a single page, a range of pages, or even non-consecutive pages. The recommended way to separate page numbers is either with commas or double dashes. Here are some guidelines to format the `pages` field properly:
+Vous pouvez spécifier une seule page, une plage de pages ou même des pages non consécutives. Voici des directives pour formater correctement le champ `pages` :
 
-1. **Single Page:** If referring to a single page, you simply write the page number.
+1. **Page Unique :** Si vous faites référence à une seule page, vous devez simplement indiquer le numéro de la page.
     
-2. **Range of Pages:** For a range of pages, you should use double dashes (--). This indicates a continuous range from the first number to the second.
+2. **Plage de Pages :** Pour une plage de pages, vous devez utiliser des tirets doubles (`--`). Cela indique une plage continue du premier numéro au second.
     
-3. **Non-consecutive Pages:** If referring to non-consecutive pages, separate the different page numbers or ranges with a comma.
+3. **Pages Non Consécutives :** Si vous faites référence à des pages non consécutives, séparez les différents numéros ou plages de pages par une virgule.
     
 
-## Examples
+## Exemples
 
-Here are some examples demonstrating how to use the `pages` field:
+Voici quelques exemples montrant comment utiliser le champ `pages` :
 
 ```bibtex
 @book{key,
-  title = {Title of the Book},
-  author = {Author Name},
+  title = {Titre du Livre},
+  author = {Nom de l'Auteur},
   year = {2023},
-  pages = {33--44},   % Range of pages from 33 to 44
-}
-```
-
-
-```bibtex
-@book{key,
-  title = {Title of the Book},
-  author = {Author Name},
-  year = {2023},
-  pages = {22, 33--44},   % Page 22 and a range from 33 to 44
+  pages = {33--44},   % Plage de pages de 33 à 44
 }
 ```
 
 ```bibtex
 @book{key,
-  title = {Title of the Book},
-  author = {Author Name},
+  title = {Titre du Livre},
+  author = {Nom de l'Auteur},
   year = {2023},
-  pages = {17},    % Single page
+  pages = {22, 33--44},   % Page 22 et une plage de 33 à 44
 }
 ```
 
-## Note
+```bibtex
+@book{key,
+  title = {Titre du Livre},
+  author = {Nom de l'Auteur},
+  year = {2023},
+  pages = {17},    % Page unique
+}
+```
 
-It is important to note that the `pages` field is not limited to `@book` entries, and can also be used in other entry types like `@article` or `@inbook` to denote the relevant pages in those contexts. Using the `pages` field correctly helps to create more accurate and helpful citations.
+## Remarque
+
+Il est important de noter que le champ `pages` n'est pas limité aux entrées `@book`, et peut également être utilisé dans d'autres types d'entrées comme `@article` ou `@inbook` pour indiquer les pages pertinentes dans ces contextes. Utiliser correctement le champ `pages` aide à créer des citations plus précises et utiles.

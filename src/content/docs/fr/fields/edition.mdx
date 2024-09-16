@@ -1,28 +1,28 @@
 ---
-title: "BibTeX field type: edition"
+title: "Type de champ BibTeX : edition"
 sidebar:
   label: edition
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In the academic and publishing world, the edition of a book signifies the version or form in which a work is published. The `edition` field in a BibTeX entry is used to specify this detail, often highlighting the revisions or updates that the work has undergone since its initial release. Including the edition is particularly pertinent when referencing textbooks or scholarly works that have undergone multiple iterations. Below, we elaborate on how to effectively use the `edition` field in your BibTeX entries.
+Dans le monde académique et de l'édition, l'édition d'un livre indique la version ou la forme sous laquelle une œuvre est publiée. Le champ `edition` dans une entrée BibTeX est utilisé pour spécifier ce détail, souvent en mettant en évidence les révisions ou mises à jour que l'œuvre a subies depuis sa première publication. Inclure l'édition est particulièrement pertinent lorsque vous faites référence à des manuels ou des travaux académiques ayant subi plusieurs itérations. Ci-dessous, nous expliquons comment utiliser efficacement le champ `edition` dans vos entrées BibTeX.
 
 <CiteDrive />
 
-### Overview
+### Vue d'ensemble
 
-The `edition` field is utilized to denote the edition of a book. This information is essential when the book you are citing has been published in various editions, each potentially having different contents or pagination. Indicating the edition helps in providing a clear and accurate reference, aiding readers in locating the exact version of the work you used.
+Le champ `edition` est utilisé pour indiquer l'édition d'un livre. Cette information est essentielle lorsque le livre que vous citez a été publié en différentes éditions, chacune ayant potentiellement des contenus ou une pagination différents. Indiquer l'édition aide à fournir une référence claire et précise, aidant les lecteurs à localiser la version exacte du travail que vous avez utilisé.
 
-### Guidelines
+### Directives
 
-1. **Formatting**: It is recommended to enter the edition as an ordinal number (e.g., "First," "Second," "Third," etc.) with the first letter capitalized.
-2. **Spelling Out**: Instead of numerical representations (1st, 2nd, 3rd), spelling out the ordinal numbers is favored for better readability.
-3. **Language Adaptation**: For works in languages other than English, the edition can be indicated in that language (e.g., "Erste" for first in German).
+1. **Formatage** : Il est recommandé d'entrer l'édition sous forme de nombre ordinal (par exemple, "Première", "Deuxième", "Troisième", etc.) avec la première lettre en majuscule.
+2. **Écriture en toutes lettres** : Au lieu des représentations numériques (1er, 2e, 3e), il est préférable d'écrire les nombres ordinaux en toutes lettres pour une meilleure lisibilité.
+3. **Adaptation linguistique** : Pour les œuvres dans des langues autres que l'anglais, l'édition peut être indiquée dans cette langue (par exemple, "Première" en français).
 
-### Syntax and Structure
+### Syntaxe et Structure
 
-The syntax for the `edition` field is straightforward, as shown below:
+La syntaxe pour le champ `edition` est simple, comme montré ci-dessous :
 
 ```bibtex
 @book{citationkey,
@@ -32,28 +32,27 @@ The syntax for the `edition` field is straightforward, as shown below:
 }
 ```
 
-### Example
+### Exemple
 
-Here's an example of a BibTeX entry incorporating the `edition` field:
+Voici un exemple d'entrée BibTeX intégrant le champ `edition` :
 
 ```bibtex
 @book{author2023title,
-  title={The Title of the Book},
-  author={Author, A.},
+  title={Le Titre du Livre},
+  author={Auteur, A.},
   year={2023},
-  publisher={Publishing House},
-  edition={First},
+  publisher={Maison d'Édition},
+  edition={Première},
 }
 ```
 
-In this example, the `edition` field clearly indicates that the cited work is the first edition of the book.
+Dans cet exemple, le champ `edition` indique clairement que l'œuvre citée est la première édition du livre.
 
-### Additional Tips
+### Conseils supplémentaires
 
-1. **Revised Editions**: For books with revised editions, you might also use terms like "Revised" or "Updated" along with the edition number (e.g., "Second, Revised").
-2. **Later Editions**: If citing from a much later edition, it might be pertinent to include a note in your citation explaining the choice if the edition contains significantly different or updated content.
-
+1. **Éditions révisées** : Pour les livres avec des éditions révisées, vous pouvez également utiliser des termes comme "Révisé" ou "Mis à jour" avec le numéro de l'édition (par exemple, "Deuxième, Révisé").
+2. **Éditions ultérieures** : Si vous citez une édition beaucoup plus récente, il peut être pertinent d'inclure une note dans votre citation expliquant le choix si l'édition contient des contenus significativement différents ou mis à jour.
 
 ### Conclusion
 
-Properly specifying the `edition` field in your BibTeX entries ensures a more accurate and trustworthy citation process. It helps in steering your readers towards the exact version of a source material that you referred to, thereby promoting clarity and scholarly integrity. Utilize this field wisely to enhance the quality and reliability of your bibliographic references.
+Spécifier correctement le champ `edition` dans vos entrées BibTeX assure un processus de citation plus précis et fiable. Cela aide à orienter vos lecteurs vers la version exacte du matériel source que vous avez référencé, favorisant ainsi la clarté et l'intégrité académique. Utilisez ce champ judicieusement pour améliorer la qualité et la fiabilité de vos références bibliographiques.

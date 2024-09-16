@@ -6,32 +6,31 @@ sidebar:
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `organization` field in a BibTeX entry is used to specify the name of the organization responsible for publishing the document or hosting the event being cited. This could be a company, an institution, or a group that sponsored or organized a conference, workshop, manual, etc. Including the organization provides the reader with a clear context of the entity behind the document, which can be crucial for determining the reliability and authority of the source.
+Le champ `organization` dans une entrée BibTeX est utilisé pour spécifier le nom de l'organisation responsable de la publication du document ou de l'organisation de l'événement cité. Cela pourrait être une entreprise, une institution ou un groupe qui a sponsorisé ou organisé une conférence, un atelier, un manuel, etc. Inclure l'organisation fournit au lecteur un contexte clair sur l'entité derrière le document, ce qui peut être crucial pour déterminer la fiabilité et l'autorité de la source.
 
 <CiteDrive />
 
-You will typically encounter this field in `@proceedings` and `@manual` entries, but it might appear in other types of entries as well, depending on the specific requirements of the bibliography style being used.
+Vous rencontrerez généralement ce champ dans les entrées `@proceedings` et `@manual`, mais il peut apparaître dans d'autres types d'entrées en fonction des exigences spécifiques du style de bibliographie utilisé.
 
 ## Format
 
-The format for specifying the `organization` field is as follows:
+Le format pour spécifier le champ `organization` est le suivant :
 
 ```bibtex
 @entry_type{citation_key,
   ...
-  organization={Organization Name},
+  organization={Nom de l'organisation},
   ...
 }
-
 ```
 
-Here, "entry_type" refers to the type of BibTeX entry (such as `@proceedings` or `@manual`), "citation_key" is a unique identifier for the entry, and "Organization Name" is the name of the organization involved.
+Ici, "entry_type" se réfère au type d'entrée BibTeX (comme `@proceedings` ou `@manual`), "citation_key" est un identifiant unique pour l'entrée, et "Nom de l'organisation" est le nom de l'organisation impliquée.
 
-## Examples
+## Exemples
 
-Here are a couple of examples demonstrating how to use the `organization` field in different contexts:
+Voici quelques exemples montrant comment utiliser le champ `organization` dans différents contextes :
 
-### Example 1: Conference Proceedings
+### Exemple 1 : Actes de Conférence
 
 ```bibtex
 @proceedings{ICML2023,
@@ -39,12 +38,11 @@ Here are a couple of examples demonstrating how to use the `organization` field 
   year = {2023},
   organization = {International Machine Learning Society},
 }
-
 ```
 
-In this example, the `organization` field specifies the entity responsible for organizing the conference whose proceedings are being cited.
+Dans cet exemple, le champ `organization` spécifie l'entité responsable de l'organisation de la conférence dont les actes sont cités.
 
-### Example 2: Manual
+### Exemple 2 : Manuel
 
 ```bibtex
 @manual{UserGuide2022,
@@ -54,6 +52,6 @@ In this example, the `organization` field specifies the entity responsible for o
 }
 ```
 
-Here, the `organization` field is used to indicate the company that published the software manual.
+Ici, le champ `organization` est utilisé pour indiquer l'entreprise qui a publié le manuel logiciel.
 
-Including the `organization` field in your BibTeX entries can help to provide a complete and detailed reference, facilitating more straightforward identification and retrieval of the source materials.
+Inclure le champ `organization` dans vos entrées BibTeX peut aider à fournir une référence complète et détaillée, facilitant l'identification et la récupération des sources.

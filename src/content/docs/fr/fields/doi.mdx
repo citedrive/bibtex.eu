@@ -1,24 +1,24 @@
 ---
-title: "BibTeX field type: doi"
+title: "Type de champ BibTeX : doi"
 sidebar:
   label: doi
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `doi` field is an integral part of modern referencing, allowing for a seamless and permanent method to locate digital objects such as journal articles, research reports, and data sets in an online environment. Here, we delve deeper into the functionality and significance of the `doi` field in BibTeX, as well as provide guidance on its correct usage.
+Le champ `doi` est une composante essentielle des références modernes, offrant un moyen permanent et sans faille de localiser des objets numériques tels que des articles de revues, des rapports de recherche et des ensembles de données dans un environnement en ligne. Ici, nous allons examiner de plus près la fonctionnalité et l'importance du champ `doi` dans BibTeX, ainsi que fournir des conseils sur son utilisation correcte.
 
 <CiteDrive />
 
-### Overview
+### Vue d'ensemble
 
-A Digital Object Identifier (DOI) is a unique alphanumeric string assigned to a digital object, facilitating a persistent link to its location on the internet. As a standardized method for identifying electronic resources, the DOI remains stable even if the URL of the item changes, ensuring the longevity of references.
+Un Digital Object Identifier (DOI) est une chaîne alphanumérique unique attribuée à un objet numérique, permettant un lien persistant vers sa localisation sur Internet. En tant que méthode standardisée d'identification des ressources électroniques, le DOI reste stable même si l'URL de l'élément change, garantissant ainsi la longévité des références.
 
-The `doi` field in BibTeX serves to record this identifier, allowing for precise and permanent citations. While it is predominantly found in the `article` entry type, it can also be used in other types such as `book`, `chapter`, `inproceedings`, or `conference` entries, albeit less frequently. Regardless of the entry type, the `doi` field is optional.
+Le champ `doi` dans BibTeX sert à enregistrer cet identifiant, permettant des citations précises et permanentes. Bien qu'il soit principalement utilisé dans le type d'entrée `article`, il peut également être utilisé dans d'autres types d'entrées comme `book`, `chapter`, `inproceedings`, ou `conference`, bien que moins fréquemment. Quel que soit le type d'entrée, le champ `doi` est facultatif.
 
-### Syntax and Structure
+### Syntaxe et Structure
 
-To correctly incorporate a DOI into your BibTeX entry, adhere to the following format:
+Pour incorporer correctement un DOI dans votre entrée BibTeX, respectez le format suivant :
 
 ```bibtex
 @entrytype{citationkey,
@@ -27,16 +27,16 @@ To correctly incorporate a DOI into your BibTeX entry, adhere to the following f
   ...
 }
 ```
-The `doi` field encapsulates the full DOI URL, which typically starts with "[https://doi.org/](https://doi.org/)" followed by a unique identifier string.
+Le champ `doi` encapsule l'URL complète du DOI, qui commence généralement par "[https://doi.org/](https://doi.org/)" suivi d'une chaîne d'identifiant unique.
 
-### Example
+### Exemple
 
-Here's an exemplar BibTeX entry that includes a DOI:
+Voici un exemple d'entrée BibTeX incluant un DOI :
 
 ```bibtex
 @article{steinbeck2003chemistry,
   title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
-  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  author={Steinbeck, Christoph and Han, Yongquan et Kuhn, Stefan et Horlacher, Oliver et Luttmann, Edgar et Willighagen, Egon},
   journal={Journal of chemical information and computer sciences},
   volume={43},
   number={2},
@@ -47,17 +47,16 @@ Here's an exemplar BibTeX entry that includes a DOI:
 }
 ```
 
-In this example, the `doi` field houses the permanent URL that leads directly to the referenced article.
+Dans cet exemple, le champ `doi` contient l'URL permanente qui mène directement à l'article référencé.
 
-### Utilization Tips
+### Conseils d'utilisation
 
-1. **Finding DOIs**: For scholarly articles, DOIs can often be found on the first page of the article or in the online database where the article is housed.
-2. **Cross-Referencing**: Utilize the `doi` field for cross-referencing in your paper, offering readers a direct route to the original source material.
-3. **Optional but Beneficial**: While the `doi` field is optional, including it enhances the reliability and traceability of your references.
+1. **Trouver des DOIs** : Pour les articles scientifiques, les DOIs se trouvent souvent sur la première page de l'article ou dans la base de données en ligne où l'article est hébergé.
+2. **Référencement croisé** : Utilisez le champ `doi` pour le référencement croisé dans vos travaux, offrant ainsi aux lecteurs un accès direct à la source originale.
+3. **Facultatif mais avantageux** : Bien que le champ `doi` soit facultatif, l'inclure améliore la fiabilité et la traçabilité de vos références.
 
 ### Conclusion
 
-The inclusion of the `doi` field in your BibTeX entries represents best practice in scholarly writing, offering a steadfast link to the digital objects you reference. By adopting the DOI system, you promote the accessibility and permanence of scientific knowledge, supporting the global research community in their scholarly endeavors.
+L'inclusion du champ `doi` dans vos entrées BibTeX représente une bonne pratique en rédaction académique, offrant un lien pérenne vers les objets numériques que vous citez. En adoptant le système DOI, vous renforcez l'accessibilité et la permanence des connaissances scientifiques, soutenant ainsi la communauté de recherche mondiale dans ses efforts académiques.
 
-As you build your bibliography, remember to capitalize on the capabilities of the `doi` field, fostering a richer, more reliable, and interconnected academic discourse.
-
+Lorsque vous construisez votre bibliographie, pensez à exploiter les capacités du champ `doi`, en favorisant un discours académique plus riche, fiable et interconnecté.
