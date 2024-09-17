@@ -1,0 +1,36 @@
+---
+title: "Quando Usare le Virgolette o le Braces per Racchiudere i Campi del File .bib"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Ti sei mai chiesto quando racchiudere i campi del file .bib con le virgolette e quando usare le parentesi graffe? Ha importanza? La risposta è: non importa. Alcuni preferiscono usare le virgolette "" semplicemente per motivi estetici, mentre altri preferiscono usare le parentesi graffe `{}`, sostenendo che è preferibile se hai bisogno di utilizzare un carattere `"` all'interno di un campo.
+
+Nota che queste sono le uniche modalità accettabili per racchiudere i campi.
+
+<CiteDrive />
+
+## Esempi
+
+### Racchiudere i campi con `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive porta la gestione delle referenze su Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accesso: (Usa la data di accesso)]}
+}
+```
+
+### Racchiudere i campi con `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive porta la gestione delle referenze su Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Non c'è una risposta giusta o sbagliata, purché le informazioni all'interno del campo siano racchiuse correttamente. Quindi perché non sperimentare e vedere quale metodo funziona meglio per te?

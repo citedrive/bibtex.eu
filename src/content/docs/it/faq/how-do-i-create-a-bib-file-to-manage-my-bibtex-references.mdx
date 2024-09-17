@@ -1,0 +1,43 @@
+---
+title: "Come creare un file .BIB per gestire le mie referenze BibTeX?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Se stai cercando un modo per gestire le tue referenze `BibTeX`, potresti chiederti come creare un file `.BIB`. In questo articolo, ti mostreremo come fare! Forniremo anche alcuni consigli su come utilizzare efficacemente i file ".BIB".
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) è uno strumento di gestione delle referenze collaborativo basato su BibTeX che si sincronizza automaticamente con sistemi di pubblicazione come [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) e [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) e si occupa della formattazione del tuo file bib per te.
+:::
+
+<CiteDrive />
+
+## Creare un file bib a mano
+
+Creare un file `.BIB` è in realtà abbastanza semplice. Tutto ciò che devi fare è creare un file di testo con estensione `.bib`. Puoi quindi aggiungere le tue referenze BibTeX a questo file, una per riga. Ad esempio:
+
+```latex
+	@article{smith201X,
+		title        = {Un articolo interessante},
+		author       = {John Smith},
+		year         = {201X},
+		journal      = {Journal of Interesting Articles}
+	}
+```
+
+Una volta creato il tuo file `.BIB`, puoi utilizzarlo nei tuoi documenti LaTeX specificando il comando `\bibliography{filename}`. Ad esempio:
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{filename}
+
+\end{document}
+```
+
+Ecco fatto! Creare un file `.BIB` è un modo semplice per gestire le tue referenze BibTeX. Assicurati di dare un'occhiata ai nostri altri articoli su BibTeX per ulteriori consigli e trucchi!

@@ -1,0 +1,40 @@
+---
+title: "Come Utilizzare gli URL nelle Voci BibTeX"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Se stai utilizzando BibTeX per creare bibliografie per i tuoi articoli di ricerca, potresti esserti chiesto come includere gli URL nelle tue voci.
+
+Il tipo di campo URL non è ancora formalmente supportato in BibTeX, sebbene fosse previsto per la versione 1.0 da Oren Patashnik. Nonostante ciò, il dibattito riguardante questa versione e le sue intenzioni risale al [documento di Patashnik del 2003](https://tug.org/TUGboat/tb24-1/patashnik.pdf), che viene gradualmente sostituito da biblatex supportato da Biber.
+
+Pertanto, è probabile che tu debba utilizzare uno dei seguenti workaround, ad esempio, quando citi siti web:
+
+<CiteDrive />
+
+## Utilizza il campo note:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## Utilizza il campo howpublished:
+
+```latex
+@misc{...,
+  note = "Disponibile su \url{http://...}"
+}
+```
+
+## Utilizza biblatex e il suo campo URL integrato:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+Se scegli biblatex, dovrai usare Biber come backend invece di BibTeX. Se vuoi sapere di più su biblatex e Biber, leggi la nostra guida introduttiva.
+Se hai domande o commenti, faccelo sapere. Speriamo che questo ti sia stato d'aiuto!
