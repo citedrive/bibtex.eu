@@ -1,28 +1,28 @@
 ---
-title: "BibTeX field type: volume"
-sidebar:
-  label: volume
+title: "Tipo di campo BibTeX: volume"  
+sidebar:  
+  label: volume  
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `volume` field in a BibTeX entry is essential when you are referencing a part of a larger work, such as an article in a journal or a chapter in a multi-volume book. This field allows you to specify which volume of a journal or book you are citing, providing the reader with more precise information to locate the cited work.
+Il campo `volume` in una voce BibTeX è essenziale quando si fa riferimento a una parte di un'opera più grande, come un articolo in una rivista o un capitolo in un libro in più volumi. Questo campo consente di specificare quale volume di una rivista o di un libro si sta citando, fornendo al lettore informazioni più precise per localizzare l'opera citata.
 
 <CiteDrive />
 
-In many scholarly and academic publications, journals are published in volumes, often with several issues in each volume. The volume number usually indicates a collection of issues published within a specific time frame, typically a year. Similarly, multi-volume books or series are segmented into different volumes, each containing a portion of the entire work.
+In molte pubblicazioni accademiche e scientifiche, le riviste sono pubblicate in volumi, spesso con più numeri in ciascun volume. Il numero del volume solitamente indica una raccolta di numeri pubblicati all'interno di un intervallo di tempo specifico, tipicamente un anno. Allo stesso modo, i libri o le serie in più volumi sono suddivisi in diversi volumi, ciascuno contenente una parte dell'intero lavoro.
 
-The `volume` field is particularly crucial when citing journals, as it enables readers to find the specific collection of issues where the cited article was published. It is typically used in conjunction with the `number` field, which further specifies the issue within the volume where the article can be found.
+Il campo `volume` è particolarmente cruciale quando si citano riviste, poiché consente ai lettori di trovare la specifica raccolta di numeri in cui è stato pubblicato l'articolo citato. Di solito è utilizzato insieme al campo `number`, che specifica ulteriormente il numero all'interno del volume in cui si trova l'articolo.
 
-Here's how you can use the `volume` field in a BibTeX entry:
+Ecco come puoi usare il campo `volume` in una voce BibTeX:
 
-## Example
+## Esempio
 
 ```bibtex
 @article{key,
-    title={Title of the Article},
-    author={Author Name},
-    journal={Journal Name},
+    title={Titolo dell'Articolo},
+    author={Nome Autore},
+    journal={Nome della Rivista},
     volume={5},
     number={3},
     pages={123-456},
@@ -30,6 +30,6 @@ Here's how you can use the `volume` field in a BibTeX entry:
 }
 ```
 
-In this example, the `volume` field specifies that the article was published in volume 5 of the journal. Including this detail helps in providing a complete and precise citation, making it easier for readers to locate the cited work.
+In questo esempio, il campo `volume` specifica che l'articolo è stato pubblicato nel volume 5 della rivista. Includere questo dettaglio aiuta a fornire una citazione completa e precisa, rendendo più facile per i lettori trovare l'opera citata.
 
-Similarly, in multi-volume books or series, you can use the `volume` field to indicate the specific volume that contains the chapter or section you are citing. This usage again assists readers in finding the exact source material more efficiently.
+Allo stesso modo, nei libri o nelle serie in più volumi, puoi usare il campo `volume` per indicare il volume specifico che contiene il capitolo o la sezione che stai citando. Anche questo uso aiuta i lettori a trovare il materiale sorgente esatto in modo più efficiente.

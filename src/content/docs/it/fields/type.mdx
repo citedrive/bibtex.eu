@@ -1,29 +1,29 @@
 ---
-title: "BibTeX field type: type"
-sidebar:
-  label: type
+title: "Tipo di campo BibTeX: type"  
+sidebar:  
+  label: type  
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `type` field in a BibTeX entry is utilized to indicate the specific type or category of a publication. This field can be particularly useful when you are referencing reports, theses, or other documents that have more detailed categorizations. Indicating the specific type can provide the reader with more context about the nature of the document you are referencing.
+Il campo `type` in una voce BibTeX viene utilizzato per indicare il tipo o la categoria specifica di una pubblicazione. Questo campo può essere particolarmente utile quando si fa riferimento a rapporti, tesi o altri documenti che hanno classificazioni più dettagliate. Indicare il tipo specifico può fornire al lettore un contesto maggiore sulla natura del documento che si sta citando.
 
 <CiteDrive />
 
-Commonly used in conjunction with entries like `@techreport` or `@thesis`, it helps to denote a more specific sub-type of the publication, such as a "Research Note", "Government Report", "Master's Thesis", "PhD Dissertation", and so forth. This field can help in distinguishing the document from others of a similar category.
+Comunemente usato in combinazione con voci come `@techreport` o `@thesis`, aiuta a denotare un sotto-tipo più specifico della pubblicazione, come "Nota di Ricerca", "Rapporto Governativo", "Tesi di Master", "Tesi di Dottorato", e così via. Questo campo può aiutare a distinguere il documento da altri di una categoria simile.
 
-When using the `type` field, it is advisable to use a descriptive and standardized terminology that aligns with the norms of the field or discipline you are working in. This promotes clarity and helps the reader in understanding the exact nature of the referenced document.
+Quando si utilizza il campo `type`, è consigliabile usare una terminologia descrittiva e standardizzata che si allinei con le norme del campo o della disciplina in cui si sta lavorando. Questo promuove chiarezza e aiuta il lettore a comprendere la natura esatta del documento citato.
 
-## Example
+## Esempio
 
-Here is an example demonstrating how to use the `type` field in a technical report entry:
+Ecco un esempio che dimostra come utilizzare il campo `type` in una voce di rapporto tecnico:
 
 ```bibtex
 @techreport{key,
-    type={Research Note},
+    type={Nota di Ricerca},
 }
 ```
 
-In this example, the `type` field is populated with the descriptor "Research Note", indicating that the technical report is a note detailing some research findings.
+In questo esempio, il campo `type` è popolato con il descrittore "Nota di Ricerca", indicando che il rapporto tecnico è una nota che dettaglia alcuni risultati di ricerca.
 
-By utilizing the `type` field effectively, you can provide more detailed information about the documents you are referencing, facilitating a deeper understanding and smoother navigation of your bibliography for the reader.
+Utilizzando efficacemente il campo `type`, è possibile fornire informazioni più dettagliate sui documenti che si stanno citando, facilitando una comprensione più profonda e una navigazione più fluida della bibliografia per il lettore.

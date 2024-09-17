@@ -1,25 +1,25 @@
 ---
-title: "BibTeX field type: email"
-sidebar:
+title: "Tipo di campo BibTeX: email"  
+sidebar:  
   label: email
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `email` field in BibTeX is used to include the email addresses of the authors in your citation. While not a commonly used field and possibly unsupported in various styles, it can sometimes be useful to provide a direct line of contact to the authors. Here, we explore how to appropriately integrate email addresses into your BibTeX entries.
+Il campo `email` in BibTeX è utilizzato per includere gli indirizzi email degli autori nella tua citazione. Sebbene non sia un campo comunemente utilizzato e potrebbe non essere supportato in vari stili, a volte può essere utile fornire un contatto diretto con gli autori. Qui esploriamo come integrare appropriatamente gli indirizzi email nelle tue voci BibTeX.
 
 <CiteDrive />
 
-## Including Email Addresses
+## Inclusione degli Indirizzi Email
 
-If you decide to specify email addresses in your BibTeX entries, here are two recommended methods:
+Se decidi di specificare gli indirizzi email nelle tue voci BibTeX, ecco due metodi raccomandati:
 
-### Display as a Note at the End of the Reference
+### Visualizzazione come Nota alla Fine del Riferimento
 
-In this approach, the email address is added as a note that appears at the end of the citation. This way, it is distinctly separated from the author's name and other details, ensuring clarity.
+In questo approccio, l'indirizzo email viene aggiunto come una nota che appare alla fine della citazione. In questo modo, è separato chiaramente dal nome dell'autore e dagli altri dettagli, garantendo chiarezza.
 
 ```bibtex
-@book{Sample2023,
+@book{Esempio2023,
   author = {Muller, John},
   ...
   note = "{\tt john.muller@example.com}",
@@ -27,26 +27,25 @@ In this approach, the email address is added as a note that appears at the end o
 }
 ```
 
-### Display Behind the Family Name
+### Visualizzazione Dietro il Cognome
 
-Another method is to incorporate the email address directly behind the family name. This approach provides a direct association between the author and their email address, facilitating immediate contact.
+Un altro metodo è incorporare l'indirizzo email direttamente dietro il cognome. Questo approccio fornisce un'associazione diretta tra l'autore e il suo indirizzo email, facilitando il contatto immediato.
 
 ```bibtex
-@book{Sample2023,
+@book{Esempio2023,
   author = {Muller {\tt john.muller@example.com}, John},
   ...
 }
 ```
 
-## Guidelines for Including Email Addresses
+## Linee Guida per l'Inclusione degli Indirizzi Email
 
-1. **Privacy Considerations**: Before including an author's email address, ensure you have their permission to do so, respecting their privacy and adhering to ethical guidelines.
-    
-2. **Formatting**: Maintain a clear and readable format by using the Teletype (`\tt`) font style to differentiate the email address from other text elements.
-    
-3. **Compatibility**: Be aware that the `email` field is not standard and may not be supported in all BibTeX styles. Always check the compatibility with your chosen style to avoid formatting issues.
-    
+1. **Considerazioni sulla Privacy**: Prima di includere l'indirizzo email di un autore, assicurati di avere il loro permesso per farlo, rispettando la loro privacy e aderendo alle linee guida etiche.
 
-## Conclusion
+2. **Formattazione**: Mantieni un formato chiaro e leggibile utilizzando lo stile di carattere Teletype (`\tt`) per differenziare l'indirizzo email dagli altri elementi di testo.
 
-While not common, including email addresses in your BibTeX entries can sometimes facilitate direct communication with the authors. Always adhere to ethical guidelines and verify compatibility with your chosen BibTeX style when using the `email` field. By following the recommended formats, you can integrate email addresses into your citations seamlessly.
+3. **Compatibilità**: Tieni presente che il campo `email` non è standard e potrebbe non essere supportato in tutti gli stili BibTeX. Verifica sempre la compatibilità con lo stile scelto per evitare problemi di formattazione.
+
+## Conclusione
+
+Anche se non comune, includere gli indirizzi email nelle tue voci BibTeX può talvolta facilitare la comunicazione diretta con gli autori. Adotta sempre linee guida etiche e verifica la compatibilità con lo stile BibTeX scelto quando utilizzi il campo `email`. Seguendo i formati raccomandati, puoi integrare gli indirizzi email nelle tue citazioni in modo fluido.

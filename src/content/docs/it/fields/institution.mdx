@@ -1,16 +1,16 @@
 ---
-title: "BibTeX field type: institution"
-sidebar:
-  label: institution
+title: "Tipo di campo BibTeX: institution"  
+sidebar:  
+  label: institution  
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `institution` field is designated to be used within the `@techreport` entry type, where it serves to denote the name of the institution that was responsible for issuing or publishing the report. This helps to give proper attribution and helps readers to find the original source more easily.
+Il campo `institution` è destinato ad essere utilizzato all'interno del tipo di voce `@techreport`, dove serve a indicare il nome dell'istituzione che è stata responsabile per l'emissione o la pubblicazione del rapporto. Questo aiuta a garantire una corretta attribuzione e facilita la ricerca della fonte originale da parte dei lettori.
 
 <CiteDrive/>
 
-Here is an example structure demonstrating how you might use the `institution` field in a `@techreport` entry:
+Ecco una struttura di esempio che dimostra come puoi utilizzare il campo `institution` in una voce `@techreport`:
 
 ```bibtex
 @techreport{key,
@@ -18,6 +18,6 @@ Here is an example structure demonstrating how you might use the `institution` f
 }
 ```
 
-In this format, the "key" is a unique identifier for the BibTeX entry, and the "institution" field should contain the name of the institution that published the report. It is essential to provide accurate and detailed information in this field to facilitate proper citation and referencing.
+In questo formato, "key" è un identificatore unico per la voce BibTeX e il campo "institution" dovrebbe contenere il nome dell'istituzione che ha pubblicato il rapporto. È essenziale fornire informazioni accurate e dettagliate in questo campo per facilitare una corretta citazione e riferimento.
 
-Ensure to replace the `{...}` with the actual name of the institution when you are creating your BibTeX entries. This field helps to organize and categorize technical reports properly in your reference list.
+Assicurati di sostituire `{...}` con il nome effettivo dell'istituzione quando crei le tue voci BibTeX. Questo campo aiuta a organizzare e classificare correttamente i rapporti tecnici nella tua lista di riferimenti.

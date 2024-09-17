@@ -1,59 +1,57 @@
 ---
-title: "BibTeX field type: organization"
-sidebar:
-  label: organization
+title: "Tipo di campo BibTeX: organization"  
+sidebar:  
+  label: organization  
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `organization` field in a BibTeX entry is used to specify the name of the organization responsible for publishing the document or hosting the event being cited. This could be a company, an institution, or a group that sponsored or organized a conference, workshop, manual, etc. Including the organization provides the reader with a clear context of the entity behind the document, which can be crucial for determining the reliability and authority of the source.
+Il campo `organization` in una voce BibTeX è utilizzato per specificare il nome dell'organizzazione responsabile della pubblicazione del documento o dell'organizzazione dell'evento citato. Questo potrebbe essere una società, un'istituzione o un gruppo che ha sponsorizzato o organizzato una conferenza, un workshop, un manuale, ecc. Includere l'organizzazione fornisce al lettore un chiaro contesto dell'entità dietro il documento, il che può essere cruciale per determinare l'affidabilità e l'autorità della fonte.
 
 <CiteDrive />
 
-You will typically encounter this field in `@proceedings` and `@manual` entries, but it might appear in other types of entries as well, depending on the specific requirements of the bibliography style being used.
+Tipicamente, questo campo si incontra nelle voci `@proceedings` e `@manual`, ma potrebbe apparire anche in altri tipi di voci, a seconda dei requisiti specifici dello stile bibliografico utilizzato.
 
-## Format
+## Formato
 
-The format for specifying the `organization` field is as follows:
+Il formato per specificare il campo `organization` è il seguente:
 
 ```bibtex
 @entry_type{citation_key,
   ...
-  organization={Organization Name},
+  organization={Nome dell'Organizzazione},
   ...
 }
-
 ```
 
-Here, "entry_type" refers to the type of BibTeX entry (such as `@proceedings` or `@manual`), "citation_key" is a unique identifier for the entry, and "Organization Name" is the name of the organization involved.
+Qui, "entry_type" si riferisce al tipo di voce BibTeX (come `@proceedings` o `@manual`), "citation_key" è un identificatore unico per la voce, e "Nome dell'Organizzazione" è il nome dell'organizzazione coinvolta.
 
-## Examples
+## Esempi
 
-Here are a couple of examples demonstrating how to use the `organization` field in different contexts:
+Ecco un paio di esempi che mostrano come utilizzare il campo `organization` in diversi contesti:
 
-### Example 1: Conference Proceedings
+### Esempio 1: Atti di Conferenza
 
 ```bibtex
 @proceedings{ICML2023,
-  title = {Proceedings of the 40th International Conference on Machine Learning},
+  title = {Atti della 40ª Conferenza Internazionale sul Machine Learning},
   year = {2023},
   organization = {International Machine Learning Society},
 }
-
 ```
 
-In this example, the `organization` field specifies the entity responsible for organizing the conference whose proceedings are being cited.
+In questo esempio, il campo `organization` specifica l'entità responsabile dell'organizzazione della conferenza i cui atti vengono citati.
 
-### Example 2: Manual
+### Esempio 2: Manuale
 
 ```bibtex
 @manual{UserGuide2022,
-  title = {XYZ Software User Guide},
+  title = {Guida dell'Utente XYZ Software},
   year = {2022},
   organization = {XYZ Software Inc.},
 }
 ```
 
-Here, the `organization` field is used to indicate the company that published the software manual.
+In questo caso, il campo `organization` è utilizzato per indicare l'azienda che ha pubblicato il manuale del software.
 
-Including the `organization` field in your BibTeX entries can help to provide a complete and detailed reference, facilitating more straightforward identification and retrieval of the source materials.
+Includere il campo `organization` nelle tue voci BibTeX può aiutare a fornire una referenza completa e dettagliata, facilitando l'identificazione e il recupero dei materiali di fonte.

@@ -1,58 +1,57 @@
 ---
-title: "BibTeX field type: pages"
-sidebar:
-  label: pages
+title: "Tipo di campo BibTeX: pages"  
+sidebar:  
+  label: pages  
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `pages` field in a BibTeX entry denotes the specific pages that are being referred to within a larger work, such as a book or journal. This field can be essential when citing a chapter of a book or an article in a journal, helping to point readers directly to the pertinent section of the work.
+Il campo `pages` in una voce BibTeX indica le pagine specifiche a cui ci si riferisce all'interno di un'opera più ampia, come un libro o una rivista. Questo campo può essere essenziale quando si cita un capitolo di un libro o un articolo in una rivista, aiutando a indirizzare direttamente i lettori alla sezione pertinente dell'opera.
 
 <CiteDrive />
 
-## Formatting Guidelines
+## Linee Guida per la Formattazione
 
-You can specify a single page, a range of pages, or even non-consecutive pages. The recommended way to separate page numbers is either with commas or double dashes. Here are some guidelines to format the `pages` field properly:
+È possibile specificare una singola pagina, un intervallo di pagine o anche pagine non consecutive. Ecco alcune linee guida per formattare correttamente il campo `pages`:
 
-1. **Single Page:** If referring to a single page, you simply write the page number.
+1. **Pagina Singola:** Se ci si riferisce a una singola pagina, basta scrivere il numero della pagina.
     
-2. **Range of Pages:** For a range of pages, you should use double dashes (--). This indicates a continuous range from the first number to the second.
+2. **Intervallo di Pagine:** Per un intervallo di pagine, è necessario utilizzare i doppi trattini (--) per indicare un intervallo continuo dal primo numero al secondo.
     
-3. **Non-consecutive Pages:** If referring to non-consecutive pages, separate the different page numbers or ranges with a comma.
+3. **Pagine Non Consecutive:** Se ci si riferisce a pagine non consecutive, separare i diversi numeri di pagina o intervalli con una virgola.
     
 
-## Examples
+## Esempi
 
-Here are some examples demonstrating how to use the `pages` field:
+Ecco alcuni esempi che mostrano come utilizzare il campo `pages`:
 
 ```bibtex
 @book{key,
-  title = {Title of the Book},
-  author = {Author Name},
+  title = {Titolo del Libro},
+  author = {Nome dell'Autore},
   year = {2023},
-  pages = {33--44},   % Range of pages from 33 to 44
-}
-```
-
-
-```bibtex
-@book{key,
-  title = {Title of the Book},
-  author = {Author Name},
-  year = {2023},
-  pages = {22, 33--44},   % Page 22 and a range from 33 to 44
+  pages = {33--44},   % Intervallo di pagine dalla 33 alla 44
 }
 ```
 
 ```bibtex
 @book{key,
-  title = {Title of the Book},
-  author = {Author Name},
+  title = {Titolo del Libro},
+  author = {Nome dell'Autore},
   year = {2023},
-  pages = {17},    % Single page
+  pages = {22, 33--44},   % Pagina 22 e intervallo dalla 33 alla 44
 }
 ```
 
-## Note
+```bibtex
+@book{key,
+  title = {Titolo del Libro},
+  author = {Nome dell'Autore},
+  year = {2023},
+  pages = {17},    % Pagina singola
+}
+```
 
-It is important to note that the `pages` field is not limited to `@book` entries, and can also be used in other entry types like `@article` or `@inbook` to denote the relevant pages in those contexts. Using the `pages` field correctly helps to create more accurate and helpful citations.
+## Nota
+
+È importante notare che il campo `pages` non è limitato alle voci `@book`, ma può essere utilizzato anche in altri tipi di voci come `@article` o `@inbook` per indicare le pagine rilevanti in quei contesti. Utilizzare correttamente il campo `pages` aiuta a creare citazioni più accurate e utili.

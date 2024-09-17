@@ -1,45 +1,45 @@
 ---
-title: "BibTeX field type: school"
-sidebar:
-  label: school
+title: "Tipo di campo BibTeX: school"  
+sidebar:  
+  label: school  
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-In BibTeX, the `school` field is utilized predominantly within `@phdthesis` or `@mastersthesis` entries. This field is used to indicate the educational institution where the thesis or dissertation was written. It is a mandatory field for both entry types, helping to provide detailed information about the origin of the scholarly work, which can be important for readers who may want to seek out more information or reference the work in their own research.
+In BibTeX, il campo `school` è utilizzato principalmente all'interno delle voci `@phdthesis` o `@mastersthesis`. Questo campo serve a indicare l'istituzione educativa dove è stata scritta la tesi o la dissertazione. È un campo obbligatorio per entrambi i tipi di voce, aiutando a fornire informazioni dettagliate sull'origine del lavoro accademico, che possono essere importanti per i lettori che potrebbero voler cercare ulteriori informazioni o fare riferimento al lavoro nelle loro ricerche.
 
 <CiteDrive />
 
-## Formatting Guidelines
+## Linee Guida per il Formato
 
-When entering the name of the school, it's advisable to use the full and official name of the institution to maintain a formal and standardized format in your references. Avoid using abbreviations unless they are widely recognized and accepted.
+Quando inserisci il nome della scuola, è consigliabile utilizzare il nome completo e ufficiale dell'istituzione per mantenere un formato formale e standardizzato nei tuoi riferimenti. Evita di utilizzare abbreviazioni a meno che non siano ampiamente riconosciute e accettate.
 
-## Examples
+## Esempi
 
-Here are examples of how to use the `school` field for both `phdthesis` and `mastersthesis` entries:
+Ecco esempi su come utilizzare il campo `school` per le voci `phdthesis` e `mastersthesis`:
 
-### PhD Thesis
+### Tesi di Dottorato
 
 ```bibtex
 @phdthesis{doe2023,
   author = {John Doe},
-  title = {Explorations in Quantum Computing},
+  title = {Esplorazioni nel Calcolo Quantistico},
   year = {2023},
   school = {Massachusetts Institute of Technology},
 }
 ```
 
-### Masters Thesis
+### Tesi di Master
 
 ```bibtex
 @mastersthesis{smith2023,
   author = {Sarah Smith},
-  title = {A Comprehensive Study on Environmental Sustainability},
+  title = {Uno Studio Completo sulla Sostenibilità Ambientale},
   year = {2023},
   school = {University of California, Berkeley},
 }
 ```
 
-## Note
+## Nota
 
-In your example, you used the `series` field instead of the `school` field for the `mastersthesis` entry. However, the `school` field should be used for specifying the institution in both `phdthesis` and `mastersthesis` entries, as shown in the examples above.
+Nel tuo esempio, hai utilizzato il campo `series` invece del campo `school` per la voce `mastersthesis`. Tuttavia, il campo `school` dovrebbe essere utilizzato per specificare l'istituzione sia nelle voci `phdthesis` che `mastersthesis`, come mostrato negli esempi sopra.

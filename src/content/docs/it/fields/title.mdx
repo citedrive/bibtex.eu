@@ -1,33 +1,33 @@
 ---
-title: "BibTeX field type: title"
-sidebar:
-  label: title
+title: "Tipo di campo BibTeX: title"  
+sidebar:  
+  label: title  
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `title` field in a BibTeX entry is used to specify the main title of the work you are referencing. It is one of the essential fields and is supported by almost all BibTeX entry types. Accurate capitalization and adherence to LaTeX syntax are critical when populating this field to ensure that the title is displayed correctly in the generated bibliography.
+Il campo `title` in una voce BibTeX viene utilizzato per specificare il titolo principale dell'opera che si sta citando. È uno dei campi essenziali e viene supportato dalla maggior parte dei tipi di voce BibTeX. È cruciale che la capitalizzazione e l'aderenza alla sintassi LaTeX siano accurate quando si popolano questi campi per garantire che il titolo venga visualizzato correttamente nella bibliografia generata.
 
 <CiteDrive />
 
-To maintain proper formatting, LaTeX commands can be used within the `title` field to preserve the capitalization of certain words or phrases. Moreover, if the title contains special characters or mathematical symbols, they should be entered using the appropriate LaTeX commands.
+Per mantenere una formattazione corretta, è possibile utilizzare i comandi LaTeX all'interno del campo `title` per preservare la capitalizzazione di certe parole o frasi. Inoltre, se il titolo contiene caratteri speciali o simboli matematici, devono essere inseriti utilizzando i comandi LaTeX appropriati.
 
-## Example
+## Esempio
 
-Here's a simple example showcasing how to use the `title` field:
+Ecco un esempio semplice su come utilizzare il campo `title`:
 
 ```bibtex
 @article{key,
-    title={What is bioinformatics? An introduction and overview},
+    title={Cos'è la bioinformatica? Introduzione e panoramica},
 }
 ```
 
-A more detailed example, including additional fields to provide a comprehensive reference, is given below:
+Un esempio più dettagliato, che include campi aggiuntivi per fornire una citazione completa, è riportato di seguito:
 
 ```bibtex
 @article{luscombe2001bioinformatics,
-  title={What is bioinformatics? An introduction and overview},
-  author={Luscombe, Nicholas M and Greenbaum, Dov and Gerstein, Mark},
+  title={Cos'è la bioinformatica? Introduzione e panoramica},
+  author={Luscombe, Nicholas M e Greenbaum, Dov e Gerstein, Mark},
   journal={Yearbook of medical informatics},
   volume={10},
   number={01},
@@ -37,6 +37,6 @@ A more detailed example, including additional fields to provide a comprehensive 
 }
 ```
 
-In these examples, the `title` field is populated with the title of the article being cited. Note the use of braces `{}` to encapsulate the title text, which helps in maintaining the capitalization and formatting of the title as intended by the author.
+In questi esempi, il campo `title` è popolato con il titolo dell'articolo citato. Nota l'uso delle parentesi graffe `{}` per racchiudere il testo del titolo, che aiuta a mantenere la capitalizzazione e la formattazione del titolo come inteso dall'autore.
 
-Remember, the `title` field is crucial in helping readers identify the specific work being referenced, so ensure that it is entered accurately and formatted correctly in your BibTeX entries.
+Ricorda, il campo `title` è fondamentale per aiutare i lettori a identificare l'opera specifica citata, quindi assicurati che sia inserito accuratamente e formattato correttamente nelle tue voci BibTeX.

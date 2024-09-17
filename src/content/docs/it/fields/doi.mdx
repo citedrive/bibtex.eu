@@ -1,37 +1,37 @@
 ---
-title: "BibTeX field type: doi"
-sidebar:
+title: "Tipo di campo BibTeX: doi"  
+sidebar:  
   label: doi
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-The `doi` field is an integral part of modern referencing, allowing for a seamless and permanent method to locate digital objects such as journal articles, research reports, and data sets in an online environment. Here, we delve deeper into the functionality and significance of the `doi` field in BibTeX, as well as provide guidance on its correct usage.
+Il campo `doi` è una parte essenziale del riferimento moderno, permettendo un metodo continuo e permanente per localizzare oggetti digitali come articoli di giornali, rapporti di ricerca e set di dati in un ambiente online. Qui esploreremo più a fondo la funzionalità e l'importanza del campo `doi` in BibTeX, fornendo anche indicazioni sul suo utilizzo corretto.
 
 <CiteDrive />
 
-### Overview
+## Panoramica
 
-A Digital Object Identifier (DOI) is a unique alphanumeric string assigned to a digital object, facilitating a persistent link to its location on the internet. As a standardized method for identifying electronic resources, the DOI remains stable even if the URL of the item changes, ensuring the longevity of references.
+Un Identificatore di Oggetti Digitali (DOI) è una stringa alfanumerica unica assegnata a un oggetto digitale, facilitando un collegamento persistente alla sua posizione su Internet. Come metodo standardizzato per identificare risorse elettroniche, il DOI rimane stabile anche se l'URL dell'elemento cambia, garantendo la longevità dei riferimenti.
 
-The `doi` field in BibTeX serves to record this identifier, allowing for precise and permanent citations. While it is predominantly found in the `article` entry type, it can also be used in other types such as `book`, `chapter`, `inproceedings`, or `conference` entries, albeit less frequently. Regardless of the entry type, the `doi` field is optional.
+Il campo `doi` in BibTeX serve a registrare questo identificatore, consentendo citazioni precise e permanenti. Anche se è predominante nel tipo di voce `article`, può essere utilizzato anche in altri tipi come `book`, `chapter`, `inproceedings` o `conference`, sebbene meno frequentemente. Indipendentemente dal tipo di voce, il campo `doi` è facoltativo.
 
-### Syntax and Structure
+## Sintassi e Struttura
 
-To correctly incorporate a DOI into your BibTeX entry, adhere to the following format:
+Per incorporare correttamente un DOI nella tua voce BibTeX, segui il formato seguente:
 
 ```bibtex
-@entrytype{citationkey,
+@entrytype{chiavecitazione,
   ...
   doi={https://doi.org/xxxxx},
   ...
 }
 ```
-The `doi` field encapsulates the full DOI URL, which typically starts with "[https://doi.org/](https://doi.org/)" followed by a unique identifier string.
+Il campo `doi` racchiude l'URL completo del DOI, che solitamente inizia con "[https://doi.org/](https://doi.org/)" seguito da una stringa identificativa unica.
 
-### Example
+## Esempio
 
-Here's an exemplar BibTeX entry that includes a DOI:
+Ecco un esempio di voce BibTeX che include un DOI:
 
 ```bibtex
 @article{steinbeck2003chemistry,
@@ -47,17 +47,16 @@ Here's an exemplar BibTeX entry that includes a DOI:
 }
 ```
 
-In this example, the `doi` field houses the permanent URL that leads directly to the referenced article.
+In questo esempio, il campo `doi` contiene l'URL permanente che conduce direttamente all'articolo citato.
 
-### Utilization Tips
+## Suggerimenti per l'Uso
 
-1. **Finding DOIs**: For scholarly articles, DOIs can often be found on the first page of the article or in the online database where the article is housed.
-2. **Cross-Referencing**: Utilize the `doi` field for cross-referencing in your paper, offering readers a direct route to the original source material.
-3. **Optional but Beneficial**: While the `doi` field is optional, including it enhances the reliability and traceability of your references.
+1. **Trovare i DOI**: Per gli articoli accademici, i DOI possono spesso essere trovati sulla prima pagina dell'articolo o nel database online in cui è ospitato l'articolo.
+2. **Riferimenti Incrociati**: Utilizza il campo `doi` per i riferimenti incrociati nel tuo documento, offrendo ai lettori una via diretta al materiale sorgente originale.
+3. **Facoltativo ma Benefico**: Anche se il campo `doi` è facoltativo, includerlo migliora l'affidabilità e la tracciabilità dei tuoi riferimenti.
 
-### Conclusion
+## Conclusione
 
-The inclusion of the `doi` field in your BibTeX entries represents best practice in scholarly writing, offering a steadfast link to the digital objects you reference. By adopting the DOI system, you promote the accessibility and permanence of scientific knowledge, supporting the global research community in their scholarly endeavors.
+L'inclusione del campo `doi` nelle tue voci BibTeX rappresenta una buona pratica nella scrittura accademica, offrendo un collegamento solido agli oggetti digitali che citi. Adottando il sistema DOI, promuovi l'accessibilità e la permanenza della conoscenza scientifica, supportando la comunità di ricerca globale nei loro sforzi accademici.
 
-As you build your bibliography, remember to capitalize on the capabilities of the `doi` field, fostering a richer, more reliable, and interconnected academic discourse.
-
+Mentre costruisci la tua bibliografia, ricorda di sfruttare le capacità del campo `doi`, favorendo un discorso accademico più ricco, affidabile e interconnesso.
