@@ -1,0 +1,132 @@
+---
+title: "Natbibチュートリアル: BibTeXを使ったLaTeXでの参考文献管理"
+description: "LaTeXで参考文献を管理するためのnatbibの機能を探る。この詳細なチュートリアルでは、natbibの基本から引用方法、BibTeXとの統合までをカバーします。"
+sidebar:
+  label: "Natbib（詳細チュートリアル）"
+sidebar_position: 3
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+LaTeXで参考文献を管理する際、`natbib`パッケージを使うと効率的かつスムーズに処理できます。従来の`\cite{*}`コマンドを使用する場合でも、高度な引用方法に挑戦する場合でも、このガイドでは基本的な使い方を紹介します。
+
+<CiteDrive />
+
+## `natbib`の紹介とその強み
+
+natbibパッケージは、LaTeXの標準的な`\cite{*}`コマンドの機能を拡張します。特に著者-年方式の引用において、BibTeXとの統合で様々なオプションやカスタマイズが可能で、本文中の引用やカッコ付きの引用に強みを発揮します。
+
+:::tip
+豆知識: このパッケージは、著者-年方式および数値形式の引用の両方に対応しており、標準的な参考文献ファイル`*.bst`とも互換性があります。
+:::
+
+それでは、natbibの力を活用して、参考文献を整え、引用する方法を詳しく見ていきましょう。
+
+## 開始の手順: カッコ付き引用と本文中の引用
+
+`natbib`を設定するには、標準的なLaTeXのセットアップとほぼ同じ構造が必要です。まず、` \usepackage{natbib}`を使用してライブラリを読み込みます。ライブラリは、` \usepackage[options]{natbib}`という形式でいくつかのオプションを提供しています。主なnatbibの引用コマンドは、本文中の引用用の` \citet{*}`と、カッコ付き引用用の`\citep{*}`です。
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\title{BibTeXを使用したnatbibによる参考文献管理の総合ガイド}
+\author{CiteDrive}
+\date {1988年1月}
+
+\begin{document}
+
+\maketitle
+\textbf{本文中の引用:} \citet{Doe:1966}は、[...]が誤って記録されるリスクについて調査したと報告している。 \\
+\textbf{カッコ付き引用:} 誤った記録のリスク[...]は歪曲につながる可能性がある
+\citep{Doe:1966}。
+
+\medskip
+
+\bibliography{sample}
+
+\end{document}
+```
+
+`\bibliography{sample}`を使用することで、LaTeXは.bibファイルに含まれる参考文献にアクセスできます。たとえば、以下のような参考文献データベースを含めることができます:
+
+```bibtex
+@article{Doe:1966,
+	title        = {誤った記録[...]のリスクとその影響に関する研究},
+	author       = {ジョン・ドウ},
+	year         = 1966,
+	journal      = {BibTeX出版},
+	volume       = 44,
+	number       = 44,
+	pages        = {123--456}
+}
+@article{smith2017,
+	title        = {興味深い記事},
+	author       = {ジョン・スミス},
+	year         = {2017},
+	journal      = {興味深い記事のジャーナル}
+}
+```
+
+![BibTeXを使ったnatbibによる参考文献管理の出力例](@assets/images/tutorial/output_example_bibtex_natbib.png)BibTeXを使ったnatbibによる参考文献管理の出力例
+
+数値形式の引用スタイルを好む場合、natbibは次のように設定します:
+
+```latex
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+```
+
+![数値形式のスタイルでnatbibとBibTeXを使用した参考文献管理の出力例](@assets/images/tutorial/output_example_bibtex_natbib_numeric.png)数値形式のスタイルでnatbibとBibTeXを使用した参考文献管理の出力例
+
+## 詳細説明: natbibにおける`cite{*}`コマンドの活用
+
+natbibが提供する`cite{*}`コマンドの幅広い範囲を理解することで、効率的に引用を行うことができます。この表では、さまざまなコマンドとその出力を示しています:
+
+| コマンド (単一の引用) | 出力 (著者-年) | 出力 (数値) | コマンド (複数の引用) | 出力 (著者-年) | 出力 (数値) |
+|---------------------------|----------------------|------------------|------------------------------|---|---|
+|`\citet{Doe:1966}`|Doe (1966) |Doe [1]|`\citet{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citet[chap.~4]{Doe:1966}`|Doe (1966, chap. 4)|Doe [1, chap. 4]|`\citet[chap.~4]{Doe:1966,smith2017}`|Doe (1966); Smith (2017, chap. 4)|Doe [1], Smith [2, chap. 4]|
+|`\citep{Doe:1966}`|(Doe, 1966)|[1]|`\citep{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+|`\citep[chap.~4]{Doe:1966}`|(Doe, 1966, chap. 4)|[1, chap. 4]|`\citep[chap.~4]{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017, chap. 4)|[1, 2, chap. 4]|
+|`\citep[see][]{Doe:1966}`|(see Doe, 1966)|[see 1]|`\citep[see][]{Doe:1966,smith2017}`|(see Doe, 1966; Smith, 2017)|[see 1, 2]|
+|`\citep[see][chap.~4]{Doe:1966}`|(see Doe, 1966, chap. 4)|[see 1, chap. 4]|`\citep[see][chap.~4]{Doe:1966,smith2017}`|(see Doe, 1966; Smith, 2017, chap. 4)|[see 1, 2, chap. 4]|
+|`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+
+他の`natbib`コマンド（たとえば`\citealp`や`\citealt`）では、括弧を省略する柔軟性も提供されます。すべてのコマンドを確認するには、[natbibのリファレンスシート](https://gking.harvard.edu/files/natnotes2.pdf)を参照してください。
+
+## 付録: `natbib`のオプションをマスターする
+
+`natbib`を使用する際、オプションをカスタマイズすることでワークフローをスムーズにできます。` \usepackage[options]{natbib}`で利用できるオプションの一覧は以下の通りです:
+
+| オプション | 説明 |
+|----------------------|----------|
+|round|丸括弧を表示|
+|square|角括弧を表示|
+|curly|波括弧を表示|
+|angle|山括弧を表示|
+|semicolon|複数の引用をセミコロンで区切る|
+|colon|セミコロンと同じ|
+|comma|複数の引用をコンマで区切る|
+|authoryear|著者-年の引用を表示|
+|numbers|数値形式
+
+の引用を表示|
+|super|数値形式の引用を上付き文字で表示|
+|sort|複数の引用を文献リストに表示される順序に並べ替える|
+|compress|並べ替えられた複数の数値形式の引用を適宜圧縮|
+|sort&compress|複数の数値形式の引用を適宜圧縮|
+|longnamesfirst|最初の引用で著者名を完全に表示|
+|sectionbib|`\chapter`の代わりに`\section`を出力するように` \thebibliography`を再定義|
+|nonamebreak|引用の著者名を1行で表示|
+
+### さらに読む
+
+- [Overleafのnatbibを使った文献管理](https://www.overleaf.com/learn/latex/Bibliography_management_with_natbib)を通じて、文献管理をさらに深く理解しましょう。
+- [Overleafのnatbibの参考文献スタイル](https://www.overleaf.com/learn/latex/Natbib_bibliography_styles)をチェックして、さまざまなスタイルを把握しましょう。
+- 便利な[参考シート](https://gking.harvard.edu/files/natnotes2.pdf)も確認してみてください。
+
+## まとめ
+
+natbibをBibTeXと組み合わせて使うことで、LaTeXでの参考文献管理が一段と簡単になります。このガイドでは、基本的な設定から複雑な引用スタイルまでの総合的なチュートリアルを提供しました。LaTeXの多くの機能についての詳細なガイドを引き続き探索してください。

@@ -1,0 +1,66 @@
+---
+title: R Markdownを使用したBibTeXによる参考文献管理 — 簡単ガイド
+description: "このクイックチュートリアルでは、BibTeXを使用して参考文献を管理する方法を紹介します。BibTeXは、参考文献を簡単で使いやすい形式で保存および整理できる参考文献管理ソフトウェアです。"
+sidebar:
+  label: R Markdownの使用（クイックスタート）
+sidebar_position: 6
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+R Markdownは、再現可能なレポート、論文、プレゼンテーションなどを作成するための優れたツールです。R Markdownが非常に強力なのは、他のツールやソフトウェアと統合できる能力です。その一つがBibTeXで、これはLaTeX文書のための参考文献管理システムです。BibTeXを使用することで、文書内で簡単に情報を引用し、参考文献リストを作成できます。
+
+<CiteDrive />
+
+## ステップ1: .bibファイルを作成し、エントリを追加する
+
+前のセクションと同様に、`bibliography.bib`という名前の.bibファイルを生成し、その後BibTeXエントリを追加します。
+BibTeXエントリは以下の形式で構成されており、それぞれの文献ソース（本、エッセイなど）の引用と参考文献への挿入に必要な情報が含まれています。
+
+前のセクションの例を使用して、アーネスト・ヘミングウェイの本『老人と海』を引用します。エントリは次のようになります：
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+再度、このエントリの「解剖学」を分解し、各BibTeXエントリがどのように定義されているかを理解するために3つの要素を見ていきます：
+
+* **エントリタイプ**: `@book`で、参照のスキーマ`@type`に従ってタイプを定義します。科学論文用の`@article`など、様々なタイプがあります。BibTeXは、どのフィールドがオプションで、どれが必須であるかを正しく指定することを好みます。
+* **エントリフィールド**: `@book`の例では、これらは`title`、`author`、`year`、`publisher`です。（Cf. [fields](./fields)）
+* **引用キー**: この例では`Hemingway1952`で、LaTeXの中で引用を示すために使用されます。R Markdownではこれを`[@Hemingway1952]`で行います。引用キーは任意の文字列であり、著者、年、およびタイトルの単語の組み合わせであることがよくあります。
+
+## ステップ2: R Markdownドキュメントを作成し接続する
+
+R MarkdownとBibTeXを統合するのは非常に簡単です。YAMLで`bibliography: bibliography.bib`を指定し、インテキスト引用を配置したい場所に`[@Hemingway1952]`を記述するだけです。
+
+```md
+---
+title: "R MarkdownにおけるBibTeX参考文献"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## R MarkdownにおけるBibTeX参考文献
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+
+
+```
+
+## 参考文献管理ツール
+
+手動でBibTeXファイルをフォーマットするのは面倒な場合が多いため、参考文献管理ツールを使用することが一般的に推奨されます。以下は、この目的に適したいくつかのツールです：
+
+* [CiteDrive](https://www.citedrive.com/)は、プロジェクト内での参考文献とチームを管理するための、BibTeXに基づいた共同作業型のクラウドベースのツールです。Overleafへのワンクリックエクスポートを提供します（[*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Overleaf用の簡単な参考文献管理*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf))とR Markdown（[*Cf. Medium post: CiteDriveとRStudioを使用したR Markdownにおける参考文献管理*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)）に対応しており、引用を同期したまま保ちます。
+* Zoteroは、文献データと関連研究資料（PDFファイルなど）を管理するための無料でオープンソースの文献管理ツールです。ZoteroでのBibTeXの最高のパフォーマンスは、**[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)**を使用することで実現されます。
+* 無料のオープンソースソフトウェアであるJabRefは、Windows、Mac、Linuxで動作するBibTeX対応の参考文献管理ツールです。Javaに基づいており、JabRef e.V.によって維持されています。

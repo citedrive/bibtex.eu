@@ -1,0 +1,167 @@
+---
+title: "Overleaf: 引用と参考文献管理 - LaTeX Bibliographies のイントロダクション"
+description: "BibTeX、Natbib、BibLaTeX を使用して、Overleaf での引用、参考文献、文献管理を学びましょう。さらに、CiteDrive を使ってワークフローを効率化します。"
+sidebar:
+  label: Overleafの使い方 (クイックスタート)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com** は、クラウドベースの LaTeX エディタで、学術文書の共同作成と公開に最適なプラットフォームです。**WriteLaTeX** と **ShareLaTeX** の合併から生まれ、世界中で1,000万人以上のユーザーが利用しています。Overleaf には、学術誌に特化した幅広いツールとテンプレートがプリインストールされており、研究者や学者にとって最適な選択肢です。
+
+Overleaf では、**CiteDrive** のような強力なツールを使用して、簡単に引用と参考文献を管理できます。この統合により、引用管理が効率化され、ワークフローがスムーズになります。
+
+<CiteDrive />
+
+## Overleaf/LaTeXでの参考文献管理
+
+### なぜCiteDriveを選ぶのか？
+
+**CiteDrive** は、Overleaf とシームレスに連携し、強力な引用と参考文献管理機能を提供します。CiteDrive を使う理由は以下の通りです：
+
+- **シームレスな統合**: Overleaf と、BibTeX、Natbib、BibLaTeX などの主要な参考文献システムとスムーズに連携します。
+- **効率向上**: 引用フォーマットを自動化し、簡単に参考文献を管理します。
+- **ユーザーフレンドリー**: 直感的なインターフェースで、参考文献を整理し引用できます。
+- **Webベースで共同作業可能**: どこからでもリアルタイムでアクセスし、引用を管理できます。
+[詳しくは CiteDrive の機能と利点について](https://www.citedrive.com)をご覧ください。
+
+### BibTeX
+
+BibTeX は、LaTeX で広く使用されている参考文献管理システムです。Overleaf で BibTeX を使用するには：
+
+1. **参考文献ファイルを作成**: Overleaf プロジェクトに `references.bib` という名前のファイルを作成します。
+2. **参考文献を追加**: 次の形式で参考文献を含めます：
+
+   ```bibtex
+   @article{AuthorYear,
+       author = {Author, First and Author, Second},
+       title = {Title of the Article},
+       journal = {Journal Name},
+       volume = {Volume Number},
+       number = {Issue Number},
+       pages = {Page Numbers},
+       year = {Year Published},
+       publisher = {Publisher Name}
+   }
+   ```
+
+3. **参考文献を引用**: LaTeX 文書に次のように追加します：
+
+   ```latex
+   \bibliography{references}
+   \bibliographystyle{plain}
+   ```
+
+   引用するには、`\cite{AuthorYear}` を使用します。
+
+4. **CiteDriveで効率化**: CiteDrive を使って、BibTeX の参考文献をより効率的に管理します。
+
+### Natbib
+
+Natbib は、引用フォーマットの柔軟性を高めます。Overleaf で Natbib を使用するには：
+
+1. **コマンドを追加**: 前文に次のように記述します：
+
+   ```latex
+   \usepackage{natbib}
+   \bibliographystyle{plainnat}
+   ```
+
+2. **参考文献を引用**: `\citep{AuthorYear}` は括弧付き引用に、`\citet{AuthorYear}` は文中引用に使用します。
+
+3. **参考文献リストを追加**: 次のように追加します：
+
+   ```latex
+   \bibliography{references}
+   ```
+
+4. **CiteDriveで強化**: CiteDrive を使って、引用管理とフォーマットを簡素化します。
+
+### BibLaTeX
+
+BibLaTeX は、より高度な引用機能を提供します。Overleaf で BibLaTeX を使用するには：
+
+1. **コマンドを追加**: 前文に次のように記述します：
+
+   ```latex
+   \usepackage[style=authoryear,backend=bibtex]{biblatex}
+   \bibliography{references}
+   ```
+
+2. **参考文献を引用**: 括弧付き引用には `\parencite{AuthorYear}`、文中引用には `\textcite{Author}` を使用します。
+
+3. **CiteDriveで最適化**: CiteDrive の BibLaTeX サポートで、より柔軟に管理できます。
+
+## LaTeXの基本
+
+LaTeX に不慣れな方のために、簡単な概要を示します：
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % "references.bib" をあなたの参考文献ファイルに置き換えてください
+
+\title{私の最初の LaTeX 文書}
+\author{あなたの名前}
+
+\begin{document}
+
+\maketitle
+
+\section{イントロダクション}
+これは LaTeX の基本を示すサンプル文書です。
+
+\section{フォーマット}
+\textbf{太字}、\textit{イタリック}、\underline{下線}、または \texttt{等幅フォント} でテキストをフォーマットできます。
+
+\section{リスト}
+これは箇条書きのリストの例です：
+\begin{itemize}
+  \item 最初の項目
+  \item 2番目の項目
+  \item 3番目の項目
+\end{itemize}
+
+\section{数学}
+LaTeX は数学式の組版に優れています。次は方程式の例です：
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{図と表}
+文書内に図や表を含めることができます。以下は図の例です：
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{例の図}
+  \label{fig:example}
+\end{figure}
+
+こちらは表の例です：
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{項目} & \textbf{数量} \\
+    \hline
+    りんご & 3 \\
+    オレンジ & 5 \\
+    \hline
+  \end{tabular}
+  \caption{例の表}
+  \label{tab:example}
+\end{table}
+
+\section{参考文献}
+ラベル付きのセクション、方程式、図、表を参照できます。たとえば、図~\ref{fig:example} や表~\ref{tab:example} を参照してください。
+
+\section{引用と参考文献リスト}
+\cite{author2022} を使って引用を行います。こちらが引用の例です。
+
+\printbibliography
+
+\end{document}
+```

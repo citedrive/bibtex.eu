@@ -1,0 +1,64 @@
+---
+title: Quartoを使用したBibTeXによるリファレンスマネジメント - 短いガイド  
+description: "このクイックチュートリアルでは、BibTeXを使用してリファレンスを管理する方法を紹介します。BibTeXは、リファレンスを簡単かつ使いやすい形式で保存および整理することができるリファレンスマネジメントソフトウェアです。"  
+sidebar:  
+  label: Quartoを使用する（RStudio/Posit）（クイックスタート）  
+sidebar_position: 5  
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Quartoは、再現可能なレポート、論文、プレゼンテーションなどを作成するための優れたツールです。Quartoの特徴の一つは、他のツールやソフトウェアと統合できる点です。LaTeXドキュメント用のリファレンスマネジメントシステムであるBibTeXもその一つです。BibTeXを使うと、簡単にソースを引用し、ドキュメント内に文献目録を作成できます。
+
+<CiteDrive />
+
+## ステップ1：.bibファイルを作成して、エントリを追加する
+
+前のセクションと同様に、最初に「bibliography.bib」という名前の.bibファイルを作成し、BibTeXエントリを追加します。  
+BibTeXエントリは次の形式で構成され、それぞれの文献（本、エッセイなど）の引用および文献目録の作成に必要な情報が含まれます。
+
+前のセクションの例を使って、アーネスト・ヘミングウェイによる「老人と海」を引用します。結果は次のようになります。
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+ここでも、このエントリの「構造」を分解し、それぞれのBibTeXエントリがどのように定義されているかを理解します。
+
+* **エントリタイプ**：`@book`で参照のタイプを `@type`スキーマに従って定義します。例えば、科学論文の場合は`@article`です。BibTeXは、文献に正しく表示するために、どのフィールドが必須でどのフィールドが任意かを指定するのが一般的です。
+* **エントリフィールド**：この`@book`の例では、`title`、`author`、`year`、`publisher`が含まれます。（詳細は [fields](./fields) を参照）
+* **引用キー**：この例では`Hemingway1952`で、LaTeX内でインライン引用を示すために使用されます。Quartoでは `[@Hemingway1952]`を使用してこのキーを呼び出します。引用キーは任意の文字列であり、一般的には著者名、発行年、タイトルの一部を組み合わせて使用します。
+
+## ステップ2：Quartoドキュメントを作成して接続
+
+QuartoにBibTeXを統合するのは非常に簡単です。YAMLで `bibliography: bibliography.bib` を指定し、テキストの引用箇所に `[@Hemingway1952]` を記述するだけです。
+
+```md
+---
+title: "QuartoにおけるBibTeXリファレンス"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+## QuartoにおけるBibTeXリファレンス
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.  
+Cras a molestie nulla. [@Hemingway1952]
+
+```
+
+## リファレンスマネージャー
+
+BibTeXファイルを手動でフォーマットするのは時間がかかることがあるため、一般的にはリファレンスマネージャーを使用することをお勧めします。以下は、この目的に理想的なツールです：
+
+* [CiteDrive](https://www.citedrive.com/)は、BibTeXベースのコラボレーション可能なクラウドベースのリファレンスマネジメントツールです。プロジェクトのリファレンスやチームを管理するための機能があり、ワンクリックでOverleafやQuartoにエクスポートできます。([*Overleafのブログ投稿を参照: CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf), [*Medium記事を参照: CiteDriveとRStudioを使ったQuartoでの文献管理*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619))
+* Zoteroは、文献データと関連する研究資料（PDFファイルなど）を管理するための無料のオープンソースのツールです。ZoteroでのBibTeXのベストパフォーマンスは、retorqueが開発した**[Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/)**を使うことで得られます。
+* JabRefは、Windows、Mac、Linuxで動作するBibTeX対応の無料のオープンソースリファレンスマネージャーです。Javaベースで、JabRef e.V.によって維持されています。
