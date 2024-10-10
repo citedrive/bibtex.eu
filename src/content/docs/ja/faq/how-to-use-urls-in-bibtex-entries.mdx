@@ -1,0 +1,40 @@
+---
+title: "BibTeXエントリにURLを使用する方法"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+研究論文のためにBibTeXを使用して文献リストを作成している場合、エントリにURLを含める方法について疑問に思ったことがあるかもしれません。
+
+URLフィールドタイプは、Oren Patashnikによってバージョン1.0で正式にサポートされる予定でしたが、現在はまだサポートされていません。それにもかかわらず、このバージョンとその意図に関する議論は、[Patashnikの2003年の論文](https://tug.org/TUGboat/tb24-1/patashnik.pdf)にさかのぼります。この論文は、徐々にBiberをバックエンドに持つbiblatexに置き換えられています。
+
+したがって、ウェブサイトを引用する場合など、以下のいずれかの回避策を使用する必要がある可能性があります。
+
+<CiteDrive />
+
+## noteフィールドタイプを使用する:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## howpublishedフィールドタイプを使用する:
+
+```latex
+@misc{...,
+  note = "Available from \url{http://...}"
+}
+```
+
+## biblatexを使用し、その組み込みのURLフィールドタイプを利用する:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+biblatexを選択する場合、BibTeXの代わりにBiberをバックエンドとして使用する必要があります。biblatexやBiberについて詳しく知りたい場合は、私たちの入門ガイドを読んでください。
+質問やコメントがある場合は、お知らせください。この情報がお役に立てれば幸いです！

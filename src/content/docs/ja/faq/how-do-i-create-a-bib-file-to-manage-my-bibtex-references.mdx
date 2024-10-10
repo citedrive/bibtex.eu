@@ -1,0 +1,43 @@
+---
+title: ".BIBファイルを作成してBibTeX参照を管理するにはどうすればよいですか？"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`BibTeX`参照を管理する方法を探している場合、`.BIBファイル`を作成する方法を知りたいかもしれません。この記事では、その方法を説明します！また、".BIB"ファイルを効果的に使用するためのヒントも提供します。
+
+:::tip
+[CiteDrive](https://www.citedrive.com/)は、BibTeXに基づいたウェブベースの共同参考管理ツールで、[Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)や[RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)などの出版システムと自動的に同期し、あなたのbibファイルのフォーマットを行います。
+:::
+
+<CiteDrive />
+
+## 手動でbibファイルを作成する
+
+`.BIBファイル`を作成するのは実際にはとても簡単です。必要なのは、`.bib`拡張子を持つテキストファイルを作成することだけです。このファイルに、1行ごとにBibTeX参照を追加できます。例えば：
+
+```latex
+	@article{smith201X,
+		title        = {興味深い記事},
+		author       = {ジョン・スミス},
+		year         = {201X},
+		journal      = {興味深い記事のジャーナル}
+	}
+```
+
+`.BIBファイル`を作成したら、` \bibliography{filename} `コマンドを指定してLaTeX文書で使用できます。例えば：
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{filename}
+
+\end{document}
+```
+
+これで完了です！`.BIBファイル`を作成することは、BibTeX参照を管理する簡単な方法です。他のBibTeXに関する記事もチェックして、さらに多くのヒントやコツを見つけてください！

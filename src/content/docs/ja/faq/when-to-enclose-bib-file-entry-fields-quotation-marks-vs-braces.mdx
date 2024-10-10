@@ -1,0 +1,40 @@
+Here’s the Japanese translation of your content titled "When to Enclose .bib File Entry Fields: Quotation Marks vs. Braces":
+
+---
+
+---
+title: ".bibファイルのエントリフィールドを囲むときの注意: 引用符と中かっこ"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+.bibファイルのエントリフィールドを引用符で囲むべきか、中かっこで囲むべきか、いつ疑問に思ったことがありますか？それは重要なのでしょうか？答えは、重要ではないということです。  
+一部の人は見た目の理由から`""`を使用することを好み、他の人はフィールド内で`"`文字を使用する必要がある場合に備えて、`{}`を使用することが好ましいと主張しています。  
+これらがフィールドを囲むための唯一の許可された方法であることに注意してください。
+
+<CiteDrive />
+
+## 例
+
+### フィールドを`{}`で囲む
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Use the date of access)]}
+}
+```
+
+### フィールドを`""`で囲む
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive brings reference management to Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+フィールド内の情報が正しく囲まれていれば、正しい答えや間違った答えはありません。だから、どちらの方法が自分にとって最適か、試してみるのも良いでしょう。

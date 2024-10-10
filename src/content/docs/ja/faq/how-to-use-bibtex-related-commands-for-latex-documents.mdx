@@ -1,0 +1,18 @@
+---
+title: "LaTeX文書でのBibTeX関連コマンドの使用方法"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+LaTeXでBibTeXを使用するには、次のコマンドを知っておく必要があります： `\bibliographystyle{<スタイル名>}`、`\bibliography{bibファイル}`、および `\cite{KEY}`。この記事では、これらのコマンドが何をするのか、LaTeX文書でどのように使用するのかを説明します。
+
+<CiteDrive />
+
+## bibliographystyle
+引用スタイルは `bibliographystyle{<スタイル名>}` で定義されます。BibTeXスタイルファイルは、文献リストと引用の外観を制御します。BibTeXスタイルファイルは `.bst` 拡張子を持ち、文献エントリのフォーマットを制御するスタックベースのプログラミング言語の指示を含んでいます。デフォルトでは、LaTeXは `plain`、`unsrt`、`alpha`、および `abbrv` のスタイルを提供します。`natbib` と `jurabib` は、自然科学や人文科学の追加機能を提供する2つのLaTeXパッケージです。
+
+## bibliography
+文書内の文献リストは、BibTeXファイルのファイル名が `bibfile.bib` の場合、コマンド `\bibliography{bibfile}` で作成されます。
+
+## cite
+LaTeX文書内で、コマンド `\cite{KEY}` は、BibTeXファイル内のこのIDに関連付けられた引用に置き換えられます。たとえば、最終的なPDFでは `(著者, 年)` の形式で表示されます。
