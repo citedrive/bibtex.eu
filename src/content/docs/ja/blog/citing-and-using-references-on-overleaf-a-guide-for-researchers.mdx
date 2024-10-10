@@ -1,0 +1,119 @@
+---
+title: "Overleafでの引用と参考文献の使用：研究者のためのガイド"
+tags: [citedrive, overleaf, latex, bibtex, biblatex, natbib]
+date: 2022-08-16
+---
+
+研究論文を書く際、主張をサポートするために参考文献を使用することが重要です。情報源を正しく引用することは、堅実な議論を構築し、盗作を避けるための鍵です。このガイドでは、CiteDriveを使用してOverleafで参考文献を引用する方法を説明します。また、信頼できる情報源をオンラインで見つけるためのヒントも提供します。それでは始めましょう！
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## ステップ1：CiteDriveとOverleafを接続する
+
+まだ[Overleaf](https://www.overleaf.com/)にサインインしていない場合は、今すぐサインインしてください。それから、[CiteDrive](https://www.citedrive.com/)に移動し、Overleafプロジェクトを作成し、[参照を追加](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2)します。あなたのプロジェクトは次のようになります：
+
+![CiteDrive - 例](@assets/images/tutorial/citedrive_project_example.png)
+
+その後、プロジェクトの左上にある「bib」をクリックします。これにより、新しいタブでダイナミックなBibTeXファイルが開き、あなたやチームメンバーがプロジェクトから参照を追加、更新、削除するたびに自動的に更新されます。
+
+最後に、Overleafに移動し、新しいファイルを作成し、「外部URLから」を選択し、ダイナミックなBibTeXのURLを「ファイルを取得するURL」に貼り付けて、ここに *references.bib* と名付けます。これで、CiteDriveプロジェクトがOverleafに接続されました！CiteDriveプロジェクトで変更を加えた際には、Overleafが最新の状態を取得するためにリフレッシュをクリックする必要があります。
+
+![Overleafにファイルを追加](@assets/images/tutorial/export_bib_to_overleaf.png)
+
+## ステップ2：OverleafでTeX文書を作成する
+
+次に、Overleaf用に新しいtexファイルを作成しましょう。「document.tex」と呼ぶことができ、CiteDriveからのBibTeXファイルを`\bibliography{references}`で定義できます。しかし、どの文献管理ツールを使用すべきでしょうか？LaTeX/Overleafでの文献管理には多くの選択肢があります：おそらく、natbib、bibtex、およびbiblatexです。LaTeXでの文献管理のための基本はBibTeXです。natbibを使用すると、BibTeXにより多くのデザインの自由度が提供され、biblatexはBibTeXの完全な改訂版で、より多くの参考文献タイプ、ソート、フィルタリングオプション、およびローカリゼーションオプションを提供します。BibTeXは最も知られたプログラムですが、BibLaTeXも同様に堅牢であり、初心者には最も推奨されるプログラムです。参考文献とリストのための引用データは、CiteDriveからのBibTeXファイルのように、いわゆる.bibファイルに保持されます。常に同じ形式です：
+
+ ```latex
+ @article{smith201X,
+ 	title        = {興味深い記事},
+ 	author       = {ジョン・スミス},
+ 	year         = {201X},
+ 	journal      = {興味深い記事のジャーナル}
+ }
+ ```
+
+ ここで、`@article`はソースタイプ、`title`、`author`、`year`、`journal`は参考文献リストと引用に表示される属性であり、最後に、`smith201X`は文書内で参照するためのユニークな識別子です。これは主に`cite(key)`で使用します。CiteDriveは形式にこだわらず、あなたの選んだ文献パッケージに機能する任意のフィールドとエントリタイプを受け入れます。CiteDriveの基本的な目的は、文献データを文書および引用スタイルから分離することであるため、すべての代替案がCiteDriveでサポートされています。
+
+そのため、以下にスタート用の3つのテンプレートを提供します。
+
+ ### BibTeXを使い始める：
+
+ BibTeXを使用したい場合は、以下のテンプレートを使用するか、Overleafに直接開いてください。BibTeXに関する詳細は、ドキュメントを参照してください。
+
+ ```latex title="document.tex"
+ \documentclass{article}
+ \usepackage[utf8]{inputenc}
+
+ \title{BibTeX参考文献の\LaTeXにおける使用}
+ \author{ジョン・スミス}
+
+ \begin{document}
+
+ \maketitle
+
+ ロレム・イプサム・ドル・シット・アメット、コンセクテトゥール・アディピシング・エリット。プレゼン・エニム・ウルナ、ダピブス・エト・ビベンダム・ヴェル、コンセクテトゥール・エト・トゥルピス。クラス・ア・モリスティエ・ヌッラ。\cite{Hemingway1952}
+ \medskip
+
+ \bibliographystyle{unsrt}
+ \bibliography{references}
+
+ \end{document}
+ ```
+
+ ### natbibを使い始める：
+
+ ```latex
+ \documentclass{article}
+ \usepackage{natbib}
+ \bibliographystyle{apalike}
+ \title{natbibとBibTeXを使用した参考文献管理の短いガイド}
+ \author{CiteDrive}
+ \date{1988年1月}
+
+ \begin{document}
+
+ \maketitle
+ \textbf{ナラティブ引用：} \citet{Doe:1966}は、誤って記録されたリスクを調査しました[...]、これが歪みをもたらす結果となります。
+ \textbf{括弧内引用：} 誤って記録された[...]のリスクは、歪みをもたらす可能性があります\citep{Doe:1966}。
+
+ \medskip
+
+ \bibliography{references}
+
+ \end{document}
+ ```
+
+ 詳細については、こちらをクリックしてください。
+
+ ### BibLaTeXを使い始める：
+
+ ```latex
+ \documentclass{article}
+ \usepackage{biblatex}
+ \addbibresource{references.bib}
+
+ \begin{document}
+ ロレム・イプサム・ドル・シット・アメット、コンセクテトゥール・アディピシング・エリット。プレゼン・エニム・ウルナ、ダピブス・エト・ビベンダム・ヴェル、コンセクテトゥール・エト・トゥルピス。クラス・ア・モリスティエ・ヌッラ。\cite{Hemingway1952}
+ \medskip
+
+ \printbibliography
+
+ \end{document}
+ ```
+
+ 詳細については、こちらをクリックしてください。
+
+## ステップ3：文中引用
+
+ブラウザ拡張機能をインストールしている場合は、テキストを選択してツールバーのCiteDriveアイコンをクリックすることで、引用を作成できます。
+
+また、引用コマンドを使用して手動で参照を引用することもできます。たとえば、Smith（201X）を引用したい場合は、`\cite{smith201X}`を使用します。また、Overleafの参照検索を使用することもできます。
+
+Overleafには、事前にインストールされた文献スタイルがあり、使用するパッケージに応じて、次のページで引用が行われます。
+
+これで、Overleafで参考文献を使用するために必要なすべてが揃いました。質問やフィードバックがある場合は、hello@citedrive.comまでメールでお知らせください。
+
+ハッピーTeXing！

@@ -1,0 +1,47 @@
+---
+title: "引用とnatbibを使用したOverleafでの論文執筆"
+tags: [学術執筆, natbib, LaTeX, 引用管理, Overleaf, BibTeX, BibLaTeX, Zotero, Mendeley, 研究, 執筆のコツ, アカデミア, 学術的執筆, 参考文献]
+date: 2023-01-27
+---
+
+Overleafは、ユーザーがリアルタイムで文書に共同作業できる人気のあるオンラインLaTeXエディタです。Overleafの優れた機能の一つは、natbibパッケージを使用して文書に簡単に引用と文献リストを追加できることです。この投稿では、Overleafでnatbibを使用して論文に引用と文献リストを追加する基本を説明します。
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## 引用の追加
+
+Overleafで引用を追加するには、まず文書にnatbibパッケージを追加する必要があります。これは、文書の前文に以下の行を追加することで行えます：
+
+`\usepackage[numbers]{natbib}`
+
+これにより、` \citep`および`\cite`コマンドを使用して文書に引用を追加できるようになります。` \citep`コマンドはテキスト内の引用に使用され、引用をかっこ内の数字として表示します。一方、`\cite`コマンドもテキスト内の引用に使用されますが、引用をそのままの数字として表示します。
+
+例えば、Smithら（2020）の論文をテキスト内で引用するには、次のコマンドを使用します：
+
+`According to \citep{Smith2020}, this is an important finding.`
+
+これにより、次のように表示されます：
+
+> According to (Smith et al., 2020), this is an important finding.
+
+## 文献リストの追加
+
+Overleafの文書に文献リストを追加するには、まず引用するすべての文献情報を含む`.bib`ファイルを作成する必要があります。`.bib`ファイルは、メインの`.tex`ファイルと同じディレクトリに保存する必要があります。この`.bib`ファイルを作成する最も簡単な方法の一つは、[CiteDrive](https://www.citedrive.com/)を使用することです。CiteDriveはOverleafに接続し、bibファイルを生成します。詳細は[Overleaf.comのブログ投稿](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)をご覧ください。
+
+`.bib`ファイルを作成したら、文書に文献リストを追加するには、次のコマンドを文書に追加します：
+
+`\bibliography{mybibfile}`
+
+ここで、`mybibfile`は`.bib`ファイルの名前です。
+
+文献リストのスタイルを指定するには、次のコマンドを文書に追加します：
+
+`\bibliographystyle{plainnat}`
+
+これにより、文献リストがプレーンスタイルでフォーマットされます。利用可能な文献スタイルは多数あり、リストは[こちら](https://www.overleaf.com/learn/latex/Bibliography_styles)で確認できます。
+
+## 結論
+
+この投稿では、Overleafでnatbibを使用して論文に引用と文献リストを追加する基本について説明しました。Overleafの使いやすいインターフェースとnatbibの強力な引用および文献管理機能を活用することで、参照を簡単に管理し、出版物の要求に応じたスタイルで文献リストをフォーマットできます。さらに、CiteDriveを使用してbibファイルを生成することで、多くの時間と労力を節約できます。

@@ -1,0 +1,34 @@
+---
+title: "OverleafでGrammarlyを使用する方法"
+tags: [overleaf, grammarly, writefull, latex, citedrive, bibtex]
+date: 2023-01-25
+---
+
+Overleafは、事前にパッケージが読み込まれた、ライブコラボレーションやクラウドベースのエディタを備えた強力なLaTeXコンテナであり、1,000万人以上のユーザーが利用しています。また、Writefull、Zotero、Mendeley、そしてOverleafドキュメントの同じ文献目録でコラボレーションを行いながら、すべての参考文献を同期したままにすることができる、[CiteDriveというBibTeXベースのオンライン文献管理ツール](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)などの強力なアプリケーションと統合されています。
+
+Grammarlyは、あなたの文章が明確で簡潔であり、エラーがないことを確認するための強力なツールです。最近リリースされたCodemirror 6の新しいソースコードエディタにより、Grammarlyを人気のオンラインLaTeXエディタOverleafで使うことがさらに簡単になりました。
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+
+<CiteDrive />
+
+#### ステップ 1: Grammarlyのブラウザー拡張機能をインストールする
+
+Overleaf内でGrammarlyを使用する最初のステップは、Grammarlyのブラウザー拡張機能をインストールすることです。この拡張機能はChromeとFirefoxの両方に対応しており、[Grammarlyのウェブサイト](https://www.grammarly.com/)からダウンロードできます。
+
+#### ステップ 2: Overleafを開く
+
+Grammarly拡張機能をインストールしたら、Overleafを開き、新しいプロジェクトを開始するか、既存のプロジェクトを開きます。
+
+#### ステップ 3: Overleafエディタ内でGrammarlyを使用する
+
+Grammarly拡張機能がインストールされ、Overleafが開いている状態で、GrammarlyをOverleafエディタ内で使用できるようになります。文章の入力を開始すると、Grammarlyが自動的に文法やスペルのエラーをチェックします。
+
+#### ステップ 4: Grammarlyの校正ツールを使用する
+
+ドキュメントの執筆が完了したら、Grammarlyの校正ツールを使って残りのエラーをチェックできます。ブラウザー拡張機能のGrammarlyアイコンをクリックし、「Proofread my document」を選択します。Grammarlyはエラーの詳細なレポートと、それを修正するための提案を提供します。
+
+#### 結論
+
+OverleafでGrammarlyを使用することで、文章をエラーフリーで洗練されたものにすることができます。Grammarlyのブラウザー拡張機能を使えば、執筆中に簡単に文章をチェックでき、最後の文書校正時にも校正ツールで最終確認が可能です。ぜひ試してみて、その効果を実感してください。

@@ -1,0 +1,32 @@
+---
+title: "BibTeXで音楽を引用する方法"
+tags: [biblatex, bibtex, 音楽]
+date: 2022-12-18
+---
+
+BibTeXで音楽を引用するには、`@misc`エントリタイプを使用し、以下のフィールドを含めます：
+
+-   `author`: 音楽を作成した作曲家やアーティスト。
+-   `title`: 音楽作品のタイトル。
+-   `howpublished`: 音楽がアクセスされた形式（例：CD、レコード、オンラインストリーミングサービス）。
+-   `year`: 音楽が発表または録音された年。
+
+以下は、BibTeXで音楽作品を引用する例です：
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+
+<CiteDrive />
+
+```bibtex
+@misc{beethoven_symphony_2018,
+	title        = {ハ短調交響曲第5番},
+	author       = {ベートーヴェン, ルートヴィヒ・ヴァン},
+	year         = 2018,
+	howpublished = {CD}
+}
+```
+
+特定の音楽作品の録音を引用する場合は、`@misc`の代わりに`@music`エントリタイプを使用することをお勧めします。このエントリタイプには、`performer`や`publisher`などの追加フィールドがあり、録音に関する詳細な情報を提供できます。
+
+お役に立てれば幸いです！質問があればお知らせください。
