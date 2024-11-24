@@ -23,6 +23,7 @@ const UrlInputComponent: React.FC = () => {
   const [metadata, setMetadata] = useState<Metadata | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [useBibLaTeX, setUseBibLaTeX] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setUrl(event.target.value);
@@ -34,6 +35,7 @@ const UrlInputComponent: React.FC = () => {
     setError(null);
   
     try {
+      setLoading(true)
       const response = await fetch(`https://api.microlink.io?url=${url}`);
   
       if (!response.ok) {
@@ -50,8 +52,9 @@ const UrlInputComponent: React.FC = () => {
         author: data.data.author,
         year: data.data.date,
       };
-  
+      
       setMetadata(metadata);
+      setLoading(false)
     } catch (error) {
       setError('Failed to extract metadata');
     }
@@ -100,10 +103,12 @@ const UrlInputComponent: React.FC = () => {
         </label>
       </div>
       {error && <p style={{ color: 'red' }}>{error}</p>}
+      {loading && <p style={{ color: 'green' }}>{"Loading"}</p>}
       {metadata && (
         <div>
           <h3>{useBibLaTeX ? 'BibLaTeX Entry' : 'BibTeX Entry'}:</h3>
           <pre>{useBibLaTeX ? formatBibLaTeX(metadata) : formatBibTeX(metadata)}</pre>
+          
         </div>
       )}
     </div>
