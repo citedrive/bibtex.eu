@@ -9,14 +9,14 @@ const site = 'https://bibtex.eu/';
 export default defineConfig({
   site,
   integrations: [starlight({
-    head: [{
-      tag: 'script',
-      attrs: {
-        async: true,
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9078114372269384',
-        'crossorigin': 'anonymous'
-      }
-    }],
+    // head: [{
+    //   tag: 'script',
+    //   attrs: {
+    //     async: true,
+    //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9078114372269384',
+    //     'crossorigin': 'anonymous'
+    //   }
+    // }],
     title: 'BibTeX',
     logo: {
       light: './src/assets/images/logo.svg',
