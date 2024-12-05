@@ -1,0 +1,131 @@
+---
+title: "Natbib 教程：使用 BibTeX 在 LaTeX 中掌握参考文献管理"
+description: "探索 natbib 在 LaTeX 中管理文献引用的功能。本教程深入讲解 natbib 的基础知识，从文中引用到与 BibTeX 的集成。"
+sidebar:
+  label: "Natbib（深入教程）"
+sidebar_position: 3
+---
+
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+
+在 LaTeX 中管理文献引用变得更加简洁高效，得益于 `natbib` 包的使用。无论你是使用传统的 `\cite{*}` 命令，还是深入探索高级引用方法，本指南都将为你提供基础知识，帮助你顺利上手。
+
+<CiteDrive />
+
+## `natbib` 介绍及其优势
+
+`natbib` 包扩展了标准 `\cite{*}` 命令在 LaTeX 中的功能。它在文本内引用方面尤为突出，提供了多种选项和自定义，特别是支持作者-年份格式，并且与 BibTeX 集成后，可以显示文本型和圆括号型的引用。
+
+:::tip
+值得注意：该包无缝支持作者-年份和数字型引用，并支持标准的 `*.bst` 参考文献样式文件。
+:::
+
+让我们深入了解如何利用 `natbib` 来格式化和引用文献。
+
+## 启动你的旅程：使用 natbib 进行圆括号型和文本型/叙述型文内引用
+
+设置 `natbib` 包的方式与标准的 LaTeX 设置相似。首先，通过 `\usepackage{natbib}` 加载该包。你还可以通过 `\usepackage[options]{natbib}` 来选择不同的配置选项，具体细节如下。`natbib` 的主要引用命令是 `\citet{*}` 用于叙述型引用，`\citep{*}` 用于圆括号型引用。
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\title{使用 natbib 和 BibTeX 进行参考文献管理的全面指南}
+\author{CiteDrive}
+\date {1988 年 1 月}
+
+\begin{document}
+
+\maketitle
+\textbf{叙述型引用：} \citet{Doe:1966} 研究了记录不当的风险，导致了失真。
+\textbf{圆括号型引用：} 记录错误的风险可能导致失真 \citep{Doe:1966}。
+
+\medskip
+
+\bibliography{sample}
+
+\end{document}
+```
+
+通过使用 `\bibliography{sample}`，你指向了包含参考文献条目的 `.bib` 文件，如下所示：
+
+```bibtex
+@article{Doe:1966,
+	title        = {研究记录错误的风险及其对 [...] 的影响},
+	author       = {John Doe},
+	year         = 1966,
+	journal      = {BibTeX 出版},
+	volume       = 44,
+	number       = 44,
+	pages        = {123--456}
+}
+@article{smith2017,
+	title        = {一篇有趣的文章},
+	author       = {John Smith},
+	year         = {2017},
+	journal      = {有趣文章期刊}
+}
+```
+
+![使用 natbib 和 BibTeX 的参考文献管理输出示例](@assets/images/tutorial/output_example_bibtex_natbib.png) 使用 natbib 和 BibTeX 的参考文献管理输出示例
+
+对于喜欢数字引用样式的人，这里是如何将 natbib 设置为数字引用样式：
+
+```latex
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+```
+
+![使用 natbib 和 BibTeX 的数字样式参考文献管理输出示例](@assets/images/tutorial/output_example_bibtex_natbib_numeric.png) 使用 natbib 和 BibTeX 的数字样式参考文献管理输出示例
+
+## 深入探讨：`cite{*}` 命令在 natbib 中的使用
+
+了解 `natbib` 提供的各种 `cite{*}` 命令可以帮助你更高效地引用文献。下表展示了这些命令的输出：
+
+| 命令（单个引用） | 输出（作者-年份） | 输出（数字） | 命令（多个引用） | 输出（作者-年份） | 输出（数字） |
+|------------------|-------------------|---------------|------------------|-------------------|--------------|
+|`\citet{Doe:1966}`|Doe (1966) |Doe [1]|`\citet{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citet[chap.~4]{Doe:1966}`|Doe (1966, 第4章)|Doe [1, 第4章]|`\citet[chap.~4]{Doe:1966,smith2017}`|Doe (1966); Smith (2017, 第4章)|Doe [1], Smith [2, 第4章]|
+|`\citep{Doe:1966}`|(Doe, 1966)|[1]|`\citep{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+|`\citep[chap.~4]{Doe:1966}`|(Doe, 1966, 第4章)|[1, 第4章]|`\citep[chap.~4]{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017, 第4章)|[1, 2, 第4章]|
+|`\citep[see][]{Doe:1966}`|(参见 Doe, 1966)|[参见 1]|`\citep[see][]{Doe:1966,smith2017}`|(参见 Doe, 1966; Smith, 2017)|[参见 1, 2]|
+|`\citep[see][chap.~4]{Doe:1966}`|(参见 Doe, 1966, 第4章)|[参见 1, 第4章]|`\citep[see][chap.~4]{Doe:1966,smith2017}`|(参见 Doe, 1966; Smith, 2017, 第4章)|[参见 1, 2, 第4章]|
+|`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+
+其他 `natbib` 命令，如 `\citealp` 和 `\citealt`，通过抑制括号提供更多灵活性。你可以查阅 [natbib 使用参考表](https://gking.harvard.edu/files/natnotes2.pdf) 以了解所有命令。
+
+## 附录：掌握 `natbib` 的选项
+
+在使用 `natbib` 时，自定义其行为可以让你的工作流程更加顺畅。以下是通过 `\usepackage[options]{natbib}` 可用的选项说明：
+
+| 选项 | 描述 |
+|------|------|
+|round|显示圆括号|
+|square|显示方括号|
+|curly|显示花括号|
+|angle|显示尖括号|
+|semicolon|多个引用之间用分号分隔|
+|colon|与分号相同|
+|comma|多个引用之间用逗号分隔|
+|authoryear|显示作者-年份引用|
+|numbers|显示数字引用|
+|super|以上标形式显示数字引用|
+|sort|按参考文献顺序排序多个引用|
+|compress|排序和多个数字引用在适当情况下进行压缩|
+|sort&compress|多个数字引用在适当情况下进行压缩|
+|longnamesfirst|在第一次引用时显示作者的全名|
+|sectionbib|重新定义 `\thebibliography`，将其输出为 `\section` 而不是 `\chapter`|
+|nonamebreak|在一行中显示引用的所有作者名称|
+
+### 进一步阅读与资源
+
+- 深入了解文献管理，请阅读 [使用 natbib 进行文献管理](https://www.overleaf.com/learn/latex/Bibliography_management_with_natbib)（Overleaf）。
+- 了解不同的文献样式，请访问 [Natbib 文献样式](https://www.overleaf.com/learn/latex/Natbib_bibliography_styles)（Overleaf）。
+- 查阅方便的速查表：[natbib 使用参考表](https://gking.harvard.edu/files/natnotes2.pdf)。
+
+## 总结
+
+结合 BibTeX 使用 `natbib` 简化了 LaTeX 中的参考文献管理。本指南从基础设置到复杂引用样式进行了全面讲

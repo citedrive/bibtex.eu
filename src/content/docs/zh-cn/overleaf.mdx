@@ -1,0 +1,167 @@
+---
+title: "Overleaf：引用与参考文献管理 - LaTeX 参考文献简介"
+description: "了解如何在 Overleaf 中使用 BibTeX、Natbib 和 BibLaTeX 管理引用、参考文献和文献目录。并通过 CiteDrive 简化您的工作流程。"
+sidebar:
+  label: 使用 Overleaf（快速入门）
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com**，这个基于云的 LaTeX 编辑器，是学术文档协作创建和发布的首选平台。它源自 **WriteLaTeX** 和 **ShareLaTeX** 的合并，全球拥有超过 1000 万用户。Overleaf 提供了多种预安装的工具和模板，专为学术期刊设计，使其成为研究人员和学者的首选平台。
+
+使用 Overleaf，您可以轻松地通过强大的工具如 **CiteDrive** 来管理引用和参考文献。这一集成简化了您的工作流程，使引用管理变得更加高效。
+
+<CiteDrive />
+
+## 在 Overleaf/LaTeX 中管理参考文献
+
+### 为什么选择 CiteDrive？
+
+**CiteDrive** 是一个强大的引用和参考文献管理工具，与 Overleaf 完美配合。以下是您应该考虑使用 CiteDrive 的原因：
+
+- **无缝集成**：与 Overleaf 以及 BibTeX、Natbib 和 BibLaTeX 等常用参考文献系统完美兼容。
+- **提高效率**：自动格式化引用并轻松管理参考文献。
+- **用户友好**：提供直观的界面，方便组织和引用参考文献。
+- **基于 Web 和协作性强**：随时随地访问和管理您的引用，支持实时协作功能。
+[了解更多 CiteDrive 的功能和优势](https://www.citedrive.com)。
+
+### BibTeX
+
+BibTeX 是 LaTeX 中广泛使用的参考文献管理系统。要在 Overleaf 中使用 BibTeX：
+
+1. **创建参考文献文件**：在 Overleaf 项目中创建一个名为 `references.bib` 的文件。
+2. **添加参考文献**：按以下格式添加参考文献：
+
+   ```bibtex
+   @article{AuthorYear,
+       author = {Author, First and Author, Second},
+       title = {Title of the Article},
+       journal = {Journal Name},
+       volume = {Volume Number},
+       number = {Issue Number},
+       pages = {Page Numbers},
+       year = {Year Published},
+       publisher = {Publisher Name}
+   }
+   ```
+
+3. **引用参考文献**：在 LaTeX 文档中添加：
+
+   ```latex
+   \bibliography{references}
+   \bibliographystyle{plain}
+   ```
+
+   使用 `\cite{AuthorYear}` 来引用参考文献。
+
+4. **使用 CiteDrive 简化**：通过 CiteDrive 更高效地自动化和管理您的 BibTeX 参考文献。
+
+### Natbib
+
+Natbib 提供了更大的引用格式灵活性。在 Overleaf 中使用 Natbib：
+
+1. **添加命令**：在前言中添加：
+
+   ```latex
+   \usepackage{natbib}
+   \bibliographystyle{plainnat}
+   ```
+
+2. **引用参考文献**：使用 `\citep{AuthorYear}` 进行括号内引用，或使用 `\citet{AuthorYear}` 进行文本内引用。
+
+3. **参考文献**：添加：
+
+   ```latex
+   \bibliography{references}
+   ```
+
+4. **使用 CiteDrive 增强**：通过 CiteDrive 简化引用管理和格式化。
+
+### BibLaTeX
+
+BibLaTeX 提供了先进的引用功能。在 Overleaf 中使用 BibLaTeX：
+
+1. **添加命令**：在前言中添加：
+
+   ```latex
+   \usepackage[style=authoryear,backend=bibtex]{biblatex}
+   \bibliography{references}
+   ```
+
+2. **引用参考文献**：使用 `\parencite{AuthorYear}` 进行括号内引用，或使用 `\textcite{Author}` 进行文中引用。
+
+3. **使用 CiteDrive 优化**：通过 CiteDrive 提供的 BibLaTeX 支持，享受更多控制和灵活性。
+
+## LaTeX 基础
+
+对于 LaTeX 新手，以下是一个简短的概述：
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % 将 "references.bib" 替换为您的参考文献文件
+
+\title{我的第一篇 LaTeX 文档}
+\author{您的姓名}
+
+\begin{document}
+
+\maketitle
+
+\section{引言}
+这是一个演示 LaTeX 基础的示例文档。
+
+\section{格式化}
+您可以将文本格式化为 \textbf{粗体}、\textit{斜体}、\underline{下划线} 或 \texttt{等宽字体}。
+
+\section{列表}
+以下是一个项目符号列表的示例：
+\begin{itemize}
+  \item 第一个项目
+  \item 第二个项目
+  \item 第三个项目
+\end{itemize}
+
+\section{数学公式}
+LaTeX 是排版数学公式的好工具。以下是一个公式示例：
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{图形与表格}
+您可以在文档中插入图形和表格。以下是一个图形示例：
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{一个示例图形}
+  \label{fig:example}
+\end{figure}
+
+以下是一个表格示例：
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{项目} & \textbf{数量} \\
+    \hline
+    苹果 & 3 \\
+    橙子 & 5 \\
+    \hline
+  \end{tabular}
+  \caption{一个示例表格}
+  \label{tab:example}
+\end{table}
+
+\section{参考文献}
+您可以引用标记过的章节、公式、图形和表格。例如，见图~\ref{fig:example} 和表~\ref{tab:example}。
+
+\section{引用与参考文献}
+使用 \cite{author2022} 来引用参考文献。以下是一个引用示例。
+
+\printbibliography
+
+\end{document}
+```
