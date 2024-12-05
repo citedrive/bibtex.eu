@@ -1,0 +1,64 @@
+---
+title: "在 Quarto 中使用 BibTeX 管理参考文献 - 简短指南"
+description: "本快速教程将展示如何使用 BibTeX 管理您的参考文献。BibTeX 是一个参考文献管理软件，允许您以简单易用的格式存储和组织参考文献。"
+sidebar:
+  label: "使用 Quarto (RStudio/Posit) (快速入门)"
+sidebar_position: 5
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Quarto 是一个非常适合创建可重复报告、论文、演示文稿等的工具。Quarto 的一个重要特点是它能够与其他工具和软件集成。BibTeX 是一个用于 LaTeX 文档的参考文献管理系统，它使您能够轻松引用来源并在文档中创建文献目录。
+
+<CiteDrive />
+
+## 第一步：创建 .bib 文件并添加条目
+
+与上一节相同，我们首先创建一个名为 `bibliography.bib` 的 .bib 文件，并填充其中的 BibTeX 条目。  
+BibTeX 条目按以下格式构建，包含足够的信息，用于引用和文献目录的添加。
+
+我们使用上一节中的例子，引用了欧内斯特·海明威的《老人与海》这本书。条目如下所示：
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+再次，我们分析这个条目的“结构”，通过关注三个组成部分来理解每个 BibTeX 条目的定义方式：
+
+* **条目类型**：使用 `@book` 我们根据参考文献的 `@type` 来定义类型。可能的类型包括 `@article`（科学文章）等。BibTeX 会指定哪些字段是可选的，哪些是必填的，以便在文献中正确显示。
+* **条目字段**：以 `@book` 示例为例，这些字段包括 `title`（标题）、`author`（作者）、`year`（年份）和 `publisher`（出版商）。(参见 [字段](./fields))
+* **引用键**：在我们的示例中，它是 `Hemingway1952`，用于在 LaTeX 中引用文献，即引用该来源。在 Quarto 中，我们使用 `[@Hemingway1952]` 来实现。在这里，引用键可以是任何字符串——通常是作者、年份和标题中的一个词的组合。
+
+## 第二步：创建一个 Quarto 文档并连接
+
+将 BibTeX 与 Quarto 集成非常简单。只需在 YAML 中指定 bib 文件 `'bibliography: bibliography.bib'`，并在您希望引用出现在正文中的位置使用 `'[@Hemingway1952]'`。
+
+```md
+---
+title: "Quarto 中的 BibTeX 引用"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## Quarto 中的 BibTeX 引用
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+```
+
+## 参考文献管理工具
+
+手动格式化 BibTeX 文件可能会很繁琐，因此通常建议使用参考文献管理工具。以下是一些非常适合此用途的工具：
+
+* [CiteDrive](https://www.citedrive.com/) 是一个基于 BibTeX 的、协作式的云端工具，用于管理项目中的参考文献和团队。它提供了一键导出到 Overleaf ([*参考 Overleaf 博客文章 - https://www.overleaf.com/blog/citedrive... | CiteDrive - 为 Overleaf 提供轻松的参考文献管理*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) 以及 Quarto ([*参考 Medium 文章：使用 CiteDrive 和 RStudio 管理 Quarto 参考文献*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619))，同时保持引用同步。
+* Zotero 是一个免费的开源文献管理工具，用于管理书目数据和相关研究资料（如 PDF 文件）。在 Zotero 中使用 BibTeX 的最佳表现通过 **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** 实现。
+* 免费开源软件 JabRef 是一个支持 BibTeX 的参考文献管理工具，适用于 Windows、Mac 和 Linux。它基于 Java，并由 JabRef e.V. 维护。
