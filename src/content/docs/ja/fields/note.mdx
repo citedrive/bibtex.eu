@@ -1,0 +1,60 @@
+---
+title: "BibTeX フィールドタイプ: note"
+sidebar:
+  label: note
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeXエントリの`note`フィールドは、他の標準化されたフィールドに収まらない引用された作品に関する追加情報を伝えるために使用されます。これには、補足的な注釈、説明、または作品の文脈や重要性を理解するために必要な情報が含まれます。`note`フィールドは、さまざまな種類の情報を追加できるため、BibTeXで非常に柔軟なツールとなります。
+
+<CiteDrive />
+
+`note`フィールドを使用することで、引用に深みを加え、追加の文脈や出版状態、特定の注釈、または読者にとって有益なその他の関連データを含めることができます。これには、補足資料へのリンク、作品の影響や受け入れについてのコメント、その他の重要な詳細情報などが含まれるかもしれません。
+
+## フォーマット
+
+`note`フィールドを使用するには、以下の形式でBibTeXエントリに追加します：
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  note={ここにあなたの注釈を入れてください},
+  ...
+}
+```
+
+上記の形式では、"entrytype"を適切な作品タイプ（例: @book, @article）に置き換え、"citationkey"をエントリの一意の識別子に置き換えます。次に、`note`フィールドに追加の情報を挿入します。
+
+## 例
+
+以下は、さまざまなエントリで`note`フィールドを使用する実際の例です。
+
+### 例1: 追加情報
+
+```bibtex
+@book{smith2023innovations,
+  title = {Innovations in Modern Technology},
+  author = {Smith, John},
+  year = {2023},
+  publisher = {Technology Press},
+  note = {Includes bibliographical references and index},
+}
+```
+
+### 例2: 補足資料
+
+```bibtex
+@article{johnson2023ai,
+  title = {AI and Its Future Applications},
+  author = {Johnson, Mark},
+  year = {2023},
+  journal = {Journal of Technological Advances},
+  volume = {5},
+  issue = {2},
+  pages = {123-135},
+  note = {Supplementary material available at: http://example.com/supplementary_material},
+}
+```
+
+これらの例では、`note`フィールドを使用して、書籍に参考文献や索引が含まれていることを示し、記事に補足資料へのリンクを提供しています。これにより、読者は追加のリソースや情報を得ることができます。

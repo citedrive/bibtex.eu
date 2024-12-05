@@ -1,0 +1,61 @@
+---
+title: "BibTeX フィールドタイプ: chapter"
+sidebar:
+  label: chapter
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+学術論文の執筆において、引用は議論を裏付け、既存の研究を参照するための基盤となります。BibTeX のエントリにおける `chapter` フィールドは、引用された書籍の特定の章、セクション、またはページ範囲を明示することで、これをさらに洗練します。このフィールドは特に `inbook` および `incollection` エントリで重要であり、より正確な引用を可能にし、読者が正確な資料にアクセスしやすくなります。この記事では、BibTeX の `chapter` フィールドを深く理解し、効果的に活用する方法を紹介します。
+
+<CiteDrive />
+
+### 概要
+
+`chapter` フィールドは、引用したい書籍内の特定の章やセクションを数値で表現するために使用されます。`inbook` エントリの場合、詳細な引用情報を提供するために `chapter` フィールドの使用が必須です。しかし、`book` エントリタイプでは書籍全体を引用するために使用されるため、特定の章を指定する必要はありません。
+
+### フォーマットと使用法
+
+引用する章やセクションを正確に表すために、以下のように `chapter` フィールドを使用します:
+
+```bibtex
+@inbook{ReferenceID,
+  author  = {Author Name},
+  title   = {Title of the Book},
+  chapter = {Chapter Number},
+  pages   = {Page Range},
+  year    = {Publication Year},
+  publisher = {Publisher Name},
+  address   = {Publication Location},
+}
+```
+
+上記のテンプレートでは、「Chapter Number」を実際に引用する章番号に置き換えます。特定のセクションやページ範囲を引用する場合は、これを `pages` フィールドに記載します。
+
+### 例
+
+以下は、`chapter` フィールドの適切な使用方法を示す具体例です:
+
+```bibtex
+@inbook{Mueller2014The,
+  author   = {Hans Mueller},
+  title    = {Theories of Modern Physics},
+  chapter  = {2},
+  pages    = {23-45},
+  year     = 2014,
+  publisher= {Scientific Press},
+  address  = {New York, USA},
+}
+```
+
+この例では、`chapter` フィールドを使用して引用された書籍の第2章を特定し、読者が資料を簡単に見つけられるようにしています。
+
+### 注意点
+
+1. **具体性**: `chapter` フィールドは、書籍内で参照される正確なセクションを特定するのに役立ち、正確で適切な引用を促進します。
+2. **`inbook` エントリに必須**: `inbook` エントリタイプを使用する場合、詳細な引用を提供するために `chapter` フィールドの使用が必須です。
+3. **`book` エントリには適用されない**: `book` エントリでは書籍全体を引用するため、`chapter` フィールドは使用しません。
+
+### 結論
+
+BibTeX の `chapter` フィールドの使い方を習得することで、引用の正確性を向上させるだけでなく、大きな著作物内で引用された資料を効率的に見つけられるようになります。フォーマットを一貫して保つことで、整然として専門的な文献目録を確保してください。引用エントリを常に二重に確認し、学術的な執筆基準を満たすようにしましょう。

@@ -1,0 +1,25 @@
+---
+title: "BibTeX フィールドタイプ: howpublished"
+sidebar:
+  label: howpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`howpublished` フィールドは、通常 `@misc` エントリタイプで使用され、BibTeX で直接サポートされていないソースタイプに対応するために利用されます。このフィールドは、特にウェブページを引用する際に役立ち、URLを提供するために使用されます。
+
+<CiteDrive/>
+
+BibTeX エントリでは、`howpublished` フィールドを使って、参照の発行媒体やソースを詳細に記述できます。このフィールドは、ウェブページやオンラインレポートなど、伝統的なソース以外の情報源を参照に加える際に非常に有用です。
+
+以下に、ウェブページを引用する際に `howpublished` フィールドを使って URL を指定する方法を示す例を紹介します。
+
+```bibtex
+@misc{BibTeXeu,
+  title = {{Reference management with BibTeX: A short guide}},
+  howpublished = {\url{https://bibtex.eu/}},
+  note = {Accessed: 2022-06-12}
+}
+```
+
+この例では、`howpublished` フィールドを使用して引用するウェブページの URL を提供し、読者が直接リンクを辿ってソースにアクセスできるようにしています。オンラインソースを引用する際には、アクセス日を指定するために `note` フィールドを含めることが一般的な要件であることを忘れないでください。

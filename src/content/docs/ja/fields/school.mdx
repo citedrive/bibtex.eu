@@ -1,0 +1,45 @@
+---
+title: "BibTeX フィールドタイプ: school"
+sidebar:
+  label: school
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeXでは、`school`フィールドは主に`@phdthesis`や`@mastersthesis`エントリ内で使用され、論文や学位論文が書かれた教育機関を示します。このフィールドは、両方のエントリタイプで必須のフィールドであり、学術的な作品の出所に関する詳細な情報を提供します。これは、読者がさらなる情報を求めたり、独自の研究でその作品を参照する際に重要です。
+
+<CiteDrive />
+
+## フォーマットガイドライン
+
+学校名を入力する際は、正式で完全な名称を使用することが推奨されます。略語は、広く認識されている場合を除き使用を避けるべきです。
+
+## 例
+
+以下は、`phdthesis`と`mastersthesis`エントリで`school`フィールドを使用する方法を示した例です：
+
+### 博士論文
+
+```bibtex
+@phdthesis{doe2023,
+  author = {John Doe},
+  title = {Explorations in Quantum Computing},
+  year = {2023},
+  school = {Massachusetts Institute of Technology},
+}
+```
+
+### 修士論文
+
+```bibtex
+@mastersthesis{smith2023,
+  author = {Sarah Smith},
+  title = {A Comprehensive Study on Environmental Sustainability},
+  year = {2023},
+  school = {University of California, Berkeley},
+}
+```
+
+## 注意点
+
+例では、`mastersthesis`エントリに`series`フィールドを使用していますが、`school`フィールドは`phdthesis`と`mastersthesis`の両方において機関を指定するために使用するべきです。上記の例のように記載してください。

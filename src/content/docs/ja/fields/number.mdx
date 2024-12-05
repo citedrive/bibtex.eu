@@ -1,0 +1,64 @@
+---
+title: "BibTeX フィールドタイプ: number"
+sidebar:
+  label: number
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeXにおける`number`フィールドは、ジャーナルの号数や技術報告書の番号、またはシリーズの一部としての他の識別子を指定するために使用されます。このフィールドは、引用された作品が収められている正確な号や版を示すため、資料をより正確に見つけるための情報を提供します。
+
+<CiteDrive />
+
+このフィールドは、特にジャーナル記事や定期刊行物の場合、`volume`フィールドと一緒に使用されることが一般的です。技術報告書の場合、`number`フィールドには通常、報告書を発行した機関や組織が割り当てた報告書番号が含まれます。
+
+## フォーマット
+
+`number`フィールドの形式は比較的簡単です。記事エントリの場合、以下のように表示されます：
+
+```bibtex
+@article{citation_key,
+  ...
+  number={issue_number},
+  ...
+}
+```
+
+ここで、"citation_key"はエントリの一意の識別子を、"issue_number"はジャーナルの号数、技術報告書、または他の出版物の番号を表します。
+
+## 例
+
+以下は、`number`フィールドの異なる文脈での使用例です。
+
+### 例1: ジャーナル記事
+
+```bibtex
+@article{doe2023study,
+  author = {Doe, Jane},
+  title = {A Comprehensive Study on Quantum Computing},
+  journal = {Journal of Advanced Computing},
+  year = {2023},
+  volume = {29},
+  number = {3},
+  pages = {215-230},
+}
+```
+
+この例では、`number`フィールドは「Journal of Advanced Computing」の29巻3号を指定しています。
+
+### 例2: 技術報告書
+
+```bibtex
+@techreport{smith2022analysis,
+  author = {Smith, John},
+  title = {An Analysis of Renewable Energy Trends},
+  institution = {Energy Research Institute},
+  year = {2022},
+  number = {TR-2022-45},
+  type = {Technical Report},
+}
+```
+
+この場合、`number`フィールドは「Energy Research Institute」によって割り当てられた特定の報告書番号を示しています。
+
+`number`フィールドを正確に使用することで、読者は資料をより簡単に見つけ、引用された情報を検証することができます。これは学術的な執筆や研究資料で重要な詳細です。

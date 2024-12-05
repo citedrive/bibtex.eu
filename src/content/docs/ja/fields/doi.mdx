@@ -1,0 +1,63 @@
+---
+title: "BibTeX フィールドタイプ: doi"
+sidebar:
+  label: doi
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`doi` フィールドは、現代の参照スタイルにおいて重要な役割を果たし、ジャーナル記事、研究報告書、データセットなどのデジタルオブジェクトをオンライン環境でシームレスかつ恒久的に特定する方法を提供します。ここでは、BibTeX における `doi` フィールドの機能と重要性を深掘りし、その正しい使用方法について説明します。
+
+<CiteDrive />
+
+### 概要
+
+デジタルオブジェクト識別子（DOI）は、電子リソースを特定するための標準化された方法で、インターネット上のデジタルオブジェクトへの永続的なリンクを提供する一意の英数字列です。DOI は、アイテムの URL が変更された場合でも安定して機能するため、参照の長期的な有効性を確保します。
+
+BibTeX の `doi` フィールドは、この識別子を記録する役割を果たし、正確かつ永続的な引用を可能にします。このフィールドは主に `article` エントリタイプで使用されますが、`book`、`chapter`、`inproceedings`、`conference` などの他のエントリタイプでも使用可能です。ただし、これらでは使用頻度が低めです。`doi` フィールドは必須ではありませんが、含めることで参照の信頼性が向上します。
+
+### 構文と構造
+
+DOI を BibTeX エントリに正しく組み込むには、以下の形式に従います:
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  doi={https://doi.org/xxxxx},
+  ...
+}
+```
+
+`doi` フィールドには、通常 "[https://doi.org/](https://doi.org/)" で始まる DOI URL を完全な形で記載します。
+
+### 例
+
+以下は、DOI を含む BibTeX エントリの例です:
+
+```bibtex
+@article{steinbeck2003chemistry,
+  title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
+  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  journal={Journal of chemical information and computer sciences},
+  volume={43},
+  number={2},
+  pages={493--500},
+  year={2003},
+  publisher={ACS Publications},
+  doi={https://doi.org/10.1021/ci025584y},
+}
+```
+
+この例では、`doi` フィールドに記載された永続的な URL が、参照する記事へ直接リンクしています。
+
+### 活用のポイント
+
+1. **DOI の取得**: 学術論文の場合、DOI は記事の最初のページや、記事が掲載されているオンラインデータベースで確認できます。
+2. **クロスリファレンス**: `doi` フィールドを使用して、論文内で引用をクロスリファレンスすることで、読者に元の資料への直接的なルートを提供します。
+3. **オプションだが有益**: `doi` フィールドは必須ではありませんが、含めることで参照の信頼性と追跡性が向上します。
+
+### 結論
+
+BibTeX エントリに `doi` フィールドを含めることは、学術執筆におけるベストプラクティスの1つです。これにより、引用するデジタルオブジェクトへの堅固なリンクを提供できます。DOI システムを採用することで、科学的知識のアクセス性と永続性を促進し、グローバルな研究コミュニティを支援することができます。
+
+文献リストを作成する際には、`doi` フィールドの活用を忘れず、より豊かで信頼性の高い、学術的な相互接続を促進しましょう。

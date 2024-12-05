@@ -1,0 +1,43 @@
+---
+title: "BibTeX フィールドタイプ: series"
+sidebar:
+  label: series
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeXにおける`series`フィールドは、書籍、報告書、その他の出版物が属するシリーズを示すために使用されます。シリーズを指定することで、読者に追加のコンテキストを提供することができ、広範なテーマや学術的な議論に関連する場合があります。
+
+<CiteDrive />
+
+このフィールドはオプションであり、`@book`、`@inbook`、`@incollection`、`@inproceedings`など、さまざまなエントリタイプで使用できます。特に、引用された作品が進行中のシリーズの一部である場合や、共通のテーマ、著者、出版社を共有する大きな作品群の一部である場合に有用です。
+
+`series`フィールドにデータを入力する際は、シリーズの正式な名称を使用することをお勧めします。シリーズにISSN（国際標準逐次刊行物番号）がある場合は、より正確な参照のためにそれを含めることも関連するかもしれません。
+
+## フォーマット
+
+BibTeXエントリにシリーズを含める一般的なフォーマットは以下の通りです：
+
+```bibtex
+@entrytype{key,
+  ...
+  series = {シリーズ名},
+  ...
+}
+```
+
+## 例
+
+以下は、`@book`エントリで`series`フィールドを使用する例です：
+
+```bibtex
+@book{doe2023,
+  author = {John Doe},
+  title = {Advanced Studies in Quantum Mechanics},
+  year = {2023},
+  publisher = {Scientific Publishing Ltd.},
+  series = {Cambridge Advanced Series in Physics},
+}
+```
+
+この例では、本書は「Cambridge Advanced Series in Physics」の一部であり、物理学の高度なトピックを扱うさまざまなタイトルが含まれている可能性があります。シリーズを含めることで、作品をより広い学術的な会話の中で位置付け、読者にそのトピックに関連する追加のリソースを提供することができます。

@@ -1,0 +1,23 @@
+---
+title: "BibTeX フィールドタイプ: institution"
+sidebar:
+  label: institution
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`institution`フィールドは、`@techreport`エントリタイプで使用され、報告書を発行または公開した機関の名前を示すために使われます。このフィールドは適切な帰属を提供し、読者が元のソースをより簡単に見つけられるようにします。
+
+<CiteDrive/>
+
+以下は、`institution`フィールドを`@techreport`エントリで使用する方法を示す構造です：
+
+```bibtex
+@techreport{key,
+  institution = {...},
+}
+```
+
+この形式では、"key"はBibTeXエントリの一意な識別子で、`institution`フィールドには報告書を発行した機関の名前を記載します。このフィールドに正確で詳細な情報を提供することが、適切な引用と参考文献の管理に役立ちます。
+
+`{...}`を実際の機関名に置き換えて、BibTeXエントリを作成してください。このフィールドは、技術報告書を適切に整理して分類するのに役立ちます。

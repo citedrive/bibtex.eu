@@ -1,0 +1,42 @@
+---
+title: "BibTeX フィールドタイプ: title"
+sidebar:
+  label: title
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeXにおける`title`フィールドは、参照する作品のメインタイトルを指定するために使用されます。このフィールドは必須で、ほぼすべてのBibTeXエントリタイプにサポートされています。正確な大文字と小文字の使い方と、LaTeXの構文に従うことが重要です。このフィールドに正しいタイトルが入力されることで、生成された参考文献リストでタイトルが適切に表示されます。
+
+<CiteDrive />
+
+正しいフォーマットを維持するために、`title`フィールド内では、特定の単語やフレーズの大文字を保持するためにLaTeXコマンドを使用できます。また、タイトルに特殊文字や数式記号が含まれている場合は、適切なLaTeXコマンドを使用して入力する必要があります。
+
+## 例
+
+以下は、`title`フィールドの使用例です：
+
+```bibtex
+@article{key,
+    title={What is bioinformatics? An introduction and overview},
+}
+```
+
+より詳細な例として、追加のフィールドを含めた完全な参照を示します：
+
+```bibtex
+@article{luscombe2001bioinformatics,
+  title={What is bioinformatics? An introduction and overview},
+  author={Luscombe, Nicholas M and Greenbaum, Dov and Gerstein, Mark},
+  journal={Yearbook of medical informatics},
+  volume={10},
+  number={01},
+  pages={83--100},
+  year={2001},
+  publisher={Georg Thieme Verlag KG}
+}
+```
+
+これらの例では、`title`フィールドに引用する記事のタイトルが入力されています。タイトルの大文字と小文字を保持し、LaTeX構文が適切に適用されるように、タイトルテキストを中括弧`{}`で囲んでいる点に注目してください。
+
+`title`フィールドは、読者が参照されている特定の作品を特定するために重要な役割を果たしますので、正確に入力し、適切にフォーマットすることを忘れないようにしましょう。
