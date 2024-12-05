@@ -1,0 +1,131 @@
+---
+title: "Natbib Tutorial: Mestre referansehåndtering i LaTeX med BibTeX"
+description: "Utforsk natbib sine muligheter for å håndtere bibliografiske referanser i LaTeX. Denne detaljerte guiden dekker det grunnleggende om natbib, fra henvisninger i teksten til integrasjon med BibTeX."
+sidebar:
+  label: "Natbib (Detaljert Tutorial)"
+sidebar_position: 3
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Å håndtere bibliografiske referanser i LaTeX blir strømlinjeformet og effektivt med pakken `natbib`. Enten du bruker den tradisjonelle `\cite{*}`-kommandoen eller dykker dypt i avanserte siteringsmetoder, gir denne guiden grunnleggende innsikt for å komme i gang.
+
+<CiteDrive />
+
+## Introduksjon til `natbib` og dens styrker
+
+Pakken natbib utvider mulighetene til den standard `\cite{*}`-kommandoen i LaTeX. Den skinner spesielt i henvisninger i teksten med forskjellige alternativer og tilpasninger, spesielt for forfatter-år systemer og visning av tekstuelle og parenteshenvisninger når den integreres med BibTeX.
+
+:::tip
+Godt å vite: pakken fungerer sømløst med både forfatter-år og numeriske henvisninger og støtter de standard bibliografi `*.bst`-filene.
+:::
+
+La oss dykke ned i detaljene om hvordan du kan utnytte kraften til natbib for å formatere og sitere dine bibliografiske kilder.
+
+## Kom i gang: Parentes- og tekstuelle/narrative henvisninger med natbib
+
+Å sette opp `natbib` krever en lignende struktur som den vanlige LaTeX-oppsettet. Begynn med å laste inn biblioteket ved å bruke `\usepackage{natbib}`. Biblioteket tilbyr flere konfigurasjonsalternativer via `\usepackage[alternativer]{natbib}`, som diskuteres i detalj nedenfor. De viktigste siteringskommandoene i natbib er `\citet{*}` for tekstuelle/narrative henvisninger og `\citep{*}` for parenteshenvisninger.
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\title{En omfattende guide til referansehåndtering ved bruk av natbib med BibTeX}
+\author{CiteDrive}
+\date {Januar 1988}
+
+\begin{document}
+
+\maketitle
+\textbf{Narrativ henvisning:} \citet{Doe:1966} undersøkte risikoene ved feilaktig \\
+registrering [...], noe som resulterer i forvrengning.
+\textbf{Parenteshenvisning:} Risikoene ved feilaktig registrering av [...] kan føre til forvrengning
+\citep{Doe:1966}.
+
+\medskip
+
+\bibliography{sample}
+
+\end{document}
+```
+
+Ved å bruke `\bibliography{sample}` peker du LaTeX mot din .bib-fil, som inneholder bibliografiske poster som:
+
+```bibtex
+@article{Doe:1966,
+	title        = {Studie om risikoene ved feilaktig registrert [...] og deres påvirkning på [...].},
+	author       = {John Doe},
+	year         = 1966,
+	journal      = {BibTeX Publishing},
+	volume       = 44,
+	number       = 44,
+	pages        = {123--456}
+}
+@article{smith2017,
+	title        = {En interessant artikkel},
+	author       = {John Smith},
+	year         = {2017},
+	journal      = {Journal of Interesting Articles}
+}
+```
+
+![Utdata eksempel på referansehåndtering med natbib og BibTeX](@assets/images/tutorial/output_example_bibtex_natbib.png)Utdata eksempel på referansehåndtering med natbib og BibTeX
+
+For de som foretrekker numeriske siteringsstiler, her er hvordan du tilpasser natbib:
+
+```latex
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+```
+
+![Utdata eksempel på referansehåndtering med natbib og BibTeX i numerisk stil](@assets/images/tutorial/output_example_bibtex_natbib_numeric.png)Utdata eksempel på referansehåndtering med natbib og BibTeX i numerisk stil
+
+## Dypdykk: Utforsking av `cite{*}`-kommandoene i natbib
+
+Å forstå rekkevidden av `cite{*}`-kommandoene som tilbys av natbib lar deg sitere kilder effektivt. Denne tabellen bryter ned deres utdata:
+
+| Kommando (én sitering) | Utdata (forfatter-år) | Utdata (Numerisk) | Kommando (Flere siteringer) | Utdata (forfatter-år) | Utdata (Numerisk) |
+|------------------------|-----------------------|-------------------|-----------------------------|-----------------------|-------------------|
+|`\citet{Doe:1966}`|Doe (1966) |Doe [1]|`\citet{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citet[kap.~4]{Doe:1966}`|Doe (1966, kap. 4)|Doe [1, kap. 4]|`\citet[kap.~4]{Doe:1966,smith2017}`|Doe (1966); Smith (2017, kap. 4)|Doe [1], Smith [2, kap. 4]|
+|`\citep{Doe:1966}`|(Doe, 1966)|[1]|`\citep{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+|`\citep[kap.~4]{Doe:1966}`|(Doe, 1966, kap. 4)|[1, kap. 4]|`\citep[kap.~4]{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017, kap. 4)|[1, 2, kap. 4]|
+|`\citep[se][]{Doe:1966}`|(se Doe, 1966)|[se 1]|`\citep[se][]{Doe:1966,smith2017}`|(se Doe, 1966; Smith, 2017)|[se 1, 2]|
+|`\citep[se][kap.~4]{Doe:1966}`|(se Doe, 1966, kap. 4)|[se 1, kap. 4]|`\citep[se][kap.~4]{Doe:1966,smith2017}`|(se Doe, 1966; Smith, 2017, kap. 4)|[se 1, 2, kap. 4]|
+|`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+
+Andre `natbib`-kommandoer, som `\citealp` og `\citealt`, gir ekstra fleksibilitet ved å undertrykke parentesene. Utforsk hele kommandoområdet i [Referansearket for natbib-bruk](https://gking.harvard.edu/files/natnotes2.pdf).
+
+## Vedlegg: Mestre alternativene for `natbib`
+
+Når du arbeider med `natbib`, kan tilpasning av atferden gjøre arbeidsflyten din jevnere. Her er en oversikt over alternativene som er tilgjengelige via `\usepackage[alternativer]{natbib}`:
+
+| Alternativ | Beskrivelse |
+|------------|-------------|
+|round|viser runde parenteser|
+|square|viser firkantede parenteser|
+|curly|viser krøllete parenteser|
+|angle|viser vinkelparenteser|
+|semicolon|flere siteringer skilles med semikolon|
+|colon|samme som semikolon|
+|comma|flere siteringer skilles med komma|
+|authoryear|viser forfatter-år siteringer|
+|numbers|viser numeriske siteringer|
+|super|viser hevet skrift for numeriske siteringer|
+|sort|sorterer flere siteringer etter referansene i bibliografien|
+|compress|sortering og flere numeriske siteringer komprimeres der det er hensiktsmessig|
+|sort&compress|flere numeriske siteringer komprimeres der det er hensiktsmessig|
+|longnamesfirst|fullt navn på forfatteren vises i første sitering|
+|sectionbib|omdefinerer `\thebibliography` for å vise `\section` i stedet for `\chapter`|
+|nonamebreak|viser alle forfatternavn i en linje|
+
+### Vid
+
+ere lesing
+
+For å lære mer om `natbib` og andre verktøy for referansehåndtering, se på de offisielle [LaTeX-dokumentene](https://www.latex-project.org) og de spesifikke `natbib`-guidene tilgjengelig online.
+
+## Natbib i praksis
+
+Med natbib kan du tilpasse både henvisningene og den generelle referansehåndteringen, slik at det passer til dine spesifikke behov. I det følgende kan vi bruke det til å håndtere bibliografiske referanser på en profesjonell måte med både natbib og BibTeX.

@@ -1,0 +1,59 @@
+---
+title: "Kom i gang med BibLaTeX: En rask guide"
+sidebar:
+  label: Bruke BibLaTeX (Rask start)
+sidebar_position: 4
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Den følgende guiden er fortsatt under utvikling, men siden BibLaTeX blir sett på av mange som BibTeX-dreperen (og vi er ikke uenige), tenkte vi det ville være nyttig å gi deg en god start. Vær oppmerksom på at det er mange alternativer og tilpasninger tilgjengelig i BibLaTeX, og vi vil gradvis utvide seksjonen.
+
+1.  Installer BibLaTeX: Før du kan bruke BibLaTeX, må du først installere det på datamaskinen din. Dette gjøres vanligvis ved å installere en LaTeX-distribusjon som inkluderer BibLaTeX, som MikTeX eller TeX Live, eller ved å bruke Overleaf, som, som mange andre pakker, inkluderer alt, inkludert stiler, rett ut av boksen.
+    
+2.  Legg til BibLaTeX-pakken i LaTeX-dokumentet ditt: For å legge til BibLaTeX i LaTeX-dokumentet ditt, må du inkludere følgende kode i forordet til dokumentet ditt:
+    
+
+<CiteDrive />
+
+```latex
+\usepackage[style=authoryear,backend=biber]{biblatex}
+```
+
+Denne linjen forteller LaTeX at det skal bruke BibLaTeX-pakken med "authoryear"-stilen og "biber"-backenden. Hvis dette gir mening for deg, kan du også bruke BibTeX som backend. Imidlertid vil mange funksjoner være fraværende, og vi bør understreke at det ikke anbefales å bruke BibTeX – selv ikke av nostalgiske grunner.
+
+3. Hvis du er vant til BibTeX, har alt forblitt det samme bortsett fra at BibLaTeX nå støtter noen flere typer og felt. Du holder referansene dine i en separat bibliografisk database, en tekstfil med `.bib`-filendelsen. Her er et eksempel på en enkel database, som vi kan kalle `bibliography.bib`:
+
+```latex
+@book{key,   
+	author = {Author, A.},   
+	title = {The Title of the Book},   
+	year = {2021},   
+	publisher = 
+	{Publisher}, 
+}
+```
+
+4.  For å inkludere bib-filen (referansedatabasen din), bruker du følgende kommando i TeX-dokumentet ditt:
+
+```latex
+\addbibresource{bibliography.bib}
+```
+
+5.  For å sitere en referanse i dokumentet ditt, bruk følgende syntaks:
+
+```latex
+\autocite{key}
+```
+
+hvor "key" er nøkkelen til referansen du vil sitere.
+
+6.  For å inkludere bibliografien eller referanselisten i dokumentet ditt, må du inkludere følgende kode der du vil at bibliografien skal vises:
+
+```latex
+\printbibliography
+```
+
+7.  Til slutt, bruk en LaTeX-kompilator, som `pdflatex` eller `xelatex`, for å kompilere dokumentet ditt. BibLaTeX vil automatisk generere bibliografien basert på referansene du har sitert i artikkelen når du kompilerer dokumentet.
+
+Det er alt! Du bør nå være i stand til å bruke BibLaTeX til å håndtere referansene og siteringene dine i LaTeX-dokumentene dine etter å ha fulgt disse enkle trinnene. Husk at BibLaTeX er et svært tilpassbart verktøy; som nevnt tidligere, vil vi legge til mer i fremtiden. Men inntil videre bør du kunne komme i gang med en gang.
