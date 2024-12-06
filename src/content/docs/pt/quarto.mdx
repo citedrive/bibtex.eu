@@ -1,0 +1,64 @@
+---
+title: "Gerenciamento de Referências com BibTeX, ao Usar o Quarto - Um Guia Rápido"
+description: "Este tutorial rápido irá mostrar como gerenciar suas referências usando o BibTeX. O BibTeX é um software de gerenciamento de referências que permite armazenar e organizar suas referências de forma simples e fácil de usar."
+sidebar:
+  label: "Usando Quarto (RStudio/Posit) (Início rápido)"
+sidebar_position: 5
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O Quarto é uma excelente ferramenta para a criação de relatórios, artigos e apresentações reproduzíveis, entre outras coisas. Uma das características que distingue o Quarto é sua capacidade de integrar com outras ferramentas e softwares. O BibTeX, um sistema de gerenciamento de referências para documentos LaTeX, é uma dessas ferramentas. O BibTeX facilita a citação de fontes e a criação de bibliografias em seu documento.
+
+<CiteDrive />
+
+## Passo 1: Criar um arquivo .bib e adicionar algumas entradas.
+
+Como na seção anterior, começamos criando um arquivo .bib chamado 'bibliography.bib', que é preenchido com entradas BibTeX.
+As entradas BibTeX são construídas no seguinte formato e contêm informações suficientes para a citação e inclusão na bibliografia de cada fonte de literatura (livro, artigo, etc.).
+
+Usamos o exemplo da seção anterior e citamos o livro "O Velho e o Mar" de Ernest Hemingway. O resultado é o seguinte:
+
+```latex
+@book{Hemingway1952,
+  title={O Velho e o Mar},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Novamente, vamos dissecar a "anatomia" desta entrada, focando em três componentes para entender como cada entrada BibTeX é definida:
+
+* **Tipo de Entrada**: com `@book` definimos o tipo de acordo com o esquema `@type` da referência. Possíveis tipos são `@article` para artigos científicos, entre outros. O BibTeX gosta de especificar quais campos são opcionais e quais são obrigatórios para indicá-los corretamente na literatura.
+* **Campos da Entrada**: no caso do nosso exemplo de `@book`, esses campos são `title`, `author`, `year` e `publisher`. (Cf. [campos](./fields))
+* **Chave de Citação**: no nosso exemplo, é `Hemingway1952` e é usada para indicar uma citação no texto no LaTeX, ou seja, para referenciar a fonte. No Quarto fazemos isso com `[@Hemingway1952]`. A chave de citação pode ser qualquer string – frequentemente uma combinação do autor, ano e uma palavra do título.
+
+## Passo 2: Criar um documento Quarto e conectar
+
+É muito simples integrar o BibTeX com o Quarto. Basta especificar o arquivo bib com 'bibliography: bibliography.bib' no YAML e a citação com '[@Hemingway1952]' no local onde você deseja que a citação no texto apareça.
+
+```md
+---
+title: "Referências BibTeX no Quarto"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## Referências BibTeX no Quarto
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+```
+
+## Gerenciadores de Referências
+
+Formatar manualmente arquivos BibTeX pode ser demorado, por isso geralmente é recomendado usar um gerenciador de referências. Aqui estão alguns ideais para isso:
+
+* [CiteDrive](https://www.citedrive.com/) é uma ferramenta colaborativa e baseada na nuvem para gerenciamento de referências de projetos e equipes, alimentada por BibTeX. Ela oferece exportação com um clique para Overleaf ([*Cf. Post do Blog Overleaf - https://www.overleaf.com/blog/citedrive... | CiteDrive - Gestão Fácil de Referências para Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) junto com Quarto ([*Cf. Post no Medium: Gestão de Bibliografia no Quarto com CiteDrive e RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), mantendo as citações sincronizadas.
+* Zotero é uma ferramenta gratuita e de código aberto para gerenciamento de literatura, que gerencia dados bibliográficos e materiais de pesquisa relacionados (como arquivos PDF). O melhor desempenho para BibTeX no Zotero é alcançado com **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** da retorque.
+* O software gratuito e de código aberto JabRef é um gerenciador de referências que oferece suporte ao BibTeX e pode ser executado em Windows, Mac e Linux. Ele é baseado em Java e mantido pela JabRef e.V.
