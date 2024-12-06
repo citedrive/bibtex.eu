@@ -1,0 +1,167 @@
+---
+title: "Overleaf: Citation & Reference Management - LaTeX Bibliographies Intro"
+description: "Upptäck hur du hanterar citat, bibliografier och referenser i Overleaf med BibTeX, Natbib och BibLaTeX. Dessutom, effektivisera din arbetsprocess med CiteDrive."
+sidebar:
+  label: Använda Overleaf (Snabbstart)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com**, den molnbaserade LaTeX-redigeraren, är den självklara plattformen för samarbetsbaserad skapande och publicering av akademiska dokument. Född ur sammanslagningen av **WriteLaTeX** och **ShareLaTeX**, har den över 10 miljoner användare världen över. Overleaf har ett brett utbud av förinstallerade verktyg och mallar som är skräddarsydda för akademiska tidskrifter, vilket gör det till ett populärt val för forskare och akademiker.
+
+Med Overleaf kan du enkelt hantera citat och referenser med hjälp av kraftfulla verktyg som **CiteDrive**. Denna integration förenklar din arbetsprocess och gör hanteringen av citat mer effektiv.
+
+<CiteDrive />
+
+## Bibliografihantering i Overleaf/LaTeX
+
+### Varför Välja CiteDrive?
+
+**CiteDrive** är ett robust verktyg för hantering av citat och referenser som fungerar sömlöst med Overleaf. Här är varför du bör överväga att använda CiteDrive:
+
+- **Sömlös Integration**: Fungerar bra med Overleaf och populära referenssystem som BibTeX, Natbib och BibLaTeX.
+- **Ökad Effektivitet**: Automatiserar citatformattering och hanterar referenser enkelt.
+- **Användarvänlig**: Ger ett intuitivt gränssnitt för att organisera och citera referenser.
+- **Webbaserat och Samarbetsinriktat**: Åtkomst och hantering av dina citat var du än är med funktioner för realtids-samarbete.
+[Läs mer om CiteDrives funktioner och fördelar](https://www.citedrive.com).
+
+### BibTeX
+
+BibTeX är ett allmänt använt referenshanteringssystem i LaTeX. För att använda BibTeX i Overleaf:
+
+1. **Skapa en Bibliografifil**: Skapa en fil med namnet `references.bib` i ditt Overleaf-projekt.
+2. **Lägg till Referenser**: Inkludera referenser i detta format:
+
+   ```bibtex
+   @article{AuthorYear,
+       author = {Author, First och Author, Second},
+       title = {Title of the Article},
+       journal = {Journal Name},
+       volume = {Volume Number},
+       number = {Issue Number},
+       pages = {Page Numbers},
+       year = {Year Published},
+       publisher = {Publisher Name}
+   }
+   ```
+
+3. **Citera Referenser**: I ditt LaTeX-dokument, lägg till:
+
+   ```latex
+   \bibliography{references}
+   \bibliographystyle{plain}
+   ```
+
+   Använd `\cite{AuthorYear}` för att citera en referens.
+
+4. **Effektivisera med CiteDrive**: Automatisera och hantera dina BibTeX-referenser mer effektivt med CiteDrive.
+
+### Natbib
+
+Natbib erbjuder större flexibilitet för citatformattering. För att använda Natbib i Overleaf:
+
+1. **Lägg till Kommandon**: Inkludera i preamblen:
+
+   ```latex
+   \usepackage{natbib}
+   \bibliographystyle{plainnat}
+   ```
+
+2. **Citera Referenser**: Använd `\citep{AuthorYear}` för parentetiska citat eller `\citet{AuthorYear}` för textcitat.
+
+3. **Bibliografi**: Lägg till:
+
+   ```latex
+   \bibliography{references}
+   ```
+
+4. **Förbättra med CiteDrive**: Förenkla hanteringen och formateringen av citat med CiteDrive.
+
+### BibLaTeX
+
+BibLaTeX erbjuder avancerade funktioner för citat. För att använda BibLaTeX i Overleaf:
+
+1. **Lägg till Kommandon**: Inkludera i preamblen:
+
+   ```latex
+   \usepackage[style=authoryear,backend=bibtex]{biblatex}
+   \bibliography{references}
+   ```
+
+2. **Citera Referenser**: Använd `\parencite{AuthorYear}` för parentetiska citat eller `\textcite{Author}` för textcitat.
+
+3. **Optimera med CiteDrive**: Njut av ökad kontroll och flexibilitet med CiteDrives stöd för BibLaTeX.
+
+## LaTeX Grundläggande
+
+För de som är nya inom LaTeX, här är en kort översikt:
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % Byt ut "references.bib" med din bibliografifil
+
+\title{My First LaTeX Document}
+\author{Your Name}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Detta är ett exempel på ett dokument som demonstrerar LaTeX-grunderna.
+
+\section{Formatting}
+Du kan formatera text i \textbf{fetstil}, \textit{kursiv}, \underline{understruken} eller \texttt{typsnitt}.
+
+\section{Lists}
+Här är ett exempel på en punktlista:
+\begin{itemize}
+  \item Första punkten
+  \item Andra punkten
+  \item Tredje punkten
+\end{itemize}
+
+\section{Mathematics}
+LaTeX är utmärkt för att sätta matematiska formler. Här är ett exempel på en ekvation:
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{Figures and Tables}
+Du kan inkludera bilder och tabeller i ditt dokument. Här är ett exempel på en figur:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{En exempelbild}
+  \label{fig:example}
+\end{figure}
+
+Och här är ett exempel på en tabell:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Item} & \textbf{Quantity} \\
+    \hline
+    Apple & 3 \\
+    Orange & 5 \\
+    \hline
+  \end{tabular}
+  \caption{En exempel tabell}
+  \label{tab:example}
+\end{table}
+
+\section{References}
+Du kan referera till etiketterade sektioner, ekvationer, bilder och tabeller. Till exempel, se Figur~\ref{fig:example} och Tabell~\ref{tab:example}.
+
+\section{Citations and Bibliography}
+Citera referenser med \cite{author2022}. Här är ett exempel på en citation.
+
+\printbibliography
+
+\end{document}
+```

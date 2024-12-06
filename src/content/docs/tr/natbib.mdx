@@ -1,0 +1,122 @@
+---
+title: "Natbib Tutorial: LaTeX'te BibTeX ile Referans Yönetimini Öğrenme"
+description: "LaTeX'te bibliyografik referansları yönetmek için natbib'in özelliklerini keşfedin. Bu kapsamlı eğitim, natbib'in temellerini, metin içi alıntılardan BibTeX ile entegrasyona kadar ele almaktadır."
+sidebar:
+  label: "Natbib (Derinlemesine Eğitim)"
+sidebar_position: 3
+---
+
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+
+LaTeX'te bibliyografik referansları yönetmek, `natbib` paketini kullanarak daha verimli ve düzenli hale gelir. İster geleneksel `\cite{*}` komutuyla çalışıyor olun, ister gelişmiş alıntı yöntemlerine dalıyor olun, bu kılavuz, başlamanız için temel bilgileri sunmaktadır.
+
+<CiteDrive />
+
+## `natbib`'e Giriş ve Güçlü Yönleri
+
+`natbib` paketi, LaTeX'teki standart `\cite{*}` komutunun yeteneklerini genişletir. Özellikle, çeşitli seçenekler ve özelleştirmelerle metin içi alıntılarda, özellikle yazar-yıl sistemleri ve BibTeX ile entegre olduğunda metinsel ve parantezli alıntıları görüntülemede başarılıdır.
+
+:::tip
+Bilmenizde Fayda Var: Bu paket, hem yazar-yıl hem de sayısal alıntılarla sorunsuz bir şekilde çalışır ve standart bibliyografya `*.bst` dosyalarını destekler.
+:::
+
+Şimdi, `natbib`'in gücünü nasıl kullanacağınızı ve bibliyografik kaynaklarınızı nasıl biçimlendireceğinizi öğrenelim.
+
+## Yolculuğunuza Başlangıç: `natbib` ile Parantezli ve Metinsel/Narratif Metin İçi Alıntılar
+
+`natbib`'i kurmak, standart LaTeX kurulumuna benzer bir yapı gerektirir. Başlamak için `\usepackage{natbib}` komutunu kullanarak kütüphaneyi yükleyin. Kütüphane, aşağıda detaylı olarak tartışılacak olan birkaç yapılandırma seçeneği sunar. Natbib'in ana alıntı komutları `\citet{*}` (metinsel/narratif alıntılar için) ve `\citep{*}` (parantezli alıntılar için) dir.
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\title{natbib ve BibTeX Kullanarak Referans Yönetimi için Kapsamlı Bir Kılavuz}
+\author{CiteDrive}
+\date {Ocak 1988}
+
+\begin{document}
+
+\maketitle
+\textbf{Narrative citation:} \citet{Doe:1966} yanlış kaydedilen [...]'in risklerini araştırdı, bu da bozulmaya yol açmaktadır.
+\textbf{Parenthetical citation:} Yanlış kaydedilen [...]'in riskleri bozulmaya yol açabilir \citep{Doe:1966}.
+
+\medskip
+
+\bibliography{sample}
+
+\end{document}
+```
+
+`\bibliography{sample}` komutunu kullanarak LaTeX'e .bib dosyanızın yerini belirtirsiniz, bu dosyada bibliyografik girişler bulunur:
+
+```bibtex
+@article{Doe:1966,
+	title        = {Yanlış Kaydedilen [...]'in Riskleri ve Bunların [...] Üzerindeki Etkileri.},
+	author       = {John Doe},
+	year         = 1966,
+	journal      = {BibTeX Yayıncılığı},
+	volume       = 44,
+	number       = 44,
+	pages        = {123--456}
+}
+@article{smith2017,
+	title        = {İlginç Bir Makale},
+	author       = {John Smith},
+	year         = {2017},
+	journal      = {İlginç Makaleler Dergisi}
+}
+```
+
+![natbib ile BibTeX kullanarak referans yönetiminin çıktı örneği](@assets/images/tutorial/output_example_bibtex_natbib.png)natbib ile BibTeX kullanarak referans yönetiminin çıktı örneği
+
+Sayısal alıntı stillerine ilgi duyanlar için, natbib'i nasıl uyarlayacağınız aşağıda gösterilmektedir:
+
+
+```latex
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+```
+
+![natbib ile BibTeX kullanarak sayısal stil ile referans yönetiminin çıktı örneği](@assets/images/tutorial/output_example_bibtex_natbib_numeric.png)natbib ile BibTeX kullanarak sayısal stil ile referans yönetiminin çıktı örneği
+
+## Derinlemesine İnceleme: natbib'deki `cite{*}` Komutlarını Keşfetmek
+
+`natbib` tarafından sunulan `cite{*}` komutlarının yelpazesi, kaynakları verimli bir şekilde alıntılamanızı sağlar. Aşağıdaki tablo, bunların çıktılarının nasıl olduğunu açıklar:
+
+| Komut (Tekli alıntı) | Çıktı (yazar-yıl) | Çıktı (Sayısal) | Komut (Birden fazla alıntı) | Çıktı (yazar-yıl) | Çıktı (Sayısal) |
+|----------------------|-------------------|-----------------|----------------------------|-------------------|-----------------|
+|`\citet{Doe:1966}`|Doe (1966) |Doe [1]|`\citet{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citet[chap.~4]{Doe:1966}`|Doe (1966, chap. 4)|Doe [1, chap. 4]|`\citet[chap.~4]{Doe:1966,smith2017}`|Doe (1966); Smith (2017, chap. 4)|Doe [1], Smith [2, chap. 4]|
+|`\citep{Doe:1966}`|(Doe, 1966)|[1]|`\citep{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+|`\citep[chap.~4]{Doe:1966}`|(Doe, 1966, chap. 4)|[1, chap. 4|`\citep[chap.~4]{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017, chap. 4)|1, 2, chap. 4]|
+|`\citep[see][]{Doe:1966}`|(see Doe, 1966)|[see 1]|`\citep[see][]{Doe:1966,smith2017}`|(see Doe, 1966; Smith, 2017)|[see 1, 2]|
+|`\citep[see][chap.~4]{Doe:1966}`|(see Doe, 1966, chap. 4)|[see 1, chap. 4]|`\citep[see][chap.~4]{Doe:1966,smith2017}`|(see Doe, 1966; Smith, 2017, chap. 4)|[see 1, 2, chap. 4]|
+|`\citet*{Doe:1966}`|Doe (1966)|Doe [1]|`\citet*{Doe:1966,smith2017}`|Doe (1966); Smith (2017)|Doe [1], Smith [2]|
+|`\citep*{Doe:1966}`|(Doe, 1966)|[1]|`\citep*{Doe:1966,smith2017}`|(Doe, 1966; Smith, 2017)|[1, 2]|
+
+Diğer `natbib` komutları, `\citealp` ve `\citealt`, parantezleri gizleyerek ek esneklik sunar. Tüm komutlar hakkında bilgi için [natbib kullanımına dair referans dökümantasyonunu](https://gking.harvard.edu/files/natnotes2.pdf) inceleyin.
+
+## Ekstra: `natbib` İçin Seçenekleri Öğrenmek
+
+`natbib` ile çalışırken, davranışını özelleştirmek iş akışınızı daha verimli hale getirebilir. İşte `\usepackage[options]{natbib}` komutuyla erişilebilen seçeneklerin bir özeti:
+
+| Seçenek | Açıklama |
+|----------------------|----------|
+|round|yuvarlak parantezler gösterir|
+|square|kare köşeli parantezler gösterir|
+|curly|küme parantezleri gösterir|
+|angle|açı parantezleri gösterir|
+|semicolon|birden fazla alıntı noktalı virgül ile ayrılır|
+|colon|aynı noktalama gibi|
+|comma|birden fazla alıntı virgülle ayrılır|
+|authoryear|yazar-yıl alıntılarını gösterir|
+|numbers|sayısal alıntıları gösterir|
+|
+
+super|üst simge stili için|
+
+## Özet: Daha Etkili Alıntı ve Bibliyografik Yönetim İçin Natbib'i Keşfedin
+
+Bu kapsamlı rehber, `natbib` paketinin özelliklerini ve nasıl kullanıldığını tanıttı. Artık, alıntı stilleriyle istediğiniz gibi özelleştirilmiş bir sistem kurarak LaTeX'teki referans yönetimini kolaylaştırabilirsiniz. Unutmayın, doğru bibliyografik alıntılama için hem akademik yazımda hem de araştırma sürecinde doğru araçları kullanmak çok önemlidir.

@@ -1,0 +1,167 @@
+---
+title: "Overleaf: Alıntı ve Referans Yönetimi - LaTeX Bibliyografyaları Girişi"
+description: "Overleaf'te BibTeX, Natbib ve BibLaTeX kullanarak alıntı, bibliyografya ve referansları nasıl yöneteceğinizi keşfedin. Ayrıca, iş akışınızı CiteDrive ile kolaylaştırın."
+sidebar:
+  label: Overleaf Kullanımı (Hızlı Başlangıç)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com**, bulut tabanlı bir LaTeX editörüdür ve akademik belgelerin ortaklaşa oluşturulması ve yayımlanması için tercih edilen platformdur. **WriteLaTeX** ve **ShareLaTeX**'in birleşmesinden doğan bu platform, dünya çapında 10 milyondan fazla kullanıcıya sahiptir. Overleaf, akademik dergiler için özel olarak tasarlanmış çok sayıda önceden yüklenmiş araç ve şablon sunarak, araştırmacılar ve akademisyenler için ideal bir seçimdir.
+
+Overleaf ile, **CiteDrive** gibi güçlü araçlar kullanarak atıfları ve referansları kolayca yönetebilirsiniz. Bu entegrasyon iş akışınızı basitleştirerek, atıf yönetimini daha verimli hale getirir.
+
+<CiteDrive />
+
+## Overleaf/LaTeX'te Bibliyografya Yönetimi
+
+### Neden CiteDrive’ı Seçmelisiniz?
+
+**CiteDrive**, Overleaf ile sorunsuz çalışan güçlü bir atıf ve referans yönetim aracıdır. İşte neden CiteDrive'ı kullanmayı düşünmelisiniz:
+
+- **Sorunsuz Entegrasyon**: Overleaf ve BibTeX, Natbib ve BibLaTeX gibi popüler referans sistemleriyle uyumlu çalışır.
+- **Artırılmış Verimlilik**: Atıf biçimlendirmesini otomatikleştirir ve referansları kolayca yönetir.
+- **Kullanıcı Dostu**: Atıfları organize etme ve alıntı yapma konusunda sezgisel bir arayüz sunar.
+- **Web Tabanlı ve İşbirlikçi**: Her yerden atıflarınızı erişebilir ve yönetebilirsiniz, gerçek zamanlı işbirliği özellikleriyle.
+[CiteDrive’ın özellikleri ve avantajları hakkında daha fazla bilgi edin](https://www.citedrive.com).
+
+### BibTeX
+
+BibTeX, LaTeX'te yaygın olarak kullanılan bir referans yönetim sistemidir. Overleaf'te BibTeX kullanmak için:
+
+1. **Bibliyografya Dosyası Oluşturun**: Overleaf projenizde `references.bib` adlı bir dosya oluşturun.
+2. **Referanslar Ekleyin**: Aşağıdaki formatta referanslar ekleyin:
+
+   ```bibtex
+   @article{AuthorYear,
+       author = {Author, First and Author, Second},
+       title = {Makale Başlığı},
+       journal = {Dergi Adı},
+       volume = {Cilt Numarası},
+       number = {Sayı Numarası},
+       pages = {Sayfa Numaraları},
+       year = {Yayın Yılı},
+       publisher = {Yayınevi Adı}
+   }
+   ```
+
+3. **Referansları Alıntı Yapın**: LaTeX belgenizde şunu ekleyin:
+
+   ```latex
+   \bibliography{references}
+   \bibliographystyle{plain}
+   ```
+
+   Bir referansı alıntılamak için `\cite{AuthorYear}` kullanın.
+
+4. **CiteDrive ile Süreçleri Kolaylaştırın**: BibTeX referanslarını daha verimli bir şekilde yönetmek için CiteDrive kullanın.
+
+### Natbib
+
+Natbib, atıf biçimlendirmesi için daha fazla esneklik sunar. Overleaf'te Natbib kullanmak için:
+
+1. **Komutları Ekleyin**: Ön ek olarak şunu dahil edin:
+
+   ```latex
+   \usepackage{natbib}
+   \bibliographystyle{plainnat}
+   ```
+
+2. **Referansları Alıntılayın**: Parantez içi atıflar için `\citep{AuthorYear}` veya metin içi atıflar için `\citet{AuthorYear}` kullanın.
+
+3. **Bibliyografya**: Şunu ekleyin:
+
+   ```latex
+   \bibliography{references}
+   ```
+
+4. **CiteDrive ile Kolaylaştırın**: Atıf yönetimini ve biçimlendirmesini CiteDrive ile basitleştirin.
+
+### BibLaTeX
+
+BibLaTeX, gelişmiş atıf özellikleri sunar. Overleaf'te BibLaTeX kullanmak için:
+
+1. **Komutları Ekleyin**: Ön ek olarak şunu dahil edin:
+
+   ```latex
+   \usepackage[style=authoryear,backend=bibtex]{biblatex}
+   \bibliography{references}
+   ```
+
+2. **Referansları Alıntılayın**: Parantez içi atıflar için `\parencite{AuthorYear}` veya metin içi atıflar için `\textcite{Author}` kullanın.
+
+3. **CiteDrive ile İyileştirin**: CiteDrive’ın BibLaTeX desteğiyle daha fazla kontrol ve esneklik elde edin.
+
+## LaTeX Temelleri
+
+LaTeX’e yeni başlayanlar için kısa bir genel bakış:
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % "references.bib" dosyanızı buraya ekleyin
+
+\title{İlk LaTeX Belgem}
+\author{Adınız}
+
+\begin{document}
+
+\maketitle
+
+\section{Giriş}
+Bu, LaTeX'in temellerini gösteren bir örnek belgedir.
+
+\section{Biçimlendirme}
+Metni \textbf{kalın}, \textit{italik}, \underline{altı çizili} veya \texttt{yazı tipi} olarak biçimlendirebilirsiniz.
+
+\section{Listeler}
+İşte bir örnek madde işareti listesi:
+\begin{itemize}
+  \item İlk madde
+  \item İkinci madde
+  \item Üçüncü madde
+\end{itemize}
+
+\section{Matematik}
+LaTeX, matematiksel formülleri yazdırmak için mükemmeldir. İşte bir denklem örneği:
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{Şekiller ve Tablolar}
+Belgenize şekiller ve tablolar ekleyebilirsiniz. İşte bir şekil örneği:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{Bir şekil örneği}
+  \label{fig:example}
+\end{figure}
+
+İşte bir tablo örneği:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Öğe} & \textbf{Miktar} \\
+    \hline
+    Elma & 3 \\
+    Portakal & 5 \\
+    \hline
+  \end{tabular}
+  \caption{Bir tablo örneği}
+  \label{tab:example}
+\end{table}
+
+\section{Referanslar}
+Etiketlenmiş bölümlere, denklemlere, şekillere ve tablolara atıfta bulunabilirsiniz. Örneğin, Şekil~\ref{fig:example} ve Tablo~\ref{tab:example}'ya bakın.
+
+\section{Atıflar ve Bibliyografya}
+Atıf yaparken \cite{author2022} kullanın. İşte bir atıf örneği.
+
+\printbibliography
+
+\end{document}
+```

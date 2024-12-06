@@ -1,0 +1,167 @@
+---
+title: "Overleaf: Управление Цитированием и Ссылками - Введение в Библиографии LaTeX"
+description: "Узнайте, как управлять цитированиями, библиографиями и ссылками в Overleaf с использованием BibTeX, Natbib и BibLaTeX. Кроме того, упростите рабочий процесс с помощью CiteDrive."
+sidebar:
+  label: Использование Overleaf (быстрый старт)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+**Overleaf.com**, облачный редактор LaTeX, является популярной платформой для совместного создания и публикации научных документов. Образованный после слияния **WriteLaTeX** и **ShareLaTeX**, он насчитывает более 10 миллионов пользователей по всему миру. Overleaf предлагает широкий набор предустановленных инструментов и шаблонов, предназначенных для академических журналов, что делает его идеальным выбором для исследователей и ученых.
+
+С Overleaf вы можете легко управлять цитированиями и ссылками, используя мощные инструменты, такие как **CiteDrive**. Эта интеграция упрощает ваш рабочий процесс, делая управление цитированием более эффективным.
+
+<CiteDrive />
+
+## Управление Библиографией в Overleaf/LaTeX
+
+### Почему стоит выбрать CiteDrive?
+
+**CiteDrive** — это мощный инструмент для управления цитированиями и ссылками, который работает без сбоев с Overleaf. Вот почему стоит использовать CiteDrive:
+
+- **Бесшовная интеграция**: Легко работает с Overleaf и популярными системами ссылок, такими как BibTeX, Natbib и BibLaTeX.
+- **Повышенная эффективность**: Автоматизирует форматирование цитат и управляет ссылками с легкостью.
+- **Простой интерфейс**: Предоставляет интуитивно понятный интерфейс для организации и цитирования ссылок.
+- **Веб-основной и совместный доступ**: Получите доступ и управляйте цитированиями из любой точки с функциями реального времени для совместной работы.
+[Узнайте больше о возможностях и преимуществах CiteDrive](https://www.citedrive.com).
+
+### BibTeX
+
+BibTeX — это широко используемая система управления ссылками в LaTeX. Чтобы использовать BibTeX в Overleaf:
+
+1. **Создайте файл библиографии**: Создайте файл с именем `references.bib` в вашем проекте Overleaf.
+2. **Добавьте ссылки**: Включите ссылки в следующем формате:
+
+   ```bibtex
+   @article{AuthorYear,
+       author = {Author, First and Author, Second},
+       title = {Title of the Article},
+       journal = {Journal Name},
+       volume = {Volume Number},
+       number = {Issue Number},
+       pages = {Page Numbers},
+       year = {Year Published},
+       publisher = {Publisher Name}
+   }
+   ```
+
+3. **Цитирование ссылок**: В вашем документе LaTeX добавьте:
+
+   ```latex
+   \bibliography{references}
+   \bibliographystyle{plain}
+   ```
+
+   Используйте `\cite{AuthorYear}`, чтобы сослаться на ссылку.
+
+4. **Упростите с CiteDrive**: Автоматизируйте и управляйте ссылками BibTeX более эффективно с помощью CiteDrive.
+
+### Natbib
+
+Natbib предоставляет большую гибкость для форматирования цитат. Чтобы использовать Natbib в Overleaf:
+
+1. **Добавьте команды**: Включите в преамбулу:
+
+   ```latex
+   \usepackage{natbib}
+   \bibliographystyle{plainnat}
+   ```
+
+2. **Цитирование ссылок**: Используйте `\citep{AuthorYear}` для скобочных цитат или `\citet{AuthorYear}` для текстовых цитат.
+
+3. **Библиография**: Добавьте:
+
+   ```latex
+   \bibliography{references}
+   ```
+
+4. **Усовершенствуйте с CiteDrive**: Упростите управление цитированием и форматированием с CiteDrive.
+
+### BibLaTeX
+
+BibLaTeX предоставляет расширенные функции цитирования. Чтобы использовать BibLaTeX в Overleaf:
+
+1. **Добавьте команды**: Включите в преамбулу:
+
+   ```latex
+   \usepackage[style=authoryear,backend=bibtex]{biblatex}
+   \bibliography{references}
+   ```
+
+2. **Цитирование ссылок**: Используйте `\parencite{AuthorYear}` для скобочных цитат или `\textcite{Author}` для цитат в тексте.
+
+3. **Оптимизируйте с CiteDrive**: Наслаждайтесь улучшенным контролем и гибкостью с поддержкой BibLaTeX от CiteDrive.
+
+## Основы LaTeX
+
+Для новичков в LaTeX, вот краткий обзор:
+
+```latex
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{biblatex}
+
+\addbibresource{references.bib} % Замените "references.bib" на ваш файл библиографии
+
+\title{Мой Первый Документ LaTeX}
+\author{Ваше Имя}
+
+\begin{document}
+
+\maketitle
+
+\section{Введение}
+Это пример документа, демонстрирующий основы LaTeX.
+
+\section{Форматирование}
+Вы можете форматировать текст в \textbf{жирный}, \textit{курсив}, \underline{подчеркнутый} или \texttt{моноширинный} шрифт.
+
+\section{Списки}
+Вот пример маркированного списка:
+\begin{itemize}
+  \item Первый элемент
+  \item Второй элемент
+  \item Третий элемент
+\end{itemize}
+
+\section{Математика}
+LaTeX отлично подходит для набора математических формул. Вот пример уравнения:
+\begin{equation}
+  E = mc^2
+\end{equation}
+
+\section{Рисунки и таблицы}
+Вы можете вставлять рисунки и таблицы в свой документ. Вот пример рисунка:
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{example-image}
+  \caption{Пример рисунка}
+  \label{fig:example}
+\end{figure}
+
+А вот пример таблицы:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Элемент} & \textbf{Количество} \\
+    \hline
+    Яблоко & 3 \\
+    Апельсин & 5 \\
+    \hline
+  \end{tabular}
+  \caption{Пример таблицы}
+  \label{tab:example}
+\end{table}
+
+\section{Ссылки}
+Вы можете ссылаться на помеченные разделы, уравнения, рисунки и таблицы. Например, смотрите рисунок~\ref{fig:example} и таблицу~\ref{tab:example}.
+
+\section{Цитаты и Библиография}
+Цитируйте ссылки с помощью \cite{author2022}. Вот пример цитирования.
+
+\printbibliography
+
+\end{document}
+```

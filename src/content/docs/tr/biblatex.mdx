@@ -1,0 +1,59 @@
+---
+title: "BibLaTeX ile Başlarken: Hızlı Bir Rehber"
+sidebar:
+  label: BibLaTeX Kullanımı (Hızlı Başlangıç)
+sidebar_position: 4
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Aşağıdaki rehber hâlâ hazırlanıyor, ancak BibLaTeX birçok kişi tarafından BibTeX'in yerini alacak bir araç olarak görülüyor (ve biz de buna katılıyoruz), bu yüzden size bir başlangıç yapmak faydalı olacaktır. Lütfen unutmayın ki BibLaTeX'te birçok seçenek ve özelleştirme mevcuttur ve bu bölümü zamanla genişleteceğiz.
+
+1.  BibLaTeX'i Yükleyin: BibLaTeX'i kullanabilmek için önce bilgisayarınıza yüklemeniz gerekmektedir. Bu genellikle BibLaTeX'i içeren bir LaTeX dağıtımı (örneğin MikTeX veya TeX Live) yükleyerek yapılır veya diğer birçok paket gibi, her şeyi (stil dahil) kutudan çıktığı gibi içeren Overleaf kullanarak yapılabilir.
+
+2.  BibLaTeX paketini LaTeX belgenize ekleyin: BibLaTeX'i LaTeX belgenize eklemek için belgenizin önsözüne aşağıdaki kodu dahil etmeniz gerekir:
+    
+
+<CiteDrive />
+
+```latex
+\usepackage[style=authoryear,backend=biber]{biblatex}
+```
+
+Bu satır, LaTeX'e "authoryear" stilini ve "biber" backend'ini kullanmasını söyler. Eğer bunun anlamlı olduğunu düşünüyorsanız, backend olarak BibTeX'i de kullanabilirsiniz. Ancak, birçok özellik eksik olacak ve BibTeX kullanmanın önerilmediğini belirtmek gerekir - nostaljik sebeplerle bile olsa.
+
+3. Eğer BibTeX'e alışkınsanız, her şey aynı kaldı; ancak BibLaTeX şimdi birkaç ekstra tür ve alanı destekliyor. Referanslarınızı ayrı bir bibliyografik veritabanında, `.bib` uzantılı bir metin dosyasında tutarsınız. İşte basit bir veritabanı örneği, buna `bibliography.bib` diyebiliriz:
+
+```latex
+@book{key,   
+	author = {Yazar, A.},   
+	title = {Kitabın Başlığı},   
+	year = {2021},   
+	publisher = 
+	{Yayınevi}, 
+}
+```
+
+4.  Bib-file'ınızı (referans veritabanınızı) dahil etmek için TeX belgenizde şu komutu kullanın: 
+
+```latex
+\addbibresource{bibliography.bib}
+```
+
+5.  Belgenizde bir referansı alıntılamak için aşağıdaki sözdizimini kullanın:
+
+```latex
+\autocite{key}
+```
+
+Burada "key", alıntı yapmak istediğiniz referansın anahtarıdır.
+
+6.  Bibliyografyayı veya referans listesini belgenize eklemek için, bibliyografyanın görünmesini istediğiniz yere şu kodu eklemeniz gerekir:
+
+```latex
+\printbibliography
+```
+
+7.  Son olarak, belgenizi derlemek için bir LaTeX derleyicisi (örneğin `pdflatex` veya `xelatex`) kullanın. BibLaTeX, belgenizi derlediğinizde, alıntı yaptığınız referanslara dayalı olarak bibliyografyayı otomatik olarak oluşturacaktır.
+
+Hepsi bu kadar! Bu basit adımları takip ettikten sonra, BibLaTeX'i kullanarak LaTeX belgelerinizde referanslarınızı ve alıntılarınızı yönetebiliyor olmalısınız. Unutmayın, BibLaTeX son derece özelleştirilebilir bir araçtır; daha önce belirtildiği gibi, gelecekte daha fazlasını ekleyeceğiz. Ancak şimdilik hemen başlayabilirsiniz.

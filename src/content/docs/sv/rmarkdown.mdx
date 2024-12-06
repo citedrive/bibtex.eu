@@ -1,0 +1,66 @@
+---
+title: Referenshantering med BibTeX i R Markdown -- En kort guide
+description: "Den här snabba guiden visar hur du hanterar dina referenser med BibTeX. BibTeX är en programvara för referenshantering som gör det möjligt att lagra och organisera dina referenser i ett enkelt och användarvänligt format."
+sidebar:
+  label: "Använda R Markdown (Snabbstart)"
+  sidebar_position: 6
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+R Markdown är ett kraftfullt verktyg för att skapa reproducerbara rapporter, artiklar, presentationer och mer. En av de funktioner som gör R Markdown så effektivt är dess förmåga att integrera med andra verktyg och programvara. Ett sådant verktyg är BibTeX, som är ett system för referenshantering för LaTeX-dokument. BibTeX gör det enkelt att citera källor i ditt dokument och skapa en bibliografi.
+
+<CiteDrive />
+
+## Steg 1: Skapa en .bib-fil och lägg till några poster
+
+Som i föregående avsnitt börjar vi med att skapa en `.bib`-fil, som `bibliography.bib`, och fylla den med BibTeX-poster. BibTeX-poster konstrueras i följande format och innehåller tillräcklig information för att citera och inkludera varje litteraturkälla (bok, artikel osv.) i bibliografin.
+
+Vi använder exemplet från föregående avsnitt och citerar boken *The Old Man and the Sea* av Ernest Hemingway. Posten ser då ut så här:
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Vi bryter ner "anatomin" av denna post och tittar på tre komponenter för att förstå hur varje BibTeX-post definieras:
+
+* **Posttyp**: Med `@book` definierar vi typen enligt schemat `@type` för referensen. Möjliga typer är till exempel `@article` för vetenskapliga artiklar och andra. BibTeX specificerar vilka fält som är obligatoriska och vilka som är valfria för att korrekt indikera dem i litteraturen.
+* **Postfält**: I vårt exempel för `@book` är dessa `title`, `author`, `year` och `publisher`. (Se [fält](./fields) för mer information.)
+* **Citeringsnyckel**: I vårt exempel är det `Hemingway1952` och används för att ange en in-text citation i LaTeX, det vill säga för att referera till källan. I R Markdown gör vi detta med `[@Hemingway1952]`. Citeringsnyckeln kan vara vilken sträng som helst – ofta en kombination av författare, år och ett ord från titeln.
+
+## Steg 2: Skapa ett R Markdown-dokument och anslut
+
+Att integrera BibTeX med R Markdown är väldigt enkelt. Du behöver bara specificera `.bib`-filen i YAML och citera med `[@Hemingway1952]` där du vill placera in-text citationen.
+
+Här är ett exempel på ett R Markdown-dokument:
+
+```md
+---
+title: "BibTeX-referenser i R Markdown"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+## BibTeX-referenser i R Markdown
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+```
+
+I det här exemplet kommer `[@Hemingway1952]` att ersättas med den korrekta citeringen i den slutliga dokumentet.
+
+## Referenshanterare
+
+Att formatera BibTeX-filer för hand kan vara tidskrävande, därför rekommenderas det generellt att använda en referenshanterare. Här är några verktyg som fungerar bra med BibTeX:
+
+* [CiteDrive](https://www.citedrive.com/) är ett BibTeX-baserat, samarbetsinriktat och molnbaserat verktyg för att hantera referenser och team i projekt. Det erbjuder en enkel export till Overleaf ([*Se Overleaf Bloggpost*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) och R Markdown ([*Se Medium-artikel*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), samtidigt som citeringar hålls synkroniserade.
+* [Zotero](https://www.zotero.org/) är ett gratis, öppen källkod-program för hantering av litteratur som hanterar bibliografisk data och relaterat forskningsmaterial (t.ex. PDF-filer). Bästa BibTeX-prestanda i Zotero uppnås med **[Better BibTeX för Zotero](https://retorque.re/zotero-better-bibtex/)**-tillägget från retorque.
+* [JabRef](https://www.jabref.org/) är en gratis, öppen källkod-programvara för referenshantering som stöder BibTeX och kan köras på Windows, Mac och Linux. Det är baserat på Java och underhålls av JabRef e.V.

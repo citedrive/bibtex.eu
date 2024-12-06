@@ -1,0 +1,64 @@
+---
+title: Quarto Kullanırken BibTeX ile Referans Yönetimi -- Kısa Bir Kılavuz  
+description: "Bu kısa kılavuz, referanslarınızı BibTeX kullanarak nasıl yöneteceğinizi gösterecektir. BibTeX, referanslarınızı basit ve kullanımı kolay bir formatta depolamanıza ve düzenlemenize olanak tanıyan bir referans yönetim yazılımıdır."  
+sidebar:  
+  label: Quarto Kullanımı (RStudio/Posit) (Hızlı Başlangıç)  
+sidebar_position: 5  
+---  
+
+import CiteDrive from '@components/CiteDrive.astro';  
+
+Quarto, tekrar üretilebilir raporlar, makaleler ve sunumlar üretmek için mükemmel bir araçtır. Quarto'yu diğer araçlar ve yazılımlar ile entegre etme yeteneği, onu ayıran özelliklerden biridir. BibTeX, LaTeX belgeleri için bir referans yönetim sistemidir ve böyle bir araçtır. BibTeX, kaynakları alıntılamayı ve belgenizde bir kaynakça oluşturmayı basitleştirir.
+
+<CiteDrive />
+
+## Adım 1: Bir .bib dosyası oluşturun ve bazı girişler yapın.
+
+Önceki bölümde olduğu gibi, 'bibliography.bib' adlı bir .bib dosyası oluşturuyoruz ve bu dosya, BibTeX girişleri ile dolduruluyor.  
+BibTeX girişleri, aşağıdaki formatta yapılandırılır ve her bir literatür kaynağı (kitap, makale vb.) için alıntı yapma ve kaynakçaya dahil etme için yeterli bilgiyi içerir.
+
+Önceki bölümdeki örneği kullanarak, Ernest Hemingway'in "The Old Man and the Sea" kitabını alıntılıyoruz. Sonuç şu şekilde olur:
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Yine, bu girişin "anatomisini" parçalıyoruz ve her bir BibTeX girişinin nasıl tanımlandığını anlamak için üç bileşene odaklanıyoruz:
+
+* **Giriş türü**: `@book` ile referansın şemasına göre türü tanımlarız. Mümkün olan türler arasında `@article` gibi bilimsel makaleler de vardır. BibTeX, hangi alanların opsiyonel ve hangi alanların zorunlu olduğunu belirtmeyi sever.
+* **Giriş alanları**: `@book` örneğimizde, bunlar `title`, `author`, `year` ve `publisher` alanlarıdır. (Bkz. [fields](./fields))
+* **Alıntı anahtarı**: Örneğimizde bu `Hemingway1952`'dir ve LaTeX'te metin içi alıntı belirtmek için kullanılır, yani kaynağa atıfta bulunmak için. Quarto'da bunu `[@Hemingway1952]` ile yaparız. Alıntı anahtarı herhangi bir dizi olabilir - genellikle yazar, yıl ve başlıktan bir kelime kombinasyonudur.
+
+## Adım 2: Bir Quarto belgesi oluşturun ve bağlayın
+
+BibTeX'i Quarto'ya entegre etmek çok basittir. Yalnızca 'bibliography: bibliography.bib' ile .bib dosyasını YAML'da belirtin ve alıntıyı metin içi alıntı olarak görünmesini istediğiniz yere '[@Hemingway1952]' ile ekleyin.
+
+```md
+---
+title: "Quarto'da BibTeX Referansları"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## Quarto'da BibTeX Referansları
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+```
+
+## Referans Yöneticileri
+
+BibTeX dosyalarını manuel olarak biçimlendirmek zaman alıcı olabilir, bu nedenle genellikle bir referans yöneticisi kullanmanız tavsiye edilir. İşte bunun için ideal olan birkaç araç:
+
+* [CiteDrive](https://www.citedrive.com/), projelerin referanslarını ve ekiplerini yönetmek için bibtex tabanlı, işbirlikçi ve bulut tabanlı bir araçtır. Quarto ([*Bkz. Medium yazısı: CiteDrive ve RStudio ile Quarto'da Kaynakça Yönetimi*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)) ile birlikte, kaynakları senkronize tutarak tek tıklamayla Overleaf'e dışa aktarma sağlar.
+* Zotero, bibliyografik verileri ve ilgili araştırma materyallerini (PDF dosyaları gibi) yöneten ücretsiz, açık kaynaklı bir literatür yönetim aracıdır. Zotero'da BibTeX için en iyi performans, **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** ile elde edilir.
+* Ücretsiz, açık kaynaklı yazılım olan JabRef, Windows, Mac ve Linux'ta çalışan BibTeX destekli bir referans yöneticisidir. Java tabanlıdır ve JabRef e.V. tarafından bakımı yapılmaktadır.

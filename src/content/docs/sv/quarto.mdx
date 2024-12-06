@@ -1,0 +1,64 @@
+---
+title: "Referenshantering med BibTeX i Quarto – En kort guide"
+description: "Den här korta guiden visar hur du hanterar dina referenser med BibTeX. BibTeX är en referenshanteringsprogramvara som låter dig lagra och organisera dina referenser i ett enkelt, användarvänligt format."
+sidebar:
+  label: Använda Quarto (RStudio/Posit) (Snabbstart)
+sidebar_position: 5
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Quarto är ett utmärkt verktyg för att skapa reproducerbara rapporter, artiklar och presentationer, bland annat. En av funktionerna som särskiljer Quarto är dess förmåga att integreras med andra verktyg och programvara. BibTeX, ett referenshanteringssystem för LaTeX-dokument, är ett sådant verktyg. BibTeX gör det enkelt att citera källor och skapa en bibliografi i ditt dokument.
+
+<CiteDrive />
+
+## Steg 1: Skapa en .bib-fil och lägg till några poster.
+
+Som i föregående avsnitt börjar vi med att skapa en .bib-fil som heter 'bibliography.bib', som sedan fylls med BibTeX-poster. BibTeX-poster är uppbyggda på följande sätt och innehåller tillräcklig information för citering och bibliografiinclusion för varje litteraturkälla (bok, essä etc.).
+
+Vi använder exemplet från föregående avsnitt och citerar boken "The Old Man and the Sea" av Ernest Hemingway. Resultatet blir följande:
+
+```latex
+@book{Hemingway1952,
+  title={The Old Man and the Sea},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Återigen dissekerar vi denna post "anatomi" och fokuserar på tre komponenter för att förstå hur varje BibTeX-post definieras:
+
+* **Posttyp**: med `@book` definierar vi typen enligt schemat `@type` för referensen. Möjliga typer är `@article` för vetenskapliga artiklar och andra. BibTeX specificerar ofta vilka fält som är valfria och vilka som är obligatoriska för att korrekt ange dem i litteraturen.
+* **Postfält**: i vårt exempel på `@book` är dessa `title`, `author`, `year` och `publisher`. (Se [fält](./fields))
+* **Citeringsnyckel**: i vårt exempel är det `Hemingway1952` och används för att ange en in-text-citering i LaTeX, dvs. för att referera till källan. I Quarto gör vi detta med `[@Hemingway1952]`. Citeringsnyckeln kan vara vilken sträng som helst – ofta en kombination av författare, år och ett ord från titeln.
+
+## Steg 2: Skapa ett Quarto-dokument och koppla samman
+
+Det är väldigt enkelt att integrera BibTeX med Quarto. Ange bara bib-filen med 'bibliography: bibliography.bib' i YAML och citatet med '[@Hemingway1952]' på den plats där du vill att citatet ska visas.
+
+```md
+---
+title: "BibTeX-referenser i Quarto"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## BibTeX-referenser i Quarto
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+```
+
+## Referenshanterare
+
+Att manuellt formatera BibTeX-filer kan vara tidskrävande, vilket är varför det vanligtvis rekommenderas att använda en referenshanterare. Här är några som är idealiska för detta:
+
+* [CiteDrive](https://www.citedrive.com/) är ett bibtex-baserat, kollaborativt och molnbaserat verktyg för att hantera projektreferenser och team. Det erbjuder en enkel export till Overleaf ([*Se. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) tillsammans med Quarto ([*Se. Medium-post: Bibliography Management in Quarto with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)), samtidigt som citat hålls i synk.
+* Zotero är ett gratis, open-source verktyg för hantering av litteraturdata och relaterat forskningsmaterial (såsom PDF-filer). Den bästa prestandan för BibTeX i Zotero uppnås med **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** från retorque.
+* Den gratis, open-source mjukvaran JabRef är en BibTeX-stödd referenshanterare som körs på Windows, Mac och Linux. Den är baserad på Java och underhålls av JabRef e.V.
+

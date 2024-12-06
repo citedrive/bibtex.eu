@@ -1,0 +1,66 @@
+---
+title: BibTeX ile Referans Yönetimi, R Markdown Kullanırken -- Kısa Bir Rehber
+description: "Bu kısa rehber, BibTeX kullanarak referanslarınızı nasıl yöneteceğinizi gösterecektir. BibTeX, referanslarınızı basit ve kullanımı kolay bir formatta depolamanıza ve düzenlemenize olanak tanıyan bir referans yönetim yazılımıdır."
+sidebar:
+  label: R Markdown Kullanımı (Hızlı Başlangıç)
+sidebar_position: 6
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+R Markdown, tekrarlanabilir raporlar, makaleler, sunumlar ve daha fazlasını oluşturmak için harika bir araçtır. R Markdown'ı bu kadar güçlü kılan şeylerden biri, diğer araçlar ve yazılımlarla entegrasyon yeteneğidir. Bu araçlardan biri de LaTeX belgeleri için bir referans yönetim sistemi olan BibTeX'tir. BibTeX, belgelerinizde kaynakları kolayca alıntılamanızı ve bir kaynakça oluşturmanızı sağlar.
+
+<CiteDrive />
+
+## Adım 1: Bir .bib dosyası oluşturun ve bazı girdiler ekleyin.
+
+Önceki bölümde olduğu gibi, `bibliography.bib` gibi bir .bib dosyası oluşturuyoruz ve ardından bu dosyayı BibTeX girdileriyle dolduruyoruz.
+BibTeX girdileri şu formatta oluşturulur ve her bir literatür kaynağı (kitap, makale vb.) için alıntı yapmaya ve kaynakçaya dahil etmeye yeterli bilgi içerir.
+
+Önceki bölümden örnek olarak Ernest Hemingway'in "Yaşlı Adam ve Deniz" adlı kitabını alıntılıyoruz. Girdi şu şekilde olur:
+
+```latex
+@book{Hemingway1952,
+  title={Yaşlı Adam ve Deniz},
+  author={Hemingway, Ernest},
+  year={1952},
+  publisher={Charles Scribner's Sons}
+}
+```
+
+Bu girdinin "anatomisini" yine üç bileşeni inceleyerek, her BibTeX girdisinin nasıl tanımlandığını anlamak için çözüyoruz:
+
+* **Girdi tipi**: `@book` ile referansın `@type` şeması doğrultusunda tipini tanımlarız. `@article` gibi bilimsel makaleler için farklı türler mümkündür. BibTeX, hangi alanların isteğe bağlı olduğunu ve hangilerinin gerekli olduğunu belirtmeyi sever, böylece bunlar literatürde doğru şekilde gösterilebilir.
+* **Girdi alanları**: Bu örneğimizde, bunlar `title`, `author`, `year` ve `publisher` alanlarıdır. (Bkz. [fields](./fields))
+* **Alıntı anahtarı**: Bu örneğimizde `Hemingway1952` olup, LaTeX'teki metin içi alıntıyı göstermek için kullanılır, yani kaynağa atıfta bulunmak için. R Markdown'da bunu `[@Hemingway1952]` ile yaparız. Alıntı anahtarı herhangi bir dize olabilir - genellikle yazar, yıl ve başlıktan bir kelimenin kombinasyonu kullanılır.
+
+## Adım 2: Bir R Markdown belgesi oluşturun ve bağlayın
+
+BibTeX'i R Markdown ile entegre etmek çok basittir. Tek yapmanız gereken, YAML'de `bibliography: bibliography.bib` ile bib dosyasını belirtmek ve metin içi alıntıyı eklemek için `[@Hemingway1952]` kullanmaktır.
+
+```md
+---
+title: "R Markdown'da BibTeX referansları"
+author: "John Doe"
+date: '2022-07-19'
+bibliography: bibliography.bib
+output: html_document
+---
+
+
+## R Markdown'da BibTeX referansları
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent enim urna, dapibus et bibendum vel, consectetur et turpis.
+Cras a molestie nulla. [@Hemingway1952]
+
+
+```
+
+## Referans Yöneticileri
+
+BibTeX dosyalarını manuel olarak biçimlendirmek zaman alıcı olabilir, bu yüzden genellikle bir referans yöneticisi kullanmanız önerilir. İşte bunun için iyi olan bazıları:
+
+* [CiteDrive](https://www.citedrive.com/) bibtex destekli, işbirlikçi ve bulut tabanlı bir araçtır; projelerinizdeki referansları ve ekipleri yönetmenize olanak tanır. Overleaf'e tek tıkla dışa aktarma ([*Cf. Overleaf Blog Post - https://www.overleaf.com/blog/citedrive... | CiteDrive-Easy Reference Management for Overleaf*](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf)) ve R Markdown ([*Cf. Medium post: Bibliography Management in R Markdown with CiteDrive and RStudio*](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)) ile entegrasyon sunar, alıntıları senkronize tutar.
+* Zotero, bibliyografik verileri ve ilgili araştırma materyallerini (PDF dosyaları gibi) yöneten ücretsiz, açık kaynaklı bir literatür yönetim aracıdır. Zotero'da BibTeX için en iyi performans **[Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/)** ile sağlanır.
+* Ücretsiz ve açık kaynaklı yazılım JabRef, Windows, Mac ve Linux'ta çalışan bir BibTeX destekli referans yöneticisidir. Java tabanlıdır ve JabRef e.V. tarafından sürdürülmektedir.
