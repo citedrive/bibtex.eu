@@ -1,0 +1,56 @@
+---
+title: "LaTeX에서 BibTeX으로 웹사이트를 인용하려면 어떻게 하나요?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+LaTeX에서 웹사이트를 인용하는 방법은 여러 가지가 있습니다. 이 짧은 답변에서는 세 가지 방법을 소개하며, 가장 쉬운 방법은 마지막 예제에서 소개하는 CiteDrive 브라우저 확장 프로그램을 사용한 BibLaTeX입니다.
+
+<CiteDrive />
+
+:::tip
+[CiteDrive](https://www.citedrive.com/)는 BibTeX 기반의 협업 온라인 참고문헌 관리 도구로, [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) 및 [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)와 같은 출판 시스템과 자동으로 동기화됩니다. 이 도구는 브라우저에서 학술 논문을 올바른 BibTeX 형식으로 바로 저장할 수 있는 [브라우저 확장 프로그램](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370)을 제공하며, Overleaf 프로젝트에서 브라우저 창/탭 간 전환 없이 직접 인용할 수 있습니다. 이 확장 프로그램은 웹 페이지를 BibLaTeX 형식으로 저장하며, 제목, URL, 접속 날짜를 자동으로 캡처합니다.
+:::
+
+## BibTeX 사용하기
+
+BibTeX에서는 `@misc` 항목 유형을 사용하며, `note` 필드에 URL과 보통 접속 날짜를 지정하는 방식으로 대체합니다. 이 예제에서는 `usepackage{url}`을 통해 `url`(*또는 `hyperref`*) 패키지가 필요합니다.
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [접속 날짜: (접속 날짜를 입력하세요)]}
+}
+```
+
+또는, `howpublished` 필드를 사용할 수도 있습니다:
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {접속 날짜: (접속 날짜를 입력하세요)},
+	howpublished = {\url{https://www.citedrive.com/overleaf}}
+}
+```
+
+## BibLaTeX 사용하기
+
+BibLaTeX를 사용하는 경우, 추천드리는 방법으로, `@online` 항목 유형이 기본적으로 지원되어 추가 조정 없이 작동합니다. URL과 접속 날짜를 각각 `url` 및 `urldate` 필드에 입력할 수 있습니다.
+
+```latex
+@online{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	url          = {https://www.citedrive.com/overleaf},
+	urldate      = {접속 날짜를 입력하세요}
+}
+```
+
+## `natbib` 사용하기
+
+[나트빕(natbib)](/natbib)을 사용하여 웹 페이지를 인용하는 방법에 대해 자주 질문을 받습니다. 이는 BibTeX와 동일한 방식으로 작동한다는 점을 강조합니다. Natbib은 텍스트 내 인용 스타일링을 위한 도구이며, BibTeX을 백엔드로 사용합니다.

@@ -1,0 +1,21 @@
+---
+title: "Hvordan bruke BibTeX-kommandoer i LaTeX-dokumenter"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+For å bruke BibTeX i LaTeX, må du kjenne til følgende kommandoer: `\bibliographystyle{<stilnavn>}`, `\bibliography{bib-fil}` og `\cite{KEY}`. I denne korte veiledningen forklarer vi hva hver av disse kommandoene gjør, og hvordan du bruker dem i LaTeX-dokumentene dine.
+
+<CiteDrive />
+
+## bibliographystyle
+
+Sitasjonsstilen defineres med `\bibliographystyle{<stilnavn>}`. BibTeX-stilfiler kontrollerer utseendet på bibliografien og henvisningene. BibTeX-stilfiler har filendelsen `.bst` og inneholder instruksjoner i et stakkbasert programmeringsspråk som bestemmer formateringen av bibliografiske oppføringer. Standardstilene som følger med LaTeX er `plain`, `unsrt`, `alpha` og `abbrv`. Pakker som natbib og jurabib gir i tillegg omfattende funksjoner for henholdsvis naturvitenskap og humaniora.
+
+## bibliography
+
+Bibliografien opprettes i dokumentet med kommandoen `\bibliography{bibfile}`, der navnet på BibTeX-filen med litteraturreferansene er `bibfile.bib`.
+
+## cite
+
+I et LaTeX-dokument erstattes kommandoen `\cite{KEY}` med henvisningen som er gitt i BibTeX-filen med denne ID-en, som for eksempel vises som `(Forfatter, År)` i den endelige PDF-en.

@@ -1,0 +1,21 @@
+---
+title: "LaTeX 문서를 위한 BibTeX 관련 명령어 사용법"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+LaTeX에서 BibTeX를 사용하려면 `\bibliographystyle{<스타일 이름>}`, `\bibliography{bib-file}`, `\cite{KEY}`와 같은 명령어를 알아야 합니다. 이 간단한 가이드에서는 각 명령어의 역할과 LaTeX 문서에서 이를 사용하는 방법을 설명합니다.
+
+<CiteDrive />
+
+## bibliographystyle
+
+`bibliographystyle{<스타일 이름>}` 명령어는 인용 스타일을 정의합니다. BibTeX 스타일 파일은 참고문헌과 인용의 형식을 제어하며 `.bst` 확장자를 가집니다. 이 파일은 스택 기반 프로그래밍 언어로 작성되어 참고문헌 항목의 서식을 제어합니다. 기본적으로 LaTeX는 `plain`, `unsrt`, `alpha`, `abbrv`와 같은 스타일을 제공합니다. 또한, `natbib` 및 `jurabib`과 같은 LaTeX 패키지는 자연과학 및 인문학 분야의 확장된 기능을 제공합니다.
+
+## bibliography
+
+`bibfile.bib`와 같은 문헌 기록이 포함된 BibTeX 파일의 파일 이름이 `bibfile`일 경우, `\bibliography{bibfile}` 명령어를 사용하여 문서에서 참고문헌을 생성합니다.
+
+## cite
+
+LaTeX 문서에서 `\cite{KEY}` 명령어는 최종 PDF에서 BibTeX 파일에 정의된 해당 ID의 인용으로 대체됩니다. 예를 들어, 결과물에서는 `(Author, Year)` 형식으로 나타납니다.

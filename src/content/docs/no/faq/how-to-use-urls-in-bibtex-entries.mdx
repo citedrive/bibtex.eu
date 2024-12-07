@@ -1,0 +1,40 @@
+---
+title: "Hvordan bruke URL-er i BibTeX-oppsett"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Hvis du bruker BibTeX til å lage bibliografier for forskningsartiklene dine, har du kanskje lurt på hvordan du inkluderer URL-er i oppføringene dine.
+
+URL-feltet er ennå ikke formelt støttet i BibTeX, selv om det var planlagt for versjon 1.0 av Oren Patashnik. Til tross for dette daterer debatten om denne versjonen og dens intensjoner seg tilbake til [Patashniks artikkel fra 2003](https://tug.org/TUGboat/tb24-1/patashnik.pdf), som gradvis blir erstattet av Biber-støttet biblatex.
+
+Derfor vil det sannsynligvis være nødvendig å bruke en av følgende løsninger, for eksempel når du siterer nettsteder:
+
+<CiteDrive />
+
+## Bruk note-feltet:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## Bruk howpublished-feltet:
+
+```latex
+@misc{...,
+  note = "Available from \url{http://...}"
+}
+```
+
+## Bruk biblatex og det innebygde URL-feltet:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+Hvis du velger biblatex, må du bruke Biber som backend i stedet for BibTeX. Hvis du vil vite mer om biblatex og Biber, kan du lese vår kom-i-gang-guide.
+Hvis du har spørsmål eller kommentarer, gi oss gjerne beskjed. Vi håper dette var nyttig!

@@ -1,0 +1,40 @@
+---
+title: "BibTeX 항목에 URL을 포함하는 방법"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX를 사용해 연구 논문의 참고문헌을 작성할 때, URL을 항목에 포함하는 방법이 궁금할 수 있습니다.
+
+BibTeX에서는 URL 필드 유형이 공식적으로 지원되지 않지만, Oren Patashnik의 BibTeX 버전 1.0 계획에 포함되었다는 논의가 있었습니다. 그러나 이 계획과 관련된 논의는 [Patashnik의 2003년 논문](https://tug.org/TUGboat/tb24-1/patashnik.pdf)으로 거슬러 올라가며, 현재는 Biber를 사용하는 biblatex로 점차 대체되고 있습니다.
+
+따라서 웹사이트를 인용할 때 다음과 같은 방법 중 하나를 사용해야 할 가능성이 높습니다:
+
+<CiteDrive />
+
+## note 필드 유형 사용:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## howpublished 필드 유형 사용:
+
+```latex
+@misc{...,
+  note = "Available from \url{http://...}"
+}
+```
+
+## biblatex와 내장 URL 필드 유형 사용:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+biblatex를 선택하면 BibTeX 대신 Biber를 백엔드로 사용해야 합니다. biblatex와 Biber에 대해 더 알고 싶다면 저희의 시작 가이드를 확인해 보세요.  
+질문이나 의견이 있다면 언제든지 알려주세요. 이 정보가 도움이 되었기를 바랍니다!

@@ -1,0 +1,43 @@
+---
+title: "BibTeX 참조 관리를 위한 .BIB 파일을 어떻게 생성하나요?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`BibTeX` 참조를 관리할 방법을 찾고 있다면 `.BIB 파일`을 어떻게 생성해야 할지 궁금할 수 있습니다. 이 글에서는 .BIB 파일을 생성하는 방법을 보여드리며, 이를 효과적으로 사용하는 몇 가지 팁도 제공합니다.
+
+:::tip
+[CiteDrive](https://www.citedrive.com/)는 BibTeX 기반의 웹 협업 참조 관리 도구로, [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) 및 [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619)와 같은 출판 시스템과 자동으로 동기화되며, Bib 파일의 형식을 자동으로 처리해줍니다.
+:::
+
+<CiteDrive />
+
+## 수작업으로 BIB 파일 생성하기
+
+`.BIB 파일`을 생성하는 것은 사실 매우 간단합니다. `.bib` 확장자를 가진 텍스트 파일을 생성한 후, BibTeX 참조를 한 줄씩 추가하면 됩니다. 예를 들어:
+
+```latex
+@article{smith201X,
+	title        = {An interesting article},
+	author       = {John Smith},
+	year         = {201X},
+	journal      = {Journal of Interesting Articles}
+}
+```
+
+`.BIB 파일`을 생성한 후에는 LaTeX 문서에서 `\bibliography{파일이름}` 명령을 사용하여 참조할 수 있습니다. 예를 들어:
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{filename}
+
+\end{document}
+```
+
+이게 전부입니다! `.BIB 파일`을 생성하는 것은 BibTeX 참조를 관리하는 간단한 방법입니다. BibTeX와 관련된 더 많은 팁과 트릭은 저희의 다른 글들을 참고하세요!

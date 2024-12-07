@@ -1,0 +1,36 @@
+---
+title: "Når bør du bruke anførselstegn vs. krøllparenteser for .bib-filens felter?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Har du noen gang lurt på når du bør bruke anførselstegn eller krøllparenteser for å omslutte feltene i .bib-filen din? Betyr det egentlig noe? Svaret er: det spiller ingen rolle.
+Noen foretrekker å bruke `""` kun av estetiske grunner, mens andre foretrekker å bruke `{}`, og argumenterer for at det er å foretrekke hvis du trenger å bruke et `"`-tegn i et felt.
+Merk at disse er de eneste akseptable måtene å omslutte feltene på.
+
+<CiteDrive />
+
+## Eksempler
+
+### Omslutte feltene med `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Use the date of access)]}
+}
+```
+
+### Omslutte feltene med `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive brings reference management to Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Det er ikke noe riktig eller galt svar, så lenge informasjonen i feltet er omsluttet på riktig måte. Så hvorfor ikke eksperimentere og finne ut hvilken metode som fungerer best for deg?
