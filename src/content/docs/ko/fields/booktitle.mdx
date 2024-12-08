@@ -1,0 +1,61 @@
+---
+title: "BibTeXフィールドタイプ: booktitle"
+sidebar:
+  label: booktitle
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+学術論文において、本や会議録の一部（セクションや章）を正確に引用することは非常に重要です。BibTeXの`booktitle`フィールドは、このプロセスで重要な役割を果たします。このフィールドは、引用したセクションを含む大きな作品のタイトルを指定するためのものです。ここでは、`booktitle`フィールドを使用して、`incollection`および`inproceedings`エントリで詳細で正確な引用を作成する方法を詳しく解説します。
+
+<CiteDrive />
+
+## `Booktitle`フィールドの理解
+
+`booktitle`フィールドは、本や会議録といった大きな作品の一部であるセクション、章、または記事を引用したい場合に使用します。このフィールドは、個々のセクションのタイトル（`title`フィールド）と、大きな作品全体のタイトルを明確に区別するためのものです。BibTeXエントリに`booktitle`フィールドを含めることで、引用されたセクションがどのような文脈で現れるかを読者に明確に伝えることができます。
+
+### 書式ガイドライン
+
+`booktitle`フィールドを適切に使用するためには、標準的なBibTeXフォーマットに従う必要があります。以下は、`incollection`エントリで`booktitle`を含める基本構造の例です：
+
+```bibtex
+@incollection{ReferenceID,
+  author    = {著者名},
+  title     = {セクションのタイトル},
+  booktitle = {大きな作品のタイトル},
+  year      = {出版年},
+  pages     = {ページ範囲},
+  publisher = {出版社名},
+  address   = {出版地},
+  editor    = {編集者名},
+}
+```
+
+### 実例
+
+以下は、実際に`booktitle`フィールドを使用した引用例です：
+
+```bibtex
+@incollection{Mihalcea2006Knowledge,
+	title     = {Knowledge-Based Methods for {WSD}},
+	author    = {Rada Mihalcea},
+	year      = 2006,
+	booktitle = {Word Sense Disambiguation: Algorithms and Applications},
+	publisher = {Springer},
+	address   = {Dordrecht, the Netherlands},
+	pages     = {107--132},
+	editor    = {Eneko Agirre and Philip Edmonds},
+}
+```
+
+この例では、`booktitle`フィールドが引用セクションの含まれる大きな作品を明確に示しており、出版の文脈を包括的に提供しています。
+
+### 効果的な使用のポイント
+
+1. **一貫性**：すべての`booktitle`エントリで一貫したフォーマットを維持して、統一感のある文献目録を作成しましょう。
+2. **正確性**：`booktitle`フィールドが大きな作品を正確に表していることを確認し、読者を誤解させないようにしましょう。
+3. **包括的な情報**：編集者名や出版地などの詳細を含めて、引用をより豊かにしましょう。
+
+## 結論
+
+BibTeXエントリで`booktitle`フィールドを効果的に使用することで、セクションや章の文脈を読者に伝える、より詳細で豊かな文献目録を作成できます。このような実践は、より正確で詳細な帰属を確保することで、学術的な信頼性を向上させます。適切に引用をカスタマイズするために、常に特定のガイドラインやスタイル（APA、MLAなど）を参照してください。

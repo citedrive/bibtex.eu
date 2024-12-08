@@ -1,0 +1,31 @@
+---
+title: "BibTeX에서 음악을 인용하는 방법"
+tags: [biblatex, bibtex, 음악]
+date: 2022-12-18
+---
+
+BibTeX에서 음악을 인용하려면 `@misc` 항목 유형을 사용하고 다음 필드를 포함할 수 있습니다:
+
+- `author`: 음악을 만든 작곡가 또는 아티스트.
+- `title`: 음악 작품의 제목.
+- `howpublished`: 음악을 접근한 형식 (예: CD, 비닐, 온라인 스트리밍 서비스).
+- `year`: 음악이 발행되거나 녹음된 연도.
+
+다음은 BibTeX에서 음악 작품을 인용하는 예시입니다:
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+```bibtex
+@misc{beethoven_symphony_2018,
+	title        = {Symphony No. 5 in C Minor},
+	author       = {Beethoven, Ludwig van},
+	year         = 2018,
+	howpublished = {CD}
+}
+```
+
+특정 음악 녹음을 인용할 때는 `@music` 항목 유형을 사용할 수 있습니다. 이 항목 유형은 `performer`와 `publisher`와 같은 추가 필드를 포함하여 녹음에 대한 보다 구체적인 정보를 제공할 수 있습니다.
+
+도움이 되었기를 바랍니다! 질문이 있으면 알려주세요.

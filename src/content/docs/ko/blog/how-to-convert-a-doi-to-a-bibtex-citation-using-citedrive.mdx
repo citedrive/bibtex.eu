@@ -1,0 +1,36 @@
+---
+title: "CiteDrive를 사용하여 DOI를 BibTeX 인용으로 변환하는 방법"
+tags: [citedrive, bibtex, doi]
+date: 2022-08-12
+---
+import CiteDrive from '@components/CiteDrive.astro';
+
+연구자라면 참고문헌과 인용의 중요성을 잘 알고 계실 겁니다. 그리고 [CiteDrive](https://www.citedrive.com/)를 사용하고 있다면, 연구 논문을 위한 참고문헌과 인용을 가장 쉽게 생성할 수 있는 방법임을 알고 계실 겁니다. 그런데 ISBN이나 URL 대신 [DOI](/fields/doi/)를 접하게 된다면 어떻게 해야 할까요? 걱정하지 마세요. 우리가 도와드리겠습니다! 이번 블로그 포스트에서는 CiteDrive를 사용하여 DOI를 BibTeX 인용으로 변환하는 방법을 소개하겠습니다. 시작해봅시다!
+
+<CiteDrive />
+
+## 브라우저 확장 프로그램 사용하기
+DOI를 BibTeX 인용으로 변환하는 것은 'CiteDrive Companion' 브라우저 확장 프로그램을 사용하면 쉽습니다. 마우스로 DOI를 선택하고, 마우스 오른쪽 버튼을 눌러서 'Search doi'를 선택하세요.
+
+![CiteDrive - 예시](@assets/images/tutorial/browserextension-search-doi.png)
+
+그 후, BibTeX 항목 미리보기가 나타나며, 이를 변경한 후 원하는 프로젝트에 저장할 수 있습니다.
+
+![CiteDrive - 예시](@assets/images/tutorial/browserextension-bibtex-preview.png)
+
+이제 끝났습니다! 아래 브라우저에서 Companion을 사용할 수 있습니다:
+
+* [CiteDrive Companion Plugin for Google Chrome](https://chrome.google.com/webstore/detail/citedrive-bibtex-companio/gmmonfphegngpcbcapfbgembkjeookik)
+* [CiteDrive Companion Plugin for Mozilla Firefox](https://addons.mozilla.org/af/firefox/addon/citedrive-companion/)
+* [CiteDrive Companion Plugin for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/citedrive-bibtex-compan/kpmepfpbjehnlgfbcnbmgihklkkmfnpo)
+
+## 온라인 도구 사용하기:
+브라우저 확장 프로그램을 사용하지 않으신다면 걱정하지 마세요. CiteDrive를 사용하여 DOI를 BibTeX 인용으로 변환할 수 있습니다. CiteDrive 웹사이트로 가셔서 'Enter DOI' 필드에 DOI를 붙여넣으세요. 이 필드는 상단 내비게이션 바에서 더하기 기호를 클릭한 후 'Search via Doi' 아래에서 찾을 수 있습니다. 그런 다음 'Convert' 버튼을 클릭하면 자동으로 BibTeX 인용이 생성됩니다.
+
+![CiteDrive - 예시](@assets/images/tutorial/citedrive-search-doi.png)
+
+이 블로그 포스트가 도움이 되셨기를 바랍니다. 질문이 있으시면 언제든지 문의해 주세요. 항상 기꺼이 도와드리겠습니다!
+
+CiteDrive는 연구 논문을 위한 참고문헌과 인용을 가장 쉽게 생성할 수 있는 방법입니다. 오늘 CiteDrive를 사용하여 DOI를 BibTeX 인용으로 변환해 보세요! CiteDrive.com에서 무료로 사용해보세요.
+
+행복한 인용을 기원합니다! :)

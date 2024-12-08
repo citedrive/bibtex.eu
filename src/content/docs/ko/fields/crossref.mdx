@@ -1,0 +1,80 @@
+---
+title: "BibTeXフィールドタイプ: crossref"
+sidebar:
+  label: crossref
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeXの`crossref`フィールドは、特に`proceedings`やコレクションのような同一の情報を複数のエントリで引用する場合に、参照プロセスを簡素化し効率化するために設計されています。同じ詳細を複数のエントリに繰り返し記載する代わりに、`crossref`を使用して共通フィールドを1つのエントリにまとめ、冗長性を削減しながらデータベースをクリーンに保つことができます。以下では、`crossref`フィールドの機能と応用について詳しく解説します。
+
+<CiteDrive />
+
+### 概要
+
+典型的な参考文献では、会議録や論文集のような大きな作品の複数の部分を参照することは珍しくありません。こうした状況で`crossref`フィールドが役立ちます。`crossref`を使用することで、大きな作品の共有属性を1つのエントリに定義し、他の引用でこのエントリを参照することができます。これにより、参考文献の統一性を確保し、データベースの一貫性を保つことができます。
+
+### 書式と構造
+
+`crossref`機能を実装するには、`crossref = {citationkey}`構文を使用します。ここで`citationkey`は、クロス参照されるエントリの一意の識別子です。この識別子は一意である必要があり、クロスリファレンスの整合性を維持します。
+
+基本構造は以下の通りです：
+
+```bibtex
+@entrytype{UNIQUECITATIONKEY,
+    commonfield1 = {共通データ1},
+    commonfield2 = {共通データ2},
+    ...
+}
+
+@entrytype{citationkey1,
+    uniquefield1 = {個別データ1},
+    crossref     = {UNIQUECITATIONKEY},
+}
+
+@entrytype{citationkey2,
+    uniquefield2 = {個別データ2},
+    crossref     = {UNIQUECITATIONKEY},
+}
+```
+
+### 実例
+
+以下は、同じ会議録から複数のエントリを効率的に引用するために`crossref`フィールドを使用した具体例です：
+
+```bibtex
+@proceedings{ASE2023,
+    title       = {Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering},
+    year        = 2023,
+    publisher   = {IEEE},
+    address     = {San Francisco, California, USA},
+}
+
+@inproceedings{Smith2023,
+    author      = {John Smith},
+    title       = {Automated Code Generation: Innovations and Challenges},
+    pages       = {15-29},
+    crossref    = {ASE2023},
+}
+
+@inproceedings{Doe2023,
+    author      = {Jane Doe},
+    title       = {Towards a New Era of Software Testing},
+    pages       = {30-45},
+    crossref    = {ASE2023},
+}
+```
+
+この例では、`ASE2023`という引用キーを使用して2つの異なる`inproceedings`エントリをクロス参照し、一貫性を維持しつつ冗長な情報を削減しています。
+
+### 利用のポイント
+
+1. **一意の引用キー**：クロス参照されるエントリを含め、各エントリに一意の引用キーを割り当て、構造を明確に保ちましょう。
+2. **適切な用途**：`crossref`は特に会議録に便利ですが、複数の参考文献が1つのソースから引用される場合、`incollection`などのエントリタイプにも適用できます。
+3. **データの整合性**：`crossref`を活用することで、複数のエントリにわたる共通フィールドの不整合を最小限に抑えることができます。
+
+### 結論
+
+BibTeXの`crossref`フィールドを活用することで、引用の簡素化、組織化、および効率化を図ることができます。冗長性を最小限に抑え、一貫性を促進することで、学術基準に準拠したクリーンでプロフェッショナルな参考文献を維持できます。
+
+`crossref`フィールドが正確に実装されていることを確認し、学術論文において明確で一貫性のある参考文献リストを作成してください。

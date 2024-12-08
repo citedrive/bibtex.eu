@@ -1,0 +1,55 @@
+---
+title: "Overleaf를 활용한 natbib로 인용 및 논문 작성"
+tags: ["학술 글쓰기", "natbib", "LaTeX", "참고문헌 관리", "Overleaf", "BibTeX", "BibLaTeX", "Zotero", "Mendeley", "연구", "글쓰기 팁", "학계", "학술적 글쓰기", "참고문헌"]
+date: 2023-01-27
+---
+
+Overleaf는 실시간으로 문서를 협업할 수 있는 인기 있는 온라인 LaTeX 편집기입니다. Overleaf의 훌륭한 기능 중 하나는 natbib 패키지를 사용하여 문서에 인용과 참고문헌을 쉽게 추가할 수 있다는 점입니다. 이번 글에서는 Overleaf에서 natbib을 사용하여 인용과 참고문헌을 추가하는 기본적인 방법을 다룹니다.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## 인용 추가하기
+
+Overleaf에서 인용을 추가하려면 먼저 문서에 natbib 패키지를 추가해야 합니다. 이를 위해 문서의 전반부에 다음 줄을 추가하세요:
+
+```latex
+\usepackage[numbers]{natbib}
+```
+
+이 명령을 추가하면 `\citep` 및 `\cite` 명령을 사용하여 문서에 인용을 추가할 수 있습니다. `\citep` 명령은 본문에서 괄호 안에 숫자로 인용을 표시하고, `\cite` 명령은 본문 내에 직접 숫자로 인용을 표시합니다.
+
+예를 들어, Smith et al. (2020)의 논문을 본문에서 인용하려면 다음과 같이 입력합니다:
+
+```latex
+According to \citep{Smith2020}, this is an important finding.
+```
+
+이 명령은 다음과 같이 표시됩니다:
+
+> According to (Smith et al., 2020), this is an important finding.
+
+## 참고문헌 추가하기
+
+문서에 참고문헌을 추가하려면 먼저 모든 인용 정보가 포함된 `.bib` 파일을 생성해야 합니다. `.bib` 파일은 메인 `.tex` 파일과 동일한 디렉토리에 저장해야 합니다. [CiteDrive](https://www.citedrive.com/)를 사용하면 이 `.bib` 파일을 간단히 생성할 수 있습니다. CiteDrive는 Overleaf와 연결되어 자동으로 bib 파일을 생성해 주며, 자세한 내용은 [Overleaf 블로그 포스트](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)를 참고하세요.
+
+`.bib` 파일을 생성한 후, 다음 명령을 문서에 추가하여 참고문헌을 삽입합니다:
+
+```latex
+\bibliography{mybibfile}
+```
+
+여기서 `mybibfile`은 `.bib` 파일의 이름입니다.
+
+참고문헌 스타일을 지정하려면 다음 명령을 문서에 추가합니다:
+
+```latex
+\bibliographystyle{plainnat}
+```
+
+이 명령은 참고문헌을 plain 스타일로 형식화합니다. 다양한 참고문헌 스타일이 제공되며, 스타일 목록은 [여기](https://www.overleaf.com/learn/latex/Bibliography_styles)에서 확인할 수 있습니다.
+
+## 결론
+
+이번 글에서는 Overleaf와 natbib을 사용하여 문서에 인용과 참고문헌을 추가하는 기본적인 방법을 살펴보았습니다. Overleaf의 간단한 인터페이스와 natbib의 강력한 관리 기능을 활용하면 참고문헌을 쉽게 추적하고 요구되는 스타일로 참고문헌을 형식화할 수 있습니다. 또한 CiteDrive를 사용하면 bib 파일 생성을 간편하게 처리할 수 있어 많은 시간과 노력을 절약할 수 있습니다.

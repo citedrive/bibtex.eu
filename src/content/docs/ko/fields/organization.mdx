@@ -1,0 +1,57 @@
+---
+title: "BibTeXフィールドタイプ: organization"
+sidebar:
+  label: organization
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeXにおける`organization`フィールドは、引用されている文書を発行したり、イベントを主催したりした組織の名前を指定するために使用されます。これには、会社、機関、または会議、ワークショップ、マニュアルなどをスポンサーしたり主催したりした団体が含まれます。`organization`フィールドを含めることで、読者に文書の背後にある団体の明確なコンテキストを提供し、その信頼性や権威を判断するための重要な情報を提供します。
+
+<CiteDrive />
+
+このフィールドは通常、`@proceedings`や`@manual`のエントリで使用されますが、使用するビブリオグラフィースタイルの具体的な要件に応じて、他のエントリタイプにも現れることがあります。
+
+## フォーマット
+
+`organization`フィールドを指定するフォーマットは以下の通りです：
+
+```bibtex
+@entry_type{citation_key,
+  ...
+  organization={Organization Name},
+  ...
+}
+```
+
+ここで、"entry_type"はBibTeXエントリのタイプ（例えば`@proceedings`や`@manual`）、"citation_key"はエントリの一意の識別子、"Organization Name"は関与した組織の名前です。
+
+## 例
+
+以下は、`organization`フィールドを異なる文脈で使用する方法を示すいくつかの例です：
+
+### 例1: 会議の予稿集
+
+```bibtex
+@proceedings{ICML2023,
+  title = {Proceedings of the 40th International Conference on Machine Learning},
+  year = {2023},
+  organization = {International Machine Learning Society},
+}
+```
+
+この例では、`organization`フィールドは会議の予稿集を主催した団体を指定しています。
+
+### 例2: マニュアル
+
+```bibtex
+@manual{UserGuide2022,
+  title = {XYZ Software User Guide},
+  year = {2022},
+  organization = {XYZ Software Inc.},
+}
+```
+
+ここでは、`organization`フィールドはソフトウェアマニュアルを発行した会社を示しています。
+
+`organization`フィールドをBibTeXエントリに含めることで、参照の完全で詳細な情報を提供し、ソース資料の識別と取得をより簡単にすることができます。

@@ -1,0 +1,32 @@
+---
+title: "BibTeXフィールドタイプ: journal"
+sidebar:
+  label: journal
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`journal`フィールドは、記事が発表されたジャーナルの名前を指定するために使用されます。このフィールドは、さまざまな出版物から記事を区別し、参照された作品に正しい文脈を提供するために重要です。
+
+<CiteDrive/>
+
+以下は、`@article`エントリで`journal`フィールドを使用する方法を示すテンプレートです：
+
+```bibtex
+@article{ ... ,
+ journal = {ジャーナル名},
+}
+```
+
+上記の形式では、「ジャーナル名」を実際に記事が発表されたジャーナルの名前に置き換えます。この情報を正確に入力することは、正しい引用を行うために重要です。
+
+例えば、以下は`journal`フィールドの正しい使い方を示す例です：
+
+```bibtex
+@article{smith2023effects,
+ title = {XYZがABCに与える影響},
+ author = {Smith, John},
+ journal = {ABC研究ジャーナル},
+ year = {2023},
+}
+```

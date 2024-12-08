@@ -1,0 +1,57 @@
+---
+title: "BibTeXフィールドタイプ: publisher"
+sidebar:
+  label: publisher
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`publisher`フィールドは、`@book`、`@inbook`、`@incollection`などのBibTeXエントリで使用され、引用する作品を出版した出版社の名前を指定します。引用に出版社を含めることで、完全で正確な参照が提供され、読者が元の資料を見つけやすくなります。
+
+<CiteDrive />
+
+BibTeXエントリに出版社を含める際は、出版社の正式かつ完全な名前を使用することをお勧めします。これにより、引用がプロフェッショナルで信頼性のあるものとなり、同名の他の出版社との混乱を避けることができます。
+
+## 例
+
+以下に、異なるBibTeXエントリで出版社を適切に指定する方法を示します：
+
+### 本
+
+```bibtex
+@book{key1,
+  title = {The Art of Scientific Research},
+  author = {John Doe},
+  year = {2023},
+  publisher = {Cambridge University Press},
+}
+```
+
+### 本の章（Inbook）
+
+```bibtex
+@inbook{key2,
+  title = {Chapter on Quantum Mechanics},
+  author = {Jane Doe},
+  year = {2023},
+  publisher = {Oxford University Press},
+  pages = {45--78},
+  editor = {Sarah Smith},
+  booktitle = {Modern Physics},
+}
+```
+
+### 収集作品（Incollection）
+
+```bibtex
+@incollection{key3,
+  title = {Essay on Environmental Conservation},
+  author = {Alex Johnson},
+  year = {2023},
+  publisher = {Springer},
+  booktitle = {Sustainable Development: Theories and Practices},
+  editor = {Mark Lee},
+}
+```
+
+`publisher`フィールドは通常、`title`、`author`、`year`などの他の重要なフィールドとともに使われ、完全な引用を提供します。また、使用する引用スタイルによって、出版社のフィールドのフォーマットや配置が異なることがあるので、必ず遵守するスタイルガイドラインに従うことが重要です。

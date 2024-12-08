@@ -1,0 +1,41 @@
+---
+title: "Overleaf 인용 소개"
+tags: [AcademicWriting, LaTeX, CitationManagement, Overleaf, BibTeX, BibLaTeX, natbib, Zotero, Mendeley, Research, WritingTips, Academia, ScholarlyWriting, References]
+date: 2023-01-26
+---
+
+학술 작성에서 적절한 인용은 연구에서 사용한 출처에 대한 신뢰를 주기 위해 필수적입니다. Overleaf는 사용자가 학술 문서를 쉽게 작성하고 협업할 수 있게 해주는 인기 있는 온라인 LaTeX 편집기입니다. Overleaf는 또한 BibTeX, NatBib, BibLaTeX를 포함한 여러 강력한 인용 관리 도구를 제공합니다.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## 인용 추가하기
+
+Overleaf에서 인용을 추가하려면 먼저 출처에 대한 정보를 포함하는 `.bib` 파일을 생성해야 합니다. 각 출처의 저자, 제목, 출판일 및 기타 관련 정보를 이 파일에 포함해야 합니다. `.bib` 파일을 수동으로 작성할 수도 있고, 웹 기반 BibTeX/BibLaTeX 관리 도구인 [CiteDrive](https://www.citedrive.com/)를 사용하여 자동으로 작성할 수도 있습니다. **CiteDrive**는 Overleaf와 통합되어 LaTeX 문서와 모든 참조를 동기화 상태로 유지합니다. 자세한 정보는 **Overleaf.com**에서 확인할 수 있습니다: 
+[Overleaf.com | Blog - Overleaf, CiteDrive, BibTeX/BibLaTeX와 함께하는 더 나은 참고문헌 관리 — 3.0 및 업데이트된 가이드](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+
+`.bib` 파일이 준비되면 `\cite` 명령어를 사용하여 Overleaf 문서에 인용을 추가할 수 있습니다. 예를 들어, `example_source`라는 키를 가진 출처를 인용하려면 `\cite{example_source}` 명령어를 사용합니다.
+
+또한 `\citep`와 `\citet` 명령어를 사용하여 인용 형식을 지정할 수 있습니다. `\citep` 명령어는 텍스트 내에서 괄호로 인용할 때 사용되며, `\citet` 명령어는 저자-연도 형식의 인용에 사용됩니다.
+
+## 출처 관리하기
+
+Overleaf는 출처를 관리하고 `.bib` 파일을 최신 상태로 유지하는 것을 쉽게 만들어줍니다. 새 출처를 추가하고, 기존 출처를 수정하며, `.bib` 파일을 다른 인용 관리 도구로 가져오거나 내보낼 수 있습니다.
+
+또한 `\bibliography` 명령어를 사용하여 문서 끝에 자동으로 참고문헌을 생성할 수 있습니다. 이 명령어는 `.bib` 파일의 이름을 인수로 받아들이며, 선택한 인용 스타일에 따라 출처를 자동으로 형식화하고 정리합니다.
+
+## 올바른 패키지 사용하기
+
+Overleaf에서 인용을 위한 패키지를 선택하는 것은 특정 요구 사항과 선호도에 따라 달라집니다.
+
+- **BibTeX**는 가장 전통적이고 널리 사용되는 LaTeX 인용 관리 패키지입니다. 사용하기 간단하고 다양한 인용 스타일을 지원합니다. 그러나 다른 두 옵션만큼 인용 형식에 대한 유연성과 제어를 제공하지는 않습니다.
+* ***[natbib](/natbib)**는 BibTeX의 확장 기능으로, 인용 관리의 고급 기능과 유연성을 제공합니다. 특히 저자-연도 인용 스타일에 유용하며, 텍스트 내 인용 형식을 사용자 지정할 수 있습니다.
+
+- **BibLaTeX**는 BibTeX의 현대적이고 강력한 대안입니다. 로컬화, 고급 정렬, 다양한 유형의 항목을 지원하는 고급 기능을 제공합니다. 또한 모든 서지 데이터를 유니코드로 처리할 수 있으며, BibTeX에서 지원하는 대부분의 인용 스타일과 호환됩니다.
+
+요약하면, 간단하고 널리 지원되는 옵션을 원한다면 BibTeX를 사용하세요. 형식 제어와 고급 기능을 원한다면 BibLaTeX나 natbib을 사용하세요.
+
+## 결론
+
+인용 관리 작업은 번거로울 수 있지만, Overleaf는 내장된 인용 도구로 이를 쉽게 만들어줍니다. Overleaf를 사용하면 출처를 쉽게 추가, 수정 및 관리할 수 있으며, 문서 끝에 자동으로 참고문헌을 생성할 수 있습니다. 학생, 연구원 또는 전문가 학자든, Overleaf는 고품질의 정확한 인용이 포함된 문서를 손쉽게 작성할 수 있도록 도와주는 강력한 도구입니다.
