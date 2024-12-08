@@ -1,0 +1,57 @@
+---
+title: "BibTeX 字段类型：publisher"
+sidebar:
+  label: publisher
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`publisher` 字段用于在各种 BibTeX 条目中，如 `@book`、`@inbook` 或 `@incollection`，指定出版该作品的出版商。将出版商包含在引用中有助于提供全面和精确的参考，这可以帮助读者定位原始来源。
+
+<CiteDrive />
+
+在 BibTeX 条目中添加出版商时，请确保使用出版商的完整官方名称。这将确保引用既专业又可信。此外，还能避免与其他可能有类似名称的出版商产生混淆。
+
+## 示例
+
+以下是一些示例，展示如何在不同的 BibTeX 条目中正确指定出版商：
+
+### 书籍
+
+```bibtex
+@book{key1,
+  title = {科学研究的艺术},
+  author = {John Doe},
+  year = {2023},
+  publisher = {剑桥大学出版社},
+}
+```
+
+### 书中的章节
+
+```bibtex
+@inbook{key2,
+  title = {量子力学章节},
+  author = {Jane Doe},
+  year = {2023},
+  publisher = {牛津大学出版社},
+  pages = {45--78},
+  editor = {Sarah Smith},
+  booktitle = {现代物理学},
+}
+```
+
+### 论文集中的章节
+
+```bibtex
+@incollection{key3,
+  title = {关于环境保护的文章},
+  author = {Alex Johnson},
+  year = {2023},
+  publisher = {Springer},
+  booktitle = {可持续发展：理论与实践},
+  editor = {Mark Lee},
+}
+```
+
+请注意，`publisher` 字段通常与其他重要字段如 `title`、`author`、`year` 等一起使用，以提供完整的引用。还需注意，根据所使用的引用样式，出版商字段的格式和位置可能有所不同，因此务必遵循所依照的具体样式指南。

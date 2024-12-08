@@ -1,0 +1,63 @@
+---
+title: "BibTeX 字段类型：doi"
+sidebar:
+  label: doi
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`doi` 字段是现代引用中不可或缺的一部分，它提供了一种无缝且永久的方法，用于定位数字对象，如期刊文章、研究报告和数据集。本文将深入探讨 `doi` 字段在 BibTeX 中的功能和重要性，并提供其正确使用的指导。
+
+<CiteDrive />
+
+### 概述
+
+数字对象标识符（DOI）是分配给数字对象的唯一字母数字字符串，用于方便地定位其在互联网上的位置。作为识别电子资源的标准化方法，DOI 即使在项目的 URL 发生变化时仍然保持稳定，确保引用的长期有效性。
+
+BibTeX 中的 `doi` 字段用于记录此标识符，确保引用的准确性和持久性。尽管它通常出现在 `article` 类型的条目中，它也可以用于其他类型，如 `book`、`chapter`、`inproceedings` 或 `conference` 条目，尽管使用频率较低。无论是哪种条目类型，`doi` 字段都是可选的。
+
+### 语法和结构
+
+要正确地将 DOI 纳入你的 BibTeX 条目，请遵循以下格式：
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  doi={https://doi.org/xxxxx},
+  ...
+}
+```
+
+`doi` 字段包含完整的 DOI URL，通常以 "[https://doi.org/](https://doi.org/)" 开头，后跟一个唯一的标识符字符串。
+
+### 示例
+
+以下是一个包含 DOI 的 BibTeX 条目的示例：
+
+```bibtex
+@article{steinbeck2003chemistry,
+  title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
+  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  journal={Journal of chemical information and computer sciences},
+  volume={43},
+  number={2},
+  pages={493--500},
+  year={2003},
+  publisher={ACS Publications},
+  doi={https://doi.org/10.1021/ci025584y},
+}
+```
+
+在此示例中，`doi` 字段包含了指向参考文章的永久 URL。
+
+### 使用技巧
+
+1. **查找 DOI**：对于学术文章，DOI 通常可以在文章的首页或文章所在的在线数据库中找到。
+2. **交叉引用**：在你的论文中使用 `doi` 字段进行交叉引用，提供给读者一个直接链接到原始资料的途径。
+3. **可选但有益**：虽然 `doi` 字段是可选的，但包含 DOI 能增强引用的可靠性和可追溯性。
+
+### 结论
+
+在 BibTeX 条目中包含 `doi` 字段是学术写作中的最佳实践，它为你引用的数字对象提供了一个坚实的链接。通过采用 DOI 系统，你促进了科学知识的可访问性和持久性，支持全球研究社区的学术努力。
+
+在构建你的参考书目时，记得利用 `doi` 字段的功能，促进更丰富、更可靠且相互关联的学术讨论。

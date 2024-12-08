@@ -1,0 +1,32 @@
+---
+title: "BibTeX 字段类型：journal"
+sidebar:
+  label: journal
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`journal` 字段用于指定文章发表的期刊名称。该字段对于区分不同出版物中的文章，并为引用的工作提供正确的上下文至关重要。
+
+<CiteDrive/>
+
+以下是一个模板，演示如何在 `@article` 条目中使用 `journal` 字段：
+
+```bibtex
+@article{ ... ,
+ journal = {期刊名称},
+}
+```
+
+在上述格式中，将“期刊名称”替换为文章实际发表的期刊名称。准确输入此信息对于确保引用的正确性非常重要。
+
+例如，以下是一个展示正确使用 `journal` 字段的示例：
+
+```bibtex
+@article{smith2023effects,
+ title = {XYZ对ABC的影响},
+ author = {Smith, John},
+ journal = {ABC研究期刊},
+ year = {2023},
+}
+```

@@ -1,0 +1,57 @@
+---
+title: "BibTeX 字段类型：organization"
+sidebar:
+  label: organization
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+在 BibTeX 条目中，`organization` 字段用于指定负责出版文档或举办事件的组织名称。这可以是公司、机构或赞助或组织会议、研讨会、手册等的团体。包含组织名称可以为读者提供关于文档背后实体的清晰背景，这对于确定来源的可靠性和权威性至关重要。
+
+<CiteDrive />
+
+通常，您会在 `@proceedings` 和 `@manual` 条目中遇到此字段，但根据所使用的参考文献样式的具体要求，它也可能出现在其他类型的条目中。
+
+## 格式
+
+指定 `organization` 字段的格式如下所示：
+
+```bibtex
+@entry_type{citation_key,
+  ...
+  organization={组织名称},
+  ...
+}
+```
+
+在上述格式中，“entry_type”指的是 BibTeX 条目的类型（例如 `@proceedings` 或 `@manual`），“citation_key”是条目的唯一标识符，而“组织名称”则是相关组织的名称。
+
+## 示例
+
+以下是一些示例，演示了如何在不同上下文中使用 `organization` 字段：
+
+### 示例 1：会议论文集
+
+```bibtex
+@proceedings{ICML2023,
+  title = {第40届国际机器学习会议论文集},
+  year = {2023},
+  organization = {国际机器学习协会},
+}
+```
+
+在此示例中，`organization` 字段指定了负责组织会议的实体。
+
+### 示例 2：手册
+
+```bibtex
+@manual{UserGuide2022,
+  title = {XYZ软件用户手册},
+  year = {2022},
+  organization = {XYZ软件公司},
+}
+```
+
+在此示例中，`organization` 字段用于指示出版该软件手册的公司。
+
+在您的 BibTeX 条目中包含 `organization` 字段可以帮助提供完整和详细的参考资料，便于更轻松地识别和检索源材料。

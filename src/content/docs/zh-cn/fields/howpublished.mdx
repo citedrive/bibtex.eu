@@ -1,0 +1,25 @@
+---
+title: "BibTeX 字段类型：howpublished"
+sidebar:
+  label: howpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`howpublished` 字段用于 `@misc` 条目类型，通常用于处理那些 BibTeX 无法直接支持的来源类型。这个字段特别有用，尤其是在引用网页时，你希望提供一个 URL。
+
+<CiteDrive/>
+
+在你的 BibTeX 条目中，你可以使用 `howpublished` 字段来详细说明引用的出版媒介或来源。当你需要将非传统来源（如网页或在线报告）包含到引用中时，这个字段非常有用。
+
+下面是一个示例，演示如何使用 `howpublished` 字段在引用网页时指定 URL：
+
+```bibtex
+@misc{BibTeXeu,
+  title = {{Reference management with BibTeX: A short guide}},
+  howpublished = {\url{https://bibtex.eu/}},
+  note = {Accessed: 2022-06-12}
+}
+```
+
+在这个示例中，`howpublished` 字段用于提供被引用网页的 URL，方便读者直接访问该来源。记得包含 `note` 字段来指定访问日期，这是引用在线来源时常见的要求。

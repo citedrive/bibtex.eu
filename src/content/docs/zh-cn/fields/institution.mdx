@@ -1,0 +1,23 @@
+---
+title: "BibTeX 字段类型：institution"
+sidebar:
+  label: institution
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`institution` 字段用于 `@techreport` 类型的条目中，用来标明发布或发行报告的机构名称。该字段有助于准确归属，并且帮助读者更轻松地找到原始来源。
+
+<CiteDrive/>
+
+以下是一个示例结构，演示如何在 `@techreport` 条目中使用 `institution` 字段：
+
+```bibtex
+@techreport{key,
+  institution = {...},
+}
+```
+
+在此格式中，“key” 是 BibTeX 条目的唯一标识符，“institution” 字段应包含发布报告的机构名称。在创建 BibTeX 条目时，确保在此字段中提供准确且详细的信息，以便正确引用和参考。
+
+在创建 BibTeX 条目时，请确保将 `{...}` 替换为实际的机构名称。此字段有助于在参考文献列表中正确组织和分类技术报告。

@@ -1,0 +1,25 @@
+---
+title: "如何在 BibTeX 中引用视频游戏？"
+tags: [citedrive, bibtex, doi, game]
+date: 2022-12-18
+---
+import CiteDrive from '@components/CiteDrive.astro';
+
+这是一个如何在 BibTeX 中引用游戏的示例：
+
+```bibtex
+  @misc{gameTitle,
+    title = {游戏名称},
+    publisher = {出版商},
+    year = {年份},
+    url = {游戏网址},
+  }
+```
+
+<CiteDrive /> 
+
+在这个示例中，使用了 @misc 条目类型，表示所引用的项目是一个杂项工作，如游戏。`title` 字段指定了游戏的名称，`publisher` 字段指定了出版商的名称，`year` 字段指定了游戏出版的年份，`url` 字段指定了可以访问游戏的网址。
+
+然后，您可以使用 `\cite{game_title}` 命令在文档中插入对该游戏的引用。引用的具体格式将取决于您使用的引用风格。
+
+需要注意的是，上述示例只是引用游戏的其中一种方法，具体的引用方式可能会根据项目的要求有所不同。如果您不确定如何正确地在 BibTeX 中引用游戏，可以查阅样式指南，或向您的导师或编辑寻求指导。

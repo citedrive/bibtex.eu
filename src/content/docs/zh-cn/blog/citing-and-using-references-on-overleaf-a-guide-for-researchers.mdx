@@ -1,0 +1,121 @@
+---
+title: "在 Overleaf 上引用和使用参考文献：研究人员指南"
+tags: [citedrive, overleaf, latex, bibtex, biblatex, natbib]
+date: 2022-08-16
+---
+
+在撰写研究论文时，使用参考文献来支持你的论点是非常重要的。正确引用你的来源是建立有力论证并避免抄袭的关键。本指南将向你展示如何使用 CiteDrive 在 Overleaf 上引用文献。我们还将提供一些在线查找可靠来源的提示。让我们开始吧！
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## 步骤 1：将 CiteDrive 与 Overleaf 连接
+
+如果你还没有登录 [Overleaf](https://www.overleaf.com/)，请先登录。然后，访问 [CiteDrive](https://www.citedrive.com/)，创建一个 Overleaf 项目，并 [添加参考文献](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) 到你的新项目。你的项目可能如下所示：
+
+![CiteDrive - 示例](@assets/images/tutorial/citedrive_project_example.png)
+
+然后，点击项目左上角的“bib”。这将打开一个新的标签，显示动态的 BibTeX 文件，你可以将其用于 Overleaf，当你或你的团队成员添加、更新或删除项目中的参考文献时，它会自动更新。
+
+最后，进入 Overleaf，创建一个新文件，选择“From External URL”，并将来自动态 BibTeX 的 URL 粘贴到“URL to fetch the file from”中，命名为 *references.bib*。
+你的 CiteDrive 项目现在已经与 Overleaf 连接！记住，当你在 CiteDrive 项目中进行更改时，需要点击刷新，以确保 Overleaf 获取到最新状态。
+
+![添加文件到 Overleaf](@assets/images/tutorial/export_bib_to_overleaf.png)
+
+## 步骤 2：在 Overleaf 中创建 TeX 文档
+
+现在，让我们为 Overleaf 创建一个新的 tex 文件，我们可以将其命名为 "document.tex"。我们可以通过 `\bibliography{references}` 来定义来自 CiteDrive 的 BibTeX 文件。但是我们应该使用什么参考文献工具呢？在 LaTeX/Overleaf 中管理参考文献有许多选项：最常见的有 natbib、bibtex 和 biblatex。对于 LaTeX 中的参考文献管理，BibTeX 是主要的基础格式。使用 natbib，BibTeX 可以扩展，提供更多的文本内引用设计自由，而 biblatex 是对 BibTeX 的全面修订，提供更多的参考文献类型、排序和过滤选项，以及本地化功能。虽然 BibTeX 是最著名的程序，但 BibLaTeX 不仅同样强大，也是新手最推荐的程序。引用和参考文献数据保存在所谓的 .bib 文件中，正如你在 CiteDrive 的 BibTeX 文件中看到的那样，它的格式始终如下：
+
+```latex
+ @article{smith201X,
+ 	title        = {An interesting article},
+ 	author       = {John Smith},
+ 	year         = {201X},
+ 	journal      = {Journal of Interesting Articles}
+ }
+ ```
+
+ 这里 `@article` 是文献类型，`title`、`author`、`year` 和 `journal` 是用来在参考文献列表和引用中显示的属性，最后 `smith201X` 是一个唯一标识符，你可以在文档中引用它，通常使用 `\cite{key}`。CiteDrive 对格式要求不严格；任何字段和条目类型，只要适合你选择的参考文献包都可以使用。由于 CiteDrive 的基本目标是将文献数据与文档和引用样式分离，因此支持所有选项。
+
+因此，我们提供了三种模板供你开始使用。
+
+### 使用 BibTeX 开始：
+
+如果你想从 BibTeX 开始，使用以下模板或直接在 Overleaf 中打开。更多关于 BibTeX 的信息，请查看文档。
+
+```latex title="document.tex"
+ \documentclass{article}
+ \usepackage[utf8]{inputenc}
+
+ \title{BibTeX references in \LaTeX}
+ \author{John Smith}
+
+ \begin{document}
+
+ \maketitle
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \bibliographystyle{unsrt}
+ \bibliography{references}
+
+ \end{document}
+ ```
+
+### 使用 natbib 开始：
+
+```latex
+ \documentclass{article}
+ \usepackage{natbib}
+ \bibliographystyle{apalike}
+ \title{A Short Guide to Reference Management using natbib with BibTeX}
+ \author{CiteDrive}
+ \date {January 1988}
+
+ \begin{document}
+
+ \maketitle
+ \textbf{叙述性引用：} \citet{Doe:1966} 研究了错误记录的风险 […]，这导致了扭曲。
+ \textbf{括号内引用：} 错误记录的风险 […] 可能导致扭曲 \citep{Doe:1966}。
+
+ \medskip
+
+ \bibliography{references}
+
+ \end{document}
+
+ ```
+
+更多关于 natbib 的信息，请点击这里。
+
+### 使用 BibLaTeX 开始：
+
+```latex
+ \documentclass{article}
+ \usepackage{biblatex}
+ \addbibresource{references.bib}
+
+ \begin{document}
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \printbibliography
+
+ \end{document}
+ ```
+
+更多关于 BibLaTeX 的信息，请点击这里。
+
+## 步骤 3：文中引用
+
+如果你安装了浏览器扩展，你可以通过选择文本并点击工具栏中的 CiteDrive 图标来创建引用。
+
+你也可以手动使用 cite 命令来引用。例如，如果你想引用 Smith (201X)，你可以使用 `\cite{smith201X}`。或者使用 Overleaf 中的参考文献搜索。
+
+Overleaf 上预安装了多种参考文献样式，取决于你使用的包，参考文献将显示在以下页面：
+
+就这些！你现在应该已经拥有了在 Overleaf 中使用参考文献所需的一切。如果你有任何问题或反馈，请通过电子邮件告知我们，地址是 hello@citedrive.com。
+
+祝 TeX 顺利！

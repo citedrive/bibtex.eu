@@ -1,0 +1,42 @@
+---
+title: "BibTeX 字段类型：title"
+sidebar:
+  label: title
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`title` 字段用于指定引用作品的主要标题。它是所有 BibTeX 条目类型中的基本字段之一。确保该字段的准确性和遵循 LaTeX 语法至关重要，以确保标题在生成的参考文献中正确显示。
+
+<CiteDrive />
+
+为了保持正确的格式，可以在 `title` 字段中使用 LaTeX 命令来保持某些单词或短语的大小写。另外，如果标题中包含特殊字符或数学符号，应使用适当的 LaTeX 命令输入它们。
+
+## 示例
+
+以下是一个简单的示例，展示如何使用 `title` 字段：
+
+```bibtex
+@article{key,
+    title={什么是生物信息学？介绍与概述},
+}
+```
+
+另一个更详细的示例，包含了其他字段，以提供全面的参考文献：
+
+```bibtex
+@article{luscombe2001bioinformatics,
+  title={什么是生物信息学？介绍与概述},
+  author={Luscombe, Nicholas M and Greenbaum, Dov and Gerstein, Mark},
+  journal={医学信息年鉴},
+  volume={10},
+  number={01},
+  pages={83--100},
+  year={2001},
+  publisher={Georg Thieme Verlag KG}
+}
+```
+
+在这些示例中，`title` 字段填入了被引用文章的标题。请注意使用大括号 `{}` 来括起标题文本，这有助于保持标题的大小写和格式，确保按作者的原意显示。
+
+请记住，`title` 字段对于帮助读者识别被引用的特定作品至关重要，因此确保它在 BibTeX 条目中准确无误并格式正确。

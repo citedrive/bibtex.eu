@@ -1,0 +1,45 @@
+---
+title: "BibTeX 字段类型：school"
+sidebar:
+  label: school
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+在 BibTeX 中，`school` 字段主要用于 `@phdthesis` 或 `@mastersthesis` 条目中。该字段用于指示撰写论文或学位论文的教育机构。它是这两种条目中的必填字段，有助于提供有关学术工作的来源的详细信息，这对那些可能希望查找更多信息或在自己的研究中引用该工作的读者来说非常重要。
+
+<CiteDrive />
+
+## 格式规范
+
+在输入学校名称时，建议使用该机构的全称，以保持引用的正式和标准化格式。除非广泛认可和接受，否则避免使用缩写。
+
+## 示例
+
+以下是如何在 `phdthesis` 和 `mastersthesis` 条目中使用 `school` 字段的示例：
+
+### 博士论文
+
+```bibtex
+@phdthesis{doe2023,
+  author = {John Doe},
+  title = {量子计算探索},
+  year = {2023},
+  school = {麻省理工学院},
+}
+```
+
+### 硕士论文
+
+```bibtex
+@mastersthesis{smith2023,
+  author = {Sarah Smith},
+  title = {环境可持续性综合研究},
+  year = {2023},
+  school = {加利福尼亚大学伯克利分校},
+}
+```
+
+## 注意
+
+在您的示例中，您使用了 `series` 字段而不是 `school` 字段来表示 `mastersthesis` 条目。然而，`school` 字段应在 `phdthesis` 和 `mastersthesis` 条目中用于指定机构，如上面的示例所示。

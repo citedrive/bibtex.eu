@@ -1,0 +1,60 @@
+---
+title: "BibTeX 字段类型：note"
+sidebar:
+  label: note
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX 条目中的 `note` 字段用于传达关于引用作品的额外信息，这些信息无法适配其他标准字段。此字段可以包含补充备注、解释或澄清内容，帮助读者理解作品的背景或其意义。`note` 字段在 BibTeX 中是一个非常灵活的工具，允许添加多种类型的信息，以增强引用的细节和深度。
+
+<CiteDrive />
+
+使用 `note` 字段通常可以为引用增加更多深度，包含附加的背景、出版状态的备注、特定注释或任何其他对读者有用的信息。这可能包括指向补充材料的链接、对作品影响或评价的评论，或其他相关细节。
+
+## 格式
+
+要使用 `note` 字段，可以按照以下格式在 BibTeX 条目中添加：
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  note={这里是你的备注},
+  ...
+}
+```
+
+在上述格式中，将 "entrytype" 替换为合适的作品类型（例如：@book, @article），将 "citationkey" 替换为该条目的唯一标识符。然后，在 `note` 字段中插入你的额外信息。
+
+## 示例
+
+以下是几个实际示例，展示如何在不同条目中使用 `note` 字段：
+
+### 示例 1：附加信息
+
+```bibtex
+@book{smith2023innovations,
+  title = {现代技术的创新},
+  author = {Smith, John},
+  year = {2023},
+  publisher = {Technology Press},
+  note = {包括书目参考和索引},
+}
+```
+
+### 示例 2：补充材料
+
+```bibtex
+@article{johnson2023ai,
+  title = {人工智能及其未来应用},
+  author = {Johnson, Mark},
+  year = {2023},
+  journal = {技术进展期刊},
+  volume = {5},
+  issue = {2},
+  pages = {123-135},
+  note = {补充材料请见：http://example.com/supplementary_material},
+}
+```
+
+在这些示例中，`note` 字段用于指明书籍中包含书目参考和索引，以及为文章提供补充材料的链接，从而为读者提供更多资源和信息。

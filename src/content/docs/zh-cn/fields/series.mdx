@@ -1,0 +1,43 @@
+---
+title: "BibTeX 字段类型：series"
+sidebar:
+  label: series
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX 中的 `series` 字段用于表示书籍、报告或其他出版物所属的系列。指定系列可以为读者提供额外的背景信息，因为它可能与更广泛的主题或学术讨论相关。
+
+<CiteDrive />
+
+该字段是可选的，可以用于多种条目类型，包括但不限于 `@book`、`@inbook`、`@incollection` 和 `@inproceedings`。当引用的作品属于一个持续的系列或更大的作品集合，且这些作品共享共同的主题、作者或出版商时，`series` 字段特别有用。
+
+在输入 `series` 字段时，建议使用该系列的完整官方名称。如果该系列有 ISSN，包含此信息可能有助于更精确的引用。
+
+## 格式
+
+在 BibTeX 条目中包含系列的通用格式如下：
+
+```bibtex
+@entrytype{key,
+  ...
+  series = {系列名称},
+  ...
+}
+```
+
+## 示例
+
+以下是如何在 `@book` 条目中使用 `series` 字段的示例：
+
+```bibtex
+@book{doe2023,
+  author = {John Doe},
+  title = {量子力学高级研究},
+  year = {2023},
+  publisher = {科学出版有限公司},
+  series = {剑桥物理学高级系列},
+}
+```
+
+在此示例中，该书是 "剑桥物理学高级系列" 的一部分，该系列可能包含涵盖物理学领域高级主题的多本书籍。包括系列有助于将该作品定位于更广泛的学术讨论中，并为读者提供更多关于该主题的资源。

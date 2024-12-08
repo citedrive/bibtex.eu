@@ -1,0 +1,64 @@
+---
+title: "BibTeX 字段类型：number"
+sidebar:
+  label: number
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+在 BibTeX 中，`number` 字段用于指定期刊的期号、技术报告的编号或其他属于某个系列的标识符。此字段有助于准确定位引用作品所在的特定期号或版本，为查找资料提供更精确的信息。
+
+<CiteDrive />
+
+此字段通常与 `volume` 字段一起使用，尤其是在期刊文章和期刊出版物中。对于技术报告，`number` 字段通常包含由发布报告的机构或组织分配的报告编号。
+
+## 格式
+
+`number` 字段的格式相对简单。在文章条目的上下文中，它通常如下所示：
+
+```bibtex
+@article{citation_key,
+  ...
+  number={issue_number},
+  ...
+}
+```
+
+在上述格式中，“citation_key”代表条目的唯一标识符，而“issue_number”代表期刊期号、技术报告号或其他出版物的编号。
+
+## 示例
+
+以下是一些展示 `number` 字段在不同上下文中应用的示例：
+
+### 示例 1：期刊文章
+
+```bibtex
+@article{doe2023study,
+  author = {Doe, Jane},
+  title = {量子计算的综合研究},
+  journal = {高级计算期刊},
+  year = {2023},
+  volume = {29},
+  number = {3},
+  pages = {215-230},
+}
+```
+
+在此示例中，`number` 字段指定了《高级计算期刊》29卷的第3期。
+
+### 示例 2：技术报告
+
+```bibtex
+@techreport{smith2022analysis,
+  author = {Smith, John},
+  title = {可再生能源趋势分析},
+  institution = {能源研究院},
+  year = {2022},
+  number = {TR-2022-45},
+  type = {技术报告},
+}
+```
+
+在此示例中，`number` 字段用于指明由“能源研究院”分配的特定报告编号。
+
+准确使用 `number` 字段有助于读者更轻松地找到源材料并验证引用信息。在学术写作和研究文献中，这是一个至关重要的细节。

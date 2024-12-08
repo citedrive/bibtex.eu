@@ -1,0 +1,83 @@
+---
+title: "BibTeX 字段类型：author"
+sidebar:
+  label: author
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+在学术写作中，准确地承认作品的贡献者至关重要。BibTeX 中的 `author` 字段允许您指定您所引用作品的所有贡献者。确保作者姓名的排列一致和精确至关重要，以避免任何误表示或不准确的引用输出。在这里，我们将探讨各种标注和规范，以有效地在 BibTeX 中指定作者姓名。
+
+<CiteDrive />
+
+## 详细概述
+
+在 BibTeX 中指定作者时，您可以选择多种格式。这些格式允许包含名字、姓氏，甚至后缀，从而详细表示每个作者的身份。让我们深入探讨可以用来准确呈现作者信息的不同标注。
+
+### 标注格式
+
+#### 标注：`{Firstname Lastname}`
+
+记下作者的最基本且简洁的方式是将其名字放在前，姓氏放在后。这是一种被广泛接受的格式，但在复合姓氏的情况下，可能无法提供足够的控制来区分名字和姓氏。
+
+**示例**：
+
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {Isaac Newton},
+  ...
+}
+```
+
+#### 标注：`{Lastname, Firstname}`
+
+更细致的方法是使用姓氏在前，名字在后的格式，并以逗号分隔。这种格式推荐使用，因为它能更清晰地区分名字和姓氏，避免潜在的混淆。
+
+**示例**：
+
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {Newton, Isaac},
+  ...
+}
+```
+
+#### 标注：`{Lastname, Suffix, Firstname}`
+
+在需要添加后缀（如 Jr.、Sr.、III 等）的情况下，可以使用这种格式。重要的是严格遵循顺序，以确保准确地表示作者的姓名。
+
+**示例**：
+
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {King, Jr, Martin Luther},
+  ...
+}
+```
+
+### 包含多个作者
+
+当一篇作品有多个贡献者时，BibTeX 通过使用 `AND` 分隔符来处理这种情况。此分隔符用于明确列出多个作者，遵循上面讨论的标注格式。
+
+**示例**：
+
+```bibtex
+@article{Doe2023,
+  title  = {Title of the Article},
+  year   = 2023,
+  author = {Fisher, James AND Clark, John},
+  ...
+}
+```
+
+## 结论
+
+在 BibTeX 中准确标注作者姓名对于保持学术写作的完整性至关重要。这确保了读者能够正确地识别并归功于各个作者的作品。熟悉各种标注和规范对于撰写准确且专业的书目至关重要。
+
+记住，一致性是关键。一旦选择了某种标注格式，就应在所有条目中始终如一地应用，以保持一致性和专业性。

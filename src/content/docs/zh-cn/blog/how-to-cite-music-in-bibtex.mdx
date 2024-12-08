@@ -1,0 +1,31 @@
+---
+title: "如何在 BibTeX 中引用音乐？"
+tags: [biblatex, bibtex, music]
+date: 2022-12-18
+---
+
+要在 BibTeX 中引用音乐，您可以使用 `@misc` 条目类型，并包括以下字段：
+
+-   `author`：创作音乐的作曲家或艺术家。
+-   `title`：音乐作品的标题。
+-   `howpublished`：访问音乐的格式（例如 CD、黑胶、在线流媒体服务）。
+-   `year`：音乐发布或录制的年份。
+
+以下是如何在 BibTeX 中引用一部音乐作品的示例：
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+```bibtex
+@misc{beethoven_symphony_2018,
+	title        = {C小调第五交响曲},
+	author       = {贝多芬, 路德维希·范},
+	year         = 2018,
+	howpublished = {CD}
+}
+```
+
+如果您引用的是某个特定版本的音乐录音，您可能希望使用 `@music` 条目类型，而不是 `@misc`。该条目类型包含更多字段，如 `performer` 和 `publisher`，可以用来提供有关录音的更具体信息。
+
+希望这能帮到您！如果有任何问题，请随时告诉我。
