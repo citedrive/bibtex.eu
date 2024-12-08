@@ -1,0 +1,72 @@
+---
+title: "BibTeX SSS"
+---
+
+**S1: BibTeX nedir?**  
+C1: BibTeX, LaTeX ile birlikte kullanılan bir referans yönetim yazılımıdır ve belgelerde bibliyografya ve alıntıları formatlamak ve yönetmek için kullanılır. Kullanıcılar, referans bilgilerini ayrı BibTeX dosyalarında saklayabilir, bu dosyalar LaTeX belgeleriyle bağlantılandırılabilir, böylece alıntıların ve referansların tutarlı bir şekilde formatlanmasını sağlar.
+
+**S2: BibTeX ile bir web sitesi nasıl alıntılanır?**  
+C2: BibTeX ile bir web sitesini alıntılamak için genellikle `@misc` giriş türü kullanılır. İşte bir örnek:
+
+```bibtex
+@misc{website2023,
+    author    = "John Doe",
+    title     = "Web Sayfasının Başlığı",
+    year      = "2023",
+    url       = "http://www.example.com",
+    note      = "Erişim tarihi: 2023-10-04"
+}
+```
+
+Yerine uygun bilgileri koyduğunuzdan emin olun.
+
+**S3: Bir kitap nasıl alıntılanır?**  
+C3:
+
+```bibtex
+@book{author2023,
+    author    = "Jane Smith",
+    title     = "Kitabın Başlığı",
+    publisher = "Yayınevi",
+    year      = "2023",
+    address   = "Yayın Şehri",
+    edition   = "3. baskı"
+}
+```
+
+**S4: Bir dergi makalesi nasıl alıntılanır?**  
+C4:
+
+```bibtex
+@article{author2023,
+    author    = "Jane Smith",
+    title     = "Makale Başlığı",
+    journal   = "Dergi Adı",
+    year      = "2023",
+    volume    = "4",
+    number    = "2",
+    pages     = "100-105"
+}
+```
+
+**S5: BibTeX referanslarımı LaTeX belgemde nasıl entegre ederim?**  
+C5: LaTeX belgenizde:
+
+1. Bibliyografyanızın görüneceği yere `\bibliography{filename}` komutunu kullanın, ancak `.bib` uzantısı eklemeyin.
+2. Belgenizde, referans gösterme yerlerine `\cite{label}` komutunu kullanın.
+3. LaTeX belgenizi önce `latex` ile derleyin, sonra `bibtex` çalıştırın ve ardından iki kez `latex` ile tekrar derleyin.
+
+**S6: Belgemde alıntı numarasının yerine neden `?` görünüyor?**  
+C6: Bu genellikle derleme sırası ile ilgili bir sorun olduğunda veya BibTeX girişinde bir hata olduğunda meydana gelir. Doğru sırayla derleme (LaTeX, BibTeX, LaTeX, LaTeX) yapın ve BibTeX girişlerinizi kontrol edin.
+
+**S7: Bibliyografyamın stilini nasıl belirlerim?**  
+C7: LaTeX belgenizde `\bibliographystyle{stylename}` komutunu kullanın. Örneğin, `\bibliographystyle{plain}` komutu plain stilini kullanır. Birçok önceden tanımlanmış stil (örneğin `plain`, `alpha`, `abbrv` vb.) vardır ve ayrıca özelleştirilmiş stilleri çevrimiçi olarak bulabilirsiniz.
+
+**S8: Bir LaTeX belgesi için birden fazla BibTeX dosyası kullanabilir miyim?**  
+C8: Evet, kullanabilirsiniz. `\bibliography{}` komutunda, dosya adlarını virgülle ayırarak ve boşluk koymadan, `.bib` uzantısı olmadan listeleyebilirsiniz. Örneğin, `\bibliography{file1,file2}`.
+
+**S9: BibTeX'teki özel karakterlerle nasıl başa çıkarım?**  
+C9: BibTeX, `#`, `$`, `%`, `&`, `_`, `{`, ve `}` gibi özel karakterlere duyarlıdır. BibTeX'te bu karakterleri süslü parantezler içinde sarabilir veya karakterden önce ters eğik çizgi (`\`) kullanabilirsiniz.
+
+**S10: BibTeX girişlerini yönetmek ve oluşturmak için araçlar var mı?**  
+C10: Evet, BibTeX veritabanlarını yönetmek ve girişlerini oluşturmak için çevrimiçi ve çevrimdışı birçok araç bulunmaktadır, örneğin CiteDrive gibi araçlar.

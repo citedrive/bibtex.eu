@@ -1,0 +1,55 @@
+---
+title: "Hur kan jag använda BibTeX för att citera en webbplats i LaTeX?"
+---
+import CiteDrive from '@components/CiteDrive.astro';
+
+Det finns flera sätt att citera en webbplats i LaTeX. I detta korta svar på frågan ger vi tre alternativ, där det enklaste är BibLaTeX via CiteDrive-webbläsartillägget i det sista exemplet.
+
+<CiteDrive />
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) är ett samarbetsverktyg för referenshantering online baserat på BibTeX som automatiskt synkroniseras med publiceringssystem som [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) och [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619). De erbjuder ett [webbläsartillägg](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370) som gör det möjligt att spara akademiska artiklar direkt från webbläsaren i rätt BibTeX-format så att du kan citera dem direkt i Overleaf-projektet utan att behöva växla mellan webbläsarfönster/flikar. Tillägget kan också spara webbsidor i BibLaTeX-format och automatiskt fånga titel, URL och åtkomstdatum.
+:::
+
+## Använda BibTeX
+
+I BibTeX använder vi `@misc` som en lösning och gör användning av fältet `note` för att ange URL och vanligtvis ett åtkomstdatum. I det här exemplet krävs `url` (*eller `hyperref`*) genom att använda `usepackage{url}`.
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Använd åtkomstdatum)]}
+}
+```
+
+Alternativt kan fältet `howpublished` användas:
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {Accessed: (Använd åtkomstdatum)},
+	howpublished = {\url{https://www.citedrive.com/overleaf}}
+}
+```
+
+## Använda BibLaTeX
+
+Om du använder BibLaTeX, vilket vi rekommenderar, stöds entry-typen `@online` direkt och fungerar utan ytterligare justering. Du kan ange URL och åtkomstdatum i fälten `url` och `urldate`, respektive.
+
+```latex
+@online{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	url          = {https://www.citedrive.com/overleaf},
+	urldate      = {Använd åtkomstdatum}
+}
+```
+
+## Använda `natbib`
+
+Många frågar hur man citerar webbsidor med [natbib](/natbib). Vi betonar att det fungerar på samma sätt som BibTeX. Natbib är ett verktyg för att styla citeringar i text och det är beroende av BibTeX som backend.

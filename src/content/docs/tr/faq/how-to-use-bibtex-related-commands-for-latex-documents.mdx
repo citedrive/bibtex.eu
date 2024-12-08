@@ -1,0 +1,18 @@
+---
+title: "BibTeX İlgili Komutlar LaTeX Belgelerinde Nasıl Kullanılır?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'i LaTeX'te kullanabilmek için aşağıdaki komutları bilmeniz gerekir: `\bibliographystyle{<stil adı>}`, `\bibliography{bib-dosyası}`, ve `\cite{KEY}`. Bu kısa kılavuzda, her bir komutun ne işe yaradığını ve LaTeX belgelerinizde nasıl kullanılacağını tartışacağız.
+
+<CiteDrive />
+
+## bibliographystyle
+Alıntı stili, `bibliographystyle{<stil adı>}` komutu ile tanımlanır. BibTeX stil dosyaları, bibliyografya ve alıntıların görünümünü kontrol eder. BibTeX stil dosyaları `.bst` uzantısına sahiptir ve bibliyografik girişlerin biçimlendirilmesini kontrol eden, yığın tabanlı bir programlama dilinde talimatlar içerir. Varsayılan olarak, LaTeX `plain`, `unsrt`, `alpha` ve `abbrv` gibi stiller sunar. `natbib` ve `jurabib`, örneğin doğal bilimler ve beşeri bilimler için kapsamlı eklemeler sağlayan iki LaTeX paketidir.
+
+## bibliography
+Bibliyografya, `\bibliography{bibfile}` komutu ile belgede oluşturulur. Burada, BibTeX dosyasının adı `bibfile.bib` olan bir dosyadır.
+
+## cite
+Bir LaTeX belgesinde, `\cite{KEY}` komutu, BibTeX dosyasındaki bu kimlik ile verilen alıntı ile değiştirilir. Örneğin, final PDF'de bu alıntı `(Yazar, Yıl)` şeklinde görünür.

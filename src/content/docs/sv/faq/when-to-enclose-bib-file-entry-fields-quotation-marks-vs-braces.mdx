@@ -1,0 +1,37 @@
+---
+title: "När ska man använda citattecken och när ska man använda klamrar för .bib-fildatainmatning?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Har du någonsin undrat när du ska omsluta dina .bib-filens inmatningsfält med citattecken och när du ska använda klamrar? Spelar det ens någon roll? Svaret är: det spelar ingen roll.
+Vissa föredrar att använda citattecken "" av estetiska skäl, medan andra föredrar att använda `{}`, och hävdar att det är att föredra om du behöver använda ett `"`-tecken inom ett fält.
+Notera att dessa är de enda accepterade sätten att omsluta fält.
+
+
+<CiteDrive />
+
+## Exempel
+
+### Omsluta fält med `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Använd åtkomstdatumet)]}
+}
+```
+
+### Omsluta fält med `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive brings reference management to Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Det finns inget rätt eller fel, så länge informationen inom fältet är korrekt omsluten. Så varför inte experimentera och se vilken metod som passar dig bäst?

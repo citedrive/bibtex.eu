@@ -1,0 +1,55 @@
+---
+title: "如何在 LaTeX 中使用 BibTeX 引用网站？"
+---
+import CiteDrive from '@components/CiteDrive.astro';
+
+在 LaTeX 中引用网站有几种方法。在这个简短的回答中，我们给出了三种方法，最后一个示例中通过 CiteDrive 浏览器扩展使用 BibLaTeX 是最简单的方法。
+
+<CiteDrive />
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) 是一个基于 BibTeX 的协作在线参考管理工具，可以自动与 [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) 和 [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) 等出版系统同步。他们提供了一个 [浏览器扩展](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370)，允许你直接从浏览器保存学术文章并以正确的 BibTeX 格式保存，这样你就可以在 Overleaf 项目中直接引用它们，而不需要在浏览器窗口/标签之间切换。该扩展还可以以 BibLaTeX 格式保存网页，自动捕获标题、URL 和访问日期。
+:::
+
+## 使用 BibTeX
+
+在 BibTeX 中，我们使用 `@misc` 作为一种变通方法，并利用 `note` 字段来指定 URL，通常还包括访问日期。在这个示例中，`url`（*或 `hyperref`*）是必需的，需使用 `usepackage{url}`。
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive 将参考管理引入 Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [访问日期: (使用访问日期)]}
+}
+```
+
+或者，可以使用 `howpublished` 字段：
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive 将参考管理引入 Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {访问日期: (使用访问日期)},
+	howpublished = {\url{https://www.citedrive.com/overleaf}}
+}
+```
+
+## 使用 BibLaTeX
+
+如果你使用 BibLaTeX，我们推荐这种方法，`@online` 条目类型天生支持，不需要进一步调整。你可以分别在 `url` 和 `urldate` 字段中输入 URL 和访问日期。
+
+```latex
+@online{CiteDrive2022,
+	title        = {CiteDrive 将参考管理引入 Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	url          = {https://www.citedrive.com/overleaf},
+	urldate      = {使用访问日期}
+}
+```
+
+## 使用 `natbib`
+
+人们经常询问如何使用 [natbib](/natbib) 引用网页。我们强调，它的工作方式与 BibTeX 相同。Natbib 是一种用于格式化文内引用的工具，它依赖于 BibTeX 作为后台。

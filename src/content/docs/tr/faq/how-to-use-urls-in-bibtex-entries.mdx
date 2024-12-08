@@ -1,0 +1,40 @@
+---
+title: "BibTeX Girdilerinde URL'leri Nasıl Kullanırsınız?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Eğer BibTeX kullanarak araştırma makaleleriniz için bibliyografyalar oluşturuyorsanız, girdilerinize URL eklemenin nasıl yapılacağını merak etmiş olabilirsiniz.
+
+URL alan türü, BibTeX'te resmi olarak desteklenmemektedir, ancak Oren Patashnik tarafından 1.0 sürümü için planlanmıştı. Buna rağmen, bu sürüm ve niyetleriyle ilgili tartışma, [Patashnik'in 2003 tarihli makalesine](https://tug.org/TUGboat/tb24-1/patashnik.pdf) kadar gitmektedir ve zamanla Biber destekli biblatex ile yer değiştirmektedir.
+
+Bu nedenle, web sitelerini alıntı yaparken aşağıdaki geçici çözümlerden birini kullanmanız gerekebilir:
+
+<CiteDrive />
+
+## note alan türünü kullanın:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## howpublished alan türünü kullanın:
+
+```latex
+@misc{...,
+  note = "Available from \url{http://...}"
+}
+```
+
+## biblatex ve yerleşik URL alan türünü kullanın:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+Eğer biblatex'i seçerseniz, BibTeX yerine Biber'ı backend olarak kullanmanız gerekecek. Biblatex ve Biber hakkında daha fazla bilgi edinmek isterseniz, başlangıç kılavuzumuzu okuyabilirsiniz.  
+Herhangi bir sorunuz veya yorumunuz varsa, bizimle paylaşabilirsiniz. Umarız bu bilgiler yardımcı olmuştur!

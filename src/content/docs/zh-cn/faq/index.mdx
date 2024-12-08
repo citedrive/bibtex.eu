@@ -1,0 +1,74 @@
+Here's the translation into Simplified Chinese (zh-cn):
+
+---
+title: "BibTeX 常见问题"
+---
+
+**Q1: 什么是 BibTeX？**  
+A1: BibTeX 是一种参考文献管理软件，通常与 LaTeX 一起使用，用于格式化和管理文档中的参考文献和引用。它允许用户将参考文献详情存储在独立的 BibTeX 文件中，这些文件可以与 LaTeX 文档链接，从而确保引用和参考文献的格式一致。
+
+**Q2: 如何使用 BibTeX 引用一个网站？**  
+A2: 引用网站时，通常使用 `@misc` 条目类型。示例如下：
+
+```bibtex
+@misc{website2023,
+    author    = "John Doe",
+    title     = "网页标题",
+    year      = "2023",
+    url       = "http://www.example.com",
+    note      = "访问日期：2023-10-04"
+}
+```
+
+确保用适当的细节替换占位符。
+
+**Q3: 如何引用一本书？**  
+A3:
+
+```bibtex
+@book{author2023,
+    author    = "Jane Smith",
+    title     = "书名",
+    publisher = "出版公司",
+    year      = "2023",
+    address   = "出版城市",
+    edition   = "第三版"
+}
+```
+
+**Q4: 如何引用期刊文章？**  
+A4:
+
+```bibtex
+@article{author2023,
+    author    = "Jane Smith",
+    title     = "文章标题",
+    journal   = "期刊名称",
+    year      = "2023",
+    volume    = "4",
+    number    = "2",
+    pages     = "100-105"
+}
+```
+
+**Q5: 如何将 BibTeX 参考文献整合到 LaTeX 文档中？**  
+A5: 在 LaTeX 文档中：
+
+1. 在你希望参考文献出现的地方，使用 `\bibliography{filename}` 命令，不带 `.bib` 扩展名。
+2. 在文档中引用时，使用 `\cite{label}`。
+3. 使用 `latex` 编译 LaTeX 文档，然后运行 `bibtex`，再使用 `latex` 编译两次。
+
+**Q6: 为什么我在文档中看到 `?` 而不是引用编号？**  
+A6: 这通常是由于编译顺序有问题，或者 BibTeX 条目有错误。确保按照正确的顺序编译（LaTeX，BibTeX，LaTeX，LaTeX），并检查 BibTeX 条目是否有错误。
+
+**Q7: 如何指定参考文献的样式？**  
+A7: 在 LaTeX 文档中使用 `\bibliographystyle{stylename}` 命令。例如，` \bibliographystyle{plain}` 将使用 plain 样式。提供了许多预定义样式（如 `plain`、`alpha`、`abbrv` 等），你还可以在网上找到自定义样式。
+
+**Q8: 我可以为一个 LaTeX 文档使用多个 BibTeX 文件吗？**  
+A8: 可以。在 `\bibliography{}` 命令中，列出文件名，用逗号分隔，且不带空格和 `.bib` 扩展名。例如，`\bibliography{file1,file2}`。
+
+**Q9: 如何处理 BibTeX 中的特殊字符？**  
+A9: BibTeX 对特殊字符（如 `#`、`$`、`%`、`&`、`_`、`{` 和 `}`）很敏感。在 BibTeX 中，可以将它们用花括号包围或在字符前加反斜杠（`\`）。
+
+**Q10: 有没有工具可以管理和生成 BibTeX 条目？**  
+A10: 是的，有许多工具可供使用，既有在线工具也有离线工具，可以帮助管理 BibTeX 数据库并生成条目，例如 CiteDrive。

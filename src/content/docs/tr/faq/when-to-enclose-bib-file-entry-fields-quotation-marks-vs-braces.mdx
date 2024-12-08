@@ -1,0 +1,36 @@
+---
+title: ".bib Dosyası Giriş Alanlarını Ne Zaman Tırnak İçine Almalı: Tırnak İşaretleri mi Yoksa Parantezler mi?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+.bib dosyası giriş alanlarını ne zaman tırnak içinde, ne zaman parantezle çevrelemeniz gerektiğini hiç merak ettiniz mi? Peki, bu fark eder mi? Cevap: fark etmez.
+Bazı kişiler estetik nedenlerle "" kullanmayı tercih ederken, diğerleri `{}` kullanmayı tercih eder ve bunun, bir alanda `"` karakterini kullanmanız gerektiğinde daha uygun olduğunu savunur.
+Unutmayın, bu alanları çevrelemenin kabul edilen tek yollarıdır.
+
+<CiteDrive />
+
+## Örnekler
+
+### Alanları `{}` ile çevrelemek
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive brings reference management to Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Erişim Tarihi: (Erişim tarihini kullanın)]}
+}
+```
+
+### Alanları `""` ile çevrelemek
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive brings reference management to Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Doğru ya da yanlış bir cevap yoktur, yeter ki alandaki bilgi doğru şekilde çevrelenmiş olsun. O halde neden denemeyip hangi yöntemin size en uygun olduğunu görmeyesiniz?

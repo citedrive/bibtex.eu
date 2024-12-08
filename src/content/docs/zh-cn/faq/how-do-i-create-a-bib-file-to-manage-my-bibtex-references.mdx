@@ -1,0 +1,43 @@
+---
+title: "如何创建一个 .BIB 文件来管理我的 BibTeX 引用？"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+如果你在寻找管理 `BibTeX` 引用的方法，你可能会想知道如何创建一个 `.BIB 文件`。在本文中，我们将向你展示如何创建它！我们还将提供一些有效使用 ".BIB" 文件的技巧。
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) 是一个基于 BibTeX 的网络协作参考管理工具，能够与 [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) 和 [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) 等出版系统自动同步，并为你自动处理 Bib 文件的格式化工作。
+:::
+
+<CiteDrive />
+
+## 手动创建 Bib 文件
+
+创建 `.BIB 文件` 其实非常简单。你只需要创建一个以 `.bib` 为扩展名的文本文件。然后，你可以将你的 BibTeX 引用逐行添加到该文件中。例如：
+
+```latex
+	@article{smith201X,
+		title        = {一篇有趣的文章},
+		author       = {约翰·史密斯},
+		year         = {201X},
+		journal      = {有趣文章杂志}
+	}
+```
+
+一旦你创建了 `.BIB 文件`，就可以在 LaTeX 文档中通过指定 `\bibliography{filename}` 命令来使用它。例如：
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{filename}
+
+\end{document}
+```
+
+就这么简单！创建 `.BIB 文件` 是管理你的 BibTeX 引用的一种简单方法。记得查看我们关于 BibTeX 的其他文章，获取更多技巧和窍门！

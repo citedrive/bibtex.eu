@@ -1,0 +1,40 @@
+---
+title: "如何在 BibTeX 条目中使用 URL"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+如果你使用 BibTeX 来为研究论文创建参考文献，可能会想知道如何在条目中包含 URL。
+
+尽管 BibTeX 尚未正式支持 URL 字段类型，但它曾被 Oren Patashnik 计划在 1.0 版本中引入。尽管如此，关于此版本及其意图的争议可以追溯到 [Patashnik 2003 年的论文](https://tug.org/TUGboat/tb24-1/patashnik.pdf)，该版本逐渐被 Biber 支持的 biblatex 所取代。
+
+因此，你很可能需要使用以下某种变通方法，例如在引用网站时：
+
+<CiteDrive />
+
+## 使用 note 字段类型：
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## 使用 howpublished 字段类型：
+
+```latex
+@misc{...,
+  note = "Available from \url{http://...}"
+}
+```
+
+## 使用 biblatex 及其内置的 URL 字段类型：
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+如果你选择使用 biblatex，则需要使用 Biber 作为后端，而不是 BibTeX。如果你想了解更多关于 biblatex 和 Biber 的信息，请阅读我们的入门指南。
+如果你有任何问题或评论，请告诉我们。希望这对你有所帮助！

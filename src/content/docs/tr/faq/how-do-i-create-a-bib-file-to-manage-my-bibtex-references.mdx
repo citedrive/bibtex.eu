@@ -1,0 +1,43 @@
+---
+title: "BibTeX Referanslarımı Yönetmek İçin Nasıl .BIB Dosyası Oluşturabilirim?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Eğer `BibTeX` referanslarınızı yönetmenin bir yolunu arıyorsanız, bir `.BIB dosyası` nasıl oluşturulacağı hakkında merak ediyor olabilirsiniz. Bu yazıda, bunu nasıl yapacağınızı göstereceğiz! Ayrıca, ".BIB" dosyalarını etkili bir şekilde nasıl kullanabileceğinizle ilgili bazı ipuçları da sunacağız.
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) , BibTeX tabanlı bir çevrimiçi işbirliği referans yönetim aracıdır. [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) ve [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) gibi yayın sistemleriyle otomatik senkronize olur ve BibTeX dosyanızın biçimlendirilmesini sizin için yapar.
+:::
+
+<CiteDrive />
+
+## El ile Bib Dosyası Oluşturma
+
+Bir `.BIB dosyası` oluşturmak aslında oldukça basittir. Yapmanız gereken tek şey, `.bib` uzantısına sahip bir metin dosyası oluşturmaktır. Ardından, her satıra bir BibTeX referansı ekleyebilirsiniz. Örneğin:
+
+```latex
+	@article{smith201X,
+		title        = {İlginç bir makale},
+		author       = {John Smith},
+		year         = {201X},
+		journal      = {İlginç Makaleler Dergisi}
+	}
+```
+
+`.BIB dosyanız`ı oluşturduktan sonra, bu dosyayı LaTeX belgelerinizde `\bibliography{filename}` komutunu belirterek kullanabilirsiniz. Örneğin:
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{filename}
+
+\end{document}
+```
+
+İşte bu kadar! Bir `.BIB dosyası` oluşturmak, BibTeX referanslarınızı yönetmek için basit bir yol sunar. BibTeX hakkında daha fazla ipucu ve püf noktası için diğer yazılarımıza göz atmayı unutmayın!

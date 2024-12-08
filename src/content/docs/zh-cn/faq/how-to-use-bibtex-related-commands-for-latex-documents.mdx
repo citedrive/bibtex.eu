@@ -1,0 +1,18 @@
+---
+title: "如何在 LaTeX 文档中使用与 BibTeX 相关的命令"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+为了在 LaTeX 中使用 BibTeX，你需要了解以下命令：`\bibliographystyle{<style name>}`，`\bibliography{bib-file}` 和 `\cite{KEY}`。在这个简短的指南中，我们将讨论每个命令的作用以及如何在 LaTeX 文档中使用它们。
+
+<CiteDrive />
+
+## bibliographystyle
+引用样式由 `bibliographystyle{<style name>}` 定义。BibTeX 样式文件控制参考文献和引用的格式。BibTeX 样式文件以 `.bst` 扩展名结尾，包含一种基于堆栈的编程语言，控制文献条目的格式化。默认情况下，LaTeX 提供 `plain`、`unsrt`、`alpha` 和 `abbrv` 等样式。natbib 和 jurabib 是两个 LaTeX 包，它们提供了广泛的自然科学和人文学科的扩展。
+
+## bibliography
+通过命令 `\bibliography{bibfile}` 在文档中创建参考文献列表，其中 `bibfile.bib` 是包含文献记录的 BibTeX 文件的文件名。
+
+## cite
+在 LaTeX 文档中，命令 `\cite{KEY}` 会被替换为 BibTeX 文件中对应 ID 的引用，最终的 PDF 文件中，引用格式通常是 `(作者, 年份)`。

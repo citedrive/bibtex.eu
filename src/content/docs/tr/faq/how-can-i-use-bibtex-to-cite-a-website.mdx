@@ -1,0 +1,55 @@
+---
+title: "BibTeX ile LaTeX'te bir web sitesini nasıl alıntılayabilirim?"
+---
+import CiteDrive from '@components/CiteDrive.astro';
+
+LaTeX'te bir web sitesini alıntılamak için birkaç yol vardır. Bu soruya kısa bir yanıt olarak üç yol sunuyoruz, en kolay yol son örnekteki CiteDrive tarayıcı eklentisi ile BibLaTeX kullanmaktır.
+
+<CiteDrive />
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) , BibTeX tabanlı, akademik alıntıları ve kaynakları yönetmek için kullanılan, [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) ve [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) gibi yayın sistemleriyle otomatik olarak senkronize olan çevrimiçi bir işbirliği aracıdır. Tarayıcıdan doğrudan akademik makaleleri doğru BibTeX formatında kaydetmenize olanak tanıyan bir [tarayıcı eklentisi](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370) sunarlar. Bu sayede, örneğin, tarayıcı pencereleri/sekmeleri arasında geçiş yapmadan, makaleleri doğrudan Overleaf projenizde alıntılayabilirsiniz. Eklenti ayrıca web sayfalarını BibLaTeX formatında kaydedebilir, başlık, URL ve erişim tarihini otomatik olarak yakalar.
+:::
+
+## BibTeX Kullanımı
+
+BibTeX'te `@misc` etiketini bir çözüm olarak kullanırız ve `note` alanında URL'yi ve genellikle bir erişim tarihini belirtiriz. Bu örnekte, `url` (*veya `hyperref`*) alanının `usepackage{url}` kullanılarak belirtilmesi gerekir.
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive Overleaf'e alıntı yönetimi getiriyor},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Erişim tarihi: (Erişim tarihini kullanın)]}
+}
+```
+
+Alternatif olarak, `howpublished` alanı kullanılabilir:
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive Overleaf'e alıntı yönetimi getiriyor},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {Erişim tarihi: (Erişim tarihini kullanın)},
+	howpublished = {\url{https://www.citedrive.com/overleaf}}
+}
+```
+
+## BibLaTeX Kullanımı
+
+BibLaTeX kullanıyorsanız, ki bunu tavsiye ederiz, `@online` giriş türü doğal olarak desteklenir ve ekstra bir değişiklik yapmanıza gerek yoktur. URL'yi ve erişim tarihini sırasıyla `url` ve `urldate` alanlarına girebilirsiniz.
+
+```latex
+@online{CiteDrive2022,
+	title        = {CiteDrive Overleaf'e alıntı yönetimi getiriyor},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	url          = {https://www.citedrive.com/overleaf},
+	urldate      = {Erişim tarihini kullanın}
+}
+```
+
+## `natbib` Kullanımı
+
+İnsanlar sıkça [natbib](/natbib) kullanarak web sayfalarını nasıl alıntılayacaklarını sorar. Bunun, BibTeX ile aynı şekilde çalıştığını vurgulamak isteriz. Natbib, metin içi alıntıları biçimlendirmek için bir araçtır ve BibTeX'e bağlı olarak çalışır.
