@@ -1,0 +1,36 @@
+---
+title: "Quando usar aspas ou chaves em campos de entradas de arquivos .bib"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Você já se perguntou quando usar aspas (`""`) ou chaves (`{}`) para delimitar campos em entradas de arquivos `.bib`? Ou se isso realmente importa? A resposta é: **não importa**.
+
+Algumas pessoas preferem usar `""` por razões estéticas, enquanto outras optam por `{}`, argumentando que são mais práticas caso seja necessário usar um caractere de aspas (`"`) dentro de um campo. Vale lembrar que estas são as **únicas** maneiras aceitáveis de delimitar campos.
+
+<CiteDrive />
+
+## Exemplos
+
+### Delimitando campos com `{}`
+
+```latex
+@misc{CiteDrive2022,
+	title        = {CiteDrive traz gestão de referências para Overleaf},
+	author       = {CiteDrive, Inc},
+	year         = 2022,
+	note         = {\url{https://www.citedrive.com/overleaf} [Acessado em: (Insira a data de acesso)]}
+}
+```
+
+### Delimitando campos com `""`
+
+```latex
+@misc{CiteDrive2022,
+	title        = "CiteDrive traz gestão de referências para Overleaf",
+	author       = "CiteDrive, Inc",
+  ...
+}
+```
+
+Não há uma escolha certa ou errada, desde que a informação dentro do campo seja corretamente delimitada. Por que não experimentar e descobrir qual método funciona melhor para você?

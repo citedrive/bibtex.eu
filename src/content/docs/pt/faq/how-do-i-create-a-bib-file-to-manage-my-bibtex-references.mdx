@@ -1,0 +1,44 @@
+---
+title: "Como criar um arquivo .BIB para gerenciar minhas referências BibTeX?"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Se você está procurando uma forma de gerenciar suas referências `BibTeX`, pode estar se perguntando como criar um arquivo `.BIB`. Neste artigo, vamos mostrar como fazer isso! Também daremos algumas dicas sobre como usar arquivos ".BIB" de forma eficaz.
+
+:::tip
+[CiteDrive](https://www.citedrive.com/) é uma ferramenta colaborativa de gerenciamento de referências baseada na web, construída em BibTeX, que sincroniza automaticamente com sistemas de publicação, como [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) e [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619), e formata automaticamente seu arquivo .bib para você.
+:::
+
+
+<CiteDrive />
+
+## Criando um arquivo .bib manualmente
+
+Criar um arquivo `.BIB` é na verdade bem simples. Tudo o que você precisa fazer é criar um arquivo de texto com a extensão `.bib`. Em seguida, adicione suas referências BibTeX a este arquivo, uma por linha. Por exemplo:
+
+```latex
+@article{smith201X,
+	title        = {Um artigo interessante},
+	author       = {John Smith},
+	year         = {201X},
+	journal      = {Journal of Interesting Articles}
+}
+```
+
+Depois de criar seu arquivo `.BIB`, você pode usá-lo em seus documentos LaTeX especificando o comando `\bibliography{nome-do-arquivo}`. Por exemplo:
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+
+\begin{document}
+
+...
+
+\bibliography{nome-do-arquivo}
+
+\end{document}
+```
+
+É só isso! Criar um arquivo `.BIB` é uma maneira simples de gerenciar suas referências BibTeX. Certifique-se de conferir nossos outros artigos sobre BibTeX para mais dicas e truques!

@@ -1,0 +1,43 @@
+---
+title: "Como usar URLs em entradas BibTeX"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Se você está usando o BibTeX para criar bibliografias para seus trabalhos de pesquisa, talvez tenha se perguntado como incluir URLs em suas entradas.
+
+O campo de tipo URL ainda não é formalmente suportado no BibTeX, embora tenha sido planejado para a versão 1.0 por Oren Patashnik. Apesar disso, o debate sobre essa versão e suas intenções remonta ao [artigo de Patashnik de 2003](https://tug.org/TUGboat/tb24-1/patashnik.pdf), que está sendo gradualmente substituído pelo biblatex, que utiliza o backend Biber.
+
+Portanto, é provável que você precise usar uma das soluções alternativas a seguir, por exemplo, ao citar sites:
+
+
+<CiteDrive />
+
+
+## Usar o campo de tipo note:
+
+```latex
+@misc{...,
+  howpublished = "\url{http://...}"
+}
+```
+
+## Usar o campo de tipo howpublished:
+
+```latex
+@misc{...,
+  note = "Disponível em \url{http://...}"
+}
+```
+
+## Usar o biblatex e seu campo de tipo URL embutido:
+
+```latex
+@online{...,
+  url = {http://...}
+}
+```
+
+
+Se você optar pelo biblatex, será necessário usar o Biber como backend em vez do BibTeX. Caso queira saber mais sobre o biblatex e o Biber, leia nosso guia de introdução.  
+Se você tiver dúvidas ou comentários, entre em contato. Esperamos que isso tenha ajudado!
