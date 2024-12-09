@@ -1,0 +1,42 @@
+---
+title: "Campo BibTeX: title"
+sidebar:
+  label: title
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `title` em uma entrada BibTeX é usado para especificar o título principal da obra que você está referenciando. É um dos campos essenciais e é suportado por quase todos os tipos de entrada BibTeX. A capitalização precisa e o cumprimento da sintaxe LaTeX são críticos ao preencher este campo para garantir que o título seja exibido corretamente na bibliografia gerada.
+
+<CiteDrive />
+
+Para manter a formatação adequada, comandos LaTeX podem ser usados dentro do campo `title` para preservar a capitalização de certas palavras ou frases. Além disso, se o título contiver caracteres especiais ou símbolos matemáticos, eles devem ser inseridos utilizando os comandos apropriados do LaTeX.
+
+## Exemplo
+
+Aqui está um exemplo simples mostrando como usar o campo `title`:
+
+```bibtex
+@article{key,
+    title={O que é bioinformática? Uma introdução e visão geral},
+}
+```
+
+Um exemplo mais detalhado, incluindo campos adicionais para fornecer uma referência completa, é dado abaixo:
+
+```bibtex
+@article{luscombe2001bioinformatics,
+  title={O que é bioinformática? Uma introdução e visão geral},
+  author={Luscombe, Nicholas M and Greenbaum, Dov and Gerstein, Mark},
+  journal={Yearbook of medical informatics},
+  volume={10},
+  number={01},
+  pages={83--100},
+  year={2001},
+  publisher={Georg Thieme Verlag KG}
+}
+```
+
+Nestes exemplos, o campo `title` é preenchido com o título do artigo citado. Note o uso de chaves `{}` para encapsular o texto do título, o que ajuda a manter a capitalização e formatação do título como desejado pelo autor.
+
+Lembre-se, o campo `title` é crucial para ajudar os leitores a identificar a obra específica sendo referenciada, então garanta que ele seja inserido corretamente e formatado de maneira apropriada nas suas entradas BibTeX.

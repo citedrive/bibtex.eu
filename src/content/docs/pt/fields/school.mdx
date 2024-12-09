@@ -1,0 +1,45 @@
+---
+title: "Campo BibTeX: school"
+sidebar:
+  label: school
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+No BibTeX, o campo `school` é utilizado predominantemente nas entradas `@phdthesis` ou `@mastersthesis`. Esse campo é usado para indicar a instituição educacional onde a tese ou dissertação foi escrita. Ele é um campo obrigatório para ambos os tipos de entrada, ajudando a fornecer informações detalhadas sobre a origem do trabalho acadêmico, o que pode ser importante para leitores que desejam buscar mais informações ou referenciar o trabalho em suas próprias pesquisas.
+
+<CiteDrive />
+
+## Diretrizes de Formatação
+
+Ao inserir o nome da escola, é recomendável usar o nome completo e oficial da instituição para manter um formato formal e padronizado nas suas referências. Evite usar abreviações, a menos que sejam amplamente reconhecidas e aceitas.
+
+## Exemplos
+
+Aqui estão exemplos de como usar o campo `school` para entradas `phdthesis` e `mastersthesis`:
+
+### Tese de PhD
+
+```bibtex
+@phdthesis{doe2023,
+  author = {John Doe},
+  title = {Explorações em Computação Quântica},
+  year = {2023},
+  school = {Massachusetts Institute of Technology},
+}
+```
+
+### Dissertação de Mestrado
+
+```bibtex
+@mastersthesis{smith2023,
+  author = {Sarah Smith},
+  title = {Um Estudo Abrangente sobre Sustentabilidade Ambiental},
+  year = {2023},
+  school = {University of California, Berkeley},
+}
+```
+
+## Observação
+
+No seu exemplo, você usou o campo `series` em vez do campo `school` para a entrada `mastersthesis`. No entanto, o campo `school` deve ser utilizado para especificar a instituição tanto nas entradas `phdthesis` quanto `mastersthesis`, como mostrado nos exemplos acima.

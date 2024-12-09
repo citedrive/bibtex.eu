@@ -1,0 +1,47 @@
+---
+title: "Campo BibTeX: month"
+sidebar:
+  label: month
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `month` no BibTeX é utilizado para indicar o mês em que um determinado trabalho foi publicado ou criado (se não publicado). Essa informação ajuda a oferecer uma linha do tempo detalhada da obra e pode ser vital para certos tipos de pesquisa acadêmica ou histórica.
+
+<CiteDrive />
+
+Nas entradas BibTeX, é comum representar o mês usando a representação numérica ou uma abreviação de três letras. Usar um formato padronizado pode ajudar a manter a consistência na sua bibliografia. Aqui estão alguns formatos geralmente aceitos:
+
+1. Representação numérica (01 a 12).
+2. Abreviação de três letras (jan, fev, mar, abr, mai, jun, jul, ago, set, out, nov, dez).
+
+É importante observar que o campo mês deve ser utilizado com cautela, especialmente ao citar livros ou obras sem um mês de publicação específico, para evitar informações imprecisas.
+
+## Formato
+
+Você pode usar o campo mês em várias entradas BibTeX, como `@book`, `@article`, etc., conforme demonstrado no seguinte modelo:
+
+```bibtex
+@book{...,
+ month = {representação do mês},
+ ... 
+}
+```
+
+No modelo acima, substitua "representação do mês" pela representação numérica ou pela abreviação de três letras do mês.
+
+## Exemplo
+
+Aqui está um exemplo prático demonstrando como usar o campo `month` em uma entrada `@book`:
+
+```bibtex
+@book{johnson2023deep,
+ title = {Deep Learning and its Applications},
+ author = {Johnson, Mark},
+ month = {mar},
+ year = {2023},
+ publisher = {Tech Publishing House},
+}
+```
+
+Neste exemplo, o livro foi publicado em março de 2023, fornecendo uma linha do tempo clara e específica para a publicação. Lembre-se de verificar o mês de publicação em fontes confiáveis para manter a precisão de suas referências.

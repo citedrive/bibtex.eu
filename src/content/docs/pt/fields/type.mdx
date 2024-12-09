@@ -1,0 +1,29 @@
+---
+title: "Campo BibTeX: type"
+sidebar:
+  label: type
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `type` em uma entrada BibTeX é utilizado para indicar o tipo ou categoria específica de uma publicação. Este campo pode ser particularmente útil quando você está referenciando relatórios, teses ou outros documentos que possuem categorizações mais detalhadas. Indicar o tipo específico pode fornecer ao leitor mais contexto sobre a natureza do documento que você está referenciando.
+
+<CiteDrive />
+
+Comumente usado em conjunto com entradas como `@techreport` ou `@thesis`, ele ajuda a denotar um subtipo mais específico da publicação, como "Nota de Pesquisa", "Relatório Governamental", "Tese de Mestrado", "Dissertação de Doutorado", entre outros. Este campo pode ajudar a distinguir o documento de outros de uma categoria similar.
+
+Ao usar o campo `type`, é aconselhável utilizar uma terminologia descritiva e padronizada que esteja alinhada com as normas do campo ou disciplina em que você está trabalhando. Isso promove clareza e ajuda o leitor a entender a natureza exata do documento referenciado.
+
+## Exemplo
+
+Aqui está um exemplo demonstrando como usar o campo `type` em uma entrada de relatório técnico:
+
+```bibtex
+@techreport{key,
+    type={Nota de Pesquisa},
+}
+```
+
+Neste exemplo, o campo `type` é preenchido com o descritor "Nota de Pesquisa", indicando que o relatório técnico é uma nota detalhando alguns achados de pesquisa.
+
+Ao utilizar o campo `type` de forma eficaz, você pode fornecer informações mais detalhadas sobre os documentos que está referenciando, facilitando uma compreensão mais profunda e uma navegação mais fluida na sua bibliografia para o leitor.

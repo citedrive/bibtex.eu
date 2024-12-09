@@ -1,0 +1,64 @@
+---
+title: "Campo BibTeX: number"
+sidebar:
+  label: number
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+No BibTeX, o campo `number` é usado para especificar o número da edição de uma revista, o número de um relatório técnico ou outros identificadores que fazem parte de uma série maior. Esse campo ajuda a identificar a edição exata ou o número de uma série onde o trabalho referenciado pode ser encontrado, fornecendo informações mais precisas para localizar o material.
+
+<CiteDrive />
+
+Esse campo é comumente utilizado em conjunto com o campo `volume`, especialmente para artigos de revistas e periódicos. Para um relatório técnico, o campo `number` geralmente contém o número do relatório atribuído pela instituição ou organização que publicou o documento.
+
+## Formato
+
+O formato para o campo `number` é relativamente simples. No contexto de uma entrada de artigo, ele aparecerá da seguinte forma:
+
+```bibtex
+@article{chavecitação,
+  ...
+  number={número_da_edicao},
+  ...
+}
+```
+
+Aqui, "chavecitação" representa um identificador único para a entrada, e "número_da_edicao" representa o número da edição da revista, relatório técnico ou outra publicação.
+
+## Exemplos
+
+Abaixo estão alguns exemplos demonstrando a aplicação do campo `number` em diferentes contextos:
+
+### Exemplo 1: Artigo de Revista
+
+```bibtex
+@article{doe2023estudo,
+  author = {Doe, Jane},
+  title = {Um Estudo Abrangente sobre Computação Quântica},
+  journal = {Journal of Advanced Computing},
+  year = {2023},
+  volume = {29},
+  number = {3},
+  pages = {215-230},
+}
+```
+
+Neste exemplo, o campo `number` especifica a terceira edição do 29º volume da "Journal of Advanced Computing".
+
+### Exemplo 2: Relatório Técnico
+
+```bibtex
+@techreport{smith2022analise,
+  author = {Smith, John},
+  title = {Uma Análise das Tendências em Energia Renovável},
+  institution = {Energy Research Institute},
+  year = {2022},
+  number = {TR-2022-45},
+  type = {Relatório Técnico},
+}
+```
+
+Neste caso, o campo `number` é usado para indicar o número específico do relatório atribuído pelo "Energy Research Institute".
+
+Utilizar o campo `number` de maneira precisa pode facilitar para o leitor encontrar o material de origem com mais facilidade e verificar as informações citadas. Ele é um detalhe essencial na redação acadêmica e na documentação de pesquisas.

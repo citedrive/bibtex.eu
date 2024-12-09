@@ -1,0 +1,62 @@
+---
+title: "Tipo de Campo BibTeX: doi"
+sidebar:
+  label: doi
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `doi` é uma parte integral das referências modernas, permitindo um método contínuo e permanente para localizar objetos digitais, como artigos de periódicos, relatórios de pesquisa e conjuntos de dados, em um ambiente online. Aqui, exploramos em detalhes a funcionalidade e a importância do campo `doi` no BibTeX, além de fornecer orientações sobre seu uso correto.
+
+<CiteDrive />
+
+### Visão Geral
+
+Um Identificador de Objeto Digital (DOI) é uma sequência alfanumérica única atribuída a um objeto digital, facilitando um link persistente para sua localização na internet. Como um método padronizado para identificar recursos eletrônicos, o DOI permanece estável mesmo que a URL do item mude, garantindo a longevidade das referências.
+
+O campo `doi` no BibTeX serve para registrar esse identificador, permitindo citações precisas e permanentes. Embora seja predominantemente encontrado no tipo de entrada `article`, ele também pode ser utilizado em outros tipos, como `book`, `chapter`, `inproceedings` ou `conference`, embora com menor frequência. Independentemente do tipo de entrada, o campo `doi` é opcional.
+
+### Sintaxe e Estrutura
+
+Para incorporar corretamente um DOI na sua entrada BibTeX, siga o formato abaixo:
+
+```bibtex
+@entrytype{chaveDeCitação,
+  ...
+  doi={https://doi.org/xxxxx},
+  ...
+}
+```
+O campo `doi` encapsula a URL completa do DOI, que normalmente começa com "[https://doi.org/](https://doi.org/)" seguida por uma string de identificador única.
+
+### Exemplo
+
+Aqui está um exemplo de entrada BibTeX que inclui um DOI:
+
+```bibtex
+@article{steinbeck2003chemistry,
+  title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
+  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  journal={Journal of chemical information and computer sciences},
+  volume={43},
+  number={2},
+  pages={493--500},
+  year={2003},
+  publisher={ACS Publications},
+  doi={https://doi.org/10.1021/ci025584y},
+}
+```
+
+Neste exemplo, o campo `doi` contém a URL permanente que leva diretamente ao artigo referenciado.
+
+### Dicas de Utilização
+
+1. **Encontrando DOIs**: Para artigos acadêmicos, os DOIs geralmente podem ser encontrados na primeira página do artigo ou na base de dados online onde o artigo está hospedado.
+2. **Referenciamento Cruzado**: Utilize o campo `doi` para referência cruzada no seu trabalho, oferecendo aos leitores uma rota direta para o material original.
+3. **Opcional, mas Benéfico**: Embora o campo `doi` seja opcional, incluí-lo melhora a confiabilidade e a rastreabilidade das suas referências.
+
+### Conclusão
+
+A inclusão do campo `doi` nas suas entradas BibTeX representa a melhor prática na escrita acadêmica, oferecendo um link confiável para os objetos digitais que você referencia. Ao adotar o sistema DOI, você promove a acessibilidade e a permanência do conhecimento científico, apoiando a comunidade global de pesquisa em seus esforços acadêmicos.
+
+Ao construir sua bibliografia, lembre-se de aproveitar as capacidades do campo `doi`, fomentando um discurso acadêmico mais rico, confiável e interconectado.

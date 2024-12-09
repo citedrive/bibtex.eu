@@ -1,0 +1,56 @@
+---
+title: "Campo BibTeX: pages"
+sidebar:
+  label: pages
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `pages` em uma entrada BibTeX denota as páginas específicas a que se refere dentro de uma obra maior, como um livro ou artigo em uma revista. Este campo é essencial ao citar um capítulo de um livro ou um artigo em uma revista, ajudando a direcionar os leitores para a seção pertinente da obra.
+
+<CiteDrive />
+
+## Diretrizes de Formatação
+
+Você pode especificar uma única página, um intervalo de páginas ou até mesmo páginas não consecutivas. A maneira recomendada de separar os números de página é com vírgulas ou dois traços. Aqui estão algumas diretrizes para formatar corretamente o campo `pages`:
+
+1. **Página Única:** Se você se refere a uma única página, basta escrever o número da página.
+    
+2. **Intervalo de Páginas:** Para um intervalo de páginas, você deve usar dois traços (--). Isso indica um intervalo contínuo do primeiro número até o segundo.
+    
+3. **Páginas Não Consecutivas:** Se você se refere a páginas não consecutivas, separe os números de página ou intervalos com uma vírgula.
+
+## Exemplos
+
+Aqui estão alguns exemplos demonstrando como usar o campo `pages`:
+
+```bibtex
+@book{key,
+  title = {Título do Livro},
+  author = {Nome do Autor},
+  year = {2023},
+  pages = {33--44},   % Intervalo de páginas de 33 a 44
+}
+```
+
+```bibtex
+@book{key,
+  title = {Título do Livro},
+  author = {Nome do Autor},
+  year = {2023},
+  pages = {22, 33--44},   % Página 22 e um intervalo de 33 a 44
+}
+```
+
+```bibtex
+@book{key,
+  title = {Título do Livro},
+  author = {Nome do Autor},
+  year = {2023},
+  pages = {17},    % Página única
+}
+```
+
+## Nota
+
+É importante notar que o campo `pages` não está limitado a entradas do tipo `@book`, podendo também ser usado em outros tipos de entradas como `@article` ou `@inbook` para denotar as páginas relevantes nesses contextos. Usar o campo `pages` corretamente ajuda a criar citações mais precisas e úteis.

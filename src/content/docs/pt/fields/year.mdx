@@ -1,0 +1,33 @@
+---
+title: "Campo BibTeX: ano"
+sidebar:
+  label: ano
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `ano` é utilizado em uma entrada BibTeX para indicar o ano em que a obra foi publicada ou criada, caso seja inédita. Este é um campo vital, pois oferece ao leitor uma compreensão do período em que o trabalho foi produzido, o que pode influenciar a maneira como as informações na obra são percebidas ou utilizadas.
+
+<CiteDrive />
+
+Este campo é tipicamente obrigatório na maioria dos tipos de entrada BibTeX, pois ajuda a citar e referenciar com precisão uma obra. Incluir o ano de publicação é uma prática padrão na escrita acadêmica, pois fornece um contexto essencial sobre a atualidade e relevância do material citado.
+
+O campo `ano` deve ser preenchido com um formato de ano de quatro dígitos para manter consistência e clareza em suas referências. Esse detalhe facilita uma compreensão cronológica e a fácil organização das referências em uma bibliografia.
+
+Aqui está como você pode usar o campo `ano` em uma entrada BibTeX:
+
+## Exemplo
+
+```bibtex
+@article{key,
+    author = {Nome do Autor},
+    title = {Título do Artigo},
+    journal = {Nome da Revista},
+    volume = {3},
+    number = {2},
+    pages = {123-456},
+    year = {2007},
+}
+```
+
+Neste exemplo, o campo `ano` indica que o artigo foi publicado no ano de 2007. Esta é uma informação crucial que ajuda os leitores a determinar o contexto temporal da obra citada, o que pode ser vital para análises históricas ou cronológicas em pesquisas.

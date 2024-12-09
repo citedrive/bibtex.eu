@@ -1,0 +1,25 @@
+---
+title: "Tipo de Campo BibTeX: howpublished"
+sidebar:
+  label: howpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `howpublished` é utilizado no tipo de entrada `@misc`, geralmente para referenciar fontes que não são diretamente suportadas pelo BibTeX. Este campo é útil, especialmente ao citar páginas da web, quando você deseja fornecer um URL.
+
+<CiteDrive/>
+
+Nas suas entradas BibTeX, você pode utilizar o campo `howpublished` para detalhar o meio de publicação ou a fonte da referência. Esse campo é muito útil quando é necessário incorporar fontes não tradicionais nas suas referências, como páginas da web ou relatórios online.
+
+Aqui está um exemplo demonstrando como usar o campo `howpublished` para especificar um URL ao citar uma página da web:
+
+```bibtex
+@misc{BibTeXeu,
+  title = {{Gerenciamento de referências com BibTeX: Um guia curto}},
+  howpublished = {\url{https://bibtex.eu/}},
+  note = {Acesso em: 2022-06-12}
+}
+```
+
+Neste exemplo, o campo `howpublished` é usado para fornecer o URL da página da web citada, oferecendo aos leitores um link direto para a fonte. Lembre-se de incluir o campo `note` para especificar a data de acesso, o que é uma exigência comum ao citar fontes online.

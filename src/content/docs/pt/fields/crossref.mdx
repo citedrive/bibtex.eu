@@ -1,0 +1,80 @@
+---
+title: "Tipo de Campo BibTeX: crossref"
+sidebar:
+  label: crossref
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `crossref` no BibTeX foi criado para simplificar o processo de citação quando você tem várias entradas citando a mesma fonte, especialmente em casos envolvendo `proceedings` ou coleções. Em vez de listar repetidamente os mesmos detalhes em várias entradas, o `crossref` permite especificar campos comuns em uma única entrada central, reduzindo a redundância e mantendo um banco de dados mais limpo. A seguir, apresentamos uma exploração detalhada da funcionalidade e aplicação do campo `crossref` no BibTeX.
+
+<CiteDrive />
+
+### Visão Geral
+
+Em uma bibliografia típica, não é incomum referenciar várias partes de uma obra maior, como anais de conferências ou volumes coletados. É aqui que o campo `crossref` se torna útil. Ao usar o `crossref`, você pode definir os atributos compartilhados da obra maior em uma única entrada e depois referenciar essa entrada em outras citações, garantindo uniformidade e reduzindo o risco de inconsistências na sua bibliografia.
+
+### Sintaxe e Estrutura
+
+Para implementar a funcionalidade `crossref`, você usa a sintaxe `crossref = {chave de citação}`, onde `chave de citação` é um identificador único para a entrada referenciada. A `chave de citação` deve ser única para manter a integridade da referência cruzada.
+
+Aqui está uma estrutura básica:
+
+```bibtex
+@entrytype{UNIQUECITATIONKEY,
+    commonfield1 = {dado comum 1},
+    commonfield2 = {dado comum 2},
+    ...
+}
+
+@entrytype{citationkey1,
+    uniquefield1 = {dado único 1},
+    crossref     = {UNIQUECITATIONKEY},
+}
+
+@entrytype{citationkey2,
+    uniquefield2 = {dado único 2},
+    crossref     = {UNIQUECITATIONKEY},
+}
+```
+
+### Exemplo
+
+Aqui está um exemplo prático para ilustrar como o campo `crossref` pode ser usado para citar várias entradas dos mesmos anais de conferência:
+
+```bibtex
+@proceedings{ASE2023,
+    title       = {Anais da 38ª Conferência Internacional IEEE/ACM sobre Engenharia de Software Automatizada},
+    year        = 2023,
+    publisher   = {IEEE},
+    address     = {São Francisco, Califórnia, EUA},
+}
+
+@inproceedings{Smith2023,
+    author      = {John Smith},
+    title       = {Geração Automática de Código: Inovações e Desafios},
+    pages       = {15-29},
+    crossref    = {ASE2023},
+}
+
+@inproceedings{Doe2023,
+    author      = {Jane Doe},
+    title       = {Rumo a uma Nova Era de Testes de Software},
+    pages       = {30-45},
+    crossref    = {ASE2023},
+}
+```
+
+No exemplo acima, a chave de citação `ASE2023` é usada para referenciar duas entradas diferentes de `inproceedings`, mantendo a consistência e reduzindo informações repetidas.
+
+### Dicas para Utilização
+
+1. **Chave de Citação Única**: Certifique-se de atribuir uma chave de citação única a cada entrada, incluindo a entrada referenciada, para evitar confusão e manter uma estrutura clara de referência cruzada.
+2. **Uso Apropriado do Crossref**: Embora o `crossref` seja particularmente benéfico para proceedings, ele também pode ser aplicado a capítulos de livros (`incollection`) e outros tipos de entrada semelhantes, onde várias referências de uma única fonte ocorrem.
+3. **Integridade dos Dados**: O uso do `crossref` promove a integridade dos dados ao minimizar a possibilidade de inconsistências nos campos comuns entre várias entradas.
+
+### Conclusão
+
+Usar o campo `crossref` no BibTeX permite uma abordagem organizada, simplificada e eficiente para referenciar várias entradas de uma única fonte. Ao minimizar a redundância e promover a consistência, você pode manter uma bibliografia limpa e profissional que atende aos padrões acadêmicos.
+
+Lembre-se de revisar e verificar suas entradas BibTeX para garantir que o campo `crossref` seja implementado corretamente, promovendo clareza e coerência em seus escritos acadêmicos.

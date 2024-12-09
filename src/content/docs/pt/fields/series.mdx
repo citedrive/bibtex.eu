@@ -1,0 +1,43 @@
+---
+title: "Campo BibTeX: series"
+sidebar:
+  label: series
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `series` no BibTeX é usado para denotar a série à qual um livro, relatório ou outra publicação pertence. Especificar a série pode oferecer um contexto adicional para o leitor, pois pode estar relacionado a um discurso temático ou acadêmico mais amplo.
+
+<CiteDrive />
+
+Esse campo é opcional e pode ser utilizado em diversos tipos de entrada, incluindo, mas não se limitando a `@book`, `@inbook`, `@incollection` e `@inproceedings`. Ele é particularmente útil quando o trabalho citado faz parte de uma série contínua ou de um corpus maior de obras que compartilham um tema, autor ou editor comum.
+
+Ao inserir dados no campo `series`, é recomendável usar o título completo e oficial da série. Se a série tiver um ISSN, pode ser relevante incluí-lo para uma referência mais precisa.
+
+## Formato
+
+O formato geral para incluir uma série na sua entrada BibTeX é o seguinte:
+
+```bibtex
+@entrytype{key,
+  ...
+  series = {Nome da Série},
+  ...
+}
+```
+
+## Exemplo
+
+Aqui está um exemplo de como usar o campo `series` em uma entrada `@book`:
+
+```bibtex
+@book{doe2023,
+  author = {John Doe},
+  title = {Estudos Avançados em Mecânica Quântica},
+  year = {2023},
+  publisher = {Scientific Publishing Ltd.},
+  series = {Cambridge Advanced Series in Physics},
+}
+```
+
+Neste exemplo, o livro faz parte da "Cambridge Advanced Series in Physics", que pode abranger vários títulos sobre tópicos avançados no campo da física. Incluir a série ajuda a situar a obra dentro de uma conversa acadêmica maior e pode fornecer aos leitores recursos adicionais sobre o tópico.

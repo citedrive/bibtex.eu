@@ -1,0 +1,23 @@
+---
+title: "Campo BibTeX: institution"
+sidebar:
+  label: institution
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `institution` é designado para ser utilizado dentro do tipo de entrada `@techreport`, onde serve para indicar o nome da instituição responsável pela emissão ou publicação do relatório. Isso ajuda a atribuir corretamente a autoria e facilita a localização da fonte original pelos leitores.
+
+<CiteDrive/>
+
+Aqui está uma estrutura de exemplo demonstrando como você pode usar o campo `institution` em uma entrada `@techreport`:
+
+```bibtex
+@techreport{key,
+  institution = {...},
+}
+```
+
+Neste formato, o "key" é um identificador único para a entrada BibTeX, e o campo "institution" deve conter o nome da instituição que publicou o relatório. É essencial fornecer informações precisas e detalhadas neste campo para facilitar a citação e a referência corretas.
+
+Certifique-se de substituir `{...}` pelo nome real da instituição ao criar suas entradas BibTeX. Esse campo ajuda a organizar e categorizar os relatórios técnicos adequadamente na sua lista de referências.

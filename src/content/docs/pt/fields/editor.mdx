@@ -1,0 +1,80 @@
+---
+title: "Tipo de Campo BibTeX: editor"
+sidebar:
+  label: editor
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `editor` no BibTeX é utilizado para especificar os editores de uma obra publicada. Esse campo é essencial para tipos de referência como livros, anais de conferências ou coleções, onde o papel do editor é distinto do autor. Especificar corretamente os editores pode garantir uma atribuição correta e facilitar a citação em artigos e trabalhos acadêmicos. Aqui, vamos explorar de forma mais profunda as maneiras de indicar editores no BibTeX.
+
+<CiteDrive />
+
+### Regras de Formatação
+
+No campo `editor`, diversos formatos de notação são aceitos. No entanto, a formatação deve ser consistente e precisa para evitar a representação incorreta do nome do editor. Aqui estão as notações comumente usadas:
+
+#### Notação: `{Nome Sobrenome}`
+
+Este é um método simples, onde você lista o primeiro nome do editor seguido pelo sobrenome. Observe que a inversa, "Sobrenome Nome", não é recomendada.
+
+**Exemplo**
+
+```bibtex
+@book{Exemplo2023,
+  ...
+  editor={Isaac Newton},
+  ...
+}
+```
+
+#### Notação: `{Sobrenome, Nome}`
+
+Esta é a formatação recomendada, pois fornece uma clara diferenciação entre o primeiro e o sobrenome, o que é particularmente útil para nomes com múltiplos componentes.
+
+**Exemplo**
+
+```bibtex
+@book{Exemplo2023,
+  ...
+  editor={Newton, Isaac},
+  ...
+}
+```
+
+#### Notação: `{Sobrenome, Sufixo, Nome}`
+
+Para editores com sufixos (por exemplo, Júnior, Sr., III), o nome deve ser formatado com o sobrenome primeiro, seguido pelo sufixo e, depois, o primeiro nome. Todos os componentes devem ser separados por vírgulas.
+
+**Exemplo**
+
+```bibtex
+@book{Exemplo2023,
+  ...
+  editor={King, Jr., Martin Luther},
+  ...
+}
+```
+
+### Adicionando Múltiplos Editores
+
+Para especificar vários editores, use a palavra-chave `AND` entre os detalhes de cada editor, formatados conforme mencionado acima. Essa notação ajuda a listar vários editores de forma distinta e precisa.
+
+**Exemplo**
+
+```bibtex
+@book{Exemplo2023,
+  ...
+  editor={Smith, John AND Doe, Jane},
+  ...
+}
+```
+
+### Melhores Práticas
+
+1. **Consistência**: Mantenha consistência no formato de notação em todas as entradas do seu arquivo BibTeX para garantir uma representação uniforme.
+2. **Sufixos**: Especifique claramente os sufixos para evitar confusão, especialmente em obras com múltiplos editores que tenham relações familiares.
+
+### Conclusão
+
+O campo `editor` é um componente crítico nas entradas do BibTeX, especialmente para volumes editados, anais de conferências e coleções. A notação precisa e consistente garante que os editores recebam a devida atribuição, melhorando a credibilidade e a legibilidade das suas citações. Lembre-se de seguir os formatos recomendados para uma experiência de citação mais fluída.

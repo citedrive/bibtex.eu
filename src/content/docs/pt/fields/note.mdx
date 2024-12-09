@@ -1,0 +1,60 @@
+---
+title: "Campo BibTeX: note"
+sidebar:
+  label: note
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `note` em uma entrada BibTeX é utilizado para transmitir informações adicionais sobre o trabalho citado que não se encaixam em outros campos padronizados. Isso pode incluir observações suplementares, explicações ou esclarecimentos que sejam pertinentes para o leitor entender o contexto ou a importância do trabalho em questão. O campo `note` se revela uma ferramenta versátil no BibTeX, permitindo a inclusão de diferentes tipos de informações que podem enriquecer o nível de detalhe e profundidade da citação.
+
+<CiteDrive />
+
+Utilizar o campo `note` pode agregar mais profundidade a uma referência, incluindo contexto adicional, observações sobre o status da publicação, anotações específicas ou quaisquer outros dados relevantes que possam beneficiar o leitor. Isso pode incluir links para materiais suplementares, comentários sobre a influência ou recepção do trabalho, ou quaisquer outros detalhes pertinentes.
+
+## Formato
+
+Para utilizar o campo `note`, você o incluiria em sua entrada BibTeX conforme mostrado no formato abaixo:
+
+```bibtex
+@entrytype{chavecitação,
+  ...
+  note={sua nota aqui},
+  ...
+}
+```
+
+No formato acima, substitua "entrytype" pelo tipo apropriado de trabalho (por exemplo, @book, @article) e "chavecitação" por um identificador único para a entrada. Depois, você pode inserir as informações adicionais no campo `note`.
+
+## Exemplos
+
+Aqui estão alguns exemplos práticos demonstrando como usar o campo `note` em várias entradas:
+
+### Exemplo 1: Informação Adicional
+
+```bibtex
+@book{smith2023inovações,
+  title = {Inovações em Tecnologia Moderna},
+  author = {Smith, John},
+  year = {2023},
+  publisher = {Technology Press},
+  note = {Inclui referências bibliográficas e índice},
+}
+```
+
+### Exemplo 2: Material Suplementar
+
+```bibtex
+@article{johnson2023ia,
+  title = {IA e suas Futuras Aplicações},
+  author = {Johnson, Mark},
+  year = {2023},
+  journal = {Journal of Technological Advances},
+  volume = {5},
+  issue = {2},
+  pages = {123-135},
+  note = {Material suplementar disponível em: http://example.com/material_suplementar},
+}
+```
+
+Nestes exemplos, o campo `note` é utilizado para indicar a inclusão de referências e índice em um livro, além de fornecer um link para materiais suplementares de um artigo, oferecendo ao leitor recursos e informações adicionais.

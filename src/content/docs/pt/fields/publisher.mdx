@@ -1,0 +1,57 @@
+---
+title: "Campo BibTeX: publisher"
+sidebar:
+  label: publisher
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `publisher` é utilizado em várias entradas BibTeX, como `@book`, `@inbook` ou `@incollection`, para especificar o nome da editora que publicou a obra referida. Incluir a editora na sua citação ajuda a fornecer uma referência completa e precisa, o que pode facilitar para os leitores a localização da fonte original.
+
+<CiteDrive />
+
+Ao incluir uma editora na sua entrada BibTeX, certifique-se de usar o nome completo e oficial da editora. Isso garantirá que a citação seja tanto profissional quanto confiável. Além disso, ajuda a evitar confusão com outras editoras que possam ter nomes semelhantes.
+
+## Exemplos
+
+Aqui estão alguns exemplos demonstrando como especificar corretamente uma editora em diferentes entradas BibTeX:
+
+### Livro
+
+```bibtex
+@book{key1,
+  title = {A Arte da Pesquisa Científica},
+  author = {John Doe},
+  year = {2023},
+  publisher = {Cambridge University Press},
+}
+```
+
+### Inbook
+
+```bibtex
+@inbook{key2,
+  title = {Capítulo sobre Mecânica Quântica},
+  author = {Jane Doe},
+  year = {2023},
+  publisher = {Oxford University Press},
+  pages = {45--78},
+  editor = {Sarah Smith},
+  booktitle = {Física Moderna},
+}
+```
+
+### Incollection
+
+```bibtex
+@incollection{key3,
+  title = {Ensaio sobre Conservação Ambiental},
+  author = {Alex Johnson},
+  year = {2023},
+  publisher = {Springer},
+  booktitle = {Desenvolvimento Sustentável: Teorias e Práticas},
+  editor = {Mark Lee},
+}
+```
+
+Observe que o campo `publisher` geralmente é acompanhado por outros campos importantes, como `title`, `author`, `year`, etc., para fornecer uma citação completa. Vale ressaltar que, dependendo do estilo de citação utilizado, o formato e a colocação do campo da editora podem variar, então sempre siga as diretrizes do estilo específico que você está utilizando.

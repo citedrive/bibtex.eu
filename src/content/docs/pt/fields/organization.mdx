@@ -1,0 +1,57 @@
+---
+title: "Campo BibTeX: organization"
+sidebar:
+  label: organization
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `organization` em uma entrada BibTeX é usado para especificar o nome da organização responsável pela publicação do documento ou pela realização do evento citado. Isso pode ser uma empresa, uma instituição ou um grupo que patrocinou ou organizou uma conferência, workshop, manual, etc. Incluir a organização fornece ao leitor um contexto claro sobre a entidade por trás do documento, o que pode ser crucial para determinar a confiabilidade e autoridade da fonte.
+
+<CiteDrive />
+
+Você normalmente encontrará esse campo em entradas do tipo `@proceedings` e `@manual`, mas ele pode aparecer em outros tipos de entradas também, dependendo dos requisitos específicos do estilo de bibliografia utilizado.
+
+## Formato
+
+O formato para especificar o campo `organization` é o seguinte:
+
+```bibtex
+@tipo_de_entrada{chave_de_citação,
+  ...
+  organization={Nome da Organização},
+  ...
+}
+```
+
+Aqui, "tipo_de_entrada" refere-se ao tipo de entrada BibTeX (como `@proceedings` ou `@manual`), "chave_de_citação" é um identificador único para a entrada e "Nome da Organização" é o nome da organização envolvida.
+
+## Exemplos
+
+Aqui estão alguns exemplos demonstrando como usar o campo `organization` em diferentes contextos:
+
+### Exemplo 1: Atas de Conferência
+
+```bibtex
+@proceedings{ICML2023,
+  title = {Atas da 40ª Conferência Internacional sobre Aprendizado de Máquina},
+  year = {2023},
+  organization = {International Machine Learning Society},
+}
+```
+
+Neste exemplo, o campo `organization` especifica a entidade responsável por organizar a conferência cujas atas estão sendo citadas.
+
+### Exemplo 2: Manual
+
+```bibtex
+@manual{UserGuide2022,
+  title = {Manual do Usuário do Software XYZ},
+  year = {2022},
+  organization = {XYZ Software Inc.},
+}
+```
+
+Aqui, o campo `organization` é utilizado para indicar a empresa que publicou o manual do software.
+
+Incluir o campo `organization` nas suas entradas BibTeX pode ajudar a fornecer uma referência completa e detalhada, facilitando a identificação e recuperação dos materiais citados.

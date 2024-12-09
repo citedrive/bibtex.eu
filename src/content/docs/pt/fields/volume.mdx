@@ -1,0 +1,35 @@
+---
+title: "Campo BibTeX: volume"
+sidebar:
+  label: volume
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `volume` em uma entrada BibTeX é essencial quando você está referenciando uma parte de uma obra maior, como um artigo em uma revista ou um capítulo em um livro de vários volumes. Este campo permite especificar qual volume da revista ou livro você está citando, fornecendo ao leitor informações mais precisas para localizar a obra citada.
+
+<CiteDrive />
+
+Em muitas publicações acadêmicas e científicas, as revistas são publicadas em volumes, frequentemente com várias edições dentro de cada volume. O número do volume geralmente indica uma coleção de edições publicadas dentro de um período específico, tipicamente um ano. Da mesma forma, livros ou séries de vários volumes são segmentados em diferentes volumes, cada um contendo uma parte da obra completa.
+
+O campo `volume` é particularmente crucial ao citar revistas, pois permite aos leitores encontrar a coleção específica de edições onde o artigo citado foi publicado. Ele geralmente é usado em conjunto com o campo `number`, que especifica ainda mais a edição dentro do volume onde o artigo pode ser encontrado.
+
+Aqui está um exemplo de como você pode usar o campo `volume` em uma entrada BibTeX:
+
+## Exemplo
+
+```bibtex
+@article{key,
+    title={Título do Artigo},
+    author={Nome do Autor},
+    journal={Nome da Revista},
+    volume={5},
+    number={3},
+    pages={123-456},
+    year={2022},
+}
+```
+
+Neste exemplo, o campo `volume` especifica que o artigo foi publicado no volume 5 da revista. Incluir esse detalhe ajuda a fornecer uma citação completa e precisa, facilitando a localização da obra citada pelos leitores.
+
+Da mesma forma, em livros ou séries de vários volumes, você pode usar o campo `volume` para indicar o volume específico que contém o capítulo ou seção que está citando. Esse uso novamente ajuda os leitores a encontrar o material de origem exato de maneira mais eficiente.

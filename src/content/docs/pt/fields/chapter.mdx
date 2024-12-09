@@ -1,0 +1,61 @@
+---
+title: "Tipo de Campo BibTeX: chapter"
+sidebar:
+  label: chapter
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+No mundo da escrita acadêmica, as citações servem como a espinha dorsal para validar argumentos e referenciar obras existentes. O campo `chapter` nas entradas BibTeX refina ainda mais isso, permitindo que os usuários especifiquem o capítulo exato, seção ou intervalo de páginas ao qual se referem em um livro citado. Este campo é particularmente importante nas entradas `inbook` e `incollection`, facilitando uma referência mais precisa e ajudando os leitores a localizar o material exato citado. Vamos entender melhor como usar efetivamente o campo `chapter` no BibTeX.
+
+<CiteDrive />
+
+### Visão Geral
+
+O campo `chapter` é utilizado para representar numericamente um capítulo ou seção específica dentro de um livro que você deseja citar. No caso das entradas `inbook`, a inclusão do campo `chapter` é obrigatória para fornecer informações de citação detalhadas. No entanto, ele não é aplicável para o tipo de entrada `book`, pois este tipo é usado para citar o livro inteiro, não necessitando de detalhes específicos de capítulo.
+
+### Formatação e Uso
+
+Para representar com precisão o capítulo ou seção que você está citando, utilize o campo `chapter` conforme ilustrado abaixo:
+
+```bibtex
+@inbook{ReferenceID,
+  author  = {Nome do Autor},
+  title   = {Título do Livro},
+  chapter = {Número do Capítulo},
+  pages   = {Intervalo de Páginas},
+  year    = {Ano de Publicação},
+  publisher = {Nome do Editor},
+  address   = {Local de Publicação},
+}
+```
+
+No template acima, substitua "Número do Capítulo" pelo número real do capítulo que você está citando. Se estiver citando uma seção específica ou intervalo de páginas, isso pode ser indicado no campo `pages`.
+
+### Exemplo
+
+Aqui está um exemplo concreto demonstrando como usar corretamente o campo `chapter`:
+
+```bibtex
+@inbook{Mueller2014The,
+  author   = {Hans Mueller},
+  title    = {Teorias da Física Moderna},
+  chapter  = {2},
+  pages    = {23-45},
+  year     = 2014,
+  publisher= {Scientific Press},
+  address  = {Nova York, EUA},
+}
+```
+
+Neste exemplo, o campo `chapter` é usado para referenciar especificamente o capítulo 2 do livro citado, permitindo que os leitores localizem facilmente o material referenciado.
+
+### Pontos a Lembrar
+
+1. **Especificidade**: O campo `chapter` ajuda a identificar a seção exata do livro que está sendo referida, promovendo uma citação precisa e acurada.
+2. **Obrigatório para Entradas `inbook`**: Ao usar o tipo de entrada `inbook`, a inclusão do campo `chapter` é obrigatória para fornecer uma referência detalhada.
+3. **Não Aplicável para Entradas `book`**: O campo `chapter` não é utilizado em entradas `book`, pois essas entradas são destinadas a citar o livro inteiro.
+
+### Conclusão
+
+Dominar o uso do campo `chapter` no BibTeX não apenas aprimora a precisão das suas citações, mas também ajuda os leitores a localizar o material citado de forma eficiente dentro de obras maiores. Lembre-se de manter consistência na formatação para garantir uma bibliografia bem organizada e profissional. Sempre revise suas entradas para evitar erros e manter os padrões da escrita acadêmica.

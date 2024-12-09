@@ -1,0 +1,58 @@
+---
+title: "Tipo de Campo BibTeX: edition"
+sidebar:
+  label: edition
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+No mundo acadêmico e editorial, a edição de um livro significa a versão ou forma em que uma obra é publicada. O campo `edition` em uma entrada BibTeX é utilizado para especificar esse detalhe, frequentemente destacando as revisões ou atualizações que a obra sofreu desde sua publicação inicial. Incluir a edição é particularmente importante ao referenciar livros-textos ou obras acadêmicas que passaram por múltiplas iterações. Abaixo, explicamos como usar de forma eficaz o campo `edition` em suas entradas BibTeX.
+
+<CiteDrive />
+
+### Visão Geral
+
+O campo `edition` é utilizado para denotar a edição de um livro. Essa informação é essencial quando o livro que você está citando foi publicado em diversas edições, cada uma potencialmente com conteúdos ou paginação diferentes. Indicar a edição ajuda a fornecer uma referência clara e precisa, auxiliando os leitores a localizar a versão exata da obra que você utilizou.
+
+### Diretrizes
+
+1. **Formatação**: Recomenda-se inserir a edição como um número ordinal (por exemplo, "Primeira", "Segunda", "Terceira", etc.) com a primeira letra maiúscula.
+2. **Escrita por Extenso**: Ao invés de representações numéricas (1ª, 2ª, 3ª), é preferível escrever os números ordinais por extenso para melhorar a legibilidade.
+3. **Adaptação Linguística**: Para obras em idiomas diferentes do inglês, a edição pode ser indicada nesse idioma (por exemplo, "Erste" para primeira em alemão).
+
+### Sintaxe e Estrutura
+
+A sintaxe para o campo `edition` é direta, conforme mostrado abaixo:
+
+```bibtex
+@book{chaveDeCitação,
+  ...
+  edition={NúmeroOrdinal},
+  ...
+}
+```
+
+### Exemplo
+
+Aqui está um exemplo de uma entrada BibTeX incorporando o campo `edition`:
+
+```bibtex
+@book{autor2023titulo,
+  title={O Título do Livro},
+  author={Autor, A.},
+  year={2023},
+  publisher={Editora},
+  edition={Primeira},
+}
+```
+
+Neste exemplo, o campo `edition` indica claramente que a obra citada é a primeira edição do livro.
+
+### Dicas Adicionais
+
+1. **Edições Revisadas**: Para livros com edições revisadas, você também pode usar termos como "Revisada" ou "Atualizada" juntamente com o número da edição (por exemplo, "Segunda, Revisada").
+2. **Edições Posteriores**: Se estiver citando uma edição muito posterior, pode ser pertinente incluir uma nota em sua citação explicando a escolha, caso a edição contenha conteúdo significativamente diferente ou atualizado.
+
+### Conclusão
+
+Especificar corretamente o campo `edition` nas suas entradas BibTeX garante um processo de citação mais preciso e confiável. Isso ajuda a orientar seus leitores para a versão exata do material de referência que você utilizou, promovendo clareza e integridade acadêmica. Utilize esse campo com sabedoria para aprimorar a qualidade e a confiabilidade de suas referências bibliográficas.

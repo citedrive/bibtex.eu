@@ -1,0 +1,61 @@
+---
+title: "Tipo de Campo BibTeX: booktitle"
+sidebar:
+  label: booktitle
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Na escrita acadêmica, citar seções ou capítulos dentro de um livro ou anais de conferência de forma precisa é de suma importância. O campo `booktitle` no BibTeX desempenha um papel fundamental nesse processo, fornecendo uma maneira de especificar o título da obra maior que contém a seção citada. Aqui, exploraremos em detalhes como usar o campo `booktitle` para criar citações detalhadas e precisas para entradas de tipo "incollection" e "inproceedings".
+
+<CiteDrive />
+
+## Compreendendo o Campo `Booktitle`
+
+O campo `booktitle` é utilizado quando você deseja citar uma seção, capítulo ou artigo que faz parte de uma obra maior, como um livro ou anais de conferência. Ele serve para diferenciar claramente entre o título da seção individual (campo `title`) e o título da obra maior. Ao incluir o campo `booktitle` em suas entradas BibTeX, você fornece aos leitores uma visão clara e completa do contexto no qual a seção citada aparece.
+
+### Diretrizes de Formatação
+
+Para usar o campo `booktitle` de forma adequada, siga a formatação padrão do BibTeX. Aqui está uma estrutura básica demonstrando como incluir um `booktitle` em uma entrada do tipo `incollection`:
+
+```bibtex
+@incollection{ReferenceID,
+  author    = {Nome do Autor},
+  title     = {Título da Seção},
+  booktitle = {Título da Obra Maior},
+  year      = {Ano de Publicação},
+  pages     = {Intervalo de Páginas},
+  publisher = {Nome do Editor},
+  address   = {Local de Publicação},
+  editor    = {Nome(s) do(s) Editor(es)},
+}
+```
+
+### Exemplo Real
+
+Abaixo está um exemplo real de como usar o campo `booktitle` em uma citação:
+
+```bibtex
+@incollection{Mihalcea2006Knowledge,
+  title     = {Métodos Baseados em Conhecimento para {WSD}},
+  author    = {Rada Mihalcea},
+  year      = 2006,
+  booktitle = {Word Sense Disambiguation: Algorithms and Applications},
+  publisher = {Springer},
+  address   = {Dordrecht, Países Baixos},
+  pages     = {107--132},
+  editor    = {Eneko Agirre e Philip Edmonds},
+}
+```
+
+Neste exemplo, o campo `booktitle` indica claramente a obra maior na qual a seção citada aparece, oferecendo uma visão abrangente do contexto da publicação.
+
+### Dicas para Uso Eficiente
+
+1. **Consistência**: Mantenha um formato consistente para todas as entradas `booktitle` para garantir uma bibliografia coesa.
+2. **Precisão**: Certifique-se de que o campo `booktitle` representa com precisão a obra maior para evitar enganos aos leitores.
+3. **Informações Abrangentes**: Inclua detalhes abrangentes como editores e local de publicação para enriquecer a citação.
+
+## Conclusão
+
+Usar eficazmente o campo `booktitle` em entradas BibTeX permite uma bibliografia mais rica e detalhada, oferecendo aos leitores uma compreensão mais profunda do contexto das seções ou capítulos citados. Essa prática promove a integridade acadêmica, garantindo a atribuição precisa e exata de trabalhos dentro de coleções ou anais maiores. Sempre consulte as diretrizes ou estilos específicos (APA, MLA, etc.) para adaptar suas citações de forma apropriada.

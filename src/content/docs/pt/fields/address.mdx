@@ -1,0 +1,70 @@
+---
+title: "Tipo de Campo BibTeX: adress (Endereço)"
+sidebar:
+  label: adress (Endereço)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+O campo `endereço` dentro de uma entrada BibTeX tem uma grande importância quando se trata de citar diversas fontes em sua documentação acadêmica ou profissional. Ele normalmente inclui os detalhes geográficos do editor ou de uma instituição pertinente relacionada ao trabalho citado. Aqui, vamos explorar mais profundamente a utilização e as normas de notação seguidas para o campo `endereço` em entradas BibTeX.
+
+<CiteDrive />
+
+## Visão Geral Detalhada
+
+O campo `endereço` é essencial para indicar os detalhes específicos de localização da entidade editorial ou de outras instituições significativas relacionadas à citação. Frequentemente, o campo pode conter a cidade de publicação, podendo ser seguido de detalhes adicionais dependendo da região ou dos requisitos específicos de citação.
+
+### Diretrizes de Formato de Endereço
+
+#### Publicações Americanas
+
+Para fontes publicadas nos Estados Unidos, o formato geralmente inclui o nome da cidade, seguido pela abreviação do estado de acordo com o código postal dos Estados Unidos (USPS), entre parênteses.
+
+> **Exemplo**: "Columbus, Ohio" deve ser notado como "Columbus, OH."
+
+#### Publicações Europeias
+
+Em contraste, as publicações europeias preferem a representação completa do estado ou província, sem abreviações, seguida pelo nome do país.
+
+> **Exemplo**: Uma publicação de Düsseldorf, Alemanha, seria denotada como "Düsseldorf, Alemanha."
+
+## Exemplos e Cenários de Uso
+
+O campo `endereço` é utilizado em vários tipos de entradas BibTeX. Abaixo, detalhamos alguns cenários onde ele é amplamente utilizado.
+
+### PhdThesis
+
+Em uma entrada `phdthesis`, o autor pode querer incluir o endereço da universidade onde o candidato ao doutorado realizou sua pesquisa e completou sua tese. Essa informação ajuda a adicionar credibilidade e especificidade à citação.
+
+```bibtex
+@phdthesis{Peterson2003very,
+  author  = {Arnold Peterson},
+  title   = {Minha própria tese de doutorado de Arnold Peterson},
+  school  = {Nome da universidade / escola},
+  year    = 2004,
+  address = {123 University Lane, University City, Estado [ou Província], País},
+  month   = 1,
+  ...
+}
+```
+
+### Proceedings / Inproceedings
+
+O campo `endereço` nos tipos de entrada `proceedings` ou `inproceedings` é um ponto de discussão. Alguns preferem incluir o endereço do local da conferência, enquanto outros optam pelo endereço do editor ou organizador. É importante seguir as diretrizes do seu contexto específico ou do estilo de referência. Abaixo, segue um exemplo de como usar o campo `endereço` nesses tipos de entrada:
+
+```bibtex
+@PROCEEDINGS{Conference2023,
+  title    = {Título dos Anais da Conferência},
+  editor   = {Nome do Editor},
+  year     = 2023,
+  address  = {123 Rua do Local da Conferência, Cidade, Estado [ou Província], País},
+  publisher = {Nome do Editor},
+  ...
+}
+```
+
+## Conclusão
+
+Entender e utilizar corretamente o campo `endereço` em suas entradas BibTeX pode melhorar significativamente a clareza e a abrangência das suas citações. Isso garante que os leitores possam identificar com precisão o contexto geográfico dos trabalhos citados, adicionando uma camada de autenticidade e confiabilidade ao seu documento.
+
+Certifique-se de consultar as diretrizes específicas do seu estilo de citação ou dos requisitos institucionais para usar o campo `endereço` de forma eficaz.
