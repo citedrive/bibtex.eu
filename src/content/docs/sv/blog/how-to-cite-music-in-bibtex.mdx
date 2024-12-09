@@ -1,0 +1,31 @@
+---
+title: "Hur citerar man musik i BibTeX?"
+tags: [biblatex, bibtex, musik]
+date: 2022-12-18
+---
+
+För att citera musik i BibTeX kan du använda `@misc`-posttypen och inkludera följande fält:
+
+-   `author`: Kompositören eller artisten som skapade musiken.
+-   `title`: Titeln på musikstycket.
+-   `howpublished`: Formatet i vilket musiken tillgängliggjordes (t.ex. CD, vinyl, online-strömningstjänst).
+-   `year`: Året musiken publicerades eller spelades in.
+
+Här är ett exempel på hur du kan citera ett musikstycke i BibTeX:
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+```bibtex
+@misc{beethoven_symphony_2018,
+	title        = {Symfoni nr. 5 i C-moll},
+	author       = {Beethoven, Ludwig van},
+	year         = 2018,
+	howpublished = {CD}
+}
+```
+
+Om du citerar en specifik inspelning av ett musikstycke kan du istället använda `@music`-posttypen istället för `@misc`. Denna posttyp innehåller ytterligare fält som `performer` och `publisher`, vilka du kan använda för att ge mer specifik information om inspelningen.
+
+Jag hoppas detta hjälper! Låt mig veta om du har några frågor.

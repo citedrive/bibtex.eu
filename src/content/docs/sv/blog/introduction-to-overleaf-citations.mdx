@@ -1,0 +1,41 @@
+---
+title: "Introduktion till Overleaf-citat"
+tags: [AkademisktSkrivande, LaTeX, Referenshantering, Overleaf, BibTeX, BibLaTeX, natbib, Zotero, Mendeley, Forskning, Skrivtips, Akademi, VetenskapligtSkrivande, Referenser]
+date: 2023-01-26
+---
+
+Korrekt citering är avgörande inom akademiskt skrivande för att ge erkännande till de källor du använder i din forskning. Overleaf är en populär online LaTeX-redigerare som gör det enkelt för användare att skapa och samarbeta om akademiska dokument. Den inkluderar också flera kraftfulla verktyg för referenshantering, inklusive BibTeX, NatBib och BibLaTeX.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Lägga till Citat
+
+För att lägga till ett citat i Overleaf, skapa först en '.bib' fil med information om dina källor. Varje källas författare, titel, publiceringsdatum och annan relevant information ska inkluderas i denna fil. Du kan antingen skapa din '.bib' fil manuellt eller använda ett verktyg som [CiteDrive](https://www.citedrive.com/), ett samarbetsverktyg för BibTeX/BibLaTeX-hantering på nätet, för att göra det åt dig. **CiteDrive** integreras med Overleaf och håller alla dina referenser synkroniserade med ditt LaTeX-dokument. Mer information finns på **Overleaf.com**: 
+[Overleaf.com | Blogg - Bättre referenshantering med Overleaf, CiteDrive och BibTeX/BibLaTeX — om version 3.0 och en uppdaterad guide](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+
+När du har din `.bib`-fil redo kan du lägga till citat i ditt Overleaf-dokument genom att använda kommandot `\cite{}`. Till exempel, om du vill citera en källa med nyckeln `example_source`, använder du kommandot `\cite{example_source}`.
+
+Du kan också använda kommandona `\citep` och `\citet` för att specificera formateringen av dina citat. Kommandot `\citep` används för citat inom parentes, och används typiskt när du refererar till en källa i parentes. Kommandot `\citet` används för författar-datum citat, och används vanligtvis när du refererar till en källa i själva texten.
+
+## Hantera Ditt Material
+
+Overleaf gör det enkelt att hantera dina källor och hålla din `.bib`-fil uppdaterad. Du kan enkelt lägga till nya källor, redigera befintliga, och även importera och exportera din `.bib`-fil till andra referenshanteringsverktyg.
+
+Du kan också använda kommandot `\bibliography` för att automatiskt generera en bibliografi i slutet av ditt dokument. Detta kommando tar namnet på din `.bib`-fil som argument och kommer automatiskt att formatera och organisera dina källor baserat på den citeringsstil du väljer.
+
+## Använda Rätt Paket
+
+Valet av vilket paket du ska använda för referenser i Overleaf beror på dina specifika behov och preferenser.
+
+- **BibTeX** är det mest traditionella och använda referenshanteringspaketet för LaTeX. Det är enkelt att använda och stöder ett brett spektrum av citeringsstilar. Dock ger det inte lika mycket flexibilitet och kontroll över formateringen av citat som de andra två alternativen.
+* ***[natbib](/natbib)** fungerar som ett tillägg till BibTeX och ger avancerade funktioner och flexibilitet för referenshantering. Det är särskilt användbart för författar-års citationer och låter dig anpassa formateringen av citaten i texten.
+
+- **BibLaTeX** är ett modernare och kraftfullare alternativ till BibTeX. Det erbjuder mer avancerade funktioner som lokalisering, avancerad sortering och stöd för fler typer av referenser. Dessutom kan det hantera all bibliografisk data i Unicode och är kompatibelt med de flesta citeringsstilar som finns tillgängliga i BibTeX.
+
+Sammanfattningsvis, om du söker ett enkelt och allmänt använt alternativ, använd BibTeX. Om du vill ha mer kontroll över formateringen och avancerade funktioner, använd BibLaTeX eller natbib.
+
+## Slutsats
+
+Referenshantering kan vara en tråkig uppgift, men Overleaf gör det enkelt med sitt inbyggda verktyg för referenser. Med Overleaf kan du enkelt lägga till, redigera och hantera dina källor, samt automatiskt generera en bibliografi i slutet av ditt dokument. Oavsett om du är student, forskare eller professionell akademiker, är Overleaf ett kraftfullt verktyg som hjälper dig skapa högkvalitativa dokument med korrekt citering utan krångel.
