@@ -1,0 +1,53 @@
+---
+title: "Como Citar no Estilo APA em LaTeX / BibTeX?"
+tags: [LaTeX, BibTeX, citação APA, gerenciamento de referências, escrita acadêmica]
+date: 2023-02-16
+---
+
+Para dar crédito aos autores originais e reconhecer suas contribuições para a pesquisa, a escrita acadêmica exige a citação adequada das fontes. O estilo de citação da American Psychological Association (APA) é amplamente utilizado nas ciências sociais, psicologia e educação. Neste post, veremos como usar o BibTeX para citar no estilo APA em LaTeX.
+
+O BibTeX é uma ferramenta de gerenciamento de referências usada em conjunto com o LaTeX para gerar uma bibliografia. É uma poderosa ferramenta de gerenciamento de citações e referências que pode economizar muito tempo e esforço ao escrever artigos. Veja como usar o BibTeX para criar citações no estilo APA:
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+## Passo 1: Criar um arquivo .bib
+
+Primeiro, crie um [arquivo BibTeX (.bib)](/) que contenha todas as referências que você deseja citar em seu documento. Este arquivo contém todas as informações sobre as fontes, incluindo o nome do autor, a data de publicação, o título do artigo e o nome da revista ou livro.
+
+## Passo 2: Incluir o arquivo .bib em seu documento LaTeX
+
+Em seguida, inclua o arquivo .bib em seu documento LaTeX adicionando o seguinte comando no preâmbulo:
+
+```latex
+ \bibliography{seuarquivo.bib}
+```
+
+Certifique-se de substituir "seuarquivo" pelo nome do seu arquivo .bib.
+
+## Passo 3: Citar referências
+
+Para citar uma referência em seu documento, use o comando `\cite{}` com a chave que corresponde à referência no seu arquivo .bib. Por exemplo:
+
+```latex
+De acordo com \cite{smith2010}, este método é eficaz.
+```
+
+Esse comando criará uma citação no texto, incluindo o nome do autor e o ano de publicação, como (Smith, 2010).
+
+## Passo 4: Adicionar uma lista de referências
+
+Para adicionar uma lista de referências ao seu documento, use o comando `\bibliographystyle{}` para especificar o estilo da bibliografia, seguido pelo comando `\bibliography{}` para especificar o arquivo .bib:
+
+```latex
+\bibliographystyle{apalike} 
+\bibliography{seuarquivo.bib}
+```
+
+O código acima criará uma lista de referências no final do seu documento no estilo APA.    
+
+## Passo 5: Compilar seu documento
+
+Por fim, compile seu documento LaTeX para gerar a citação e a lista de referências.
+
+Em resumo, para citar no estilo APA em LaTeX usando BibTeX, você precisa criar um arquivo .bib com todas as referências, incluir o arquivo .bib em seu documento LaTeX, usar o comando `\cite{}` para citar referências, e usar os comandos `\bibliographystyle{}` e `\bibliography{}` para criar uma lista de referências. Com esses passos, você pode facilmente gerenciar e citar suas referências no estilo APA ao escrever seus artigos acadêmicos.

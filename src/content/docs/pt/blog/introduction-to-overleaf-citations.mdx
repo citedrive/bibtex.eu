@@ -1,0 +1,41 @@
+---
+title: "Introdução às Citações no Overleaf"
+tags: [EscritaAcadêmica, LaTeX, GestãoDeCitações, Overleaf, BibTeX, BibLaTeX, natbib, Zotero, Mendeley, Pesquisa, DicasDeEscrita, Academia, EscritaAcadêmica, Referências]
+date: 2023-01-26
+---
+
+A citação correta é essencial na escrita acadêmica para dar crédito às fontes utilizadas na pesquisa. O Overleaf é um editor online popular de LaTeX que permite aos usuários criar e colaborar facilmente em documentos acadêmicos. Ele também inclui uma série de poderosas ferramentas de gestão de citações, incluindo BibTeX, NatBib e BibLaTeX.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Adicionando Citações
+
+Para adicionar uma citação no Overleaf, primeiro crie um arquivo '.bib' com as informações sobre suas fontes. As informações sobre o autor, título, data de publicação e outros dados pertinentes de cada fonte devem ser incluídas neste arquivo. Você pode criar seu arquivo '.bib' manualmente ou usar uma ferramenta como o [CiteDrive](https://www.citedrive.com/), uma ferramenta colaborativa de gestão de BibTeX/BibLaTeX construída para a web, para fazer isso por você. **CiteDrive** se integra ao Overleaf, mantendo todas as suas referências sincronizadas com o seu documento LaTeX. Mais informações podem ser encontradas em **Overleaf.com**: 
+[Overleaf.com | Blog - Melhor gestão de bibliografia com Overleaf, CiteDrive e BibTeX/BibLaTeX — sobre 3.0 e um guia atualizado](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+
+Depois de ter seu arquivo `.bib` pronto, você pode adicionar citações ao seu documento Overleaf usando o comando `\cite`. Por exemplo, se você quiser citar uma fonte com a chave `example_source`, você usaria o comando `\cite{example_source}`.
+
+Você também pode usar os comandos `\citep` e `\citet` para especificar a formatação das suas citações. O comando `\citep` é usado para citações no texto, geralmente dentro de parênteses. O comando `\citet` é usado para citações autor-data, normalmente usadas para referenciar uma fonte diretamente no texto.
+
+## Gerenciando Suas Fontes
+
+O Overleaf facilita o gerenciamento das suas fontes e a atualização do seu arquivo `.bib`. Você pode facilmente adicionar novas fontes, editar as existentes e até importar e exportar seu arquivo `.bib` para outras ferramentas de gestão de citações.
+
+Você também pode usar o comando `\bibliography` para gerar automaticamente uma bibliografia no final do seu documento. Esse comando recebe o nome do seu arquivo `.bib` como argumento e irá formatar e organizar suas fontes automaticamente de acordo com o estilo de citação escolhido.
+
+## Usando o Pacote Certo
+
+A escolha do pacote a ser usado para citações no Overleaf dependerá das suas necessidades e preferências específicas.
+
+- **BibTeX** é o pacote de gestão de citações mais tradicional e amplamente utilizado no LaTeX. É simples de usar e suporta uma ampla gama de estilos de citação. No entanto, ele não oferece tanta flexibilidade e controle sobre a formatação das citações como as outras duas opções.
+- ***[natbib](/natbib)** funciona como uma extensão para o BibTeX, fornecendo recursos avançados e maior flexibilidade para gestão de citações. É particularmente útil para estilos de citação autor-ano, e permite personalizar a formatação das citações no texto.
+
+- **BibLaTeX** é uma alternativa mais moderna e poderosa ao BibTeX. Ele oferece recursos mais avançados, como localização, ordenação avançada e suporte para mais tipos de entradas. Além disso, pode lidar com todos os dados bibliográficos em Unicode e é compatível com a maioria dos estilos de citação disponíveis no BibTeX.
+
+Em resumo, se você está procurando uma opção simples e amplamente compatível, use o BibTeX. Se deseja mais controle sobre a formatação e recursos avançados, use o BibLaTeX ou natbib.
+
+## Conclusão
+
+Gerenciar citações pode ser uma tarefa tediosa, mas o Overleaf torna isso fácil com sua ferramenta interna de citações. Com o Overleaf, você pode facilmente adicionar, editar e gerenciar suas fontes, além de gerar automaticamente uma bibliografia no final do seu documento. Se você é estudante, pesquisador ou acadêmico profissional, o Overleaf é uma ferramenta poderosa para ajudá-lo a criar documentos de alta qualidade e com citações adequadas com facilidade.
