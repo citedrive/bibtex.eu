@@ -1,0 +1,121 @@
+---
+title: "Цитирование и использование ссылок в Overleaf: Руководство для исследователей"
+tags: [citedrive, overleaf, latex, bibtex, biblatex, natbib]
+date: 2022-08-16
+---
+
+При написании научной работы важно использовать ссылки для подтверждения своих утверждений. Правильное цитирование источников — ключ к созданию убедительных аргументов и избеганию плагиата. Это руководство покажет вам, как цитировать ссылки в Overleaf с использованием CiteDrive. Мы также дадим советы по поиску надежных источников в Интернете. Давайте начнем!
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Шаг 1: Подключение CiteDrive к Overleaf
+
+Если вы еще не вошли в [Overleaf](https://www.overleaf.com/), сделайте это сейчас. Затем перейдите на [CiteDrive](https://www.citedrive.com/), создайте проект в Overleaf и [добавьте ссылки](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) в ваш новый проект. Ваш проект будет выглядеть примерно так:
+
+![CiteDrive - Пример](@assets/images/tutorial/citedrive_project_example.png)
+
+После этого нажмите на "bib" в верхнем левом углу вашего проекта. Это откроет новую вкладку с динамическим файлом BibTeX, который вы можете использовать в Overleaf. Файл будет автоматически обновляться всякий раз, когда вы или ваши коллеги добавляете, обновляете или удаляете ссылки из проекта.
+
+Затем перейдите в Overleaf, создайте новый файл, выберите "From External URL" и вставьте URL динамического BibTeX в поле "URL to fetch the file from", назвав его *references.bib*. Теперь ваш проект CiteDrive подключен к Overleaf! Не забудьте обновить страницу в Overleaf, если вы вносите изменения в проект CiteDrive, чтобы Overleaf получил последние данные.
+
+![Добавление файлов в Overleaf](@assets/images/tutorial/export_bib_to_overleaf.png)
+
+## Шаг 2: Создание TeX-документа в Overleaf
+
+Теперь давайте создадим новый TeX-файл в Overleaf, который мы можем назвать "document.tex", и определим библиографию, используя файл BibTeX от CiteDrive с помощью команды `\bibliography{references}`. Но какие инструменты библиографии нам следует использовать? В LaTeX/Overleaf существует множество вариантов для управления библиографиями: скорее всего, это natbib, bibtex и biblatex. Для управления библиографиями в LaTeX основным инструментом является BibTeX. С помощью natbib BibTeX получает расширение, которое предоставляет больше возможностей для оформления цитат в тексте, а biblatex представляет собой полную переработку BibTeX, которая предлагает больше типов ссылок, опций сортировки и фильтрации библиографий, а также возможности локализации. Хотя BibTeX — это наиболее известная программа, BibLaTeX не только не менее мощная, но и наиболее рекомендуемая для новичков. Данные для ссылок и библиографий хранятся в так называемом файле .bib, как вы видите в файле BibTeX от CiteDrive. Он всегда имеет такой формат:
+
+```latex
+@article{smith201X,
+  title        = {Интересная статья},
+  author       = {Джон Смит},
+  year         = {201X},
+  journal      = {Журнал интересных статей}
+}
+```
+
+Здесь `@article` — это тип источника, `title`, `author`, `year` и `journal` — это атрибуты, которые используются для отображения в списке ссылок и цитат, а `smith201X` — уникальный идентификатор, который можно использовать для ссылки в документе, в основном через `\cite{key}`. CiteDrive не привередлив в формате: любые поля и типы записей, которые подходят для библиографического пакета, который вы выбрали, — это допустимо. Поскольку основная цель CiteDrive — разделить библиографические данные от документа и стилей цитирования, поддерживаются все альтернативы.
+
+В результате мы предлагаем три шаблона, чтобы помочь вам начать.
+
+### Начало работы с BibTeX:
+
+Если вы хотите начать с BibTeX, используйте следующий шаблон или откройте его напрямую в Overleaf. Для получения дополнительной информации о BibTeX смотрите документацию.
+
+```latex title="document.tex"
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Ссылки в BibTeX в \LaTeX}
+\author{Джон Смит}
+
+\begin{document}
+
+\maketitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
+```
+
+### Начало работы с natbib:
+
+```latex
+\documentclass{article}
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\title{Краткое руководство по управлению ссылками с использованием natbib и BibTeX}
+\author{CiteDrive}
+\date {Январь 1988}
+
+\begin{document}
+
+\maketitle
+\textbf{Нарративное цитирование:} \citet{Doe:1966} исследовал риски неправильной \\
+ регистрации [...], что приводит к искажению.
+\textbf{Цитирование в скобках:} Риски неправильной регистрации [...] могут привести к искажению
+ \citep{Doe:1966}.
+
+\medskip
+
+\bibliography{references}
+
+\end{document}
+```
+
+Для дополнительной информации о natbib, нажмите здесь.
+
+### Начало работы с BibLaTeX:
+
+```latex
+\documentclass{article}
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+\medskip
+
+\printbibliography
+
+\end{document}
+```
+
+Для дополнительной информации о BibLaTeX, нажмите здесь.
+
+## Шаг 3: Цитирование в тексте
+
+Если у вас установлено расширение для браузера, вы можете создавать цитаты, выделяя текст и нажимая на значок CiteDrive в панели инструментов.
+
+Вы также можете вручную цитировать ссылки, используя команду `\cite`. Например, если вы хотите процитировать Смит (201X), используйте `\cite{smith201X}`. Или используйте поиск ссылок в Overleaf.
+
+Стиль библиографии предустановлен в Overleaf, и в зависимости от того, какой пакет вы используете, ссылки будут отображаться на следующих страницах.
+
+Вот и всё! Теперь у вас есть всё необходимое, чтобы начать использовать ссылки в Overleaf. Если у вас есть вопросы или предложения, пожалуйста, напишите нам по электронной почте на hello@citedrive.com.
+
+Счастливого TeXing!
