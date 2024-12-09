@@ -1,0 +1,47 @@
+---
+title: "Bruke Siteringer i Overleaf med BibTeX"
+tags: ["LaTeX", "Overleaf", "CiteDrive", "satsing", "tekniske dokumenter", "vitenskapelige dokumenter", "forskningsartikler", "oppgaver", "markup-språk", "formatering", "tekstbehandler", "samarbeid", "referansehåndtering"]
+date: 2023-01-28
+---
+
+Siteringer er en viktig del av akademisk skriving, da de gir forfatterne mulighet til å gi kreditt til kildene de har brukt i arbeidet sitt. I dette innlegget skal vi diskutere hvordan du bruker siteringer i Overleaf, en populær nettbasert LaTeX-editor, med BibTeX, et verktøy for å håndtere bibliografiske referanser.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Legge til en bibliografi i Overleaf-prosjektet ditt
+
+Det første trinnet for å bruke siteringer i Overleaf er å legge til en bibliografi i prosjektet ditt. Dette kan gjøres ved å opprette en ny fil i prosjektet og gi den navnet `references.bib`. Denne filen vil inneholde alle referansene du ønsker å sitere i dokumentet ditt. Et alternativ er å bruke [CiteDrive](https://www.citedrive.com/), som kobles til Overleaf og lar deg samarbeide om bibliografien og siteringene dine. CiteDrive støtter BibTeX natively og også Biblatex.
+
+For å legge til en referanse i denne filen kan du bruke følgende format:
+
+`@article{key,   author = {Author, A.},   title = {Title},   journal = {Journal},   year = {Year}, }`
+
+`key` er en unik identifikator for referansen, og den vil bli brukt for å sitere den i dokumentet ditt. Feltene `author`, `title`, `journal` og `year` er obligatoriske for en grunnleggende referanse, men det finnes mange andre felt som kan inkluderes også.
+
+## Sitere referanser i dokumentet ditt
+
+Når du har lagt til referansene dine i `references.bib`-filen, kan du sitere dem i dokumentet ditt ved å bruke kommandoen `cite`. For eksempel, for å sitere referansen med nøkkelen `key`, kan du bruke følgende kommando:
+
+`\cite{key}`
+
+Dette vil sette inn siteringen i dokumentet ditt i det formatet som er angitt av bibliografistilen du har valgt.
+
+## Formatere bibliografien din
+
+For å formatere bibliografien din, må du spesifisere en bibliografistil. Dette kan gjøres ved å inkludere følgende kommando i preambelen til dokumentet ditt:
+
+`\bibliographystyle{style}`
+
+Hvor `style` er navnet på bibliografistilen du ønsker å bruke. Noen vanlige stiler inkluderer `plain`, `unsrt` og `apalike`.
+
+Til slutt må du inkludere følgende kommando på slutten av dokumentet ditt for å generere bibliografien:
+
+`\bibliography{references}`
+
+Hvor `references` er navnet på bibliografifilen din (`references.bib` i vårt eksempel).
+
+## Konklusjon
+
+I dette innlegget har vi diskutert hvordan du bruker siteringer i Overleaf med BibTeX. Ved å følge trinnene som er beskrevet ovenfor, kan du enkelt legge til referanser i prosjektet ditt, sitere dem i dokumentet ditt og formatere bibliografien for å møte kravene til din akademiske institusjon eller utgiver. I tillegg gjør bruken av CiteDrive, som kobles til Overleaf, det enkelt å samarbeide om referansene og siteringene dine. CiteDrive støtter både BibTeX og Biblatex, og gir dermed en fleksibel løsning for å administrere bibliografiske referanser.

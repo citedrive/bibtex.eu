@@ -1,0 +1,57 @@
+---
+title: "BibTeX-felt: organization"
+sidebar:
+  label: organization
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`organization`-feltet i en BibTeX-oppføring brukes til å spesifisere navnet på organisasjonen som er ansvarlig for å publisere dokumentet eller arrangere hendelsen som siteres. Dette kan være et selskap, en institusjon eller en gruppe som har sponsorerte eller organisert en konferanse, et verksted, en manual osv. Å inkludere organisasjonen gir leseren klar kontekst om enheten bak dokumentet, noe som kan være avgjørende for å vurdere påliteligheten og autoriteten til kilden.
+
+<CiteDrive />
+
+Du vil typisk støte på dette feltet i `@proceedings`- og `@manual`-oppføringer, men det kan også forekomme i andre typer oppføringer, avhengig av kravene til bibliografistilen som benyttes.
+
+## Format
+
+Formatet for å spesifisere `organization`-feltet er som følger:
+
+```bibtex
+@entry_type{citation_key,
+  ...
+  organization={Organization Name},
+  ...
+}
+```
+
+Her refererer "entry_type" til typen BibTeX-oppføring (som `@proceedings` eller `@manual`), "citation_key" er en unik identifikator for oppføringen, og "Organization Name" er navnet på organisasjonen som er involvert.
+
+## Eksempler
+
+Her er et par eksempler som viser hvordan `organization`-feltet kan brukes i forskjellige sammenhenger:
+
+### Eksempel 1: Konferanseprosedyrer
+
+```bibtex
+@proceedings{ICML2023,
+  title = {Proceedings of the 40th International Conference on Machine Learning},
+  year = {2023},
+  organization = {International Machine Learning Society},
+}
+```
+
+I dette eksemplet spesifiserer `organization`-feltet enheten som er ansvarlig for å organisere konferansen hvis prosedyrer siteres.
+
+### Eksempel 2: Manual
+
+```bibtex
+@manual{UserGuide2022,
+  title = {XYZ Software User Guide},
+  year = {2022},
+  organization = {XYZ Software Inc.},
+}
+```
+
+Her brukes `organization`-feltet til å indikere selskapet som publiserte programvaremanualen.
+
+Å inkludere `organization`-feltet i BibTeX-oppføringene dine kan bidra til å gi en komplett og detaljert referanse, noe som gjør det lettere å identifisere og hente kildematerialene.

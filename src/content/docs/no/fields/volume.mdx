@@ -1,0 +1,35 @@
+---
+title: "BibTeX-felt: volum"
+sidebar:
+  label: volum
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`volume`-feltet i en BibTeX-oppføring er viktig når du refererer til en del av et større verk, for eksempel en artikkel i et tidsskrift eller et kapittel i en flerbinds bok. Dette feltet lar deg spesifisere hvilket volum av et tidsskrift eller bok du siterer, og gir leseren mer presis informasjon for å finne det siterte verket.
+
+<CiteDrive />
+
+I mange vitenskapelige og akademiske publikasjoner utgis tidsskrifter i volumer, ofte med flere nummer i hvert volum. Volumnummeret indikerer vanligvis en samling av nummer som er utgitt innen en spesifikk tidsramme, vanligvis et år. På samme måte er flerbindsbøker eller -serier delt opp i forskjellige volumer, der hvert volum inneholder en del av hele verket.
+
+`volume`-feltet er spesielt viktig når du siterer tidsskrifter, da det gjør det lettere for leserne å finne den spesifikke samlingen av nummer hvor den siterte artikkelen ble publisert. Det brukes vanligvis sammen med `number`-feltet, som videre spesifiserer nummeret i volumet hvor artikkelen kan finnes.
+
+Her er et eksempel på hvordan du kan bruke `volume`-feltet i en BibTeX-oppføring:
+
+## Eksempel
+
+```bibtex
+@article{key,
+    title={Title of the Article},
+    author={Author Name},
+    journal={Journal Name},
+    volume={5},
+    number={3},
+    pages={123-456},
+    year={2022},
+}
+```
+
+I dette eksemplet spesifiserer `volume`-feltet at artikkelen ble publisert i volum 5 av tidsskriftet. Å inkludere denne detaljen hjelper med å gi en komplett og presis referanse, som gjør det lettere for leserne å finne det siterte verket.
+
+Tilsvarende, i flerbindsbøker eller -serier, kan du bruke `volume`-feltet til å angi det spesifikke volumet som inneholder kapitlet eller seksjonen du siterer. Denne bruken gjør det også lettere for leserne å finne den eksakte kildematerialet mer effektivt.

@@ -1,0 +1,56 @@
+---
+title: "BibTeX-felt: pages"
+sidebar:
+  label: pages
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`pages`-feltet i en BibTeX-oppføring angir de spesifikke sidene som refereres til i et større verk, som en bok eller et tidsskrift. Dette feltet er essensielt når man siterer et kapittel i en bok eller en artikkel i et tidsskrift, og hjelper leseren med å finne den relevante delen av verket.
+
+<CiteDrive />
+
+## Formateringsretningslinjer
+
+Du kan spesifisere en enkelt side, et sidespenn, eller til og med ikke-konsekutive sider. Den anbefalte måten å skille sidetall på er enten med komma eller dobbelt bindestrek. Her er noen retningslinjer for å formatere `pages`-feltet riktig:
+
+1. **Enkel side:** Hvis du refererer til en enkelt side, skriver du bare sidetallet.
+    
+2. **Sidespenn:** For et sidespenn bruker du dobbelt bindestrek (--). Dette angir et kontinuerlig spenn fra det første til det andre tallet.
+    
+3. **Ikke-konsekutive sider:** Hvis du refererer til ikke-konsekutive sider, separerer du de forskjellige sidetallene eller spenningene med komma.
+
+## Eksempler
+
+Her er noen eksempler som viser hvordan `pages`-feltet kan brukes:
+
+```bibtex
+@book{key,
+  title = {Tittel på boken},
+  author = {Forfatterens navn},
+  year = {2023},
+  pages = {33--44},   % Spenn fra side 33 til 44
+}
+```
+
+```bibtex
+@book{key,
+  title = {Tittel på boken},
+  author = {Forfatterens navn},
+  year = {2023},
+  pages = {22, 33--44},   % Side 22 og et spenn fra 33 til 44
+}
+```
+
+```bibtex
+@book{key,
+  title = {Tittel på boken},
+  author = {Forfatterens navn},
+  year = {2023},
+  pages = {17},    % Enkel side
+}
+```
+
+## Merknad
+
+Det er viktig å merke seg at `pages`-feltet ikke er begrenset til `@book`-oppføringer, og kan også brukes i andre oppføringstyper som `@article` eller `@inbook` for å angi de relevante sidene i disse sammenhengene. Å bruke `pages`-feltet korrekt hjelper til med å lage mer nøyaktige og nyttige referanser.

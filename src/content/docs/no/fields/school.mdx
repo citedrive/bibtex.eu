@@ -1,0 +1,45 @@
+---
+title: "BibTeX-felt: school"
+sidebar:
+  label: school
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+I BibTeX brukes `school`-feltet hovedsakelig innenfor `@phdthesis` eller `@mastersthesis`-oppføringer. Dette feltet brukes for å angi utdanningsinstitusjonen der avhandlingen eller masteroppgaven ble skrevet. Det er et obligatorisk felt for begge oppføringstypene, og gir detaljert informasjon om opprinnelsen til det akademiske arbeidet, noe som kan være viktig for lesere som ønsker å finne mer informasjon eller referere til arbeidet i sitt eget forskningsarbeid.
+
+<CiteDrive />
+
+## Formateringsretningslinjer
+
+Når du skriver inn navnet på skolen, er det anbefalt å bruke det fulle og offisielle navnet på institusjonen for å opprettholde et formelt og standardisert format i referansene. Unngå å bruke forkortelser med mindre de er allment anerkjent og akseptert.
+
+## Eksempler
+
+Her er eksempler på hvordan du bruker `school`-feltet for både `phdthesis` og `mastersthesis`-oppføringer:
+
+### PhD-avhandling
+
+```bibtex
+@phdthesis{doe2023,
+  author = {John Doe},
+  title = {Explorations in Quantum Computing},
+  year = {2023},
+  school = {Massachusetts Institute of Technology},
+}
+```
+
+### Masteroppgave
+
+```bibtex
+@mastersthesis{smith2023,
+  author = {Sarah Smith},
+  title = {A Comprehensive Study on Environmental Sustainability},
+  year = {2023},
+  school = {University of California, Berkeley},
+}
+```
+
+## Merknad
+
+I eksemplet ditt brukte du `series`-feltet i stedet for `school`-feltet for `mastersthesis`-oppføringen. Imidlertid skal `school`-feltet brukes for å spesifisere institusjonen i både `phdthesis`- og `mastersthesis`-oppføringer, som vist i eksemplene ovenfor.

@@ -1,0 +1,23 @@
+---
+title: "BibTeX-felt: institution"
+sidebar:
+  label: institution
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`institution`-feltet er ment å brukes i `@techreport`-oppføringstypen, der det brukes til å angi navnet på institusjonen som er ansvarlig for utgivelsen eller publiseringen av rapporten. Dette bidrar til korrekt attribusjon og gjør det lettere for leserne å finne den originale kilden.
+
+<CiteDrive/>
+
+Her er et eksempel som viser hvordan du kan bruke `institution`-feltet i en `@techreport`-oppføring:
+
+```bibtex
+@techreport{key,
+  institution = {...},
+}
+```
+
+I dette formatet er "key" en unik identifikator for BibTeX-oppføringen, og `institution`-feltet skal inneholde navnet på institusjonen som publiserte rapporten. Det er viktig å gi nøyaktig og detaljert informasjon i dette feltet for å lette korrekt sitering og referering.
+
+Husk å erstatte `{...}` med det faktiske navnet på institusjonen når du lager BibTeX-oppføringene dine. Dette feltet hjelper med å organisere og kategorisere tekniske rapporter på riktig måte i referanselisten din.

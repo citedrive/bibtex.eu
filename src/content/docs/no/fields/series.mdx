@@ -1,0 +1,43 @@
+---
+title: "BibTeX-felt: series"
+sidebar:
+  label: series
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`series`-feltet i BibTeX brukes for å angi serien som en bok, rapport eller annen publisering tilhører. Å spesifisere serien kan gi ekstra kontekst for leseren, da det kan være relatert til et bredere tematisk eller akademisk diskurs.
+
+<CiteDrive />
+
+Dette feltet er valgfritt og kan brukes i forskjellige oppføringstyper, inkludert, men ikke begrenset til `@book`, `@inbook`, `@incollection` og `@inproceedings`. Det er spesielt nyttig når det siterte arbeidet er en del av en pågående serie eller et større verk som deler et felles tema, forfatter eller utgiver.
+
+Når du legger inn data i `series`-feltet, er det anbefalt å bruke det fullstendige offisielle tittelen på serien. Hvis serien har et ISSN, kan det også være relevant å inkludere dette for mer presis referanse.
+
+## Format
+
+Den generelle formatet for å inkludere en serie i BibTeX-oppføringen er som følger:
+
+```bibtex
+@entrytype{key,
+  ...
+  series = {Navn på serien},
+  ...
+}
+```
+
+## Eksempel
+
+Her er et eksempel på hvordan du bruker `series`-feltet i en `@book`-oppføring:
+
+```bibtex
+@book{doe2023,
+  author = {John Doe},
+  title = {Advanced Studies in Quantum Mechanics},
+  year = {2023},
+  publisher = {Scientific Publishing Ltd.},
+  series = {Cambridge Advanced Series in Physics},
+}
+```
+
+I dette eksemplet er boken en del av "Cambridge Advanced Series in Physics," som kan omfatte forskjellige titler som dekker avanserte emner innen fysikk. Å inkludere serien hjelper med å plassere arbeidet innenfor en større akademisk samtale og kan gi leserne ytterligere ressurser om emnet.

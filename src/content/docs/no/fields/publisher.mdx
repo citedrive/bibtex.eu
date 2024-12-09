@@ -1,0 +1,57 @@
+---
+title: "BibTeX-felt: publisher"
+sidebar:
+  label: publisher
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`publisher`-feltet brukes i forskjellige BibTeX-oppføringer som `@book`, `@inbook` eller `@incollection` for å spesifisere navnet på forlaget som publiserte det refererte verket. Å inkludere forlaget i sitatet ditt bidrar til å gi en fullstendig og presis referanse, noe som kan hjelpe leserne med å finne den originale kilden.
+
+<CiteDrive />
+
+Når du inkluderer et forlag i BibTeX-oppføringen din, sørg for å bruke forlagets fulle og offisielle navn. Dette sikrer at sitatet er både profesjonelt og troverdig, og det bidrar til å unngå forvirring med andre forlag som kan ha lignende navn.
+
+## Eksempler
+
+Her er noen eksempler som viser hvordan du riktig spesifiserer et forlag i forskjellige BibTeX-oppføringer:
+
+### Bok
+
+```bibtex
+@book{key1,
+  title = {The Art of Scientific Research},
+  author = {John Doe},
+  year = {2023},
+  publisher = {Cambridge University Press},
+}
+```
+
+### Inbook
+
+```bibtex
+@inbook{key2,
+  title = {Chapter on Quantum Mechanics},
+  author = {Jane Doe},
+  year = {2023},
+  publisher = {Oxford University Press},
+  pages = {45--78},
+  editor = {Sarah Smith},
+  booktitle = {Modern Physics},
+}
+```
+
+### Incollection
+
+```bibtex
+@incollection{key3,
+  title = {Essay on Environmental Conservation},
+  author = {Alex Johnson},
+  year = {2023},
+  publisher = {Springer},
+  booktitle = {Sustainable Development: Theories and Practices},
+  editor = {Mark Lee},
+}
+```
+
+Merk at `publisher`-feltet vanligvis er ledsaget av andre viktige felt som `title`, `author`, `year`, osv., for å gi en komplett referanse. Det er også verdt å merke seg at avhengig av sitasjonsstilen som brukes, kan formatet og plasseringen av `publisher`-feltet variere, så sørg alltid for å følge retningslinjene for den spesifikke stilen du følger.

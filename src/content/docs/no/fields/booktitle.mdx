@@ -1,0 +1,61 @@
+---
+title: "BibTeX-felt type: booktitle"
+sidebar:
+  label: booktitle
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+I akademisk skriving er det avgjørende å sitere seksjoner eller kapitler i en bok eller konferanseproceeding på en nøyaktig måte. `booktitle`-feltet i BibTeX spiller en kritisk rolle i denne prosessen, da det gir en måte å spesifisere tittelen på det større verket som inneholder den siterte seksjonen. Her utforsker vi hvordan du bruker `booktitle`-feltet for å lage detaljerte og presise siteringer for "incollection" og "inproceedings" oppføringer.
+
+<CiteDrive />
+
+## Forståelse av `Booktitle`-feltet
+
+`booktitle`-feltet brukes når du ønsker å sitere en seksjon, et kapittel eller en artikkel som er en del av et større verk, som en bok eller konferanseproceeding. Det skiller tydelig mellom tittelen på den individuelle seksjonen (`title`-feltet) og tittelen på det større verket. Ved å inkludere `booktitle`-feltet i BibTeX-oppføringene dine gir du leserne et klart og fullstendig bilde av konteksten hvor den siterte seksjonen finnes.
+
+### Formatveiledning
+
+For å bruke `booktitle`-feltet riktig, følg standard BibTeX-formatet. Her er en grunnleggende struktur som viser hvordan du inkluderer `booktitle` i en `incollection`-oppføring:
+
+```bibtex
+@incollection{ReferenceID,
+  author    = {Forfatterens Navn},
+  title     = {Tittel på Seksjonen},
+  booktitle = {Tittel på det Større Verket},
+  year      = {Publikasjonsår},
+  pages     = {Sidereferanse},
+  publisher = {Forlagsnavn},
+  address   = {Publikasjonssted},
+  editor    = {Redaktør(er) Navn},
+}
+```
+
+### Eksempel fra Virkeligheten
+
+Her er et faktisk eksempel på hvordan du bruker `booktitle`-feltet i en sitering:
+
+```bibtex
+@incollection{Mihalcea2006Knowledge,
+	title     = {Knowledge-Based Methods for {WSD}},
+	author    = {Rada Mihalcea},
+	year      = 2006,
+	booktitle = {Word Sense Disambiguation: Algorithms and Applications},
+	publisher = {Springer},
+	address   = {Dordrecht, Nederland},
+	pages     = {107--132},
+	editor    = {Eneko Agirre og Philip Edmonds},
+}
+```
+
+I dette eksemplet viser `booktitle`-feltet tydelig det større verket som den siterte seksjonen inngår i, og gir et helhetlig bilde av publikasjonskonteksten.
+
+### Tips for Effektiv Bruk
+
+1. **Konsistens**: Oppretthold et konsekvent format for alle `booktitle`-oppføringer for å sikre en sammenhengende bibliografi.
+2. **Nøyaktighet**: Sørg for at `booktitle`-feltet nøyaktig representerer det større verket for å unngå misledende informasjon.
+3. **Komplett Informasjon**: Inkluder detaljer som redaktører og publikasjonssted for å berike siteringen.
+
+## Konklusjon
+
+Effektiv bruk av `booktitle`-feltet i BibTeX-oppføringer muliggjør en rikere og mer detaljert bibliografi, som gir leserne en bedre forståelse av konteksten for siterte seksjoner eller kapitler. Denne praksisen fremmer akademisk integritet ved å sikre nøyaktig og presis henvisning av verk innenfor større samlinger eller proceedinger. Husk alltid å konsultere spesifikke retningslinjer eller stiler (APA, MLA osv.) for å tilpasse siteringene dine på riktig måte.

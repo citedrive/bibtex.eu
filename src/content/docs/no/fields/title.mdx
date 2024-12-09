@@ -1,0 +1,42 @@
+---
+title: "BibTeX-felt: title"
+sidebar:
+  label: title
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`title`-feltet i en BibTeX-oppføring brukes for å spesifisere hovedtittelen på verket du refererer til. Det er et av de viktigste feltene og støttes av nesten alle BibTeX-oppføringstyper. Nøyaktig kapitalisering og overholdelse av LaTeX-syntaks er avgjørende når dette feltet fylles ut for å sikre at tittelen vises korrekt i den genererte bibliografien.
+
+<CiteDrive />
+
+For å opprettholde riktig formatering, kan LaTeX-kommandoer brukes innenfor `title`-feltet for å bevare kapitaliseringen av enkelte ord eller uttrykk. Dessuten, hvis tittelen inneholder spesialtegn eller matematiske symboler, bør de skrives ved hjelp av de riktige LaTeX-kommandoene.
+
+## Eksempel
+
+Her er et enkelt eksempel som viser hvordan du bruker `title`-feltet:
+
+```bibtex
+@article{key,
+    title={What is bioinformatics? An introduction and overview},
+}
+```
+
+Et mer detaljert eksempel, som inkluderer ekstra felt for å gi en fullstendig referanse, er gitt nedenfor:
+
+```bibtex
+@article{luscombe2001bioinformatics,
+  title={What is bioinformatics? An introduction and overview},
+  author={Luscombe, Nicholas M and Greenbaum, Dov and Gerstein, Mark},
+  journal={Yearbook of medical informatics},
+  volume={10},
+  number={01},
+  pages={83--100},
+  year={2001},
+  publisher={Georg Thieme Verlag KG}
+}
+```
+
+I disse eksemplene er `title`-feltet fylt ut med tittelen på artikkelen som refereres til. Merk bruken av krøllete parenteser `{}` for å kapsle inn tittelen, som hjelper med å bevare kapitaliseringen og formateringen av tittelen slik den er ment av forfatteren.
+
+Husk, `title`-feltet er avgjørende for å hjelpe leserne med å identifisere det spesifikke verket som refereres til, så vær sikker på at det er skrevet inn nøyaktig og formatert korrekt i BibTeX-oppføringene dine.

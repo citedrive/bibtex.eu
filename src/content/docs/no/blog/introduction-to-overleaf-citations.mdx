@@ -1,0 +1,44 @@
+---
+title: "Introduksjon til Overleaf-sitater"
+tags: ["AkademiskSkriving", "LaTeX", "Siteringshåndtering", "Overleaf", "BibTeX", "BibLaTeX", "natbib", "Zotero", "Mendeley", "Forskning", "Skrivetips", "Akademia", "VitenskapeligSkriving", "Referanser"]
+date: 2023-01-26
+---
+
+
+Korrekt sitering er avgjørende i akademisk skriving for å gi kreditt til kildene du bruker i forskningen din. Overleaf er en populær nettbasert LaTeX-editor som lar brukere enkelt lage og samarbeide om akademiske dokumenter. Den inkluderer også en rekke kraftige verktøy for siteringshåndtering, inkludert BibTeX, NatBib og BibLaTeX.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Legge til sitater
+
+For å legge til et sitat i Overleaf, opprett først en '.bib' fil med informasjonen om kildene dine. Hver kildes forfatter, tittel, publiseringsdato og annen relevant informasjon skal inkluderes i denne filen. Du kan enten lage '.bib'-filen manuelt eller bruke et verktøy som [CiteDrive](https://www.citedrive.com/), et verktøy for samarbeidsbasert BibTeX/BibLaTeX-håndtering, som gjør det for deg. **CiteDrive** integreres med Overleaf, og holder alle referansene dine synkronisert med LaTeX-dokumentet ditt. Mer informasjon kan finnes på **Overleaf.com**:  
+[Overleaf.com | Blogg - Bedre bibliografihåndtering med Overleaf, CiteDrive og BibTeX/BibLaTeX — om 3.0 og en oppdatert guide](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+
+Når du har klart din `.bib`-fil, kan du legge til sitater i Overleaf-dokumentet ditt ved å bruke `\cite`-kommandoen. For eksempel, hvis du vil sitere en kilde med nøkkelen `example_source`, bruker du kommandoen `\cite{example_source}`.
+
+Du kan også bruke kommandoene `\citep` og `\citet` for å spesifisere formateringen av sitatene dine. Kommandoen `\citep` brukes for siteringer i teksten og er vanligvis brukt for å referere til en kilde innen parentes. Kommandoen `\citet` brukes for forfatter-dato-sitater og er vanligvis brukt for å referere til en kilde i selve teksten.
+
+## Håndtering av kildene dine
+
+Overleaf gjør det enkelt å administrere kildene dine og holde `.bib`-filen oppdatert. Du kan lett legge til nye kilder, redigere eksisterende, og til og med importere og eksportere `.bib`-filen din til andre verktøy for siteringshåndtering.
+
+Du kan også bruke kommandoen `\bibliography` for automatisk å generere en bibliografi på slutten av dokumentet ditt. Denne kommandoen tar navnet på `.bib`-filen som argument, og vil automatisk formatere og organisere kildene dine basert på den siteringsstilen du velger.
+
+## Bruke riktig pakke
+
+Valget av hvilken pakke du skal bruke for siteringer i Overleaf avhenger av dine spesifikke behov og preferanser.
+
+- **BibTeX** er den mest tradisjonelle og mye brukte pakken for siteringshåndtering i LaTeX. Den er enkel å bruke og støtter et bredt spekter av siteringsstiler. Den gir imidlertid ikke så mye fleksibilitet og kontroll over formateringen av sitater som de to andre alternativene.
+
+- **natbib** fungerer som et tillegg til BibTeX, og gir avanserte funksjoner og fleksibilitet for siteringshåndtering. Den er spesielt nyttig for forfatter-år-siteringsstiler, og lar deg tilpasse formateringen av sitater i teksten.
+
+- **BibLaTeX** er et mer moderne og kraftig alternativ til BibTeX. Det gir mer avanserte funksjoner som lokalisering, avansert sortering og støtte for flere typer oppføringer. I tillegg kan det håndtere all bibliografisk data i Unicode og er kompatibelt med de fleste siteringsstiler som er tilgjengelige i BibTeX.
+
+Sammendrag: Hvis du er ute etter et enkelt og mye støttet alternativ, bruk BibTeX. Hvis du ønsker mer kontroll over formateringen og avanserte funksjoner, bruk BibLaTeX eller natbib.
+
+## Konklusjon
+
+Siteringshåndtering kan være en tidkrevende oppgave, men Overleaf gjør det enkelt med sitt innebygde verktøy for siteringer. Med Overleaf kan du lett legge til, redigere og administrere kildene dine, og automatisk generere en bibliografi på slutten av dokumentet ditt. Enten du er student, forsker eller profesjonell akademiker, er Overleaf et kraftig verktøy som hjelper deg med å lage høykvalitets, korrekt siterte dokumenter med letthet.
+

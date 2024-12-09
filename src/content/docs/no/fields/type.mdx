@@ -1,0 +1,29 @@
+---
+title: "BibTeX-felt: type"
+sidebar:
+  label: type
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`type`-feltet i en BibTeX-oppføring brukes til å angi den spesifikke typen eller kategorien av en publikasjon. Dette feltet kan være spesielt nyttig når du refererer til rapporter, avhandlinger eller andre dokumenter som har mer detaljerte kategoriseringer. Å angi den spesifikke typen kan gi leseren mer kontekst om dokumentets natur.
+
+<CiteDrive />
+
+Vanligvis brukt sammen med oppføringer som `@techreport` eller `@thesis`, hjelper det med å angi en mer spesifikk undertype av publikasjonen, som "Research Note", "Government Report", "Master's Thesis", "PhD Dissertation" osv. Dette feltet kan hjelpe med å skille dokumentet fra andre av samme kategori.
+
+Når du bruker `type`-feltet, anbefales det å bruke en beskrivende og standardisert terminologi som samsvarer med normene i feltet eller disiplinen du jobber i. Dette fremmer klarhet og hjelper leseren med å forstå den nøyaktige naturen til det refererte dokumentet.
+
+## Eksempel
+
+Her er et eksempel som demonstrerer hvordan `type`-feltet brukes i en teknisk rapport:
+
+```bibtex
+@techreport{key,
+    type={Research Note},
+}
+```
+
+I dette eksemplet er `type`-feltet fylt ut med beskrivelsen "Research Note", som indikerer at den tekniske rapporten er et notat som beskriver noen forskningsfunn.
+
+Ved å bruke `type`-feltet effektivt kan du gi mer detaljert informasjon om dokumentene du refererer til, noe som gjør det lettere for leseren å forstå og navigere i bibliografien din.

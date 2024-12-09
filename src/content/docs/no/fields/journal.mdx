@@ -1,0 +1,32 @@
+---
+title: "BibTeX-felt: journal"
+sidebar:
+  label: journal
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`journal`-feltet brukes til å angi navnet på tidsskriftet der artikkelen ble publisert. Dette feltet er viktig for å skille artikler fra ulike publikasjoner og gi riktig kontekst til den refererte kilden.
+
+<CiteDrive/>
+
+Her er en mal som viser hvordan du kan bruke `journal`-feltet i en `@article`-oppføring:
+
+```bibtex
+@article{ ... ,
+ journal = {Navn på tidsskriftet},
+}
+```
+
+I det ovenstående formatet, erstatte "Navn på tidsskriftet" med det faktiske navnet på tidsskriftet der artikkelen ble publisert. Det er viktig å oppgi denne informasjonen nøyaktig for å sikre korrekt sitering.
+
+For eksempel er følgende en korrekt bruk av `journal`-feltet:
+
+```bibtex
+@article{smith2023effects,
+ title = {The Effects of XYZ on ABC},
+ author = {Smith, John},
+ journal = {Journal of ABC Research},
+ year = {2023},
+}
+```

@@ -1,0 +1,58 @@
+---
+title: "BibTeX-felt type: edition"
+sidebar:
+  label: edition
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+I den akademiske og utgivelsesverdenen indikerer utgaven av en bok versjonen eller formen som et verk er utgitt i. `edition`-feltet i en BibTeX-oppføring brukes til å spesifisere denne informasjonen, og fremhever ofte de revisjonene eller oppdateringene som verket har gjennomgått siden den første utgivelsen. Å inkludere utgaven er særlig viktig når man refererer til lærebøker eller vitenskapelige verk som har gjennomgått flere iterasjoner. Nedenfor forklarer vi hvordan du effektivt bruker `edition`-feltet i BibTeX-oppføringene dine.
+
+<CiteDrive />
+
+### Oversikt
+
+`edition`-feltet brukes for å angi utgaven av en bok. Denne informasjonen er essensiell når boken du siterer er utgitt i flere utgaver, der hver kan ha ulikt innhold eller sidetall. Å indikere utgaven bidrar til å gi en klar og nøyaktig referanse, og hjelper leserne med å finne den nøyaktige versjonen av verket du har brukt.
+
+### Retningslinjer
+
+1. **Formatering**: Det anbefales å skrive utgaven som et ordnet tall (f.eks. "Første", "Andre", "Tredje", osv.) med første bokstav i stor bokstav.
+2. **Staving**: I stedet for numeriske representasjoner (1., 2., 3.) bør de ordnede tallene staves ut for bedre lesbarhet.
+3. **Språktilpasning**: For verk på språk andre enn engelsk kan utgaven angis på det språket (f.eks. "Erste" for første på tysk).
+
+### Syntaks og Struktur
+
+Syntaksen for `edition`-feltet er enkel, som vist nedenfor:
+
+```bibtex
+@book{citationkey,
+  ...
+  edition={OrdinalNumber},
+  ...
+}
+```
+
+### Eksempel
+
+Her er et eksempel på en BibTeX-oppføring som inkluderer `edition`-feltet:
+
+```bibtex
+@book{author2023title,
+  title={The Title of the Book},
+  author={Author, A.},
+  year={2023},
+  publisher={Publishing House},
+  edition={First},
+}
+```
+
+I dette eksemplet indikerer `edition`-feltet tydelig at den siterte boken er den første utgaven.
+
+### Ytterligere Tips
+
+1. **Reviderte utgaver**: For bøker med reviderte utgaver kan du også bruke begreper som "Revidert" eller "Oppdatert" sammen med utgavenummeret (f.eks. "Andre, Revidert").
+2. **Senere utgaver**: Hvis du siterer fra en mye senere utgave, kan det være nyttig å inkludere en merknad i sitatet ditt som forklarer valget, hvis utgaven inneholder betydelig forskjellig eller oppdatert innhold.
+
+### Konklusjon
+
+Å spesifisere `edition`-feltet riktig i BibTeX-oppføringene dine sikrer en mer nøyaktig og pålitelig referanseprosess. Det hjelper med å lede leserne dine til den eksakte versjonen av kildematerialet som du har referert til, og fremmer dermed klarhet og akademisk integritet. Bruk dette feltet klokt for å forbedre kvaliteten og påliteligheten til bibliografiske referanser.

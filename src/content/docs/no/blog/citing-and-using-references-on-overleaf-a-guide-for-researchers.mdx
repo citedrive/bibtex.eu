@@ -1,0 +1,122 @@
+---
+title: "Sitere og bruke referanser på Overleaf: En guide for forskere"  
+tags: [citedrive, overleaf, latex, bibtex, biblatex, natbib]  
+date: 2022-08-16  
+---
+
+Når du skriver en forskningsartikkel, er det viktig å bruke referanser for å støtte påstandene dine. Å sitere kildene dine korrekt er nøkkelen til å lage et solid argument og unngå plagiering. Denne guiden viser deg hvordan du kan sitere referanser på Overleaf ved hjelp av CiteDrive. Vi gir deg også tips for å finne pålitelige kilder på nettet. La oss komme i gang!
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Steg 1: Koble CiteDrive med Overleaf
+
+Hvis du ikke allerede er logget inn på [Overleaf](https://www.overleaf.com/), må du gjøre det nå. Deretter går du til [CiteDrive](https://www.citedrive.com/), oppretter et Overleaf-prosjekt, og [legger til referanser](https://citedrive.medium.com/adding-bibliographic-references-to-overleaf-with-citedrive-325f131e3ca2) i prosjektet ditt. Prosjektet ditt kan se slik ut:
+
+![CiteDrive - Eksempel](@assets/images/tutorial/citedrive_project_example.png)
+
+Deretter klikker du på "bib" øverst til venstre i prosjektet ditt. Dette åpner en ny fane med den dynamiske BibTeX-filen som du kan bruke for Overleaf, og som automatisk oppdateres hver gang du eller teammedlemmene dine legger til, oppdaterer eller sletter referanser fra prosjektet ditt.
+
+Til slutt går du til Overleaf, oppretter en ny fil, velger "Fra ekstern URL", og limer inn URL-en fra den dynamiske BibTeX-filen i "URL for å hente filen fra" og gir den navnet *references.bib*.
+Prosjektet ditt i CiteDrive er nå koblet til Overleaf! Husk at du må klikke på "Oppdater" når du gjør endringer i prosjektet vårt, slik at Overleaf får den nyeste versjonen.
+
+![Legg til filer til Overleaf](@assets/images/tutorial/export_bib_to_overleaf.png)
+
+## Steg 2: Opprett en TeX-fil i Overleaf
+
+Nå skal vi lage en ny tex-fil for Overleaf, som vi kan kalle "document.tex". Vi kan definere bibliografien og BibTeX-filen fra CiteDrive med `\bibliography{references}`. Men hvilke bibliografiverktøy bør vi bruke? For bibliografihåndtering i LaTeX/Overleaf finnes det mange alternativer: mest sannsynlig, natbib, bibtex og biblatex. For håndtering av bibliografier i LaTeX er BibTeX det mest brukte verktøyet som danner grunnlaget for formatet. Med natbib får BibTeX en utvidelse som gir mer designfrihet for in-text sitering, mens biblatex er en fullstendig revisjon av BibTeX som tilbyr flere referansetyper, sorterings- og filtreringsmuligheter for bibliografier og lokaliseringsalternativer. Selv om BibTeX er det mest kjente programmet, er BibLaTeX ikke bare like robust, men også det mest anbefalte programmet for nybegynnere. Siterings- og bibliografiske data for referanser og lister lagres i den såkalte .bib-filen, slik du ser i BibTeX-filen fra CiteDrive. Det er alltid i samme format:
+
+```latex
+ @article{smith201X,
+ 	title        = {En interessant artikkel},
+ 	author       = {John Smith},
+ 	year         = {201X},
+ 	journal      = {Journal of Interesting Articles}
+ }
+```
+
+Her er `@article` kildetypen, `title`, `author`, `year` og `journal`, attributtene som brukes for å vise i referanselistene og siteringene dine, og til slutt `smith201X`, en unik identifikator som du kan bruke til å referere i dokumentet ditt, hovedsakelig med cite(key). CiteDrive er ikke kresen på formatet; alle felt og innleggingstyper som fungerer for bibliografipakken du velger, er akseptable. Fordi CiteDrives grunnleggende mål er å skille bibliografiske data fra dokumentet og siteringsstiler, støttes alle alternativer av CiteDrive.
+
+Som et resultat gir vi tre maler nedenfor for å komme i gang.
+
+### Kom i gang med BibTeX:
+
+Hvis du vil starte med BibTeX, kan du bruke følgende mal eller åpne den direkte i Overleaf. For mer informasjon om BibTeX, se dokumentasjonen.
+
+```latex title="document.tex"
+ \documentclass{article}
+ \usepackage[utf8]{inputenc}
+
+ \title{BibTeX referanser i \LaTeX}
+ \author{John Smith}
+
+ \begin{document}
+
+ \maketitle
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \bibliographystyle{unsrt}
+ \bibliography{references}
+
+ \end{document}
+```
+
+### Kom i gang med natbib:
+
+```latex
+ \documentclass{article}
+ \usepackage{natbib}
+ \bibliographystyle{apalike}
+ \title{En kort guide til referansehåndtering med natbib og BibTeX}
+ \author{CiteDrive}
+ \date {Januar 1988}
+
+ \begin{document}
+
+ \maketitle
+ \textbf{Narrativ sitering:} \citet{Doe:1966} undersøkte risikoene ved feilaktig \\
+ registrering [...], som resulterer i forvrengning.
+ \textbf{Parentetisk sitering:} Risikoene ved feilaktig registrering av [...] kan føre til forvrengning
+ \citep{Doe:1966}.
+
+ \medskip
+
+ \bibliography{references}
+
+ \end{document}
+```
+
+For mer om natbib, klikk her.
+
+### Kom i gang med BibLaTeX:
+
+```latex
+ \documentclass{article}
+ \usepackage{biblatex}
+ \addbibresource{references.bib}
+
+ \begin{document}
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
+ \medskip
+
+ \printbibliography
+
+ \end{document}
+```
+
+For mer om BibLaTeX, klikk her.
+
+## Steg 3: In-text siteringer
+
+Hvis du har nettleserutvidelsen installert, kan du lage siteringer ved å velge teksten og klikke på CiteDrive-ikonet i verktøylinjen.
+
+Du kan også sitere referanser manuelt ved å bruke cite-kommandoen. For eksempel, hvis du vil sitere Smith (201X), bruker du `\cite{smith201X}`. Eller bruk referansesøk i Overleaf.
+
+Bibliografistiler er forhåndsinstallert på Overleaf, og avhengig av hvilken pakke du har brukt, refereres de på følgende sider:
+
+Det er alt! Du bør nå ha alt du trenger for å begynne å bruke referanser i Overleaf. Gi oss beskjed på e-post til hello@citedrive.com hvis du har spørsmål eller tilbakemeldinger.
+
+Lykke til med TeXing!

@@ -1,0 +1,47 @@
+---
+title: "Bruke Overleaf for Å Skrive Artikler med Siteringer og natbib"
+tags: [AkademiskSkriving, natbib, LaTeX, ReferanseHåndtering, Overleaf, BibTeX, BibLaTeX, Zotero, Mendeley, Forskning, Skrivetips, Akademia, VitenskapeligSkriving, Referanser]
+date: 2023-01-27
+---
+
+Overleaf er en populær nettbasert LaTeX-editor som lar brukere samarbeide om dokumenter i sanntid. En av de flotte funksjonene til Overleaf er muligheten til enkelt å legge til siteringer og bibliografier i dokumentene dine ved hjelp av natbib-pakken. I dette innlegget går vi gjennom det grunnleggende om hvordan du bruker natbib med Overleaf for å legge til siteringer og bibliografier i artiklene dine.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Legge til Siteringer
+
+For å legge til siteringer i Overleaf, må du først legge til natbib-pakken i dokumentet ditt. Dette kan gjøres ved å legge til følgende linje i preambelen til dokumentet ditt:
+
+`\usepackage[numbers]{natbib}`
+
+Dette lar deg bruke kommandoene `\citep` og `\cite` for å legge til siteringer i dokumentet ditt. Kommandoen `\citep` brukes for tekstsiteringer og viser siteringen som et nummer i parentes, mens `\cite` brukes for tekstsiteringer og viser siteringen som et nummer.
+
+For eksempel, for å sitere en artikkel av Smith et al. (2020) i teksten, kan du bruke følgende kommando:
+
+`Ifølge \citep{Smith2020} er dette et viktig funn.`
+
+Dette vil vise siteringen som:
+
+> Ifølge (Smith et al., 2020) er dette et viktig funn.
+
+## Legge til en Bibliografi
+
+For å legge til en bibliografi i dokumentet ditt i Overleaf, må du først lage en `.bib`-fil som inneholder informasjonen for alle referansene du vil sitere. `.bib`-filen bør lagres i samme katalog som hoved-.tex-filen din. En av de enkleste måtene å lage denne `.bib`-filen på er ved å bruke [CiteDrive](https://www.citedrive.com/), et verktøy som kobles til Overleaf og genererer bib-filen for deg. Mer informasjon kan finnes i [blogginnlegget på Overleaf.com](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex).
+
+Når du har laget `.bib`-filen din, kan du legge til en bibliografi i dokumentet ditt ved å legge til følgende kommando i dokumentet:
+
+`\bibliography{mybibfile}`
+
+hvor `mybibfile` er navnet på `.bib`-filen din.
+
+Du kan også spesifisere stilen på bibliografien ved å legge til følgende kommando i dokumentet ditt:
+
+`\bibliographystyle{plainnat}`
+
+Dette vil formatere bibliografien din i en enkel stil. Det finnes mange forskjellige bibliografistiler tilgjengelig, og du kan finne en liste over dem [her](https://www.overleaf.com/learn/latex/Bibliography_styles).
+
+## Konklusjon
+
+I dette innlegget har vi gått gjennom det grunnleggende om hvordan du bruker natbib med Overleaf for å legge til siteringer og bibliografier i artiklene dine. Med Overleafs brukervennlige grensesnitt og natbib-pakkens kraftige siterings- og bibliografihåndteringsfunksjoner, kan du enkelt holde oversikt over referansene dine og formatere bibliografien etter stilen som kreves av publikasjonen din. I tillegg kan bruk av CiteDrive for å generere bib-filen for deg spare deg for mye tid og innsats.

@@ -1,0 +1,80 @@
+---
+title: "BibTeX-felt type: crossref"
+sidebar:
+  label: crossref
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`crossref`-feltet i BibTeX er laget for å strømlinjeforme og forenkle referanseprosessen når du har flere oppføringer som siterer den samme kilden, spesielt i tilfeller som involverer `proceedings` eller samlinger. I stedet for å repetere de samme detaljene på tvers av flere oppføringer, lar `crossref` deg spesifisere felles felt i én sentral oppføring, noe som reduserer redundans og opprettholder en renere database. Nedenfor gir vi en grundig gjennomgang av funksjonaliteten og bruken av `crossref`-feltet i BibTeX.
+
+<CiteDrive />
+
+### Oversikt
+
+I en typisk bibliografi er det ikke uvanlig å referere til flere deler av et større verk, som for eksempel en konferansesammendrag eller en samlet bok. Her kommer `crossref`-feltet godt med. Ved å bruke `crossref` kan du definere de delte attributtene for det større verket i én oppføring, og deretter referere til denne oppføringen i andre sitater, og dermed sikre enhetlighet og redusere risikoen for inkonsekvenser i bibliografien.
+
+### Syntaks og Struktur
+
+For å implementere `crossref`-funksjonaliteten bruker du syntaksen `crossref = {citationkey}`, hvor `citationkey` er en unik identifikator for den kryssrefererte oppføringen. `citationkey` bør være unik for å opprettholde integriteten til kryssrefereringen.
+
+Her er en grunnleggende struktur:
+
+```bibtex
+@entrytype{UNIQUECITATIONKEY,
+    commonfield1 = {felles data 1},
+    commonfield2 = {felles data 2},
+    ...
+}
+
+@entrytype{citationkey1,
+    uniquefield1 = {unik data 1},
+    crossref     = {UNIQUECITATIONKEY},
+}
+
+@entrytype{citationkey2,
+    uniquefield2 = {unik data 2},
+    crossref     = {UNIQUECITATIONKEY},
+}
+```
+
+### Eksempel
+
+Her er et praktisk eksempel som illustrerer hvordan `crossref`-feltet kan brukes for effektivt å sitere flere oppføringer fra de samme proceedings:
+
+```bibtex
+@proceedings{ASE2023,
+    title       = {Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering},
+    year        = 2023,
+    publisher   = {IEEE},
+    address     = {San Francisco, California, USA},
+}
+
+@inproceedings{Smith2023,
+    author      = {John Smith},
+    title       = {Automated Code Generation: Innovations and Challenges},
+    pages       = {15-29},
+    crossref    = {ASE2023},
+}
+
+@inproceedings{Doe2023,
+    author      = {Jane Doe},
+    title       = {Towards a New Era of Software Testing},
+    pages       = {30-45},
+    crossref    = {ASE2023},
+}
+```
+
+I eksemplet over brukes `ASE2023`-siteringsnøkkelen for å kryssreferere to forskjellige `inproceedings`-oppføringer, og opprettholder konsistens samtidig som det reduseres repetitiv informasjon.
+
+### Brukstips
+
+1. **Unik Siteringsnøkkel**: Sørg for å tildele en unik siteringsnøkkel til hver oppføring, inkludert den kryssrefererte oppføringen, for å unngå forvirring og opprettholde en klar kryssrefereringsstruktur.
+2. **Riktig Bruk av Crossref**: Selv om `crossref` er spesielt nyttig for proceedings, kan det også brukes for bokkapitler (`incollection`) og andre lignende oppføringstyper der flere referanser fra én kilde forekommer.
+3. **Dataintegritet**: Bruken av `crossref` fremmer dataintegritet ved å minimere risikoen for inkonsekvenser i felles felt på tvers av flere oppføringer.
+
+### Konklusjon
+
+Bruken av `crossref`-feltet i BibTeX gjør det mulig å organisere, strømlinjeforme og effektivisere referanser til flere oppføringer fra én kilde. Ved å minimere redundans og fremme konsistens kan du opprettholde en ren og profesjonell bibliografi som følger akademiske standarder.
+
+Husk å gjennomgå og verifisere BibTeX-oppføringene dine for å sikre at `crossref`-feltet er implementert riktig, for å fremme klarhet og sammenheng i dine akademiske arbeider.

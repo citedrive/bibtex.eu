@@ -1,0 +1,64 @@
+---
+title: "BibTeX-felt: number"
+sidebar:
+  label: number
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+I BibTeX brukes `number`-feltet til å spesifisere nummeret på et tidsskrift, nummeret på en teknisk rapport eller andre identifikatorer som er en del av en større serie. Dette feltet hjelper med å peke ut nøyaktig hvilken utgave eller nummer i en serie hvor det refererte verket kan finnes, og gir mer presis informasjon for å finne materialet.
+
+<CiteDrive />
+
+Feltet brukes ofte sammen med `volume`-feltet, spesielt for tidsskriftartikler og periodiske publikasjoner. For en teknisk rapport vil `number`-feltet vanligvis inneholde rapportnummeret som er tildelt av institusjonen eller organisasjonen som publiserte rapporten.
+
+## Format
+
+Formatet for `number`-feltet er ganske enkelt. I en artikkeloppføring vil det vises som følger:
+
+```bibtex
+@article{citation_key,
+  ...
+  number={issue_number},
+  ...
+}
+```
+
+Her representerer "citation_key" en unik identifikator for oppføringen, og "issue_number" representerer nummeret på tidsskriftet, teknisk rapport eller annen publikasjon.
+
+## Eksempler
+
+Nedenfor er noen eksempler som viser hvordan `number`-feltet brukes i forskjellige kontekster:
+
+### Eksempel 1: Tidsskriftartikkel
+
+```bibtex
+@article{doe2023study,
+  author = {Doe, Jane},
+  title = {A Comprehensive Study on Quantum Computing},
+  journal = {Journal of Advanced Computing},
+  year = {2023},
+  volume = {29},
+  number = {3},
+  pages = {215-230},
+}
+```
+
+I dette eksemplet spesifiserer `number`-feltet det tredje nummeret i den 29. volumet av "Journal of Advanced Computing".
+
+### Eksempel 2: Teknisk rapport
+
+```bibtex
+@techreport{smith2022analysis,
+  author = {Smith, John},
+  title = {An Analysis of Renewable Energy Trends},
+  institution = {Energy Research Institute},
+  year = {2022},
+  number = {TR-2022-45},
+  type = {Technical Report},
+}
+```
+
+I dette tilfellet brukes `number`-feltet for å indikere det spesifikke rapportnummeret som ble tildelt av "Energy Research Institute".
+
+Å bruke `number`-feltet korrekt kan gjøre det lettere for leseren å finne kildematerialet og verifisere den siterte informasjonen. Det er en viktig detalj i akademisk skriving og forskningsdokumentasjon.

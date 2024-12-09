@@ -1,0 +1,52 @@
+---
+title: "BibTeX-felt type: email"
+sidebar:
+  label: email
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`email`-feltet i BibTeX brukes til å inkludere e-postadressene til forfatterne i siteringen din. Selv om det ikke er et vanlig brukt felt og muligens ikke støttes i ulike stiler, kan det noen ganger være nyttig å gi en direkte kontaktlinje til forfatterne. Her utforsker vi hvordan man på riktig måte kan integrere e-postadresser i BibTeX-oppføringene dine.
+
+<CiteDrive />
+
+## Inkludere E-postadresser
+
+Hvis du velger å spesifisere e-postadresser i BibTeX-oppføringene dine, er her to anbefalte metoder:
+
+### Vis som en Merknad på Slutten av Referansen
+
+I denne tilnærmingen legges e-postadressen til som en merknad som vises på slutten av siteringen. På denne måten er den tydelig separert fra forfatterens navn og andre detaljer, og gir dermed klarhet.
+
+```bibtex
+@book{Sample2023,
+  author = {Muller, John},
+  ...
+  note = "{\tt john.muller@example.com}",
+  ...
+}
+```
+
+### Vis Bak Etternavnet
+
+En annen metode er å inkludere e-postadressen direkte bak etternavnet. Denne tilnærmingen gir en direkte kobling mellom forfatteren og deres e-postadresse, og gjør umiddelbar kontakt enklere.
+
+```bibtex
+@book{Sample2023,
+  author = {Muller {\tt john.muller@example.com}, John},
+  ...
+}
+```
+
+## Retningslinjer for Inkludering av E-postadresser
+
+1. **Personvernhensyn**: Før du inkluderer en forfatters e-postadresse, sørg for at du har deres tillatelse til å gjøre det, og respekter deres personvern i samsvar med etiske retningslinjer.
+    
+2. **Formatering**: Oppretthold et klart og lesbart format ved å bruke Teletype (`\tt`) fontstilen for å skille e-postadressen fra andre tekstelementer.
+    
+3. **Kompatibilitet**: Vær oppmerksom på at `email`-feltet ikke er standard og kanskje ikke støttes i alle BibTeX-stiler. Sjekk alltid kompatibiliteten med den valgte stilen for å unngå formateringsproblemer.
+    
+
+## Konklusjon
+
+Selv om det ikke er vanlig, kan inkludering av e-postadresser i BibTeX-oppføringene dine noen ganger legge til rette for direkte kommunikasjon med forfatterne. Følg alltid etiske retningslinjer og verifiser kompatibiliteten med den valgte BibTeX-stilen når du bruker `email`-feltet. Ved å følge de anbefalte formatene kan du integrere e-postadresser i siteringene dine på en sømløs måte.

@@ -1,0 +1,70 @@
+---
+title: "BibTeX-felt type: address"
+sidebar:
+  label: address
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Feltet `address` i en BibTeX-post er av stor betydning når man siterer forskjellige kilder i akademiske eller profesjonelle dokumenter. Det inneholder vanligvis geografiske detaljer om utgiveren eller en relevant institusjon knyttet til det siterte verket. Her skal vi gå dypere inn i bruken og notasjonstandardene som følges for `address`-feltet i BibTeX-poster.
+
+<CiteDrive />
+
+## Detaljert oversikt
+
+`address`-feltet er viktig for å peke ut spesifikke steddetaljer for den publiserende enheten eller andre viktige institusjoner knyttet til siteringen. Feltet inneholder ofte byen der verket ble publisert, muligens etterfulgt av ekstra detaljer avhengig av regionen eller spesifikke siteringskrav.
+
+### Retningslinjer for adresseformat
+
+#### Amerikanske publikasjoner
+
+For kilder publisert i USA inkluderer formatet vanligvis byens navn, etterfulgt av statens forkortelse i henhold til USPS-koden (United States Postal Service) i parentes.
+
+> **Eksempel**: "Columbus, Ohio" skal noteres som "Columbus, OH."
+
+#### Europeiske publikasjoner
+
+I motsetning til dette, foretrekker europeiske publikasjoner å bruke den fullstendige representasjonen av staten eller provinsen uten forkortelse, etterfulgt av landets navn.
+
+> **Eksempel**: En publisering fra Düsseldorf, Tyskland, ville bli notert som "Düsseldorf, Tyskland."
+
+## Eksempler og bruksområder
+
+`address`-feltet brukes i forskjellige BibTeX-posttyper. Nedenfor har vi utdypet noen scenarier der det er fremtredende brukt.
+
+### PhdThesis
+
+I en `phdthesis`-posttype kan forfatteren ønske å inkludere adressen til universitetet der doktorgradsstudenten gjennomførte forskningen og fullførte avhandlingen. Denne informasjonen bidrar til å gi troverdighet og spesifisitet til siteringen.
+
+```bibtex
+@phdthesis{Peterson2003very,
+  author  = {Arnold Peterson},
+  title   = {My very own PhD-Thesis by Arnold Peterson},
+  school  = {Universitetets/skolens navn},
+  year    = 2004,
+  address = {123 University Lane, University City, State [eller Provins], Land},
+  month   = 1,
+  ...
+}
+```
+
+### Proceedings / Inproceedings
+
+`address`-feltet i `proceedings` eller `inproceedings`-posttyper kan være et diskusjonstema. Noen velger å inkludere konferansens adresse, mens andre foretrekker adressen til utgiveren eller arrangøren. Det er viktig å følge retningslinjene for den spesifikke konteksten eller siteringsstilen. Nedenfor er et eksempel på hvordan `address`-feltet brukes i disse posttypene:
+
+```bibtex
+@PROCEEDINGS{Conference2023,
+  title    = {Konferanseproceedings-tittel},
+  editor   = {Redaktørens navn},
+  year     = 2023,
+  address  = {123 Konferanse Venue Street, By, State [eller Provins], Land},
+  publisher = {Utgiverens navn},
+  ...
+}
+```
+
+## Konklusjon
+
+Å forstå og korrekt bruke `address`-feltet i BibTeX-postene dine kan betydelig forbedre klarheten og fullstendigheten til siteringene dine. Det sørger for at leserne kan identifisere den geografiske konteksten til de siterte verkene, noe som tilfører et lag av autensitet og pålitelighet til dokumentet ditt.
+
+Sørg for å konsultere de spesifikke retningslinjene for siteringsstilen eller institusjonens krav for å bruke `address`-feltet på en effektiv måte.

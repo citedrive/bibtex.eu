@@ -1,0 +1,60 @@
+---
+title: "BibTeX-felt: note"
+sidebar:
+  label: note
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`note`-feltet i en BibTeX-oppføring brukes til å formidle tilleggsinformasjon om det siterte verket som ikke passer inn i andre standardiserte felt. Dette kan inkludere supplerende merknader, forklaringer eller avklaringer som er relevante for at leseren skal forstå konteksten eller betydningen av verket. `note`-feltet er et allsidig verktøy i BibTeX, som gir mulighet for å inkludere ulike typer informasjon som kan berike detaljene og dybden i referansen.
+
+<CiteDrive />
+
+Å bruke `note`-feltet kan ofte tilføre mer dybde til en referanse ved å inkludere ytterligere kontekst, merknader om publiseringsstatus, spesifikke annoteringer eller annen relevant informasjon som vil være nyttig for leseren. Dette kan inkludere lenker til supplerende materiale, kommentarer om verkets innflytelse eller mottakelse, eller andre relevante detaljer.
+
+## Format
+
+For å bruke `note`-feltet, kan du inkludere det i BibTeX-oppføringen din som vist i formatet nedenfor:
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  note={din merknad her},
+  ...
+}
+```
+
+I formatet over, erstatt "entrytype" med den aktuelle typen verk (f.eks. @book, @article) og "citationkey" med en unik identifikator for oppføringen. Deretter kan du sette inn din tilleggsinformasjon i `note`-feltet.
+
+## Eksempler
+
+Her er noen praktiske eksempler som viser hvordan du kan bruke `note`-feltet i ulike oppføringer:
+
+### Eksempel 1: Tilleggsinformasjon
+
+```bibtex
+@book{smith2023innovations,
+  title = {Innovations in Modern Technology},
+  author = {Smith, John},
+  year = {2023},
+  publisher = {Technology Press},
+  note = {Inkluderer bibliografiske referanser og indeks},
+}
+```
+
+### Eksempel 2: Supplerende materiale
+
+```bibtex
+@article{johnson2023ai,
+  title = {AI and Its Future Applications},
+  author = {Johnson, Mark},
+  year = {2023},
+  journal = {Journal of Technological Advances},
+  volume = {5},
+  issue = {2},
+  pages = {123-135},
+  note = {Supplerende materiale tilgjengelig på: http://example.com/supplementary_material},
+}
+```
+
+I disse eksemplene blir `note`-feltet brukt for å indikere inkluderingen av referanser og en indeks i en bok, samt for å gi en lenke til supplerende materiale for en artikkel, og dermed tilby leseren ytterligere ressurser og informasjon.

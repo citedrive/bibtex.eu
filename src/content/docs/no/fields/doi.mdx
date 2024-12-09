@@ -1,0 +1,63 @@
+---
+title: "BibTeX-felt type: doi"
+sidebar:
+  label: doi
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`doi`-feltet er en integrert del av moderne referering, og gir en sømløs og permanent metode for å finne digitale objekter som tidsskriftartikler, forskningsrapporter og datasett i et online miljø. Her dykker vi dypere inn i funksjonaliteten og betydningen av `doi`-feltet i BibTeX, samt gir veiledning om korrekt bruk.
+
+<CiteDrive />
+
+### Oversikt
+
+En Digital Object Identifier (DOI) er en unik alfanumerisk streng tildelt et digitalt objekt, og gir en vedvarende lenke til dets plassering på internett. Som en standardisert metode for å identifisere elektroniske ressurser forblir DOI stabil selv om URL-en til objektet endres, og sikrer dermed langvarige referanser.
+
+`doi`-feltet i BibTeX brukes til å registrere denne identifikatoren, og muliggjør presise og permanente sitater. Selv om det primært finnes i `article`-oppføringstyper, kan det også brukes i andre typer som `book`, `chapter`, `inproceedings` eller `conference`, selv om det er mindre vanlig. Uavhengig av oppføringstypen er `doi`-feltet valgfritt.
+
+### Syntaks og Struktur
+
+For å korrekt inkludere en DOI i BibTeX-oppføringen din, følg følgende format:
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  doi={https://doi.org/xxxxx},
+  ...
+}
+```
+
+`doi`-feltet kapsler inn hele DOI-URL-en, som vanligvis starter med "[https://doi.org/](https://doi.org/)" etterfulgt av en unik identifikatorstreng.
+
+### Eksempel
+
+Her er et eksempel på en BibTeX-oppføring som inkluderer en DOI:
+
+```bibtex
+@article{steinbeck2003chemistry,
+  title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
+  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  journal={Journal of chemical information and computer sciences},
+  volume={43},
+  number={2},
+  pages={493--500},
+  year={2003},
+  publisher={ACS Publications},
+  doi={https://doi.org/10.1021/ci025584y},
+}
+```
+
+I dette eksemplet huser `doi`-feltet den permanente URL-en som leder direkte til den refererte artikkelen.
+
+### Brukstips
+
+1. **Finne DOI-er**: For vitenskapelige artikler kan DOIs ofte finnes på første side av artikkelen eller i den nettbaserte databasen der artikkelen er lagret.
+2. **Kryssreferanser**: Bruk `doi`-feltet for kryssreferanser i oppgaven din, og gi leserne en direkte vei til det originale kildematerialet.
+3. **Valgfritt, men Fordelaktig**: Selv om `doi`-feltet er valgfritt, forbedrer det påliteligheten og sporbarheten av referansene dine.
+
+### Konklusjon
+
+Inkluderingen av `doi`-feltet i BibTeX-oppføringene dine representerer beste praksis i akademisk skriving, og gir en stødig lenke til de digitale objektene du refererer til. Ved å ta i bruk DOI-systemet, fremmer du tilgjengeligheten og varigheten av vitenskapelig kunnskap, og støtter det globale forskningsfellesskapet i deres akademiske arbeid.
+
+Når du bygger bibliografien din, husk å dra nytte av mulighetene som `doi`-feltet gir, og fremme et rikere, mer pålitelig og sammenkoblet akademisk diskurs.
