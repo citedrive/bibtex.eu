@@ -1,0 +1,45 @@
+---
+title: "BibTeX Alanı Türü: Okul"
+sidebar:
+  label: school
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'te `school` (okul) alanı, genellikle `@phdthesis` veya `@mastersthesis` girişlerinde kullanılır. Bu alan, tezin veya disertasyonun yazıldığı eğitim kurumunu belirtmek için kullanılır. Her iki giriş türü için de zorunlu bir alandır ve akademik çalışmanın kaynağı hakkında detaylı bilgi sağlar. Bu, okuyucuların daha fazla bilgi edinmek veya çalışmayı kendi araştırmalarında referans olarak kullanmak isteyenler için önemlidir.
+
+<CiteDrive />
+
+## Formatlama Yönergeleri
+
+Okulun adını girerken, kurumun tam ve resmi adını kullanmanız önerilir. Bu, referanslarınızda resmi ve standart bir formatı korumanıza yardımcı olur. Yaygın olarak kabul edilen kısaltmalar dışında kısaltmalar kullanmaktan kaçının.
+
+## Örnekler
+
+İşte `phdthesis` ve `mastersthesis` girişlerinde `school` alanını nasıl kullanacağınızla ilgili örnekler:
+
+### Doktora Tezi
+
+```bibtex
+@phdthesis{doe2023,
+  author = {John Doe},
+  title = {Kuantum Hesaplama Üzerine Keşifler},
+  year = {2023},
+  school = {Massachusetts Institute of Technology},
+}
+```
+
+### Yüksek Lisans Tezi
+
+```bibtex
+@mastersthesis{smith2023,
+  author = {Sarah Smith},
+  title = {Çevresel Sürdürülebilirlik Üzerine Kapsamlı Bir Çalışma},
+  year = {2023},
+  school = {University of California, Berkeley},
+}
+```
+
+## Not
+
+Örneğinizde, `mastersthesis` girişi için `school` alanı yerine `series` alanını kullandınız. Ancak, yukarıdaki örneklerde gösterildiği gibi, hem `phdthesis` hem de `mastersthesis` girişlerinde kurumun belirtilmesi için `school` alanı kullanılmalıdır.

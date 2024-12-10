@@ -1,0 +1,58 @@
+---
+title: "BibTeX alan türü: edition"
+sidebar:
+  label: edition
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Akademik ve yayın dünyasında, bir kitabın baskısı, bir eserin yayımlandığı sürümü veya biçimini belirtir. BibTeX girişindeki `edition` alanı, bu detayı belirtmek için kullanılır ve genellikle eserin ilk yayımlandığından bu yana yaptığı revizyonlar veya güncellemeleri vurgular. Baskının dahil edilmesi, özellikle birden fazla iterasyona uğramış ders kitapları veya akademik eserler referans gösterilirken önemlidir. Aşağıda, BibTeX girişlerinizde `edition` alanını etkili bir şekilde nasıl kullanacağınızı açıklıyoruz.
+
+<CiteDrive />
+
+### Genel Bakış
+
+`edition` alanı, bir kitabın baskısını belirtmek için kullanılır. Bu bilgi, alıntı yaptığınız kitabın çeşitli baskıları yayımlandığında, her baskının farklı içeriklere veya sayfalama sistemlerine sahip olabileceği durumlarda önemlidir. Baskıyı belirtmek, doğru ve net bir referans sağlamaya yardımcı olur ve okuyucuların kullandığınız eserin tam sürümünü bulmasına olanak tanır.
+
+### Yönergeler
+
+1. **Biçimlendirme**: Baskıyı, sırasıyla (örneğin, "Birinci," "İkinci," "Üçüncü" vb.) yazmanız önerilir ve ilk harfi büyük olmalıdır.
+2. **Sayılarla Gösterim**: Sıra sayıları (1. baskı, 2. baskı, 3. baskı vb.) yerine sıralı sayıları yazılı olarak belirtmek, okunabilirlik açısından tercih edilir.
+3. **Dil Uyarlaması**: İngilizce dışındaki dillerdeki eserler için, baskı o dilde belirtilmelidir (örneğin, Almanca'da birinci için "Erste").
+
+### Sözdizimi ve Yapı
+
+`edition` alanının sözdizimi basittir, aşağıda gösterildiği gibi:
+
+```bibtex
+@book{citationkey,
+  ...
+  edition={OrdinalNumber},
+  ...
+}
+```
+
+### Örnek
+
+İşte `edition` alanını içeren bir BibTeX girişi örneği:
+
+```bibtex
+@book{author2023title,
+  title={The Title of the Book},
+  author={Author, A.},
+  year={2023},
+  publisher={Publishing House},
+  edition={First},
+}
+```
+
+Bu örnekte, `edition` alanı, alıntı yapılan eserin birinci baskısı olduğunu açıkça belirtir.
+
+### Ekstra İpuçları
+
+1. **Revize Edilmiş Baskılar**: Revize edilmiş baskılara sahip kitaplar için, "Revize" veya "Güncellenmiş" gibi terimler ile baskı numarasını birlikte kullanabilirsiniz (örneğin, "İkinci, Revize").
+2. **Daha Sonraki Baskılar**: Çok daha sonraki bir baskıdan alıntı yapıyorsanız, eğer baskı önemli derecede farklı veya güncellenmiş içeriklere sahipse, alıntınızda bu tercihi açıklayan bir not eklemek uygun olabilir.
+
+### Sonuç
+
+BibTeX girişlerinizde `edition` alanını doğru bir şekilde belirlemek, daha doğru ve güvenilir bir alıntı süreci sağlar. Bu, okuyucularınızı referans aldığınız kaynağın tam sürümüne yönlendirerek açıklık ve akademik doğruluğu teşvik eder. Bu alanı akıllıca kullanarak bibliyografik referanslarınızın kalitesini ve güvenilirliğini artırabilirsiniz.

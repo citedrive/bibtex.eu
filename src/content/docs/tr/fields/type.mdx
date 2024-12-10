@@ -1,0 +1,29 @@
+---
+title: "BibTeX Alanı Türü: Tür"
+sidebar:
+  label: type
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX girişindeki `type` (tür) alanı, bir yayının belirli türünü veya kategorisini belirtmek için kullanılır. Bu alan, raporlar, tezler veya daha ayrıntılı kategorilere sahip diğer belgeleri atıfta bulunurken özellikle faydalıdır. Belirli bir tür belirtmek, okuyucuya atıfta bulunduğunuz belgenin doğası hakkında daha fazla bağlam sağlayabilir.
+
+<CiteDrive />
+
+Genellikle `@techreport` veya `@thesis` gibi girişlerle birlikte kullanılır ve yayının daha spesifik bir alt türünü, örneğin "Araştırma Notu", "Hükümet Raporu", "Yüksek Lisans Tezi", "Doktora Tezi" gibi bir türü belirtir. Bu alan, belgenin benzer kategorilerdeki diğer belgelerden ayırt edilmesine yardımcı olabilir.
+
+`type` alanını kullanırken, çalıştığınız alan veya disiplinin normlarına uygun açıklayıcı ve standart bir terminoloji kullanmak tavsiye edilir. Bu, açıklık sağlar ve okuyucunun atıfta bulunulan belgenin tam doğasını anlamasına yardımcı olur.
+
+## Örnek
+
+İşte bir teknik rapor girişinde `type` alanının nasıl kullanılacağını gösteren bir örnek:
+
+```bibtex
+@techreport{key,
+    type={Araştırma Notu},
+}
+```
+
+Bu örnekte, `type` alanı "Araştırma Notu" tanımlamasıyla doldurulmuştur, bu da teknik raporun araştırma bulgularını ayrıntılı olarak içeren bir not olduğunu gösterir.
+
+`type` alanını etkili bir şekilde kullanarak, atıfta bulunduğunuz belgeler hakkında daha ayrıntılı bilgi verebilir, bu sayede okuyucunun bibliyografyanızda daha derinlemesine anlayış ve daha kolay gezinti yapmasını sağlayabilirsiniz.

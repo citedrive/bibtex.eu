@@ -1,0 +1,72 @@
+---
+title: "BibTeX alan türü: adress (adres)"
+sidebar:
+  label: adress (adres)
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX girişindeki `adres` alanı, akademik veya profesyonel belgelerinizde çeşitli kaynakları atıfta bulunurken büyük bir öneme sahiptir. Genellikle, atıfta bulunulan esere ait yayınevi ya da ilgili kurumun coğrafi bilgilerini içerir. Burada, BibTeX girişlerinde `adres` alanının kullanımını ve izlenen notasyon standartlarını daha ayrıntılı bir şekilde inceleyeceğiz.
+
+<CiteDrive />
+
+## Detaylı Genel Bakış
+
+`Adres` alanı, yayımlayan kuruluşun ya da atıfta bulunulan esere ilişkin diğer önemli kurumların spesifik konum bilgilerini belirtmek için gereklidir. Bu alan genellikle yayımlanma şehrini içerir ve bölgeye veya belirli atıf gereksinimlerine bağlı olarak ek bilgilerle devam edebilir.
+
+### Adres Formatı Kılavuzları
+
+#### Amerikan Yayınları
+
+Amerika Birleşik Devletleri'nde yayımlanan kaynaklar için format genellikle şehrin adı ile başlar ve ardından posta kodu şeklinde ABD Posta Servisi (USPS) kısaltması parantez içinde gelir.
+
+> **Örnek**: "Columbus, Ohio" şu şekilde yazılmalıdır: "Columbus, OH."
+
+#### Avrupa Yayınları
+
+Buna karşın, Avrupa yayınları, eyalet ya da bölgenin tam adını içerir, kısaltma kullanılmaz ve ardından ülke adı gelir.
+
+> **Örnek**: Almanya'nın Düsseldorf şehrinden bir yayın şu şekilde belirtilir: "Düsseldorf, Almanya."
+
+
+
+## Örnekler ve Kullanım Senaryoları
+
+`Adres` alanı, çeşitli BibTeX giriş türlerinde uygulama bulur. Aşağıda, yaygın olarak kullanıldığı bazı senaryoları açıklamış bulunmaktayız.
+
+### PhdThesis
+
+Bir `phdthesis` giriş türünde, yazar, doktora adayının araştırmasını yaptığı ve tezini tamamladığı üniversitenin adresini eklemek isteyebilir. Bu bilgi, atıfın güvenilirliğini ve özgüllüğünü artırmada yardımcı olur.
+
+```bibtex
+@phdthesis{Peterson2003very,
+  author  = {Arnold Peterson},
+  title   = {My very own PhD-Thesis by Arnold Peterson},
+  school  = {The university / school name},
+  year    = 2004,
+  address = {123 University Lane, University City, State [or Province], Country},
+  month   = 1,
+  ...
+}
+```
+
+### Proceedings / Inproceedings
+
+`Proceedings` veya `inproceedings` giriş türlerinde `adres` alanı tartışmalı bir konudur. Bazıları konferans yerinin adresini dahil etmeyi tercih ederken, diğerleri yayınevi veya organizatörün adresini kullanmayı tercih eder. Kendi bağlamınıza veya atıf stilinize uygun yönergelere uymanız önemlidir. İşte bu giriş türlerinde `adres` alanının nasıl kullanılacağına dair bir örnek:
+
+```bibtex
+@PROCEEDINGS{Conference2023,
+  title    = {Conference Proceedings Title},
+  editor   = {Editor Name},
+  year     = 2023,
+  address  = {123 Conference Venue Street, City, State [or Province], Country},
+  publisher = {Publisher Name},
+  ...
+}
+```
+
+## Sonuç
+
+BibTeX girişlerinizde `adres` alanını anlamak ve doğru şekilde kullanmak, atıflarınızın netliğini ve kapsamını önemli ölçüde artırabilir. Bu, okuyucuların atıfta bulunulan eserlerin coğrafi bağlamını tam olarak tanımlamalarını sağlayarak belgenize bir güvenilirlik ve doğruluk katmanı ekler.
+
+`Adres` alanını etkin bir şekilde kullanmak için atıf stilinizin veya kurumunuzun belirli yönergelerini dikkate almayı unutmayın.

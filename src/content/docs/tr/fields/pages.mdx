@@ -1,0 +1,57 @@
+---
+title: "BibTeX Alanı Türü: Sayfalar"
+sidebar:
+  label: pages
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'teki `pages` alanı, daha büyük bir eserdeki, örneğin bir kitap ya da dergideki, referans verilen belirli sayfaları belirtir. Bu alan, bir kitabın bölümünü ya da bir dergi makalesini alıntılarken çok önemlidir, çünkü okuyucuyu eserin ilgili kısmına doğrudan yönlendirmeye yardımcı olur.
+
+<CiteDrive />
+
+## Formatlama Yönergeleri
+
+Tek bir sayfa, bir sayfa aralığı veya ardışık olmayan sayfalar belirtebilirsiniz. `pages` alanını doğru şekilde formatlamak için aşağıdaki yönergeleri izleyebilirsiniz:
+
+1. **Tek Sayfa:** Bir tek sayfa referans alıyorsanız, sadece sayfa numarasını yazmalısınız.
+    
+2. **Sayfa Aralığı:** Bir sayfa aralığı için çift tireler (--) kullanmalısınız. Bu, ilk sayı ile ikinci sayı arasındaki kesintisiz bir aralığı ifade eder.
+    
+3. **Ardışık Olmayan Sayfalar:** Ardışık olmayan sayfaları belirtiyorsanız, farklı sayfa numaralarını veya aralıklarını virgülle ayırmalısınız.
+    
+
+## Örnekler
+
+İşte `pages` alanını nasıl kullanacağınızı gösteren bazı örnekler:
+
+```bibtex
+@book{key,
+  title = {Kitabın Başlığı},
+  author = {Yazar Adı},
+  year = {2023},
+  pages = {33--44},   % 33 ile 44 arasındaki sayfa aralığı
+}
+```
+
+```bibtex
+@book{key,
+  title = {Kitabın Başlığı},
+  author = {Yazar Adı},
+  year = {2023},
+  pages = {22, 33--44},   % Sayfa 22 ve 33 ile 44 arasındaki sayfa aralığı
+}
+```
+
+```bibtex
+@book{key,
+  title = {Kitabın Başlığı},
+  author = {Yazar Adı},
+  year = {2023},
+  pages = {17},    % Tek bir sayfa
+}
+```
+
+## Not
+
+`pages` alanının yalnızca `@book` türündeki girişlerle sınırlı olmadığını belirtmek önemlidir; `@article` veya `@inbook` gibi diğer giriş türlerinde de ilgili sayfaları belirtmek için kullanılabilir. `pages` alanını doğru şekilde kullanmak, daha doğru ve faydalı alıntılar oluşturulmasına yardımcı olur.

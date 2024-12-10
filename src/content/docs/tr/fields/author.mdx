@@ -1,0 +1,83 @@
+---
+title: "BibTeX alan türü: author"
+sidebar:
+  label: author
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Akademik yazımda, bir eserin katkılarını doğru bir şekilde tanımak çok önemlidir. BibTeX'teki `author` alanı, atıfta bulunduğunuz eserin tüm katkıcılarını belirtmenize olanak tanır. Yazar adlarının tutarlı ve doğru bir şekilde sıralanması, yanlış temsil ve hatalı atıf çıktılarından kaçınmak için çok önemlidir. Burada, BibTeX'te yazar adlarını etkili bir şekilde belirtmek için kullanılan farklı notasyonları ve gelenekleri inceleyeceğiz.
+
+<CiteDrive />
+
+## Detaylı Genel Bakış
+
+BibTeX'te yazarları belirtirken, seçebileceğiniz birden fazla format vardır. Bu formatlar, her yazarın kimliğini ayrıntılı bir şekilde temsil etmenizi sağlayacak şekilde ad, soyad ve hatta ekler içerebilir. Şimdi, yazar bilgilerini doğru bir şekilde sunmak için kullanılabilecek farklı notasyonları inceleyelim.
+
+### Notasyon Formatları
+
+#### Notasyon: `{Firstname Lastname}`
+
+Bir yazarın adını not etmenin en temel ve basit yolu, önce adını sonra soyadını kullanmaktır. Bu yaygın bir format olsa da, özellikle bileşik isimler söz konusu olduğunda, ad ve soyadı açıkça ayırt etmek için gereken kontrolleri sağlamayabilir.
+
+**Örnek**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Makale Başlığı},
+  year   = 2023,
+  author = {Isaac Newton},
+  ...
+}
+```
+
+#### Notasyon: `{Lastname, Firstname}`
+
+Daha hassas bir yaklaşım, soyadı ve adı, aralarına virgül koyarak belirtmektir. Bu format önerilir, çünkü ad ve soyadı net bir şekilde ayırt etmenize yardımcı olur, böylece karışıklıkların önüne geçer.
+
+**Örnek**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Makale Başlığı},
+  year   = 2023,
+  author = {Newton, Isaac},
+  ...
+}
+```
+
+#### Notasyon: `{Lastname, Suffix, Firstname}`
+
+Eğer bir ek (Jr., Sr., III vb.) eklenmesi gerekiyorsa, bu format kullanışlıdır. Yazarın ismini doğru bir şekilde temsil etmek için sıralamanın dikkatlice korunması önemlidir.
+
+**Örnek**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Makale Başlığı},
+  year   = 2023,
+  author = {King, Jr, Martin Luther},
+  ...
+}
+```
+
+### Birden Fazla Yazar Dahil Etme
+
+Bir eserin birden fazla katkıcısı olduğunda, BibTeX, `AND` ayırıcısı kullanarak bunu sağlar. Bu ayırıcının, yukarıda tartışılan notasyon formatlarına uygun şekilde birden fazla yazarı net bir şekilde sıralamak için kullanılması gerekir.
+
+**Örnek**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Makale Başlığı},
+  year   = 2023,
+  author = {Fisher, James AND Clark, John},
+  ...
+}
+```
+
+## Sonuç
+
+BibTeX'te yazar isimlerini doğru bir şekilde not etmek, akademik yazının bütünlüğünü korumak için çok önemlidir. Bu, okuyucuların eserleri doğru bir şekilde tanımlamalarını ve atıfta bulundukları yazarlara ait eserleri doğru şekilde atfetmelerini sağlar. Farklı notasyonları ve yönergeleri bilmek, hem doğru hem de profesyonel bir bibliyografya hazırlamak için kritik öneme sahiptir.
+
+Unutmayın, tutarlılık anahtardır. Bir notasyon formatı seçtikten sonra, tüm girişlerde bu formatı tutarlı bir şekilde uygulamak, tutarlı ve profesyonel bir sunum için önemlidir.

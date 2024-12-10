@@ -1,0 +1,35 @@
+---
+title: "BibTeX Alanı Türü: Cilt"
+sidebar:
+  label: volume
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX girişindeki `volume` (cilt) alanı, daha büyük bir eserin bir bölümüne, örneğin bir dergideki makale veya çok ciltli bir kitapta bir bölüme atıfta bulunurken önemlidir. Bu alan, hangi ciltte yer alan bir yayına atıfta bulunduğunuzu belirlemenizi sağlar ve okuyuculara, atıfta bulunduğunuz eseri bulabilmeleri için daha kesin bilgiler sunar.
+
+<CiteDrive />
+
+Birçok akademik yayında, dergiler ciltler halinde yayımlanır ve her cilt genellikle bir yıl içinde yayımlanan birkaç sayıdan oluşur. Cilt numarası, genellikle belirli bir zaman diliminde yayımlanan sayıları içeren bir koleksiyonu belirtir. Benzer şekilde, çok ciltli kitaplar veya seriler, her biri tüm eserin bir kısmını içeren farklı ciltlere bölünür.
+
+`volume` (cilt) alanı, dergilere atıfta bulunurken özellikle önemlidir çünkü okuyuculara, atıfta bulunulan makalenin yayımlandığı ciltteki belirli sayıların bulunmasına yardımcı olur. Bu alan, genellikle makalenin bulunduğu sayıyı daha da belirten `number` (sayı) alanı ile birlikte kullanılır.
+
+İşte bir BibTeX girişinde `volume` (cilt) alanının nasıl kullanılacağını gösteren bir örnek:
+
+## Örnek
+
+```bibtex
+@article{key,
+    title={Makale Başlığı},
+    author={Yazar Adı},
+    journal={Dergi Adı},
+    volume={5},
+    number={3},
+    pages={123-456},
+    year={2022},
+}
+```
+
+Bu örnekte, `volume` (cilt) alanı, makalenin derginin 5. cildinde yayımlandığını belirtir. Bu detayın dahil edilmesi, tam ve doğru bir alıntı yapmaya yardımcı olur ve okuyucuların atıfta bulunulan eseri bulmasını kolaylaştırır.
+
+Benzer şekilde, çok ciltli kitaplar veya serilerde, `volume` (cilt) alanını, atıfta bulunduğunuz bölümün bulunduğu belirli cildi belirtmek için kullanabilirsiniz. Bu kullanım da, okuyucuların doğru kaynak materyali daha verimli bir şekilde bulmalarına yardımcı olur.

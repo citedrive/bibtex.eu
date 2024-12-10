@@ -1,0 +1,64 @@
+---
+title: "BibTeX Alanı Türü: Number"
+sidebar:
+  label: number
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'te `number` alanı, bir derginin sayı numarasını, bir teknik raporun numarasını veya daha büyük bir serinin parçası olan diğer tanımlayıcıları belirtmek için kullanılır. Bu alan, alıntılanan eserin bulunduğu tam sayıyı veya baskıyı belirlemeye yardımcı olur ve materyali bulmak için daha hassas bilgi sağlar.
+
+<CiteDrive />
+
+Bu alan, özellikle dergi makaleleri ve periyodik yayınlar için `volume` alanı ile birlikte yaygın olarak kullanılır. Bir teknik rapor için, `number` alanı genellikle raporu yayımlayan kurum veya organizasyon tarafından atanan rapor numarasını içerir.
+
+## Format
+
+`number` alanının formatı oldukça basittir. Bir makale girişi bağlamında şu şekilde görünür:
+
+```bibtex
+@article{citation_key,
+  ...
+  number={issue_number},
+  ...
+}
+```
+
+Burada, "citation_key" giriş için benzersiz bir tanımlayıcıyı temsil eder ve "issue_number" dergi sayısının, teknik raporun veya diğer yayının numarasını belirtir.
+
+## Örnekler
+
+İşte `number` alanının farklı bağlamlarda kullanımını gösteren bazı örnekler:
+
+### Örnek 1: Dergi Makalesi
+
+```bibtex
+@article{doe2023study,
+  author = {Doe, Jane},
+  title = {Kuantum Hesaplama Üzerine Kapsamlı Bir Çalışma},
+  journal = {İleri Hesaplama Dergisi},
+  year = {2023},
+  volume = {29},
+  number = {3},
+  pages = {215-230},
+}
+```
+
+Bu örnekte, `number` alanı "İleri Hesaplama Dergisi"nin 29. cildinin 3. sayısını belirtir.
+
+### Örnek 2: Teknik Rapor
+
+```bibtex
+@techreport{smith2022analysis,
+  author = {Smith, John},
+  title = {Yenilenebilir Enerji Trendlerinin Analizi},
+  institution = {Enerji Araştırma Enstitüsü},
+  year = {2022},
+  number = {TR-2022-45},
+  type = {Teknik Rapor},
+}
+```
+
+Bu durumda, `number` alanı "Enerji Araştırma Enstitüsü" tarafından atanan belirli rapor numarasını gösterir.
+
+`number` alanını doğru bir şekilde kullanmak, okuyucunun kaynak materyali daha kolay bulmasına ve alıntılanan bilgiyi doğrulamasına yardımcı olabilir. Bu, akademik yazı ve araştırma belgelerinde önemli bir detaydır.

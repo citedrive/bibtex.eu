@@ -1,0 +1,43 @@
+---
+title: "BibTeX Alanı Türü: Seri"
+sidebar:
+  label: series
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'teki `series` (seri) alanı, bir kitabın, raporun veya diğer bir yayının ait olduğu seriyi belirtmek için kullanılır. Serinin belirtilmesi, okuyucuya ek bağlam sağlayabilir, çünkü bu, daha geniş bir tematik veya akademik söylemle ilişkili olabilir.
+
+<CiteDrive />
+
+Bu alan isteğe bağlıdır ve `@book`, `@inbook`, `@incollection` ve `@inproceedings` gibi çeşitli giriş türlerinde kullanılabilir. Özellikle, atıfta bulunulan eser devam eden bir serinin parçasıysa veya ortak bir tema, yazar ya da yayıncıya sahip daha geniş bir eser kümesinin parçasıysa kullanışlıdır.
+
+`series` alanına veri girerken, serinin tam resmi başlığını kullanmanız önerilir. Eğer serinin bir ISSN'si varsa, bu da daha doğru referans için dahil edilebilir.
+
+## Format
+
+Seriyi BibTeX girişinize dahil etmenin genel formatı aşağıdaki gibidir:
+
+```bibtex
+@entrytype{key,
+  ...
+  series = {Serinin Adı},
+  ...
+}
+```
+
+## Örnek
+
+İşte `@book` girişinde `series` alanını nasıl kullanacağınızı gösteren bir örnek:
+
+```bibtex
+@book{doe2023,
+  author = {John Doe},
+  title = {Kuantum Mekaniğinde İleri Çalışmalar},
+  year = {2023},
+  publisher = {Scientific Publishing Ltd.},
+  series = {Cambridge Advanced Series in Physics},
+}
+```
+
+Bu örnekte, kitap "Cambridge Advanced Series in Physics" serisinin bir parçasıdır ve bu seri, fizik alanında ileri konuları kapsayan çeşitli başlıkları içerebilir. Serinin dahil edilmesi, eseri daha geniş bir akademik konuşma içinde konumlandırmaya yardımcı olabilir ve okuyuculara konu hakkında ek kaynaklar sunabilir.

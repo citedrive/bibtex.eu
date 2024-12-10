@@ -1,0 +1,57 @@
+---
+title: "BibTeX Alanı Türü: Organization"
+sidebar:
+  label: organization
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'teki `organization` alanı, alıntılanan belgenin yayımlanmasından sorumlu olan organizasyonun adını belirtmek için kullanılır. Bu, bir şirket, kurum veya bir konferans, seminer, kılavuz vb. düzenleyen veya sponsor olan bir grup olabilir. Organizasyonun belirtilmesi, okuyucuya belgenin arkasındaki kurum hakkında net bir bağlam sağlar, bu da kaynağın güvenilirliğini ve otoritesini belirlemek için kritik olabilir.
+
+<CiteDrive />
+
+Bu alanı genellikle `@proceedings` ve `@manual` türündeki girişlerde göreceksiniz, ancak kullanılan bibliyografya stiline bağlı olarak başka türlerde de yer alabilir.
+
+## Format
+
+`organization` alanını belirtme formatı şu şekildedir:
+
+```bibtex
+@entry_type{citation_key,
+  ...
+  organization={Organization Name},
+  ...
+}
+```
+
+Burada, "entry_type" BibTeX giriş türünü (örneğin, `@proceedings` veya `@manual`), "citation_key" girişin benzersiz bir tanımlayıcısını ve "Organization Name" ilgili organizasyonun adını ifade eder.
+
+## Örnekler
+
+İşte `organization` alanının farklı bağlamlarda nasıl kullanılacağına dair birkaç örnek:
+
+### Örnek 1: Konferans Bildirileri
+
+```bibtex
+@proceedings{ICML2023,
+  title = {40. Uluslararası Makine Öğrenimi Konferansı Bildirileri},
+  year = {2023},
+  organization = {Uluslararası Makine Öğrenimi Derneği},
+}
+```
+
+Bu örnekte, `organization` alanı, alıntılanan bildirilerin sunulduğu konferansı düzenleyen organizasyonu belirtir.
+
+### Örnek 2: Kullanıcı Kılavuzu
+
+```bibtex
+@manual{UserGuide2022,
+  title = {XYZ Yazılım Kullanıcı Kılavuzu},
+  year = {2022},
+  organization = {XYZ Yazılım A.Ş.},
+}
+```
+
+Bu durumda, `organization` alanı, yazılım kılavuzunu yayımlayan şirketi belirtir.
+
+`organization` alanını BibTeX girişlerinizde kullanmak, daha eksiksiz ve detaylı bir referans sağlamaya yardımcı olabilir, bu da kaynak materyallerinin daha kolay tanımlanmasını ve elde edilmesini sağlar.

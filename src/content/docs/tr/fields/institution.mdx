@@ -1,0 +1,23 @@
+---
+title: "BibTeX Alanı Türü: Institution"
+sidebar:
+  label: institution
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`institution` alanı, `@techreport` giriş türü içinde kullanılmak üzere tasarlanmıştır ve raporu yayımlayan veya yayımlatan kurumun adını belirtmek için kullanılır. Bu, doğru atıf yapılmasına yardımcı olur ve okuyucuların orijinal kaynağa daha kolay erişmesini sağlar.
+
+<CiteDrive/>
+
+İşte bir `@techreport` girişinde `institution` alanını nasıl kullanabileceğinizi gösteren bir örnek yapı:
+
+```bibtex
+@techreport{key,
+  institution = {...},
+}
+```
+
+Bu formatta, "key" BibTeX girişiniz için benzersiz bir tanımlayıcıdır ve `institution` alanı raporu yayımlayan kurumun adını içermelidir. Bu alanda doğru ve ayrıntılı bilgi sağlamak, doğru alıntı yapmayı ve referansları kolaylaştırmayı sağlar.
+
+BibTeX girişlerinizi oluştururken `{...}` kısmını kurumun gerçek adıyla değiştirdiğinizden emin olun. Bu alan, teknik raporların doğru bir şekilde düzenlenmesine ve referans listenizde uygun şekilde kategorize edilmesine yardımcı olur.

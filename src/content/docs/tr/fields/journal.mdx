@@ -1,0 +1,32 @@
+---
+title: "BibTeX Alanı Türü: Journal"
+sidebar:
+  label: journal
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`journal` alanı, makalenin yayımlandığı derginin adını belirtmek için kullanılır. Bu alan, çeşitli yayınlardaki makaleleri ayırt etmek ve referans verilen çalışmanın doğru bağlamını sağlamak açısından kritik öneme sahiptir.
+
+<CiteDrive/>
+
+İşte bir `@article` girişinde `journal` alanını nasıl kullanabileceğinizi gösteren bir şablon:
+
+```bibtex
+@article{ ... ,
+ journal = {Derginin Adı},
+}
+```
+
+Yukarıdaki formatta, "Derginin Adı" kısmını makalenin yayımlandığı derginin gerçek adıyla değiştirin. Bu bilgiyi doğru şekilde girmeniz, doğru alıntıların yapılmasını sağlamak için önemlidir.
+
+Örneğin, aşağıda `journal` alanının doğru bir şekilde kullanıldığı bir örnek bulunmaktadır:
+
+```bibtex
+@article{smith2023effects,
+ title = {XYZ'nin ABC Üzerindeki Etkileri},
+ author = {Smith, John},
+ journal = {ABC Araştırma Dergisi},
+ year = {2023},
+}
+```

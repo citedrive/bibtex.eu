@@ -1,0 +1,33 @@
+---
+title: "BibTeX Alanı Türü: Yıl"
+sidebar:
+  label: year
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`year` (yıl) alanı, bir BibTeX girişinde, eserin yayımlandığı veya yayımlanmamışsa oluşturulduğu yılı belirtmek için kullanılır. Bu alan, eserin ne zaman üretildiği hakkında okuyucuya bilgi verir ve eserin içeriğinin nasıl algılanacağını veya kullanılacağını etkileyebilir, bu nedenle önemli bir alandır.
+
+<CiteDrive />
+
+Bu alan, çoğu BibTeX giriş türünde genellikle zorunludur çünkü bir eseri doğru bir şekilde alıntılamak ve referans göstermek için gereklidir. Yayın yılına yer vermek, akademik yazımda standart bir uygulamadır, çünkü atıfta bulunulan materyalin güncelliği ve geçerliliği hakkında önemli bir bağlam sağlar.
+
+`year` (yıl) alanı, referanslarınızda tutarlılık ve açıklık sağlamak için dört haneli bir yıl formatı ile doldurulmalıdır. Bu detay, referansların kronolojik bir şekilde anlaşılmasını ve kolayca sıralanmasını sağlar.
+
+İşte bir BibTeX girişinde `year` (yıl) alanının nasıl kullanılacağını gösteren bir örnek:
+
+## Örnek
+
+```bibtex
+@article{key,
+    author = {Yazar Adı},
+    title = {Makale Başlığı},
+    journal = {Dergi Adı},
+    volume = {3},
+    number = {2},
+    pages = {123-456},
+    year = {2007},
+}
+```
+
+Bu örnekte, `year` (yıl) alanı, makalenin 2007 yılında yayımlandığını belirtir. Bu, atıfta bulunulan eserin tarihsel bağlamını belirlemek için kritik bir bilgidir ve araştırmalarda tarihsel veya kronolojik analizler için önemli olabilir.

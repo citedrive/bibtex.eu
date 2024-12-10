@@ -1,0 +1,80 @@
+---
+title: "BibTeX alan türü: editor"
+sidebar:
+  label: editor
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'teki `editor` alanı, yayımlanan bir eserin editörlerini belirtmek için kullanılır. Bu alan, yazarın rolüyle editörün rolü arasında belirgin bir farkın olduğu kitaplar, bildiriler veya derlemeler gibi referans türleri için önemlidir. Editörlerin doğru şekilde belirtilmesi, doğru atıf yapılmasını ve akademik makalelerde sorunsuz bir referans süreci sağlamayı garanti eder. Burada, BibTeX'te editörlerin nasıl belirtileceğine dair daha derinlemesine bir inceleme yapıyoruz.
+
+<CiteDrive />
+
+### Biçimlendirme Kuralları
+
+`editor` alanında çeşitli yazım formatları kabul edilir. Ancak, biçimlendirmenin tutarlı ve doğru olması, editörün isminin yanlış şekilde temsil edilmesini engellemek için önemlidir. Yaygın kullanılan yazım formatları şunlardır:
+
+#### Yazım: `{İsim Soyisim}`
+
+Bu basit bir yöntemdir; editörün adı soyadı takip eder. "Soyisim, İsim" formatı önerilmez.
+
+**Örnek**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={Isaac Newton},
+  ...
+}
+```
+
+#### Yazım: `{Soyisim, İsim}`
+
+Bu önerilen formattır, çünkü isim ve soyisim arasındaki net ayrımı sağlar ve çok parçalı isimler için özellikle faydalıdır.
+
+**Örnek**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={Newton, Isaac},
+  ...
+}
+```
+
+#### Yazım: `{Soyisim, Suffix, İsim}`
+
+Eğer editörün isminin sonunda ek (örneğin, Jr., Sr., III) varsa, isim önce soyisimle, sonra ek ile, en son ise ad ile yazılmalıdır. Tüm bileşenler virgülle ayrılmalıdır.
+
+**Örnek**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={King, Jr., Martin Luther},
+  ...
+}
+```
+
+### Birden Fazla Editör Ekleme
+
+Birden fazla editör belirtmek için, her bir editör bilgisini yukarıda belirtilen formatla ve `AND` anahtar kelimesi ile ayırarak yazabilirsiniz. Bu yazım biçimi, birden fazla editörü açık ve doğru bir şekilde listelemeye yardımcı olur.
+
+**Örnek**
+
+```bibtex
+@book{Example2023,
+  ...
+  editor={Smith, John AND Doe, Jane},
+  ...
+}
+```
+
+### En İyi Uygulamalar
+
+1. **Tutarlılık**: BibTeX dosyanızdaki tüm girişlerde yazım formatının tutarlı olmasına dikkat edin.
+2. **Ekler**: Ailevi ilişkisi olan birden fazla editör bulunan eserlerde, eklerin doğru bir şekilde belirtildiğinden emin olun.
+
+### Sonuç
+
+`editor` alanı, özellikle derlenmiş eserler, bildiriler ve koleksiyonlar için BibTeX girişlerinde kritik bir bileşendir. Doğru ve tutarlı yazım, editörlerin doğru şekilde tanınmasını sağlar, böylece alıntılarınızın güvenilirliğini ve okunabilirliğini artırır. Sorunsuz bir alıntı deneyimi için önerilen formatlara uymayı unutmayın.

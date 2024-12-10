@@ -1,0 +1,47 @@
+---
+title: "BibTeX Alanı Türü: Month"
+sidebar:
+  label: month
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`month` alanı, belirli bir eserin yayımlandığı veya oluşturulduğu (yayınlanmamışsa) ayı belirtmek için kullanılır. Bu bilgi, eserin zaman çizelgesinin detaylı bir şekilde sunulmasına yardımcı olur ve bazı akademik veya tarihsel araştırmalar için önemli olabilir.
+
+<CiteDrive />
+
+BibTeX girişlerinde, ay genellikle sayısal gösterim ya da üç harfli kısaltmalarla belirtilir. Standart bir format kullanmak, bibliyografyanızda tutarlılığı sağlamaya yardımcı olabilir. Yaygın olarak kabul edilen birkaç format şunlardır:
+
+1. Sayısal gösterim (01 ile 12 arasında).
+2. Üç harfli kısaltma (jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec).
+
+Ay alanının, özellikle belirli bir yayımlanma ayı olmayan kitaplar veya eserler alıntı yaparken dikkatli kullanılması gerektiğini unutmayın, çünkü yanlış bilgiye yol açabilir.
+
+## Format
+
+`month` alanını, `@book`, `@article` gibi çeşitli BibTeX girişlerinde şu şekilde kullanabilirsiniz:
+
+```bibtex
+@book{...,
+ month = {ay gösterimi},
+ ... 
+}
+```
+
+Yukarıdaki şablonda, "ay gösterimi" kısmını, ayın sayısal gösterimi veya üç harfli kısaltmasıyla değiştirin.
+
+## Örnek
+
+İşte bir `@book` girişinde `month` alanının nasıl kullanılacağına dair pratik bir örnek:
+
+```bibtex
+@book{johnson2023deep,
+ title = {Derin Öğrenme ve Uygulamaları},
+ author = {Johnson, Mark},
+ month = {mar},
+ year = {2023},
+ publisher = {Tech Publishing House},
+}
+```
+
+Bu örnekte, kitap Mart 2023'te yayımlanmış olup, yayımlanma tarihi için net ve belirgin bir zaman çizelgesi sunmaktadır. Referanslarınızın doğruluğunu korumak için yayımlanma ayını güvenilir kaynaklardan doğrulamayı unutmayın.

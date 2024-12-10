@@ -1,0 +1,25 @@
+---
+title: "BibTeX alan türü: howpublished"
+sidebar:
+  label: howpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`howpublished` alanı, genellikle BibTeX tarafından doğrudan desteklenmeyen kaynak türlerini ele almak için `@misc` giriş türünde kullanılır. Bu alan, özellikle web sayfalarını alıntıladığınızda ve bir URL sağlamak istediğinizde oldukça kullanışlıdır.
+
+<CiteDrive/>
+
+BibTeX girişlerinizde, `howpublished` alanını, alıntıladığınız kaynağın yayın ortamını veya kaynağını ayrıntılı olarak belirtmek için kullanabilirsiniz. Bu alan, web sayfaları veya çevrimiçi raporlar gibi geleneksel olmayan kaynakları referanslarınıza dahil etmeniz gerektiğinde son derece yararlıdır.
+
+İşte bir web sayfasını alıntılarken URL belirtmek için `howpublished` alanını nasıl kullanacağınızı gösteren bir örnek:
+
+```bibtex
+@misc{BibTeXeu,
+  title = {{BibTeX ile referans yönetimi: Kısa bir rehber}},
+  howpublished = {\url{https://bibtex.eu/}},
+  note = {Erişim tarihi: 2022-06-12}
+}
+```
+
+Bu örnekte, `howpublished` alanı, alıntıladığınız web sayfasının URL'sini sağlamak için kullanılmıştır ve okuyuculara kaynağa doğrudan bir bağlantı sunar. Çevrimiçi kaynakları alıntılarken, erişim tarihini belirtmek için bir `note` alanı eklemeyi unutmayın; bu, çevrimiçi kaynakları alıntılarken yaygın bir gerekliliktir.

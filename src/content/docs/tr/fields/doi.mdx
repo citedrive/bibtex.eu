@@ -1,0 +1,63 @@
+---
+title: "BibTeX alan türü: doi"
+sidebar:
+  label: doi
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`doi` alanı, modern alıntılamada temel bir bileşendir ve dergi makaleleri, araştırma raporları ve veri setleri gibi dijital nesneleri çevrimiçi ortamda bulmak için kesintisiz ve kalıcı bir yöntem sunar. Burada, BibTeX'teki `doi` alanının işlevselliği ve önemi üzerine daha derinlemesine bir inceleme yapacağız ve doğru kullanımına dair rehberlik sağlayacağız.
+
+<CiteDrive />
+
+### Genel Bakış
+
+Dijital Nesne Tanımlayıcı (DOI), dijital bir nesneye atanmış benzersiz bir alfasayısal dizedir ve internet üzerindeki konumuna kalıcı bir bağlantı sağlar. Elektronik kaynakları tanımlamak için standartlaştırılmış bir yöntem olarak DOI, nesnenin URL'si değişse bile sabit kalır, böylece referansların sürekliliği sağlanır.
+
+BibTeX'teki `doi` alanı, bu tanımlayıcıyı kaydetmek için kullanılır, böylece doğru ve kalıcı alıntılar yapılabilir. Genellikle `article` giriş türünde bulunmakla birlikte, daha az yaygın olarak `book`, `chapter`, `inproceedings` veya `conference` gibi diğer türlerde de kullanılabilir. Giriş türünden bağımsız olarak, `doi` alanı isteğe bağlıdır.
+
+### Sözdizimi ve Yapı
+
+DOI'yi BibTeX girişinize doğru bir şekilde dahil etmek için aşağıdaki formatı izleyin:
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  doi={https://doi.org/xxxxx},
+  ...
+}
+```
+
+`doi` alanı, tipik olarak "[https://doi.org/](https://doi.org/)" ile başlayan ve ardından benzersiz bir tanımlayıcı dizesi gelen tam DOI URL'sini kapsar.
+
+### Örnek
+
+İşte içinde DOI bulunan bir BibTeX girişi örneği:
+
+```bibtex
+@article{steinbeck2003chemistry,
+  title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
+  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  journal={Journal of chemical information and computer sciences},
+  volume={43},
+  number={2},
+  pages={493--500},
+  year={2003},
+  publisher={ACS Publications},
+  doi={https://doi.org/10.1021/ci025584y},
+}
+```
+
+Bu örnekte, `doi` alanı, doğrudan referans verilen makaleye giden kalıcı URL'yi barındırmaktadır.
+
+### Kullanım İpuçları
+
+1. **DOI Bulma**: Akademik makaleler için DOI'ler genellikle makalenin ilk sayfasında veya makalenin bulunduğu çevrimiçi veritabanında yer alır.
+2. **Çapraz Referanslama**: Makalenizde, okuyuculara orijinal kaynağa doğrudan bir bağlantı sunarak `doi` alanını çapraz referans olarak kullanın.
+3. **İsteğe Bağlı ama Faydalı**: `doi` alanı isteğe bağlıdır, ancak dahil edilmesi, referanslarınızın güvenilirliğini ve izlenebilirliğini artırır.
+
+### Sonuç
+
+BibTeX girişlerinizde `doi` alanının dahil edilmesi, akademik yazımda en iyi uygulamaları temsil eder ve referans verdiğiniz dijital nesnelere sağlam bir bağlantı sunar. DOI sistemini benimseyerek, bilimsel bilginin erişilebilirliğini ve kalıcılığını teşvik eder, küresel araştırma topluluğunun akademik çabalarını desteklersiniz.
+
+Bibliyografinizi oluştururken, `doi` alanının sunduğu imkanlardan yararlanmayı unutmayın; böylece daha zengin, daha güvenilir ve daha bağlı bir akademik söylem oluşturabilirsiniz.

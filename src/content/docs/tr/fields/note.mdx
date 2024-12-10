@@ -1,0 +1,60 @@
+---
+title: "BibTeX Alanı Türü: Note"
+sidebar:
+  label: note
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX girişlerinde `note` alanı, alıntılanan eserin diğer standart alanlara sığmayan ek bilgilerini iletmek için kullanılır. Bu, eserin bağlamını veya önemini anlamak için okuyucuya gerekli olabilecek ek açıklamalar, açıklamalar veya açıklamalar içerebilir. `note` alanı, BibTeX'te çok yönlü bir araç olup, alıntının detaylarını ve derinliğini artırabilecek çeşitli bilgilerin eklenmesine olanak tanır.
+
+<CiteDrive />
+
+`note` alanını kullanmak, referansa ek bağlam, yayım durumu hakkında notlar, özel açıklamalar veya okuyucuya faydalı olabilecek diğer ilgili verileri dahil ederek daha derinlemesine bilgi sunabilir. Bu, ek materyallere bağlantılar, eserin etkisi veya alımı hakkında yorumlar ya da başka herhangi bir önemli detayı içerebilir.
+
+## Format
+
+`note` alanını kullanmak için, BibTeX girişinize aşağıdaki formatta dahil edebilirsiniz:
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  note={buraya notunuzu ekleyin},
+  ...
+}
+```
+
+Yukarıdaki formatta, "entrytype" kısmını uygun eser türüyle (örneğin, @book, @article) değiştirin ve "citationkey" kısmını giriş için benzersiz bir tanımlayıcı ile doldurun. Ardından, `note` alanına ek bilginizi ekleyebilirsiniz.
+
+## Örnekler
+
+İşte farklı girişlerde `note` alanının nasıl kullanılacağına dair birkaç pratik örnek:
+
+### Örnek 1: Ekstra Bilgi
+
+```bibtex
+@book{smith2023innovations,
+  title = {Modern Teknolojide Yenilikler},
+  author = {Smith, John},
+  year = {2023},
+  publisher = {Technology Press},
+  note = {Bibliyografik referanslar ve indeks içerir},
+}
+```
+
+### Örnek 2: Ek Materyal
+
+```bibtex
+@article{johnson2023ai,
+  title = {Yapay Zeka ve Gelecek Uygulamaları},
+  author = {Johnson, Mark},
+  year = {2023},
+  journal = {Teknolojik Gelişmeler Dergisi},
+  volume = {5},
+  issue = {2},
+  pages = {123-135},
+  note = {Ek materyal şu adreste mevcuttur: http://example.com/supplementary_material},
+}
+```
+
+Bu örneklerde, `note` alanı bir kitapta bibliyografik referanslar ve indeksin bulunduğunu belirtmek ve bir makale için ek materyallere bağlantı sağlamak için kullanılmıştır. Böylece okuyucuya ek kaynaklar ve bilgiler sunulmuştur.

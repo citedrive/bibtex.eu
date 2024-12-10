@@ -1,0 +1,57 @@
+---
+title: "BibTeX Alanı Türü: Yayıncı"
+sidebar:
+  label: publisher
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+`publisher` (yayıncı) alanı, `@book`, `@inbook` veya `@incollection` gibi çeşitli BibTeX girişlerinde, referans verilen eseri yayınlayan yayıncının adını belirtmek için kullanılır. Yayıncıyı alıntınıza dahil etmek, kapsamlı ve doğru bir referans sağlamak için önemlidir ve okuyucuların orijinal kaynağa ulaşmalarını kolaylaştırabilir.
+
+<CiteDrive />
+
+BibTeX girişinize bir yayıncı eklerken, yayıncının tam ve resmi adını kullanmaya özen gösterin. Bu, alıntının hem profesyonel hem de güvenilir olmasını sağlar. Ayrıca, benzer isimlere sahip diğer yayıncılarla karışmayı önlemeye yardımcı olur.
+
+## Örnekler
+
+İşte farklı BibTeX girişlerinde yayıncıyı doğru şekilde nasıl belirteceğinizi gösteren birkaç örnek:
+
+### Kitap
+
+```bibtex
+@book{key1,
+  title = {Bilimsel Araştırma Sanatı},
+  author = {John Doe},
+  year = {2023},
+  publisher = {Cambridge University Press},
+}
+```
+
+### Kitap Bölümü
+
+```bibtex
+@inbook{key2,
+  title = {Kuantum Mekaniği Üzerine Bölüm},
+  author = {Jane Doe},
+  year = {2023},
+  publisher = {Oxford University Press},
+  pages = {45--78},
+  editor = {Sarah Smith},
+  booktitle = {Modern Fizik},
+}
+```
+
+### Kitap İçindeki Makale
+
+```bibtex
+@incollection{key3,
+  title = {Çevre Koruma Üzerine Makale},
+  author = {Alex Johnson},
+  year = {2023},
+  publisher = {Springer},
+  booktitle = {Sürdürülebilir Kalkınma: Teoriler ve Uygulamalar},
+  editor = {Mark Lee},
+}
+```
+
+`publisher` alanı genellikle `title`, `author`, `year` gibi diğer önemli alanlarla birlikte kullanılır. Ayrıca, kullanılan alıntılama stiline bağlı olarak, yayıncı alanının formatı ve yerleşimi farklılık gösterebilir, bu yüzden her zaman belirli stilin yönergelerine uymanız önemlidir.

@@ -1,0 +1,80 @@
+---
+title: "BibTeX alan türü: crossref"
+sidebar:
+  label: crossref
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'teki `crossref` alanı, aynı kaynağı alıntılayan birden fazla giriş olduğunda, özellikle `proceedings` veya koleksiyonlar gibi durumlarda, alıntı sürecini kolaylaştırmak ve basitleştirmek için tasarlanmıştır. Aynı bilgilerin birçok farklı girişte tekrarlanmasındansa, `crossref` sayesinde ortak alanlar merkezi bir girişte tanımlanabilir, bu da tekrarları azaltır ve veritabanını daha temiz tutar. Aşağıda, BibTeX'teki `crossref` alanının işlevselliği ve uygulaması hakkında derinlemesine bir inceleme bulabilirsiniz.
+
+<CiteDrive />
+
+### Genel Bakış
+
+Bir bibliyografyada, genellikle daha büyük bir eserin birkaç bölümünü referans göstermek, örneğin bir konferans bildirisi veya derlenmiş bir hacim, yaygındır. İşte burada `crossref` alanı devreye girer. `crossref` kullanarak, daha büyük eserin ortak özelliklerini bir girişte tanımlayabilir ve ardından bu girişi diğer alıntılarda referans gösterebilirsiniz, böylece tutarlılık sağlanır ve bibliyografinizdeki tutarsızlık riski azaltılır.
+
+### Sözdizimi ve Yapı
+
+`crossref` işlevselliğini uygulamak için, `crossref = {citationkey}` sözdizimi kullanılır; burada `citationkey`, çapraz referans verilen giriş için benzersiz bir tanımlayıcıdır. `citationkey` benzersiz olmalıdır, böylece çapraz referans yaparken bütünlük korunur.
+
+Temel yapı şu şekildedir:
+
+```bibtex
+@entrytype{UNIQUECITATIONKEY,
+    commonfield1 = {common data 1},
+    commonfield2 = {common data 2},
+    ...
+}
+
+@entrytype{citationkey1,
+    uniquefield1 = {unique data 1},
+    crossref     = {UNIQUECITATIONKEY},
+}
+
+@entrytype{citationkey2,
+    uniquefield2 = {unique data 2},
+    crossref     = {UNIQUECITATIONKEY},
+}
+```
+
+### Örnek
+
+İşte, `crossref` alanının aynı konferans bildirilerinden birden fazla alıntı yapmayı nasıl verimli hale getirdiğini gösteren pratik bir örnek:
+
+```bibtex
+@proceedings{ASE2023,
+    title       = {38. IEEE/ACM Uluslararası Otomatik Yazılım Mühendisliği Konferansı Bildirileri},
+    year        = 2023,
+    publisher   = {IEEE},
+    address     = {San Francisco, Kaliforniya, ABD},
+}
+
+@inproceedings{Smith2023,
+    author      = {John Smith},
+    title       = {Otomatik Kod Üretimi: Yenilikler ve Zorluklar},
+    pages       = {15-29},
+    crossref    = {ASE2023},
+}
+
+@inproceedings{Doe2023,
+    author      = {Jane Doe},
+    title       = {Yeni Bir Yazılım Testi Dönemine Doğru},
+    pages       = {30-45},
+    crossref    = {ASE2023},
+}
+```
+
+Yukarıdaki örnekte, `ASE2023` alıntı anahtarı, iki farklı `inproceedings` girişini çapraz referans göstermek için kullanılmıştır, böylece tekrar eden bilgilerden kaçınılmış ve tutarlılık sağlanmıştır.
+
+### Kullanım İpuçları
+
+1. **Benzersiz Alıntı Anahtarı**: Her giriş için, çapraz referans verilen giriş de dahil olmak üzere benzersiz bir alıntı anahtarı atadığınızdan emin olun, böylece karışıklık önlenir ve çapraz referans yapma yapısı netleşir.
+2. **Crossref'in Uygun Kullanımı**: `crossref`, özellikle proceedings için faydalıdır, ancak birden fazla referansın tek bir kaynaktan alındığı kitap bölümleri (`incollection`) ve benzeri giriş türlerinde de uygulanabilir.
+3. **Veri Bütünlüğü**: `crossref` kullanmak, birden fazla girişteki ortak alanlar arasında tutarsızlık olasılığını azaltarak veri bütünlüğünü sağlar.
+
+### Sonuç
+
+BibTeX'teki `crossref` alanını kullanmak, tek bir kaynaktan birden fazla giriş alıntılamak için düzenli, sadeleştirilmiş ve verimli bir yaklaşım sunar. Tekrarları minimize ederek ve tutarlılığı teşvik ederek, akademik yazılarınızda temiz, profesyonel bir bibliyografya oluşturabilirsiniz.
+
+BibTeX girişlerinizi gözden geçirip doğruladığınızdan emin olun, böylece `crossref` alanının doğru şekilde uygulandığından ve akademik yazılarınızda netlik ve tutarlılık sağlandığından emin olabilirsiniz.

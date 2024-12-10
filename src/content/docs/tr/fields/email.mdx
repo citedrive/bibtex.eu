@@ -1,0 +1,52 @@
+---
+title: "BibTeX alan türü: email"
+sidebar:
+  label: email
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX'teki `email` alanı, alıntılarınızda yazarların e-posta adreslerini dahil etmek için kullanılır. Yaygın olarak kullanılan bir alan olmamakla birlikte, bazı stil rehberlerinde desteklenmeyebilir, ancak bazen yazarlara doğrudan iletişim sağlamak için yararlı olabilir. Burada, e-posta adreslerini BibTeX girişlerinize nasıl uygun bir şekilde entegre edebileceğinizi inceleyeceğiz.
+
+<CiteDrive />
+
+## E-posta Adreslerini Dahil Etme
+
+E-posta adreslerini BibTeX girişlerinize dahil etmeyi tercih ederseniz, işte iki önerilen yöntem:
+
+### Alıntının Sonunda Not Olarak Görüntüleme
+
+Bu yöntemde, e-posta adresi alıntının sonunda bir not olarak eklenir. Bu şekilde, yazarın adı ve diğer detaylardan açıkça ayrılır ve açıklık sağlanır.
+
+```bibtex
+@book{Sample2023,
+  author = {Muller, John},
+  ...
+  note = "{\tt john.muller@example.com}",
+  ...
+}
+```
+
+### Soyadı Arkasında Görüntüleme
+
+Bir diğer yöntem, e-posta adresini doğrudan soyadının arkasına yerleştirmektir. Bu yaklaşım, yazar ve e-posta adresi arasında doğrudan bir ilişki kurar ve yazara hemen ulaşılmasını sağlar.
+
+```bibtex
+@book{Sample2023,
+  author = {Muller {\tt john.muller@example.com}, John},
+  ...
+}
+```
+
+## E-posta Adreslerini Dahil Etme Kılavuzları
+
+1. **Gizlilik Hususları**: Bir yazarın e-posta adresini dahil etmeden önce, bunun için izin aldığınızdan emin olun, gizliliklerine saygı gösterin ve etik kurallara uyun.
+    
+2. **Biçimlendirme**: E-posta adresini diğer metin öğelerinden ayırt etmek için Teletype (`\tt`) yazı tipi stilini kullanarak açık ve okunabilir bir formatı koruyun.
+    
+3. **Uyumluluk**: `email` alanının standart olmadığını ve tüm BibTeX stillerinde desteklenmeyebileceğini unutmayın. Seçtiğiniz stilin uyumluluğunu kontrol edin, böylece biçimlendirme sorunları yaşanmaz.
+    
+
+## Sonuç
+
+E-posta adreslerini BibTeX girişlerinize dahil etmek yaygın olmasa da, bazen yazarlara doğrudan iletişim sağlamak için faydalı olabilir. Etik kurallara her zaman uyun ve `email` alanını kullanırken seçtiğiniz BibTeX stilinin uyumluluğunu kontrol edin. Önerilen formatlara uyarak, e-posta adreslerini alıntılarınıza sorunsuz bir şekilde entegre edebilirsiniz.

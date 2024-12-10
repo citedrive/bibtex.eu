@@ -1,0 +1,42 @@
+---
+title: "BibTeX Alanı Türü: Başlık"
+sidebar:
+  label: title
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+BibTeX girişindeki `title` (başlık) alanı, atıfta bulunduğunuz çalışmanın ana başlığını belirtmek için kullanılır. Bu, temel alanlardan biridir ve neredeyse tüm BibTeX giriş türlerinde desteklenir. Bu alanı doldururken doğru büyük harf kullanımı ve LaTeX sözdizimine uyum sağlamak çok önemlidir, çünkü başlığın doğru şekilde görüntülenmesi sağlanır.
+
+<CiteDrive />
+
+Doğru biçimlendirme sağlamak için, `title` alanında belirli kelimelerin veya ifadelerin büyük harflerini korumak amacıyla LaTeX komutları kullanılabilir. Ayrıca, başlık özel karakterler veya matematiksel semboller içeriyorsa, bunlar uygun LaTeX komutlarıyla girilmelidir.
+
+## Örnek
+
+İşte `title` alanını nasıl kullanacağınızı gösteren basit bir örnek:
+
+```bibtex
+@article{key,
+    title={Bioinformatik nedir? Bir giriş ve genel bakış},
+}
+```
+
+Daha ayrıntılı bir örnek, ek alanlar ile kapsamlı bir referans sağlamak için aşağıda verilmiştir:
+
+```bibtex
+@article{luscombe2001bioinformatics,
+  title={Bioinformatik nedir? Bir giriş ve genel bakış},
+  author={Luscombe, Nicholas M ve Greenbaum, Dov ve Gerstein, Mark},
+  journal={Yearbook of medical informatics},
+  volume={10},
+  number={01},
+  pages={83--100},
+  year={2001},
+  publisher={Georg Thieme Verlag KG}
+}
+```
+
+Bu örneklerde, `title` alanı atıfta bulunulan makalenin başlığıyla doldurulmuştur. Başlık metninin büyük harf ve biçimlendirilmesinin yazar tarafından istenen şekilde korunmasını sağlamak için başlık metni `{}` içinde yer almaktadır.
+
+Unutmayın, `title` alanı, okuyucuların belirli bir eseri tanımlamalarına yardımcı olduğundan, doğru ve düzgün biçimlendirilmiş şekilde girildiğinden emin olun.
