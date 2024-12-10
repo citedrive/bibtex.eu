@@ -1,0 +1,83 @@
+---
+title: "BibTeX-fälttyp: author"
+sidebar:
+  label: author
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Inom akademiskt skrivande är det grundläggande att korrekt erkänna bidragsgivarna till ett verk. Fältet `author` i BibTeX gör det möjligt att specificera alla bidragsgivare till det verk du citerar. Det är viktigt att säkerställa en konsekvent och exakt ordning av författarnamn för att undvika felaktig representation eller felaktiga citat. Här utforskar vi olika notationssätt och konventioner för att effektivt specificera författarnamn i BibTeX.
+
+<CiteDrive />
+
+## Detaljerad översikt
+
+När du anger författare i BibTeX finns det flera format att välja mellan. Dessa format gör det möjligt att inkludera förnamn, efternamn och även suffix, vilket underlättar en detaljerad presentation av varje författares identitet. Låt oss gå igenom de olika notationssätten som kan användas för att korrekt presentera författarinformation.
+
+### Notationsformat
+
+#### Notation: `{Förnamn Efternamn}`
+
+Det grundläggande och enklaste sättet att ange en författare är att skriva förnamnet följt av efternamnet. Detta är ett allmänt accepterat format men kanske inte alltid erbjuder den tydlighet som behövs för att skilja mellan för- och efternamn, särskilt i fall med sammansatta namn.
+
+**Exempel**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Titel på artikeln},
+  year   = 2023,
+  author = {Isaac Newton},
+  ...
+}
+```
+
+#### Notation: `{Efternamn, Förnamn}`
+
+Ett mer strukturerat tillvägagångssätt är att skriva efternamnet först, följt av förnamnet, separerat med ett komma. Detta format rekommenderas eftersom det ger en tydligare åtskillnad mellan för- och efternamn, vilket undviker eventuell förvirring.
+
+**Exempel**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Titel på artikeln},
+  year   = 2023,
+  author = {Newton, Isaac},
+  ...
+}
+```
+
+#### Notation: `{Efternamn, Suffix, Förnamn}`
+
+När det är nödvändigt att inkludera ett suffix (som Jr., Sr., III, etc.) är detta format användbart. Det är viktigt att strikt följa ordningen för att säkerställa korrekt representation av författarens namn.
+
+**Exempel**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Titel på artikeln},
+  year   = 2023,
+  author = {King, Jr, Martin Luther},
+  ...
+}
+```
+
+### Ange flera författare
+
+När ett verk har flera bidragsgivare kan BibTeX hantera detta med hjälp av separatorn `AND`. Denna separator används för att lista flera författare tydligt, i enlighet med de diskuterade notationsformaten.
+
+**Exempel**:
+
+```bibtex
+@article{Doe2023,
+  title  = {Titel på artikeln},
+  year   = 2023,
+  author = {Fisher, James AND Clark, John},
+  ...
+}
+```
+
+## Slutsats
+
+Att korrekt ange författarnamn i BibTeX är avgörande för att upprätthålla integriteten i akademiskt skrivande. Det säkerställer att läsare kan identifiera och tillskriva verk till rätt författare. Att vara bekant med de olika notationssätten och riktlinjerna är nödvändigt för att skapa en bibliografi som är både korrekt och professionell.
+
+Kom ihåg: konsekvens är nyckeln. När du har valt ett notationsformat bör det tillämpas konsekvent på alla poster för att bibehålla en sammanhängande och professionell presentation.

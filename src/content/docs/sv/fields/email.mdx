@@ -1,0 +1,51 @@
+---
+title: "BibTeX-fälttyp: email"
+sidebar:
+  label: email
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `email` i BibTeX används för att inkludera författarnas e-postadresser i din referens. Även om detta inte är ett vanligt använt fält och möjligtvis inte stöds i olika referensstilar, kan det ibland vara användbart att ge en direkt kontaktväg till författarna. Här går vi igenom hur du korrekt integrerar e-postadresser i dina BibTeX-poster.
+
+<CiteDrive />
+
+## Inkludera E-postadresser
+
+Om du väljer att specificera e-postadresser i dina BibTeX-poster, finns här två rekommenderade metoder:
+
+### Visa som en Notis i Slutet av Referensen
+
+I denna metod läggs e-postadressen till som en notis som visas i slutet av referensen. På detta sätt separeras den tydligt från författarens namn och andra detaljer, vilket säkerställer tydlighet.
+
+```bibtex
+@book{Sample2023,
+  author = {Muller, John},
+  ...
+  note = "{\tt john.muller@example.com}",
+  ...
+}
+```
+
+### Visa Bakom Efternamnet
+
+En annan metod är att integrera e-postadressen direkt bakom efternamnet. Detta tillvägagångssätt skapar en direkt koppling mellan författaren och deras e-postadress, vilket underlättar omedelbar kontakt.
+
+```bibtex
+@book{Sample2023,
+  author = {Muller {\tt john.muller@example.com}, John},
+  ...
+}
+```
+
+## Riktlinjer för Inkludering av E-postadresser
+
+1. **Sekretesshänsyn**: Se till att du har författarens tillstånd innan du inkluderar deras e-postadress, respektera deras integritet och följ etiska riktlinjer.
+    
+2. **Formatering**: Bibehåll ett tydligt och läsbart format genom att använda Teletype (`\tt`) teckensnittsstil för att särskilja e-postadressen från andra textkomponenter.
+    
+3. **Kompatibilitet**: Var medveten om att fältet `email` inte är standard och kanske inte stöds i alla BibTeX-stilar. Kontrollera alltid kompatibiliteten med den valda stilen för att undvika formateringsproblem.
+
+## Slutsats
+
+Även om det inte är vanligt, kan inkludering av e-postadresser i BibTeX-poster ibland underlätta direkt kommunikation med författarna. Följ alltid etiska riktlinjer och kontrollera kompatibiliteten med din valda BibTeX-stil när du använder fältet `email`. Genom att följa de rekommenderade formaten kan du enkelt integrera e-postadresser i dina referenser.

@@ -1,0 +1,64 @@
+---
+title: "BibTeX-fält: number"
+sidebar:
+  label: number
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+I BibTeX används fältet `number` för att specificera nummer på en tidskrift, nummer på en teknisk rapport eller andra identifierare som ingår i en större serie. Detta fält hjälper till att precisera exakt vilket nummer eller utgåva av serien där det refererade verket kan hittas, vilket ger mer exakt information för att hitta materialet.
+
+<CiteDrive />
+
+Fältet används ofta tillsammans med fältet `volume`, särskilt för artiklar i tidskrifter och periodiska publikationer. För en teknisk rapport innehåller fältet `number` vanligtvis det rapportnummer som tilldelats av den institution eller organisation som publicerade rapporten.
+
+## Format
+
+Formatet för fältet `number` är ganska enkelt. I en artikelpost ser det ut som följer:
+
+```bibtex
+@article{citation_key,
+  ...
+  number={issue_number},
+  ...
+}
+```
+
+Här representerar "citation_key" ett unikt identifierare för posten och "issue_number" numret på tidskriftsnumret, den tekniska rapporten eller annan publikation.
+
+## Exempel
+
+Nedan följer några exempel som visar användningen av fältet `number` i olika sammanhang:
+
+### Exempel 1: Tidskriftsartikel
+
+```bibtex
+@article{doe2023study,
+  author = {Doe, Jane},
+  title = {A Comprehensive Study on Quantum Computing},
+  journal = {Journal of Advanced Computing},
+  year = {2023},
+  volume = {29},
+  number = {3},
+  pages = {215-230},
+}
+```
+
+I detta exempel anger fältet `number` det tredje numret i den 29:e volymen av "Journal of Advanced Computing".
+
+### Exempel 2: Teknisk Rapport
+
+```bibtex
+@techreport{smith2022analysis,
+  author = {Smith, John},
+  title = {An Analysis of Renewable Energy Trends},
+  institution = {Energy Research Institute},
+  year = {2022},
+  number = {TR-2022-45},
+  type = {Technical Report},
+}
+```
+
+I detta fall används fältet `number` för att indikera det specifika rapportnumret som tilldelats av "Energy Research Institute".
+
+Genom att använda fältet `number` korrekt kan läsaren enklare hitta källmaterialet och verifiera den citerade informationen. Det är en viktig detalj inom akademiskt skrivande och forskningsdokumentation.

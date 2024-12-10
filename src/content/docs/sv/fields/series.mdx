@@ -1,0 +1,43 @@
+---
+title: "BibTeX-fält: series"
+sidebar:
+  label: series
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `series` i BibTeX används för att ange vilken serie en bok, rapport eller annan publikation tillhör. Att specificera serien kan ge ytterligare sammanhang för läsaren, då det kan relatera till ett bredare tematiskt eller akademiskt diskurs.
+
+<CiteDrive />
+
+Detta fält är valfritt och kan användas i olika posttyper, inklusive men inte begränsat till `@book`, `@inbook`, `@incollection` och `@inproceedings`. Det är särskilt användbart när det citerade verket är en del av en pågående serie eller en större samling verk som delar ett gemensamt tema, författare eller förlag.
+
+När du anger data i fältet `series` rekommenderas det att använda den fullständiga officiella titeln på serien. Om serien har ett ISSN kan det också vara relevant att inkludera detta för mer exakt referenshantering.
+
+## Format
+
+Det allmänna formatet för att inkludera en serie i din BibTeX-post är följande:
+
+```bibtex
+@entrytype{key,
+  ...
+  series = {Namnet på serien},
+  ...
+}
+```
+
+## Exempel
+
+Här är ett exempel på hur du använder fältet `series` i en `@book`-post:
+
+```bibtex
+@book{doe2023,
+  author = {John Doe},
+  title = {Advanced Studies in Quantum Mechanics},
+  year = {2023},
+  publisher = {Scientific Publishing Ltd.},
+  series = {Cambridge Advanced Series in Physics},
+}
+```
+
+I detta exempel är boken en del av serien "Cambridge Advanced Series in Physics", som kan omfatta olika titlar som täcker avancerade ämnen inom fysik. Att inkludera serien hjälper till att placera verket inom en större akademisk diskussion och kan ge läsarna ytterligare resurser om ämnet.

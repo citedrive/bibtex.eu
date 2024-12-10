@@ -1,0 +1,57 @@
+---
+title: "BibTeX-fält: pages"
+sidebar:
+  label: pages
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `pages` i en BibTeX-post anger de specifika sidorna som hänvisas till inom ett större verk, som en bok eller en tidskrift. Detta fält kan vara avgörande när man citerar ett kapitel i en bok eller en artikel i en tidskrift, och hjälper läsarna att direkt hitta den relevanta delen av verket.
+
+<CiteDrive />
+
+## Formateringsriktlinjer
+
+Du kan specificera en enskild sida, ett sidintervall eller till och med icke-konsekutiva sidor. Här är några riktlinjer för hur du formaterar fältet `pages` korrekt:
+
+1. **Enkel sida:** Om du hänvisar till en enkel sida skriver du helt enkelt sidnumret.
+    
+2. **Sidintervall:** För ett sidintervall ska du använda dubbelbindestreck (--). Detta indikerar ett kontinuerligt intervall från det första numret till det andra.
+    
+3. **Icke-konsekutiva sidor:** Om du hänvisar till icke-konsekutiva sidor separerar du de olika sidnumren eller intervallen med ett komma.
+    
+
+## Exempel
+
+Här är några exempel som visar hur du använder fältet `pages`:
+
+```bibtex
+@book{key,
+  title = {Title of the Book},
+  author = {Author Name},
+  year = {2023},
+  pages = {33--44},   % Sidintervall från 33 till 44
+}
+```
+
+```bibtex
+@book{key,
+  title = {Title of the Book},
+  author = {Author Name},
+  year = {2023},
+  pages = {22, 33--44},   % Sida 22 och ett intervall från 33 till 44
+}
+```
+
+```bibtex
+@book{key,
+  title = {Title of the Book},
+  author = {Author Name},
+  year = {2023},
+  pages = {17},    % Enkel sida
+}
+```
+
+## Not
+
+Det är viktigt att notera att fältet `pages` inte är begränsat till `@book`-poster, utan kan också användas i andra posttyper som `@article` eller `@inbook` för att ange relevanta sidor i dessa sammanhang. Att använda fältet `pages` korrekt hjälper till att skapa mer exakta och användbara referenser.

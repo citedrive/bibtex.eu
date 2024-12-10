@@ -1,0 +1,63 @@
+---
+title: "BibTeX-fälttyp: doi"
+sidebar:
+  label: doi
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `doi` är en central del av modern referenshantering och erbjuder en permanent metod för att lokalisera digitala objekt som vetenskapliga artiklar, forskningsrapporter och datamängder i en online-miljö. Här utforskar vi `doi`-fältets funktionalitet och betydelse i BibTeX samt ger vägledning om korrekt användning.
+
+<CiteDrive />
+
+### Översikt
+
+En Digital Object Identifier (DOI) är en unik alfanumerisk sträng som tilldelas ett digitalt objekt för att skapa en bestående länk till dess plats på internet. DOI-systemet är standardiserat och säkerställer stabilitet i referenser även om objektets URL ändras.
+
+I BibTeX används fältet `doi` för att registrera denna identifierare och möjliggöra exakta och permanenta citat. Även om det främst förekommer i `article`-poster kan det även användas i andra typer som `book`, `chapter`, `inproceedings` eller `conference`, dock mer sällan. Oavsett posttyp är fältet `doi` valfritt.
+
+### Syntax och struktur
+
+För att inkludera en DOI korrekt i din BibTeX-post, använd följande format:
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  doi={https://doi.org/xxxxx},
+  ...
+}
+```
+
+Fältet `doi` ska innehålla hela DOI-URL:en, som vanligtvis börjar med "[https://doi.org/](https://doi.org/)" följt av en unik identifierarsträng.
+
+### Exempel
+
+Här är ett exempel på en BibTeX-post som inkluderar en DOI:
+
+```bibtex
+@article{steinbeck2003chemistry,
+  title={The Chemistry Development Kit (CDK): An open-source Java library for chemo-and bioinformatics},
+  author={Steinbeck, Christoph and Han, Yongquan and Kuhn, Stefan and Horlacher, Oliver and Luttmann, Edgar and Willighagen, Egon},
+  journal={Journal of chemical information and computer sciences},
+  volume={43},
+  number={2},
+  pages={493--500},
+  year={2003},
+  publisher={ACS Publications},
+  doi={https://doi.org/10.1021/ci025584y},
+}
+```
+
+I detta exempel innehåller fältet `doi` den permanenta URL:en som leder direkt till den refererade artikeln.
+
+### Tips för användning
+
+1. **Hitta DOI:er**: För vetenskapliga artiklar finns DOI:er ofta på artikelns första sida eller i den databas där artikeln är publicerad.
+2. **Korsreferens**: Använd fältet `doi` för korsreferens i ditt arbete, vilket ger läsarna en direkt länk till källmaterialet.
+3. **Valfritt men värdefullt**: Även om `doi`-fältet är valfritt förbättrar det tillförlitligheten och spårbarheten av dina referenser.
+
+### Slutsats
+
+Att inkludera `doi`-fältet i dina BibTeX-poster är en god praxis inom akademiskt skrivande och erbjuder en stabil länk till de digitala objekt du refererar till. Genom att använda DOI-systemet främjar du tillgängligheten och varaktigheten av vetenskaplig kunskap och stödjer den globala forskningsgemenskapen i deras arbete.
+
+När du bygger din bibliografi, dra nytta av `doi`-fältets kapacitet för att skapa en rikare, mer tillförlitlig och sammanhängande akademisk diskurs.

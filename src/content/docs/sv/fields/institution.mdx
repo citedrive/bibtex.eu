@@ -1,0 +1,23 @@
+---
+title: "BibTeX-fält: institution"
+sidebar:
+  label: institution
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `institution` används inom `@techreport`-posttypen och syftar till att ange namnet på den institution som var ansvarig för att utfärda eller publicera rapporten. Detta hjälper till att ge korrekt attribution och gör det enklare för läsare att hitta den ursprungliga källan.
+
+<CiteDrive/>
+
+Här är ett exempel på hur du kan använda fältet `institution` i en `@techreport`-post:
+
+```bibtex
+@techreport{key,
+  institution = {...},
+}
+```
+
+I detta format är "key" en unik identifierare för BibTeX-posten och fältet "institution" ska innehålla namnet på institutionen som publicerade rapporten. Det är viktigt att ange korrekt och detaljerad information i detta fält för att underlätta korrekt citering och referenshantering.
+
+Kom ihåg att ersätta `{...}` med det faktiska namnet på institutionen när du skapar dina BibTeX-poster. Detta fält hjälper till att organisera och kategorisera tekniska rapporter korrekt i din referenslista.

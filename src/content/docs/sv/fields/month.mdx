@@ -1,0 +1,47 @@
+---
+title: "BibTeX-fält: månad"
+sidebar:
+  label: month
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `month` i BibTeX används för att ange den månad då ett visst verk publicerades eller skapades (om det inte är publicerat). Denna information är viktig för att ge en detaljerad tidslinje för verket och kan vara avgörande för vissa typer av akademisk eller historisk forskning.
+
+<CiteDrive />
+
+I BibTeX-poster är det vanligt att ange månaden antingen med ett numeriskt värde eller en trebokstavsförkortning. Att använda ett standardiserat format kan hjälpa till att bibehålla konsekvens i din bibliografi. Här är några format som allmänt accepteras:
+
+1. Numerisk representation (01 till 12).
+2. Trebokstavsförkortning (jan, feb, mar, apr, maj, jun, jul, aug, sep, okt, nov, dec).
+
+Det är viktigt att notera att månadens fält bör användas varsamt, särskilt när du citerar böcker eller verk utan en specifik publiceringsmånad, för att undvika felaktig information.
+
+## Format
+
+Du kan använda månadens fält i olika BibTeX-poster som `@book`, `@article`, etc., som demonstreras i följande mall:
+
+```bibtex
+@book{...,
+ month = {månadens representation},
+ ... 
+}
+```
+
+I ovanstående mall ersätter du "månadens representation" med antingen den numeriska representationen eller trebokstavsförkortningen för månaden.
+
+## Exempel
+
+Här är ett praktiskt exempel som visar hur du använder månadens fält i en `@book`-post:
+
+```bibtex
+@book{johnson2023deep,
+ title = {Deep Learning and its Applications},
+ author = {Johnson, Mark},
+ month = {mar},
+ year = {2023},
+ publisher = {Tech Publishing House},
+}
+```
+
+I detta exempel publicerades boken i mars 2023, vilket ger en tydlig och specifik tidslinje för publiceringen. Kom ihåg att verifiera publiceringsmånaden från pålitliga källor för att säkerställa att dina referenser är korrekta.

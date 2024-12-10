@@ -1,0 +1,35 @@
+---
+title: "BibTeX-fält: volume"
+sidebar:
+  label: volume
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `volume` i en BibTeX-post är avgörande när du refererar till en del av ett större verk, som en artikel i en tidskrift eller ett kapitel i en bok i flera volymer. Detta fält gör det möjligt för dig att specificera vilken volym av tidskriften eller boken du citerar, vilket ger läsaren mer exakt information för att hitta den citerade källan.
+
+<CiteDrive />
+
+I många vetenskapliga och akademiska publikationer publiceras tidskrifter i volymer, ofta med flera nummer i varje volym. Volymnumret indikerar vanligtvis en samling nummer som publicerats inom en viss tidsram, vanligtvis ett år. På samma sätt är böcker eller serier i flera volymer uppdelade i olika volymer, där varje volym innehåller en del av hela verket.
+
+Fältet `volume` är särskilt viktigt när du citerar tidskrifter, eftersom det gör det möjligt för läsare att hitta den specifika samlingen av nummer där den citerade artikeln publicerades. Det används oftast i kombination med fältet `number`, som ytterligare specificerar vilket nummer inom volymen artikeln kan hittas i.
+
+Så här använder du fältet `volume` i en BibTeX-post:
+
+## Exempel
+
+```bibtex
+@article{key,
+    title={Title of the Article},
+    author={Author Name},
+    journal={Journal Name},
+    volume={5},
+    number={3},
+    pages={123-456},
+    year={2022},
+}
+```
+
+I detta exempel specificerar fältet `volume` att artikeln publicerades i volym 5 av tidskriften. Att inkludera denna detalj hjälper till att ge en fullständig och exakt citation, vilket gör det enklare för läsare att hitta den citerade källan.
+
+På samma sätt, i böcker eller serier i flera volymer, kan du använda fältet `volume` för att ange den specifika volymen som innehåller kapitlet eller avsnittet du citerar. Detta användande hjälper återigen läsarna att effektivt hitta den exakta källmaterialet.

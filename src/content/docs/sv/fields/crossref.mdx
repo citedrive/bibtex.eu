@@ -1,0 +1,80 @@
+---
+title: "BibTeX-fälttyp: crossref"
+sidebar:
+  label: crossref
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `crossref` i BibTeX är utformat för att förenkla och effektivisera referenshanteringen när flera poster hänvisar till samma källa, särskilt vid arbete med konferenshandlingar eller samlingsverk. Istället för att repetera samma information i flera poster kan du med `crossref` specificera gemensamma fält i en central post. Detta minskar redundans och håller databasen mer organiserad. Nedan finner du en djupdykning i hur `crossref` fungerar och hur det används i praktiken.
+
+<CiteDrive />
+
+### Översikt
+
+I en typisk bibliografi är det vanligt att hänvisa till flera delar av ett större verk, som en konferenshandling eller en samlad volym. Här kommer `crossref` till användning. Genom att använda `crossref` kan du definiera de gemensamma attributen för det större verket i en enda post och sedan hänvisa till den posten i andra citat. Detta säkerställer enhetlighet och minskar risken för inkonsekvenser i bibliografin.
+
+### Syntax och struktur
+
+För att implementera `crossref`-funktionen använder du `crossref = {citationkey}`-syntaxen, där `citationkey` är en unik identifierare för den refererade posten. Det är viktigt att `citationkey` är unik för att bibehålla referensintegriteten.
+
+Här är en grundstruktur:
+
+```bibtex
+@entrytype{UNIKREFERENSNYCKEL,
+    gemensamtfält1 = {gemensam data 1},
+    gemensamtfält2 = {gemensam data 2},
+    ...
+}
+
+@entrytype{referensnyckel1,
+    uniktfält1 = {unik data 1},
+    crossref   = {UNIKREFERENSNYCKEL},
+}
+
+@entrytype{referensnyckel2,
+    uniktfält2 = {unik data 2},
+    crossref   = {UNIKREFERENSNYCKEL},
+}
+```
+
+### Exempel
+
+Här är ett praktiskt exempel som visar hur fältet `crossref` kan användas för att effektivt citera flera poster från samma konferenshandling:
+
+```bibtex
+@proceedings{ASE2023,
+    title       = {Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering},
+    year        = 2023,
+    publisher   = {IEEE},
+    address     = {San Francisco, California, USA},
+}
+
+@inproceedings{Smith2023,
+    author      = {John Smith},
+    title       = {Automated Code Generation: Innovations and Challenges},
+    pages       = {15-29},
+    crossref    = {ASE2023},
+}
+
+@inproceedings{Doe2023,
+    author      = {Jane Doe},
+    title       = {Towards a New Era of Software Testing},
+    pages       = {30-45},
+    crossref    = {ASE2023},
+}
+```
+
+I detta exempel används nyckeln `ASE2023` för att korsreferera två olika `inproceedings`-poster, vilket säkerställer enhetlighet och minskar upprepning av information.
+
+### Tips för användning
+
+1. **Unik referensnyckel**: Tilldela varje post en unik referensnyckel, inklusive den korsrefererade posten, för att undvika förvirring och bibehålla en tydlig struktur.
+2. **Passande användning av `crossref`**: Även om `crossref` är särskilt användbart för konferenshandlingar kan det också tillämpas på bokkapitel (`incollection`) och andra liknande posttyper där flera referenser till samma källa förekommer.
+3. **Dataintegritet**: Genom att använda `crossref` främjar du dataintegritet genom att minimera risken för inkonsekvenser i gemensamma fält mellan flera poster.
+
+### Slutsats
+
+Att använda fältet `crossref` i BibTeX ger en organiserad, effektiv och strukturerad metod för att referera flera poster från en enda källa. Genom att minska redundans och främja enhetlighet kan du skapa en ren och professionell bibliografi som uppfyller akademiska standarder.
+
+Kom ihåg att granska och verifiera dina BibTeX-poster för att säkerställa att fältet `crossref` används korrekt, vilket bidrar till tydlighet och sammanhang i ditt akademiska skrivande.

@@ -1,0 +1,58 @@
+---
+title: "BibTeX-fälttyp: edition"
+sidebar:
+  label: edition
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Inom den akademiska världen och förlagsbranschen anger en boks upplaga vilken version eller form av verket som publicerats. Fältet `edition` i BibTeX används för att specificera denna information, vilket ofta framhäver revisioner eller uppdateringar som skett sedan verket först publicerades. Att inkludera upplagan är särskilt relevant vid referenser till läroböcker eller vetenskapliga verk som genomgått flera iterationer. Nedan beskriver vi hur du effektivt använder fältet `edition` i dina BibTeX-poster.
+
+<CiteDrive />
+
+### Översikt
+
+Fältet `edition` används för att ange vilken upplaga av en bok som refereras till. Detta är viktigt när boken har publicerats i flera upplagor, som kan innehålla olika innehåll eller sidnumrering. Genom att ange upplagan säkerställer du att din referens är tydlig och korrekt, vilket hjälper läsare att hitta exakt den version av verket du har använt.
+
+### Riktlinjer
+
+1. **Formatering**: Det rekommenderas att skriva upplagan som ett ordningstal (t.ex. "First," "Second," "Third") med stor begynnelsebokstav.
+2. **Utskriven Text**: Istället för numeriska representationer (1st, 2nd, 3rd) föredras att skriva ut ordningstalen för bättre läsbarhet.
+3. **Språkanpassning**: För verk på andra språk än engelska kan upplagan anges på det aktuella språket (t.ex. "Första" för första på svenska).
+
+### Syntax och Struktur
+
+Syntaxen för fältet `edition` är enkel, enligt följande:
+
+```bibtex
+@book{citationkey,
+  ...
+  edition={OrdinalNumber},
+  ...
+}
+```
+
+### Exempel
+
+Här är ett exempel på en BibTeX-post som inkluderar fältet `edition`:
+
+```bibtex
+@book{author2023title,
+  title={Bokens Titel},
+  author={Författare, A.},
+  year={2023},
+  publisher={Förlagshuset},
+  edition={Första},
+}
+```
+
+I detta exempel anger fältet `edition` tydligt att den refererade boken är den första upplagan.
+
+### Ytterligare Tips
+
+1. **Reviderade Upplagor**: För böcker med reviderade upplagor kan termer som "Revised" eller "Updated" användas tillsammans med upplagenumret (t.ex. "Second, Revised").
+2. **Senare Upplagor**: Vid referens till en mycket senare upplaga kan det vara relevant att inkludera en notering i din referens som förklarar valet, särskilt om upplagan innehåller betydande ändringar eller uppdateringar.
+
+### Slutsats
+
+Att korrekt ange fältet `edition` i dina BibTeX-poster bidrar till en mer exakt och tillförlitlig citeringsprocess. Detta hjälper läsare att navigera till rätt version av källmaterialet du refererar till och främjar därmed tydlighet och vetenskaplig integritet. Använd detta fält på ett genomtänkt sätt för att förbättra kvaliteten och tillförlitligheten i dina bibliografiska referenser.

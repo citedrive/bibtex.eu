@@ -1,0 +1,33 @@
+---
+title: "BibTeX-fält: year"
+sidebar:
+  label: year
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `year` används i en BibTeX-post för att ange året då verket publicerades eller skapades, om det är opublicerat. Detta är ett viktigt fält eftersom det ger läsaren en förståelse för tidsramen då verket producerades, och det kan påverka hur informationen i verket uppfattas eller används.
+
+<CiteDrive />
+
+Fältet är vanligtvis obligatoriskt i de flesta BibTeX-poster eftersom det hjälper till att citera och referera ett verk korrekt. Att inkludera publiceringsåret är en standardpraxis i akademiskt skrivande, eftersom det ger viktig kontext om tidpunkten och relevansen för det citerade materialet.
+
+Fältet `year` ska fyllas i med ett fyrsiffrigt årtal för att upprätthålla konsekvens och tydlighet i referenserna. Denna detalj underlättar en kronologisk förståelse och enkel sortering av referenser i en bibliografi.
+
+Så här använder du fältet `year` i en BibTeX-post:
+
+## Exempel
+
+```bibtex
+@article{key,
+    author = {Author Name},
+    title = {Title of the Article},
+    journal = {Journal Name},
+    volume = {3},
+    number = {2},
+    pages = {123-456},
+    year = {2007},
+}
+```
+
+I detta exempel anger fältet `year` att artikeln publicerades år 2007. Det är en kritisk information som hjälper läsarna att fastställa det tidsmässiga sammanhanget för det citerade verket, vilket kan vara avgörande för historiska eller kronologiska analyser i forskning.

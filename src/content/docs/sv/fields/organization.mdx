@@ -1,0 +1,57 @@
+---
+title: "BibTeX-fält: organization"
+sidebar:
+  label: organization
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `organization` i BibTeX används för att specificera namnet på den organisation som ansvarar för publiceringen av dokumentet eller som arrangerade den händelse som citeras. Detta kan vara ett företag, en institution eller en grupp som sponsrade eller organiserade en konferens, workshop, manual etc. Att inkludera organisationen ger läsaren en tydlig kontext för enheten bakom dokumentet, vilket kan vara avgörande för att bedöma källans tillförlitlighet och auktoritet.
+
+<CiteDrive />
+
+Du kommer vanligtvis att stöta på detta fält i `@proceedings` och `@manual`-poster, men det kan även förekomma i andra typer av poster beroende på de specifika kraven för den användna bibliografistilen.
+
+## Format
+
+Formatet för att specificera fältet `organization` är som följer:
+
+```bibtex
+@entry_type{citation_key,
+  ...
+  organization={Organization Name},
+  ...
+}
+```
+
+Här refererar "entry_type" till typen av BibTeX-post (t.ex. `@proceedings` eller `@manual`), "citation_key" är ett unikt identifierare för posten, och "Organization Name" är namnet på den organisation som är involverad.
+
+## Exempel
+
+Här är några exempel som visar hur man använder fältet `organization` i olika sammanhang:
+
+### Exempel 1: Konferenshandlingar
+
+```bibtex
+@proceedings{ICML2023,
+  title = {Proceedings of the 40th International Conference on Machine Learning},
+  year = {2023},
+  organization = {International Machine Learning Society},
+}
+```
+
+I detta exempel specificerar fältet `organization` den enhet som ansvarade för att organisera konferensen vars handlingar citeras.
+
+### Exempel 2: Manual
+
+```bibtex
+@manual{UserGuide2022,
+  title = {XYZ Software User Guide},
+  year = {2022},
+  organization = {XYZ Software Inc.},
+}
+```
+
+Här används fältet `organization` för att indikera det företag som publicerade programvarumanualen.
+
+Att inkludera fältet `organization` i dina BibTeX-poster kan hjälpa till att ge en fullständig och detaljerad referens, vilket underlättar identifiering och återvinning av källmaterialen.

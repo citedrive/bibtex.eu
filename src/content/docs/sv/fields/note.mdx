@@ -1,0 +1,60 @@
+---
+title: "BibTeX-fält: note"
+sidebar:
+  label: note
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `note` i en BibTeX-post används för att förmedla ytterligare information om det citerade verket som inte passar in i andra standardiserade fält. Detta kan inkludera kompletterande kommentarer, förklaringar eller klargöranden som är relevanta för att läsaren ska förstå kontexten eller betydelsen av verket. Fältet `note` är ett mångsidigt verktyg i BibTeX som gör det möjligt att inkludera olika typer av information som kan förbättra detaljerna och djupet i en referens.
+
+<CiteDrive />
+
+Genom att använda fältet `note` kan du ofta ge mer djup åt en referens genom att inkludera ytterligare kontext, kommentarer om publikationsstatus, specifika anteckningar eller annan relevant information som skulle gynna läsaren. Detta kan inkludera länkar till kompletterande material, kommentarer om verkets påverkan eller mottagande, eller annan relevant information.
+
+## Format
+
+För att använda fältet `note` inkluderar du det i din BibTeX-post enligt följande format:
+
+```bibtex
+@entrytype{citationkey,
+  ...
+  note={din anteckning här},
+  ...
+}
+```
+
+I ovanstående format ersätter du "entrytype" med den lämpliga typen av verk (t.ex. @book, @article) och "citationkey" med ett unikt identifierare för posten. Sedan kan du infoga din ytterligare information i fältet `note`.
+
+## Exempel
+
+Här är några praktiska exempel som visar hur du använder fältet `note` i olika poster:
+
+### Exempel 1: Ytterligare Information
+
+```bibtex
+@book{smith2023innovations,
+  title = {Innovations in Modern Technology},
+  author = {Smith, John},
+  year = {2023},
+  publisher = {Technology Press},
+  note = {Inkluderar bibliografiska referenser och index},
+}
+```
+
+### Exempel 2: Kompletterande Material
+
+```bibtex
+@article{johnson2023ai,
+  title = {AI and Its Future Applications},
+  author = {Johnson, Mark},
+  year = {2023},
+  journal = {Journal of Technological Advances},
+  volume = {5},
+  issue = {2},
+  pages = {123-135},
+  note = {Kompletterande material finns på: http://example.com/supplementary_material},
+}
+```
+
+I dessa exempel används fältet `note` för att ange att en bok inkluderar referenser och index och för att ge en länk till kompletterande material för en artikel, vilket ger läsaren ytterligare resurser och information.

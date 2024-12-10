@@ -1,0 +1,42 @@
+---
+title: "BibTeX-fält: title"
+sidebar:
+  label: title
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `title` i en BibTeX-post används för att specificera den huvudsakliga titeln på det verk som du refererar till. Det är ett av de mest grundläggande fälten och stöds av nästan alla BibTeX-posttyper. Noggrann kapitalisering och följsamhet till LaTeX-syntax är avgörande när du fyller i detta fält för att säkerställa att titeln visas korrekt i den genererade bibliografin.
+
+<CiteDrive />
+
+För att bevara korrekt formatering kan LaTeX-kommandon användas inom fältet `title` för att säkerställa att vissa ord eller fraser behåller sin kapitalisering. Om titeln innehåller specialtecken eller matematiska symboler, bör dessa anges med lämpliga LaTeX-kommandon.
+
+## Exempel
+
+Här är ett enkelt exempel som visar hur fältet `title` används:
+
+```bibtex
+@article{key,
+    title={What is bioinformatics? An introduction and overview},
+}
+```
+
+Ett mer detaljerat exempel, inklusive ytterligare fält för att ge en komplett referens, visas nedan:
+
+```bibtex
+@article{luscombe2001bioinformatics,
+  title={What is bioinformatics? An introduction and overview},
+  author={Luscombe, Nicholas M and Greenbaum, Dov and Gerstein, Mark},
+  journal={Yearbook of medical informatics},
+  volume={10},
+  number={01},
+  pages={83--100},
+  year={2001},
+  publisher={Georg Thieme Verlag KG}
+}
+```
+
+I dessa exempel är fältet `title` fyllt med titeln på den artikel som citeras. Notera användningen av klamrar `{}` för att omge titeltexten, vilket hjälper till att behålla kapitaliseringen och formateringen av titeln så som författaren tänkt.
+
+Kom ihåg att fältet `title` är avgörande för att hjälpa läsare att identifiera det specifika verk som refereras till, så se till att det fylls i korrekt och formateras ordentligt i dina BibTeX-poster.

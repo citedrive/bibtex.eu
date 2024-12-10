@@ -1,0 +1,25 @@
+---
+title: "BibTeX-fälttyp: howpublished"
+sidebar:
+  label: howpublished
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Fältet `howpublished` används i BibTeX-poster av typen `@misc`, vanligtvis för att hantera sådana källtyper som inte direkt stöds av BibTeX. Detta fält är särskilt användbart när du citerar webbsidor och vill ange en URL.
+
+<CiteDrive/>
+
+I dina BibTeX-poster kan du använda fältet `howpublished` för att specificera publiceringsmediet eller källan för referensen. Detta fält är mycket användbart när du behöver inkludera icke-traditionella källor i dina referenser, såsom webbsidor eller online-rapporter.
+
+Här är ett exempel som visar hur du använder fältet `howpublished` för att ange en URL när du citerar en webbsida:
+
+```bibtex
+@misc{BibTeXeu,
+  title = {{Reference management with BibTeX: A short guide}},
+  howpublished = {\url{https://bibtex.eu/}},
+  note = {Accessed: 2022-06-12}
+}
+```
+
+I detta exempel används fältet `howpublished` för att ange URL:en till webbsidan som citeras, vilket ger läsarna en direkt länk till källan. Kom ihåg att inkludera ett fält `note` för att specificera åtkomstdatumet, vilket är ett vanligt krav när man citerar online-källor.
