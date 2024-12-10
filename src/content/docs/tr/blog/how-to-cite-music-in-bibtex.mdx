@@ -1,0 +1,31 @@
+---
+title: "Müziği BibTeX ile Nasıl Alıntılarım?"
+tags: [biblatex, bibtex, müzik]
+date: 2022-12-18
+---
+
+BibTeX ile müzik alıntılamak için `@misc` giriş türünü kullanabilir ve aşağıdaki alanları ekleyebilirsiniz:
+
+-   `author`: Müziği besteleyen veya icra eden sanatçı.
+-   `title`: Müziğin adı.
+-   `howpublished`: Müziğin erişildiği format (örneğin, CD, vinil, çevrimiçi müzik hizmeti).
+-   `year`: Müziğin yayımlandığı veya kaydedildiği yıl.
+
+İşte bir müzik parçasını BibTeX ile nasıl alıntılayabileceğinize dair bir örnek:
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+```bibtex
+@misc{beethoven_symphony_2018,
+	title        = {Symphony No. 5 in C Minor},
+	author       = {Beethoven, Ludwig van},
+	year         = 2018,
+	howpublished = {CD}
+}
+```
+
+Eğer belirli bir müzik kaydını alıntılıyorsanız, `@music` giriş türünü kullanmak isteyebilirsiniz. Bu giriş türü, kaydın daha spesifik bilgilerini sağlamak için `performer` ve `publisher` gibi ek alanlar içerir.
+
+Umarım yardımcı olabilirim! Sorularınız varsa bana bildirebilirsiniz.

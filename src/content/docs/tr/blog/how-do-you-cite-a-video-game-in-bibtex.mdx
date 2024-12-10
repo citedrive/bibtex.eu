@@ -1,0 +1,26 @@
+---
+title: "Bir Video Oyunu BibTeX ile Nasıl Alıntılanır?"
+tags: [citedrive, bibtex, doi, oyun]
+date: 2022-12-18
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+Bir oyunu BibTeX ile alıntılamanın bir örneği şu şekilde olabilir:
+
+```bibtex
+  @misc{gameTitle,
+    title = {Oyun Adı},
+    publisher = {Yayınevi},
+    year = {Yıl},
+    url = {Oyun URL'si},
+  }
+```
+
+<CiteDrive />
+
+Bu örnekte, @misc giriş tipi, alıntılanan öğenin bir oyun gibi çeşitli türdeki çalışmalar olduğunu belirtmek için kullanılır. **title** alanı oyunun başlığını, **publisher** alanı yayınevinin adını, **year** alanı oyunun yayımlandığı yılı ve **url** alanı oyunun erişilebileceği bir URL'yi belirtir.
+
+Ardından, oyuna alıntı eklemek için `\cite{game_title}` komutunu kullanabilirsiniz. Alıntının özel formatı, kullandığınız alıntı stiline bağlı olacaktır.
+
+Yukarıdaki örneğin, BibTeX ile bir oyunu alıntılamanın sadece bir yolu olduğunu ve projenizin özel gereksinimlerine bağlı olarak başka yaklaşımlar olabileceğini unutmamak önemlidir. Bir oyunu BibTeX ile doğru şekilde nasıl alıntılayacağınız konusunda şüpheleriniz varsa, bir stil kılavuzuna başvurabilir veya öğretmeninizden veya editörünüzden rehberlik alabilirsiniz.

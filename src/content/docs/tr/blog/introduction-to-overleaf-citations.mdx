@@ -1,0 +1,41 @@
+---
+title: "Overleaf Atıflarına Giriş"
+tags: [AkademikYazım, LaTeX, AtıfYönetimi, Overleaf, BibTeX, BibLaTeX, natbib, Zotero, Mendeley, Araştırma, Yazımİpuçları, Akademi, AkademikYazım, Kaynaklar]
+date: 2023-01-26
+---
+
+Doğru atıf yapmak, araştırmanızda kullandığınız kaynaklara kredi vermek açısından akademik yazımda çok önemlidir. Overleaf, kullanıcıların akademik belgeleri kolayca oluşturmasına ve işbirliği yapmasına olanak tanıyan popüler bir çevrimiçi LaTeX editörüdür. Ayrıca, BibTeX, NatBib ve BibLaTeX gibi güçlü atıf yönetim araçlarını da içerir.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Atıf Ekleme
+
+Overleaf'te bir atıf eklemek için, önce kaynaklarınızla ilgili bilgileri içeren bir '.bib' dosyası oluşturmanız gerekir. Her bir kaynağın yazarı, başlığı, yayın tarihi ve diğer ilgili bilgiler bu dosyada yer almalıdır. `.bib` dosyanızı manuel olarak oluşturabilir veya [CiteDrive](https://www.citedrive.com/) gibi web tabanlı, işbirlikçi bir BibTeX/BibLaTeX yönetim aracını kullanarak bunu sizin için yapabilirsiniz. **CiteDrive**, Overleaf ile entegre olarak tüm referanslarınızı LaTeX belgenizle senkronize tutar. Daha fazla bilgiye **Overleaf.com**'da ulaşabilirsiniz:  
+[Overleaf.com | Blog - Overleaf, CiteDrive ve BibTeX/BibLaTeX ile daha iyi bibliyografya yönetimi — 3.0 hakkında ve güncellenmiş rehber](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex)
+
+`.bib` dosyanız hazır olduğunda, `\cite` komutunu kullanarak Overleaf belgenize atıflar ekleyebilirsiniz. Örneğin, `example_source` anahtarına sahip bir kaynağı atıf yapmak istiyorsanız, `\cite{example_source}` komutunu kullanırsınız.
+
+Ayrıca atıflarınızın biçimlendirilmesini belirlemek için `\citep` ve `\citet` komutlarını kullanabilirsiniz. `\citep` komutu metin içi atıflar için kullanılır ve genellikle parantez içinde bir kaynağa atıfta bulunmak için kullanılır. `\citet` komutu ise yazar-tarih atıfları için kullanılır ve genellikle metinde bir kaynağa atıfta bulunmak için kullanılır.
+
+## Kaynaklarınızı Yönetme
+
+Overleaf, kaynaklarınızı yönetmeyi ve `.bib` dosyanızın güncel olmasını sağlamayı kolaylaştırır. Yeni kaynaklar ekleyebilir, mevcutları düzenleyebilir ve hatta `.bib` dosyanızı diğer atıf yönetim araçlarına aktarabilir ve dışa aktarabilirsiniz.
+
+Ayrıca, `\bibliography` komutunu kullanarak belgenizin sonunda otomatik olarak bir bibliyografi oluşturabilirsiniz. Bu komut, `.bib` dosyanızın adını argüman olarak alır ve seçtiğiniz atıf stiline göre kaynaklarınızı otomatik olarak biçimlendirir ve düzenler.
+
+## Doğru Paketi Kullanma
+
+Overleaf'te atıflar için hangi paketin kullanılacağını seçmek, spesifik ihtiyaçlarınıza ve tercihlere bağlı olacaktır.
+
+- **BibTeX**, LaTeX için en geleneksel ve yaygın kullanılan atıf yönetim paketidir. Kullanımı basittir ve çok sayıda atıf stilini destekler. Ancak, atıfların biçimlendirilmesi konusunda diğer iki seçeneğe kıyasla daha az esneklik ve kontrol sağlar.
+* ***[natbib](/natbib)**, BibTeX için gelişmiş özellikler ve esneklik sağlayan bir uzantıdır. Özellikle yazar-yıl atıf stilleri için kullanışlıdır ve atıfların metinde biçimlendirilmesini özelleştirmenize olanak tanır.
+
+- **BibLaTeX**, BibTeX'e modern ve güçlü bir alternatiftir. Yerelleştirme, gelişmiş sıralama ve daha fazla türdeki girişleri destekleme gibi daha ileri düzey özellikler sunar. Ayrıca, tüm bibliyografik verileri Unicode formatında işleyebilir ve BibTeX'teki çoğu atıf stiline uyumludur.
+
+Özetle, basit ve yaygın desteklenen bir seçenek arıyorsanız BibTeX'i kullanın. Biçimlendirme ve gelişmiş özellikler konusunda daha fazla kontrol istiyorsanız BibLaTeX veya natbib kullanın.
+
+## Sonuç
+
+Atıf yönetimi zahmetli bir iş olabilir, ancak Overleaf, yerleşik atıf aracıyla bunu kolaylaştırır. Overleaf ile kaynaklarınızı kolayca ekleyebilir, düzenleyebilir ve yönetebilir, belgenizin sonunda otomatik olarak bir bibliyografi oluşturabilirsiniz. İster öğrenci, araştırmacı veya profesyonel bir akademisyen olun, Overleaf, yüksek kaliteli ve doğru şekilde atıf yapılmış belgeler oluşturmanıza yardımcı olacak güçlü bir araçtır.

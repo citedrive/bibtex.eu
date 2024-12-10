@@ -1,0 +1,49 @@
+---
+title: "BibTeX ile Overleaf'te Alıntı Kullanımı"
+tags: ["LaTeX", "Overleaf", "CiteDrive", "düzenleme", "teknik belgeler", "bilimsel belgeler", "araştırma makaleleri", "tezler", "işaretleme dili", "biçimlendirme", "metin düzenleyici", "işbirliği", "alıntı yönetimi"]
+date: 2023-01-28
+---
+
+
+Alıntılar, akademik yazımın önemli bir yönüdür çünkü yazarların çalışmalarında kullandıkları kaynaklara kredi vermelerine olanak tanır. Bu yazıda, popüler bir çevrimiçi LaTeX editörü olan Overleaf’te BibTeX ile alıntıların nasıl kullanılacağını tartışacağız. BibTeX, bibliyografik referansları yönetmek için kullanılan bir araçtır.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+
+<CiteDrive />
+
+## Overleaf projenize bir bibliyografya ekleme
+
+Overleaf’te alıntı kullanmaya başlamak için ilk adım, projenize bir bibliyografya eklemektir. Bunu, projenizde yeni bir dosya oluşturarak ve adını `references.bib` koyarak yapabilirsiniz. Bu dosya, belgenizde alıntı yapmayı istediğiniz tüm referansları içerecektir. Alternatif bir seçenek olarak, [CiteDrive](https://www.citedrive.com/) kullanabilirsiniz; bu, Overleaf ile bağlantı kurar ve bibliyografyanız ve alıntılarınız üzerinde işbirliği yapmanıza olanak tanır. CiteDrive, BibTeX'i yerel olarak destekler ve ayrıca Biblatex'i de destekler.
+
+Bu dosyaya bir referans eklemek için aşağıdaki formatı kullanabilirsiniz:
+
+`@article{anahtar,   author = {Yazar, A.},   title = {Başlık},   journal = {Dergi},   year = {Yıl}, }`
+
+`anahtar`, referans için benzersiz bir tanımlayıcıdır ve bu referansa belgenizde alıntı yaparken kullanılacaktır. `author`, `title`, `journal` ve `year` alanları temel bir referans için gereklidir, ancak eklenebilecek birçok başka alan da bulunmaktadır.
+
+## Belgenizde alıntı yapma
+
+Referanslarınızı `references.bib` dosyasına ekledikten sonra, bunları belgenizde `cite` komutunu kullanarak alıntı yapabilirsiniz. Örneğin, `anahtar` ile belirtilen referansı alıntı yapmak için şu komutu kullanabilirsiniz:
+
+`\cite{anahtar}`
+
+Bu, seçtiğiniz bibliyografya stiline göre belgenizde alıntıyı belirli bir formatta ekleyecektir.
+
+## Bibliyografyanızı biçimlendirme
+
+Bibliyografinizi biçimlendirmek için, bir bibliyografya stili belirtmeniz gerekir. Bu, belgenizin ön söz kısmına aşağıdaki komutu ekleyerek yapılabilir:
+
+`\bibliographystyle{stil}`
+
+Burada `stil`, kullanmak istediğiniz bibliyografya stilinin adıdır. Yaygın olarak kullanılan bazı stiller `plain`, `unsrt` ve `apalike` gibi seçeneklerdir.
+
+Son olarak, belgenizin sonuna aşağıdaki komutu ekleyerek bibliyografyayı oluşturabilirsiniz:
+
+`\bibliography{references}`
+
+Burada `references`, bibliyografya dosyanızın adıdır (örneğimizde `references.bib`).
+
+## Sonuç
+
+Bu yazıda, Overleaf’te BibTeX ile alıntı yapmanın nasıl olduğunu tartıştık. Yukarıda belirtilen adımları izleyerek, projenize kolayca referanslar ekleyebilir, bunları belgenizde alıntılayabilir ve bibliyografyanızı akademik kurumunuzun veya yayınevinizin gereksinimlerine uygun olarak biçimlendirebilirsiniz. Ayrıca, CiteDrive kullanımı, Overleaf ile bağlantı kurarak referanslarınız ve alıntılarınız üzerinde kolay işbirliği yapmanıza olanak tanır. CiteDrive, hem BibTeX’i hem de Biblatex’i yerel olarak desteklediği için bibliyografik referanslarınızı yönetmek için çok yönlü bir seçenek sunar.

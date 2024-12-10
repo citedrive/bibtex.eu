@@ -1,0 +1,47 @@
+---
+title: "Citations ve natbib ile Overleaf Kullanımı"
+tags: [AkademikYazım, natbib, LaTeX, AlıntıYönetimi, Overleaf, BibTeX, BibLaTeX, natbib, Zotero, Mendeley, Araştırma, Yazımİpuçları, Akademi, BilimselYazım, Referanslar]
+date: 2023-01-27
+---
+
+Overleaf, kullanıcıların belgeler üzerinde gerçek zamanlı olarak işbirliği yapmalarına olanak tanıyan popüler bir çevrimiçi LaTeX editörüdür. Overleaf’in harika özelliklerinden biri, natbib paketi kullanarak alıntılar ve bibliyografyalar eklemeyi kolaylaştırmasıdır. Bu yazıda, Overleaf’te natbib kullanarak alıntılar ve bibliyografyalar eklemenin temellerine göz atacağız.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+
+<CiteDrive />
+## Alıntı Eklemek
+
+Overleaf’te alıntı eklemek için önce natbib paketini belgenize eklemeniz gerekir. Bunu, belgenizin ön söz kısmına aşağıdaki satırı ekleyerek yapabilirsiniz:
+
+`\usepackage[numbers]{natbib}`
+
+Bu, `\citep` ve `\cite` komutlarını kullanarak belgenize alıntı eklemenizi sağlar. `\citep` komutu, metin içi alıntılar için kullanılır ve alıntıyı parantez içinde bir sayı olarak gösterir; `\cite` komutu ise metin içi alıntılar için kullanılır ve alıntıyı bir sayı olarak gösterir.
+
+Örneğin, Smith ve arkadaşlarının (2020) bir makalesini metin içinde alıntılamak için aşağıdaki komutu kullanabilirsiniz:
+
+`According to \citep{Smith2020}, this is an important finding.`
+
+Bu, şu şekilde görünecektir:
+
+> According to (Smith et al., 2020), this is an important finding.
+
+## Bibliyografya Eklemek
+
+Belgenize bir bibliyografya eklemek için önce tüm alıntı yapacağınız referansların bilgilerini içeren bir `.bib` dosyası oluşturmanız gerekir. `.bib` dosyası, ana `.tex` dosyanızla aynı dizinde kaydedilmelidir. Bu `.bib` dosyasını oluşturmanın en kolay yollarından biri, [CiteDrive](https://www.citedrive.com/) kullanmaktır; bu araç, Overleaf ile bağlantı kurarak bib dosyasını sizin için oluşturur. Daha fazla bilgiye [Overleaf.com blog yazısında](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex) ulaşabilirsiniz.
+
+Bir `.bib` dosyasını oluşturduktan sonra, belgenize bir bibliyografya eklemek için şu komutu kullanabilirsiniz:
+
+`\bibliography{mybibfile}`
+
+Burada `mybibfile`, `.bib` dosyanızın adıdır.
+
+Bibliyografyanızın stilini de şu komutu ekleyerek belirtebilirsiniz:
+
+`\bibliographystyle{plainnat}`
+
+Bu, bibliyografyanızı düz bir stil ile biçimlendirir. Farklı bibliyografya stilleri mevcuttur ve bunların bir listesini [buradan](https://www.overleaf.com/learn/latex/Bibliography_styles) bulabilirsiniz.
+
+## Sonuç
+
+Bu yazıda, Overleaf ile natbib kullanarak alıntı ve bibliyografya eklemenin temellerini ele aldık. Overleaf’in kullanıcı dostu arayüzü ve natbib’in güçlü alıntı ve bibliyografya yönetim yetenekleri ile referanslarınızı kolayca takip edebilir ve bibliyografinizi yayınınızın gereksinimlerine uygun biçimde formatlayabilirsiniz. Ayrıca, CiteDrive kullanarak bib dosyasını sizin için oluşturmak, zaman ve çaba tasarrufu sağlayabilir.

@@ -1,0 +1,52 @@
+---
+title: "LaTeX / BibTeX ile APA Nasıl Alıntılanır?"
+tags: [LaTeX, BibTeX, APA alıntı, kaynak yönetimi, akademik yazı]
+date: 2023-02-16
+---
+
+Orijinal yazarlara kredi vermek ve araştırmalarına katkılarını tanımak için akademik yazımda kaynakların doğru bir şekilde alıntılanması gerekir. Amerikan Psikoloji Derneği (APA) alıntı stili, sosyal bilimler, psikoloji ve eğitimde yaygın olarak kullanılır. Bu blog yazısında, BibTeX kullanarak LaTeX'te APA alıntılarını nasıl yapacağınızı inceleyeceğiz.
+
+BibTeX, LaTeX ile birlikte kullanılan güçlü bir kaynak ve alıntı yönetim aracıdır. Makaleler yazarken çok zaman ve çaba tasarrufu sağlayabilir. İşte BibTeX kullanarak APA stilinde alıntı yapmanın adımları:
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+## Adım 1: .bib dosyası oluşturun
+
+İlk olarak, belgenizde alıntı yapacağınız tüm kaynakları içeren bir [BibTeX dosyası (.bib dosyası)](/) oluşturun. Bu dosya, yazarın adı, yayın tarihi, makale başlığı ve dergi veya kitap adı gibi tüm kaynak bilgilerini içerir.
+
+## Adım 2: .bib dosyasını LaTeX belgenize dahil edin
+
+Sonra, aşağıdaki komutu kullanarak .bib dosyasını LaTeX belgenize dahil edin:
+
+```latex
+ \bibliography{yourfile.bib}
+```
+"yourfile" yerine .bib dosyanızın adını yazdığınızdan emin olun.
+
+## Adım 3: Kaynakları alıntılamak
+
+Belgenizde bir kaynağa atıfta bulunmak için, .bib dosyanızdaki kaynağa karşılık gelen anahtarı kullanarak `\cite{}` komutunu kullanın. Örneğin:
+
+```latex
+According to \cite{smith2010}, this method is effective.
+```
+
+Bu komut, metinde yazarın adı ve yayın yılı gibi bilgileri içeren bir alıntı oluşturacaktır, örneğin (Smith, 2010).
+
+## Adım 4: Kaynakça ekleme
+
+Kaynakça eklemek için, `\bibliographystyle{}` komutunu kullanarak kaynakça stilini belirtin ve ardından `\bibliography{}` komutunu kullanarak .bib dosyasını belirtin:
+
+```latex
+\bibliographystyle{apalike} 
+\bibliography{yourfile.bib}
+```
+Yukarıdaki kod, belgenizin sonunda APA stilinde bir kaynakça listesi oluşturacaktır.
+
+## Adım 5: Belgenizi derleyin
+
+Son olarak, LaTeX belgenizi derleyerek alıntı ve kaynakça listesini oluşturun.
+
+Özetle, LaTeX'te BibTeX kullanarak APA alıntıları yapmak için bir .bib dosyası oluşturmanız, bu dosyayı belgenize dahil etmeniz, `\cite{}` komutunu kullanarak kaynakları alıntılamanız ve `\bibliographystyle{}` ve `\bibliography{}` komutlarıyla kaynakça eklemeniz gerekir. Bu adımlarla, akademik makalelerinizde kaynakları APA stilinde kolayca yönetebilir ve alıntılayabilirsiniz.

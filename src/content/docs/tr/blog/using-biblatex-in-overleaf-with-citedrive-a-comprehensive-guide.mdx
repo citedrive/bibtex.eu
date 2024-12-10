@@ -1,0 +1,67 @@
+---
+title: "CiteDrive ile Overleaf'te Biblatex Kullanımı: Kapsamlı Bir Kılavuz"
+tags: [Overleaf, Biblatex, CiteDrive, Bibliyografik referanslar, Araştırma yönetimi]
+date: 2023-02-05
+---
+
+
+Overleaf, akademik makaleler ve araştırma makaleleri yazmak için popüler bir çevrimiçi platformdur. Belgeleri oluşturma, düzenleme ve başkalarıyla paylaşma konusunda işbirlikçi ve kullanımı kolay bir arayüz sunar. Bir akademik makalenin en önemli unsurlarından biri doğru alıntı yapmaktır ve Overleaf, referanslarınızı biçimlendirmek ve yönetmek için bir dizi araç sunar.
+
+Bu kılavuzda, güçlü bir alıntı yönetim sistemi olan Biblatex’i nasıl kullanacağınızı, Overleaf belgelerinizde alıntı oluşturma ve biçimlendirme işlemini ele alacağız.
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+
+<CiteDrive />
+
+## Adım 1: Biblatex'i Kurun
+
+Biblatex ile çalışmaya başlamak için, Overleaf belgenize birkaç satır kod eklemeniz gerekecek. Bu kod paketi yükler ve ihtiyaçlarınıza göre yapılandırmanıza olanak tanır. İşte belgenizin ön söz kısmının nasıl görünebileceğine dair bir örnek:
+
+```latex
+\usepackage[style=authoryear,backend=biber]{biblatex} 
+\addbibresource{references.bib}
+```
+
+Bu kod, Biblatex paketini yükler ve alıntı stilini `authoryear` olarak ayarlar, bu da birçok akademik alanda yaygın olarak kullanılan bir alıntı stilidir. Ayrıca, `biber` adlı güçlü bir bibliyografya işlemcisini arka uç olarak ayarlayarak daha karmaşık alıntı gereksinimlerini karşılamaya olanak tanır.
+
+Son olarak, `\addbibresource` komutu, Biblatex'e bibliyografik referanslarınızı bulması için yol gösterir, bunu bir sonraki adımda tartışacağız.
+
+## Adım 2: Bibliyografinizi Oluşturun
+
+Biblatex’i Overleaf’te kullanmaya başlamadan önce, kaynaklarınızın tüm ayrıntılarını içeren bir bibliyografik referans veritabanına (yaygın olarak bib dosyası olarak bilinir) sahip olmanız gerekecek. Bir bib dosyası oluşturmak zaman alıcı ve zahmetli bir işlem olabilir, ancak [CiteDrive, işbirlikçi bir web tabanlı araştırma yönetim aracı](https://www.citedrive.com/) sayesinde, bibliyografik referanslarınızı kolayca oluşturabilir, yönetebilir ve paylaşabilirsiniz.
+
+CiteDrive, BibTeX üzerine kuruludur ve Biblatex'i tamamen destekler, bu da araştırmacılar ve akademisyenler için bu araçların gücünden ve esnekliğinden yararlanmak isteyenler için harika bir seçimdir. Ayrıca, CiteDrive, Overleaf ile sorunsuz bir şekilde entegre olur, böylece bibliyografik referanslarınıza doğrudan Overleaf belgelerinizden kolayca erişebilir ve düzenleyebilirsiniz.
+
+CiteDrive ile başlamak için ücretsiz bir hesap oluşturup referanslarınızı eklemeye başlayabilirsiniz. PubMed, Google Scholar gibi popüler veritabanlarından referansları içe aktarabilir veya referansları manuel olarak kütüphanenize ekleyebilirsiniz. Kütüphanenizi oluşturduktan sonra, bunu bir BibTeX veya Biblatex dosyası olarak dışa aktarabilir ve ardından Overleaf belgelerinizde kullanabilirsiniz.
+
+CiteDrive’i Overleaf ile nasıl kullanacağınız hakkında daha fazla bilgi için [bu blog gönderisini](https://www.overleaf.com/blog/better-bibliography-management-with-overleaf-citedrive-and-bibtex-biblatex) inceleyebilirsiniz.
+
+İşte Biblatex* formatında basit bir referans örneği:
+
+```bibtex
+@article{example_reference,   
+	author = {John Doe},   
+	title = {An Example Article},   
+	journal = {Journal of Examples},   
+	year = {2021},   
+	volume = {1},   
+	pages = {1-10}, 
+}
+```
+
+Bu dosyaya ihtiyacınız kadar referans ekleyebilirsiniz ve Biblatex, bunları seçtiğiniz alıntı stiline göre otomatik olarak biçimlendirecektir.
+
+## Adım 3: Belgenizde Alıntı Ekleyin
+
+Bibliyografik referanslarınızı yerleştirdikten sonra, şimdi alıntıları Overleaf belgenize ekleyebilirsiniz. Bunu yapmak için, `\cite` komutunu ve ardından referansınızın anahtarını kullanın. Örneğin:
+
+`Doe (2021) tarafından gösterildiği gibi, Biblatex'i Overleaf ile kullanmak mümkündür.`
+
+Alıntı, belgenizde parantez içinde yazar ve yayın yılı ile görünecek ve Biblatex, bunu seçtiğiniz alıntı stiline göre biçimlendirecektir.
+
+## Adım 4: Bibliyografyayı Oluşturun
+
+Son olarak, belgeniz için bibliyografya oluşturmak için, belgenizin sonuna bir `\printbibliography` komutu eklemeniz gerekecek. Bu komut, Biblatex'e referanslarınızdan bibliyografyayı derlemesini ve seçtiğiniz alıntı stiline göre biçimlendirmesini söyler.
+
+Ve işte bu kadar! Artık Overleaf belgelerinizde alıntılar oluşturmak ve biçimlendirmek için Biblatex'i kullanmaya hazırsınız. Güçlü özellikleri ve esnek yapılandırma seçenekleriyle Biblatex, kapsamlı ve kullanımı kolay bir alıntı yönetim sistemi arayan herkes için mükemmel bir seçimdir.
