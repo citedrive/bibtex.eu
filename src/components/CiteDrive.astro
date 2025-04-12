@@ -5,100 +5,106 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<div class="styled-div">
-	<h2 set:html={t('SMALL_BANNER_H2')} />
+<div id="modal-overlay" class="modal-overlay hidden">
+	<div class="modal-content styled-div">
+		<button class="modal-close" onclick="closeModal()">×</button>
+		<h2 set:html={t('SMALL_BANNER_H2')} />
 
-	<ul class="features-list">
-		<li>{t('SMALL_BANNER_LI_1')}</li>
-		<li>{t('SMALL_BANNER_LI_2')}</li>
-		<li>{t('SMALL_BANNER_LI_3')}</li>
-		<li>{t('SMALL_BANNER_LI_4')}</li>
-		<li>{t('SMALL_BANNER_LI_5')}</li>
-		<li>{t('SMALL_BANNER_LI_6')}</li>
-	</ul>
+		<ul class="features-list">
+			<li>{t('SMALL_BANNER_LI_1')}</li>
+			<li>{t('SMALL_BANNER_LI_2')}</li>
+			<li set:html={t('SMALL_BANNER_LI_3')} />
+			<li set:html={t('SMALL_BANNER_LI_4')} />
+			<li>{t('SMALL_BANNER_LI_5')}</li>
+			<li>{t('SMALL_BANNER_LI_6')}</li>
+		</ul>
 
-	<a href=`https://www.citedrive.com/${lang}/` class="cta-button">{t('SMALL_BANNER_BUTTON')}</a>
-	<a href=`https://youtu.be/bHD94qM0vyg?si=Q6h3XDVqFzHx7kI8` class="cta-button-demo">{t('SMALL_BANNER_VIDEO')}</a>
+		<div class="button-row">
+			<a href={`https://www.citedrive.com/${lang}/`} class="cta-button">{t('SMALL_BANNER_BUTTON')}</a>
+			<a href="https://youtu.be/bHD94qM0vyg?si=Q6h3XDVqFzHx7kI8" class="cta-button-demo">{t('SMALL_BANNER_VIDEO')}</a>
+		</div>
+	</div>
 </div>
 
-<style>
-	.styled-div {
-		border: 2px solid white;
-		border-radius: 19px;
-		box-shadow: 2px 2px 5px rgb(0 0 0 / 17%);
-		padding: 20px;
-		background-image: linear-gradient(200deg, #560fcf 2.35%, #9d208b 100%);
-		font-family: Arial, sans-serif;
-		color: #fff;
-		/* margin-bottom: 2rem; */
-	}
+<script is:inline>
+	setTimeout(() => {
+		const modal = document.getElementById('modal-overlay')
+		if (modal) {
+			modal.classList.remove('hidden')
+		}
+	}, 5000)
 
-	.styled-div h2 {
-		/*text-align: center;*/
-		color: white;
-		margin-bottom: 20px;
+	function closeModal() {
+		document.getElementById('modal-overlay')?.classList.add('hidden')
 	}
+</script>
 
-	.features-list {
-		list-style-type: none;
-		padding: 0;
-	}
-
-	.features-list li {
-		position: relative;
-		padding-left: 25px;
-		margin-bottom: 10px;
-		list-style: none!important;
-	}
-
-	.features-list li:before {
-		content: '✓';
-		position: absolute;
+<style is:inline>
+	.modal-overlay {
+		position: fixed;
+		top: 0;
 		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		color: #c0fdc0;
+		width: 100%;
+		height: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+	}
+	.modal-overlay.hidden {
+		display: none;
 	}
 
-	/* Call to action button styles */
-	.cta-button {
-		display: inline-block;
-		padding: 10px 20px;
-		border-radius: 25px;
-		background-color: #ffffff;
-		color: #521449!important;
-		text-decoration: none!important;
-		text-align: center;
-		border: 2px solid #fff;
-		margin-top: 20px;
-		transition: background-color 0.3s ease;
+	.modal-content {
+		color: black;
+		padding: 2rem;
+		margin: 1rem;
+		border: 1px solid #000;
+		border-radius: 1rem;
+		background: white;
+		position: relative;
+		max-width: 700px;
+		width: 90%;
 	}
 
-	.cta-button:hover {
-		background-color: #d5d5d5;
+	.modal-content h2 {
+		color: black;
 	}
 
+	.modal-close {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 24px;
+		background: none;
+		border: none;
+		color: black;
+		cursor: pointer;
+	}
+	.modal-close:hover {
+		color: #ccc;
+	}
+
+	.button-row {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+	}
+
+	.cta-button,
 	.cta-button-demo {
-		display: inline-block;
-		padding: 10px 20px;
-		border-radius: 25px;
-		background-color: #9d208b;
-		color: white!important;
-		text-decoration: none!important;
-		text-align: center;
-		border: 2px solid #fff;
-		margin-top: 20px;
-		transition: background-color 0.3s ease;
-	}
+		display: block;
+		text-decoration: none;
+		color: #fff!important;
+		background-color: black;
+		font-weight: 600;
+		border-radius: 32px;
+		line-height: 1;
+		padding: 16px;
+		transition: 0.5s;
+		width: fit-content;
 
-	.cta-button-demo:hover {
-		background-color: #824299;
-	}
-
-
-
-
-	.spanferkel {
-		text-decoration: underline 5px rgb(0, 255, 107);
 	}
 </style>
