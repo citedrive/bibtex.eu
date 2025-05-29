@@ -1,54 +1,92 @@
 ---
-title: Wie kann ich BibTeX verwenden, um eine Website in LaTeX zu zitieren?
+title: "Wie man eine Website in LaTeX mit BibTeX und BibLaTeX zitiert"
+description: "Lerne, wie du Websites in LaTeX mit BibTeX, BibLaTeX und natbib zitierst – inklusive Best Practices und Tools wie CiteDrive zur Verwaltung von Webquellen."
 ---
 
-Es gibt mehrere Möglichkeiten, eine Website in LaTeX zu zitieren. In dieser kurzen Antwort auf die Frage geben wir drei an, die einfachste ist BibLaTeX über die CiteDrive-Browsererweiterung im letzten Beispiel.
+import CiteDrive from '@components/CiteDrive.astro';
 
-:::tip
-[CiteDrive](https://www.citedrive.com/) ist ein kollaboratives Online-Referenzmanagement-Tool, das auf BibTeX basiert und sich automatisch mit Publikationssystemen wie [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) und [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) synchronisiert. Sie bieten eine [Browsererweiterung](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370) an, die es Ihnen ermöglicht, wissenschaftliche Artikel direkt im Browser und im korrekten BibTeX-Format zu speichern, so dass Sie sie z. B. direkt im Overleaf-Projekt zitieren können, ohne zwischen Browserfenstern/Tabs wechseln zu müssen. Die Erweiterung kann auch Webseiten im BibLaTeX-Format speichern, wobei automatisch der Titel, die URL und das Zugriffsdatum erfasst werden.
-:::
+Das Zitieren von Websites in LaTeX kann auf verschiedene Arten erfolgen – je nachdem, welchen Bibliografiestil du verwendest. In diesem Leitfaden behandeln wir die drei gängigsten Methoden: mit **BibTeX**, **BibLaTeX** und **natbib**. Für die einfachste und effizienteste Lösung empfehlen wir **CiteDrive**, das automatisch Zitate im richtigen Format erstellt und verwaltet.
 
-## Verwendung von BibTeX
+---
 
-In BibTeX verwenden wir `@misc` als Workaround und nutzen das Feld `note`, um die URl und normalerweise ein Zugriffsdatum anzugeben. In diesem Beispiel wird `url` (*oder `hyperref`*) mit `usepackage{url}` benötigt.
+## 📌 Die einfachste Methode: Eine Website mit CiteDrive in LaTeX zitieren
 
-```latex
+{/*<CiteDrive />*/}
+
+<iframe width="560" height="515" src="https://www.youtube.com/embed/-ewRaEWGsGQ?si=bsVvnAuY3h9HnyNn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+---
+
+## 📚 Methode 1: Eine Website mit BibTeX zitieren
+
+Wenn du klassisches **BibTeX** verwendest, wird für Webquellen in der Regel der Eintragstyp `@misc` genutzt. Die URL und das Zugriffsdatum gibst du entweder im `note`- oder `howpublished`-Feld an. Damit klickbare Links dargestellt werden, füge `\usepackage{url}` in deine Präambel ein.
+
+**Beispiel mit `note`:**
+
+```bibtex
 @misc{CiteDrive2022,
-	title        = {CiteDrive brings reference management to Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	note         = {\url{https://www.citedrive.com/overleaf} [Accessed: (Use the date of access)]}
+  title        = {CiteDrive bringt Referenzverwaltung nach Overleaf},
+  author       = {CiteDrive, Inc},
+  year         = 2022,
+  note         = {\url{https://www.citedrive.com/overleaf} [Zugriff am: 2025-05-29]}
 }
 ```
 
+**Beispiel mit `howpublished`:**
 
-Alternativ kann auch das Feld "howpublished" verwendet werden:
-
-```latex
+```bibtex
 @misc{CiteDrive2022,
-	title        = {CiteDrive brings reference management to Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	note         = {Accessed: (Use the date of access)},
-	howpublished = {\url{https://www.citedrive.com/overleaf}}
+  title        = {CiteDrive bringt Referenzverwaltung nach Overleaf},
+  author       = {CiteDrive, Inc},
+  year         = 2022,
+  howpublished = {\url{https://www.citedrive.com/overleaf}},
+  note         = {Zugriff am: 2025-05-29}
 }
 ```
 
+---
 
-## Verwendung von BibLaTeX
+## ✅ Methode 2: Eine Website mit BibLaTeX zitieren (empfohlen)
 
-Wenn Sie BibLaTeX verwenden, was wir empfehlen, wird der Eintragstyp `@online` von Haus aus unterstützt und funktioniert ohne weitere Anpassungen. Sie können die URL und das Zugriffsdatum in die Felder `url` bzw. `urldate` eingeben.
+**BibLaTeX** vereinfacht das Zitieren von Websites durch den Eintragstyp `@online`, der eigene Felder für `url` und `urldate` bietet. Das ist die sauberste und genaueste Methode, um Webseiten in LaTeX zu zitieren.
 
-```latex
+```bibtex
 @online{CiteDrive2022,
-	title        = {CiteDrive brings reference management to Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	url          = {https://www.citedrive.com/overleaf},
-	urldate      = {Use the date of access}
+  title     = {CiteDrive bringt Referenzverwaltung nach Overleaf},
+  author    = {CiteDrive, Inc},
+  year      = 2022,
+  url       = {https://www.citedrive.com/overleaf},
+  urldate   = {2025-05-29}
 }
 ```
 
-## Verwendung von `natbib`
+---
 
-Häufig wird nachgefragt, wie man Webseiten mit [natbib](/natbib) zitieren kann. Wir betonen, dass es auf die gleiche Weise wie BibTeX funktioniert. Natbib ist ein Werkzeug zur Gestaltung von In-Text-Zitaten, das auf BibTeX als Backend aufbaut.
+## 🧾 Methode 3: Websites mit `natbib` in LaTeX zitieren
+
+Wenn du **natbib** verwendest, solltest du wissen, dass natbib zwar die Zitate im Text formatiert, aber im Hintergrund weiterhin auf BibTeX basiert. Webseiten zitierst du also wie oben gezeigt – meist mit dem Eintragstyp `@misc`.
+
+In deinem LaTeX-Dokument kannst du dann folgendermaßen zitieren:
+
+```latex
+\citet{CiteDrive2022}
+```
+
+oder
+
+```latex
+\citep{CiteDrive2022}
+```
+
+---
+
+## 🎓 Zusammenfassung: Die beste Methode zum Zitieren von Websites in LaTeX
+
+| Methode   | Eintragstyp | URL-Unterstützung | Empfehlung         |
+| --------- | ----------- | ----------------- | ------------------ |
+| BibTeX    | `@misc`     | Manuell (`note`)  | ✅ Gut              |
+| BibLaTeX  | `@online`   | Integriert        | ✅✅ Beste Wahl      |
+| natbib    | `@misc`     | Manuell           | ✅                  |
+| CiteDrive | Alle        | Automatisch       | ✅✅✅ Am einfachsten |
+
+Für akademische Nutzer, die häufig Websites zitieren, ist **BibLaTeX + CiteDrive** der effizienteste, genaueste und modernste Weg.
