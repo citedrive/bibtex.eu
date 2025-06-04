@@ -1,56 +1,98 @@
 ---
-title: "Hvordan kan jeg bruge BibTeX til at citere en hjemmeside i LaTeX?"
+title: "Sådan citerer du et websted i LaTeX med BibTeX og BibLaTeX"
+description: "Lær hvordan du citerer websites i LaTeX ved hjælp af BibTeX, BibLaTeX og natbib – inklusive bedste praksis og værktøjer som CiteDrive til at håndtere webkilder."
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-Der er flere måder at citere en hjemmeside i LaTeX. I dette korte svar på spørgsmålet giver vi tre metoder, hvoraf den nemmeste er BibLaTeX via CiteDrive-browserudvidelsen i det sidste eksempel.
+At citere websites i LaTeX kan gøres på flere måder, afhængigt af hvilken bibliografistil du bruger. I denne guide gennemgår vi de tre mest almindelige metoder: brug af **BibTeX**, **BibLaTeX** og **natbib**. Den nemmeste og mest effektive metode er at bruge **CiteDrive**, som automatisk opretter og håndterer citater i korrekt format.
 
-<CiteDrive />
+---
+
+## 📌 Den nemmeste metode: Citer et websted i LaTeX med CiteDrive
+
+{/*<CiteDrive />*/}
 
 :::tip
-[CiteDrive](https://www.citedrive.com/) er et kollaborativt online reference management værktøj baseret på BibTeX, som automatisk synkroniseres med publikation systemer som [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) og [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619). De tilbyder en [browserudvidelse](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370) som giver dig mulighed for at gemme akademiske artikler direkte fra browseren i det korrekte BibTeX-format, så du f.eks. kan citere dem direkte i Overleaf-projektet uden at skulle skifte mellem browservinduer/faner. Udvidelsen kan også gemme web-sider i BibLaTeX-format, og automatisk fange titlen, URL'en og adgangsdatoen.
+[CiteDrive](https://www.citedrive.com/) er en webbaseret referencehåndtering til BibTeX og BibLaTeX, der synkroniserer med [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf), [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) og mere.
+
+Dens [browserudvidelse](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370) lader dig gemme citater fra akademiske sider og almindelige websteder direkte i dit BibTeX- eller BibLaTeX-bibliotek – med titel, forfatter, URL og adgangsdato inkluderet.
 :::
 
-## Brug af BibTeX
+<iframe width="560" height="515" src="https://www.youtube.com/embed/-ewRaEWGsGQ?si=bsVvnAuY3h9HnyNn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-I BibTeX bruger vi `@misc` som en løsning og anvender `note`-feltet til at specificere URL'en og normalt en adgangs dato. I dette eksempel er `url` (*eller `hyperref`*) nødvendig ved brug af `usepackage{url}`.
+---
 
-```latex
+## 📚 Metode 1: Citer et websted med BibTeX
+
+Hvis du bruger klassisk **BibTeX**, er `@misc` den mest anvendte entry-type til webkilder. Du kan angive URL og adgangsdato i `note`- eller `howpublished`-felterne. For at gøre links klikbare, tilføj `\usepackage{url}` i din preamble.
+
+**Eksempel med `note`:**
+
+```bibtex
 @misc{CiteDrive2022,
-	title        = {CiteDrive brings reference management to Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	note         = {\url{https://www.citedrive.com/overleaf} [Adgangsdato: (Brug adgangs datoen)]}
+  title        = {CiteDrive brings reference management to Overleaf},
+  author       = {CiteDrive, Inc},
+  year         = 2022,
+  note         = {\url{https://www.citedrive.com/overleaf} [Adgang: 2025-05-29]}
+}
+````
+
+**Eksempel med `howpublished`:**
+
+```bibtex
+@misc{CiteDrive2022,
+  title        = {CiteDrive brings reference management to Overleaf},
+  author       = {CiteDrive, Inc},
+  year         = 2022,
+  howpublished = {\url{https://www.citedrive.com/overleaf}},
+  note         = {Adgang: 2025-05-29}
 }
 ```
 
-Alternativt kan `howpublished`-feltet bruges:
+---
 
-```latex
-@misc{CiteDrive2022,
-	title        = {CiteDrive brings reference management to Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	note         = {Adgangsdato: (Brug adgangs datoen)},
-	howpublished = {\url{https://www.citedrive.com/overleaf}}
-}
-```
+## ✅ Metode 2: Citer et websted med BibLaTeX (anbefales)
 
-## Brug af BibLaTeX
+**BibLaTeX** gør det lettere at citere websites med entry-typen `@online`, som har indbyggede felter til `url` og `urldate`. Dette er den mest præcise og rene måde at citere webkilder i LaTeX på.
 
-Hvis du bruger BibLaTeX, som vi anbefaler, understøttes `@online` entry-typen direkte og fungerer uden yderligere tilpasninger. Du kan indtaste URL'en og adgangsdatoen i felterne `url` og `urldate`, henholdsvis.
-
-```latex
+```bibtex
 @online{CiteDrive2022,
-	title        = {CiteDrive brings reference management to Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	url          = {https://www.citedrive.com/overleaf},
-	urldate      = {Brug adgangs datoen}
+  title     = {CiteDrive brings reference management to Overleaf},
+  author    = {CiteDrive, Inc},
+  year      = 2022,
+  url       = {https://www.citedrive.com/overleaf},
+  urldate   = {2025-05-29}
 }
 ```
 
-## Brug af `natbib`
+---
 
-Folk spørger ofte om, hvordan man citerer web-sider ved hjælp af [natbib](/natbib). Vi understreger, at det fungerer på samme måde som BibTeX. Natbib er et værktøj til styling af in-text citater og er afhængig af BibTeX som backend.
+## 🧾 Metode 3: Citering med `natbib` i LaTeX
+
+Hvis du bruger **natbib**, skal du være opmærksom på, at natbib står for selve citationerne i teksten, men stadig bruger BibTeX i baggrunden. Det betyder, at du citerer websites på samme måde som ovenfor – typisk med `@misc`.
+
+I din LaTeX-fil kan du derefter citere med:
+
+```latex
+\citet{CiteDrive2022}
+```
+
+eller
+
+```latex
+\citep{CiteDrive2022}
+```
+
+---
+
+## 🎓 Opsummering: Bedste metode til at citere websites i LaTeX
+
+| Metode    | Entry-type | URL-understøttelse | Anbefalet        |
+| --------- | ---------- | ------------------ | ---------------- |
+| BibTeX    | `@misc`    | Manuel (`note`)    | ✅ God            |
+| BibLaTeX  | `@online`  | Indbygget          | ✅✅ Bedst         |
+| natbib    | `@misc`    | Manuel             | ✅                |
+| CiteDrive | Alle       | Automatisk         | ✅✅✅ Nem & hurtig |
+
+For akademiske brugere, der ofte citerer websites, er **BibLaTeX + CiteDrive** den mest effektive, nøjagtige og moderne løsning.

@@ -1,55 +1,99 @@
 ---
-title: "Jak citovat webové stránky pomocí BibTeX v LaTeX?"
+title: "Jak citovat webovou stránku v LaTeXu pomocí BibTeX a BibLaTeX"
+description: "Naučte se citovat webové stránky v LaTeXu pomocí BibTeX, BibLaTeX a natbib, včetně osvědčených postupů a nástrojů, jako je CiteDrive pro správu webových odkazů."
 ---
+
 import CiteDrive from '@components/CiteDrive.astro';
 
-Existuje několik způsobů, jak citovat webové stránky v LaTeX. V této krátké odpovědi na otázku uvádíme tři způsoby, přičemž nejjednodušší je BibLaTeX pomocí rozšíření prohlížeče CiteDrive v posledním příkladu.
+Citování webových stránek v LaTeXu lze provést několika způsoby v závislosti na použitém stylu bibliografie. V tomto průvodci pokrýváme tři nejběžnější přístupy: pomocí **BibTeX**, **BibLaTeX** a **natbib**. Nejjednodušší a nejefektivnější způsob doporučujeme přes **CiteDrive**, který automaticky vytváří a spravuje citace ve správném formátu.
 
-<CiteDrive />
+---
+
+## 📌 Nejjednodušší způsob: Citace webové stránky v LaTeXu pomocí CiteDrive
+
+{/*<CiteDrive />*/}
 
 :::tip
-[CiteDrive](https://www.citedrive.com/) je kolaborativní online nástroj pro správu referencí založený na BibTeX, který se automaticky synchronizuje s publikačními systémy jako [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf) a [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619). Nabízejí [rozšíření prohlížeče](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370), které vám umožňuje ukládat akademické články přímo z prohlížeče v správném formátu BibTeX, takže je můžete například citovat přímo v projektu Overleaf, aniž byste museli přepínat mezi okny nebo záložkami prohlížeče. Rozšíření také může ukládat webové stránky ve formátu BibLaTeX, automaticky zachycující název, URL a datum přístupu.
+[CiteDrive](https://www.citedrive.com/) je webový správce citací pro BibTeX a BibLaTeX, který se synchronizuje s [Overleaf](https://www.overleaf.com/blog/citedrive-easy-reference-management-for-overleaf), [RStudio](https://citedrive.medium.com/bibliography-management-in-r-markdown-with-citedrive-and-rstudio-2585699dd619) a dalšími nástroji.
+
+Jeho [rozšíření prohlížeče](https://citedrive.medium.com/the-citedrive-companion-for-overleaf-and-rstudio-d8022adb9370) umožňuje ukládat citace z akademických webů a stránek přímo do vaší BibTeX nebo BibLaTeX knihovny — včetně názvu, autora, URL a data přístupu.
 :::
 
-## Použití BibTeX
+<iframe width="560" height="515" src="https://www.youtube.com/embed/-ewRaEWGsGQ?si=bsVvnAuY3h9HnyNn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-V BibTeX používáme `@misc` jako workaround a využíváme pole `note` pro specifikaci URL a obvykle i data přístupu. V tomto příkladu je `url` (*nebo `hyperref`*) požadováno s použitím `usepackage{url}`.
+---
 
-```latex
+## 📚 Metoda 1: Citace webové stránky pomocí BibTeX
+
+Pokud používáte klasický **BibTeX**, pro webové zdroje se běžně používá typ záznamu `@misc`. URL a datum přístupu lze zadat do pole `note` nebo `howpublished`. Pro zobrazení klikacích odkazů přidejte do preambule `\usepackage{url}`.
+
+**Příklad s `note`:**
+
+```bibtex
 @misc{CiteDrive2022,
-	title        = {CiteDrive přináší správu referencí do Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	note         = {\url{https://www.citedrive.com/overleaf} [Přístup: (Použijte datum přístupu)]}
+  title        = {CiteDrive brings reference management to Overleaf},
+  author       = {CiteDrive, Inc},
+  year         = 2022,
+  note         = {\url{https://www.citedrive.com/overleaf} [Accessed: 2025-05-29]}
+}
+````
+
+**Příklad s `howpublished`:**
+
+```bibtex
+@misc{CiteDrive2022,
+  title        = {CiteDrive brings reference management to Overleaf},
+  author       = {CiteDrive, Inc},
+  year         = 2022,
+  howpublished = {\url{https://www.citedrive.com/overleaf}},
+  note         = {Accessed: 2025-05-29}
 }
 ```
 
-Alternativně může být použito pole `howpublished`:
+---
 
-```latex
-@misc{CiteDrive2022,
-	title        = {CiteDrive přináší správu referencí do Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	note         = {Přístup: (Použijte datum přístupu)},
-	howpublished = {\url{https://www.citedrive.com/overleaf}}
-}
-```
+## ✅ Metoda 2: Citace webové stránky pomocí BibLaTeX (doporučeno)
 
-## Použití BibLaTeX
+**BibLaTeX** zjednodušuje citování webových stránek pomocí typu záznamu `@online`, který má vestavěná pole `url` a `urldate`. Je to nejčistší a nejpřesnější způsob, jak citovat webové stránky v LaTeXu.
 
-Pokud používáte BibLaTeX, což doporučujeme, typ záznamu `@online` je inherentně podporován a funguje bez dalších úprav. URL a datum přístupu můžete zadat do polí `url` a `urldate`.
-
-```latex
+```bibtex
 @online{CiteDrive2022,
-	title        = {CiteDrive přináší správu referencí do Overleaf},
-	author       = {CiteDrive, Inc},
-	year         = 2022,
-	url          = {https://www.citedrive.com/overleaf},
-	urldate      = {Použijte datum přístupu}
+  title     = {CiteDrive brings reference management to Overleaf},
+  author    = {CiteDrive, Inc},
+  year      = 2022,
+  url       = {https://www.citedrive.com/overleaf},
+  urldate   = {2025-05-29}
 }
 ```
 
-## Použití `natbib`
+---
 
-Lidé se často ptají, jak citovat webové stránky pomocí [natbib](/natbib). Zdůrazňujeme, že to funguje stejně jako BibTeX. Natbib je nástroj pro stylování citací v textu a závisí na BibTeX jako backendu.
+## 🧾 Metoda 3: Citace webových stránek v LaTeXu pomocí `natbib`
+
+Pokud používáte **natbib**, je důležité vědět, že natbib formátuje citace v textu, ale stále se opírá o BibTeX. To znamená, že webové stránky citujete stejným způsobem jako výše — obvykle pomocí záznamu `@misc`.
+
+Citaci pak do dokumentu vložíte pomocí:
+
+```latex
+\citet{CiteDrive2022}
+```
+
+nebo
+
+```latex
+\citep{CiteDrive2022}
+```
+
+---
+
+## 🎓 Shrnutí: Nejlepší způsob citování webových stránek v LaTeXu
+
+| Metoda    | Typ záznamu | Podpora pole URL  | Doporučeno        |
+| --------- | ----------- | ----------------- | ----------------- |
+| BibTeX    | `@misc`     | Ručně (`note`)    | ✅ Dobré           |
+| BibLaTeX  | `@online`   | Vestavěná podpora | ✅✅ Nejlepší       |
+| natbib    | `@misc`     | Ručně             | ✅                 |
+| CiteDrive | Všechny     | Automatická       | ✅✅✅ Nejjednodušší |
+
+Pro akademické uživatele, kteří často citují webové stránky, je kombinace **BibLaTeX + CiteDrive** nejefektivnější, nejpřesnější a nejmodernější řešení.
+
