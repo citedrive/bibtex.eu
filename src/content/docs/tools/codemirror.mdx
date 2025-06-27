@@ -1,0 +1,19 @@
+---
+title: "Codemirro"
+description: "..."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+<CiteDrive />
+
+```js
+import {EditorView, basicSetup} from "codemirror"
+import {bibtex} from "lang-bibtex"
+
+const view = new EditorView({
+  parent: document.body,
+  doc: `fmt.Println("hello world")`,
+  extensions: [basicSetup, bibtex()]
+})
+```
