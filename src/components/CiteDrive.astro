@@ -5,106 +5,143 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<div id="modal-overlay" class="modal-overlay hidden">
-	<div class="modal-content styled-div">
-		<button class="modal-close" onclick="closeModal()">×</button>
-		<h2 set:html={t('SMALL_BANNER_H2')} />
-
-		<ul class="features-list">
-			<li>{t('SMALL_BANNER_LI_1')}</li>
-			<li>{t('SMALL_BANNER_LI_2')}</li>
-			<li set:html={t('SMALL_BANNER_LI_3')} />
-			<li set:html={t('SMALL_BANNER_LI_4')} />
-			<li>{t('SMALL_BANNER_LI_5')}</li>
-			<li>{t('SMALL_BANNER_LI_6')}</li>
-		</ul>
-
-		<div class="button-row">
-			<a href={`https://www.citedrive.com/${lang}/`} class="cta-button">{t('SMALL_BANNER_BUTTON')}</a>
-		
-		</div>
-	</div>
+<div id="modal-banner" class="modal-banner hidden" role="dialog" aria-modal="true" aria-label="Important banner">
+  <div class="modal-content styled-div">
+    <button class="modal-close" aria-label="Close banner" onclick="closeModal()">×</button>
+    <h2>{t('SMALL_BANNER_H2')}</h2>
+    <p>{t('SMALL_BANNER_H3')}</p>
+    <div class="button-row">
+      <a href={`https://www.citedrive.com/${lang}/`} class="cta-button">
+        {t('SMALL_BANNER_BUTTON')}
+      </a>
+    </div>
+  </div>
 </div>
 
 <script is:inline>
-	setTimeout(() => {
-		const modal = document.getElementById('modal-overlay')
-		if (modal) {
-			modal.classList.remove('hidden')
-		}
-	}, 500)
+	document.body.appendChild(document.getElementById('modal-banner'));
 
-	function closeModal() {
-		document.getElementById('modal-overlay')?.classList.add('hidden')
-	}
+  setTimeout(() => {
+    const banner = document.getElementById('modal-banner');
+    if (banner) {
+      banner.classList.remove('hidden');
+      banner.classList.add('fade-in');
+    }
+  }, 500);
+
+  function closeModal() {
+    const banner = document.getElementById('modal-banner');
+    if (banner) {
+      banner.classList.add('hidden');
+      banner.classList.remove('fade-in');
+    }
+  }
 </script>
 
 <style is:inline>
-	.modal-overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+  .modal-banner {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 700px;
+    z-index: 2000;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: auto;
+  }
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		z-index: 1000;
-	}
-	.modal-overlay.hidden {
-		display: none;
-	}
+  .modal-banner.hidden {
+    display: none;
+  }
 
-	.modal-content {
-		color: black;
-		padding: 2rem;
-		margin: 1rem;
-		border: 1px solid #000;
-		border-radius: 1rem;
-		background: white;
-		position: relative;
-		max-width: 700px;
-		width: 90%;
-	}
+  .modal-banner.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
 
-	.modal-content h2 {
-		color: black;
-	}
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
 
-	.modal-close {
-		position: absolute;
-		top: 10px;
-		right: 20px;
-		font-size: 24px;
-		background: none;
-		border: none;
-		color: black;
-		cursor: pointer;
-	}
-	.modal-close:hover {
-		color: #ccc;
-	}
+  .modal-content {
+    background: linear-gradient(
+      17deg,
+      rgba(21, 186, 89, 1) 5%,
+      rgba(122, 215, 171, 1) 19%,
+      rgba(168, 224, 178, 1) 35%,
+      rgba(222, 224, 168, 1) 49%,
+      rgba(168, 224, 178, 1) 58%,
+      rgba(122, 215, 171, 1) 83%,
+      rgba(21, 186, 89, 1) 100%
+    );
+    color: black !important;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+  }
 
-	.button-row {
-		display: flex;
-		gap: 1rem;
-		flex-wrap: wrap;
-		margin-top: 2rem;
-	}
+  .modal-content *,
+  .modal-content a,
+  .modal-content button {
+    color: black !important;
+  }
 
-	.cta-button,
-	.cta-button-demo {
-		display: block;
-		text-decoration: none;
-		color: #fff!important;
-		background-color: black;
-		font-weight: 600;
-		border-radius: 32px;
-		line-height: 1;
-		padding: 16px;
-		transition: 0.5s;
-		width: fit-content;
+  .modal-content h2 {
+    margin-bottom: 0.75rem;
+  }
 
-	}
+  .modal-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: black !important;
+    cursor: pointer;
+  }
+
+  .modal-close:hover {
+    color: #555;
+  }
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cta-button {
+    text-decoration: none;
+    color: black !important;
+    background-color: transparent;
+    border: 2px solid black;
+    font-weight: 600;
+    border-radius: 32px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: black;
+    color: white !important;
+  }
 </style>
