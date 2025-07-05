@@ -339,14 +339,8 @@ export default defineConfig({
         label: '🔗 CiteDrive',
         link: 'https://www.citedrive.com/en/'
       }, {
-        label: '🔗 Datanautes',
-        link: 'https://datanautes.com/en/'
-      }, {
-        label: '🔗 R Markdown',
-        link: 'https://rmarkdown.net/'
-      }, {
-        label: '🔗 BehaviorCloud',
-        link: 'https://www.behaviorcloud.com/en/'
+        label: '🔗 BibLaTeX',
+        link: 'https://biblatex.org/'
       }]
     }]
   }), sitemap(), react()]
