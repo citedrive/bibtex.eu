@@ -9,7 +9,7 @@ import CiteDrive from '@components/CiteDrive.astro';
 BibTeX ist ein Referenzmanagementsystem, das zur Formatierung von Referenzlisten in einem Dokument verwendet wird. Es ist in der akademischen Literatur weit verbreitet, insbesondere in den Bereichen Wissenschaft und Technik. In dieser Anleitung stellen wir Ihnen den Eintragstyp `conference` in BibTeX vor und zeigen Ihnen, wie Sie ihn in Ihren LaTeX-Dokumenten verwenden können.
 <CiteDrive/>
 
-## Der Eintragstyp `conferenz`
+## Der Eintragstyp `conference`
 
 Der Eintragstyp "Konferenz" wird verwendet, um auf Beiträge zu verweisen, die in Konferenzbänden veröffentlicht werden. Die erforderlichen Felder für einen "Conference"-Eintrag sind
 
@@ -40,19 +40,19 @@ Hier ist ein Beispiel für einen `conferenz`-Eintrag:
 	year = 2022,
 	month = {Juni},
 	booktitle = {Proceedings of the Annual Conference on Climate Change},
-	Herausgeber = {Springer},
-	Adresse = {Los Angeles, CA},
-	Seiten = {55--62},
+	publisher = {Springer},
+	address = {Los Angeles, CA},
+	pages = {55--62},
 	note = {Dies ist ein Beispieleintrag für einen Beitrag in einem Konferenzband},
-	Herausgeber = {Bob Johnson},
-	organisation = {Climate Change Association}
+	editor = {Bob Johnson},
+	organization = {Climate Change Association}
 }
 
 ```
 
-## Verwendung des Eintragstyps `conferenz` in LaTeX
+## Verwendung des Eintragstyps `conference` in LaTeX
 
-Sobald Sie einen `conferenz`-Eintrag in Ihrer BibTeX-Datei erstellt haben, können Sie in Ihrem LaTeX-Dokument mit dem Befehl "cite" darauf verweisen. Zum Beispiel:
+Sobald Sie einen `conference`-Eintrag in Ihrer BibTeX-Datei erstellt haben, können Sie in Ihrem LaTeX-Dokument mit dem Befehl "cite" darauf verweisen. Zum Beispiel:
 
 ```latex
 \documentclass{article}  
