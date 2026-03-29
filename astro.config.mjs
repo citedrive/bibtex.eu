@@ -23,10 +23,10 @@ export default defineConfig({
       dark: './src/assets/images/logo_dark.svg',
       replacesTitle: true
     },
-    social: {
-      github: 'https://github.com/citedrive/bibtex.eu',
-      twitter: 'https://twitter.com/bibtex_eu '
-    },
+    social: [
+      { icon: 'github', label: 'GitHub', href: 'https://github.com/citedrive/bibtex.eu' },
+      { icon: 'x.com', label: 'Twitter', href: 'https://twitter.com/bibtex_eu' },
+    ],
     defaultLocale: 'root',
     editLink: {
       baseUrl: 'https://github.com/citedrive/bibtex.eu/edit/main/'
