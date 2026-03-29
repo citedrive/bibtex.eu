@@ -1,0 +1,57 @@
+---
+title: "BibTeX 스타일 dk-abbrv: LaTeX 인용·참고문헌과 Overleaf"
+description: "**dk-abbrv**(.bst) 스타일이 LaTeX에서 인용과 참고문헌을 어떻게 구성하는지 안내합니다. Overleaf 설정, BibTeX 예제, Overleaf 프로젝트용 BibTeX·BibLaTeX 관리를 위한 CiteDrive."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## **dk-abbrv** 스타일의 일반적인 사용
+
+**dk-abbrv** 스타일은 BibTeX `.bst` 파일로 제공됩니다. `.bib` 데이터베이스와 함께 사용할 때 참고문헌의 정렬·라벨·부호를 정합니다. 아래에서는 BibTeX 스타일 개요, **Overleaf**에서 **dk-abbrv** 사용법, **CiteDrive**로 BibTeX·BibLaTeX을 Overleaf와 맞추는 방법을 다룹니다.
+
+BibTeX는 LaTeX 문서에서 참고 문헌 목록을 생성하는 강력한 도구입니다. 가장 널리 사용되는 참고 문헌 도구 중 하나로서 다양한 참고 문헌 스타일과 인용 형식을 지원합니다.
+
+Overleaf는 현재 BibTeX와 호환되는 모든 참고 문헌 스타일을 지원하지는 않지만 많은 참고 문헌 스타일이 BibTeX 참고 문헌 스타일 라이브러리에 포함되어 있습니다. 이러한 참고 문헌 스타일에는 APA, IEEE, CSE, Chicago 인용 형식이 포함됩니다. 또한 사용자가 직접 BibTeX 참고 문헌 형식 파일을 생성하거나 다른 소스에서 가져올 수도 있습니다.
+
+BibTeX를 혼자 사용하거나 Overleaf를 통해 사용하는 경우, 과학 기술 문서에서 참고 문헌을 생성하는 데 필수적인 도구입니다. BibTeX와 Overleaf를 사용한 참고 문헌 관리에 대해 자세히 알아보려면 bibtex.eu를 방문하거나 저희 문서를 참조하세요!
+
+## Overleaf에서 **dk-abbrv** 스타일 사용하기
+
+Overleaf에서 **dk-abbrv** BibTeX 참고 문헌 스타일을 사용할 수 있나요?
+
+그렇습니다! **dk-abbrv** 참고 문헌 스타일은 Overleaf에 내장된 많은 스타일 중 하나입니다. tex 문서에서 **`\bibliographystyle{dk-abbrv}`**을 입력하거나 Overleaf에서 새 문서를 위한 다음 예를 사용하여 이 스타일을 사용하세요:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{dk-abbrv 참고 문헌 스타일을 사용하는 BibTeX 참조의 LaTeX 예시.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  최근 연구에 따르면 LaTeX는 학술 문서를 생성하는 데 탁월한 도구라고 합니다 \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{dk-abbrv} % 여기에 dk-abbrv.bst를 로드하세요
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: Overleaf용 BibTeX·BibLaTeX 관리
+
+**CiteDrive**는 **Overleaf**를 쓰는 LaTeX 저자를 위한 도구입니다. `.bib` 파일과 프로젝트를 한곳에서 관리하고, 참고문헌을 협업하며, **BibTeX**(**dk-abbrv** 등 `.bst`) 또는 **BibLaTeX**로 인용을 일관되게 유지할 수 있습니다. 이어지는 내용은 문헌 워크플로를 Overleaf와 연결합니다.
+
+### Overleaf와 연동하여 BibTeX 참조를 관리할 수 있는 협업 온라인 도구를 찾고 계신가요?
+
+Overleaf에서 참조 문헌, 인용, 참고 문헌 목록을 관리하는 데 도움이 될 온라인 도구를 찾고 있다면, CiteDrive가 완벽할 수 있습니다! 프로젝트 내의 팀과 참조를 수집 및 조직하면서 Overleaf 프로젝트 내의 BibTeX 항목을 최신 상태로 유지할 수 있습니다.
+
+또한 CiteDrive를 사용하여 dk-abbrv를 포함한 다양한 스타일의 참고 문헌 목록과 인용문을 작성할 수 있습니다. 따라서 Overleaf에서 참고 문헌을 쉽게 관리하고 싶다면 오늘 CiteDrive를 시도해 보세요!
+
+이 방법에 대한 자세한 정보는 저희 온라인 도움말 문서에서 찾을 수 있습니다.
+
+<CiteDrive />

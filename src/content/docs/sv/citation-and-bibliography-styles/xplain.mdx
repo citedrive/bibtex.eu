@@ -1,0 +1,57 @@
+---
+title: "BibTeX-stil xplain: citat, referenser och Overleaf"
+description: "Lär dig hur stilen **xplain** (.bst) formaterar citat och bibliografi i LaTeX. Overleaf-guide, BibTeX-exempel och CiteDrive för BibTeX och BibLaTeX med Overleaf-projekt."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Allmän användning av stilen **xplain**
+
+Stilen **xplain** implementeras som en BibTeX-`.bst`-fil. Den styr sortering, etiketter och interpunktion i din bibliografi när du använder den med en `.bib`-databas. Nedan följer en kort översikt av BibTeX-stilar, sedan hur du använder **xplain** i **Overleaf** och hur **CiteDrive** synkar BibTeX och BibLaTeX med Overleaf.
+
+BibTeX är ett kraftfullt bibliografiskt verktyg som används för att skapa bibliografier i LaTeX-dokument. Det är ett av de mest använda bibliografiverktygen och stöder många olika bibliografistilar och citeringsformat.
+
+Även om Overleaf för närvarande inte stöder alla bibliografistilar som är kompatibla med BibTeX, ingår många bibliografistilar i BibTeX bibliografistilbiblioteket. Dessa bibliografistilar inkluderar APA, IEEE, CSE och Chicagociteringsformat. Du kan också använda anpassade bibliografistilar genom att skapa din egen bibtex bibliografi formatfil eller importera en från en annan källa.
+
+Oavsett om du använder BibTeX på egen hand eller genom Overleaf är det ett nödvändigt verktyg för att skapa bibliografier i vetenskapliga och tekniska dokument. För att lära dig mer om bibliografihantering med bibtex och Overleaf, besök bibtex.eu eller vår dokumentation!
+
+## Använda stilen **xplain** på Overleaf
+
+Kan du använda **xplain** BibTeX bibliografistil i Overleaf?
+
+Svaret är ja! **xplain** bibliografistilen är en av många inbyggda stilar i Overleaf. Använd denna stil genom att skriva **`\bibliographystyle{xplain}`** i ditt tex-dokument, eller använd följande exempel för ett nytt dokument på Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Ett LaTeX-exempel på BibTeX-referenser som använder xplain bibliografistilen.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Nya studier har visat att LaTeX är ett utmärkt verktyg för att skapa vetenskapliga dokument \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{xplain} % här laddar du xplain.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: hantera BibTeX och BibLaTeX för Overleaf
+
+**CiteDrive** är till för LaTeX-användare som arbetar i **Overleaf**: du hanterar `.bib`-filer och projekt på ett ställe, samarbetar om referenser och håller citat konsekventa med **BibTeX** (`.bst`-stilar som **xplain**) eller **BibLaTeX**. Följande text kopplar ditt biblioteksarbetsflöde till Overleaf.
+
+### Letar du efter ett samarbetsverktyg online för att hantera dina BibTeX-referenser, som kopplar till Overleaf?
+
+Om du letar efter ett onlineverktyg för att hjälpa dig hantera dina referenser, citationer och bibliografi i Overleaf, kan CiteDrive vara perfekt! Det låter dig samla och organisera team och referenser i projekt samtidigt som du håller dina BibTeX-poster uppdaterade i ditt Overleaf-projekt.
+
+Du kan också använda CiteDrive för att skapa bibliografier och citationer i olika stilar, inklusive xplain. Så om du letar efter ett enkelt sätt att hantera din bibliografi i Overleaf, prova CiteDrive idag!
+
+Mer information om hur du gör detta finns i vår onlinehjälpdokumentation.
+
+<CiteDrive />

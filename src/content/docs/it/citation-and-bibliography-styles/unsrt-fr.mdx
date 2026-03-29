@@ -1,0 +1,57 @@
+---
+title: "Stile BibTeX unsrt-fr: citazioni, riferimenti e Overleaf"
+description: "Scopri come lo stile **unsrt-fr** (.bst) formatta citazioni e bibliografia in LaTeX. Guida Overleaf, esempio BibTeX e CiteDrive per gestire BibTeX e BibLaTeX con progetti Overleaf."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Uso generale dello stile **unsrt-fr**
+
+Lo stile **unsrt-fr** è un file BibTeX `.bst`: definisce ordinamento, etichette e punteggiatura della bibliografia insieme a un database `.bib`. Di seguito una sintesi degli stili BibTeX, poi l’uso di **unsrt-fr** in **Overleaf** e come **CiteDrive** collega BibTeX e BibLaTeX a Overleaf.
+
+BibTeX è uno strumento bibliografico potente utilizzato per creare bibliografie nei documenti LaTeX. È uno degli strumenti bibliografici più utilizzati e supporta molti diversi stili bibliografici e formati di citazione.
+
+Sebbene Overleaf non supporti attualmente tutti gli stili bibliografici compatibili con BibTeX, molti stili bibliografici sono inclusi nella libreria di stili bibliografici BibTeX. Questi stili bibliografici includono i formati di citazione APA, IEEE, CSE e Chicago. È anche possibile utilizzare stili bibliografici personalizzati creando il proprio file di formato bibliografico BibTeX o importandone uno da un'altra fonte.
+
+Che tu stia usando BibTeX da solo o tramite Overleaf, è uno strumento essenziale per creare bibliografie in documenti scientifici e tecnici. Per saperne di più sulla gestione delle bibliografie con BibTeX e Overleaf, visita bibtex.eu o consulta la nostra documentazione!
+
+## Usare lo stile **unsrt-fr** su Overleaf
+
+È possibile utilizzare lo stile bibliografico **unsrt-fr** BibTeX in Overleaf?
+
+La risposta è sì! Lo stile bibliografico **unsrt-fr** è uno dei molti stili integrati in Overleaf. Utilizza questo stile digitando **`\bibliographystyle{unsrt-fr}`** nel tuo documento tex, oppure utilizza il seguente esempio per un nuovo documento su Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Un esempio LaTeX di riferimenti BibTeX utilizzando lo stile bibliografico unsrt-fr.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Studi recenti hanno dimostrato che LaTeX è uno strumento eccellente per la creazione di documenti accademici \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{unsrt-fr} % carica qui unsrt-fr.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: BibTeX e BibLaTeX per Overleaf
+
+**CiteDrive** è pensato per chi scrive in LaTeX con **Overleaf**: gestisci `.bib` e progetti in un unico posto, collabori sui riferimenti e mantieni citazioni coerenti con **BibTeX** (stili `.bst` come **unsrt-fr**) o **BibLaTeX**. Il testo seguente collega il flusso bibliografico a Overleaf.
+
+### Stai cercando uno strumento collaborativo online per gestire i tuoi riferimenti BibTeX, che si connetta a Overleaf?
+
+Se cerchi uno strumento online che ti aiuti a gestire i tuoi riferimenti, citazioni e bibliografia su Overleaf, CiteDrive potrebbe essere perfetto! Ti permette di raccogliere e organizzare squadre e riferimenti in progetti mantenendo aggiornate le tue voci BibTeX nel tuo progetto Overleaf.
+
+Puoi anche utilizzare CiteDrive per creare bibliografie e citazioni in vari stili, incluso unsrt-fr. Quindi, se stai cercando un modo semplice per gestire la tua bibliografia su Overleaf, prova CiteDrive oggi stesso!
+
+Puoi trovare maggiori informazioni su come fare ciò nella nostra documentazione di aiuto online.
+
+<CiteDrive />

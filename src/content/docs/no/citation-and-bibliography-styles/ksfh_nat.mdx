@@ -1,0 +1,57 @@
+---
+title: "BibTeX-stil ksfh_nat: sitater, referanser og Overleaf"
+description: "Lær hvordan **ksfh_nat** (.bst) formaterer sitater og bibliografi i LaTeX. Overleaf-veiledning, BibTeX-eksempel og CiteDrive for BibTeX og BibLaTeX med Overleaf-prosjekter."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Generell bruk av stilen **ksfh_nat**
+
+Stilen **ksfh_nat** leveres som en BibTeX `.bst`-fil. Den styrer sortering, etiketter og tegnsetting i bibliografien sammen med en `.bib`-database. Nedenfor følger et kort overblikk over BibTeX-stiler, deretter **ksfh_nat** i **Overleaf** og hvordan **CiteDrive** kobler BibTeX og BibLaTeX til Overleaf.
+
+BibTeX er et kraftig bibliografisk verktøy som brukes for å opprette bibliografier i LaTeX-dokumenter. Det er et av de mest brukte bibliografiverktøyene og støtter mange forskjellige bibliografistiler og siteringsformater.
+
+Selv om Overleaf for øyeblikket ikke støtter alle bibliografistiler som er kompatible med BibTeX, er mange bibliografistiler inkludert i BibTeX bibliografistilbiblioteket. Disse bibliografistilene inkluderer APA, IEEE, CSE og Chicago siteringsformater. Du kan også bruke tilpassede bibliografistiler ved å lage din egen BibTeX bibliografiformatfil eller importere en fra en annen kilde.
+
+Enten du bruker BibTeX på egen hånd eller gjennom Overleaf, er det et essensielt verktøy for å lage bibliografier i vitenskapelige og tekniske dokumenter. For å lære mer om bibliografiforvaltning med BibTeX og Overleaf, besøk bibtex.eu eller våre dokumenter!
+
+## Bruke stilen **ksfh_nat** på Overleaf
+
+Kan du bruke **ksfh_nat** BibTeX bibliografistil i Overleaf?
+
+Svaret er ja! **ksfh_nat** bibliografistil er en av mange innebygde stiler i Overleaf. Bruk denne stilen ved å skrive **`\bibliographystyle{ksfh_nat}`** i ditt tex-dokument, eller bruk følgende eksempel for et nytt dokument på Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Et LaTeX-eksempel på BibTeX-referanser som bruker ksfh_nat bibliografistilen.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Nylige studier har vist at LaTeX er et utmerket verktøy for å opprette akademiske dokumenter \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{ksfh_nat} % last her ksfh_nat.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: administrer BibTeX og BibLaTeX for Overleaf
+
+**CiteDrive** er for LaTeX-brukere på **Overleaf**: du administrerer `.bib`-filer og prosjekter på ett sted, samarbeider om referanser og holder sitater konsistente med **BibTeX** (`.bst`-stiler som **ksfh_nat**) eller **BibLaTeX**. Det følgende binder arbeidsflyten din til Overleaf.
+
+### Leter du etter et samarbeidsbasert nettverktøy for å håndtere din BibTeX-referanse, som kobles til Overleaf?
+
+Hvis du ser etter et nettbasert verktøy for å hjelpe deg med å håndtere dine referanser, siteringer og bibliografi i Overleaf, kan CiteDrive være perfekt! Det lar deg samle og organisere team og referanser i prosjekter mens du holder dine BibTeX-oppføringer oppdatert i ditt Overleaf-prosjekt.
+
+Du kan også bruke CiteDrive til å opprette bibliografier og siteringer i ulike stiler, inkludert ksfh_nat. Så hvis du ser etter en enkel måte å håndtere din bibliografi i Overleaf, prøv CiteDrive i dag!
+
+Du kan finne mer informasjon om hvordan du gjør dette i vår nettbaserte hjelpedokumentasjon.
+
+<CiteDrive />

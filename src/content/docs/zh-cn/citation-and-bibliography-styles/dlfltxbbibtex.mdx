@@ -1,0 +1,57 @@
+---
+title: "BibTeX 样式 dlfltxbbibtex：LaTeX 引用、参考文献与 Overleaf"
+description: "了解 **dlfltxbbibtex**（.bst）如何在 LaTeX 中排版引用与参考文献。Overleaf 设置步骤、BibTeX 示例，以及使用 CiteDrive 在 Overleaf 项目中管理 BibTeX 与 BibLaTeX。"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## **dlfltxbbibtex** 样式的一般用法
+
+**dlfltxbbibtex** 样式由 BibTeX `.bst` 文件实现，决定与 `.bib` 数据库配合时参考文献的排序、标签与标点。下文先概述 BibTeX 样式原理，再说明如何在 **Overleaf** 中使用 **dlfltxbbibtex**，以及 **CiteDrive** 如何将 BibTeX/BibLaTeX 与 Overleaf 同步。
+
+BibTeX是一个强大的文献编目工具，用于在LaTeX文档中创建参考文献。它是最广泛使用的参考文献工具之一，支持多种不同的参考文献样式和引用格式。
+
+虽然Overleaf目前不支持所有与BibTeX兼容的参考文献样式，但许多参考文献样式都包含在bibtex参考文献样式库中。这些参考文献样式包括APA、IEEE、CSE和Chicago引用格式。你也可以通过创建你的bibtex参考文献格式文件或从其他来源导入来使用自定义的参考文献样式。
+
+无论是独立使用BibTeX还是通过Overleaf使用，它都是创建科学和技术文档中参考文献的必备工具。要了解更多关于BibTeX和Overleaf的参考文献管理信息，请访问bibtex.eu或查看我们的文档！
+
+## 在 Overleaf 中使用 **dlfltxbbibtex** 样式
+
+你能在Overleaf中使用**dlfltxbbibtex** BibTeX参考文献样式吗？
+
+答案是肯定的！**dlfltxbbibtex** 参考文献样式是Overleaf内置的众多样式之一。通过在你的tex文档中输入**`\bibliographystyle{dlfltxbbibtex}`**来使用这种样式，或者使用以下示例为Overleaf上的新文档：
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{使用dlfltxbbibtex 参考文献样式的BibTeX引用的LaTeX示例。}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  最近的研究表明，LaTeX是创建学术性文档的一个优秀工具 \cite{Smith2023}。
+
+  \medskip
+
+  \bibliographystyle{dlfltxbbibtex} % 这里加载dlfltxbbibtex.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive：为 Overleaf 管理 BibTeX 与 BibLaTeX
+
+**CiteDrive** 面向使用 **Overleaf** 的 LaTeX 用户：在一处管理 `.bib` 文件与项目、协作维护参考文献，并在 **BibTeX**（如 **dlfltxbbibtex** 等 `.bst` 样式）或 **BibLaTeX** 下保持引用一致。以下内容将文献工作流与 Overleaf 衔接起来。
+
+### 你在寻找一个合作在线工具来管理你的BibTeX参考文献，并且可以连接到Overleaf吗？
+
+如果你在寻找一个在线工具来帮助你在Overleaf中管理你的参考文献、引用和参考文献列表，CiteDrive可能非常适合你！它允许你在项目中收集和组织团队和参考文献，同时保持你在Overleaf项目中的BibTeX条目是最新的。
+
+你也可以使用CiteDrive以各种样式创建参考文献和引用，包括dlfltxbbibtex。因此，如果你在寻找一种简单的方法来管理Overleaf中的参考文献，今天就试试CiteDrive吧！
+
+你可以在我们的在线帮助文档中找到更多关于如何做到这一点的信息。
+
+<CiteDrive />

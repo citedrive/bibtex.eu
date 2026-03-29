@@ -1,0 +1,57 @@
+---
+title: "BibTeX stili gost2003: alıntılar, kaynakça ve Overleaf"
+description: "**gost2003** (.bst) stilinin LaTeX'te alıntı ve kaynakçayı nasıl biçimlendirdiğini öğrenin. Overleaf kurulumu, BibTeX örneği ve Overleaf projeleri için BibTeX ve BibLaTeX yönetiminde CiteDrive."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## **gost2003** stilinin genel kullanımı
+
+**gost2003** stili bir BibTeX `.bst` dosyası olarak gelir. Bir `.bib` veritabanıyla kullanıldığında kaynak listenizin sıralanmasını, etiketlerini ve noktalamasını belirler. Aşağıda önce BibTeX stillerinin genel çalışması, ardından **Overleaf**'te **gost2003** kullanımı ve **CiteDrive**'ın BibTeX ve BibLaTeX'i Overleaf ile nasıl eşlediği özetlenir.
+
+BibTeX, LaTeX belgelerinde kaynakçalar oluşturmak için kullanılan güçlü bir bibliyografik araçtır. Birçok farklı kaynakça stili ve alıntı formatını destekleyen en yaygın kullanılan bibliyografik araçlardan biridir.
+
+Overleaf şu anda BibTeX ile uyumlu tüm kaynakça stillerini desteklemese de, birçok kaynakça stili BibTeX kaynakça stil kütüphanesinde yer almaktadır. Bu kaynakça stilleri arasında APA, IEEE, CSE ve Chicago alıntı formatları bulunmaktadır. Ayrıca, kendi bibtex kaynakça format dosyanızı oluşturarak veya başka bir kaynaktan birini içe aktararak özel kaynakça stilleri de kullanabilirsiniz.
+
+BibTeX'i kendi başınıza veya Overleaf aracılığıyla kullanıyor olmanız fark etmeksizin, bilimsel ve teknik belgelerde kaynakçalar oluşturmak için vazgeçilmez bir araçtır. bibtex ve Overleaf ile kaynakça yönetimi hakkında daha fazla bilgi için bibtex.eu adresini ziyaret edin veya dokümanlarımıza göz atın!
+
+## Overleaf'te **gost2003** stilini kullanmak
+
+Overleaf'de **gost2003** BibTeX kaynakça stilini kullanabilir misiniz?
+
+Cevap evet! Overleaf'de yerleşik birçok stil arasında **gost2003** kaynakça stili de bulunmaktadır. Bu stili kullanmak için tex belgenizde **`\bibliographystyle{gost2003}`** yazın veya Overleaf'de yeni bir belge için aşağıdaki örneği kullanın:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{gost2003 kaynakça stilini kullanan BibTeX referanslarının LaTeX örneği.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Yapılan son çalışmalar LaTeX'in bilimsel dokümanlar yaratmak için mükemmel bir araç olduğunu göstermiştir \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{gost2003} % burada gost2003.bst yükleyin
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: Overleaf için BibTeX ve BibLaTeX yönetimi
+
+**CiteDrive**, **Overleaf** kullanan LaTeX yazarları içindir: `.bib` dosyalarını ve projeleri tek yerde yönetir, referanslarda işbirliği yapar ve **BibTeX** (**gost2003** gibi `.bst` stilleri) veya **BibLaTeX** ile tutarlı alıntılar korursunuz. Aşağıdaki metin bibliyografya akışınızı Overleaf'e bağlar.
+
+### BibTeX referanslarınızı yönetmek için Overleaf ile bağlantılı bir çevrimiçi işbirliği aracı mı arıyorsunuz?
+
+Referanslarınızı, alıntılarınızı ve Overleaf'deki kaynakçanızı yönetmeye yardımcı olacak bir çevrimiçi araç arıyorsanız, CiteDrive tam size göre olabilir! Sizi Overleaf projenizdeki BibTeX girişlerini güncel tutarken projelerde ekip ve referans toplamak ve düzenlemek için olanak sağlar.
+
+CiteDrive'ı ayrıca gost2003 dahil olmak üzere farklı stillerde kaynakçalar ve alıntılar oluşturmak için de kullanabilirsiniz. Overleaf'de kaynakçanızı yönetmenin kolay bir yolunu arıyorsanız, bugün CiteDrive'ı deneyin!
+
+Bunu nasıl yapacağınıza dair daha fazla bilgiyi çevrimiçi yardım dokümanlarımızda bulabilirsiniz.
+
+<CiteDrive />

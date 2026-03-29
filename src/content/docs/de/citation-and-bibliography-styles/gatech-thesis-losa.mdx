@@ -1,0 +1,57 @@
+---
+title: "gatech-thesis-losa BibTeX-Stil: Zitate, Literatur & Overleaf"
+description: "Erfahren Sie, wie der BibTeX-Stil **gatech-thesis-losa** (.bst) Zitate und Literatur in LaTeX formatiert. Overleaf-Anleitung, BibTeX-Beispiel und CiteDrive für BibTeX und BibLaTeX mit Overleaf-Projekten."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Allgemeine Verwendung des Stils **gatech-thesis-losa**
+
+Der Stil **gatech-thesis-losa** wird über eine BibTeX-`.bst`-Datei umgesetzt. Er legt fest, wie Ihr Literaturverzeichnis sortiert, beschriftet und formatiert wird, wenn Sie ihn mit einer `.bib`-Datenbank kombinieren. Die folgenden Abschnitte fassen zusammen, wie BibTeX-Stile grundsätzlich funktionieren, wie Sie **gatech-thesis-losa** in **Overleaf** nutzen und wie **CiteDrive** BibTeX- und BibLaTeX-Projekte mit Overleaf verbindet.
+
+BibTeX ist ein mächtiges bibliografisches Werkzeug zur Erstellung von Literaturverzeichnissen in LaTeX-Dokumenten. Es ist eines der meistgenutzten Bibliografie-Tools und unterstützt viele verschiedene Bibliographiestile sowie Zitierformate.
+
+Obwohl Overleaf nicht jeden mit BibTeX kompatiblen Bibliographiestil unterstützt, sind doch viele Stile in der BibTeX-Bibliographiestilbibliothek enthalten. Diese umfassen Formate wie APA, IEEE, CSE und Chicago. Eigene Bibliographiestile können Sie ebenso nutzen, indem Sie Ihre eigene .bst-Datei erstellen oder importieren.
+
+Egal, ob Sie BibTeX alleine oder in Verbindung mit Overleaf nutzen, es ist ein unverzichtbares Werkzeug für die Erstellung von Literaturverzeichnissen in wissenschaftlichen und technischen Dokumenten. Um mehr über die Literaturverwaltung mit BibTeX und Overleaf zu erfahren, besuchen Sie bitte bibtex.eu oder unsere Dokumentation.
+
+## **gatech-thesis-losa** in Overleaf verwenden
+
+Ist es möglich, den **gatech-thesis-losa**-BibTeX-Bibliographiestil in Overleaf zu verwenden?
+
+Ja, das ist möglich! Der **gatech-thesis-losa**-Bibliographiestil gehört zu den vielen direkt in Overleaf verfügbaren Stilen. Um diesen Stil zu verwenden, geben Sie einfach **`\bibliographystyle{gatech-thesis-losa}`** in Ihrem LaTeX-Dokument ein, oder beginnen Sie mit dem folgenden Beispiel für ein neues Dokument in Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Ein LaTeX-Beispiel für BibTeX-Referenzen mit dem gatech-thesis-losa-Bibliographiestil.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Neuere Studien haben gezeigt, dass LaTeX ein hervorragendes Werkzeug zur Erstellung wissenschaftlicher Dokumente ist \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{gatech-thesis-losa} % hier laden Sie die gatech-thesis-losa.bst-Datei
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: BibTeX und BibLaTeX für Overleaf verwalten
+
+**CiteDrive** richtet sich an LaTeX-Nutzer mit **Overleaf**: Sie verwalten `.bib`-Dateien und Projekte zentral, arbeiten gemeinsam an Referenzen und halten Zitate konsistent — mit **BibTeX** (`.bst`-Stile wie **gatech-thesis-losa**) oder **BibLaTeX** (`biblatex`). Die folgenden Hinweise verbinden Ihren Literatur-Workflow mit Overleaf.
+
+### Suchen Sie ein kollaboratives Online-Werkzeug zur Verwaltung Ihrer BibTeX-Literaturangaben, das sich mit Overleaf synchronisiert?
+
+Falls Sie ein Online-Tool suchen, um Ihre Referenzen, Zitate und das Literaturverzeichnis in Overleaf zu verwalten, könnte CiteDrive genau das Richtige sein! Es ermöglicht Ihnen, Referenzen in Projekten zu sammeln und zu organisieren und Ihre BibTeX-Einträge in Ihrem Overleaf-Projekt aktuell zu halten.
+
+Mit CiteDrive können Sie auch Literaturverzeichnisse und Zitate in verschiedenen Stilen, einschließlich gatech-thesis-losa, erstellen. Wenn Sie also nach einer einfachen Möglichkeit suchen, Ihr Literaturverzeichnis in Overleaf zu verwalten, probieren Sie CiteDrive aus!
+
+Weitere Informationen hierzu finden Sie in unserer Online-Hilfedokumentation.
+
+<CiteDrive />

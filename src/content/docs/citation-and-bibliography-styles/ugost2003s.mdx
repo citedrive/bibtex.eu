@@ -1,0 +1,57 @@
+---
+title: "ugost2003s BibTeX style: LaTeX citations, references & Overleaf"
+description: "Learn how the ugost2003s .bst bibliography style formats citations and references in LaTeX. Step-by-step Overleaf setup, a ready-to-paste BibTeX example, and how CiteDrive helps you manage BibTeX and BibLaTeX for Overleaf projects."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## General use of the ugost2003s style
+
+The **ugost2003s** style is implemented as a BibTeX `.bst` file. It defines how your reference list is sorted, labeled, and punctuated when you pair it with a `.bib` database. The sections below summarize how BibTeX styles work in general, then how to use **ugost2003s** in Overleaf, and how **CiteDrive** can keep your BibTeX and BibLaTeX libraries in sync with Overleaf.
+
+BibTeX is a powerful bibliographic tool used to create bibliographies in LaTeX documents. It is one of the most widely used bibliography tools and supports many different bibliography styles and citation formats.
+
+While Overleaf does not currently support all bibliography styles compatible with BibTeX, many bibliography styles are included in the bibtex bibliography style library. These bibliography styles include APA, IEEE, CSE, and Chicago citation formats. You can also use custom bibliography styles by creating your bibtex bibliography format file or importing one from another source.
+
+Whether using BibTeX on your own or through Overleaf, it is an essential tool for creating bibliographies in scientific and technical documents. To learn more about bibliography management with bibtex and Overleaf, visit bibtex.eu or our docs!
+
+## Using the ugost2003s style on Overleaf
+
+Can you use the **ugost2003s** BibTeX bibliography style in Overleaf?
+
+The answer is yes! The **ugost2003s** bibliography style is one of many built-in styles in Overleaf. Use this style by typing **`\bibliographystyle{ugost2003s}`** in your tex-document, or use the following example for a new document on Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{A LaTeX example of BibTeX references using the ugost2003s bibliography style.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Recent studies have shown that LaTeX is an excellent tool for creating scholarly documents \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{ugost2003s} % here load ugost2003s.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: manage BibTeX and BibLaTeX for Overleaf
+
+**CiteDrive** is built for LaTeX writers who use **Overleaf**: you manage `.bib` files and projects in one place, collaborate on references, and keep citations consistent whether you rely on **BibTeX** (`.bst` styles such as **ugost2003s**) or **BibLaTeX** (`biblatex` with `.bbx`/CSL). The following tips connect your bibliography workflow to Overleaf.
+
+### Are you looking for a Collaborative Online tool to manage your BibTeX reference, which connects to Overleaf?
+
+If you're looking for an online tool to help manage your references, citations, and bibliography in Overleaf, CiteDrive may be perfect! It allows you to collect and organize teams and references in projects while keeping your BibTeX entries up to date in your Overleaf project.
+
+You can also use CiteDrive to create bibliographies and citations in various styles, including ugost2003s. So if you're looking for an easy way to manage your bibliography in Overleaf, give CiteDrive a try today!
+
+You can find more information on how to do this in our online help documentation.
+
+<CiteDrive />
