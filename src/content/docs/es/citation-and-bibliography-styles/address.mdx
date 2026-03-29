@@ -1,0 +1,57 @@
+---
+title: "Estilo BibTeX address: citas, referencias y Overleaf"
+description: "Descubre cómo el estilo **address** (.bst) formatea citas y bibliografía en LaTeX. Guía para Overleaf, ejemplo BibTeX y CiteDrive para gestionar BibTeX y BibLaTeX con proyectos Overleaf."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Uso general del estilo **address**
+
+El estilo **address** se implementa como un archivo BibTeX `.bst`. Define cómo se ordena, etiqueta y puntuación de tu bibliografía al usarlo con una base `.bib`. Las secciones siguientes resumen cómo funcionan los estilos BibTeX, cómo usar **address** en **Overleaf** y cómo **CiteDrive** ayuda a sincronizar BibTeX y BibLaTeX con Overleaf.
+
+BibTeX es una herramienta bibliográfica poderosa utilizada para crear bibliografías en documentos LaTeX. Es una de las herramientas de bibliografía más utilizadas y admite muchos estilos de bibliografía y formatos de citación diferentes.
+
+Aunque Overleaf no soporta actualmente todos los estilos de bibliografía compatibles con BibTeX, muchos estilos de bibliografía están incluidos en la biblioteca de estilos de bibliografía de BibTeX. Estos estilos de bibliografía incluyen formatos de citación APA, IEEE, CSE y Chicago. También puedes utilizar estilos de bibliografía personalizados creando tu propio archivo de formato de bibliografía bibtex o importando uno de otra fuente.
+
+Ya sea que uses BibTeX por tu cuenta o a través de Overleaf, es una herramienta esencial para crear bibliografías en documentos científicos y técnicos. Para aprender más sobre la gestión de bibliografías con bibtex y Overleaf, ¡visita bibtex.eu o nuestra documentación!
+
+## Usar el estilo **address** en Overleaf
+
+¿Puedes usar el estilo de bibliografía BibTeX **address** en Overleaf?
+
+¡La respuesta es sí! El estilo de bibliografía **address** es uno de los muchos estilos incorporados en Overleaf. Utiliza este estilo escribiendo **`\bibliographystyle{address}`** en tu documento tex, o usa el siguiente ejemplo para un documento nuevo en Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Un ejemplo en LaTeX de referencias BibTeX utilizando el estilo de bibliografía address.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Estudios recientes han demostrado que LaTeX es una excelente herramienta para crear documentos académicos \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{address} % aquí carga address.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: gestiona BibTeX y BibLaTeX para Overleaf
+
+**CiteDrive** está pensado para quienes escriben en LaTeX con **Overleaf**: administras archivos `.bib` y proyectos en un solo lugar, colaboras en referencias y mantienes citas coherentes con **BibTeX** (estilos `.bst` como **address**) o **BibLaTeX**. Lo siguiente conecta tu flujo bibliográfico con Overleaf.
+
+### ¿Buscas una herramienta colaborativa en línea para gestionar tus referencias BibTeX que se conecte con Overleaf?
+
+Si buscas una herramienta en línea que te ayude a gestionar tus referencias, citas y bibliografía en Overleaf, ¡CiteDrive puede ser perfecta! Te permite coleccionar y organizar equipos y referencias en proyectos mientras mantienes tus entradas de BibTeX actualizadas en tu proyecto de Overleaf.
+
+También puedes usar CiteDrive para crear bibliografías y citas en varios estilos, incluyendo address. Así que si buscas una manera fácil de gestionar tu bibliografía en Overleaf, ¡prueba CiteDrive hoy mismo!
+
+Puedes encontrar más información sobre cómo hacer esto en nuestra documentación de ayuda en línea.
+
+<CiteDrive />

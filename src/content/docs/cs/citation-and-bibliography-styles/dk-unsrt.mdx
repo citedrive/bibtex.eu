@@ -1,0 +1,57 @@
+---
+title: "Styl BibTeX dk-unsrt: citace, reference a Overleaf"
+description: "Naučte se, jak styl **dk-unsrt** (.bst) formátuje citace a bibliografii v LaTeXu. Návod pro Overleaf, příklad BibTeXu a CiteDrive pro správu BibTeXu a BibLaTeXu s projekty Overleaf."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Obecné použití stylu **dk-unsrt**
+
+Styl **dk-unsrt** je soubor BibTeX `.bst`. Určuje řazení, popisky a interpunkci vaší bibliografie při použití s databází `.bib`. Níže je stručný přehled stylů BibTeX, poté konkrétní použití **dk-unsrt** v **Overleaf** a jak **CiteDrive** synchronizuje BibTeX a BibLaTeX s Overleaf.
+
+BibTeX je mocný bibliografický nástroj používaný k vytváření bibliografií v LaTeX dokumentech. Je to jeden z nejpoužívanějších bibliografických nástrojů a podporuje mnoho různých stylů bibliografií a formátů citací.
+
+I když Overleaf v současnosti nepodporuje všechny styly bibliografie kompatibilní s BibTeXem, mnoho stylů bibliografie je zahrnuto v knihovně stylů bibliografie BibTeX. Tyto styly bibliografie zahrnují citační formáty APA, IEEE, CSE a Chicago. Můžete také použít vlastní styly bibliografie vytvořením svého souboru formátu bibliografie bibtex nebo importem z jiného zdroje.
+
+Ať už používáte BibTeX sami, nebo prostřednictvím Overleafu, je to zásadní nástroj pro vytváření bibliografií ve vědeckých a technických dokumentech. Chcete-li se dozvědět více o správě bibliografií s bibtexem a Overleafem, navštivte bibtex.eu nebo naši dokumentaci!
+
+## Použití stylu **dk-unsrt** v Overleafu
+
+Lze použít bibliografický styl **dk-unsrt** BibTeX v Overleafu?
+
+Odpověď zní ano! Bibliografický styl **dk-unsrt** je jeden z mnoha vestavěných stylů v Overleafu. Použijte tento styl psaním **`\bibliographystyle{dk-unsrt}`** ve vašem tex dokumentu, nebo použijte následující příklad pro nový dokument na Overleafu:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{LaTeXový příklad referencí BibTeX používající bibliografický styl dk-unsrt.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Nedávné studie ukázaly, že LaTeX je vynikajícím nástrojem pro tvorbu odborných dokumentů \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{dk-unsrt} % zde načtěte dk-unsrt.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: správa BibTeXu a BibLaTeXu pro Overleaf
+
+**CiteDrive** je určen pro autory v **Overleaf**: spravujete `.bib` soubory a projekty na jednom místě, spolupracujete na referencích a udržujete konzistentní citace s **BibTeXem** (styly `.bst` jako **dk-unsrt**) nebo **BibLaTeXem**. Následující text propojuje váš bibliografický postup s Overleaf.
+
+### Hledáte spolupracující online nástroj pro správu vašich BibTeX referencí, který je kompatibilní s Overleafem?
+
+Pokud hledáte online nástroj, který vám pomůže spravovat vaše reference, citace a bibliografii v Overleafu, CiteDrive může být dokonalý! Umožňuje vám shromažďovat a organizovat týmy a reference v projektech, zatímco udržuje vaše položky BibTeX aktuální ve vašem projektu Overleafu.
+
+CiteDrive můžete také použít k vytváření bibliografií a citací v různých stylech, včetně dk-unsrt. Pokud tedy hledáte snadný způsob, jak spravovat vaši bibliografii v Overleafu, vyzkoušejte dnes CiteDrive!
+
+Více informací o tom, jak to udělat, najdete v naší online dokumentaci.
+
+<CiteDrive />

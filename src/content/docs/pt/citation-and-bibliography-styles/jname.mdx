@@ -1,0 +1,57 @@
+---
+title: "Estilo BibTeX jname: citações, referências e Overleaf"
+description: "Saiba como o estilo **jname** (.bst) formata citações e bibliografia em LaTeX. Guia Overleaf, exemplo BibTeX e CiteDrive para gerir BibTeX e BibLaTeX com projetos Overleaf."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Uso geral do estilo **jname**
+
+O estilo **jname** é um ficheiro BibTeX `.bst`. Define a ordenação, rótulos e pontuação da sua bibliografia quando usado com uma base `.bib`. Abaixo há um resumo dos estilos BibTeX, depois como usar **jname** no **Overleaf** e como o **CiteDrive** alinha BibTeX e BibLaTeX com o Overleaf.
+
+O BibTeX é uma ferramenta bibliográfica poderosa usada para criar bibliografias em documentos LaTeX. É uma das ferramentas bibliográficas mais utilizadas e suporta muitos estilos de bibliografia e formatos de citação diferentes.
+
+Embora o Overleaf atualmente não suporte todos os estilos de bibliografia compatíveis com o BibTeX, muitos estilos de bibliografia estão incluídos na biblioteca de estilos de bibliografia BibTeX. Esses estilos de bibliografia incluem formatos de citação APA, IEEE, CSE e Chicago. Você também pode usar estilos de bibliografia personalizados criando seu próprio arquivo de formato de bibliografia bibtex ou importando um de outra fonte.
+
+Seja usando BibTeX por conta própria ou através do Overleaf, é uma ferramenta essencial para criar bibliografias em documentos científicos e técnicos. Para saber mais sobre gerenciamento de bibliografias com bibtex e Overleaf, visite bibtex.eu ou nossa documentação!
+
+## Usar o estilo **jname** no Overleaf
+
+É possível utilizar o estilo de bibliografia **jname** BibTeX no Overleaf?
+
+A resposta é sim! O estilo de bibliografia **jname** é um dos muitos estilos integrados no Overleaf. Use este estilo digitando **`\bibliographystyle{jname}`** no seu documento tex, ou use o exemplo a seguir para um novo documento no Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Um exemplo LaTeX de referências BibTeX usando o estilo de bibliografia jname.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Estudos recentes demonstraram que LaTeX é uma excelente ferramenta para a criação de documentos acadêmicos \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{jname} % aqui carrega jname.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: gerir BibTeX e BibLaTeX para o Overleaf
+
+O **CiteDrive** é para quem usa **Overleaf**: gere ficheiros `.bib` e projetos num só sítio, colabore em referências e mantenha citações consistentes com **BibTeX** (estilos `.bst` como **jname**) ou **BibLaTeX**. O texto seguinte liga o seu fluxo bibliográfico ao Overleaf.
+
+### Está à procura de uma ferramenta colaborativa online para gerir suas referências BibTeX, que se conecte ao Overleaf?
+
+Se você está procurando uma ferramenta online para ajudar a gerenciar suas referências, citações e bibliografia no Overleaf, o CiteDrive pode ser perfeito! Ele permite que você colete e organize equipes e referências em projetos, mantendo suas entradas BibTeX atualizadas em seu projeto Overleaf.
+
+Você também pode usar o CiteDrive para criar bibliografias e citações em vários estilos, incluindo jname. Então, se você está procurando uma maneira fácil de gerenciar sua bibliografia no Overleaf, experimente o CiteDrive hoje mesmo!
+
+Você pode encontrar mais informações sobre como fazer isso em nossa documentação de ajuda online.
+
+<CiteDrive />

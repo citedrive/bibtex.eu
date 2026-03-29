@@ -1,0 +1,57 @@
+---
+title: "Style BibTeX alpha : citations, références et Overleaf"
+description: "Découvrez comment le style **alpha** (.bst) formate citations et bibliographie en LaTeX. Guide Overleaf, exemple BibTeX et CiteDrive pour gérer BibTeX et BibLaTeX avec Overleaf."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Usage général du style **alpha**
+
+Le style **alpha** correspond à un fichier BibTeX `.bst`. Il détermine le tri, les étiquettes et la ponctuation de votre bibliographie avec une base `.bib`. Les sections ci-dessous rappellent le fonctionnement des styles BibTeX, puis l’usage de **alpha** dans **Overleaf**, et comment **CiteDrive** relie BibTeX et BibLaTeX à Overleaf.
+
+BibTeX est un outil bibliographique puissant utilisé pour créer des bibliographies dans les documents LaTeX. C'est l'un des outils bibliographiques les plus utilisés et il prend en charge de nombreux styles de bibliographie et formats de citation.
+
+Bien qu’Overleaf ne prenne pas en charge actuellement tous les styles de bibliographie compatibles avec BibTeX, de nombreux styles de bibliographie sont inclus dans la bibliothèque de styles de bibliographie BibTeX. Ces styles incluent les formats de citation APA, IEEE, CSE et Chicago. Vous pouvez également utiliser des styles de bibliographie personnalisés en créant votre propre fichier de format de bibliographie bibtex ou en important un d’une autre source.
+
+Que vous utilisiez BibTeX seul ou via Overleaf, c'est un outil essentiel pour créer des bibliographies dans des documents scientifiques et techniques. Pour en savoir plus sur la gestion des bibliographies avec bibtex et Overleaf, visitez bibtex.eu ou consultez notre documentation !
+
+## Utiliser le style **alpha** sur Overleaf
+
+Peut-on utiliser le style de bibliographie **alpha** BibTeX dans Overleaf?
+
+La réponse est oui ! Le style de bibliographie **alpha** est l’un des nombreux styles intégrés dans Overleaf. Utilisez ce style en tapant **`\bibliographystyle{alpha}`** dans votre document tex, ou utilisez l’exemple suivant pour un nouveau document sur Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Un exemple LaTeX de références BibTeX utilisant le style de bibliographie alpha.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Des études récentes ont montré que LaTeX est un excellent outil pour la création de documents savants \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{alpha} % ici chargez alpha.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive : BibTeX et BibLaTeX pour Overleaf
+
+**CiteDrive** s’adresse aux auteurs LaTeX sur **Overleaf** : vous gérez les `.bib` et les projets au même endroit, collaborez sur les références et gardez des citations cohérentes avec **BibTeX** (fichiers `.bst` comme **alpha**) ou **BibLaTeX**. Ce qui suit relie votre flux bibliographique à Overleaf.
+
+### Cherchez-vous un outil collaboratif en ligne pour gérer vos références BibTeX, qui se connecte à Overleaf?
+
+Si vous recherchez un outil en ligne pour vous aider à gérer vos références, citations et bibliographie dans Overleaf, CiteDrive pourrait être parfait ! Il vous permet de collecter et d’organiser des équipes et des références dans des projets tout en tenant à jour vos entrées BibTeX dans votre projet Overleaf.
+
+Vous pouvez également utiliser CiteDrive pour créer des bibliographies et des citations dans différents styles, y compris alpha. Si vous cherchez un moyen facile de gérer votre bibliographie sur Overleaf, essayez CiteDrive dès aujourd'hui !
+
+Vous trouverez plus d'informations sur la façon de procéder dans notre documentation d'aide en ligne.
+
+<CiteDrive />

@@ -1,0 +1,57 @@
+---
+title: "BibTeX-stil alphahtml: citationer, litteratur og Overleaf"
+description: "Se hvordan **alphahtml** (.bst) formaterer citationer og bibliografi i LaTeX. Overleaf-guide, BibTeX-eksempel og CiteDrive til BibTeX og BibLaTeX med Overleaf-projekter."
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## Generel brug af stilen **alphahtml**
+
+Stilen **alphahtml** leveres som en BibTeX `.bst`-fil. Den styrer sortering, etiketter og tegnsætning i din bibliografi sammen med en `.bib`-database. Nedenfor får du et kort overblik over BibTeX-stile, derefter **alphahtml** i **Overleaf** og hvordan **CiteDrive** binder BibTeX og BibLaTeX til Overleaf.
+
+BibTeX er et kraftfuldt bibliografisk værktøj, der bruges til at skabe bibliografier i LaTeX-dokumenter. Det er et af de mest anvendte bibliografiske værktøjer og understøtter mange forskellige bibliografistile og citatformater.
+
+Selvom Overleaf i øjeblikket ikke understøtter alle bibliografistile kompatible med BibTeX, er mange stile inkluderet i BibTeX bibliografistilbiblioteket. Disse bibliografistile inkluderer APA, IEEE, CSE og Chicagos citatformater. Du kan også bruge brugerdefinerede bibliografistile ved at skabe din egen BibTeX bibliografi formatfil eller importere en fra en anden kilde.
+
+Uanset om du bruger BibTeX alene eller via Overleaf, er det et essentielt værktøj til at skabe bibliografier i videnskabelige og tekniske dokumenter. For at lære mere om bibliografi håndtering med BibTeX og Overleaf, besøg bibtex.eu eller vores dokumentation!
+
+## Brug stilen **alphahtml** på Overleaf
+
+Kan du bruge **alphahtml** BibTeX bibliografistilen på Overleaf?
+
+Svaret er ja! **alphahtml** bibliografistilen er en af de mange indbyggede stile på Overleaf. Brug denne stil ved at skrive **`\bibliographystyle{alphahtml}`** i dit LaTeX-dokument, eller brug følgende eksempel til et nyt dokument på Overleaf:
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{Et LaTeX eksempel på BibTeX referencer, der bruger alphahtml bibliografistilen.}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  Nylige studier har vist, at LaTeX er et fremragende værktøj til at skabe akademiske dokumenter \cite{Smith2023}.
+
+  \medskip
+
+  \bibliographystyle{alphahtml} % her indlæses alphahtml.bst
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive: administrer BibTeX og BibLaTeX til Overleaf
+
+**CiteDrive** er til LaTeX-brugere på **Overleaf**: du styrer `.bib`-filer og projekter ét sted, samarbejder om referencer og holder citationer konsistente med **BibTeX** (`.bst`-stile som **alphahtml**) eller **BibLaTeX**. Det følgende forbinder dit bibliografiske workflow med Overleaf.
+
+### Leder du efter et samarbejdsværktøj online til at håndtere dine BibTeX referencer, som forbindes til Overleaf?
+
+Hvis du leder efter et online værktøj til at hjælpe dig med at håndtere dine referencer, citater og bibliografi på Overleaf, så kan CiteDrive være perfekt! Det tillader dig at samle og organisere teams og referencer i projekter, mens det holder dine BibTeX indgange opdateret i dit Overleaf projekt.
+
+Du kan også bruge CiteDrive til at skabe bibliografier og citater i forskellige stile, inklusiv alphahtml. Så hvis du leder efter en nem måde at håndtere din bibliografi på Overleaf, så prøv CiteDrive i dag!
+
+Du kan finde mere information om hvordan dette gøres i vores online hjælpedokumentation.
+
+<CiteDrive />

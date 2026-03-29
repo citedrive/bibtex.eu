@@ -23,10 +23,10 @@ export default defineConfig({
       dark: './src/assets/images/logo_dark.svg',
       replacesTitle: true
     },
-    social: {
-      github: 'https://github.com/citedrive/bibtex.eu',
-      twitter: 'https://twitter.com/bibtex_eu '
-    },
+    social: [
+      { icon: 'github', label: 'GitHub', href: 'https://github.com/citedrive/bibtex.eu' },
+      { icon: 'x.com', label: 'Twitter', href: 'https://twitter.com/bibtex_eu' },
+    ],
     defaultLocale: 'root',
     editLink: {
       baseUrl: 'https://github.com/citedrive/bibtex.eu/edit/main/'
@@ -292,6 +292,44 @@ export default defineConfig({
       autogenerate: {
         directory: 'faq'
       }
+    }, {
+      collapsed: true,
+      label: 'Citation & Bibliography Styles',
+      translations: {
+        "de-DE": "Zitations- und Bibliographiestile",
+        "cs-CZ": "Styly citací a bibliografie",
+        "es-ES": "Estilos de citas y bibliografía",
+        "pt-PT": "Estilos de citação e bibliografia",
+        "fr-FR": "Styles de citation et de bibliographie",
+        "sv-SE": "Citat- och bibliografistilar",
+        "tr-TR": "Atıf ve Kaynakça Stilleri",
+        "zh-CN": "引用和参考文献样式",
+        "da-DK": "Citat- og bibliografistile",
+        "it-IT": "Stili di citazione e bibliografia",
+        "ja-JP": "引用・参考文献スタイル",
+        "ko-KR": "인용 및 참고문헌 스타일",
+        "no-NO": "Sitat- og bibliografistiler",
+        "ru-RU": "Стили цитирования и библиографии"
+      },
+      items: [{
+        label: 'A',
+        link: '/citation-and-bibliography-styles/a/'
+      }, {
+        label: 'B–D',
+        link: '/citation-and-bibliography-styles/b-d/'
+      }, {
+        label: 'E–G',
+        link: '/citation-and-bibliography-styles/e-g/'
+      }, {
+        label: 'H–J',
+        link: '/citation-and-bibliography-styles/h-j/'
+      }, {
+        label: 'K–P',
+        link: '/citation-and-bibliography-styles/k-p/'
+      }, {
+        label: 'R–Z',
+        link: '/citation-and-bibliography-styles/r-z/'
+      }]
     }, {
       label: 'BibTeX resources',
       translations: {

@@ -1,0 +1,57 @@
+---
+title: "BibTeX スタイル plunsrt：LaTeX 引用・参考文献と Overleaf"
+description: "**plunsrt**（.bst）が LaTeX で引用と参考文献をどのように整形するかを解説。Overleaf の手順、BibTeX 例、Overleaf プロジェクト向けの BibTeX / BibLaTeX 管理に CiteDrive。"
+---
+
+import CiteDrive from '@components/CiteDrive.astro';
+
+## **plunsrt** スタイルの一般的な使い方
+
+**plunsrt** は BibTeX の `.bst` ファイルとして提供されます。`.bib` データベースと組み合わせて、参考文献の並び・ラベル・句読点を決めます。以下では BibTeX スタイルの概要、**Overleaf** での **plunsrt** の使い方、**CiteDrive** による BibTeX / BibLaTeX と Overleaf の連携を説明します。
+
+BibTeXは、LaTeXドキュメント内で参考文献を作成するための強力な文献ツールです。最も広く使用されている文献ツールの一つであり、多様な文献スタイルや引用形式をサポートしています。
+
+Overleafは現在、BibTeXと互換性のあるすべての文献スタイルをサポートしているわけではありませんが、多くの文献スタイルがBibTeX文献スタイルライブラリに含まれています。これらの文献スタイルにはAPA、IEEE、CSE、シカゴの引用形式があります。また、独自のBibTeX文献形式ファイルを作成するか、他のソースからインポートすることにより、カスタム文献スタイルを使用することもできます。
+
+BibTeXを単独で使用するかOverleafを通じて使用するかにかかわらず、それは科学技術文書の参考文献を作成するための不可欠なツールです。BibTeXとOverleafを使用した文献管理についてもっと学ぶには、bibtex.euを訪れるか、私たちのドキュメントをご覧ください！
+
+## Overleaf で **plunsrt** スタイルを使う
+
+Overleafで**plunsrt** BibTeX文献スタイルは使用できますか？
+
+答えはイエスです！**plunsrt** 文献スタイルはOverleafに組み込まれている多くのスタイルの一つです。あなたのtexドキュメントで**`\bibliographystyle{plunsrt}`**と入力するか、またはOverleafで新しいドキュメントに以下の例を使用してこのスタイルを使用します：
+
+```latex
+\documentclass{article}
+  \usepackage[utf8]{inputenc}
+
+  \title{plunsrt 文献スタイルを使用したBibTeX参照のLaTeX例。}
+  \author{John Smith}
+
+  \begin{document}
+
+  \maketitle
+
+  最近の研究によると、LaTeXは学術文書を作成するための優れたツールです \cite{Smith2023}。
+
+  \medskip
+
+  \bibliographystyle{plunsrt} % ここにplunsrt.bstをロード
+  \bibliography{bibliography}
+
+\end{document}
+```
+
+## CiteDrive：Overleaf 向け BibTeX / BibLaTeX 管理
+
+**CiteDrive** は **Overleaf** を使う LaTeX 利用者向けです。`.bib` とプロジェクトを一か所で管理し、共同で参考文献を整え、**BibTeX**（**plunsrt** などの `.bst`）または **BibLaTeX** で引用を揃えられます。以下は文献ワークフローと Overleaf をつなぐ内容です。
+
+### BibTeX参照を管理し、Overleafに接続するコラボレーティブなオンラインツールを探していますか？
+
+Overleafでの参考文献、引用、文献リストを管理するのに役立つオンラインツールを探している場合、CiteDriveが完璧かもしれません！それによって、あなたはプロジェクトでチームと参考文献を集め、整理しながら、あなたのOverleafプロジェクト内のBibTeXエントリを最新に保つことができます。
+
+また、CiteDriveを使用してplunsrtを含む様々なスタイルの文献リストと引用を作成することもできます。したがって、Overleafで文献リストを簡単に管理したい場合は、今日CiteDriveをお試しください！
+
+この方法についての詳しい情報は、オンラインヘルプドキュメントで見つけることができます。
+
+<CiteDrive />
