@@ -1,71 +1,98 @@
 ---
-title: BibTeX Litteraturhåndtering - En detaljeret guide til LaTeX
-description: "Lær, hvordan du effektivt kan bruge BibTeX til litteraturhåndtering med LaTeX, fra at oprette en .bib-fil til at integrere den i dit LaTeX-dokument."
+title: BibTeX guide til LaTeX - litteraturstyring med .bib-filer
+description: "Teknisk BibTeX-guide til LaTeX: hvordan systemet virker, BibTeX vs BibLaTeX, og hvorfor et referenceværktøj er bedre end ren manuel redigering."
 sidebar:
-  label: LaTeX Litteraturhåndtering med BibTeX (Hurtigstart)
+  label: BibTeX og LaTeX (Hurtigstart)
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-For nybegyndere kan **BibTeX** synes udfordrende på grund af dens mange specifikationer og formater. Denne vejledning giver dog en forenklet oversigt og viser, hvordan du kan bruge BibTeX effektivt med LaTeX.
+BibTeX er standardløsningen til referencer i LaTeX. Kilder gemmes i en `.bib`-fil, citeres via nøgler og formatteres med en bibliografistil.
 
+## What is BibTeX?
 
-<CiteDrive /> 
+BibTeX is a bibliography processor in the LaTeX toolchain. You keep references in a plain-text `.bib` file and cite them in your document using citation keys.
 
-## Trin 1: Oprettelse og udfyldning af en .bib-fil
+## Minimal Working Example
 
-For at starte opretter du en `.bib`-fil, f.eks. `bibliography.bib`, og tilføjer BibTeX-poster. Et typisk eksempel er at tilføje en reference for "Den gamle mand og havet" af Ernest Hemingway:
-
-
-```latex
+```bibtex
 @book{Hemingway1952,
-  title={Den gamle mand og havet},
-  author={Hemingway, Ernest},
-  year={1952},
-  publisher={Charles Scribner's Sons}
+  title     = {The Old Man and the Sea},
+  author    = {Hemingway, Ernest},
+  year      = {1952},
+  publisher = {Charles Scribner's Sons}
 }
 ```
 
-vis du bryder "anatomien" af denne post ned, behøver du kun at se på de følgende tre komponenter for at forstå, hvordan hver BibTeX-post er defineret:
-
-- **Posttype**: Med `@book` definerer vi typen af reference, dvs. (og dette eksempel refererer til sig selv) som en bog. Der er også `@article` for videnskabelige artikler og andre. BibTeX vil gerne bestemme, hvilke felter der er valgfrie og hvilke der er nødvendige for korrekt at citere litteraturen.
-- **Inputfelter**: i dette eksempel er de `title`, `author`, `year`, og `publisher`. (Se [Felter](/fields))
-- **Citation key**: Dette eksempel er `Hemingway1952` og bruges i LaTeX til in-text citations, dvs. at referere til kilden. Med samme eksempel gør vi det med `\cite{Hemingway1952}`. Citation key kan være enhver streng - ofte en kombination af forfatter, år og et ord fra titlen.
-
-## Trin 2: Integration i et LaTeX-dokument
-
-For at bruge dine referencer i LaTeX, følg det følgende eksempel:
-
 ```latex
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-
-\title{BibTeX referencer i \LaTeX}
-\author{John Smith}
-
 \begin{document}
-
-\maketitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
-\medskip
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-
+Example citation: \cite{Hemingway1952}.
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
 ```
 
-Efter kompilering af LaTeX-dokumentet vil vi se, at kommandoen `\cite{Hemingway1952}` erstattes med den reference, der er angivet i BibTeX-filen med denne ID, i dette eksempel `[1]`.
+## Quick Start
 
-![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+1. Create `references.bib`.
+2. Add references with complete metadata.
+3. Cite in LaTeX with `\cite{...}`.
+4. Compile with either `latex -> bibtex -> latex -> latex` or `latex -> biber -> latex -> latex`.
 
-Den .bib-fil, vi har navngivet `bibliography.bib`, er defineret i `\bibliography{bibliography}` og citation/bibliografi-stilen er `\bibliographystyle{unsrt}`, hvor `unsrt` refererer til `.bst`-filen, i dette tilfælde `unsrt.bst`, som indeholder alle makroer for at formatere dine referencer i denne stil. Du kan også bruge andre stilarter som `apalike.bst`.
+## Common Mistakes
 
-## Anbefalinger til Reference Managers
+- Missing commas/braces in `.bib`.
+- Duplicate citation keys.
+- Missing required fields.
+- Wrong compile order.
 
-Manuel redigering af BibTeX-filer kan være tidskrævende. Her er nogle anbefalede reference managers, der kan gøre dit arbejde lettere:
+## Faster Alternative: Use a BibTeX Manager (e.g. CiteDrive)
 
-- [CiteDrive](https://www.citedrive.com/) er et BibTeX-drevet, samarbejdsvilligt og webbaseret værktøj.
-- Zotero tilbyder omfattende funktioner og god integration med BibTeX gennem tilføjelsesprogrammet [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
-- JabRef er en BibTeX-baseret reference manager, der fungerer på tværs af platforme.
+Manuel redigering virker i små projekter, men skaber hurtigt vedligeholdelsesarbejde. Et referenceværktøj giver mere ensartede data og færre fejl.
+
+<CiteDrive />
+
+### CiteDrive benefits
+
+- One-click import from browser sources.
+- Collaborative reference management.
+- Direct Overleaf integration without manual `.bib` syncing.
+- Cloud-based access from any device.
+- Beginner-friendly editing.
+- Supports BibLaTeX workflows.
+
+### Short comparison
+
+- **Manual BibTeX**: manual editing, error-prone, hard to sync.
+- **CiteDrive**: automated import, collaboration, seamless integration.
+
+## Sådan virker BibTeX
+
+1. Opret poster i en `.bib`-fil.
+2. Citér med nøgler, fx `\cite{Hemingway1952}`.
+3. Kompilér med LaTeX/BibTeX for at generere litteraturlisten.
+
+## Begrænsninger ved manuel håndtering
+
+- Små syntaksfejl kan stoppe kompilering.
+- Store bibliografier er svære at holde konsistente.
+- Teamarbejde giver ofte dubletter og nøglekonflikter.
+
+## BibTeX vs BibLaTeX og Biber
+
+BibTeX bruges stadig bredt, især når skabeloner kræver `.bst`-stile. BibLaTeX med Biber giver mere fleksibilitet, bedre Unicode-støtte og stærkere lokaliseringsmuligheder.
+
+## Anbefalede værktøjer
+
+- [CiteDrive](https://www.citedrive.com/) - moderne webværktøj til renere `.bib`-filer og samarbejde.
+- [Zotero + Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+- [JabRef](https://www.jabref.org/)
+
+## Relaterede sider
+
+- [BibTeX-felter](./fields)
+- [BibTeX-typer](./types)
+- [BibTeX FAQ](./faq)
+- [BibTeX-konvertere](./converters)
+- [CiteDrive til BibTeX-workflows](./citedrive)

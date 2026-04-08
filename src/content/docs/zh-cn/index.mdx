@@ -1,72 +1,98 @@
 ---
-title: BibTeX 文献管理 - LaTeX的详细指南
-description: "了解如何在LaTeX中有效使用BibTeX进行文献管理，从创建.bib文件到整合到您的LaTeX文档。"
+title: LaTeX BibTeX 指南 - 基于 .bib 的文献管理
+description: "面向 LaTeX 用户的 BibTeX 技术指南：工作原理、BibTeX 与 BibLaTeX 区别、手动维护的局限与推荐工具。"
 sidebar:
-  label: LaTeX文献管理与BibTeX（快速入门）
+  label: BibTeX 与 LaTeX（快速入门）
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
+BibTeX 是 LaTeX 生态中经典的参考文献系统。文献数据存放在 `.bib` 文件中，正文通过引用键调用，再由样式规则生成参考文献列表。
 
-对于初学者，**BibTeX**可能因其多样的特点和格式而显得有挑战性。但是，本指南为您提供了简化的概述，并展示了如何在LaTeX中高效使用BibTeX。
+## What is BibTeX?
 
+BibTeX is a bibliography processor in the LaTeX toolchain. You keep references in a plain-text `.bib` file and cite them in your document using citation keys.
 
-<CiteDrive /> 
+## Minimal Working Example
 
-## 步骤1：创建并填充.bib文件
-
-首先，创建一个`.bib`文件，例如`bibliography.bib`，并添加BibTeX条目。一个典型的例子是为Ernest Hemingway的《老人与海》添加引用：
-
-```latex
+```bibtex
 @book{Hemingway1952,
-  title={老人与海},
-  author={Hemingway, Ernest},
-  year={1952},
-  publisher={Charles Scribner's Sons}
+  title     = {The Old Man and the Sea},
+  author    = {Hemingway, Ernest},
+  year      = {1952},
+  publisher = {Charles Scribner's Sons}
 }
 ```
 
-如果您分解这个条目的“结构”，您只需查看以下三个组件，就可以了解每个BibTeX条目是如何定义的：
-
-- **条目类型**: 使用`@book`我们定义了引用的类型，即一个书籍。
-- **输入字段**: 在此例子中，这些是`title`、`author`、`year`和`publisher`。
-- **引文键**: 这个例子是`Hemingway1952`，用于在LaTeX中提供文内引用，即引用来源。使用相同的示例，我们使用`\cite{Hemingway1952}`来实现。
-
-## 步骤2：整合到LaTeX文档
-
-要在LaTeX中使用您的引用，请按照以下示例操作：
-
-
 ```latex
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-
-\title{BibTeX引用在\LaTeX中}
-\author{约翰·史密斯}
-
 \begin{document}
-
-\maketitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
-\medskip
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-
+Example citation: \cite{Hemingway1952}.
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
 ```
 
-编译LaTeX文档后，您会发现`\cite{Hemingway1952}`命令已被替换为BibTeX文件中指定的该ID的引用，例如`[1]`。
+## Quick Start
 
-![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+1. Create `references.bib`.
+2. Add references with complete metadata.
+3. Cite in LaTeX with `\cite{...}`.
+4. Compile with either `latex -> bibtex -> latex -> latex` or `latex -> biber -> latex -> latex`.
 
-我们命名为`bibliography.bib`的.bib文件在`\bibliography{bibliography}`中定义，引文/参考文献的风格为`\bibliographystyle{unsrt}`。
+## Common Mistakes
 
-## 引用管理器推荐
+- Missing commas/braces in `.bib`.
+- Duplicate citation keys.
+- Missing required fields.
+- Wrong compile order.
 
-手动编辑BibTeX文件可能会很耗时。以下是一些建议的引用管理器，可以简化您的工作：
+## 最佳实践：尽早使用 BibTeX 管理工具
 
-- [CiteDrive](https://www.citedrive.com/) 是一个基于BibTeX的、协作的、基于网络的工具。
-- Zotero 提供了丰富的功能，并通过[Zotero的Better BibTeX插件](https://retorque.re/zotero-better-bibtex/)很好地整合到BibTeX。
-- JabRef 是一个跨平台的、基于BibTeX的引用管理器。
+手动维护可以完成基础任务，但项目变大后容易出现重复、格式不一致和维护成本上升。使用工具更适合长期与协作场景。
+
+<CiteDrive />
+
+### CiteDrive benefits
+
+- One-click import from browser sources.
+- Collaborative reference management.
+- Direct Overleaf integration without manual `.bib` syncing.
+- Cloud-based access from any device.
+- Beginner-friendly editing.
+- Supports BibLaTeX workflows.
+
+### Short comparison
+
+- **Manual BibTeX**: manual editing, error-prone, hard to sync.
+- **CiteDrive**: automated import, collaboration, seamless integration.
+
+## BibTeX 工作流程
+
+1. 在 `.bib` 文件中维护条目。
+2. 在正文用 `\cite{Hemingway1952}` 这类键进行引用。
+3. 通过 LaTeX/BibTeX 编译生成最终参考文献。
+
+## 手动管理的局限
+
+- 细小语法错误会导致编译失败。
+- 大型文献库难以长期保持一致。
+- 团队协作中常见重复条目和键冲突。
+
+## BibTeX 与 BibLaTeX/Biber
+
+BibTeX 依然常用，尤其在必须使用 `.bst` 样式的模板中。BibLaTeX + Biber 在 Unicode、多语言支持和输出定制方面更灵活。
+
+## 推荐工具
+
+- [CiteDrive](https://www.citedrive.com/) - 现代 Web BibTeX 管理方案，适合协作与规范化维护 `.bib`。
+- [Zotero + Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+- [JabRef](https://www.jabref.org/)
+
+## 相关页面
+
+- [BibTeX 字段](./fields)
+- [BibTeX 条目类型](./types)
+- [BibTeX 常见问题](./faq)
+- [BibTeX 转换工具](./converters)
+- [CiteDrive 的 BibTeX 工作流](./citedrive)

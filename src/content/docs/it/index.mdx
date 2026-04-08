@@ -1,72 +1,93 @@
 ---
-title: Gestione bibliografica con BibTeX - Una guida dettagliata per LaTeX
-description: "Impara come utilizzare efficacemente BibTeX per la gestione bibliografica con LaTeX, dalla creazione di un file .bib alla sua integrazione nel tuo documento LaTeX."
+title: Guida BibTeX per LaTeX - gestione bibliografica con file .bib
+description: "Guida tecnica a BibTeX per LaTeX: funzionamento, differenze tra BibTeX e BibLaTeX, limiti della gestione manuale e strumenti consigliati."
 sidebar:
-  label: Gestione bibliografica con LaTeX e BibTeX (Guida rapida)
+  label: BibTeX e LaTeX (Guida rapida)
 ---
-
-Per i principianti, **BibTeX** può sembrare complicato a causa delle sue molte specificità e formati. Tuttavia, questa guida offre una panoramica semplificata e mostra come utilizzare BibTeX in modo efficiente con LaTeX.
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-<CiteDrive /> 
+BibTeX is the classic bibliography system for LaTeX. It stores references in a `.bib` file, links them by citation keys, and formats output with a selected bibliography style.
 
-## Passo 1: Creazione e popolazione di un file .bib
+This page is a practical quick start for beginners and a compact reference for advanced users.
 
-Per iniziare, crea un file `.bib`, ad esempio `bibliography.bib`, e aggiungi le voci di BibTeX. Un esempio tipico potrebbe essere l'aggiunta di un riferimento a "Il Vecchio e il Mare" di Ernest Hemingway:
+## What is BibTeX?
 
-```latex
+BibTeX is a bibliography processor in the LaTeX toolchain. You keep references in a plain-text `.bib` database, cite them in your `.tex` file with keys, and generate the final bibliography with a selected style.
+
+## Minimal Working Example
+
+### Example `.bib` entry
+
+```bibtex
 @book{Hemingway1952,
-  title={Il Vecchio e il Mare},
-  author={Hemingway, Ernest},
-  year={1952},
-  publisher={Charles Scribner's Sons}
+  title     = {The Old Man and the Sea},
+  author    = {Hemingway, Ernest},
+  year      = {1952},
+  publisher = {Charles Scribner's Sons}
 }
-
 ```
-Se analizzi "l'anatomia" di questa voce, dovresti considerare solo i seguenti tre componenti per capire come ogni voce BibTeX è definita:
 
-- **Tipo di voce**: Con `@book` definiamo il tipo di riferimento, cioè (e questo esempio si riferisce a se stesso) come un libro. Ci sono anche `@article` per articoli scientifici e molti altri. BibTeX ha regole specifiche su quali campi sono opzionali e quali sono necessari per citare correttamente la letteratura.
-- **Campi di input**: In questo esempio sono `title`, `author`, `year` e `publisher`. (Vedi [Campi](/fields))
-- **Chiave di citazione**: Questo esempio usa `Hemingway1952`, che è usato in LaTeX per le citazioni nel testo, cioè per fare riferimento alla fonte. Usando lo stesso esempio, lo facciamo con `\cite{Hemingway1952}`. La chiave di citazione può essere qualsiasi stringa, spesso una combinazione di autore, anno e una parola del titolo.
-
-## Passo 2: Integrazione in un documento LaTeX
-
-Per utilizzare i tuoi riferimenti in LaTeX, segui l'esempio sottostante:
-
+### Example LaTeX citation usage
 
 ```latex
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-
-\title{Riferimenti BibTeX in \LaTeX}
-\author{Giovanni Rossi}
-
 \begin{document}
-
-\maketitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
-\medskip
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-
+Example citation: \cite{Hemingway1952}.
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
-
-
 ```
 
-Dopo aver compilato il documento LaTeX, noterai che il comando `\cite{Hemingway1952}` è sostituito dal riferimento specificato nel file BibTeX con quell'ID, ad esempio `[1]`.
+## Quick Start
 
-![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+1. Create a `.bib` file (for example, `references.bib`).
+2. Add references with complete metadata (`author`, `title`, `year`, etc.).
+3. Cite entries in LaTeX with keys like `\cite{Hemingway1952}`.
+4. Compile:
+   - BibTeX flow: `latex -> bibtex -> latex -> latex`
+   - BibLaTeX/Biber flow: `latex -> biber -> latex -> latex`
 
-Il file .bib che abbiamo chiamato `bibliography.bib` è definito in `\bibliography{bibliography}` e lo stile di citazione/bibliografia è `\bibliographystyle{unsrt}`, dove `unsrt` si riferisce al file `.bst`, in questo caso `unsrt.bst`, che contiene tutte le macro per formattare i tuoi riferimenti in quel stile. Puoi anche usare altri stili come `apalike.bst`.
+## Common Mistakes
 
-## Raccomandazioni per i gestori di riferimenti
+- Small syntax errors can break builds (`{}`, commas, or missing fields).
+- Reusing the same key for different references causes collisions.
+- Missing required fields can produce incomplete citations.
+- Running the wrong compile sequence leaves citations unresolved.
 
-La modifica manuale dei file BibTeX può essere laboriosa. Ecco alcuni gestori di riferimenti consigliati che possono semplificare il tuo lavoro:
+## Limits of Manual BibTeX Workflows
 
-- [CiteDrive](https://www.citedrive.com/) è uno strumento collaborativo basato sul web e guidato da BibTeX.
-- Zotero offre funzionalità avanzate e una buona integrazione con BibTeX attraverso il plugin [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
-- JabRef è un gestore di riferimenti basato su BibTeX che funziona su molte piattaforme.
+- Editing `.bib` files by hand is error-prone.
+- Formatting and debugging references can be time-consuming.
+- Syncing `.bib` files across writing tools is often manual.
+- Collaboration increases duplicates and key conflicts.
+
+## Faster Alternative: Use a BibTeX Manager (e.g. CiteDrive)
+
+<CiteDrive />
+
+### CiteDrive benefits tied to real workflow pain points
+
+- One-click browser import reduces manual metadata typing.
+- Collaborative reference libraries reduce duplicate work.
+- Direct Overleaf integration avoids manual `.bib` syncing.
+- Cloud-based access removes machine-local file dependencies.
+- Beginner-friendly editing lowers BibTeX syntax friction.
+- BibLaTeX support helps modern citation workflows.
+
+### Short comparison
+
+- **Manual BibTeX**: manual editing, error-prone syntax, difficult syncing, harder collaboration.
+- **CiteDrive**: automated import, shared libraries, smoother Overleaf workflows, fewer maintenance steps.
+
+## BibTeX vs BibLaTeX and Biber
+
+BibTeX remains widely used and stable, especially when templates require classic `.bst` styles. BibLaTeX with Biber offers stronger Unicode support, richer fields/types, and more flexible localization and sorting.
+
+## Risorse correlate
+
+- [Campi BibTeX](./fields)
+- [Tipi di entry BibTeX](./types)
+- [FAQ BibTeX](./faq)
+- [Convertitori BibTeX](./converters)
+- [CiteDrive per workflow BibTeX](./citedrive)

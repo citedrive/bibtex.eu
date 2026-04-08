@@ -1,70 +1,98 @@
 ---
-title: BibTeX Literární správa - Podrobný průvodce pro LaTeX
-description: "Naučte se, jak efektivně využívat BibTeX pro literární správu v LaTeXu, od vytváření souboru .bib až po jeho integraci do vašeho dokumentu v LaTeXu."
+title: Průvodce BibTeX pro LaTeX - správa citací pomocí .bib souborů
+description: "Technický průvodce BibTeX pro LaTeX: jak funguje, rozdíly BibTeX vs BibLaTeX a proč je nástroj pro správu citací lepší než čistě ruční úpravy."
 sidebar:
-  label: LaTeX Literární správa s BibTeX (Rychlý start)
-
+  label: BibTeX a LaTeX (Rychlý start)
 ---
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-Pro začátečníky může **BibTeX** kvůli svým mnoha specifikům a formátům vypadat náročně. Tento průvodce vám však nabízí zjednodušený přehled a ukazuje, jak efektivně využívat BibTeX v LaTeXu.
+BibTeX je klasický systém pro správu citací v LaTeXu. Záznamy jsou v souboru `.bib`, v textu se používají citační klíče a výstup formátuje zvolený styl.
 
-<CiteDrive/>
+## What is BibTeX?
 
-## Krok 1: Vytvoření a naplnění .bib souboru
+BibTeX is a bibliography processor in the LaTeX toolchain. You keep references in a plain-text `.bib` file and cite them in your document using citation keys.
 
-Pro začátek vytvořte soubor `.bib`, např. `bibliography.bib`, a přidejte do něj BibTeX záznamy. Typický příklad je přidání reference pro "Stařec a moře" od Ernesta Hemingwaye:
+## Minimal Working Example
 
-```latex
+```bibtex
 @book{Hemingway1952,
-  title={Stařec a moře},
-  author={Hemingway, Ernest},
-  year={1952},
-  publisher={Charles Scribner's Sons}
+  title     = {The Old Man and the Sea},
+  author    = {Hemingway, Ernest},
+  year      = {1952},
+  publisher = {Charles Scribner's Sons}
 }
 ```
 
-Pokud rozložíte "anatomii" tohoto záznamu, stačí se podívat na následující tři komponenty, abyste pochopili, jak je definován každý BibTeX záznam:
-
-- **Typ záznamu**: S `@book` definujeme druh reference, tj. v tomto případě knihu. Existují také `@article` pro vědecké články a další. BibTeX přesně stanovuje, která pole jsou volitelná a která jsou povinná pro správné citování literatury.
-- **Vstupní pole**: V tomto případě jsou to `title`, `author`, `year` a `publisher`. (Viz [Fields](/fields))
-- **Klíč citace**: V tomto příkladu je to `Hemingway1952` a je používán v LaTeXu pro citace v textu, tj. pro odkazování na zdroj. S tímto příkladem to děláme pomocí `\cite{Hemingway1952}`. Klíč citace může být jakýkoli řetězec - často kombinace autora, roku a slova z názvu.
-
-## Krok 2: Integrace do dokumentu v LaTeXu
-
-Chcete-li v LaTeXu využívat své reference, postupujte podle následujícího příkladu:
-
 ```latex
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-
-\title{BibTeX reference v \LaTeX}
-\author{Jan Novák}
-
 \begin{document}
-
-\maketitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
-\medskip
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-
+Example citation: \cite{Hemingway1952}.
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
 ```
 
-Po kompilaci dokumentu v LaTeXu zjistíme, že příkaz `\cite{Hemingway1952}` byl nahrazen referencí uvedenou v souboru BibTeX s touto ID, v tomto příkladu `[1]`.
+## Quick Start
 
-![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+1. Create `references.bib`.
+2. Add references with complete metadata.
+3. Cite in LaTeX with `\cite{...}`.
+4. Compile with either `latex -> bibtex -> latex -> latex` or `latex -> biber -> latex -> latex`.
 
-Soubor .bib, který jsme pojmenovali `bibliography.bib`, je definován v `\bibliography{bibliography}` a styl citace/bibliografie je `\bibliographystyle{unsrt}`, kde `unsrt` se odkazuje na `.bst` soubor, v tomto případě `unsrt.bst`, který obsahuje všechny makra pro formátování vašich referencí v daném stylu. Můžete také použít jiné styly, např. `apalike.bst`.
+## Common Mistakes
 
-## Doporučení pro správce referencí
+- Missing commas/braces in `.bib`.
+- Duplicate citation keys.
+- Missing required fields.
+- Wrong compile order.
 
-Ruční úprava BibTeX souborů může být časově náročná. Zde je několik doporučených správců referencí, které vám mohou usnadnit práci:
+## Osvědčený postup: používejte správce BibTeX už od začátku
 
-- [CiteDrive](https://www.citedrive.com/) je nástroj řízený BibTeXem, který je kolaborativní a webový.
-- Zotero nabízí rozsáhlé funkce a dobrou integraci s BibTeXem prostřednictvím doplňku [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
-- JabRef je správce referencí založený na BibTeXu, který funguje napříč platformami.
+Ruční editace je možná, ale u větších projektů rychle roste chybovost i čas na údržbu. Správce citací pomáhá držet konzistenci dat.
+
+<CiteDrive />
+
+### CiteDrive benefits
+
+- One-click import from browser sources.
+- Collaborative reference management.
+- Direct Overleaf integration without manual `.bib` syncing.
+- Cloud-based access from any device.
+- Beginner-friendly editing.
+- Supports BibLaTeX workflows.
+
+### Short comparison
+
+- **Manual BibTeX**: manual editing, error-prone, hard to sync.
+- **CiteDrive**: automated import, collaboration, seamless integration.
+
+## Jak BibTeX funguje
+
+1. Vytvoříte záznamy v `.bib` souboru.
+2. Citujete pomocí klíčů, např. `\cite{Hemingway1952}`.
+3. Kompilujete přes LaTeX/BibTeX a vygeneruje se bibliografie.
+
+## Omezení ruční správy
+
+- Malá syntaktická chyba může rozbít kompilaci.
+- Velké bibliografie se ručně špatně udržují.
+- V týmu vznikají duplicity a konflikty klíčů.
+
+## BibTeX vs BibLaTeX a Biber
+
+BibTeX je stále běžný, hlavně když šablony vyžadují `.bst` styly. BibLaTeX s Biberem nabízí lepší Unicode podporu, více polí a pokročilé možnosti třídění/lokalizace.
+
+## Doporučené nástroje
+
+- [CiteDrive](https://www.citedrive.com/) - moderní webový nástroj pro čisté `.bib` soubory a spolupráci.
+- [Zotero + Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+- [JabRef](https://www.jabref.org/)
+
+## Související stránky
+
+- [Pole BibTeX](./fields)
+- [Typy záznamů BibTeX](./types)
+- [FAQ BibTeX](./faq)
+- [Převodníky BibTeX](./converters)
+- [CiteDrive pro BibTeX workflow](./citedrive)

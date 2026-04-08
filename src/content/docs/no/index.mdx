@@ -1,71 +1,98 @@
 ---
-title: BibTeX Litteraturforvaltning - En detaljert guide for LaTeX
-description: "Lær hvordan du effektivt kan bruke BibTeX for litteraturforvaltning med LaTeX, fra oppretting av en .bib-fil til integrering i LaTeX-dokumentet ditt."
+title: BibTeX guide for LaTeX - referansehåndtering med .bib-filer
+description: "Teknisk BibTeX-guide for LaTeX: hvordan det fungerer, BibTeX vs BibLaTeX, og hvorfor et verktøy er tryggere enn manuell vedlikehold."
 sidebar:
-  label: Litteraturforvaltning med LaTeX og BibTeX (Hurtigstart)
+  label: BibTeX og LaTeX (Hurtigstart)
 ---
-
-For nybegynnere kan **BibTeX** virke utfordrende på grunn av sine mange særegenheter og formater. Denne veiledningen gir imidlertid en forenklet oversikt og viser hvordan du effektivt kan bruke BibTeX med LaTeX.
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-<CiteDrive /> 
+BibTeX er den klassiske løsningen for referanser i LaTeX. Kilder lagres i en `.bib`-fil, siteres med nøkler og formateres med valgt stil.
 
-## Trinn 1: Opprette og fylle en .bib-fil
+## What is BibTeX?
 
-For å starte, opprett en `.bib`-fil, for eksempel `bibliography.bib`, og legg til BibTeX-poster. Et typisk eksempel er å legge til en referanse for "The Old Man and the Sea" av Ernest Hemingway:
+BibTeX is a bibliography processor in the LaTeX toolchain. You keep references in a plain-text `.bib` file and cite them in your document using citation keys.
+
+## Minimal Working Example
 
 ```bibtex
 @book{Hemingway1952,
-  title={Den gamle mannen og havet},
-  author={Hemingway, Ernest},
-  year={1952},
-  publisher={Charles Scribner's Sons}
+  title     = {The Old Man and the Sea},
+  author    = {Hemingway, Ernest},
+  year      = {1952},
+  publisher = {Charles Scribner's Sons}
 }
 ```
 
-Når du bryter ned "anatomien" av denne oppføringen, er det bare tre komponenter du trenger å se på for å forstå hvordan hver BibTeX-post er definert:
-
-- **Oppføringstype**: Med `@book` definerer vi referansetypen, i dette tilfellet en bok. Det er også `@article` for vitenskapelige artikler, blant andre.
-- **Inntastingsfelt**: I dette eksempelet er det `tittel`, `forfatter`, `år` og `utgiver`.
-- **Sitatnøkkel**: I dette eksempelet er det `Hemingway1952`, som brukes for in-tekst sitater i LaTeX, dvs. for å referere til kilden. Med denne nøkkelen ville vi bruke `\cite{Hemingway1952}`.
-
-## Trinn 2: Integrasjon i et LaTeX-dokument
-
-For å bruke referansene dine i LaTeX, følg eksemplet nedenfor:
-
-
 ```latex
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-
-\title{BibTeX-referanser i \LaTeX}
-\author{Ola Nordmann}
-
 \begin{document}
-
-\maketitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
-\medskip
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-
+Example citation: \cite{Hemingway1952}.
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
-
 ```
 
-Når du kompilerer LaTeX-dokumentet, vil du merke at `\cite{Hemingway1952}`-kommandoen er erstattet av referansen spesifisert i BibTeX-filen med denne ID, i dette eksempelet `[1]`.
+## Quick Start
 
-![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+1. Create `references.bib`.
+2. Add references with complete metadata.
+3. Cite in LaTeX with `\cite{...}`.
+4. Compile with either `latex -> bibtex -> latex -> latex` or `latex -> biber -> latex -> latex`.
 
-.bib-filen vi kalt `bibliography.bib` er definert i `\bibliography{bibliography}`, og siterings-/bibliografi-stilen er `\bibliographystyle{unsrt}`.
+## Common Mistakes
 
-## Anbefalinger for referansehåndterere
+- Missing commas/braces in `.bib`.
+- Duplicate citation keys.
+- Missing required fields.
+- Wrong compile order.
 
-Manuell redigering av BibTeX-filer kan være tidkrevende. Her er noen anbefalte referansehåndterere som kan gjøre arbeidet ditt enklere:
+## Faster Alternative: Use a BibTeX Manager (e.g. CiteDrive)
 
-- [CiteDrive](https://www.citedrive.com/) er et BibTeX-drevet, samarbeidsbasert webverktøy.
-- Zotero tilbyr omfattende funksjoner og god integrasjon med BibTeX via tillegget [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
-- JabRef er en BibTeX-basert referansehåndterer som fungerer på tvers av plattformer.
+Manuell redigering fungerer i små prosjekter, men blir fort tungvint. Et verktøy gir mer konsistente data og færre feil.
+
+<CiteDrive />
+
+### CiteDrive benefits
+
+- One-click import from browser sources.
+- Collaborative reference management.
+- Direct Overleaf integration without manual `.bib` syncing.
+- Cloud-based access from any device.
+- Beginner-friendly editing.
+- Supports BibLaTeX workflows.
+
+### Short comparison
+
+- **Manual BibTeX**: manual editing, error-prone, hard to sync.
+- **CiteDrive**: automated import, collaboration, seamless integration.
+
+## Slik fungerer BibTeX
+
+1. Legg inn poster i en `.bib`-fil.
+2. Siter med nøkler, for eksempel `\cite{Hemingway1952}`.
+3. Kompiler med LaTeX/BibTeX for å generere litteraturlisten.
+
+## Begrensninger ved manuell håndtering
+
+- Små syntaksfeil kan stoppe kompilering.
+- Store bibliografier er krevende å vedlikeholde manuelt.
+- Teamarbeid skaper ofte duplikater og nøkkelkonflikter.
+
+## BibTeX vs BibLaTeX og Biber
+
+BibTeX er fortsatt mye brukt, spesielt når maler krever `.bst`-stiler. BibLaTeX med Biber gir mer fleksibilitet, bedre Unicode-støtte og sterkere lokaliseringskontroll.
+
+## Anbefalte verktøy
+
+- [CiteDrive](https://www.citedrive.com/) - moderne webverktøy for rene `.bib`-filer og samarbeid.
+- [Zotero + Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+- [JabRef](https://www.jabref.org/)
+
+## Relaterte sider
+
+- [BibTeX-felt](./fields)
+- [BibTeX-typer](./types)
+- [BibTeX FAQ](./faq)
+- [BibTeX-konvertering](./converters)
+- [CiteDrive for BibTeX-workflows](./citedrive)

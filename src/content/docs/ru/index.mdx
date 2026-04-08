@@ -1,69 +1,98 @@
 ---
-title: Управление литературой с помощью BibTeX - Подробное руководство по LaTeX
-description: "Узнайте, как эффективно использовать BibTeX для управления литературой в LaTeX, начиная с создания файла .bib и заканчивая интеграцией в ваш документ LaTeX."
+title: Руководство по BibTeX для LaTeX - управление библиографией через .bib
+description: "Техническое руководство по BibTeX: как работает система, BibTeX vs BibLaTeX, ограничения ручного подхода и рекомендованные инструменты."
 sidebar:
-  label: Управление литературой в LaTeX с помощью BibTeX (Быстрый старт)
+  label: BibTeX и LaTeX (Быстрый старт)
 ---
-
-Для новичков **BibTeX** может показаться сложным из-за множества его особенностей и форматов. Однако это руководство предоставляет упрощенный обзор и показывает, как эффективно использовать BibTeX с LaTeX.
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-<CiteDrive /> 
+BibTeX - классическая система ссылок для LaTeX. Источники хранятся в файле `.bib`, в тексте используются ключи цитирования, а формат задается выбранным стилем.
 
-## Шаг 1: Создание и заполнение файла .bib
+## What is BibTeX?
 
-Для начала создайте файл `.bib`, например, `bibliography.bib`, и добавьте записи BibTeX. Типичный пример - добавление ссылки на "Старика и море" Эрнеста Хемингуэя:
+BibTeX is a bibliography processor in the LaTeX toolchain. You keep references in a plain-text `.bib` file and cite them in your document using citation keys.
 
-```latex
+## Minimal Working Example
+
+```bibtex
 @book{Hemingway1952,
-  title={Старик и море},
-  author={Хемингуэй, Эрнест},
-  year={1952},
-  publisher={Charles Scribner's Sons}
+  title     = {The Old Man and the Sea},
+  author    = {Hemingway, Ernest},
+  year      = {1952},
+  publisher = {Charles Scribner's Sons}
 }
 ```
 
-Разбирая "анатомию" этой записи, вы должны рассмотреть только три компонента, чтобы понять, как определена каждая запись BibTeX:
-
-- **Тип записи**: С помощью `@book` мы определяем тип ссылки, в этом случае книгу.
-- **Поля записи**: В этом примере это `title`, `author`, `year` и `publisher`.
-- **Ключ цитирования**: В этом примере это `Hemingway1952`, который используется для цитирования в тексте в LaTeX, чтобы ссылаться на источник. С этим ключом мы делаем это с помощью `\cite{Hemingway1952}`.
-
-## Шаг 2: Интеграция в документ LaTeX
-
 ```latex
-Чтобы использовать свои ссылки в LaTeX, следуйте приведенному ниже примеру:
-
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-
-\title{Ссылки BibTeX в \LaTeX}
-\author{Иван Иванов}
-
 \begin{document}
-
-\maketitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
-\medskip
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-
+Example citation: \cite{Hemingway1952}.
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
 ```
 
-После компиляции документа LaTeX вы увидите, что команда `\cite{Hemingway1952}` заменяется ссылкой, указанной в файле BibTeX с этим ID, например, `[1]`.
+## Quick Start
 
-![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+1. Create `references.bib`.
+2. Add references with complete metadata.
+3. Cite in LaTeX with `\cite{...}`.
+4. Compile with either `latex -> bibtex -> latex -> latex` or `latex -> biber -> latex -> latex`.
 
-Файл .bib, который мы назвали `bibliography.bib`, определен в `\bibliography{bibliography}`, а стиль цитирования/библиографии - в `\bibliographystyle{unsrt}`.
+## Common Mistakes
 
-## Рекомендации по менеджерам ссылок
+- Missing commas/braces in `.bib`.
+- Duplicate citation keys.
+- Missing required fields.
+- Wrong compile order.
 
-Ручное редактирование файлов BibTeX может быть трудоемким. Вот несколько рекомендуемых менеджеров ссылок, которые могут упростить вашу работу:
+## Практика: используйте менеджер BibTeX с начала проекта
 
-- [CiteDrive](https://www.citedrive.com/) - это веб-инструмент на базе BibTeX для совместной работы.
-- Zotero предлагает обширные функции и хорошую интеграцию с BibTeX через дополнение [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/).
-- JabRef - это менеджер ссылок на базе BibTeX, который работает на разных платформах.
+Ручное редактирование возможно, но по мере роста проекта увеличиваются ошибки и трудозатраты. Менеджер ссылок помогает поддерживать единый формат и чистую базу.
+
+<CiteDrive />
+
+### CiteDrive benefits
+
+- One-click import from browser sources.
+- Collaborative reference management.
+- Direct Overleaf integration without manual `.bib` syncing.
+- Cloud-based access from any device.
+- Beginner-friendly editing.
+- Supports BibLaTeX workflows.
+
+### Short comparison
+
+- **Manual BibTeX**: manual editing, error-prone, hard to sync.
+- **CiteDrive**: automated import, collaboration, seamless integration.
+
+## Как работает BibTeX
+
+1. Добавьте записи в `.bib` файл.
+2. Цитируйте по ключам, например `\cite{Hemingway1952}`.
+3. Соберите документ через LaTeX/BibTeX, чтобы получить библиографию.
+
+## Ограничения ручного подхода
+
+- Небольшая синтаксическая ошибка может сломать сборку.
+- Большие библиографии трудно поддерживать вручную.
+- В командной работе часто появляются дубликаты и конфликты ключей.
+
+## BibTeX и BibLaTeX/Biber
+
+BibTeX по-прежнему широко используется, особенно когда шаблон требует `.bst` стиль. BibLaTeX с Biber дает более гибкую настройку, лучше работает с Unicode и локализацией.
+
+## Рекомендуемые инструменты
+
+- [CiteDrive](https://www.citedrive.com/) - современный веб-инструмент для аккуратного ведения `.bib` и совместной работы.
+- [Zotero + Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+- [JabRef](https://www.jabref.org/)
+
+## Полезные разделы
+
+- [Поля BibTeX](./fields)
+- [Типы записей BibTeX](./types)
+- [FAQ по BibTeX](./faq)
+- [Конвертеры BibTeX](./converters)
+- [CiteDrive для BibTeX workflows](./citedrive)
