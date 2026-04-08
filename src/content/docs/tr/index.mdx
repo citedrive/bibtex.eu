@@ -1,69 +1,98 @@
 ---
-title: BibTeX Kaynakça Yönetimi - LaTeX için Detaylı Kılavuz
-description: "LaTeX ile BibTeX'i kaynakça yönetiminde nasıl etkili bir şekilde kullanabileceğinizi öğrenin, .bib dosyası oluşturmaktan LaTeX belgenize entegrasyona kadar."
+title: LaTeX için BibTeX Rehberi - .bib dosyalariyla kaynakca yonetimi
+description: "Teknik BibTeX rehberi: BibTeX nasil calisir, BibTeX ve BibLaTeX farklari, manuel yonetimin sinirlari ve onerilen araclar."
 sidebar:
-  label: LaTeX ile BibTeX Kaynakça Yönetimi (Başlangıç Rehberi)
+  label: BibTeX ve LaTeX (Hizli baslangic)
 ---
-
-Başlangıç için **BibTeX**, pek çok özelliği ve formatıyla zorlayıcı görünebilir. Ancak bu rehber, basit bir bakış açısı sunar ve BibTeX'i LaTeX ile nasıl etkili bir şekilde kullanabileceğinizi gösterir.
 
 import CiteDrive from '@components/CiteDrive.astro';
 
-<CiteDrive /> 
+BibTeX, LaTeX icin klasik kaynakca sistemidir. Kayitlar `.bib` dosyasinda tutulur, metinde anahtarlarla cagrilir ve secilen stile gore bicimlenir.
 
-## Adım 1: .bib Dosyası Oluşturma ve Doldurma
+## What is BibTeX?
 
-Başlamak için bir `.bib` dosyası oluşturun, örneğin `bibliography.bib`, ve BibTeX girdileri ekleyin. Tipik bir örnek, Ernest Hemingway'in "Yaşlı Adam ve Deniz" için bir referans eklemektir:
+BibTeX is a bibliography processor in the LaTeX toolchain. You keep references in a plain-text `.bib` file and cite them in your document using citation keys.
 
-```latex
+## Minimal Working Example
+
+```bibtex
 @book{Hemingway1952,
-  title={Yaşlı Adam ve Deniz},
-  author={Hemingway, Ernest},
-  year={1952},
-  publisher={Charles Scribner's Sons}
+  title     = {The Old Man and the Sea},
+  author    = {Hemingway, Ernest},
+  year      = {1952},
+  publisher = {Charles Scribner's Sons}
 }
 ```
 
-Bu girişin "anatomisini" çözümlediğinizde, her BibTeX girişinin nasıl tanımlandığını anlamak için aşağıdaki üç bileşene bakmanız yeterlidir:
-
-- **Giriş türü**: `@book` ile referansın türünü tanımlarız, bu durumda bir kitap.
-- **Giriş alanları**: bu örnekte `title`, `author`, `year` ve `publisher`.
-- **Alıntı anahtarı**: Bu örnek için `Hemingway1952` ve LaTeX'te metin içi alıntı yapmak, yani kaynağa atıfta bulunmak için kullanılır. Aynı örnek ile bunu `\cite{Hemingway1952}` ile yaparız.
-
-## Adım 2: Bir LaTeX Belgesine Entegrasyon
-
-Referanslarınızı LaTeX'te kullanmak için aşağıdaki örneği takip edin:
-
 ```latex
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-
-\title{BibTeX referansları \LaTeX'te}
-\author{John Yılmaz}
-
 \begin{document}
-
-\maketitle
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim urna, dapibus et bibendum vel, consectetur et turpis. Cras a molestie nulla. \cite{Hemingway1952}
-\medskip
-
-\bibliographystyle{unsrt}
-\bibliography{bibliography}
-
+Example citation: \cite{Hemingway1952}.
+\bibliographystyle{plain}
+\bibliography{references}
 \end{document}
 ```
 
-LaTeX belgesini derledikten sonra, `\cite{Hemingway1952}` komutunun BibTeX dosyasındaki bu kimlikle belirtilen referansla, bu örnekte `[1]` olarak değiştirildiğini göreceksiniz.
+## Quick Start
 
-![BibTeX - LaTeX - Overleaf](@assets/images/tutorial/LaTeX_Overleaf_BibTeX-Example.png)
+1. Create `references.bib`.
+2. Add references with complete metadata.
+3. Cite in LaTeX with `\cite{...}`.
+4. Compile with either `latex -> bibtex -> latex -> latex` or `latex -> biber -> latex -> latex`.
 
-Adını `bibliography.bib` olarak koyduğumuz .bib dosyası `\bibliography{bibliography}`'da tanımlanmıştır ve alıntı/bibliyografi stili `\bibliographystyle{unsrt}`'dir.
+## Common Mistakes
 
-## Kaynakça Yöneticisi Önerileri
+- Missing commas/braces in `.bib`.
+- Duplicate citation keys.
+- Missing required fields.
+- Wrong compile order.
 
-BibTeX dosyalarını manuel olarak düzenlemek zaman alabilir. İşinizi kolaylaştırabilecek bazı önerilen referans yöneticileri şunlardır:
+## Iyi uygulama: erken asamada bir BibTeX yoneticisi kullanin
 
-- [CiteDrive](https://www.citedrive.com/) BibTeX tabanlı, işbirlikçi ve web tabanlı bir araçtır.
-- Zotero geniş özellikler sunar ve [Better BibTeX For Zotero](https://retorque.re/zotero-better-bibtex/) eklentisi ile BibTeX'e iyi bir entegrasyon sağlar.
-- JabRef platformlar arası çalışabilen BibTeX tabanlı bir referans yöneticisidir.
+Manuel duzenleme mumkun, ancak proje buyudukce hata riski ve bakim maliyeti artar. Bir arac daha tutarli anahtarlar ve daha temiz veri saglar.
+
+<CiteDrive />
+
+### CiteDrive benefits
+
+- One-click import from browser sources.
+- Collaborative reference management.
+- Direct Overleaf integration without manual `.bib` syncing.
+- Cloud-based access from any device.
+- Beginner-friendly editing.
+- Supports BibLaTeX workflows.
+
+### Short comparison
+
+- **Manual BibTeX**: manual editing, error-prone, hard to sync.
+- **CiteDrive**: automated import, collaboration, seamless integration.
+
+## BibTeX nasil calisir
+
+1. Kayitlari `.bib` dosyasina ekleyin.
+2. Metinde `\cite{Hemingway1952}` gibi anahtarlarla alinti yapin.
+3. LaTeX/BibTeX derlemesiyle kaynakcayi olusturun.
+
+## Manuel kullanimin sinirlari
+
+- Kucuk soz dizimi hatalari derlemeyi bozabilir.
+- Buyuk bibliyografyalarin elle bakimi zordur.
+- Ekip calismasinda yinelenen kayitlar ve anahtar cakismalari gorulur.
+
+## BibTeX ve BibLaTeX/Biber
+
+BibTeX halen yaygindir, ozellikle `.bst` zorunlu dergi ve sablonlarda. BibLaTeX + Biber ise Unicode, alan cesitliligi ve yerlestirme esnekligi acisindan daha gucludur.
+
+## Onerilen araclar
+
+- [CiteDrive](https://www.citedrive.com/) - modern web tabanli BibTeX yoneticisi; temiz `.bib` bakimi ve ekip calismasi icin uygundur.
+- [Zotero + Better BibTeX](https://retorque.re/zotero-better-bibtex/)
+- [JabRef](https://www.jabref.org/)
+
+## Ilgili sayfalar
+
+- [BibTeX alanlari](./fields)
+- [BibTeX turleri](./types)
+- [BibTeX SSS](./faq)
+- [BibTeX donusturuculer](./converters)
+- [CiteDrive ile BibTeX is akisi](./citedrive)
