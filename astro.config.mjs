@@ -375,7 +375,7 @@ export default defineConfig({
       },
       items: [{
         label: '🔗 CiteDrive',
-        link: 'https://www.citedrive.com/en/'
+        link: 'https://www.citedrive.com/'
       }, {
         label: '🔗 Datanautes',
         link: 'https://datanautes.com/en/'

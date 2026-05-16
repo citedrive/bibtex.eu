@@ -1,6 +1,6 @@
 # bibtex.eu
 
-**bibtex.eu** is an open source documentation project from **[CiteDrive](https://www.citedrive.com/en/)**, a web-based reference manager for **LaTeX** and **Overleaf**. The platform provides simple instructions and support for getting started with **BibTeX** and **BibLaTeX** so that users worldwide can better manage their citations; especially for those using CiteDrive.
+**bibtex.eu** is an open source documentation project from **[CiteDrive](https://www.citedrive.com/)**, a web-based reference manager for **LaTeX** and **Overleaf**. The platform provides simple instructions and support for getting started with **BibTeX** and **BibLaTeX** so that users worldwide can better manage their citations; especially for those using CiteDrive.
 
 ## About
 
